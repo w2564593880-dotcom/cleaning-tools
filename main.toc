@@ -1,6 +1,7 @@
 \contentsline {chapter}{\numberline {第一章\hspace {.3em}} 砂砾、铁屑、结垢物、蜡等井筒内的运移及分布规律研究}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}基本理论和模拟条件}{1}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}EDEM理论基础}{1}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}井筒内铁屑运移及分布规律}{3}{subsection.1.1.2}%
 \contentsline {chapter}{\numberline {第二章\hspace {.3em}}项目研究内容与主要进展}{4}{chapter.2}%
 \contentsline {section}{\numberline {2.1}研究内容一：\textcolor {red}{子课题/研究点名称}}{4}{section.2.1}%
 \contentsline {section}{\numberline {2.2}研究内容二：\textcolor {red}{子课题/研究点名称}}{4}{section.2.2}%

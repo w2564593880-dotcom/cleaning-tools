@@ -1,9 +1,125 @@
 % --- 第一章 ---
 \chapter{ 砂砾、铁屑、结垢物、蜡等井筒内的运移及分布规律研究}
-在修井作业过程中，井筒内既有颗粒物质及作业过程新产生的颗粒物质对井筒工况构成显著影响，其不仅会导致井下工具工作效率下降，更可能引发卡钻等重大安全事故。颗粒物质在井筒内的运移过程中，影响其运移效率的关键参数涵盖颗粒粒径、密度、井眼直径、井斜角度、压井液密度、压井液黏度以及钻井液流速等多重因素。此类参数于钻井作业中相互耦合作用，共同决定颗粒物质的悬浮状态及运移特性。本研究章节基于流体动力学理论，针对砂砾、铁屑、结垢物、蜡质等典型颗粒物质在井筒内的运移规律开展系统性研究，通过构建EDEM与Fluent耦合仿真模型，定量分析流体参数（流速、黏度）及井筒结构参数（井斜角度）对固相颗粒运移轨迹、沉积速率及空间分布特征的作用机制。
-本章所阐述的仿真方案具体实施步骤如下。首先，构建颗粒物模型并完成相关参数配置，基于EDEM平台按照实际物理尺寸完成颗粒模型的注入操作；其次，在Fluent软件环境中搭建流体仿真模型，精确设定流体域边界条件，同步构建三维井筒与管柱模型以及环空结构模型；随后，通过建立Fluent与EDEM之间的双向耦合接口，模拟井筒真实工况条件下流速、粘度等关键参数对颗粒物运移轨迹、沉积速率及其空间分布特征的影响机制；最终，通过后处理模块实施量化分析，包括颗粒分布统计分析及动力学参数提取工作。具体操作流程详见图1.1。图1.1 颗粒运移模型计算流程图
-\section{项目背景与立项依据}
-\textcolor{red}{在此处简要描述项目的立项背景、研究意义及解决的核心问题。}
 
-\section{项目目标与考核指标}
-\textcolor{red}{列出项目任务书中规定的主要研究目标和各项考核指标。}
+在修井作业过程中，井筒内既有颗粒物及作业过程新产生的颗粒物对井筒工况构成显著影响，其不仅会导致井下工具工作效率下降，更可能引发卡钻等重大安全事故。颗粒在井筒内的悬浮状态及运移特性关键影响参数包括：颗粒粒径、密度；井眼尺寸、井斜角度；压井液密度、黏度及流速等多重因素。本章基于流体动力学理论，针对砂砾、铁屑、结垢物、蜡质等典型颗粒物在井筒内的运移规律开展系统性研究，通过构建EDEM与Fluent耦合仿真模型，定量分析流体参数（流速、黏度）及井筒结构参数（井斜角度）对固相颗粒运移轨迹、沉积速率及空间分布特征的作用机制。
+
+本章所阐述的仿真方案具体实施步骤如下。首先，构建颗粒物模型并完成相关参数配置，基于EDEM平台按照实际物理尺寸完成颗粒模型的注入操作；其次，在Fluent软件环境中搭建流体仿真模型，精确设定流体域边界条件，同步构建三维井筒与管柱模型以及环空结构模型；随后，通过建立Fluent与EDEM之间的双向耦合接口，模拟井筒真实工况条件下流速、粘度等关键参数对颗粒物运移轨迹、沉积速率及其空间分布特征的影响机制；最终，通过后处理模块实施量化分析，包括颗粒分布统计分析及动力学参数提取工作。具体操作流程详见图\ref{fig:flowchart}。
+
+    \begin{figure}[htbp]
+        \centering
+        \begin{tikzpicture}[node distance=2cm] % 节点间距为2cm
+            % 1. 流场初始化（起始节点）
+            \node (init) [startstop] {流场初始化};
+            % 2. 连续相流场计算（处理节点）
+            \node (flow) [process, below of=init] {连续相流场计算};
+            % 3. 颗粒模型注入（处理节点）
+            \node (inject) [process, below of=flow] {颗粒模型注入};
+            % 4. 颗粒时间步长计算（处理节点）
+            \node (time1) [process, below of=inject] {颗粒时间步长计算};
+            % 5. 颗粒时间步长计算（重复节点，保持流程一致性）
+            \node (time2) [process, below of=time1] {颗粒时间步长计算};
+            % 6. 颗粒轨迹计算（处理节点）
+            \node (trajectory) [process, below of=time2] {颗粒轨迹计算};
+            % 7. 更新连续相源项（处理节点）
+            \node (update) [process, below of=trajectory] {更新连续相源项};
+            % 8. 判断是否收敛（决策节点）
+            \node (converge) [decision, below of=update] {是否收敛};
+            % 9. 判断是否计算完成（决策节点）
+            \node (complete) [decision, below of=converge] {是否计算完成};
+            % 10. 计算结果（终止节点）
+            \node (result) [startstop, below of=complete] {计算结果};
+            % 11. 更新下一步时间数据（右侧辅助节点）
+            \node (nextstep) [process, right of=complete, xshift=4cm] {更新下一步时间数据};
+
+            % 绘制箭头连线
+            \draw [arrow] (init) -- (flow);                          % 流场初始化 → 连续相流场计算
+            \draw [arrow] (flow) -- (inject);                        % 连续相流场计算 → 颗粒模型注入
+            \draw [arrow] (inject) -- (time1);                       % 颗粒模型注入 → 颗粒时间步长计算
+            \draw [arrow] (time1) -- (time2);                        % 颗粒时间步长计算 → 颗粒时间步长计算
+            \draw [arrow] (time2) -- (trajectory);                   % 颗粒时间步长计算 → 颗粒轨迹计算
+            \draw [arrow] (trajectory) -- (update);                  % 颗粒轨迹计算 → 更新连续相源项
+            \draw [arrow] (update) -- (converge);                    % 更新连续相源项 → 判断是否收敛
+
+            % 收敛判断分支（未收敛→返回连续相流场计算）
+            \draw [arrow] (converge.west) -- ++(-1,0) |- (flow.west) node[midway, left] {否};
+
+            % 收敛后→计算完成判断
+            \draw [arrow] (converge) -- (complete);
+
+            % 计算完成判断分支（未完成→更新下一步时间数据→返回连续相流场计算）
+            \draw [arrow] (complete.east) -- (nextstep.west) node[midway, above] {否};
+            \draw [arrow] (nextstep.north) |- (flow.east);
+
+            % 计算完成→输出结果
+            \draw [arrow] (complete) -- (result) node[midway, right] {是};
+
+        \end{tikzpicture}
+        \caption{颗粒运移模型计算流程图}
+        \label{fig:flowchart}  
+    \end{figure}
+
+\section{基本理论和模拟条件}  
+\subsection{EDEM理论基础} 
+井筒中的颗粒在运动过程中相互接触和碰撞是不可避免的，颗粒间出现接触时将产生作用力。EDEM软件的理论基础是离散元法，离散单元法的基础模型是颗粒之间的相互接触，分析过程中颗粒所受外力作用以及力矩都是通过接触模型直接决定的。在进行离散元分析时根据分析工况将离散颗粒相接触模型分为干颗粒和湿颗粒两种类型。
+当计算物料为干颗粒时，颗粒与其余接触点之间不存在粘结的作用，此时接触模型即可选择EDEM软件中的Hertz-Mindlin基本接触模型，该模型也是EDEM软件中默认选择的颗粒接触模型。建立如图\ref{fig:particle_collision}所示的颗粒碰撞受力模型，并分析颗粒间力的传递。
+
+    \begin{figure}[htbp]
+    \centering
+    % 设置图片宽度为 8cm
+    \resizebox{8cm}{!}{%
+        \begin{tikzpicture}[
+            line width=1pt,
+            >=Stealth
+        ]
+            % --- 定义参数 ---
+            \def\Rone{2.0}      % 颗粒1半径
+            \def\Rtwo{1.4}      % 颗粒2半径
+            \def\angleOverlap{35} % 重叠角度控制
+            
+            % --- 计算坐标 ---
+            % 颗粒1中心在原点 (0,0)
+            % 颗粒2中心位置：距离 = R1 + R2 - delta(这里取个大概值让圆相交)
+            % 为了演示效果，设两圆心距离为 2.6 (R1+R2=3.4, 重叠约0.8)
+            \coordinate (C1) at (0,0);
+            \coordinate (C2) at (30:2.6); 
+            
+            % 计算交点附近的法线方向 (用于画重叠区域的弧线)
+            % 简单起见，我们直接在连心线上找一点画弧
+            \path (C1) -- (C2) coordinate[pos=0.7] (ContactPoint); 
+
+            % --- 绘制颗粒 (圆圈) ---
+            % 颗粒1 (黑色)
+            \draw[black, thick] (C1) circle (\Rone);
+            \node[right=2mm] at (C1) {颗粒1};
+            
+            % 颗粒2 (红色)
+            \draw[red, thick] (C2) circle (\Rtwo);
+            \node[below=2mm] at (C2) {颗粒2};
+
+            % --- 绘制半径 R ---
+            % R1 (左上方向)
+            \draw[<->, gray] (C1) -- ++(135:\Rone) node[midway, above left, black] {$R_1$};
+            % R2 (左上方向)
+            \draw[<->, gray] (C2) -- ++(135:\Rtwo) node[midway, above left, black] {$R_2$};
+
+            % --- 绘制力矢量 F (蓝色) ---
+            % F1 (左下方向)
+            \draw[->, blue, thick] (C1) -- ++(-135:1.2) node[midway, below left, black] {$F_1$};
+            % F2 (右上方向)
+            \draw[->, blue, thick] (C2) -- ++(45:0.8) node[midway, right, black] {$F_2$};
+
+            % --- 绘制重叠区域 δ ---
+            % 在接触点附近画一条紫色弧线表示重叠深度
+            % 这里的逻辑是画一段圆弧，颜色设为紫色
+            \draw[purple, very thick] 
+                ($(C1)!0.9!(C2)$) ++(120:0.3) arc (120:240:0.3);
+            
+            % 引出线和文字说明
+            \draw[gray, thin] ($(C1)!0.9!(C2) + (0,-0.2)$) -- ++(2,-1.5) node[right, text width=4cm, align=left] {重叠区域$\delta$};
+
+        \end{tikzpicture}%
+    }
+    \caption{双颗粒碰撞模型示意图}
+    \label{fig:particle_collision}
+\end{figure}
+

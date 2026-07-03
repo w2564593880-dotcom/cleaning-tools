@@ -28,8 +28,9 @@
 
 % 5. 章节排版控制
 \usepackage{titlesec}
-\titleformat{\chapter}[display]{\normalfont\huge\bfseries\centering}{第\,\thechapter\,章}{20pt}{\Huge}
+\titleformat{\chapter}[block]{\normalfont\huge\bfseries\centering}{第\,\thechapter\,章}{20pt}{\Huge}
 \titlespacing*{\chapter}{0pt}{-10pt}{40pt}
+\titleformat{\section}[block]{\normalfont\Large\bfseries\raggedright}{\thesection}{1em}{}
 
 % 6. 其他常用宏包
 \usepackage{graphicx}      
@@ -72,21 +73,9 @@
 \pagenumbering{arabic} 
 \setcounter{page}{1}   
 
-% --- 第一章 ---
-\chapter{项目基本情况}
-\section{项目背景与立项依据}
-\textcolor{red}{在此处简要描述项目的立项背景、研究意义及解决的核心问题。}
+\input{chapters/chapter1} % 引入第一章内容  
+\input{chapters/chapter2} % 引入第二章内容
 
-\section{项目目标与考核指标}
-\textcolor{red}{列出项目任务书中规定的主要研究目标和各项考核指标。}
-
-% --- 第二章 ---
-\chapter{项目研究内容与主要进展}
-\section{研究内容一：\textcolor{red}{子课题/研究点名称}}
-\textcolor{red}{详细描述该部分的研究方法、实验过程及取得的阶段性成果。}
-
-\section{研究内容二：\textcolor{red}{子课题/研究点名称}}
-\textcolor{red}{详细描述该部分的研究方法、实验过程及取得的阶段性成果。}
 
 % --- 第三章 ---
 \chapter{项目主要成果与创新点}

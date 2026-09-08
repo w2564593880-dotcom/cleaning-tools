@@ -702,13 +702,11 @@ INPUT ./figure/chapter3/scraper-5.jpg
 INPUT ./figure/chapter3/scraper-5.jpg
 INPUT ./figure/chapter3/scraper-5.jpg
 INPUT d:/texlive/2026/texmf-dist/fonts/tfm/zhmetrics/unisong/unisong99.tfm
-INPUT d:/texlive/2026/texmf-dist/fonts/tfm/zhmetrics/unisong/unisong9c.tfm
-INPUT d:/texlive/2026/texmf-dist/fonts/tfm/zhmetrics/unisong/unisong84.tfm
-INPUT ./figure/chapter3/scatch-depth-sping-comprassion.png
-INPUT ./figure/chapter3/scatch-depth-sping-comprassion.png
-INPUT ./figure/chapter3/scatch-depth-sping-comprassion.png
-INPUT ./figure/chapter3/scatch-depth-sping-comprassion.png
-INPUT ./figure/chapter3/scatch-depth-sping-comprassion.png
+INPUT ./figure/chapter3/scatch-depth-sping-comprassion.pdf
+INPUT ./figure/chapter3/scatch-depth-sping-comprassion.pdf
+INPUT ./figure/chapter3/scatch-depth-sping-comprassion.pdf
+INPUT ./figure/chapter3/scatch-depth-sping-comprassion.pdf
+INPUT ./figure/chapter3/scatch-depth-sping-comprassion.pdf
 INPUT d:/texlive/2026/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei59.tfm
 INPUT d:/texlive/2026/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei5b.tfm
 INPUT d:/texlive/2026/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei91.tfm
@@ -721,8 +719,6 @@ INPUT ./main.out
 INPUT c:/Windows/Fonts/simhei.ttf
 INPUT c:/Windows/Fonts/simhei.ttf
 INPUT c:/Windows/Fonts/simhei.ttf
-INPUT c:/Windows/Fonts/simsun.ttc
-INPUT c:/Windows/Fonts/simsun.ttc
 INPUT c:/Windows/Fonts/simsun.ttc
 INPUT c:/Windows/Fonts/simsun.ttc
 INPUT c:/Windows/Fonts/simsun.ttc

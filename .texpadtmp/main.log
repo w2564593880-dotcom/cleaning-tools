@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.7.19)  9 SEP 2026 15:14
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.7.19)  11 SEP 2026 09:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1214,6 +1214,10 @@ LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
 (./chapters/chapter2/part2-full-well-model.tex
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
 (Font)              scaled to size 18.06749pt on input line 1.
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
+(Font)              scaled to size 9.03374pt on input line 7.
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
+(Font)              scaled to size 5.0pt on input line 7.
 File: figure/chapter2/iron-washing-test-rig.png Graphic file (type bmp)
 <figure/chapter2/iron-washing-test-rig.png>
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
@@ -1222,10 +1226,6 @@ LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
 (Font)              scaled to size 15.05624pt on input line 16.
 File: figure/chapter2/iron-bed-7dot85mperh.png Graphic file (type bmp)
 <figure/chapter2/iron-bed-7dot85mperh.png>
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 26.
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 26.
 File: figure/chapter2/iron-bed-10dot00mperh.png Graphic file (type bmp)
 <figure/chapter2/iron-bed-10dot00mperh.png>
 File: figure/chapter2/iron-bed-11dot70mperh.png Graphic file (type bmp)
@@ -1245,7 +1245,7 @@ File: figure/chapter2/iron-bed-15dot83mperh.png Graphic file (type bmp)
 File: figure/chapter2/iron-bed-17dot44mperh.png Graphic file (type bmp)
 <figure/chapter2/iron-bed-17dot44mperh.png>
 
-Overfull \hbox (4.50652pt too wide) in paragraph at lines 47--57
+Overfull \hbox (4.50652pt too wide) in paragraph at lines 48--58
  [][][][][][] 
  []
 
@@ -1253,6 +1253,8 @@ File: figure/chapter2/video-clip-theta-le-72-degree.png Graphic file (type bmp)
 <figure/chapter2/video-clip-theta-le-72-degree.png>
 File: figure/chapter2/extraction-of-pack-area-theta-le-72-degree.png Graphic file (type bmp)
 <figure/chapter2/extraction-of-pack-area-theta-le-72-degree.png>
+File: figure/chapter2/bed-position-VS-flow-rate-inclined-section.png Graphic file (type bmp)
+<figure/chapter2/bed-position-VS-flow-rate-inclined-section.png>
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1261,7 +1263,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [3]
-Overfull \hbox (22.47156pt too wide) in paragraph at lines 111--121
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.45398pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.45398pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
+
+[4]
+Overfull \hbox (22.47156pt too wide) in paragraph at lines 118--128
  [][] 
  []
 
@@ -1272,7 +1282,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
-[4])
+[5])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1280,7 +1290,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
-[5]
+[6]
 第三章
 
 LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <18.06749> not available
@@ -1290,9 +1300,9 @@ LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <18.06749> not available
 LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <15.05624> not available
 (Font)              size <14.4> substituted on input line 116.
 
-(./chapters/bib.tex [6
+(./chapters/bib.tex [7
 
-] [7
+] [8
 
 
 ])
@@ -1303,7 +1313,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
-[8] (/Users/yaobenchun/Documents/GitHub/cleaning-tools/.texpadtmp/main.aux)
+[9] (/Users/yaobenchun/Documents/GitHub/cleaning-tools/.texpadtmp/main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
@@ -1320,12 +1330,12 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 94377D4803712FBBC21337B707461B77;1641.
  ) 
 Here is how much of TeX's memory you used:
- 35139 strings out of 468174
- 807835 string characters out of 5433150
- 1177846 words of memory out of 5000000
- 63292 multiletter control sequences out of 15000+600000
+ 35161 strings out of 468174
+ 809261 string characters out of 5433150
+ 1179846 words of memory out of 5000000
+ 63313 multiletter control sequences out of 15000+600000
  637116 words of font info for 111 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  93i,12n,117p,1186b,1095s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on /Users/yaobenchun/Documents/GitHub/cleaning-tools/.texpadtmp/main.pdf (10 pages).
+Output written on /Users/yaobenchun/Documents/GitHub/cleaning-tools/.texpadtmp/main.pdf (11 pages).

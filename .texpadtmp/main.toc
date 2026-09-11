@@ -2,10 +2,10 @@
 \contentsline {chapter}{\numberline {第二章\hspace {.3em}}井筒内颗粒运移实验}{2}{chapter.2}%
 \contentsline {section}{\numberline {2.1}全井筒模型颗粒运移实验}{2}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}实验结果及讨论}{2}{subsection.2.1.1}%
-\contentsline {chapter}{\numberline {第三章\hspace {.3em}}深度清洁工具设计}{6}{chapter.3}%
-\contentsline {section}{\numberline {3.1}“三合一”脉冲式冲刮刷集成式井筒清洁工具设计}{6}{section.3.1}%
-\contentsline {section}{\numberline {3.2}“四合一”通刮刷磁集成式井筒清洁工具设计}{6}{section.3.2}%
-\contentsline {section}{\numberline {3.3}大容量强磁吸附工具设计}{6}{section.3.3}%
-\contentsline {section}{\numberline {3.4}多功能过滤工具设计}{6}{section.3.4}%
-\contentsline {section}{\numberline {3.5}可变径刮管工具设计}{6}{section.3.5}%
-\contentsline {chapter}{参考文献}{7}{section.3.5}%
+\contentsline {chapter}{\numberline {第三章\hspace {.3em}}深度清洁工具设计}{7}{chapter.3}%
+\contentsline {section}{\numberline {3.1}“三合一”脉冲式冲刮刷集成式井筒清洁工具设计}{7}{section.3.1}%
+\contentsline {section}{\numberline {3.2}“四合一”通刮刷磁集成式井筒清洁工具设计}{7}{section.3.2}%
+\contentsline {section}{\numberline {3.3}大容量强磁吸附工具设计}{7}{section.3.3}%
+\contentsline {section}{\numberline {3.4}多功能过滤工具设计}{7}{section.3.4}%
+\contentsline {section}{\numberline {3.5}可变径刮管工具设计}{7}{section.3.5}%
+\contentsline {chapter}{参考文献}{8}{section.3.5}%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.7.6)  8 SEP 2026 16:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.7.6)  11 SEP 2026 14:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1129,50 +1129,30 @@ l.111 \chapter
 
 ]
 ç¬¬äºŒç« 
-[2
-
-]
-ç¬¬ä¸‰ç« 
-LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 18.06749pt on input line 116.
-
-LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <18.06749> not available
-(Font)              size <17.28> substituted on input line 116.
-
-
-LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <15.05624> not available
-(Font)              size <14.4> substituted on input line 116.
-
+(./chapters/chapter2/part1-horizontal-sand.tex
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 15.05624pt on input line 116.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 116.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.0pt on input line 116.
-(./chapters/chapter3/part2-4in1-scraper-performance.tex
-LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 15.05624pt on input line 1.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 4.
-LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input line 4.
+(Font)              scaled to size 8.0pt on input line 3.
+LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input line 3.
  (d:/texlive/2026/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.045pt on input line 4.
-<figure/chapter3/scraper-test-rig.png, id=206, 1975.38pt x 1475.5125pt>
-File: figure/chapter3/scraper-test-rig.png Graphic file (type png)
-<use figure/chapter3/scraper-test-rig.png>
-Package pdftex.def Info: figure/chapter3/scraper-test-rig.png  used on input line 11.
-(pdftex.def)             Requested size: 407.66867pt x 304.50833pt.
-<figure/chapter3/scapter-measurement-mechanism.png, id=207, 2997.1975pt x 656.4525pt>
-File: figure/chapter3/scapter-measurement-mechanism.png Graphic file (type png)
-<use figure/chapter3/scapter-measurement-mechanism.png>
-Package pdftex.def Info: figure/chapter3/scapter-measurement-mechanism.png  used on input line 16.
-(pdftex.def)             Requested size: 407.66867pt x 89.28838pt.
- [3
+(Font)              scaled to size 12.045pt on input line 3.
+ [2
 
 {d:/texlive/2026/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}]
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 18.06749pt on input line 9.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 15.05624pt on input line 12.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 15.05624pt on input line 12.
+<figure/chapter2/horizontal-washing-experiment-setup.png, id=337, 353.1375pt x 211.554pt>
+File: figure/chapter2/horizontal-washing-experiment-setup.png Graphic file (type png)
+<use figure/chapter2/horizontal-washing-experiment-setup.png>
+Package pdftex.def Info: figure/chapter2/horizontal-washing-experiment-setup.png  used on input line 17.
+(pdftex.def)             Requested size: 407.66867pt x 244.2278pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1180,58 +1160,83 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
-[4 <./figure/chapter3/scraper-test-rig.png (PNG copy)> <./figure/chapter3/scapter-measurement-mechanism.png (PNG copy)>]
-Overfull \hbox (28.44298pt too wide) in paragraph at lines 26--27
-[]\C70/rm/m/n/12.045/5b ž \C70/rm/m/n/12.045/9a Œ \C70/rm/m/n/12.045/8b ° \C70/rm/m/n/12.045/5f U \C70/rm/m/n/12.045/76 „ \C70/rm/m/n/12.045/65 p \C70/rm/m/n/12.045/63 n \C70/rm/m/n/12.045/54 + \C70/rm/m/n/12.045/4e I \C70/rm/m/n/12.045/59 ‚ \C70/rm/m/n/12.045/56 þ[][]\OT1/ntxtlf/m/n/12.045 3.1b[][]\C70/rm/m/n/12.045/62 @ \C70/rm/m/n/12.045/79 :|\C70/rm/m/n/12.045/30 ^^B| \C70/rm/m/n/12.045/5b ž \C70/rm/m/n/12.045/9a Œ \C70/rm/m/n/12.045/52 M|\C70/rm/m/n/12.045/ff ^^L| \C70/rm/m/n/12.045/51 H \C70/rm/m/n/12.045/8b © \C70/rm/m/n/12.045/5f 9 \C70/rm/m/n/12.045/7c ' \C70/rm/m/n/12.045/59 ^^D \C70/rm/m/n/12.045/4e Ž \C70/rm/m/n/12.045/53 Ÿ \C70/rm/m/n/12.045/95 ^^? \C70/rm/m/n/12.045/72 ¶ \C70/rm/m/n/12.045/60 ^^A|\C70/rm/m/n/12.045/ff ^^L| \C70/rm/m/n/12.045/6d K \C70/rm/m/n/12.045/91 Ï \C70/rm/m/n/12.045/8d Ý \C70/rm/m/n/12.045/79 »$\OML/cmm/m/it/12.045 l[]$\C70/rm/m/n/12.045/54 Œ$\OML/cmm/m/it/12.045 l[]$|\C70/rm/m/n/12.045/ff ^^L|
+[3]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.45398pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.45398pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
+
+[4 <./figure/chapter2/horizontal-washing-experiment-setup.png>]
+Overfull \hbox (11.45926pt too wide) in paragraph at lines 50--51
+[]\C70/rm/m/n/12.045/57 ( \C70/rm/m/n/12.045/6e ^^E \C70/rm/m/n/12.045/6c 4 \C70/rm/m/n/12.045/7e Ä \C70/rm/m/n/12.045/5b ž \C70/rm/m/n/12.045/9a Œ \C70/rm/m/n/12.045/4e -|\C70/rm/m/n/12.045/ff ^^L| \C70/rm/m/n/12.045/54 ^^M \C70/rm/m/n/12.045/4e I \C70/rm/m/n/12.045/50 < \C70/rm/m/n/12.045/6c õ \C70/rm/m/n/12.045/90 ^^A \C70/rm/m/n/12.045/6d A \C70/rm/m/n/12.045/91 Ï$\OML/cmm/m/it/12.045 Q$\C70/rm/m/n/12.045/4e : \C70/rm/m/n/12.045/5b ž \C70/rm/m/n/12.045/9a Œ \C70/rm/m/n/12.045/53 Ø \C70/rm/m/n/12.045/91 Ï|\C70/rm/m/n/12.045/ff ^^L| \C70/rm/m/n/12.045/5e v \C70/rm/m/n/12.045/52 ^^F + \C70/rm/m/n/12.045/53 Ö$\OML/cmm/m/it/12.045 Q \OT1/cmr/m/n/12.045 = 8\OML/cmm/m/it/12.045 :\OT1/cmr/m/n/12.045 5[]$|\C70/rm/m/n/12.045/30 ^^A| $\OT1/cmr/m/n/12.045 11\OML/cmm/m/it/12.045 :\OT1/cmr/m/n/12.045 8[]$|\C70/rm/m/n/12.045/30 ^^A|
  []
 
+<figure/chapter2/IncomingReVStstar.png, id=370, 200.6697pt x 168.63pt>
+File: figure/chapter2/IncomingReVStstar.png Graphic file (type png)
+<use figure/chapter2/IncomingReVStstar.png>
+Package pdftex.def Info: figure/chapter2/IncomingReVStstar.png  used on input line 59.
+(pdftex.def)             Requested size: 317.0764pt x 266.46591pt.
+<figure/chapter2/stagenation-with-inflection-point.png, id=372, 316.017pt x 68.985pt>
+File: figure/chapter2/stagenation-with-inflection-point.png Graphic file (type png)
+<use figure/chapter2/stagenation-with-inflection-point.png>
+Package pdftex.def Info: figure/chapter2/stagenation-with-inflection-point.png  used on input line 68.
+(pdftex.def)             Requested size: 407.66867pt x 88.99626pt.
 
-Overfull \hbox (5.50247pt too wide) in paragraph at lines 30--31
-[]\C70/rm/m/n/12.045/68 9 \C70/rm/m/n/12.045/63 n \C70/rm/m/n/12.045/51 à \C70/rm/m/n/12.045/4f U \C70/rm/m/n/12.045/51 s \C70/rm/m/n/12.045/7c û|\C70/rm/m/n/12.045/ff ^^L| \C70/rm/m/n/12.045/53 U \C70/rm/m/n/12.045/6b ! \C70/rm/m/n/12.045/52 . J \C70/rm/m/n/12.045/4e § \C70/rm/m/n/12.045/75 ^^_ \C70/rm/m/n/12.045/76 „ \C70/rm/m/n/12.045/57 Q \C70/rm/m/n/12.045/6d ñ \C70/rm/m/n/12.045/5e ¦$\OML/cmm/m/it/12.045 ^^N[]$|\C70/rm/m/n/12.045/30 ^^A| \C70/rm/m/n/12.045/57 Q \C70/rm/m/n/12.045/76 „ \C70/rm/m/n/12.045/7d / \C70/rm/m/n/12.045/79 ï \C70/rm/m/n/12.045/6d ñ \C70/rm/m/n/12.045/5e ¦$\OML/cmm/m/it/12.045 ^^N[]$|\C70/rm/m/n/12.045/ff ^^L| \C70/rm/m/n/12.045/5f 9 \C70/rm/m/n/12.045/7c ' \C70/rm/m/n/12.045/53 ‹ \C70/rm/m/n/12.045/7f ) \C70/rm/m/n/12.045/91 Ï \C70/rm/m/n/12.045/4f 0 \C70/rm/m/n/12.045/8b ¡ \C70/rm/m/n/12.045/50 <$\OML/cmm/m/it/12.045 ^^N[]$\C70/rm/m/n/12.045/4e : 
- []
+LaTeX Warning: Command \texttimes invalid in math mode on input line 73.
 
-<figure/chapter3/scale-1.jpg, id=271, 3608.48125pt x 2793.43625pt>
-File: figure/chapter3/scale-1.jpg Graphic file (type jpg)
-<use figure/chapter3/scale-1.jpg>
-Package pdftex.def Info: figure/chapter3/scale-1.jpg  used on input line 47.
-(pdftex.def)             Requested size: 144.95316pt x 112.18729pt.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 5.0pt on input line 47.
-<figure/chapter3/scale-4.jpg, id=272, 4034.07124pt x 3023.295pt>
-File: figure/chapter3/scale-4.jpg Graphic file (type jpg)
-<use figure/chapter3/scale-4.jpg>
-Package pdftex.def Info: figure/chapter3/scale-4.jpg  used on input line 52.
-(pdftex.def)             Requested size: 144.95316pt x 108.59404pt.
-<figure/chapter3/scale-3.jpg, id=273, 3656.66125pt x 2872.7325pt>
-File: figure/chapter3/scale-3.jpg Graphic file (type jpg)
-<use figure/chapter3/scale-3.jpg>
-Package pdftex.def Info: figure/chapter3/scale-3.jpg  used on input line 57.
-(pdftex.def)             Requested size: 144.95316pt x 113.8377pt.
-<figure/chapter3/scale-5.jpg, id=274, 4047.12pt x 3035.34pt>
-File: figure/chapter3/scale-5.jpg Graphic file (type jpg)
-<use figure/chapter3/scale-5.jpg>
-Package pdftex.def Info: figure/chapter3/scale-5.jpg  used on input line 62.
-(pdftex.def)             Requested size: 144.95316pt x 108.70247pt.
-<figure/chapter3/scraper-1.jpg, id=276, 1979.395pt x 1597.97pt>
-File: figure/chapter3/scraper-1.jpg Graphic file (type jpg)
-<use figure/chapter3/scraper-1.jpg>
-Package pdftex.def Info: figure/chapter3/scraper-1.jpg  used on input line 75.
-(pdftex.def)             Requested size: 144.95316pt x 117.01414pt.
-<figure/chapter3/scraper-4.jpg, id=277, 3312.375pt x 2647.8925pt>
-File: figure/chapter3/scraper-4.jpg Graphic file (type jpg)
-<use figure/chapter3/scraper-4.jpg>
-Package pdftex.def Info: figure/chapter3/scraper-4.jpg  used on input line 80.
-(pdftex.def)             Requested size: 144.95316pt x 115.83693pt.
-<figure/chapter3/scraper-3.jpg, id=278, 3405.72375pt x 2734.215pt>
-File: figure/chapter3/scraper-3.jpg Graphic file (type jpg)
-<use figure/chapter3/scraper-3.jpg>
-Package pdftex.def Info: figure/chapter3/scraper-3.jpg  used on input line 85.
-(pdftex.def)             Requested size: 144.95316pt x 116.35905pt.
-<figure/chapter3/scraper-5.jpg, id=279, 2828.5675pt x 2262.4525pt>
-File: figure/chapter3/scraper-5.jpg Graphic file (type jpg)
-<use figure/chapter3/scraper-5.jpg>
-Package pdftex.def Info: figure/chapter3/scraper-5.jpg  used on input line 90.
-(pdftex.def)             Requested size: 144.95316pt x 115.92555pt.
+
+LaTeX Warning: Command \texttimes invalid in math mode on input line 73.
+
+Missing character: There is no Ö in font cmr12!
+
+LaTeX Warning: Command \texttimes invalid in math mode on input line 73.
+
+
+LaTeX Warning: Command \texttimes invalid in math mode on input line 73.
+
+Missing character: There is no Ö in font cmr12!
+
+LaTeX Warning: Command \texttimes invalid in math mode on input line 73.
+
+
+LaTeX Warning: Command \texttimes invalid in math mode on input line 73.
+
+Missing character: There is no Ö in font cmr12!
+<figure/chapter2/bed-front-profile-VS-Rein.png, id=374, 363.321pt x 168.5205pt>
+File: figure/chapter2/bed-front-profile-VS-Rein.png Graphic file (type png)
+<use figure/chapter2/bed-front-profile-VS-Rein.png>
+Package pdftex.def Info: figure/chapter2/bed-front-profile-VS-Rein.png  used on input line 77.
+(pdftex.def)             Requested size: 407.66867pt x 189.09393pt.
+
+LaTeX Warning: Command \texttimes invalid in math mode on input line 82.
+
+
+LaTeX Warning: Command \texttimes invalid in math mode on input line 82.
+
+Missing character: There is no Ö in font cmr12!
+
+LaTeX Warning: Command \texttimes invalid in math mode on input line 83.
+
+
+LaTeX Warning: Command \texttimes invalid in math mode on input line 83.
+
+Missing character: There is no Ö in font cmr12!
+
+LaTeX Warning: Command \texttimes invalid in math mode on input line 83.
+
+
+LaTeX Warning: Command \texttimes invalid in math mode on input line 83.
+
+Missing character: There is no Ö in font cmr12!
+
+LaTeX Warning: Command \texttimes invalid in math mode on input line 84.
+
+
+LaTeX Warning: Command \texttimes invalid in math mode on input line 84.
+
+Missing character: There is no Ö in font cmr12!
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1247,12 +1252,343 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
-[6 <./figure/chapter3/scale-1.jpg> <./figure/chapter3/scale-4.jpg> <./figure/chapter3/scale-3.jpg> <./figure/chapter3/scale-5.jpg>]
-<figure/chapter3/scatch-depth-sping-comprassion.pdf, id=314, 775.10997pt x 593.82938pt>
-File: figure/chapter3/scatch-depth-sping-comprassion.pdf Graphic file (type pdf)
-<use figure/chapter3/scatch-depth-sping-comprassion.pdf>
-Package pdftex.def Info: figure/chapter3/scatch-depth-sping-comprassion.pdf  used on input line 110.
-(pdftex.def)             Requested size: 317.0764pt x 242.91888pt.
+[6 <./figure/chapter2/IncomingReVStstar.png> <./figure/chapter2/stagenation-with-inflection-point.png> <./figure/chapter2/bed-front-profile-VS-Rein.png>]
+<figure/chapter2/bed-oscillation.png, id=401, 424.422pt x 156.366pt>
+File: figure/chapter2/bed-oscillation.png Graphic file (type png)
+<use figure/chapter2/bed-oscillation.png>
+Package pdftex.def Info: figure/chapter2/bed-oscillation.png  used on input line 90.
+(pdftex.def)             Requested size: 317.0764pt x 116.82086pt.
+
+
+LaTeX Warning: Command \texttimes invalid in math mode on input line 95.
+
+
+LaTeX Warning: Command \texttimes invalid in math mode on input line 95.
+
+Missing character: There is no Ö in font cmr12!
+<figure/chapter2/M-shaped-bed-height.png, id=403, 247.8861pt x 208.6194pt>
+File: figure/chapter2/M-shaped-bed-height.png Graphic file (type png)
+<use figure/chapter2/M-shaped-bed-height.png>
+Package pdftex.def Info: figure/chapter2/M-shaped-bed-height.png  used on input line 98.
+(pdftex.def)             Requested size: 271.7837pt x 228.74033pt.
+
+LaTeX Warning: Command \texttimes invalid in math mode on input line 99.
+
+
+LaTeX Warning: Command \texttimes invalid in math mode on input line 99.
+
+Missing character: There is no Ö in font cmr12!
+
+LaTeX Warning: Command \texttimes invalid in math mode on input line 99.
+
+
+LaTeX Warning: Command \texttimes invalid in math mode on input line 99.
+
+Missing character: There is no Ö in font cmr12!
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.45398pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.45398pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
+
+[7]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.45398pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.45398pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
+
+[8 <./figure/chapter2/bed-oscillation.png> <./figure/chapter2/M-shaped-bed-height.png>]
+<figure/chapter2/eta-gamma.png, id=419, 291.051pt x 249.66pt>
+File: figure/chapter2/eta-gamma.png Graphic file (type png)
+<use figure/chapter2/eta-gamma.png>
+Package pdftex.def Info: figure/chapter2/eta-gamma.png  used on input line 114.
+(pdftex.def)             Requested size: 317.0764pt x 271.99829pt.
+
+
+LaTeX Warning: Command \texttimes invalid in math mode on input line 125.
+
+
+LaTeX Warning: Command \texttimes invalid in math mode on input line 125.
+
+Missing character: There is no Ö in font cmr12!
+
+LaTeX Warning: Command \texttimes invalid in math mode on input line 127.
+
+
+LaTeX Warning: Command \texttimes invalid in math mode on input line 127.
+
+Missing character: There is no Ö in font cmr12!
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.45398pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.45398pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
+
+[9 <./figure/chapter2/eta-gamma.png>]
+<figure/chapter2/bed-profile-guar-gel.png, id=434, 384.345pt x 139.284pt>
+File: figure/chapter2/bed-profile-guar-gel.png Graphic file (type png)
+<use figure/chapter2/bed-profile-guar-gel.png>
+Package pdftex.def Info: figure/chapter2/bed-profile-guar-gel.png  used on input line 131.
+(pdftex.def)             Requested size: 407.66867pt x 147.73596pt.
+
+
+LaTeX Warning: Command \texttimes invalid in math mode on input line 136.
+
+
+LaTeX Warning: Command \texttimes invalid in math mode on input line 136.
+
+Missing character: There is no Ö in font cmr12!
+
+LaTeX Warning: Command \texttimes invalid in math mode on input line 136.
+
+
+LaTeX Warning: Command \texttimes invalid in math mode on input line 136.
+
+Missing character: There is no Ö in font cmr12!
+
+LaTeX Warning: Command \texttimes invalid in math mode on input line 136.
+
+
+LaTeX Warning: Command \texttimes invalid in math mode on input line 136.
+
+Missing character: There is no Ö in font cmr12!
+
+Overfull \hbox (8.46088pt too wide) in paragraph at lines 136--137
+\OT1/cmr/m/n/12.045 1\OML/cmm/m/it/12.045 :\OT1/cmr/m/n/12.045 3610[]$\C70/rm/m/n/12.045/7e Ä \C70/rm/m/n/12.045/4e - \C70/rm/m/n/12.045/53 š \C70/rm/m/n/12.045/5e ¦ \C70/rm/m/n/12.045/7e ¦ \C70/rm/m/n/12.045/4e :\OT1/ntxtlf/m/n/12.045 6.0mm|\C70/rm/m/n/12.045/ff ^^L| $\OML/cmm/m/it/12.045 Re[] \OT1/cmr/m/n/12.045 = 1\OML/cmm/m/it/12.045 :\OT1/cmr/m/n/12.045 8910[]$\C70/rm/m/n/12.045/7e Ä \C70/rm/m/n/12.045/4e - \C70/rm/m/n/12.045/7e ¦ \C70/rm/m/n/12.045/4e :\OT1/ntxtlf/m/n/12.045 6.2mm|\C70/rm/m/n/12.045/ff ^^L| $\OML/cmm/m/it/12.045 Re[] \OT1/cmr/m/n/12.045 = 2\OML/cmm/m/it/12.045 :\OT1/cmr/m/n/12.045 2010[]$\C70/rm/m/n/12.045/7e ¦ \C70/rm/m/n/12.045/4e :\OT1/ntxtlf/m/n/12.045 6.8mm|\C70/rm/m/n/12.045/ff ^^L|
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.45398pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.45398pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
+
+[10 <./figure/chapter2/bed-profile-guar-gel.png>]
+<figure/chapter2/p-star-VS-t-star.png, id=446, 219.7008pt x 185.493pt>
+File: figure/chapter2/p-star-VS-t-star.png Graphic file (type png)
+<use figure/chapter2/p-star-VS-t-star.png>
+Package pdftex.def Info: figure/chapter2/p-star-VS-t-star.png  used on input line 156.
+(pdftex.def)             Requested size: 317.0764pt x 267.72107pt.
+<figure/chapter2/Vs-star-VS-Rein.png, id=447, 213.6783pt x 182.6022pt>
+File: figure/chapter2/Vs-star-VS-Rein.png Graphic file (type png)
+<use figure/chapter2/Vs-star-VS-Rein.png>
+Package pdftex.def Info: figure/chapter2/Vs-star-VS-Rein.png  used on input line 163.
+(pdftex.def)             Requested size: 317.0764pt x 270.98816pt.
+
+Missing character: There is no Á in font cmr12!
+
+LaTeX Warning: Command \textfractionsolidus invalid in math mode on input line 176.
+
+LaTeX Info: Symbol \textfractionsolidus not provided by
+            font family ntxtlf in TS1 encoding.
+            Default family used instead on input line 176.
+
+LaTeX Warning: Command \textfractionsolidus invalid in math mode on input line 176.
+
+
+LaTeX Warning: Command \textfractionsolidus invalid in math mode on input line 176.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.45398pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.45398pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
+
+[11 <./figure/chapter2/p-star-VS-t-star.png>]
+<figure/chapter2/H-star-VS-Rein.png, id=464, 212.7147pt x 182.6022pt>
+File: figure/chapter2/H-star-VS-Rein.png Graphic file (type png)
+<use figure/chapter2/H-star-VS-Rein.png>
+Package pdftex.def Info: figure/chapter2/H-star-VS-Rein.png  used on input line 184.
+(pdftex.def)             Requested size: 317.0764pt x 272.22249pt.
+<figure/chapter2/Rel-VS-Rein.png, id=465, 215.6055pt x 186.6975pt>
+File: figure/chapter2/Rel-VS-Rein.png Graphic file (type png)
+<use figure/chapter2/Rel-VS-Rein.png>
+Package pdftex.def Info: figure/chapter2/Rel-VS-Rein.png  used on input line 191.
+(pdftex.def)             Requested size: 317.0764pt x 274.57591pt.
+
+Overfull \hbox (33.46613pt too wide) in paragraph at lines 203--204
+[]\C70/rm/m/n/12.045/57 ( \C70/rm/m/n/12.045/5b ž \C70/rm/m/n/12.045/9a Œ \C70/rm/m/n/12.045/65 p \C70/rm/m/n/12.045/63 n \C70/rm/m/n/12.045/76 „ \C70/rm/m/n/12.045/65 / \C70/rm/m/n/12.045/64 ‘ \C70/rm/m/n/12.045/4e  \C70/rm/m/n/12.045/5f — \C70/rm/m/n/12.045/52 0 \C70/rm/m/n/12.045/5f ^^O[]\C70/rm/m/n/12.045/76 „ \C70/rm/m/n/12.045/51 s \C70/rm/m/n/12.045/7c û \C70/rm/m/n/12.045/54 ^^N|\C70/rm/m/n/12.045/ff ^^L| \C70/rm/m/n/12.045/53 ï Í \C70/rm/m/n/12.045/89 ã \C70/rm/m/n/12.045/51 ú$\OML/cmm/m/it/12.045 H[]$\C70/rm/m/n/12.045/54 Œ$\OML/cmm/m/it/12.045 Re[]$\C70/rm/m/n/12.045/4e K \C70/rm/m/n/12.045/95 ô \C70/rm/m/n/12.045/76 „ \C70/rm/m/n/12.045/51 s \C70/rm/m/n/12.045/7c û|\C70/rm/m/n/12.045/30 ^^B| \C70/rm/m/n/12.045/75 1 \C70/rm/m/n/12.045/4e Ž$\OML/cmm/m/it/12.045 H$\C70/rm/m/n/12.045/54 Œ$\OML/cmm/m/it/12.045 S$\C70/rm/m/n/12.045/57 (
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.45398pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.45398pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
+
+[12 <./figure/chapter2/Vs-star-VS-Rein.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.45398pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.45398pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
+
+[13 <./figure/chapter2/H-star-VS-Rein.png> <./figure/chapter2/Rel-VS-Rein.png>]
+<figure/chapter2/phis-VS-Rein.png, id=489, 212.7147pt x 186.6975pt>
+File: figure/chapter2/phis-VS-Rein.png Graphic file (type png)
+<use figure/chapter2/phis-VS-Rein.png>
+Package pdftex.def Info: figure/chapter2/phis-VS-Rein.png  used on input line 213.
+(pdftex.def)             Requested size: 317.0764pt x 278.32774pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.45398pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.45398pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
+
+[14]
+
+LaTeX Warning: Command \texttimes invalid in math mode on input line 225.
+
+
+LaTeX Warning: Command \texttimes invalid in math mode on input line 225.
+
+Missing character: There is no Ö in font cmr12!
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.45398pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.45398pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
+
+[15 <./figure/chapter2/phis-VS-Rein.png>]) (./chapters/chapter2/part2-full-well-model.tex
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 9.03374pt on input line 7.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 6.0pt on input line 7.
+<figure/chapter2/iron-washing-test-rig.png, id=505, 2421.045pt x 1049.9225pt>
+File: figure/chapter2/iron-washing-test-rig.png Graphic file (type png)
+<use figure/chapter2/iron-washing-test-rig.png>
+Package pdftex.def Info: figure/chapter2/iron-washing-test-rig.png  used on input line 14.
+(pdftex.def)             Requested size: 452.96826pt x 196.42743pt.
+<figure/chapter2/iron-bed-7dot85mperh.png, id=507, 2439.1125pt x 1096.095pt>
+File: figure/chapter2/iron-bed-7dot85mperh.png Graphic file (type png)
+<use figure/chapter2/iron-bed-7dot85mperh.png>
+Package pdftex.def Info: figure/chapter2/iron-bed-7dot85mperh.png  used on input line 30.
+(pdftex.def)             Requested size: 149.48035pt x 67.16776pt.
+<figure/chapter2/iron-bed-10dot00mperh.png, id=508, 2437.105pt x 1116.17pt>
+File: figure/chapter2/iron-bed-10dot00mperh.png Graphic file (type png)
+<use figure/chapter2/iron-bed-10dot00mperh.png>
+Package pdftex.def Info: figure/chapter2/iron-bed-10dot00mperh.png  used on input line 35.
+(pdftex.def)             Requested size: 149.48035pt x 68.44904pt.
+<figure/chapter2/iron-bed-11dot70mperh.png, id=509, 2443.1275pt x 1134.2375pt>
+File: figure/chapter2/iron-bed-11dot70mperh.png Graphic file (type png)
+<use figure/chapter2/iron-bed-11dot70mperh.png>
+Package pdftex.def Info: figure/chapter2/iron-bed-11dot70mperh.png  used on input line 39.
+(pdftex.def)             Requested size: 149.48035pt x 69.38396pt.
+
+Overfull \hbox (4.50652pt too wide) in paragraph at lines 30--40
+ [][][][][][] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.45398pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.45398pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
+
+[16]
+<figure/chapter2/iron-bed-15dot70mperh.png, id=520, 1726.45pt x 827.09pt>
+File: figure/chapter2/iron-bed-15dot70mperh.png Graphic file (type png)
+<use figure/chapter2/iron-bed-15dot70mperh.png>
+Package pdftex.def Info: figure/chapter2/iron-bed-15dot70mperh.png  used on input line 52.
+(pdftex.def)             Requested size: 149.48035pt x 71.60793pt.
+<figure/chapter2/iron-bed-15dot83mperh.png, id=521, 1734.48pt x 827.09pt>
+File: figure/chapter2/iron-bed-15dot83mperh.png Graphic file (type png)
+<use figure/chapter2/iron-bed-15dot83mperh.png>
+Package pdftex.def Info: figure/chapter2/iron-bed-15dot83mperh.png  used on input line 57.
+(pdftex.def)             Requested size: 149.48035pt x 71.27979pt.
+<figure/chapter2/iron-bed-17dot44mperh.png, id=522, 1728.4575pt x 831.105pt>
+File: figure/chapter2/iron-bed-17dot44mperh.png Graphic file (type png)
+<use figure/chapter2/iron-bed-17dot44mperh.png>
+Package pdftex.def Info: figure/chapter2/iron-bed-17dot44mperh.png  used on input line 61.
+(pdftex.def)             Requested size: 149.48035pt x 71.86676pt.
+
+Overfull \hbox (4.50652pt too wide) in paragraph at lines 52--62
+ [][][][][][] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.45398pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.45398pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
+
+[17 <./figure/chapter2/iron-washing-test-rig.png (PNG copy)> <./figure/chapter2/iron-bed-7dot85mperh.png (PNG copy)> <./figure/chapter2/iron-bed-10dot00mperh.png (PNG copy)> <./figure/chapter2/iron-bed-11dot70mperh.png (PNG copy)>]
+<figure/chapter2/video-clip-theta-le-72-degree.png, id=537, 427.5975pt x 87.32625pt>
+File: figure/chapter2/video-clip-theta-le-72-degree.png Graphic file (type png)
+<use figure/chapter2/video-clip-theta-le-72-degree.png>
+Package pdftex.def Info: figure/chapter2/video-clip-theta-le-72-degree.png  used on input line 71.
+(pdftex.def)             Requested size: 407.66867pt x 83.2566pt.
+<figure/chapter2/extraction-of-pack-area-theta-le-72-degree.png, id=538, 427.5975pt x 84.315pt>
+File: figure/chapter2/extraction-of-pack-area-theta-le-72-degree.png Graphic file (type png)
+<use figure/chapter2/extraction-of-pack-area-theta-le-72-degree.png>
+Package pdftex.def Info: figure/chapter2/extraction-of-pack-area-theta-le-72-degree.png  used on input line 92.
+(pdftex.def)             Requested size: 407.66867pt x 80.38567pt.
+<figure/chapter2/bed-position-VS-flow-rate-inclined-section.png, id=540, 423.5022pt x 271.0125pt>
+File: figure/chapter2/bed-position-VS-flow-rate-inclined-section.png Graphic file (type png)
+<use figure/chapter2/bed-position-VS-flow-rate-inclined-section.png>
+Package pdftex.def Info: figure/chapter2/bed-position-VS-flow-rate-inclined-section.png  used on input line 104.
+(pdftex.def)             Requested size: 452.96826pt x 289.86884pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.45398pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.45398pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
+
+[18 <./figure/chapter2/iron-bed-15dot70mperh.png (PNG copy)> <./figure/chapter2/iron-bed-15dot83mperh.png (PNG copy)> <./figure/chapter2/iron-bed-17dot44mperh.png (PNG copy)> <./figure/chapter2/video-clip-theta-le-72-degree.png> <./figure/chapter2/extraction-of-pack-area-theta-le-72-degree.png>]
+Overfull \hbox (22.89514pt too wide) in paragraph at lines 123--133
+ [][] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.45398pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.45398pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
+
+[19 <./figure/chapter2/bed-position-VS-flow-rate-inclined-section.png>])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.45398pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.45398pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
+
+[20]
+ç¬¬ä¸‰ç« 
+
+LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <18.06749> not available
+(Font)              size <17.28> substituted on input line 116.
+
+
+LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <15.05624> not available
+(Font)              size <14.4> substituted on input line 116.
+
+(./chapters/bib.tex [21
+
+] [22
+
+
+]
+Underfull \hbox (badness 2846) in paragraph at lines 104--105
+[]\C70/rm/m/n/12.045/8d u \C70/rm/m/n/12.045/92 t \C70/rm/m/n/12.045/69 Z\OT1/ntxtlf/m/n/12.045 ,\C70/rm/m/n/12.045/80 ? \C70/rm/m/n/12.045/5f :\OT1/ntxtlf/m/n/12.045 .\C70/rm/m/n/12.045/4f N \C70/rm/m/n/12.045/80 Z \C70/rm/m/n/12.045/72 i \C70/rm/m/n/12.045/97 ^ \C70/rm/m/n/12.045/72 [ \C70/rm/m/n/12.045/98 ^^? \C70/rm/m/n/12.045/6d A \C70/rm/m/n/12.045/4f S \C70/rm/m/n/12.045/6d A \C70/rm/m/n/12.045/53 Ø Â \C70/rm/m/n/12.045/65 p \C70/rm/m/n/12.045/76 „ \C70/rm/m/n/12.045/78 n \C70/rm/m/n/12.045/5b š \C70/rm/m/n/12.045/4e ^^N \C70/rm/m/n/12.045/6d A \C70/rm/m/n/12.045/52 ¨ \C70/rm/m/n/12.045/8b ¡ \C70/rm/m/n/12.045/7b —\OT1/ntxtlf/m/n/12.045 [J].\C70/rm/m/n/12.045/77 ó \C70/rm/m/n/12.045/6c ¹ \C70/rm/m/n/12.045/53 ^^V \C70/rm/m/n/12.045/5d å \C70/rm/m/n/12.045/8b ¾
+ []
+
 )
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1261,15 +1597,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
-[7 <./figure/chapter3/scraper-1.jpg> <./figure/chapter3/scraper-4.jpg> <./figure/chapter3/scraper-3.jpg> <./figure/chapter3/scraper-5.jpg>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.45398pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.45398pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
-
-[8 <./figure/chapter3/scatch-depth-sping-comprassion.pdf>] (./main.aux)
+[23] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
@@ -1280,27 +1608,30 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.78749pt have occurred.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 794EA2471F4F8A080E0127E30E3F32CF;1428.
+(rerunfilecheck)             Checksum: DC0FC49A2BF7836EA1E3C9CF3C664F71;2428.
  ) 
 Here is how much of TeX's memory you used:
- 34737 strings out of 469462
- 709535 string characters out of 5468725
- 1067906 words of memory out of 5000000
- 62463 multiletter control sequences out of 15000+600000
- 716106 words of font info for 317 fonts, out of 8000000 for 9000
+ 35570 strings out of 469462
+ 727831 string characters out of 5468725
+ 1080274 words of memory out of 5000000
+ 63156 multiletter control sequences out of 15000+600000
+ 728740 words of font info for 363 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 88i,14n,117p,2079b,1123s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 88i,12n,117p,2662b,1252s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist, replaced by a fixed one
+
 
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist, replaced by a fixed one
 
 
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
-<c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><d:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/newtx/ztmb.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/newtx/ztmr.pfb>
-Output written on main.pdf (10 pages, 15573510 bytes).
+<c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><d:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/newtx/ztmb.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/newtx/ztmr.pfb>
+Output written on main.pdf (25 pages, 18165720 bytes).
 PDF statistics:
- 756 PDF objects out of 1000 (max. 8388607)
- 513 compressed objects within 6 object streams
- 37 named destinations out of 1000 (max. 500000)
- 432 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1066 PDF objects out of 1200 (max. 8388607)
+ 756 compressed objects within 8 object streams
+ 108 named destinations out of 1000 (max. 500000)
+ 588 words of extra memory for PDF output out of 10000 (max. 10000000)
 

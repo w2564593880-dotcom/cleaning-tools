@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.7.19)  12 SEP 2026 09:20
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.7.19)  12 SEP 2026 10:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -858,7 +858,11 @@ File: pgflibraryarrows.meta.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 File: tikzlibrarycalc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/gbt7714/gbt7714.sty
 Package: gbt7714 2026/01/15 v2.1.9 GB/T 7714 BibTeX Style
- (/usr/local/texlive/2025/texmf-dist/tex/latex/natbib/natbib.sty
+
+
+Package gbt7714 Warning: The option "numbers" is obsolete on input line 69.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip80
 \bibsep=\skip81
@@ -1187,9 +1191,9 @@ LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
 (Font)              scaled to size 12.045pt on input line 1.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 3.
+(Font)              scaled to size 8.0pt on input line 4.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 3.
+(Font)              scaled to size 6.0pt on input line 4.
 )
 \tf@toc=\write5
 \openout5 = `main.toc'.
@@ -1204,26 +1208,39 @@ LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
 
 ]
 第二章
-(./chapters/chapter2/part1-horizontal-sand.tex [2
+[2
 
 ]
+第三章
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
-(Font)              scaled to size 18.06749pt on input line 10.
+(Font)              scaled to size 18.06749pt on input line 116.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 15.05624pt on input line 13.
+(Font)              scaled to size 15.05624pt on input line 116.
+
+LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <18.06749> not available
+(Font)              size <17.28> substituted on input line 116.
+
+
+LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <15.05624> not available
+(Font)              size <14.4> substituted on input line 116.
+
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
+(Font)              scaled to size 9.03374pt on input line 116.
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
+(Font)              scaled to size 5.0pt on input line 116.
+(./chapters/chapter3/part2-4in1.tex
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
-(Font)              scaled to size 15.05624pt on input line 13.
-File: figure/chapter2/horizontal-washing-experiment-setup.png Graphic file (type bmp)
-<figure/chapter2/horizontal-washing-experiment-setup.png>
+(Font)              scaled to size 15.05624pt on input line 1.
+File: figure/chapter3/structure-4-in-1.png Graphic file (type bmp)
+<figure/chapter3/structure-4-in-1.png>
 
+Overfull \hbox (72.19539pt too wide) in paragraph at lines 22--39
+ [][] 
+ []
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.45398pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.45398pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
+[3
 
-[3]
+]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1232,12 +1249,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [4]
-File: figure/chapter2/IncomingReVStstar.png Graphic file (type bmp)
-<figure/chapter2/IncomingReVStstar.png>
-File: figure/chapter2/stagenation-with-inflection-point.png Graphic file (type bmp)
-<figure/chapter2/stagenation-with-inflection-point.png>
-File: figure/chapter2/bed-front-profile-VS-Rein.png Graphic file (type bmp)
-<figure/chapter2/bed-front-profile-VS-Rein.png>
+File: figure/chapter3/mechanism-scratcher-4-in-1.png Graphic file (type bmp)
+<figure/chapter3/mechanism-scratcher-4-in-1.png>
+File: figure/chapter3/mechanism-swiper-4-in-1.png Graphic file (type bmp)
+<figure/chapter3/mechanism-swiper-4-in-1.png>
+File: figure/chapter3/mechanism-mag-sub-4-in-1.png Graphic file (type bmp)
+<figure/chapter3/mechanism-mag-sub-4-in-1.png>
+File: figure/chapter3/mechanism-torsional-spring-4-in-1.png Graphic file (type bmp)
+<figure/chapter3/mechanism-torsional-spring-4-in-1.png>
+File: figure/chapter3/dynamic-system-torsional-spring-mechanism-4-in-1.png Graphic file (type bmp)
+<figure/chapter3/dynamic-system-torsional-spring-mechanism-4-in-1.png>
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1247,6 +1268,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [5]
+File: figure/chapter3/upper-sub-4-in-1.png Graphic file (type bmp)
+<figure/chapter3/upper-sub-4-in-1.png>
+File: figure/chapter3/lowwer-sub-4-in-1.png Graphic file (type bmp)
+<figure/chapter3/lowwer-sub-4-in-1.png>
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1255,10 +1281,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [6]
-File: figure/chapter2/bed-oscillation.png Graphic file (type bmp)
-<figure/chapter2/bed-oscillation.png>
-File: figure/chapter2/M-shaped-bed-height.png Graphic file (type bmp)
-<figure/chapter2/M-shaped-bed-height.png>
+File: figure/chapter3/inner-pipe-for-strength-analysis.png Graphic file (type bmp)
+<figure/chapter3/inner-pipe-for-strength-analysis.png>
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1268,6 +1292,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [7]
+File: figure/chapter3/flat-shear-key.png Graphic file (type bmp)
+<figure/chapter3/flat-shear-key.png>
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1276,8 +1303,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [8]
-File: figure/chapter2/eta-gamma.png Graphic file (type bmp)
-<figure/chapter2/eta-gamma.png>
+File: figure/chapter3/inner-pipe-tensile-strength-simulation.png Graphic file (type bmp)
+<figure/chapter3/inner-pipe-tensile-strength-simulation.png>
+File: figure/chapter3/inner-pipe-torsional-strength-simulation.png Graphic file (type bmp)
+<figure/chapter3/inner-pipe-torsional-strength-simulation.png>
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1287,9 +1316,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [9]
-File: figure/chapter2/bed-profile-guar-gel.png Graphic file (type bmp)
-<figure/chapter2/bed-profile-guar-gel.png>
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1298,12 +1324,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [10]
-File: figure/chapter2/p-star-VS-t-star.png Graphic file (type bmp)
-<figure/chapter2/p-star-VS-t-star.png>
-File: figure/chapter2/Vs-star-VS-Rein.png Graphic file (type bmp)
-<figure/chapter2/Vs-star-VS-Rein.png>
+Overfull \hbox (18.70758pt too wide) detected at line 295
+[][][]\OML/cmm/m/it/12.045 T[] \OT1/cmr/m/n/12.045 = [] \OMS/cmsy/m/n/12.045 ^^B \OT1/cmr/m/n/12.045 10[] = [] \OMS/cmsy/m/n/12.045 ^^B \OT1/cmr/m/n/12.045 10[] = 26\OML/cmm/m/it/12.045 :\OT1/cmr/m/n/12.045 53 [] \OMS/cmsy/m/n/12.045 ^^A [] \OML/cmm/m/it/12.045 > \OT1/cmr/m/n/12.045 17 [] \OMS/cmsy/m/n/12.045 ^^A []
+ []
 
-Missing character: There is no ρ ("3C1) in font cmmi12!
+File: figure/chapter3/pitch-spring.png Graphic file (type bmp)
+<figure/chapter3/pitch-spring.png>
+File: figure/chapter3/oscillating-spring.png Graphic file (type bmp)
+<figure/chapter3/oscillating-spring.png>
+
+Overfull \hbox (5.25536pt too wide) in paragraph at lines 373--375
+\TU/STSong(0)/m/n/12.045 考 虑 端 部 约 束 与 装 配 预 压 的 影 响，|  后 续 载 荷 与 应 力 计 算 取 弹 簧 的 有 效 刚 度 $\OML/cmm/m/it/12.045 P[] \OT1/cmr/m/n/12.045 = 22 []$\TU/STSong(0)/m/n/12.045 。| 
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1312,11 +1345,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [11]
-File: figure/chapter2/H-star-VS-Rein.png Graphic file (type bmp)
-<figure/chapter2/H-star-VS-Rein.png>
-File: figure/chapter2/Rel-VS-Rein.png Graphic file (type bmp)
-<figure/chapter2/Rel-VS-Rein.png>
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1324,7 +1352,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
-[12]
+[12]) (./chapters/chapter3/part2-4in1-scraper-performance.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1333,9 +1361,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [13]
-File: figure/chapter2/phis-VS-Rein.png Graphic file (type bmp)
-<figure/chapter2/phis-VS-Rein.png>
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1344,6 +1369,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [14]
+File: figure/chapter3/scraper-test-rig.png Graphic file (type bmp)
+<figure/chapter3/scraper-test-rig.png>
+File: figure/chapter3/scapter-measurement-mechanism.png Graphic file (type bmp)
+<figure/chapter3/scapter-measurement-mechanism.png>
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1351,24 +1381,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
-[15]) (./chapters/chapter2/part2-full-well-model.tex
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 7.
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 7.
-File: figure/chapter2/iron-washing-test-rig.png Graphic file (type bmp)
-<figure/chapter2/iron-washing-test-rig.png>
-File: figure/chapter2/iron-bed-7dot85mperh.png Graphic file (type bmp)
-<figure/chapter2/iron-bed-7dot85mperh.png>
-File: figure/chapter2/iron-bed-10dot00mperh.png Graphic file (type bmp)
-<figure/chapter2/iron-bed-10dot00mperh.png>
-File: figure/chapter2/iron-bed-11dot70mperh.png Graphic file (type bmp)
-<figure/chapter2/iron-bed-11dot70mperh.png>
-
-Overfull \hbox (4.50652pt too wide) in paragraph at lines 30--40
- [][][][][][] 
- []
-
+[15]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1377,21 +1390,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [16]
-File: figure/chapter2/iron-bed-15dot70mperh.png Graphic file (type bmp)
-<figure/chapter2/iron-bed-15dot70mperh.png>
-File: figure/chapter2/iron-bed-15dot83mperh.png Graphic file (type bmp)
-<figure/chapter2/iron-bed-15dot83mperh.png>
-File: figure/chapter2/iron-bed-17dot44mperh.png Graphic file (type bmp)
-<figure/chapter2/iron-bed-17dot44mperh.png>
+File: figure/chapter3/scale-1.jpg Graphic file (type bmp)
+<figure/chapter3/scale-1.jpg>
+File: figure/chapter3/scale-4.jpg Graphic file (type bmp)
+<figure/chapter3/scale-4.jpg>
+File: figure/chapter3/scale-3.jpg Graphic file (type bmp)
+<figure/chapter3/scale-3.jpg>
+File: figure/chapter3/scale-5.jpg Graphic file (type bmp)
+<figure/chapter3/scale-5.jpg>
 
-Overfull \hbox (4.50652pt too wide) in paragraph at lines 52--62
- [][][][][][] 
- []
-
-File: figure/chapter2/video-clip-theta-le-72-degree.png Graphic file (type bmp)
-<figure/chapter2/video-clip-theta-le-72-degree.png>
-File: figure/chapter2/extraction-of-pack-area-theta-le-72-degree.png Graphic file (type bmp)
-<figure/chapter2/extraction-of-pack-area-theta-le-72-degree.png>
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1400,6 +1407,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [17]
+File: figure/chapter3/scraper-1.jpg Graphic file (type bmp)
+<figure/chapter3/scraper-1.jpg>
+File: figure/chapter3/scraper-4.jpg Graphic file (type bmp)
+<figure/chapter3/scraper-4.jpg>
+File: figure/chapter3/scraper-3.jpg Graphic file (type bmp)
+<figure/chapter3/scraper-3.jpg>
+File: figure/chapter3/scraper-5.jpg Graphic file (type bmp)
+<figure/chapter3/scraper-5.jpg>
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1408,9 +1424,38 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [18]
-File: figure/chapter2/bed-position-VS-flow-rate-inclined-section.png Graphic file (type bmp)
-<figure/chapter2/bed-position-VS-flow-rate-inclined-section.png>
+./chapters/chapter3/part2-4in1-scraper-performance.tex:110: Unable to load picture or PDF file 'figure/chapter3/scatch-depth-sping-comprassion.pdf'.
+<to be read again> 
+                   }
+l.110 ...pter3/scatch-depth-sping-comprassion.pdf}
+                                                  
+The requested image couldn't be read because
+it was not a recognized image format.
 
+
+./chapters/chapter3/part2-4in1-scraper-performance.tex:110: Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.110 ...pter3/scatch-depth-sping-comprassion.pdf}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+File: figure/chapter3/scatch-depth-sping-comprassion.pdf Graphic file (type pdf)
+<use figure/chapter3/scatch-depth-sping-comprassion.pdf>
+./chapters/chapter3/part2-4in1-scraper-performance.tex:110: Unable to load picture or PDF file 'figure/chapter3/scatch-depth-sping-comprassion.pdf'.
+<to be read again> 
+                   \GPT@clipend 
+l.110 ...pter3/scatch-depth-sping-comprassion.pdf}
+                                                  
+The requested image couldn't be read because
+it was not a recognized image format.
+
+) (./chapters/bib.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1418,32 +1463,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
-[19]
-Overfull \hbox (22.62273pt too wide) in paragraph at lines 123--133
- [][] 
- []
-
-)
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.45398pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.45398pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
-
-[20]
-第三章
-
-LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <18.06749> not available
-(Font)              size <17.28> substituted on input line 116.
-
-
-LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <15.05624> not available
-(Font)              size <14.4> substituted on input line 116.
-
-(./chapters/bib.tex [21
-
-] [22
+[19] [20
 
 
 ])
@@ -1454,7 +1474,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
-[23] (/Users/yaobenchun/Documents/GitHub/cleaning-tools/.texpadtmp/main.aux)
+[21] (/Users/yaobenchun/Documents/GitHub/cleaning-tools/.texpadtmp/main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
@@ -1465,15 +1485,15 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.78749pt have occurred.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: DC0FC49A2BF7836EA1E3C9CF3C664F71;2428.
+(rerunfilecheck)             Checksum: 02B9D62F9A098FBF24B523B5B2773F38;2702.
  ) 
 Here is how much of TeX's memory you used:
- 35342 strings out of 468174
- 816777 string characters out of 5433150
- 1186846 words of memory out of 5000000
- 63478 multiletter control sequences out of 15000+600000
+ 35361 strings out of 468174
+ 818836 string characters out of 5433150
+ 1185943 words of memory out of 5000000
+ 63494 multiletter control sequences out of 15000+600000
  637116 words of font info for 111 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 93i,12n,117p,1186b,1103s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,16n,117p,1186b,1155s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on /Users/yaobenchun/Documents/GitHub/cleaning-tools/.texpadtmp/main.pdf (25 pages).
+Output written on /Users/yaobenchun/Documents/GitHub/cleaning-tools/.texpadtmp/main.pdf (23 pages).

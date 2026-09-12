@@ -21,18 +21,18 @@
 \label{tab:zkg_params}
 \begin{tabular}{cccccccccc} % 10列：型号、总长、水眼、套管磅级PPF、扶正体外径、刮刀外径范围、本体外径、接头扣、抗拉/抗扭强度
 \toprule
-规格 & \begin{tabular}[c]{@{}c@{}}总长\\ (mm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}水眼\\ (mm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}套管磅级\\ PPF\end{tabular} & \begin{tabular}[c]{@{}c@{}}扶正体\\ 外径\\ (mm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}刮刀外径\\ (mm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}本体外径\\ (mm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}接头扣\\ (API)\end{tabular}& \begin{tabular}[c]{@{}c@{}}抗拉\\ (kN)\end{tabular} & \begin{tabular}[c]{@{}c@{}}抗扭\\ ($\mathrm{kN\cdot m}$)\end{tabular} \\
+规格 & \begin{tabular}[c]{@{}c@{}}总长\\ (mm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}水眼\\ (mm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}套管磅级\\ PPF\end{tabular} & \begin{tabular}[c]{@{}c@{}}扶正体\\ 外径\\ (mm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}刮刀外径\\ (mm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}本体外径\\ (mm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}接头扣\\ (API)\end{tabular}& \begin{tabular}[c]{@{}c@{}}抗拉\\ (T)\end{tabular} & \begin{tabular}[c]{@{}c@{}}抗扭\\ ($\mathrm{kN\cdot m}$)\end{tabular} \\
 \midrule
-\multirow{4}{*}{7\inch} & \multirow{4}{*}{6500} & \multirow{4}{*}{40} & 17$\sim$20 & 158.24 & 159.77$\sim$171.96 & \multirow{4}{*}{139.7} & \multirow{4}{*}{NC38} & \multirow{4}{*}{1600} & \multirow{4}{*}{20} \\
+\multirow{4}{*}{7\inch} & \multirow{4}{*}{6500} & \multirow{4}{*}{40} & 17$\sim$20 & 158.24 & 159.77$\sim$171.96 & \multirow{4}{*}{139.7} & \multirow{4}{*}{NC38} & \multirow{4}{*}{1.6} & \multirow{4}{*}{20} \\
 & & & 20$\sim$26 & 155.58 & 155.70$\sim$167.89 & & & & \\
 & & & 26$\sim$32 & 151.38 & 151.13$\sim$163.32 & & & & \\
 & & & 32$\sim$35 & 146.05 & 146.56$\sim$158.75 & & & & \\
 \midrule
-\multirow{3}{*}{9-5/8\inch} & \multirow{3}{*}{6492} & \multirow{3}{*}{57.15} & 29.3$\sim$32.3 & 222.25 & 224.28$\sim$245.62 & \multirow{3}{*}{203.2} & \multirow{3}{*}{NC50} & \multirow{3}{*}{4000} & \multirow{3}{*}{50} \\
+\multirow{3}{*}{9-5/8\inch} & \multirow{3}{*}{6492} & \multirow{3}{*}{57.15} & 29.3$\sim$32.3 & 222.25 & 224.28$\sim$245.62 & \multirow{3}{*}{203.2} & \multirow{3}{*}{NC50} & \multirow{3}{*}{4.0} & \multirow{3}{*}{50} \\
 & & & 36$\sim$53.5 & 213 & 212.09$\sim$233.68 & & & & \\
 & & & 47$\sim$59.4 & 209 & 209.04$\sim$230.38 & & & & \\
 \midrule
-\multirow{2}{*}{13-3/8\inch} & \multirow{2}{*}{6512} & \multirow{2}{*}{71.4} & 54.5$\sim$72 & 308 & 306.83$\sim$328.17 & \multirow{2}{*}{285.75} & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}6-5/8\\ REG\end{tabular}} & \multirow{2}{*}{7800} & \multirow{2}{*}{110} \\
+\multirow{2}{*}{13-3/8\inch} & \multirow{2}{*}{6512} & \multirow{2}{*}{71.4} & 54.5$\sim$72 & 308 & 306.83$\sim$328.17 & \multirow{2}{*}{285.75} & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}6-5/8\\ REG\end{tabular}} & \multirow{2}{*}{7.8} & \multirow{2}{*}{110} \\
 & & & 77$\sim$92 & 301.63 & 298.96$\sim$320.29 & & & & \\
 \bottomrule
 \end{tabular}
@@ -93,6 +93,9 @@
 	\label{fig:flexible_scratch_system_4_in_1}
 \end{figure}
 
+%图中文字太小！
+%蓄能弹簧和扭曲弹簧，统一一下
+
 \subsubsection{四合一工具辅助结构}
 
 四合一工具辅助结构如图\ref{fig:additional_unite_4_in_1}所示。扶正器套装于心轴外侧，轴向依靠上接头及下游组件的台阶端面限位，径向包覆螺纹连接部位。
@@ -116,7 +119,7 @@
         \label{fig:additional_unite_4_in_1}
 \end{figure}
 
-\subsection[设计计算与校核]{设计计算与校核\protect\footnote{合同条款：5.2.1.3井筒高效清洁关键技术配套工具设计——（1）“四合一”集成式井筒清洁工具抗拉$>=100T$，抗扭$>17kN\cdot m$}}
+\subsection[设计计算与校核]{设计计算与校核\protect\footnote{合同条款：5.2.1.3井筒高效清洁关键技术配套工具设计——（1）“四合一”集成式井筒清洁工具抗拉$>=100\mathrm{T}$，抗扭$>17\mathrm{kN}\cdot \mathrm{m}$}}
 
 本节校核涉及两种材料：心轴采用4330V-155\,KSI高强钢（最小屈服强度930\,MPa），端面键采用4145H钢（屈服强度827\,MPa）。工具的抗拉设计指标为$\geq1000$\,kN，抗扭设计指标为$>17\,\mathrm{kN\cdot m}$。
 
@@ -134,6 +137,7 @@
 $[\tau]$---螺纹牙的剪切强度，MPa；
 
 $k_z$---螺纹各圈的载荷不均系数，根据《机械设计手册》，取 $k_z = 0.56$；
+%哪一本手册
 
 $d_1$---螺纹底径，mm；
 
@@ -248,16 +252,16 @@ $[\tau]$——材料许用切应力，MPa。
 
 于是，工具的两个危险截面都满足抗扭强度要求。
 
-有限元计算结果如图\ref{fig:FEA_verification_shaft}所示。主要受力件为心轴，危险截面出现在变径处，最大拉应力为1379\,MPa，最大切应力为937\,MPa。该峰值由变径台阶处的几何突变引起，属局部应力集中效应；按净截面进行的解析校核（式\ref{eq:tensile_strength_circular_section}）其名义应力低于材料许用值（安全系数1.5），故整体强度满足设计要求。为降低局部应力集中、提高强度储备，建议在危险截面增加过渡圆角。
+有限元计算结果如图\ref{fig:FEA_verification_shaft}所示。主要受力件为心轴，危险截面出现在变径处，最大拉应力为1379\,MPa，最大切应力为937\,MPa。该峰值由变径台阶处的几何突变引起，属局部应力集中效应；按净截面进行的解析校核（式\ref{eq:tensile_strength_circular_section}）其名义应力低于材料许用值（安全系数1.5），故整体强度满足设计要求。%为降低局部应力集中、提高强度储备，建议在危险截面增加过渡圆角。
 
 \begin{figure}[htbp]
 	\centering
 	\subfloat[拉伸载荷下应力分布]{%
-	\includegraphics[width=0.7\textwidth]{figure/chapter3/inner-pipe-tensile-strength-simulation.png}
+	\includegraphics[width=0.5\textwidth]{figure/chapter3/inner-pipe-tensile-strength-simulation.png}
 	}
 	\vspace{1em}
 	\subfloat[扭转载荷下应力分布]{%
-	\includegraphics[width=0.7\textwidth]{figure/chapter3/inner-pipe-torsional-strength-simulation.png}
+	\includegraphics[width=0.5\textwidth]{figure/chapter3/inner-pipe-torsional-strength-simulation.png}
 	}
 	\caption{心轴零件受力有限元分析}
 	\label{fig:FEA_verification_shaft}
@@ -291,7 +295,7 @@ $[\tau]$——材料许用切应力，MPa。
 
 端面键能承受的最大扭矩：
 \begin{equation}
-    T_{\max} = \frac{n_2 \cdot [\tau] \cdot b \cdot h \cdot d}{n_1} \times 10^{-6} = \frac{2 \times 545.82 \times 30 \times 13.5 \times 90}{1.5} \times 10^{-6} = 26.53\,\text{kN}\cdot\text{m} > 17\,\text{kN}\cdot\text{m}
+    T_{\max} = \frac{n_2 \cdot [\tau] \cdot b \cdot h \cdot d}{n_1} \times 10^{-6} = \frac{2 \times 545.82 \times 30 \times 13.5 \times 90}{1.5} \times 10^{-6} = 26.53 > 17\,\text{kN}\cdot\text{m}
 \end{equation}
 
 于是，端面键满足抗扭强度要求。

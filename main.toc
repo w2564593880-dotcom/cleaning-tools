@@ -11,7 +11,16 @@
 \contentsline {chapter}{\numberline {第三章\hspace {.3em}}深度清洁工具设计}{21}{chapter.3}%
 \contentsline {section}{\numberline {3.1}“三合一”脉冲式冲刮刷集成式井筒清洁工具设计}{21}{section.3.1}%
 \contentsline {section}{\numberline {3.2}“四合一”通刮刷磁集成式井筒清洁工具设计}{21}{section.3.2}%
-\contentsline {section}{\numberline {3.3}大容量强磁吸附工具设计}{21}{section.3.3}%
-\contentsline {section}{\numberline {3.4}多功能过滤工具设计}{21}{section.3.4}%
-\contentsline {section}{\numberline {3.5}可变径刮管工具设计}{21}{section.3.5}%
-\contentsline {chapter}{参考文献}{22}{section.3.5}%
+\contentsline {subsection}{\numberline {3.2.1}工具总体结构设计}{21}{subsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.1.1}四合一工具主要功能部件}{22}{subsubsection.3.2.1.1}%
+\contentsline {subsubsection}{\numberline {3.2.1.2}四合一工具辅助结构}{24}{subsubsection.3.2.1.2}%
+\contentsline {subsection}{\numberline {3.2.2}设计计算与校核}{24}{subsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.2.1}主要受力件的螺纹强度校核}{24}{subsubsection.3.2.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2.2}主要受力件的零件强度校核}{25}{subsubsection.3.2.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.2.3}主要受力件的零件强度抗扭校核}{26}{subsubsection.3.2.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.2.4}弹簧的力学计算}{29}{subsubsection.3.2.2.4}%
+\contentsline {subsection}{\numberline {3.2.3}刮板刮削效果评价}{33}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}大容量强磁吸附工具设计}{38}{section.3.3}%
+\contentsline {section}{\numberline {3.4}多功能过滤工具设计}{38}{section.3.4}%
+\contentsline {section}{\numberline {3.5}可变径刮管工具设计}{38}{section.3.5}%
+\contentsline {chapter}{参考文献}{39}{section.3.5}%

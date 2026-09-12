@@ -1,11 +1,17 @@
 \contentsline {chapter}{\numberline {第一章\hspace {.3em}}砂砾、铁屑、结垢物、蜡等井筒内的运移及分布规律研究}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {第二章\hspace {.3em}}井筒内颗粒运移实验}{2}{chapter.2}%
-\contentsline {section}{\numberline {2.1}全井筒模型颗粒运移实验}{2}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}实验结果及讨论}{2}{subsection.2.1.1}%
-\contentsline {chapter}{\numberline {第三章\hspace {.3em}}深度清洁工具设计}{7}{chapter.3}%
-\contentsline {section}{\numberline {3.1}“三合一”脉冲式冲刮刷集成式井筒清洁工具设计}{7}{section.3.1}%
-\contentsline {section}{\numberline {3.2}“四合一”通刮刷磁集成式井筒清洁工具设计}{7}{section.3.2}%
-\contentsline {section}{\numberline {3.3}大容量强磁吸附工具设计}{7}{section.3.3}%
-\contentsline {section}{\numberline {3.4}多功能过滤工具设计}{7}{section.3.4}%
-\contentsline {section}{\numberline {3.5}可变径刮管工具设计}{7}{section.3.5}%
-\contentsline {chapter}{参考文献}{8}{section.3.5}%
+\contentsline {section}{\numberline {2.1}水平井筒冲砂实验}{3}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}实验装置及实验方法}{3}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}实验结果与讨论}{4}{subsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.2.1}清水冲砂}{4}{subsubsection.2.1.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.2.2}胍胶液冲砂}{9}{subsubsection.2.1.2.2}%
+\contentsline {subsubsection}{\numberline {2.1.2.3}砂床运移行为的控制因素分析及讨论}{10}{subsubsection.2.1.2.3}%
+\contentsline {section}{\numberline {2.2}全井筒模型颗粒运移实验}{16}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}实验结果及讨论}{16}{subsection.2.2.1}%
+\contentsline {chapter}{\numberline {第三章\hspace {.3em}}深度清洁工具设计}{21}{chapter.3}%
+\contentsline {section}{\numberline {3.1}“三合一”脉冲式冲刮刷集成式井筒清洁工具设计}{21}{section.3.1}%
+\contentsline {section}{\numberline {3.2}“四合一”通刮刷磁集成式井筒清洁工具设计}{21}{section.3.2}%
+\contentsline {section}{\numberline {3.3}大容量强磁吸附工具设计}{21}{section.3.3}%
+\contentsline {section}{\numberline {3.4}多功能过滤工具设计}{21}{section.3.4}%
+\contentsline {section}{\numberline {3.5}可变径刮管工具设计}{21}{section.3.5}%
+\contentsline {chapter}{参考文献}{22}{section.3.5}%

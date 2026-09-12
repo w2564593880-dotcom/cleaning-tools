@@ -1,0 +1,18 @@
+{
+    // 本仓库专用配方：本文档的参考文献是 chapters/bib.tex 里的手工 thebibliography，
+    // 没有 .bib 文件、正文也没有 \cite，因此全局配方中的 bibtex 步骤必然报
+    // "I found no \citation commands" / "I found no \bibdata command"（exit 2）。
+    // 这里仅覆盖 recipes，去掉 bibtex 步骤；xelatex 工具仍沿用用户全局设置。
+    // 将来若改为 refs.bib + \bibliography + \cite 工作流，删除本文件即可恢复全局配方。
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "xelatex ×3 (no bibtex)",
+            "tools": [
+                "xelatex",
+                "xelatex",
+                "xelatex"
+            ]
+        }
+    ],
+    "latex-workshop.latex.recipe.default": "first"
+}

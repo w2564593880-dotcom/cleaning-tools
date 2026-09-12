@@ -8,10 +8,10 @@
 \contentsline {subsubsection}{\numberline {3.2.1.2}四合一工具辅助结构}{5}{subsubsection.3.2.1.2}%
 \contentsline {subsection}{\numberline {3.2.2}设计计算与校核}{6}{subsection.3.2.2}%
 \contentsline {subsubsection}{\numberline {3.2.2.1}主要受力件的螺纹强度校核}{6}{subsubsection.3.2.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2.2}主要受力件的零件强度校核}{7}{subsubsection.3.2.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.2.3}主要受力件的零件强度抗扭校核}{8}{subsubsection.3.2.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.2.2}主要受力件的零件强度校核}{8}{subsubsection.3.2.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.2.3}主要受力件的零件强度抗扭校核}{9}{subsubsection.3.2.2.3}%
 \contentsline {subsubsection}{\numberline {3.2.2.4}弹簧的力学计算}{11}{subsubsection.3.2.2.4}%
-\contentsline {subsection}{\numberline {3.2.3}刮板刮削效果评价}{15}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.3}刮板刮削效果评价}{14}{subsection.3.2.3}%
 \contentsline {section}{\numberline {3.3}大容量强磁吸附工具设计}{19}{section.3.3}%
 \contentsline {section}{\numberline {3.4}多功能过滤工具设计}{19}{section.3.4}%
 \contentsline {section}{\numberline {3.5}可变径刮管工具设计}{19}{section.3.5}%

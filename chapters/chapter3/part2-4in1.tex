@@ -3,7 +3,7 @@
 
 工具的结构如图\ref{fig:structure_4_in_1}所示，采用长轴式布局，主要由上接头、心轴系统、连接套、刮刀模块、毛刷模块、磁吸清理模块及辅助定位机构组成。各功能单元沿轴向依次排布，通过模块化连接方式实现组合，使工具兼具结构简洁性与操作灵活性。心轴作为核心承载部件，承担轴向推力、旋转载荷及各功能模块产生的反作用力，并确保各模块在工作过程中保持同轴状态。刮刀模块与毛刷模块可根据实际作业需求选装组合，以适应不同井况的清洁要求。
 
-该工具的作业机制上是通过机械切削、挤压破碎与辅助清扫的协同作用实现套管内壁硬垢的高效清除。工作时，工具在外部驱动力作用下沿套管轴向运动，心轴将动力传递至各功能模块。刮刀模块中，安装于刀架上的齿形刮刀在弹簧预紧力作用下始终保持与管壁的贴合状态；当刀齿尖端接触硬垢层时，产生较大的局部接触应力，对垢层进行压入与剪切，促使硬垢内部萌生裂纹并逐步扩展，最终导致垢层破碎与剥离。采用弹簧浮动加载结构后，刀片可根据垢层厚度与管壁形态变化自动调节伸缩量，在维持稳定切削压力的同时避免刚性冲击对刀具造成的损伤。在刮削作业完成后，后方毛刷模块对破碎后残留的细小颗粒进行清扫，进一步提升管壁清洁度；磁吸模块则对清理过程中产生的铁磁性碎屑进行有效吸附，防止其再次沉积。此外，工具心轴上设置有蓄能弹簧部件，当刮刀遇到顽固坚硬杂物时可被压缩储能，通过障碍后释放能量以起到缓冲保护作用。通过刮削、刷洗与磁吸的多级协同，该工具能够实现对套管内壁硬垢的高效、彻底清除。
+该工具的作业机制上是通过机械切削、挤压破碎与辅助清扫的协同作用实现套管内壁硬垢的高效清除。工作时，工具在外部驱动力作用下沿套管轴向运动，心轴将动力传递至各功能模块。刮刀模块中，安装于刀架上的齿形刮刀在弹簧预紧力作用下始终保持与管壁的贴合状态；当刀齿尖端接触硬垢层时，产生较大的局部接触应力，对垢层进行压入与剪切，促使硬垢内部萌生裂纹并逐步扩展，最终导致垢层破碎与剥离。采用弹簧浮动加载结构后，刀片可根据垢层厚度与管壁形态变化自动调节伸缩量，在维持稳定切削压力的同时避免刚性冲击对刀具造成的损伤。在刮削作业完成后，后方毛刷模块对破碎后残留的细小颗粒进行清扫，进一步提升管壁清洁度；磁吸模块则对清理过程中产生的铁磁性碎屑进行有效吸附，防止其再次沉积。此外，工具心轴上设置有扭曲弹簧部件，当刮刀遇到顽固坚硬杂物时可被压缩储能，通过障碍后释放能量以起到缓冲保护作用。通过刮削、刷洗与磁吸的多级协同，该工具能够实现对套管内壁硬垢的高效、彻底清除。
 
 对应的工具规格分别为7\inch 、9-5/8\inch 和13-3/8\inch，共形成3种规格的工具设计图纸，主要技术参数见表\ref{tab:zkg_params}。
 
@@ -19,7 +19,11 @@
 \centering
 \caption{四合一工具技术参数}
 \label{tab:zkg_params}
-\begin{tabular}{cccccccccc} % 10列：型号、总长、水眼、套管磅级PPF、扶正体外径、刮刀外径范围、本体外径、接头扣、抗拉/抗扭强度
+\small % 列数较多，适当缩小字号，避免超出正文版心
+\setlength{\tabcolsep}{4pt} % 减小列间距
+\renewcommand{\arraystretch}{1.3} % 增加行高，使表格不拥挤
+% tabular* + \extracolsep{\fill}：弹性列间距自动伸展，使表格总宽度与正文版心宽度（\textwidth）一致
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}cccccccccc@{}}
 \toprule
 规格 & \begin{tabular}[c]{@{}c@{}}总长\\ (mm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}水眼\\ (mm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}套管磅级\\ PPF\end{tabular} & \begin{tabular}[c]{@{}c@{}}扶正体\\ 外径\\ (mm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}刮刀外径\\ (mm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}本体外径\\ (mm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}接头扣\\ (API)\end{tabular}& \begin{tabular}[c]{@{}c@{}}抗拉\\ (T)\end{tabular} & \begin{tabular}[c]{@{}c@{}}抗扭\\ ($\mathrm{kN\cdot m}$)\end{tabular} \\
 \midrule
@@ -35,7 +39,7 @@
 \multirow{2}{*}{13-3/8\inch} & \multirow{2}{*}{6512} & \multirow{2}{*}{71.4} & 54.5$\sim$72 & 308 & 306.83$\sim$328.17 & \multirow{2}{*}{285.75} & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}6-5/8\\ REG\end{tabular}} & \multirow{2}{*}{7.8} & \multirow{2}{*}{110} \\
 & & & 77$\sim$92 & 301.63 & 298.96$\sim$320.29 & & & & \\
 \bottomrule
-\end{tabular}
+\end{tabular*}
 \end{table}
 
 %对表中的数值进行说明：
@@ -54,31 +58,31 @@
    
    强磁部件（图\ref{fig:mechanism_mag_sub_4_in_1}）通过固定销分别与两侧的挡环配合。主要作用是回收清洁过程中产生的磁性碎物。部分金属腐蚀产物和铁屑无法通过循环液及时排出，容易重新沉积于套管内部。强磁模块利用磁场吸附作用，将铁磁性颗粒吸附在工具表面，并随工具一起带出，实现井筒净化。
    
-   蓄能弹簧（图\ref{fig:mechanism_torsional_spring_4_in_1}）左端通过定位止转键与左侧扶正器的卡槽插接配合。右端以同样的方式与中挡环配合。工具中的蓄能弹簧部件不仅起到弹性支撑作用，还具有缓冲和保护功能。正常工作时，弹簧使刮刀片和毛刷块保持一定径向压力，保证其持续接触套管内壁。当遇到较坚硬或突出的障碍物时，弹簧被压缩并储存能量，避免冲击载荷直接传递至工具连接部位；通过障碍后，弹簧释放能量，使刀片恢复工作位置，如图\ref{fig:flexible_scratch_system_4_in_1}所示。该结构提高了工具通过性和清洁稳定性，同时降低刀具损坏风险。
+   扭曲弹簧（图\ref{fig:mechanism_torsional_spring_4_in_1}）左端通过定位止转键与左侧扶正器的卡槽插接配合。右端以同样的方式与中挡环配合。工具中的扭曲弹簧部件不仅起到弹性支撑作用，还具有缓冲和保护功能。正常工作时，弹簧使刮刀片和毛刷块保持一定径向压力，保证其持续接触套管内壁。当遇到较坚硬或突出的障碍物时，弹簧被压缩并储存能量，避免冲击载荷直接传递至工具连接部位；通过障碍后，弹簧释放能量，使刀片恢复工作位置，如图\ref{fig:flexible_scratch_system_4_in_1}所示。该结构提高了工具通过性和清洁稳定性，同时降低刀具损坏风险。
         
 \begin{figure}[htbp]
     \centering
     % 子图 (a)
     \subfloat[刮刀部件结构]{%
-        \includegraphics[height=0.24\linewidth]{figure/chapter3/mechanism-scratcher-4-in-1.png}%
+        \includegraphics[height=4.3cm]{figure/chapter3/mechanism-scratcher-4-in-1.png}%
         \label{fig:mechanism_scratcher_4_in_1}
     }
     \hfill
     % 子图 (b)
     \subfloat[毛刷部件结构]{%
-        \includegraphics[height=0.24\linewidth]{figure/chapter3/mechanism-swiper-4-in-1.png}%
+        \includegraphics[height=4.3cm]{figure/chapter3/mechanism-swiper-4-in-1.png}%
         \label{fig:mechanism_swiper_4_in_1}%
     }
-    \vspace{1em}
+    \\[1.2em] % 真正换行，两行子图等高（四张图统一 height=4.3cm）
       % 子图 (c)
     \subfloat[强磁部件结构]{%
-        \includegraphics[height=0.24\linewidth]{figure/chapter3/mechanism-mag-sub-4-in-1.png}%
+        \includegraphics[height=4.3cm]{figure/chapter3/mechanism-mag-sub-4-in-1.png}%
         \label{fig:mechanism_mag_sub_4_in_1}%
     }
     \hfill
     % 子图 (d)
-    \subfloat[蓄能弹簧部件结构]{%
-        \includegraphics[height=0.24\linewidth]{figure/chapter3/mechanism-torsional-spring-4-in-1.png}%
+    \subfloat[扭曲弹簧部件结构]{%
+        \includegraphics[height=4.3cm]{figure/chapter3/mechanism-torsional-spring-4-in-1.png}%
       \label{fig:mechanism_torsional_spring_4_in_1}%
     }
     \caption{四合一工具主要功能单元}
@@ -87,14 +91,14 @@
       
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=.8\textwidth]{figure/chapter3/dynamic-system-torsional-spring-mechanism-4-in-1.png
+	\includegraphics[width=\textwidth]{figure/chapter3/dynamic-system-torsional-spring-mechanism-4-in-1.png
 }
 	\caption{弹性刮削动力系统结构}
 	\label{fig:flexible_scratch_system_4_in_1}
 \end{figure}
 
 %图中文字太小！
-%蓄能弹簧和扭曲弹簧，统一一下
+%术语已统一：该部件统一称“扭曲弹簧”（与图3.2(d)、图3.8(b)一致）
 
 \subsubsection{四合一工具辅助结构}
 
@@ -106,13 +110,13 @@
     \centering
     % 子图 (a)
     \subfloat[上接头结构]{%
-        \includegraphics[height=0.24\linewidth]{figure/chapter3/upper-sub-4-in-1.png}%
+        \includegraphics[height=7.7cm]{figure/chapter3/upper-sub-4-in-1.png}%
         \label{fig:upper_sub_4_in_1}
     }
-    \hfill
+    \\[1.2em] % 改为上下两行、每行一张，统一 height=7.7cm，两图等高且尽可能放大
     % 子图 (b)
     \subfloat[下接头结构]{%
-        \includegraphics[height=0.24\linewidth]{figure/chapter3/lowwer-sub-4-in-1.png}%
+        \includegraphics[height=7.7cm]{figure/chapter3/lowwer-sub-4-in-1.png}%
         \label{fig:lowwer_sub_4_in_1}%
     }
     \caption{四合一工具辅助结构介绍}
@@ -136,14 +140,13 @@
 
 $[\tau]$---螺纹牙的剪切强度，MPa；
 
-$k_z$---螺纹各圈的载荷不均系数，根据《机械设计手册》，取 $k_z = 0.56$；
-%哪一本手册
+$k_z$---螺纹各圈的载荷不均系数，根据《机械设计手册》螺纹连接（紧固件连接）部分中螺纹牙的剪切强度计算及各圈螺纹载荷分配的规定\cite{ref26}，取 $k_z = 0.56$；
 
 $d_1$---螺纹底径，mm；
 
 $b$---螺纹牙根宽度，取 $b=1.833\,\text{mm}$；
 
-$n$---安全系数，根据《机械设计手册》，取 $n = 2.5$；
+$n$---安全系数，按《机械设计手册》螺纹连接部分中螺纹牙强度校核的安全系数取值规定\cite{ref26}，取 $n = 2.5$；
 
 $z$---旋合圈数，取 $z=35$；
 
@@ -190,7 +193,7 @@ $n$——安全系数，取 $n = 1.5$。
 \begin{align}
     F_{\max} &= \frac{\pi \cdot (D^2 - d^2) \cdot \sigma_s}{4 \cdot n} \times 10^{-3} \nonumber \\
     &= \frac{3.14 \times (67^2 - 40^2) \times 930}{4 \times 1.5} \times 10^{-3} \nonumber \\
-    &= 1408.06 \, \text{kN} > 1000 \, \text{kN}
+    &= 1406.08 \, \text{kN} > 1000 \, \text{kN}
 \end{align}
 
 于是，危险截面1满足抗拉设计要求。
@@ -232,7 +235,7 @@ $d$——危险截面内径，mm；
 
 $\sigma_s$——材料屈服应力，MPa；
 
-$n$——材料许用切应力与许用拉应力之比，根据《机械设计手册》，取$n = 0.66$；
+$n$——材料许用切应力与许用拉应力之比，根据《机械设计手册》零件强度校核中许用应力折减系数的取值规定\cite{ref26}，取$n = 0.66$；
 
 $[\tau]$——材料许用切应力，MPa。
 
@@ -285,7 +288,7 @@ $[\tau]$——材料许用切应力，MPa。
     
     $h$ ——端面键高度，$\text{mm}$；
     
-    $n$ ——许用剪应力与许用拉应力系数，根据《机械设计手册》，取 $n=0.66$；
+    $n$ ——许用剪应力与许用拉应力系数，根据《机械设计手册》零件强度校核中许用应力折减系数的取值规定\cite{ref26}，取 $n=0.66$；
     
     $[\tau]$ ——材料许用切应力，$\text{MPa}$；
     
@@ -302,68 +305,56 @@ $[\tau]$——材料许用切应力，MPa。
 
 \subsubsection{弹簧的力学计算}
 
-四合一工具中设计了毛刷和刮刀的预紧弹簧以及蓄能弹簧，如图\ref{fig:spring}所示。
+四合一工具中设计了毛刷和刮刀的预紧弹簧以及扭曲弹簧，如图\ref{fig:spring}所示。
 \begin{figure}[htbp]
 	\centering
 	\subfloat[刮刀、毛刷预紧弹簧]{%
 	\includegraphics[width=0.2\textwidth]{figure/chapter3/pitch-spring.png}
 	}
 	%\vspace{1em}
-	\subfloat[蓄能弹簧]{%
+	\subfloat[扭曲弹簧]{%
 	\includegraphics[width=0.55\textwidth]{figure/chapter3/oscillating-spring.png}
 	}
 	\caption{四合一工具中的弹簧零件}
 	\label{fig:spring}
 \end{figure}
 
-毛刷和刮刀的预紧弹簧参数列举于表\ref{tab:spring_parameters_pitch}，蓄能弹簧的参数列举于表\ref{tab:spring_params_rebounce}。
+毛刷和刮刀的预紧弹簧参数列举于表\ref{tab:spring_parameters_pitch}，扭曲弹簧的参数列举于表\ref{tab:spring_params_rebounce}。
 \begin{table}[htbp]
     \centering
     \caption{毛刷与刮刀预紧弹簧技术参数表}
     \label{tab:spring_parameters_pitch}
     \renewcommand{\arraystretch}{1.3} % 增加行高，使表格更美观
-    \begin{tabularx}{0.8\textwidth}{Xc}
+    \begin{tabularx}{\textwidth}{XcXc} % 4 列：参数名/数值 两对并排，压缩表格高度
         \toprule % 顶线
-        \textbf{参数名称} & \textbf{数值} \\
+        \textbf{参数名称} & \textbf{数值} & \textbf{参数名称} & \textbf{数值} \\
         \midrule % 栏目线
-        弹簧外径 $D$ & 25\,mm \\
-        弹簧内径 $D_1$ & 19\,mm \\
-        弹簧中径 $D_2$ & 22\,mm \\
-        弹簧线径 $d$ & 3\,mm \\
-        弹簧剪切弹性模量 $G$ & 79\,GPa \\
-        弹簧自由高度 $H$ & 35\,mm \\
-        弹簧总圈数 $n_1$ & 5 \\
-        弹簧有效圈数 $n$ & 3 \\
-        最小工作高度 $H_1$ & 29\,mm \\
-        最大工作高度 $H_2$ & 23\,mm \\
-        许用切应力 $[\tau]$ & 710\,MPa \\
+        弹簧外径 $D$ & 25\,mm & 弹簧自由高度 $H$ & 35\,mm \\
+        弹簧内径 $D_1$ & 19\,mm & 弹簧总圈数 $n_1$ & 5 \\
+        弹簧中径 $D_2$ & 22\,mm & 弹簧有效圈数 $n$ & 3 \\
+        弹簧线径 $d$ & 3\,mm & 最小工作高度 $H_1$ & 29\,mm \\
+        弹簧剪切弹性模量 $G$ & 79\,GPa & 最大工作高度 $H_2$ & 23\,mm \\
+        许用切应力 $[\tau]$ & 710\,MPa & & \\
         \bottomrule % 底线
     \end{tabularx}
 \end{table}
 
 \begin{table}[htbp]
     \centering
-    \caption{蓄能弹簧技术参数表}
+    \caption{扭曲弹簧技术参数表}
     \label{tab:spring_params_rebounce}
-    \renewcommand{\arraystretch}{1.5} % 增加行高，使表格更美观
-    \begin{tabularx}{0.8\textwidth}{Xc}  
+    \renewcommand{\arraystretch}{1.3} % 与表3.2统一行高
+    \begin{tabularx}{\textwidth}{XcXc} % 4 列：参数名/数值 两对并排，压缩表格高度
         \toprule % 顶线
-        \textbf{参数名称} & \textbf{数值} \\
+        \textbf{参数名称} & \textbf{数值} & \textbf{参数名称} & \textbf{数值} \\
         \midrule % 栏目线
-        弹簧外径 $D$ & 120\,mm \\
-        弹簧内径 $D_1$ & 80\,mm \\
-        弹簧中径 $D_2$ & 100\,mm \\
-        弹簧截面宽度 $b$ & 20\,mm \\
-        弹簧截面高度 $h$ & 20\,mm \\
-        弹簧剪切弹性模量 $G$ & 79\,GPa \\
-        弹簧系数 $\gamma'$ & 5.57 \\
-        弹簧系数 $\beta'$ & 2.404 \\
-        弹簧自由高度 $H$ & 440\,mm \\
-        弹簧总圈数 $n_1$ & 11 \\
-        弹簧有效圈数 $n$ & 9 \\
-        最小工作高度 $H_1$ & 400\,mm \\
-        最大工作高度 $H_2$ & 390\,mm \\
-        许用切应力 $[\tau]$ & 710\,MPa \\
+        弹簧外径 $D$ & 120\,mm & 弹簧自由高度 $H$ & 440\,mm \\
+        弹簧内径 $D_1$ & 80\,mm & 弹簧总圈数 $n_1$ & 11 \\
+        弹簧中径 $D_2$ & 100\,mm & 弹簧有效圈数 $n$ & 9 \\
+        弹簧截面宽度 $b$ & 20\,mm & 最小工作高度 $H_1$ & 400\,mm \\
+        弹簧截面高度 $h$ & 20\,mm & 最大工作高度 $H_2$ & 390\,mm \\
+        弹簧剪切弹性模量 $G$ & 79\,GPa & 许用切应力 $[\tau]$ & 710\,MPa \\
+        弹簧系数 $\gamma'$ & 5.57 & 弹簧系数 $\beta'$ & 2.404 \\
         \bottomrule % 底线
     \end{tabularx}
 \end{table}
@@ -375,7 +366,7 @@ $[\tau]$——材料许用切应力，MPa。
 \begin{equation}
     P' = \frac{G \cdot d^4}{8 \cdot D_2^3 \cdot n} = \frac{79000 \times 3^4}{8 \times 22^3 \times 3} = 25 \, \text{N/mm}
 \end{equation}
-考虑端部约束与装配预压的影响，后续载荷与应力计算取弹簧的有效刚度 $P' = 22 \, \text{N/mm}$。
+考虑端部约束与装配预压的影响，后续载荷与应力计算均取弹簧的有效刚度，即 $P' = 22 \, \text{N/mm}$。
 
 弹簧最小工作载荷$P_1$
 \begin{equation}
@@ -404,9 +395,9 @@ $[\tau]$——材料许用切应力，MPa。
 
 于是，刮刀与毛刷强度满足要求。
 
-蓄能弹簧的力学计算如下。
+扭曲弹簧的力学计算如下。
 
-蓄能弹簧刚度$P'$
+扭曲弹簧刚度$P'$
 \begin{equation}
     P' = \frac{G \cdot b^2 \cdot h^2}{\gamma' \cdot D_2^3 \cdot n} = \frac{79000 \times 20^2 \times 20^2}{5.57 \times 100^3 \times 9} = 252 \, \text{N/mm}
 \end{equation}
@@ -436,7 +427,7 @@ $[\tau]$——材料许用切应力，MPa。
     \tau_{\max} = \frac{\beta' \cdot K \cdot D_2}{b \cdot h \cdot \sqrt{b \cdot h}} \cdot P_n = \frac{2.404 \times 1.31 \times 100}{20 \times 20 \times \sqrt{20 \times 20}} \times 12600 = 496 \, \text{MPa} < 710 \, \text{MPa}
 \end{equation}
 
-于是，蓄能弹簧的强度满足设计要求。
+于是，扭曲弹簧的强度满足设计要求。
 
 
 
@@ -447,15 +438,15 @@ $[\tau]$——材料许用切应力，MPa。
     \centering
     \caption{受力件数据统计表}
     \label{tab:force_data_statistics}
-    \renewcommand{\arraystretch}{1.4} % 增加行高
+    \renewcommand{\arraystretch}{1.3} % 与表3.1~3.3统一行高
     \begin{tabularx}{0.8\textwidth}{Xc}  % 关键：使用 tabularx + \textwidth + X列
         \toprule
-        受力类型 & 数据\\
+        \textbf{受力类型} & \textbf{数据}\\
         \midrule
         NC38 最大拉力 & $3000\,\text{kN}$ \\
         材料屈服强度 $\sigma_s$ & $930\,\text{MPa}$ \\
         螺纹最大剪切力 $F_{\max1}$ & $2851.13\,\text{kN}$ \\
-        心轴最大拉力 $F_{\max2}$ & $1408.06\,\text{kN}$ \\
+        心轴最大拉力 $F_{\max2}$ & $1406.08\,\text{kN}$ \\
         NC38 最大扭矩 & $44.3\,\text{kN}\cdot\text{m}$ \\
         材料许用切应力 $[\tau]$ & $613.8\,\text{MPa}$ \\
         心轴最大扭力 $T_{\max1}$ & $31.63\,\text{kN}\cdot\text{m}$ \\

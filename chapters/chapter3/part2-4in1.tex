@@ -110,13 +110,13 @@
     \centering
     % 子图 (a)
     \subfloat[上接头结构]{%
-        \includegraphics[height=7.7cm]{figure/chapter3/upper-sub-4-in-1.png}%
+        \includegraphics[width=0.48\textwidth]{figure/chapter3/upper-sub-4-in-1.png}%
         \label{fig:upper_sub_4_in_1}
     }
-    \\[1.2em] % 改为上下两行、每行一张，统一 height=7.7cm，两图等高且尽可能放大
+    \hfill % 两图横向并排：各占半栏宽（0.48\textwidth×2 + \hfill = 一行放得下）
     % 子图 (b)
     \subfloat[下接头结构]{%
-        \includegraphics[height=7.7cm]{figure/chapter3/lowwer-sub-4-in-1.png}%
+        \includegraphics[width=0.48\textwidth]{figure/chapter3/lowwer-sub-4-in-1.png}%
         \label{fig:lowwer_sub_4_in_1}%
     }
     \caption{四合一工具辅助结构介绍}

@@ -3,34 +3,34 @@
 \contentsline {subsection}{\numberline {1.1.1}EDEM理论基础}{1}{subsection.1.1.1}%
 \contentsline {section}{\numberline {1.2}井筒内铁屑运移及分布规律}{1}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}压井液粘度对铁屑运移规律的影响}{3}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}压井液流速对铁屑运移规律的影响}{6}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.2}压井液流速对铁屑运移规律的影响}{5}{subsection.1.2.2}%
 \contentsline {subsection}{\numberline {1.2.3}井斜对铁屑运移规律的影响}{7}{subsection.1.2.3}%
 \contentsline {section}{\numberline {1.3}井筒内结垢物运移及分布规律研究}{10}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}压井液流速对钡锶垢运移规律的影响}{10}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.1}压井液流速对钡锶垢运移规律的影响}{11}{subsection.1.3.1}%
 \contentsline {subsection}{\numberline {1.3.2}井斜对钡锶垢运移规律的影响}{12}{subsection.1.3.2}%
 \contentsline {section}{\numberline {1.4}井筒内蜡运移及分布规律研究}{13}{section.1.4}%
 \contentsline {subsection}{\numberline {1.4.1}压井液流速对蜡垢运移规律的影响}{14}{subsection.1.4.1}%
-\contentsline {subsection}{\numberline {1.4.2}井斜对蜡垢颗粒运移规律的影响}{15}{subsection.1.4.2}%
-\contentsline {chapter}{\numberline {第二章\hspace {.3em}}井筒内颗粒运移实验}{18}{chapter.2}%
-\contentsline {chapter}{\numberline {第三章\hspace {.3em}}深度清洁工具设计}{19}{chapter.3}%
-\contentsline {section}{\numberline {3.1}“三合一”脉冲式冲刮刷集成式井筒清洁工具设计}{19}{section.3.1}%
-\contentsline {section}{\numberline {3.2}“四合一”通刮刷磁集成式井筒清洁工具设计}{19}{section.3.2}%
-\contentsline {section}{\numberline {3.3}大容量强磁吸附工具设计}{19}{section.3.3}%
-\contentsline {section}{\numberline {3.4}多功能过滤工具设计}{19}{section.3.4}%
-\contentsline {section}{\numberline {3.5}可变径刮管工具设计}{19}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}工具总体结构设计}{19}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}可变径刮管工具设计计算与校核}{20}{subsection.3.5.2}%
-\contentsline {subsubsection}{\numberline {3.5.2.1}主要受力件的螺纹强度校核}{20}{subsubsection.3.5.2.1}%
-\contentsline {subsubsection}{\numberline {3.5.2.2}主要受力件的零件抗拉强度校核}{21}{subsubsection.3.5.2.2}%
-\contentsline {subsubsection}{\numberline {3.5.2.3}主要受力件的零件抗扭强度校核}{21}{subsubsection.3.5.2.3}%
-\contentsline {subsubsection}{\numberline {3.5.2.4}球座剪钉剪切力与节流泵压计算}{22}{subsubsection.3.5.2.4}%
-\contentsline {subsubsection}{\numberline {3.5.2.5}节流喷嘴的尺寸和节流压力关系}{23}{subsubsection.3.5.2.5}%
-\contentsline {subsubsection}{\numberline {3.5.2.6}连杆销抗剪切强度计算}{23}{subsubsection.3.5.2.6}%
-\contentsline {subsubsection}{\numberline {3.5.2.7}主要受力件仿真校核}{24}{subsubsection.3.5.2.7}%
-\contentsline {subsection}{\numberline {3.5.3}拆装步骤}{24}{subsection.3.5.3}%
-\contentsline {subsection}{\numberline {3.5.4}操作方式}{25}{subsection.3.5.4}%
-\contentsline {subsubsection}{\numberline {3.5.4.1}下井前准备}{25}{subsubsection.3.5.4.1}%
-\contentsline {subsubsection}{\numberline {3.5.4.2}操作}{28}{subsubsection.3.5.4.2}%
-\contentsline {subsubsection}{\numberline {3.5.4.3}注意事项}{29}{subsubsection.3.5.4.3}%
-\contentsline {subsection}{\numberline {3.5.5}维护与保养}{29}{subsection.3.5.5}%
+\contentsline {subsection}{\numberline {1.4.2}井斜对蜡垢颗粒运移规律的影响}{14}{subsection.1.4.2}%
+\contentsline {chapter}{\numberline {第二章\hspace {.3em}}井筒内颗粒运移实验}{17}{chapter.2}%
+\contentsline {chapter}{\numberline {第三章\hspace {.3em}}深度清洁工具设计}{18}{chapter.3}%
+\contentsline {section}{\numberline {3.1}“三合一”脉冲式冲刮刷集成式井筒清洁工具设计}{18}{section.3.1}%
+\contentsline {section}{\numberline {3.2}“四合一”通刮刷磁集成式井筒清洁工具设计}{18}{section.3.2}%
+\contentsline {section}{\numberline {3.3}大容量强磁吸附工具设计}{18}{section.3.3}%
+\contentsline {section}{\numberline {3.4}多功能过滤工具设计}{18}{section.3.4}%
+\contentsline {section}{\numberline {3.5}可变径刮管工具设计}{18}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}工具总体结构设计}{18}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}可变径刮管工具设计计算与校核}{19}{subsection.3.5.2}%
+\contentsline {subsubsection}{\numberline {3.5.2.1}主要受力件的螺纹强度校核}{19}{subsubsection.3.5.2.1}%
+\contentsline {subsubsection}{\numberline {3.5.2.2}主要受力件的零件抗拉强度校核}{20}{subsubsection.3.5.2.2}%
+\contentsline {subsubsection}{\numberline {3.5.2.3}主要受力件的零件抗扭强度校核}{20}{subsubsection.3.5.2.3}%
+\contentsline {subsubsection}{\numberline {3.5.2.4}球座剪钉剪切力与节流泵压计算}{21}{subsubsection.3.5.2.4}%
+\contentsline {subsubsection}{\numberline {3.5.2.5}节流喷嘴的尺寸和节流压力关系}{22}{subsubsection.3.5.2.5}%
+\contentsline {subsubsection}{\numberline {3.5.2.6}连杆销抗剪切强度计算}{22}{subsubsection.3.5.2.6}%
+\contentsline {subsubsection}{\numberline {3.5.2.7}主要受力件仿真校核}{23}{subsubsection.3.5.2.7}%
+\contentsline {subsection}{\numberline {3.5.3}拆装步骤}{23}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}操作方式}{26}{subsection.3.5.4}%
+\contentsline {subsubsection}{\numberline {3.5.4.1}下井前准备}{26}{subsubsection.3.5.4.1}%
+\contentsline {subsubsection}{\numberline {3.5.4.2}操作}{26}{subsubsection.3.5.4.2}%
+\contentsline {subsubsection}{\numberline {3.5.4.3}注意事项}{28}{subsubsection.3.5.4.3}%
+\contentsline {subsection}{\numberline {3.5.5}维护与保养}{28}{subsection.3.5.5}%
 \contentsline {chapter}{参考文献}{30}{subsection.3.5.5}%

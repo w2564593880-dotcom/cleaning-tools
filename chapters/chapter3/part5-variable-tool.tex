@@ -59,13 +59,14 @@ $\sigma_s$---材料最小屈服强度，取 1068 MPa；
 $n$---安全系数，根据《机械设计手册》螺纹连接部分中螺纹牙强度校核的安全系数取值规定\cite{ref26}，取 $n = 2.5$。
 
 将 $\mathrm{Tr}\,65 \times 4-8e$ 螺纹的相关参数代入，计算得：
-\begin{align}
+\begin{equation}
+    \begin{aligned}
     F_{\max} &= [\tau] \cdot k_z \cdot \pi \cdot d_1 \cdot b \cdot z \cdot 10^{-3} \\
              &= 427.2 \times 0.56 \times 3.14 \times 62 \times 2.6 \times 23.5 \times 10^{-3} \\
              &= 2845.65\,\mathrm{kN} \\
              &> 1000\,\mathrm{kN}
-\end{align}
-
+    \end{aligned}
+\end{equation}
 计算结果表明，螺纹牙的剪切强度满足设计要求。
 
 
@@ -88,19 +89,23 @@ $\sigma_s$---材料最小屈服强度，取 1068 MPa；
 $n$---安全系数，取 $n = 1.5$。
 
 （1）刮刀芯轴危险截面最大抗拉计算
-\begin{align}
+\begin{equation}
+    \begin{aligned}
     F_{\max} &= \frac{\pi \cdot (D^2 - d^2) \cdot \sigma_s}{4 \cdot n} \times 10^{-3}
              = \frac{3.14 \times (62^2 - 38.1^2) \times 1068}{4 \times 1.5} \times 10^{-3} \\
              &= 1337.15\,\mathrm{kN} > 1000\,\mathrm{kN}
-\end{align}
+    \end{aligned}
+\end{equation}
 满足设计要求。
 
 （2）芯轴连接筒危险截面最大抗拉计算
-\begin{align}
+\begin{equation}
+    \begin{aligned}
     F_{\max} &= \frac{\pi \cdot (D^2 - d^2) \cdot \sigma_s}{4 \cdot n} \times 10^{-3}
              = \frac{3.14 \times (80^2 - 66^2) \times 1068}{4 \times 1.5} \times 10^{-3} \\
              &= 1142.43\,\mathrm{kN} > 1000\,\mathrm{kN}
-\end{align}
+    \end{aligned}
+\end{equation}
 满足设计要求。
 
 
@@ -109,11 +114,11 @@ $n$---安全系数，取 $n = 1.5$。
 9-5/8\inch 可变径刮壁器的主要受力件为刮刀芯轴和芯轴连接筒，其抗扭危险截面与抗拉校核相同，分别位于刮刀芯轴小螺纹 $\mathrm{Tr}\,65 \times 4-8e$ 螺纹根部和芯轴连接筒内螺纹 $\mathrm{Tr}\,65 \times 4-8H$ 螺纹根部。
 
 抗扭强度按下式计算：
-\begin{align*}
+\begin{align}
     \tau &= \frac{16 \cdot D \cdot T_{\max}}{\pi \cdot (D^4 - d^4)} \times 10^{6} \\
     T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6} \\
     [\tau] &= n \cdot \sigma_s = 0.66 \times 1068\,\mathrm{MPa} = 704.88\,\mathrm{MPa}
-\end{align*}
+\end{align}
 式中，$T_{\max}$---工具最大扭矩，$\mathrm{kN}\cdot\mathrm{m}$；
 
 $\tau$---危险截面的切应力，MPa；
@@ -129,19 +134,23 @@ $d$---危险截面内径，mm；
 $n$---许用切应力与许用拉应力之比，根据《机械设计手册》零件强度校核中许用应力折减系数的取值规定\cite{ref26}，取 $n = 0.66$。
 
 （1）刮刀芯轴危险截面最大抗扭计算
-\begin{align}
+\begin{equation}
+    \begin{aligned}
     T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6}
              = \frac{704.88 \times 3.14 \times (62^4 - 38.1^4)}{16 \times 62} \times 10^{-6} \\
              &= 28.27\,\mathrm{kN}\cdot\mathrm{m} > 17\,\mathrm{kN}\cdot\mathrm{m}
-\end{align}
+\end{aligned}
+\end{equation}
 满足设计要求。
 
 （2）芯轴连接筒危险截面最大抗扭计算
-\begin{align}
+\begin{equation}
+    \begin{aligned}
     T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6}
              = \frac{704.88 \times 3.14 \times (80^4 - 66^4)}{16 \times 80} \times 10^{-6} \\
              &= 38.02\,\mathrm{kN}\cdot\mathrm{m} > 17\,\mathrm{kN}\cdot\mathrm{m}
-\end{align}
+\end{aligned}
+\end{equation}
 满足设计要求。
 
 
@@ -251,14 +260,14 @@ $d$---连杆销的最小直径，mm。
 
 (1) 工具冲洗干净后，将上、下接头的 M16 螺钉拆卸，取出内部的防掉钢珠；取出下接头喷嘴；如下图箭头所示位置。
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
 	\includegraphics[width=1.\textwidth]{figure/chapter3/part5/unsetup/ball.png}
 \end{figure}
 
 (2) 拆卸上、下接头的防松螺钉后，分别反转拆卸上、下接头；如下图所示位置。
 
-\begin{figure}[h!]
+\begin{figure}[H]
 \centering
 	\includegraphics[width=1.\textwidth]{figure/chapter3/part5/unsetup/unsetup-satefy-screw.png}
 	\vspace{1em}
@@ -267,7 +276,7 @@ $d$---连杆销的最小直径，mm。
 
 (3) 用起子、扳手取下连杆座、连杆、刮刀等之间的铰链销、防掉螺钉等标准件后，依次拆卸旋转连杆座、连杆、刮刀等零件；如下图所示。
 
-\begin{figure}[h!]
+\begin{figure}[H]
 \centering
 	\includegraphics[width=1.\textwidth]{figure/chapter3/part5/unsetup/unsetup-fasten-parts.png}
 \end{figure}
@@ -276,14 +285,14 @@ $d$---连杆销的最小直径，mm。
 
 (5) 拆卸两头的旋转连杆座。
 
-\begin{figure}[h!]
+\begin{figure}[H]
 \centering
 	\includegraphics[width=1.\textwidth]{figure/chapter3/part5/unsetup/rotary-lever-set.png}
 \end{figure}
 
 (6) 拆卸两头的连杆、刮刀等零件。
 
-\begin{figure}[h!]
+\begin{figure}[H]
 \centering
 	\includegraphics[width=1.\textwidth]{figure/chapter3/part5/unsetup/end-links.png}
 	\includegraphics[width=1.\textwidth]{figure/chapter3/part5/unsetup/unsetup-scraper.png}
@@ -292,7 +301,7 @@ $d$---连杆销的最小直径，mm。
 
 (7) 分别反转拆卸两头的芯轴，从下部取出激活球座和钢球，如下图所示。
 
-\begin{figure}[h!]
+\begin{figure}[H]
 \centering
 	\includegraphics[width=1.\textwidth]{figure/chapter3/part5/unsetup/unsetup-inner-pipe.png}
 	\includegraphics[width=1.\textwidth]{figure/chapter3/part5/unsetup/unsetup-ball-and-seat.png}
@@ -300,7 +309,7 @@ $d$---连杆销的最小直径，mm。
 
 (8) 夹紧中间外筒方向旋转复位总成，分别取出上、下两头的复位总成，然后依次对复位总成进行拆解，如下图所示。
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
 	\includegraphics[width=1.\textwidth]{figure/chapter3/part5/unsetup/reseting-assembly.png}
 	\includegraphics[width=1.\textwidth]{figure/chapter3/part5/unsetup/resetting-assembly-unsetup.png}
@@ -310,21 +319,21 @@ $d$---连杆销的最小直径，mm。
 
 (10) 拆卸中间筒体和中间芯轴的钢球堵和限位钢球。
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
 	\includegraphics[width=1.\textwidth]{figure/chapter3/part5/unsetup/middle-body-inner-pipe-ball.png}
 \end{figure}
 
 (11) 拆卸中间芯轴，固定中间筒体后从任意一头抽出中间芯轴即可。
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
 	\includegraphics[width=1.\textwidth]{figure/chapter3/part5/unsetup/middle-inner-pipe-unsetup.png}
 \end{figure}
 
 (12) 按下图所示方向，分别从两头拆卸活塞、工作弹簧、活塞限位套等零件。
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
 	\includegraphics[width=1.\textwidth]{figure/chapter3/part5/unsetup/piston-spring-limiter.png}
 \end{figure}

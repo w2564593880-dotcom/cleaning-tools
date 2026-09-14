@@ -61,60 +61,8 @@
 
     \begin{figure}[htbp]
     \centering
-    % 设置图片宽度为 8cm
-    \resizebox{8cm}{!}{%
-        \begin{tikzpicture}[
-            line width=1pt,
-            >=Stealth
-        ]
-            % --- 定义参数 ---
-            \def\Rone{2.0}      % 颗粒1半径
-            \def\Rtwo{1.4}      % 颗粒2半径
-            \def\angleOverlap{35} % 重叠角度控制
-            
-            % --- 计算坐标 ---
-            % 颗粒1中心在原点 (0,0)
-            % 颗粒2中心位置：距离 = R1 + R2 - delta(这里取个大概值让圆相交)
-            % 为了演示效果，设两圆心距离为 2.6 (R1+R2=3.4, 重叠约0.8)
-            \coordinate (C1) at (0,0);
-            \coordinate (C2) at (30:2.6); 
-            
-            % 计算交点附近的法线方向 (用于画重叠区域的弧线)
-            % 简单起见，我们直接在连心线上找一点画弧
-            \path (C1) -- (C2) coordinate[pos=0.7] (ContactPoint); 
-
-            % --- 绘制颗粒 (圆圈) ---
-            % 颗粒1 (黑色)
-            \draw[black, thick] (C1) circle (\Rone);
-            \node[right=2mm] at (C1) {颗粒1};
-            
-            % 颗粒2 (红色)
-            \draw[red, thick] (C2) circle (\Rtwo);
-            \node[below=2mm] at (C2) {颗粒2};
-
-            % --- 绘制半径 R ---
-            % R1 (左上方向)
-            \draw[<->, gray] (C1) -- ++(135:\Rone) node[midway, above left, black] {$R_1$};
-            % R2 (左上方向)
-            \draw[<->, gray] (C2) -- ++(135:\Rtwo) node[midway, above left, black] {$R_2$};
-
-            % --- 绘制力矢量 F (蓝色) ---
-            % F1 (左下方向)
-            \draw[->, blue, thick] (C1) -- ++(-135:1.2) node[midway, below left, black] {$F_1$};
-            % F2 (右上方向)
-            \draw[->, blue, thick] (C2) -- ++(45:0.8) node[midway, right, black] {$F_2$};
-
-            % --- 绘制重叠区域 δ ---
-            % 在接触点附近画一条紫色弧线表示重叠深度
-            % 这里的逻辑是画一段圆弧，颜色设为紫色
-            \draw[purple, very thick] 
-                ($(C1)!0.9!(C2)$) ++(120:0.3) arc (120:240:0.3);
-            
-            % 引出线和文字说明
-            \draw[gray, thin] ($(C1)!0.9!(C2) + (0,-0.2)$) -- ++(2,-1.5) node[right, text width=4cm, align=left] {重叠区域$\delta$};
-
-        \end{tikzpicture}%
-    }
+    % 双颗粒碰撞模型示意图：改用外部图片（原 TikZ 手绘图见 git 历史）
+    \includegraphics[width=12cm]{figure/kelipengzhuang.png}
     \caption{双颗粒碰撞模型示意图}
     \label{fig:particle_collision}
 \end{figure}

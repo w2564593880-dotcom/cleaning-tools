@@ -1,5 +1,8 @@
 \subsection{工具总体结构设计}
-可变径套管刮管器用于清除7\inch 、9-5/8\inch 套管内壁上的残余水泥，泥块、扎制中产生的毛刺，鳞片、管内防砂射孔时镶在管壁上的射孔弹，生产井套管上的铁锈，水垢，硬石蜡等影响正常施工作业的杂物的清洁工具。其结构如图\ref{fig:variable_scrapter_structure}所示，可变径套管刮削器由上接头、旋转连杆座、连杆、刮刀、芯轴、复位总成、工作活塞、工作弹簧、下接头、节流喷嘴、中间外筒、中间芯轴、激活球座、钢球以及标准件、密封件等零件组成。刮刀采用两组5瓣圆周错位排布，覆盖9-5/8\inch 套管内径圆周方向。其工作原理是：通过投球后，激活球座下行建立活塞腔与工具水眼流道，水眼内液压力通过推动工作活塞迫使工作弹簧上行，在连杆机构作用下刮刀张开，贴紧套管内壁；然后上提下放管柱即可实现刮刀对套管内壁的刮削清洁工作；工具的上下接头分别连接管柱，通过芯轴连接，可起到传递扭矩和提拉下放力，旋转连杆座可迫使整组刮刀绕工具自由旋转，在套管内壁变形或通过性不好时绕工具旋转错位通过。该工具的技术参数如表\ref{tab:ggq95}所示。
+
+GGQ95 型可变径套管刮管器用于通过 7\inch 套管后，清除 9-5/8\inch 套管内壁上的残余水泥、泥块、轧制过程中产生的毛刺与鳞片、管内防砂射孔时镶在管壁上的射孔弹、生产井套管上的铁锈与水垢以及硬石蜡等影响正常施工作业的杂物。其结构如图~\ref{fig:variable_scrapter_structure}所示，可变径套管刮削器由上接头、旋转连杆座、连杆、刮刀、芯轴、复位总成、工作活塞、工作弹簧、下接头、节流喷嘴、中间外筒、中间芯轴、激活球座、钢球以及标准件、密封件等零件组成。刮刀采用两组 5 瓣圆周错位排布，覆盖 9-5/8\inch 套管内径圆周 360° 方向。
+
+该工具的工作原理为：投球后激活球座下行，建立活塞腔与工具水眼流道，水眼内的液压力推动工作活塞并迫使工作弹簧上行，在连杆机构的作用下刮刀张开、贴紧套管内壁；随后上提、下放管柱即可实现刮刀对套管内壁的刮削清洁。工具的上下接头分别连接管柱，并通过芯轴连接，可传递扭矩和提拉、下放载荷；旋转连杆座可迫使整组刮刀绕工具自由旋转，当套管内壁变形或通过性较差时，刮刀可绕工具旋转错位通过。该工具的技术参数见表~\ref{tab:ggq95}。
 
 \begin{figure}[htbp]
 	\centering
@@ -10,170 +13,217 @@
 
 \begin{table}[htbp]
     \centering
-    \caption{可变径套管刮管工具技术参数}
+    \caption{GGQ95型可变径套管刮管器技术参数}
     \label{tab:ggq95}
     \renewcommand{\arraystretch}{1.2} % 适当增加行高，提升阅读体验
     \small % 调整整体字号，适应表格宽度
     \begin{tabular}{ccccccc}
         \toprule
-        型号 & \begin{tabular}{@{}c@{}}本体最大外径\\(mm)\end{tabular} & \begin{tabular}{@{}c@{}}刮刀收回最小外径\\(mm)\end{tabular} & \begin{tabular}{@{}c@{}}刮刀最大外径\\(mm)\end{tabular} & \begin{tabular}{@{}c@{}}水眼\\(mm)\end{tabular} & \begin{tabular}{@{}c@{}}总长\\(mm)\end{tabular} & \begin{tabular}{@{}c@{}}接头扣\\(API)\end{tabular} \\
+        型号 & \begin{tabular}[c]{@{}c@{}}本体最大外径\\(mm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}刮刀收回最小外径\\(mm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}刮刀最大外径\\(mm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}水眼\\(mm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}总长\\(mm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}接头扣\\(API)\end{tabular} \\
         \midrule
         GGQ95 & 140 & 136 & 229+ & 38.1 & 2965 & NC38 \\
         \bottomrule
     \end{tabular}
 \end{table}
 
-\subsection[可变径刮管工具设计计算与校核]{可变径刮管工具设计计算与校核\protect\footnote{合同条款：5.2.1.3井筒高校清洁关键技术配套工具设计——（3）多功能过滤工具：工作允许旋转$>=120\text{rpm}$，工具内通径$>=2.688\inch$，碎屑存储量$>=30\textrm{L}$}}
+
+\subsection[可变径刮管工具设计计算与校核]{可变径刮管工具设计计算与校核\protect\footnote{合同条款：5.2.1.3井筒高效清洁关键技术配套工具设计——（4）可变径刮管工具：抗拉$>=100\mathrm{T}$，抗扭$>17\,\mathrm{kN}\cdot\mathrm{m}$}}
+
+
 \subsubsection{主要受力件的螺纹强度校核}
-9-5/8\inch 可变径刮壁器的主要受力件为刮刀芯轴，危险截面在刮刀芯轴小螺纹Tr$65 \times 4 - 8e$ 螺纹根部。主要受力螺纹也是 Tr $65 \times 4 - 8e$。
 
-螺纹牙剪切强度计算：
-\begin{equation}
-    F_{\text{max}} = [\tau] \cdot k_z \cdot \pi \cdot d_1 \cdot b \cdot z \cdot 10^{-3}
-\end{equation}
-\begin{equation}
-    [\tau] = \frac{\sigma_s}{n}
-\end{equation}
-式中，$F_{\text{max}}$——工具最大拉力，kN；
+9-5/8\inch 可变径刮壁器的主要受力件为刮刀芯轴，其主要受力螺纹为 $\mathrm{Tr}\,65 \times 4-8e$，危险截面即位于该螺纹的根部。
 
-    $[\tau]$——螺纹牙的剪切强度，MPa；
-    
-    $k_z$——螺纹各圈的载荷不均系数，根据《机械设计手册》螺纹连接（紧固件连接）部分中螺纹牙的剪切强度计算及各圈螺纹载荷分配的规定\cite{ref26}，取 $k_z = 0.56$；
-    
-    $d_1$——螺纹底径，mm；
-    
-    $b$——螺纹牙根宽度，mm；
-    
-    $n$——安全系数，根据《机械设计手册》螺纹连接部分中螺纹牙强度校核的安全系数取值规定\cite{ref26}，取 $n = 2.5$；
-    
-    $z$——旋合圈数；
-    
-    $\sigma_s$——材料最小屈服强度：1068 MPa。
-
-
-Tr $65 \times 4 - 8e$ 螺纹代入数据计算如下：
+螺纹牙的剪切强度按下式计算：
 \begin{align}
-    F_{\text{max}} &= [\tau] \cdot k_z \cdot \pi \cdot d_1 \cdot b \cdot z \cdot 10^{-3} \\
-                   &= 427.2 \times 0.56 \times 3.14 \times 62 \times 2.6 \times 23.5 \times 10^{-3} \\
-                   &= 2845.65 \text{ kN} \\
-                   &> 1000 \text{ kN}
+    F_{\max} &= [\tau] \cdot k_z \cdot \pi \cdot d_1 \cdot b \cdot z \cdot 10^{-3} \\
+    [\tau] &= \frac{\sigma_s}{n}
+\end{align}
+式中，$F_{\max}$---工具最大拉力，kN；
+
+$[\tau]$---螺纹牙的许用剪切强度，MPa；
+
+$k_z$---螺纹各圈的载荷不均系数，根据《机械设计手册》螺纹连接（紧固件连接）部分中螺纹牙的剪切强度计算及各圈螺纹载荷分配的规定\cite{ref26}，取 $k_z = 0.56$；
+
+$d_1$---螺纹底径，mm；
+
+$b$---螺纹牙根宽度，mm；
+
+$z$---旋合圈数；
+
+$\sigma_s$---材料最小屈服强度，取 1068 MPa；
+
+$n$---安全系数，根据《机械设计手册》螺纹连接部分中螺纹牙强度校核的安全系数取值规定\cite{ref26}，取 $n = 2.5$。
+
+将 $\mathrm{Tr}\,65 \times 4-8e$ 螺纹的相关参数代入，计算得：
+\begin{align}
+    F_{\max} &= [\tau] \cdot k_z \cdot \pi \cdot d_1 \cdot b \cdot z \cdot 10^{-3} \\
+             &= 427.2 \times 0.56 \times 3.14 \times 62 \times 2.6 \times 23.5 \times 10^{-3} \\
+             &= 2845.65\,\mathrm{kN} \\
+             &> 1000\,\mathrm{kN}
 \end{align}
 
-满足设计要求。
+计算结果表明，螺纹牙的剪切强度满足设计要求。
+
 
 \subsubsection{主要受力件的零件抗拉强度校核}
-9-5/8$''$可变径刮壁器的主要受力件为刮刀芯轴。\\
-下面为刮刀芯轴危险截面抗拉抗扭强度计算：\\
-危险截面在刮刀芯轴小螺纹 $\mathrm{Tr}\ 65 \times 4 - 8e$ 螺纹根部。\\
-抗拉强度计算公式：
-\begin{equation*}
-    F_{\max} = \frac{[\pi \cdot (D^2 - d^2)] \cdot \sigma_s}{4 \cdot n} \times 10^{-3}
-\end{equation*}
-式中，$F_{\max}$ --- 工具最大拉力，kN；\\
-\indent $D$ --- 危险截面外径，mm；\\
-\indent $d$ --- 危险截面内径，mm；\\
-\indent $\sigma_s$ --- 材料最小屈服强度：1068MPa；\\
-\indent $n$ --- 安全系数，取 $n = 1.5$。\\
-刮刀芯轴危险截面最大抗拉计算：
-\begin{equation*}
-    \begin{split}
-        F_{\max} &= \frac{\pi \cdot (D^2 - d^2) \cdot \sigma_s}{4 \cdot n} \times 10^{-3} = \frac{3.14 \times (62^2 - 38.1^2) \times 1068}{4 \times 1.5} \times 10^{-3} \\
-        &= 1337.15\text{kN} > 1000\text{kN}
-    \end{split}
-\end{equation*}
-满足设计要求。
 
+9-5/8\inch 可变径刮壁器的主要受力件为刮刀芯轴和芯轴连接筒，两者的抗拉危险截面分别为刮刀芯轴小螺纹 $\mathrm{Tr}\,65 \times 4-8e$ 螺纹根部和芯轴连接筒内螺纹 $\mathrm{Tr}\,65 \times 4-8H$ 螺纹根部。
 
-9-5/8$''$可变径刮壁器的主要受力件为芯轴连接筒。\\
-下面为芯轴连接筒危险截面抗拉抗扭强度计算：\\
-危险截面在芯轴连接筒内螺纹 $\mathrm{Tr}\ 65 \times 4 - 8H$ 螺纹根部。\\
-抗拉强度计算公式：
-\begin{equation*}
-    F_{\max} = \frac{[\pi \cdot (D^2 - d^2)] \cdot \sigma_s}{4 \cdot n} \times 10^{-3}
-\end{equation*}
-式中，$F_{\max}$ --- 工具最大拉力，kN；\\
-\indent $D$ --- 危险截面外径，mm；\\
-\indent $d$ --- 危险截面内径，mm；\\
-\indent $\sigma_s$ --- 材料最小屈服强度：1068MPa；\\
-\indent $n$ --- 安全系数，取 $n = 1.5$。\\
-刮刀芯轴连接筒危险截面最大抗拉计算：
-\begin{equation*}
-    \begin{split}
-        F_{\max} &= \frac{\pi \cdot (D^2 - d^2) \cdot \sigma_s}{4 \cdot n} \times 10^{-3} = \frac{3.14 \times (80^2 - 66^2) \times 1068}{4 \times 1.5} \times 10^{-3} \\
-        &= 1142.43\text{kN} > 1000\text{kN}
-    \end{split}
-\end{equation*}
-满足设计要求。
-	
-\subsubsection{主要受力件的零件抗扭强度校核}
-9-5/8$''$可变径刮壁器的主要受力件为刮刀芯轴。
+抗拉强度按下式计算：
+\begin{equation}
+    F_{\max} = \frac{\pi \cdot (D^2 - d^2) \cdot \sigma_s}{4 \cdot n} \times 10^{-3}
+\end{equation}
+式中，$F_{\max}$---工具最大拉力，kN；
 
-刮刀芯轴危险截面最大抗扭强度$\tau$计算：
-\begin{equation*}
-    \tau = \frac{16 \cdot D \cdot T_{\max}}{\pi \cdot (D^4 - d^4)} \times 10^6
-\end{equation*}
-\begin{equation*}
-    T_{\max} = \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6}
-\end{equation*}
-\begin{equation*}
-    [\tau] = n \cdot \sigma_s = 0.66 \times 1068\,\mathrm{MPa} = 704.88\,\mathrm{MPa}
-\end{equation*}
-式中，$T_{\max}$ — 最大扭矩，$\mathrm{kN}\cdot\mathrm{m}$；
+$D$---危险截面外径，mm；
 
-$D$ — 危险截面外径，$\mathrm{mm}$；
+$d$---危险截面内径，mm；
 
-$d$ — 危险截面内径，$\mathrm{mm}$；
+$\sigma_s$---材料最小屈服强度，取 1068 MPa；
 
-$\sigma_s$ — 材料屈服应力，$\mathrm{MPa}$；
+$n$---安全系数，取 $n = 1.5$。
 
-$n$ — 安全系数，根据《机械设计手册》零件强度校核中许用应力折减系数的取值规定\cite{ref26}，取 $n = 0.66$；
-
-$[\tau]$ — 材料许用切应力，$704.88\,\mathrm{MPa}$。
-
-刮刀芯轴危险截面最大抗扭计算：
+（1）刮刀芯轴危险截面最大抗拉计算
 \begin{align}
-    T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6} \nonumber \\
-             &= \frac{704.88 \times 3.14 \times (62^4 - 38.1^4)}{16 \times 62} \times 10^{-6} \nonumber \\
-             &= 2826.71\,\mathrm{kN}\cdot\mathrm{m} > 17\,\mathrm{kN}\cdot\mathrm{m}
+    F_{\max} &= \frac{\pi \cdot (D^2 - d^2) \cdot \sigma_s}{4 \cdot n} \times 10^{-3}
+             = \frac{3.14 \times (62^2 - 38.1^2) \times 1068}{4 \times 1.5} \times 10^{-3} \\
+             &= 1337.15\,\mathrm{kN} > 1000\,\mathrm{kN}
 \end{align}
-
 满足设计要求。
 
-9-5/8$''$可变径刮壁器的主要受力件为芯轴连接筒。
-
-芯轴连接筒危险截面最大抗扭强度$\tau$计算：
-\begin{equation}
-    \tau = \frac{16 \cdot D \cdot T_{\max}}{\pi \cdot (D^4 - d^4)} \times 10^6
-\end{equation}
-\begin{equation}
-    T_{\max} = \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6}
-\end{equation}
-\begin{equation}
-    [\tau] = n \cdot \sigma_s = 0.66 \times 1068\,\mathrm{MPa} = 704.88\,\mathrm{MPa}
-\end{equation}
-式中，$T_{\max}$ — 最大扭矩，$\mathrm{kN}\cdot\mathrm{m}$；
-
-$D$ — 危险截面外径，$\mathrm{mm}$；
-
-$d$ — 危险截面内径，$\mathrm{mm}$；
-
-$\sigma_s$ — 材料屈服应力，$\mathrm{MPa}$；
-
-$n$ — 安全系数，根据《机械设计手册》零件强度校核中许用应力折减系数的取值规定\cite{ref26}，取 $n = 0.66$；
-
-$[\tau]$ — 材料许用切应力，$\mathrm{MPa}$。
-
-芯轴连接筒危险截面最大抗扭计算：
+（2）芯轴连接筒危险截面最大抗拉计算
 \begin{align}
-    T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6} \nonumber \\
-             &= \frac{704.88 \times 3.14 \times (80^4 - 66^4)}{16 \times 80} \times 10^{-6} \nonumber \\
+    F_{\max} &= \frac{\pi \cdot (D^2 - d^2) \cdot \sigma_s}{4 \cdot n} \times 10^{-3}
+             = \frac{3.14 \times (80^2 - 66^2) \times 1068}{4 \times 1.5} \times 10^{-3} \\
+             &= 1142.43\,\mathrm{kN} > 1000\,\mathrm{kN}
+\end{align}
+满足设计要求。
+
+
+\subsubsection{主要受力件的零件抗扭强度校核}
+
+9-5/8\inch 可变径刮壁器的主要受力件为刮刀芯轴和芯轴连接筒，其抗扭危险截面与抗拉校核相同，分别位于刮刀芯轴小螺纹 $\mathrm{Tr}\,65 \times 4-8e$ 螺纹根部和芯轴连接筒内螺纹 $\mathrm{Tr}\,65 \times 4-8H$ 螺纹根部。
+
+抗扭强度按下式计算：
+\begin{align*}
+    \tau &= \frac{16 \cdot D \cdot T_{\max}}{\pi \cdot (D^4 - d^4)} \times 10^{6} \\
+    T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6} \\
+    [\tau] &= n \cdot \sigma_s = 0.66 \times 1068\,\mathrm{MPa} = 704.88\,\mathrm{MPa}
+\end{align*}
+式中，$T_{\max}$---工具最大扭矩，$\mathrm{kN}\cdot\mathrm{m}$；
+
+$\tau$---危险截面的切应力，MPa；
+
+$[\tau]$---材料许用切应力，MPa；
+
+$\sigma_s$---材料屈服强度，MPa；
+
+$D$---危险截面外径，mm；
+
+$d$---危险截面内径，mm；
+
+$n$---许用切应力与许用拉应力之比，根据《机械设计手册》零件强度校核中许用应力折减系数的取值规定\cite{ref26}，取 $n = 0.66$。
+
+（1）刮刀芯轴危险截面最大抗扭计算
+\begin{align}
+    T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6}
+             = \frac{704.88 \times 3.14 \times (62^4 - 38.1^4)}{16 \times 62} \times 10^{-6} \\
+             &= 28.27\,\mathrm{kN}\cdot\mathrm{m} > 17\,\mathrm{kN}\cdot\mathrm{m}
+\end{align}
+满足设计要求。
+
+（2）芯轴连接筒危险截面最大抗扭计算
+\begin{align}
+    T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6}
+             = \frac{704.88 \times 3.14 \times (80^4 - 66^4)}{16 \times 80} \times 10^{-6} \\
              &= 38.02\,\mathrm{kN}\cdot\mathrm{m} > 17\,\mathrm{kN}\cdot\mathrm{m}
 \end{align}
-
 满足设计要求。
 
+
+\subsubsection{球座剪钉剪切力与节流泵压计算}
+
+9-5/8\inch 可变径刮壁器需要投球后憋压将球座剪钉剪断，迫使球座下移建立压力通道才能开始工作，因此剪钉的剪断力和投球后球座处的憋压压力是激活工具的重要参数。
+
+刮壁器的球座圆周设计 3 组剪钉参与剪切，剪钉选用 45 号非调质料制作，则工具激活所需的推力为：
+\begin{equation}
+    \begin{aligned}
+        F_s \ge [\tau] \cdot A = 0.8 \times [\sigma] \times 3 \times (\pi \cdot R^2) &= 0.8 \times 450 \times 3 \times 3.14 \times 4^2 \\
+        &= 54259.2\,\mathrm{N}
+    \end{aligned}
+\end{equation}
+式中，$F_s$---工具激活所需的最小推力，N；
+
+$[\tau]$---材料许用剪应力，塑性材料取 $0.6[\sigma]$、脆性材料取 $0.8[\sigma]$；
+
+$A$---单个剪钉的剪切面积，$\mathrm{mm}^2$；
+
+$R$---单个剪钉的半径，mm。
+
+刮壁器投入钢球后球座流道被堵塞，井口泵压直接作用在球座上，根据上述计算所得的最小推力 $F_s$，可计算出激活工具所需的最小泵压 $P_0$：
+\begin{equation}
+    P_0 \ge \frac{F_s}{A_q} = \frac{F_s}{\pi \cdot \left(\frac{d}{2}\right)^2} = \frac{54259.2}{3.14 \times \left(\frac{45}{2}\right)^2} = 34.12\,\mathrm{MPa}
+\end{equation}
+式中，$P_0$---激活工具所需的最小泵压，MPa；
+
+$A_q$---球座承压面积，$\mathrm{mm}^2$；
+
+$d$---球座承压面直径，取 45 mm。
+
+计算表明，当泵压不小于 $34.12\,\mathrm{MPa}$ 时，工具可以被激活。
+
+
+\subsubsection{节流喷嘴的尺寸和节流压力关系}
+
+刮壁器激活后流道建立，工具底部的节流喷嘴形成的节流压差为工具提供工作压力 $\Delta P \le 4\,\mathrm{MPa}$，故需要计算节流喷嘴的尺寸与节流压力的关系。
+
+由公式：
+\begin{equation}
+    \Delta P \le \frac{827 \cdot \rho \cdot Q^2}{C^2 \cdot d_e^4}
+\end{equation}
+
+推算喷嘴最小直径为：
+\begin{equation}
+    d_e \ge \sqrt[4]{\frac{827 \cdot \rho \cdot Q^2}{C^2 \cdot \Delta P}} = \sqrt[4]{\frac{827 \times 1.1 \times 40^2}{0.96^2 \times 4}} = 25.06\,\mathrm{mm}
+\end{equation}
+式中，$d_e$---喷嘴节流孔最小直径，mm；
+
+$\Delta P$---刮壁器最大节流压力（即最大节流工作压差），MPa；
+
+$\rho$---钻井液密度，$1.1\,\mathrm{g/cm^3}$；
+
+$Q$---工作时泵排量，暂定值为 $40\,\mathrm{L/s}$；
+
+$C$---流量系数，无因次，取 $0.95 \sim 0.98$。
+
+
+\subsubsection{连杆销抗剪切强度计算}
+
+9-5/8\inch 可变径刮壁器在激活后的工作过程中，刮壁作业所承受的冲击载荷由连杆铰链销承受，故有必要计算连杆销的抗剪切强度。假定刮壁器作业时受到的最大轴向力为工具最大抗拉力，即 $F_{\max} = 1000\,\mathrm{kN}$；销钉材料选用 M35 热后料，$[\sigma] \ge 1300\,\mathrm{MPa}$；销钉设计最小直径为：
+
+由切应力公式
+\begin{equation}
+    \tau = \frac{F_{\max}}{A} = \frac{F_{\max}}{20 \cdot A_0} = \frac{F_{\max}}{\pi \cdot 20 \cdot \left(\frac{d}{2}\right)^2} \le [\tau]
+\end{equation}
+式中，$[\tau]$---材料许用剪应力，MPa，塑性材料取 $0.6[\sigma]$、脆性材料取 $0.8[\sigma]$，本例取 $1040\,\mathrm{MPa}$；
+
+$A$---单个连杆销的总剪切面积，每个连杆销有两个剪切面积，故 $A = 2 \times 2A_0 \times 5$；
+
+$d$---连杆销的最小直径，mm。
+
+可得
+\begin{equation}
+    d \ge 2\sqrt{\frac{F_{\max}}{20 \cdot \pi \cdot [\tau]}} = 2\sqrt{\frac{1.0 \times 10^{6}}{20 \times 3.14 \times 1040}} = 7.825\,\mathrm{mm}
+\end{equation}
+
+设计连杆销直径 $d = 8\,\mathrm{mm}$，满足设计要求。
+
+
 \subsubsection{主要受力件仿真校核}
-主要受力件为刮刀芯轴和芯轴连接筒，危险截面出现在螺纹根部，有限元仿真结果如图\ref{fig:FEA_inner_pipe_variable}所示。刮刀芯轴的最大拉应力为850MPa，小于设计要求，最大切应力为1600MPa，出现在变径处，但范围极小，属于应力集中导致的局部小尺度高应力，不会引发整体塑性变形；强度满足设计要求。
+
+主要受力件为刮刀芯轴和芯轴连接筒，危险截面出现在螺纹根部，有限元仿真结果如图~\ref{fig:FEA_inner_pipe_variable}所示。刮刀芯轴的最大拉应力为 850 MPa，小于设计要求；最大切应力为 1600 MPa，出现在变径处，但范围极小，属于应力集中导致的局部小尺度高应力，不会引发整体塑性变形，强度满足设计要求。
+
 \begin{figure}[htbp]
 	\centering
 	\subfloat[可变径刮管器心轴]{%
@@ -191,88 +241,20 @@ $[\tau]$ — 材料许用切应力，$\mathrm{MPa}$。
 	\label{fig:FEA_inner_pipe_variable}
 \end{figure}
 
-\subsubsection{球座剪钉剪切力与节流泵压计算}
-9-5/8\inch 变径刮壁器需要投球后憋压将球座剪钉剪断，迫使球座下移建立压力通道才能开始工作。所以剪钉力和投球后球座处憋压的压力是激活工具的重要参数。
-
-刮壁器的球座圆周设计 3 组剪钉参与剪切，剪钉选用 45号非调质料进行制作。
-\begin{equation}
-	\begin{aligned}
-    	F_s \ge [\tau] \cdot A = 0.8 \times [\sigma] \times 3 \times (\pi \cdot R^2) & = 0.8 \times 450 \times 3 \times 3.14 \times 4^2 \\
-    	& = 54259.2\,\mathrm{N}
-    \end{aligned}
-\end{equation}
-式中，$F_s$ — 工具激活所需最小推力；
-
-$[\tau]$ — 材料许用剪应力，塑性材料 0.6$[\sigma]$、脆性材料 0.8$[\sigma]$；
-
-$A$ — 单个剪钉的剪切面积；
-
-$R$ — 单个剪钉的半径。
-
-刮壁器投入钢球后球座流道被堵塞，井口泵压直接作用在球座上，根据步骤(1)计算所需要最小的推力$F_s$可以计算出激活工具所需要的最小泵压$P_0$如下：
-
-\begin{equation}
-    P_0 \ge \frac{F_s}{A_q} = \frac{F_s}{\pi d^2 / 2^2} = \frac{54259.2}{(3.14 \times 45^2) / 2^2} = 34.12\,\mathrm{MPa}
-\end{equation}
-
-根据计算当泵压大于$34.12\,\mathrm{MPa}$ 时，工具可以被激活。
-
-\subsubsection{节流喷嘴的尺寸和节流压力关系}
-刮壁器激活后流道建立，工具底部的节流喷嘴行程的节流压差为工具提供工作压力 $\Delta P \le 4\,\mathrm{MPa}$；故需要计算节流喷嘴的尺寸和节流压力关系。
-
-由公式：
-\begin{equation}
-    \Delta P \le \frac{827 \cdot \rho \cdot Q^2}{C^2 \cdot d_e^4}
-\end{equation}
-
-推算喷嘴最小直径为：
-\begin{equation}
-    d_e \ge \sqrt[4]{\frac{827 \cdot \rho \cdot Q^2}{C^2 \cdot \Delta P}} = \sqrt[4]{\frac{827 \times 1.1 \times 40^2}{0.96^2 \times 4}} = 25.06\,\mathrm{mm}
-\end{equation}
-式中，$d_e$ — 喷嘴节流孔最小直径，mm；
-
-    $\Delta P$ — 刮壁器最大节流压力（即最大节流工作压差），MPa；
-    
-   $\rho$ — 泥浆液密度，$1.1\,\mathrm{g/cm^3}$；
-   
-    $Q$ — 工作时泵排量；暂定值为 $40\,\mathrm{L/s}$；
-    
-    $C$ — 流量系数，无因次，$0.95 \sim 0.98$。
-
-\subsubsection{连杆销抗剪切强度计算}
-9-5/8\inch 可变径刮壁器在激活后工作过程中，刮壁作业时所承受的冲击载荷有连杆铰链销承受。故有必要计算连杆销的抗剪切强度。假定刮壁器作业时受到最大的轴向力为工具最大抗拉力，即 $F_{\max} = 1000\,\mathrm{kN}$；销钉材料选M35热后料$[\sigma] \ge 1300\,\mathrm{MPa}$；销钉设计最小直径为：
-
-有切应力公式
-
-\begin{equation}
-    \tau = \frac{F_{max}}{A} = \frac{F_{max}}{20 \cdot A_0} = \frac{F_{max}}{\pi \cdot 20 \cdot (\frac{d}{2})^2} \le [\tau]
-\end{equation}
-式中，$[\tau]$—材料许用剪应力，$\mathrm{kN \cdot m}$，塑性材料 0.6$[\sigma]$、脆性材料 0.8$[\sigma]=1040\,\mathrm{MPa}$；
-
-$A$—单个连杆销的剪切面积；每个连杆销有两个剪切面积，故 $A = 2 \times 2A_0 \times 5$。
-
-$d$—连杆销的最小直径，mm；
-
-可得
-\begin{equation}
-    d \ge 2\sqrt{\frac{F_{\max} \times 4}{20 \times \pi \times [\tau]}} = \sqrt[2]{\frac{1000 \times 4 \times 1000}{20 \times 3.14 \times 1040}} = 7.825\,\mathrm{mm}
-\end{equation}
-
-设计连杆销直径 $d = 8\,\mathrm{mm}$，满足设计要求。
-
-
-
 
 \subsection{拆装步骤}
-工具入井后到达管子站进行保养前,需冲洗外表面，准备好内六角扳手、起子、扳手等拆卸工具。
 
-(1) 工具冲洗干净后，将上、下接头的M16螺钉拆卸，取出内部的防掉钢珠；取出下接头喷嘴；如下图箭头所示位置。
+工具入井后到达管子站进行保养前，需冲洗外表面，并准备好内六角扳手、起子、扳手等拆卸工具。
+
+(1) 工具冲洗干净后，将上、下接头的 M16 螺钉拆卸，取出内部的防掉钢珠；取出下接头喷嘴；如下图箭头所示位置。
 
 \begin{figure}[htbp]
 \centering
 	\includegraphics[width=1.\textwidth]{figure/chapter3/part5/unsetup/ball.png}
 \end{figure}
+
 (2) 拆卸上、下接头的防松螺钉后，分别反转拆卸上、下接头；如下图所示位置。
+
 \begin{figure}[htbp]
 \centering
 	\includegraphics[width=1.\textwidth]{figure/chapter3/part5/unsetup/unsetup-satefy-screw.png}
@@ -280,7 +262,8 @@ $d$—连杆销的最小直径，mm；
 	\includegraphics[width=1.\textwidth]{figure/chapter3/part5/unsetup/unsetup-two-subs.png}
 \end{figure}
 
-(3) 用起子扳手取下连杆座、连杆、刮刀等之间的铰链销、防掉螺钉等标准件后依次拆卸旋转连杆座、连杆、刮刀等零件；如下图所示。
+(3) 用起子、扳手取下连杆座、连杆、刮刀等之间的铰链销、防掉螺钉等标准件后，依次拆卸旋转连杆座、连杆、刮刀等零件；如下图所示。
+
 \begin{figure}[htbp]
 \centering
 	\includegraphics[width=1.\textwidth]{figure/chapter3/part5/unsetup/unsetup-fasten-parts.png}
@@ -289,12 +272,14 @@ $d$—连杆销的最小直径，mm；
 (4) 拆卸各部位的锁紧螺钉、铰链销、防掉螺钉等零件。
 
 (5) 拆卸两头的旋转连杆座。
+
 \begin{figure}[h]
 \centering
 	\includegraphics[width=1.\textwidth]{figure/chapter3/part5/unsetup/rotary-lever-set.png}
 \end{figure}
 
 (6) 拆卸两头的连杆、刮刀等零件。
+
 \begin{figure}[htbp]
 \centering
 	\includegraphics[width=1.\textwidth]{figure/chapter3/part5/unsetup/end-links.png}
@@ -311,27 +296,31 @@ $d$—连杆销的最小直径，mm；
 \end{figure}
 
 (8) 夹紧中间外筒方向旋转复位总成，分别取出上、下两头的复位总成，然后依次对复位总成进行拆解，如下图所示。
+
 \begin{figure}[htbp]
 \centering
 	\includegraphics[width=1.\textwidth]{figure/chapter3/part5/unsetup/reseting-assembly.png}
 	\includegraphics[width=1.\textwidth]{figure/chapter3/part5/unsetup/resetting-assembly-unsetup.png}
 \end{figure}
 
-(9) 取出中间筒体和中间芯轴的限位钢球，后取下中间芯轴、弹簧 活塞、活塞限位套等零件；最后拆卸各零件上的密封圈，即拆卸完毕。
+(9) 取出中间筒体和中间芯轴的限位钢球，随后取下中间芯轴、弹簧、活塞、活塞限位套等零件；最后拆卸各零件上的密封圈，即拆卸完毕。
 
 (10) 拆卸中间筒体和中间芯轴的钢球堵和限位钢球。
+
 \begin{figure}[htbp]
 \centering
 	\includegraphics[width=1.\textwidth]{figure/chapter3/part5/unsetup/middle-body-inner-pipe-ball.png}
 \end{figure}
 
-(11) 拆卸中间芯轴，固定中间筒体向任何一头抽出中间芯轴即可。
+(11) 拆卸中间芯轴，固定中间筒体后从任意一头抽出中间芯轴即可。
+
 \begin{figure}[htbp]
 \centering
-	\includegraphics[width=1.\textwidth]{figure/chapter3/part5/unsetup/middle-body-inner-pipe-ball.png}
+	\includegraphics[width=1.\textwidth]{figure/chapter3/part5/unsetup/middle-inner-pipe-unsetup.png}
 \end{figure}
 
 (12) 按下图所示方向，分别从两头拆卸活塞、工作弹簧、活塞限位套等零件。
+
 \begin{figure}[htbp]
 \centering
 	\includegraphics[width=1.\textwidth]{figure/chapter3/part5/unsetup/piston-spring-limiter.png}
@@ -339,10 +328,14 @@ $d$—连杆销的最小直径，mm；
 
 (13) 装配步骤与拆卸步骤相反，装配过程中需要注意不要损伤密封面、螺纹牙形等配合处，密封面和螺纹组装前要求涂抹润滑油。
 
+工具的易损件及配件清单见表~\ref{tab:parts_list}。
+
 \begin{table}[htbp]
     \centering
     \caption{易损件及配件清单表}
     \label{tab:parts_list}
+    \small % 代号较长，缩小字号以适应表格宽度
+    \setlength{\tabcolsep}{4pt} % 减小列间距，避免超出正文版心
     \renewcommand{\arraystretch}{1.5} % 调整行间距，使表格不拥挤
     \begin{tabular}{cccc}
         \toprule
@@ -356,16 +349,16 @@ $d$—连杆销的最小直径，mm；
         6  & 2-229 PAEKE FKM                      & O 形圈                 & 2   \\
         7  & 2-140 PAEKE FKM                      & O 形圈                 & 2   \\
         8  & 2.62*62 GB/T1235                     & O 形圈                 & 2   \\
-        9  & GB / T 77-2007                       & 内六角平端紧定螺钉 M8$\times$20  & 10  \\
-        10 & GB / T 80-2007                       & 内六角凹端紧定螺钉 M8$\times$30  & 8   \\
-        11 & GB / T 80-2007                       & 内六角凹端紧定螺钉 M8$\times$10  & 8   \\
-        12 & GB / T 79-2007                       & 内六角圆柱端紧定螺钉 M10$\times$30 & 10  \\
-        13 & GB / T 77-2007                       & 内六角平端紧定螺钉 M8$\times$8   & 8   \\
+        9  & GB/T 77-2007                         & 内六角平端紧定螺钉 M8$\times$20  & 10  \\
+        10 & GB/T 80-2007                         & 内六角凹端紧定螺钉 M8$\times$30  & 8   \\
+        11 & GB/T 80-2007                         & 内六角凹端紧定螺钉 M8$\times$10  & 8   \\
+        12 & GB/T 79-2007                         & 内六角圆柱端紧定螺钉 M10$\times$30 & 10  \\
+        13 & GB/T 77-2007                         & 内六角平端紧定螺钉 M8$\times$8   & 8   \\
         14 & $\phi 25$ 喷嘴                       & 节流喷嘴               & 1   \\
         15 & G98Cr18 12 G40 $\pm 0$ GB/T 308      & $\phi 12$ 钢球         & 100 \\
-        16 & GB / T 80-2007                       & 内六角凹端紧定螺钉 M5$\times$12  & 40  \\
-        17 & GB / T 77-2007                       & 内六角平端紧定螺钉 M16$\times$16 & 2   \\
-        18 & GB / T 77-2007                       & 内六角平端紧定螺钉 M10$\times$35 & 20  \\
+        16 & GB/T 80-2007                         & 内六角凹端紧定螺钉 M5$\times$12  & 40  \\
+        17 & GB/T 77-2007                         & 内六角平端紧定螺钉 M16$\times$16 & 2   \\
+        18 & GB/T 77-2007                         & 内六角平端紧定螺钉 M10$\times$35 & 20  \\
         19 & GGQ95-19                             & 工作弹簧               & 2   \\
         20 & GGQ95-18                             & 复位弹簧               & 2   \\
         21 & GGQ95-17                             & 密封堵                 & 2   \\
@@ -377,13 +370,15 @@ $d$—连杆销的最小直径，mm；
     \end{tabular}
 \end{table}
 
+
 \subsection{操作方式}
+
 \subsubsection{下井前准备}
 \begin{itemize}
 	\item 了解井况，确定套管规格和深度等基本信息；
 	\item 选配适合套管规格的刮刀；
-	\item 本可变径刮管器应与7\inch 及以上其它刮管器配合使用；
-	\item 确定刮管工艺，了解泵压和排量，根据\ref{fig:pressure_decrease_with_Q_size}选装合适的喷嘴及剪钉。
+	\item 本可变径刮管器应与 7\inch 及以上其它刮管器配合使用；
+	\item 确定刮管工艺，了解泵压和排量，并根据图~\ref{fig:pressure_decrease_with_Q_size}所示不同排量下喷嘴尺寸与压降的关系选装合适的喷嘴及剪钉。
 \end{itemize}
 
 \begin{figure}[htbp]
@@ -408,28 +403,28 @@ $d$—连杆销的最小直径，mm；
 
 \subsubsection{操作}
 \begin{itemize}
-	\item 	下井前按照作业要求依次连接好管柱，刮管器前端需接与套管规格对应的扶正器；推荐管柱组合：通井钻头+扶正器+7″刮管器+可变径刮管器+（选装其它套管清洁工具）+上部钻柱。
-	\item 接上可变径刮管器后，夹紧下接头、大钳打上接头，拧紧刮管器各螺纹，井口以开泵压力≤20±5MPa、排量≤10L/s进行试循环，时间1-5min。
-	\item 待循环正常并确定刮刀未弹出本体后，慢慢旋转下放工具并进行其它钻磨、完井、试油、测试、刮小规格套管等作业。
-	\item 当小规格套管刮管作业完成后，并将可变径刮管器提升至9-5/8\inch 套管所需的井深位置，投入钢球，开泵进行打压激活刮刀张开，启动作业；
-	\item 刮管器打开压力=静液柱压力+泵压（绝对压力），泵压≥绝对压力-静液柱压力。
-	\item 激活判定：当投入钢球后观察泵压上升时突然会出现下降，说明可变径刮管器启动；然后停泵，根据工具入井前选定的喷嘴尺寸锁要求的泵压和排量稳定循环。同时，通过上提下放工具进行9-5/8\inch 套管的刮管作业。
-	\item 刮管作业观察指重表无任何显示，即下放悬重不降、上提悬重不升，表明已刮削干净。
+	\item 下井前按照作业要求依次连接好管柱，刮管器前端需接与套管规格对应的扶正器；推荐管柱组合为：通井钻头 $+$ 扶正器 $+$ 7\inch 刮管器 $+$ 可变径刮管器 $+$（选装其它套管清洁工具）$+$ 上部钻柱。
+	\item 接上可变径刮管器后，夹紧下接头、大钳打上接头，拧紧刮管器各螺纹，井口以开泵压力 $\le 20 \pm 5\,\mathrm{MPa}$、排量 $\le 10\,\mathrm{L/s}$ 进行试循环，时间 $1 \sim 5\,\mathrm{min}$。
+	\item 待循环正常并确定刮刀未弹出本体后，慢慢旋转下放工具，并进行其它钻磨、完井、试油、测试、刮小规格套管等作业。
+	\item 当小规格套管刮管作业完成后，将可变径刮管器提升至 9-5/8\inch 套管所需的井深位置，投入钢球，开泵打压激活刮刀张开，启动作业；
+	\item 刮管器打开压力 $=$ 静液柱压力 $+$ 泵压（绝对压力），即泵压 $\ge$ 绝对压力 $-$ 静液柱压力。
+	\item 激活判定：投入钢球后观察泵压，若泵压上升过程中突然下降，说明可变径刮管器已启动；随后停泵，按工具入井前选定的喷嘴尺寸所要求的泵压和排量稳定循环，同时通过上提、下放工具进行 9-5/8\inch 套管的刮管作业。
+	\item 刮管作业时观察指重表无任何显示，即下放悬重不降、上提悬重不升，表明已刮削干净。
 \end{itemize}
 
 \subsubsection{注意事项}
 \begin{itemize}
 	\item 工具与管柱的连接扣必须拧紧。
-	\item 刮刀的螺旋升角因两组同方向。
+	\item 两组刮刀的螺旋升角应保持同方向。
 	\item 可变径刮管器在下井过程中如遇阻，应慢慢旋转几圈后再下放。
 	\item 刮管作业过程中，必须始终保持钻井液循环畅通。
 \end{itemize}
 
-\subsection{可变径工具维护与保养}
+\subsection{维护与保养}
 \begin{itemize}
-	\item 出井后应清洗干净，并检查各零件。如弹簧失效必须更换。各螺纹涂螺纹脂，各零件涂油，放阴干处保存。
-	\item 每次作业后，都应将工具完全拆开并清洗，更换所有Ｏ形圈和损坏的弹簧，检查刮管器本体上的内套是否粘接牢固。用肉眼检查所有的密封面和接头丝扣是否损坏，若发现有损坏的零件都应更换，这些损坏的零件对工具的可靠性会产生不利的影响。
+	\item 出井后应清洗干净，并检查各零件，如弹簧失效必须更换。各螺纹涂螺纹脂，各零件涂油，存放在阴干处。
+	\item 每次作业后，都应将工具完全拆开并清洗，更换所有 O 形圈和损坏的弹簧，检查刮管器本体上的内套是否粘接牢固。用肉眼检查所有的密封面和接头丝扣是否损坏，若发现有损坏的零件都应更换，这些损坏的零件对工具的可靠性会产生不利的影响。
 	\item 在拆卸、保养前，应准备好正确、有效的装配图和工具保养维护说明书及工具维护保养单。
-	\item 对高温井的作业和有酸及硫化氢存在的修井作业，应提前更换相应耐腐蚀耐高温密封件和配件。
+	\item 对高温井作业以及有酸及硫化氢存在的修井作业，应提前更换相应耐腐蚀、耐高温的密封件和配件。
 	\item 有关该工具使用和维护保养的其他任何问题，请与我校联系。
 \end{itemize}

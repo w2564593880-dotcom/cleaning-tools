@@ -21,5 +21,6 @@ texput.fls
 # 注意：main.pdf 是给老师/审阅用的成品，仍然提交，故此处不忽略。
 
 # ===== 操作系统垃圾文件 =====
-.DS_Store
+
+**/.DS_Store
 Thumbs.db

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.7.19)  14 SEP 2026 11:33
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.7.19)  14 SEP 2026 11:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1398,8 +1398,10 @@ h' as default language. on input line 79.
 
 (./main.aux
 
-LaTeX Warning: Label `fig:field_result_in_upper_sub_radial_magnetization' multi
-ply defined.
+LaTeX Warning: Label `tab:simulation_params' multiply defined.
+
+
+LaTeX Warning: Label `fig:Wax_velocity_particle_size' multiply defined.
 
 )
 \openout1 = `main.aux'.
@@ -1556,17 +1558,29 @@ LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
 (Font)              scaled to size 12.045pt on input line 1.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 4.
+(Font)              scaled to size 8.0pt on input line 2.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 4.
- [1
-
-
-])
+(Font)              scaled to size 6.0pt on input line 2.
+)
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
+ [1
 
+
+]
+第一章
+(./chapters/chapter1/chapter1.tex
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
+(Font)              scaled to size 18.06749pt on input line 57.
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
+(Font)              scaled to size 15.05624pt on input line 58.
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
+(Font)              scaled to size 15.05624pt on input line 58.
+ [1
+
+
+]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1575,50 +1589,34 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [2]
-第一章
-[1
-
-
-]
-第二章
-[2
-
-]
-第三章
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
-(Font)              scaled to size 18.06749pt on input line 116.
+File: figure/iron-shavings-sample.jpg Graphic file (type bmp)
+<figure/iron-shavings-sample.jpg>
+File: figure/iron-wire-actual.jpg Graphic file (type bmp)
+<figure/iron-wire-actual.jpg>
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 15.05624pt on input line 116.
-
-LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <18.06749> not available
-(Font)              size <17.28> substituted on input line 116.
-
-
-LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <15.05624> not available
-(Font)              size <14.4> substituted on input line 116.
-
+(Font)              scaled to size 9.03374pt on input line 143.
+File: figure/iron-wire-model.jpg Graphic file (type bmp)
+<figure/iron-wire-model.jpg>
+File: figure/iron-wire-distribution-1cp-velocity-colored.png Graphic file (type
+ bmp)
+<figure/iron-wire-distribution-1cp-velocity-colored.png>
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 116.
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 116.
-(./chapters/chapter3/part3-magntictool.tex
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
-(Font)              scaled to size 15.05624pt on input line 1.
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 10.53937pt on input line 13.
-
-Overfull \hbox (3.6131pt too wide) in paragraph at lines 41--41
-[]|[]| 
- []
+(Font)              scaled to size 5.0pt on input line 204.
+File: figure/iron-wire-distribution-1dot7-cp-velocity-colored.png Graphic file 
+(type bmp)
+<figure/iron-wire-distribution-1dot7-cp-velocity-colored.png>
+File: figure/iron-wire-mean-velocity-evolution-viscosity.jpg Graphic file (type
+ bmp)
+<figure/iron-wire-mean-velocity-evolution-viscosity.jpg>
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--41
-[]|\TU/TeXGyreTermesX(0)/m/n/10.53937 9.5-
- []
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.45398pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.45398pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
-[3
-
-]
+[3]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1635,11 +1633,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [5]
-File: figure/chapter3/lowwer-sub-mag-tool.png Graphic file (type bmp)
-<figure/chapter3/lowwer-sub-mag-tool.png>
-File: figure/chapter3/torsion-stress-lowwer-sub-mag-tool.png Graphic file (type
- bmp)
-<figure/chapter3/torsion-stress-lowwer-sub-mag-tool.png>
+File: figure/iron-wire-distribution-1dot7cp-0dot17mpers.png Graphic file (type 
+bmp)
+<figure/iron-wire-distribution-1dot7cp-0dot17mpers.png>
+File: figure/iron-wire-distribution-1dot7cp-0dot27mpers.png Graphic file (type 
+bmp)
+<figure/iron-wire-distribution-1dot7cp-0dot27mpers.png>
+File: figure/iron-wire-particle-track-1dot7cp-0dot17mpers.jpg Graphic file (typ
+e bmp)
+<figure/iron-wire-particle-track-1dot7cp-0dot17mpers.jpg>
+File: figure/iron-wire-particle-track-1dot7cp-0dot27mpers.jpg Graphic file (typ
+e bmp)
+<figure/iron-wire-particle-track-1dot7cp-0dot27mpers.jpg>
+File: figure/iron-wire-mean-velocity-evolution-incoming-velocity.png Graphic fi
+le (type bmp)
+<figure/iron-wire-mean-velocity-evolution-incoming-velocity.png>
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1649,6 +1657,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [6]
+File: figure/iron-wire-distribution-1dot7cp-0dot27mpers-3angles.jpg Graphic fil
+e (type bmp)
+<figure/iron-wire-distribution-1dot7cp-0dot27mpers-3angles.jpg>
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1665,10 +1677,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [8]
-File: figure/chapter3/demagnetization-SmCo5.png Graphic file (type bmp)
-<figure/chapter3/demagnetization-SmCo5.png>
-File: figure/chapter3/demagnatization-N45UH.png Graphic file (type bmp)
-<figure/chapter3/demagnatization-N45UH.png>
+File: figure/iron-wire-particle-track-1dot7cp-0dot27mpers-3angles.jpg Graphic f
+ile (type bmp)
+<figure/iron-wire-particle-track-1dot7cp-0dot27mpers-3angles.jpg>
+File: figure/iron-wire-mean-velocity-evolution-3angles.png Graphic file (type b
+mp)
+<figure/iron-wire-mean-velocity-evolution-3angles.png>
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1678,6 +1692,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [9]
+File: figure/BaSr-sample.png Graphic file (type bmp)
+<figure/BaSr-sample.png>
+File: figure/BaSr-SEM.png Graphic file (type bmp)
+<figure/BaSr-SEM.png>
+File: figure/BaSr-model.png Graphic file (type bmp)
+<figure/BaSr-model.png>
+File: figure/BaSr-distribution-Vin.jpg Graphic file (type bmp)
+<figure/BaSr-distribution-Vin.jpg>
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1686,15 +1709,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [10]
-File: figure/chapter3/magnetic-distribution-on-tool.png Graphic file (type bmp)
-
-<figure/chapter3/magnetic-distribution-on-tool.png>
-File: figure/chapter3/structure-upper-magnetic-sub.png Graphic file (type bmp)
-<figure/chapter3/structure-upper-magnetic-sub.png>
-File: figure/chapter3/structure-lowwer-magnetic-sub.png Graphic file (type bmp)
-
-<figure/chapter3/structure-lowwer-magnetic-sub.png>
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1703,21 +1717,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [11]
-Missing character: There is no ≫ (U+226B) in font [TeXGyreTermesX-Regular.otf]/
-OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;!
-File: figure/chapter3/magnet-configuration-upper-sub.png Graphic file (type bmp
-)
-<figure/chapter3/magnet-configuration-upper-sub.png>
-File: figure/chapter3/radial-magnetization-in-upper-sub.png Graphic file (type 
-bmp)
-<figure/chapter3/radial-magnetization-in-upper-sub.png>
-File: figure/chapter3/circumferencial-magnetization-in-upper-sub.png Graphic fi
-le (type bmp)
-<figure/chapter3/circumferencial-magnetization-in-upper-sub.png>
-File: figure/chapter3/boundary-condition-upper-sub.png Graphic file (type bmp)
-<figure/chapter3/boundary-condition-upper-sub.png>
-File: figure/chapter3/mesh-upper-sub.png Graphic file (type bmp)
-<figure/chapter3/mesh-upper-sub.png>
+File: figure/BaSr-mean-velocity-evolution-vin-dot37.png Graphic file (type bmp)
+
+<figure/BaSr-mean-velocity-evolution-vin-dot37.png>
+File: figure/BaSr-mean-velocity-evolution-vin-dot59.png Graphic file (type bmp)
+
+<figure/BaSr-mean-velocity-evolution-vin-dot59.png>
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1726,6 +1732,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [12]
+File: figure/BaSr-distribution-3angles.jpg Graphic file (type bmp)
+<figure/BaSr-distribution-3angles.jpg>
+File: figure/BaSr-mean-velocity-evolution-big-size.png Graphic file (type bmp)
+<figure/BaSr-mean-velocity-evolution-big-size.png>
+File: figure/BaSr-mean-velocity-evolution-small-size.png Graphic file (type bmp
+)
+<figure/BaSr-mean-velocity-evolution-small-size.png>
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1734,6 +1748,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [13]
+File: figure/Wax-mean-velocity-Vin-dot37mpersec.png Graphic file (type bmp)
+<figure/Wax-mean-velocity-Vin-dot37mpersec.png>
+File: figure/Wax-mean-velocity-Vin-dot59mpersec.png Graphic file (type bmp)
+<figure/Wax-mean-velocity-Vin-dot59mpersec.png>
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1742,23 +1761,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [14]
-File: figure/chapter3/magnetic-vector-distribution-upper-sub.png Graphic file (
-type bmp)
-<figure/chapter3/magnetic-vector-distribution-upper-sub.png>
-File: figure/chapter3/contour-magnetic-field-upper-sub.png Graphic file (type b
-mp)
-<figure/chapter3/contour-magnetic-field-upper-sub.png>
-File: figure/chapter3/magnetic-vector-distribution-upper-sub-circum-magnatizati
-on.png Graphic file (type bmp)
-<figure/chapter3/magnetic-vector-distribution-upper-sub-circum-magnatization.pn
-g>
-File: figure/chapter3/contour-magnetic-field-upper-sub-circum-magnatization.png
- Graphic file (type bmp)
-<figure/chapter3/contour-magnetic-field-upper-sub-circum-magnatization.png>
-File: figure/chapter3/magnet-configuration-lowwer-sub.png Graphic file (type bm
-p)
-<figure/chapter3/magnet-configuration-lowwer-sub.png>
-
+File: figure/wax-distribution-3angles.png Graphic file (type bmp)
+<figure/wax-distribution-3angles.png>
+File: figure/Wax-mean-velocity-Vin-dot59mpersec-theta-0.png Graphic file (type 
+bmp)
+<figure/Wax-mean-velocity-Vin-dot59mpersec-theta-0.png>
+File: figure/Wax-mean-velocity-Vin-dot59mpersec-theta-90.png Graphic file (type
+ bmp)
+<figure/Wax-mean-velocity-Vin-dot59mpersec-theta-90.png>
+)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1775,39 +1786,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [16]
-File: figure/chapter3/lowwer-sub-magnetization-radial.png Graphic file (type bm
-p)
-<figure/chapter3/lowwer-sub-magnetization-radial.png>
-File: figure/chapter3/lowwer-sub-cross-magnetization.png Graphic file (type bmp
-)
-<figure/chapter3/lowwer-sub-cross-magnetization.png>
-File: figure/chapter3/lowwer-sub-circumferential-magnetization.png Graphic file
- (type bmp)
-<figure/chapter3/lowwer-sub-circumferential-magnetization.png>
-File: figure/chapter3/boundary-condition-lowwer-sub.png Graphic file (type bmp)
-
-<figure/chapter3/boundary-condition-lowwer-sub.png>
-File: figure/chapter3/mesh-upper-sub.png Graphic file (type bmp)
-<figure/chapter3/mesh-upper-sub.png>
-File: figure/chapter3/magnetic-vector-distribution-lowwer-sub-radial.png Graphi
-c file (type bmp)
-<figure/chapter3/magnetic-vector-distribution-lowwer-sub-radial.png>
-File: figure/chapter3/contour-magnetic-field-lowwer-sub-radial.png Graphic file
- (type bmp)
-<figure/chapter3/contour-magnetic-field-lowwer-sub-radial.png>
-File: figure/chapter3/magnetic-vector-distribution-lowwer-sub-cross.png Graphic
- file (type bmp)
-<figure/chapter3/magnetic-vector-distribution-lowwer-sub-cross.png>
-File: figure/chapter3/contour-magnetic-field-lowwer-sub-cross.png Graphic file 
-(type bmp)
-<figure/chapter3/contour-magnetic-field-lowwer-sub-cross.png>
-File: figure/chapter3/magnetic-vector-distribution-lowwer-sub-circumferential.p
-ng Graphic file (type bmp)
-<figure/chapter3/magnetic-vector-distribution-lowwer-sub-circumferential.png>
-File: figure/chapter3/contour-magnetic-field-lowwer-sub-circumferential.png Gra
-phic file (type bmp)
-<figure/chapter3/contour-magnetic-field-lowwer-sub-circumferential.png>
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1816,137 +1794,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [17]
+第二章
+[18
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.45398pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.45398pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
+]
+第三章
 
-[18]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.45398pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.45398pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
-
-[19]
-File: figure/chapter3/mag-field-distribution-4145-steel-frame.png Graphic file 
-(type bmp)
-<figure/chapter3/mag-field-distribution-4145-steel-frame.png>
-File: figure/chapter3/mag-field-distribution-aliminium-frame.png Graphic file (
-type bmp)
-<figure/chapter3/mag-field-distribution-aliminium-frame.png>
+LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <18.06749> not available
+(Font)              size <17.28> substituted on input line 117.
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.45398pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.45398pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
+LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <15.05624> not available
+(Font)              size <14.4> substituted on input line 117.
 
-[20]
+(./chapters/bib.tex [19
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.45398pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.45398pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
-
-[21]) (./chapters/chapter3/part4-filter.tex
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.45398pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.45398pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
-
-[22]
-File: figure/chapter3/guolvqi.png Graphic file (type bmp)
-<figure/chapter3/guolvqi.png>
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.45398pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.45398pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
-
-[23]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.45398pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.45398pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
-
-[24]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.45398pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.45398pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
-
-[25]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.45398pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.45398pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
-
-[26]
-File: figure/chapter3/filter-outlet-sub.png Graphic file (type bmp)
-<figure/chapter3/filter-outlet-sub.png>
-File: figure/chapter3/filter-inlet-sub.png Graphic file (type bmp)
-<figure/chapter3/filter-inlet-sub.png>
-File: figure/chapter3/filter-outlet-sub-tensile-stress.png Graphic file (type b
-mp)
-<figure/chapter3/filter-outlet-sub-tensile-stress.png>
-File: figure/chapter3/filter-outlet-sub-torsion-stress.png Graphic file (type b
-mp)
-<figure/chapter3/filter-outlet-sub-torsion-stress.png>
-File: figure/chapter3/filter-inlet-sub-tensile-stress.png Graphic file (type bm
-p)
-<figure/chapter3/filter-inlet-sub-tensile-stress.png>
-File: figure/chapter3/filter-inlet-sub-torsional-stress.png Graphic file (type 
-bmp)
-<figure/chapter3/filter-inlet-sub-torsional-stress.png>
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.45398pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.45398pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
-
-[27]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.45398pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.45398pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
-
-[28]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.45398pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.45398pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
-
-[29]) (./chapters/bib.tex
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.45398pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.45398pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
-
-[30] [31
+] [20
 
 
 ])
@@ -1957,7 +1820,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
-[32] (./main.aux)
+[21] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
@@ -1971,15 +1834,15 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 95F984D095F630A6575C47A39DE7551D;4820.
+(rerunfilecheck)             Checksum: 214933336E5719F3E7A55CDFE03D9884;3340.
  ) 
 Here is how much of TeX's memory you used:
- 35488 strings out of 468174
- 827080 string characters out of 5433150
- 1185557 words of memory out of 5000000
- 63609 multiletter control sequences out of 15000+600000
- 638507 words of font info for 119 fonts, out of 8000000 for 9000
+ 35579 strings out of 468174
+ 821984 string characters out of 5433150
+ 1180943 words of memory out of 5000000
+ 63713 multiletter control sequences out of 15000+600000
+ 637116 words of font info for 111 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 93i,18n,117p,1186b,1155s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,13n,117p,1186b,1174s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (35 pages).
+Output written on main.pdf (23 pages).

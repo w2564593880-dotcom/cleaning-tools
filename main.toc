@@ -2,15 +2,15 @@
 \contentsline {section}{\numberline {1.1}基本理论和模拟条件}{1}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}EDEM理论基础}{1}{subsection.1.1.1}%
 \contentsline {section}{\numberline {1.2}井筒内铁屑运移及分布规律}{1}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}压井液粘度对铁屑运移规律的影响}{5}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.1}压井液粘度对铁屑运移规律的影响}{3}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}压井液流速对铁屑运移规律的影响}{5}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}井斜对铁屑运移规律的影响}{6}{subsection.1.2.3}%
-\contentsline {section}{\numberline {1.3}井筒内结垢物运移及分布规律研究}{9}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}压井液流速对钡锶垢运移规律的影响}{12}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}井斜对钡锶垢运移规律的影响}{13}{subsection.1.3.2}%
-\contentsline {section}{\numberline {1.4}井筒内蜡运移及分布规律研究}{14}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}压井液流速对蜡垢运移规律的影响}{15}{subsection.1.4.1}%
-\contentsline {subsection}{\numberline {1.4.2}井斜对蜡垢颗粒运移规律的影响}{15}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.2.3}井斜对铁屑运移规律的影响}{7}{subsection.1.2.3}%
+\contentsline {section}{\numberline {1.3}井筒内结垢物运移及分布规律研究}{10}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}压井液流速对钡锶垢运移规律的影响}{11}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}井斜对钡锶垢运移规律的影响}{12}{subsection.1.3.2}%
+\contentsline {section}{\numberline {1.4}井筒内蜡运移及分布规律研究}{13}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}压井液流速对蜡垢运移规律的影响}{14}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}井斜对蜡垢颗粒运移规律的影响}{14}{subsection.1.4.2}%
 \contentsline {chapter}{\numberline {第二章\hspace {.3em}}井筒内颗粒运移实验}{17}{chapter.2}%
 \contentsline {chapter}{\numberline {第三章\hspace {.3em}}深度清洁工具设计}{18}{chapter.3}%
 \contentsline {section}{\numberline {3.1}“三合一”脉冲式冲刮刷集成式井筒清洁工具设计}{18}{section.3.1}%

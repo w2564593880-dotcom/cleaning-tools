@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.7.3)  14 SEP 2026 16:30
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.7.3)  14 SEP 2026 16:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1270,6 +1270,10 @@ File: figure/iron-wire-distribution-1dot7cp-0dot17mpers.png Graphic file (type b
 <figure/iron-wire-distribution-1dot7cp-0dot17mpers.png>
 File: figure/iron-wire-distribution-1dot7cp-0dot27mpers.png Graphic file (type bmp)
 <figure/iron-wire-distribution-1dot7cp-0dot27mpers.png>
+File: figure/iron-wire-particle-track-1dot7cp-0dot17mpers.jpg Graphic file (type bmp)
+<figure/iron-wire-particle-track-1dot7cp-0dot17mpers.jpg>
+File: figure/iron-wire-particle-track-1dot7cp-0dot27mpers.jpg Graphic file (type bmp)
+<figure/iron-wire-particle-track-1dot7cp-0dot27mpers.jpg>
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1279,13 +1283,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [5]
-File: figure/iron-wire-particle-track-1dot7cp-0dot17mpers.jpg Graphic file (type bmp)
-<figure/iron-wire-particle-track-1dot7cp-0dot17mpers.jpg>
-File: figure/iron-wire-particle-track-1dot7cp-0dot27mpers.jpg Graphic file (type bmp)
-<figure/iron-wire-particle-track-1dot7cp-0dot27mpers.jpg>
-File: figure/iron-wire-mean-velocity-evolution-incoming-velocity.png Graphic file (type bmp)
-<figure/iron-wire-mean-velocity-evolution-incoming-velocity.png>
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1294,14 +1291,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [6]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.45398pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.45398pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
-
-[7]
+File: figure/iron-wire-mean-velocity-evolution-incoming-velocity.png Graphic file (type bmp)
+<figure/iron-wire-mean-velocity-evolution-incoming-velocity.png>
 File: figure/iron-wire-distribution-1dot7cp-0dot27mpers-3angles.jpg Graphic file (type bmp)
 <figure/iron-wire-distribution-1dot7cp-0dot27mpers-3angles.jpg>
 
@@ -1312,9 +1303,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
-[8]
+[7]
 File: figure/iron-wire-particle-track-1dot7cp-0dot27mpers-3angles.jpg Graphic file (type bmp)
 <figure/iron-wire-particle-track-1dot7cp-0dot27mpers-3angles.jpg>
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.45398pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.45398pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
+
+[8]
 File: figure/iron-wire-mean-velocity-evolution-3angles.png Graphic file (type bmp)
 <figure/iron-wire-mean-velocity-evolution-3angles.png>
 
@@ -1341,14 +1341,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [10]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.45398pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.45398pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
-
-[11]
 File: figure/BaSr-distribution-Vin.jpg Graphic file (type bmp)
 <figure/BaSr-distribution-Vin.jpg>
 File: figure/BaSr-mean-velocity-evolution-vin-dot37.png Graphic file (type bmp)
@@ -1363,9 +1355,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
-[12]
+[11]
 File: figure/BaSr-distribution-3angles.jpg Graphic file (type bmp)
 <figure/BaSr-distribution-3angles.jpg>
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.45398pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.45398pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
+
+[12]
 File: figure/BaSr-mean-velocity-evolution-big-size.png Graphic file (type bmp)
 <figure/BaSr-mean-velocity-evolution-big-size.png>
 File: figure/BaSr-mean-velocity-evolution-small-size.png Graphic file (type bmp)
@@ -1379,14 +1380,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [13]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.45398pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.45398pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
-
-[14]
 File: figure/Wax-mean-velocity-Vin-dot37mpersec.png Graphic file (type bmp)
 <figure/Wax-mean-velocity-Vin-dot37mpersec.png>
 File: figure/Wax-mean-velocity-Vin-dot59mpersec.png Graphic file (type bmp)
@@ -1399,7 +1392,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
-[15]
+[14]
 File: figure/wax-distribution-3angles.png Graphic file (type bmp)
 <figure/wax-distribution-3angles.png>
 File: figure/Wax-mean-velocity-Vin-dot59mpersec-theta-0.png Graphic file (type bmp)
@@ -1407,6 +1400,14 @@ File: figure/Wax-mean-velocity-Vin-dot59mpersec-theta-0.png Graphic file (type b
 File: figure/Wax-mean-velocity-Vin-dot59mpersec-theta-90.png Graphic file (type bmp)
 <figure/Wax-mean-velocity-Vin-dot59mpersec-theta-90.png>
 )
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.45398pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.45398pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
+
+[15]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1610,7 +1611,7 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of TeX's memory you used:
  35850 strings out of 470139
  832970 string characters out of 5477718
- 1176064 words of memory out of 5000000
+ 1177063 words of memory out of 5000000
  63822 multiletter control sequences out of 15000+600000
  638523 words of font info for 121 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191

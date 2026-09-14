@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.7.19)  14 SEP 2026 08:54
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.7.19)  14 SEP 2026 11:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1559,14 +1559,22 @@ LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
 (Font)              scaled to size 8.0pt on input line 4.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
 (Font)              scaled to size 6.0pt on input line 4.
-)
-\tf@toc=\write5
-\openout5 = `main.toc'.
-
  [1
 
 
-]
+])
+\tf@toc=\write5
+\openout5 = `main.toc'.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.45398pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.45398pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
+
+[2]
 第一章
 [1
 
@@ -1846,7 +1854,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
-[21]) (./chapters/bib.tex
+[21]) (./chapters/chapter3/part4-filter.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1855,6 +1863,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [22]
+File: figure/chapter3/guolvqi.png Graphic file (type bmp)
+<figure/chapter3/guolvqi.png>
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1862,7 +1873,80 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
-[23] [24
+[23]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.45398pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.45398pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
+
+[24]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.45398pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.45398pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
+
+[25]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.45398pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.45398pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
+
+[26]
+File: figure/chapter3/filter-outlet-sub.png Graphic file (type bmp)
+<figure/chapter3/filter-outlet-sub.png>
+File: figure/chapter3/filter-inlet-sub.png Graphic file (type bmp)
+<figure/chapter3/filter-inlet-sub.png>
+File: figure/chapter3/filter-outlet-sub-tensile-stress.png Graphic file (type b
+mp)
+<figure/chapter3/filter-outlet-sub-tensile-stress.png>
+File: figure/chapter3/filter-outlet-sub-torsion-stress.png Graphic file (type b
+mp)
+<figure/chapter3/filter-outlet-sub-torsion-stress.png>
+File: figure/chapter3/filter-inlet-sub-tensile-stress.png Graphic file (type bm
+p)
+<figure/chapter3/filter-inlet-sub-tensile-stress.png>
+File: figure/chapter3/filter-inlet-sub-torsional-stress.png Graphic file (type 
+bmp)
+<figure/chapter3/filter-inlet-sub-torsional-stress.png>
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.45398pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.45398pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
+
+[27]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.45398pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.45398pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
+
+[28]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.45398pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.45398pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
+
+[29]) (./chapters/bib.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.45398pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.45398pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
+
+[30] [31
 
 
 ])
@@ -1873,7 +1957,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
-[25] (./main.aux)
+[32] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
@@ -1887,15 +1971,15 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D51B726EA9F8144A424B6F6132290931;3692.
+(rerunfilecheck)             Checksum: 95F984D095F630A6575C47A39DE7551D;4820.
  ) 
 Here is how much of TeX's memory you used:
- 35393 strings out of 468174
- 823219 string characters out of 5433150
- 1183529 words of memory out of 5000000
- 63524 multiletter control sequences out of 15000+600000
+ 35488 strings out of 468174
+ 827080 string characters out of 5433150
+ 1185557 words of memory out of 5000000
+ 63609 multiletter control sequences out of 15000+600000
  638507 words of font info for 119 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 93i,16n,117p,1186b,1147s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,18n,117p,1186b,1155s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (27 pages).
+Output written on main.pdf (35 pages).

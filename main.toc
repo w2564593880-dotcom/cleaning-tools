@@ -20,5 +20,13 @@
 \contentsline {subsubsection}{\numberline {3.3.8.1}强磁工具操作方式}{22}{subsubsection.3.3.8.1}%
 \contentsline {subsubsection}{\numberline {3.3.8.2}强磁工具维护与保养}{22}{subsubsection.3.3.8.2}%
 \contentsline {section}{\numberline {3.4}多功能过滤工具设计}{23}{section.3.4}%
-\contentsline {section}{\numberline {3.5}可变径刮管工具设计}{23}{section.3.5}%
-\contentsline {chapter}{参考文献}{24}{section.3.5}%
+\contentsline {subsection}{\numberline {3.4.1}工具总体结构设计}{23}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}过滤工具设计计算与校核}{24}{subsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.2.1}主要受力件的螺纹强度校核}{24}{subsubsection.3.4.2.1}%
+\contentsline {subsubsection}{\numberline {3.4.2.2}主要受力件的零件抗拉强度校核}{25}{subsubsection.3.4.2.2}%
+\contentsline {subsubsection}{\numberline {3.4.2.3}主要受力件的零件抗扭强度校核}{26}{subsubsection.3.4.2.3}%
+\contentsline {subsubsection}{\numberline {3.4.2.4}过滤容积计算}{27}{subsubsection.3.4.2.4}%
+\contentsline {subsection}{\numberline {3.4.3}操作方式}{29}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}维护与保养}{30}{subsection.3.4.4}%
+\contentsline {section}{\numberline {3.5}可变径刮管工具设计}{30}{section.3.5}%
+\contentsline {chapter}{参考文献}{31}{section.3.5}%

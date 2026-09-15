@@ -68,7 +68,395 @@
     \label{fig:particle_collision}
 \end{figure}
 
-\section{井筒内铁屑运移及分布规律研究}
+
+假设发生弹性接触的两球形颗粒的半径分别为 \(R_{1}\)、\(R_{2}\)，则颗粒间产生的法向接触力大小 \(F_{\mathrm{n}}\) 的计算式为
+\begin{equation}
+	F_{\mathrm{n}}=\frac{4}{3}E_{\mathrm{eq}}\sqrt{R_{\mathrm{eq}}}\,\alpha^{3/2}
+\end{equation}
+式中，\(E_{\mathrm{eq}}\) 为等效杨氏模量，GPa；\(\alpha\) 为法向重叠量，mm；\(R_{\mathrm{eq}}\) 为等效接触半径。
+
+\(R_{\mathrm{eq}}\) 的计算式为
+\begin{equation}
+	R_{\mathrm{eq}}=\frac{R_{1}R_{2}}{R_{1}+R_{2}}
+\end{equation}
+
+颗粒间法向阻尼力 \(F_{\mathrm{n}}^{\mathrm{d}}\) 以及切向阻尼力 \(F_{\mathrm{t}}^{\mathrm{d}}\) 的计算公式为
+\begin{equation}
+	F_{\mathrm{n}}^{\mathrm{d}}=-2\sqrt{\frac{5}{6}}\beta\sqrt{S_{\mathrm{n}}m_{\mathrm{eq}}}\,\nu_{\mathrm{n}}^{\mathrm{rel}}
+\end{equation}
+\begin{equation}
+	F_{\mathrm{t}}^{\mathrm{d}}=-2\sqrt{\frac{5}{6}}\beta\sqrt{S_{\mathrm{t}}m_{\mathrm{eq}}}\,\nu_{\mathrm{t}}^{\mathrm{rel}}
+\end{equation}
+式中，\(S_{\mathrm{t}}\) 为切向刚度，N/m；\(S_{\mathrm{n}}\) 为法向刚度，N/m；\(\nu_{\mathrm{t}}^{\mathrm{rel}}\) 为切向真实速度，m/s；\(\nu_{\mathrm{n}}^{\mathrm{rel}}\) 为法向真实速度，m/s；\(e\) 为恢复系数；\(m_{\mathrm{eq}}\) 为等效质量，kg。
+
+其中，\(G_{\mathrm{eq}}\) 为等效剪切模量，Pa，其计算公式为
+\begin{equation}
+	G_{\mathrm{eq}}=\left(\frac{2-\nu_{1}}{G_{1}}+\frac{2-\nu_{2}}{G_{2}}\right)^{-1}
+\end{equation}
+式中，\(G_{1}\)、\(G_{2}\) 分别为球 1、2 的剪切模量；\(\nu_{1}\)、\(\nu_{2}\) 分别为颗粒 1、2 的泊松比。
+
+假设两颗粒产生接触前的速度分别为 \(\bm{\nu}_{1}\)、\(\bm{\nu}_{2}\)，\(\bm{n}\) 为产生接触时的法向单位矢量，则
+\begin{equation}
+	\bm{n}=\frac{\bm{r}_{1}-\bm{r}_{2}}{\left|\bm{r}_{1}-\bm{r}_{2}\right|}
+\end{equation}
+\begin{equation}
+	\nu_{\mathrm{n}}^{\mathrm{rel}}=(\bm{\nu}_{1}-\bm{\nu}_{2})\cdot\bm{n}
+\end{equation}
+
+颗粒间的切向力 \(F_{\mathrm{t}}\) 计算式为
+\begin{equation}
+	F_{\mathrm{t}}=S_{\mathrm{t}}\delta
+\end{equation}
+
+摩擦力 \(\mu_{\mathrm{s}}F_{\mathrm{n}}\) 与切向力的大小有关，\(\mu_{\mathrm{s}}\) 为静摩擦系数。滚动摩擦在仿真计算过程中的重要性是不言而喻的，接触表面处产生的力矩可以对动摩擦系数进行描述，即
+\begin{equation}
+	\bm{T}_{\mathrm{t}}=\mu F_{\mathrm{n}}R\,\bm{\omega}_{\mathrm{t}}
+\end{equation}
+式中，\(\mu\) 为动摩擦系数；\(R\) 为接触点到质心的长度，mm；\(\bm{\omega}_{\mathrm{t}}\) 为物体到接触点的单位角速度，rad/s。
+
+当处理颗粒为湿颗粒且存在粘性作用时，需要模拟含湿颗粒且颗粒间能形成液桥力的工况，接触模型通常选择为 Hertz--Mindlin with JKR 接触模型，模型接触力的实现基于 Johnson--Kendall--Roberts 理论。该模型的计算基础与 Hertz--Mindlin 基本接触模型相同，是在 Hertz--Mindlin 接触模型基础上引入一个法向接触力。
+
+JKR 模型的法向力由重叠量 \(\delta\) 和引入的新参数表面能 \(\gamma\) 实现：
+\begin{equation}
+	F_{\mathrm{JKR}}
+	=-4\sqrt{\pi\gamma E_{\mathrm{eq}}\alpha^{3}}
+	+\frac{4E_{\mathrm{eq}}\alpha^{3}}{3R_{\mathrm{eq}}}
+\end{equation}
+\begin{equation}
+	\delta=\frac{\alpha^{2}}{R_{\mathrm{eq}}}
+	-\sqrt{\frac{4\pi\gamma\alpha}{E_{\mathrm{eq}}}}
+\end{equation}
+
+对于 \(\gamma=0\) 的情况，接触力即变为 Hertz--Mindlin 法向力：
+\begin{equation}
+	F_{\mathrm{JKR}}=F_{\mathrm{Hertz}}
+	=\frac{4}{3}E_{\mathrm{eq}}\sqrt{R_{\mathrm{eq}}}\,\alpha^{3/2}
+\end{equation}
+
+计算时可根据计算工况调整颗粒表面能及其他参数，调整不同含水率条件下的颗粒状态，不同工况的表面能对颗粒影响较大。该接触模型对颗粒提供凝聚力，即使颗粒间的接触不是直接接触也会存在。颗粒间有非零凝聚力的最大间隙计算式为
+\begin{equation}
+	\delta_{\mathrm{c}}
+	=\frac{\alpha_{\mathrm{c}}^{2}}{R_{\mathrm{eq}}}
+	-\sqrt{\frac{4\pi\gamma\alpha_{\mathrm{c}}}{E_{\mathrm{eq}}}}
+\end{equation}
+
+当 \(\delta<\delta_{\mathrm{c}}\) 时，模型计算则计算为 0。当颗粒间的凝聚力达到最大值时，颗粒间的接触不是实际接触，而且接触间隔小于 \(\delta_{\mathrm{c}}\)，其计算式为
+\begin{equation}
+	F_{\mathrm{c}}=-\frac{3}{2}\pi\gamma R_{\mathrm{eq}}
+\end{equation}
+
+颗粒与颗粒间接触模型是 EDEM 中使用的 Hertz--Mindlin 默认模型，该模型适用于描述各种形状颗粒之间的接触行为，包括圆形、椭圆形和不规则形状颗粒，如图 1.2、图 1.3 所示。Hertz--Mindlin 模型在描述颗粒间接触力和相互作用时具有广泛的适用性，并且考虑了颗粒的变形和滑移等实际因素。Hertz--Mindlin 接触模型示意图见图 1.3。
+
+此外，在采用 EDEM 软件进行模拟计算过程中，还需要做如下假设：
+\begin{enumerate}
+	\item 颗粒系统中所有颗粒的点变形总和被认为是颗粒系统的总变形；
+	\item 颗粒之间的接触形式为点接触，接触总是在很小的区域内发生；
+	\item 颗粒与颗粒接触时可以产生部分重叠量，但重叠量大小与颗粒尺寸大小相比要小很多；
+	\item 在每个计算步长内，外界激励不能被任意颗粒同时传播到它的相邻颗粒。在所有的计算时间内，任意颗粒上的合力可以通过相互接触的颗粒之间的相互作用唯一确定。
+\end{enumerate}
+
+\subsection{液固相间作用模型}
+
+颗粒在流场中的受力主要分为以下三类：
+\begin{enumerate}
+	\item 与流体--颗粒相对运动无关的力，包括重力、压力梯度力、浮力等；
+	\item 与流体--颗粒相对运动有关，且力的方向沿相对运动方向，包括曳力、虚拟质量力和 Basset 力等；
+	\item 与流体--颗粒相对运动有关，且力的方向垂直于相对运动方向，包括 Saffman 力、Magnus 力等。
+\end{enumerate}
+
+在液--固两相流的模拟中，正确选择曳力模型有助于提高数值模拟的准确性。常见曳力模型有 Schiller--Naumann 曳力模型、Wen--Yu 曳力模型、Symmetric 曳力模型、Gidaspow 曳力模型、Syamlal--O'Brien 曳力模型等。Gidaspow 曳力模型应用较广，适用于大多数流态化计算，是 Wen--Yu 曳力模型与 Ergun 曳力模型的结合。因此，本文研究主要采用 Gidaspow 曳力模型，如下式所示：
+\begin{equation}
+	\beta_{\mathrm{Gidaspow}}=
+	\begin{cases}
+		\dfrac{3C_{\mathrm{d}}\epsilon_{\mathrm{s}}\rho_{\mathrm{l}}\left|\bm{\nu}_{\mathrm{l}}-\bm{\nu}_{\mathrm{s}}\right|}{4d_{\mathrm{s}}}\epsilon_{\mathrm{l}}^{-2.65}, & \epsilon_{\mathrm{l}}>0.8 \\[10pt]
+		\dfrac{\epsilon_{\mathrm{s}}(1-\epsilon_{\mathrm{l}})\mu_{\mathrm{l}}}{\epsilon_{\mathrm{l}}d_{\mathrm{s}}^{2}}
+		+1.75\dfrac{\epsilon_{\mathrm{s}}\rho_{\mathrm{l}}}{d_{\mathrm{s}}}
+		\left|\bm{\nu}_{\mathrm{l}}-\bm{\nu}_{\mathrm{s}}\right|, & \epsilon_{\mathrm{l}}\leq 0.8
+	\end{cases}
+\end{equation}
+其中，\(C_{\mathrm{d}}\) 为阻力系数，其计算公式如下：
+\begin{equation}
+	C_{\mathrm{d}}=
+	\begin{cases}
+		\dfrac{24}{Re_{\mathrm{s}}}\left(1+0.15Re_{\mathrm{s}}^{0.687}\right), & Re_{\mathrm{s}}\leq 1000 \\[8pt]
+		0.44, & Re_{\mathrm{s}}>1000
+	\end{cases}
+\end{equation}
+
+固相雷诺数表示为
+\begin{equation}
+	Re_{\mathrm{s}}=\frac{d_{\mathrm{s}}\epsilon_{\mathrm{l}}\rho_{\mathrm{l}}
+		\left|\bm{\nu}_{\mathrm{l}}-\bm{\nu}_{\mathrm{s}}\right|}{\mu_{\mathrm{l}}}
+\end{equation}
+
+升力包括剪切升力（Saffman）和旋转升力（Magnus），垂直于颗粒和流体之间的相对速度方向。施加在岩屑颗粒 \(p\) 上的剪切升力（Saffman）表现形式为
+\begin{equation}
+	\bm{F}_{\mathrm{S}}
+	=C_{\mathrm{LS}}\frac{\rho_{\mathrm{l}}\pi}{8}d_{p}^{3}
+	\left|\bm{\nu}_{\mathrm{l}}-\bm{\nu}_{p}\right|
+	\sqrt{\omega_{\mathrm{l}}}
+\end{equation}
+其中，\(\omega_{\mathrm{l}}\) 为流体速度的旋度，\(C_{\mathrm{LS}}\) 为剪切升力系数，可以表示为
+\begin{equation}
+	C_{\mathrm{LS}}=\frac{4.1126}{Re_{\mathrm{s}}^{0.5}}f\left(Re_{\mathrm{HB}},Re_{\mathrm{s}}\right)
+\end{equation}
+\begin{equation}
+	f\left(Re_{\mathrm{HB}},Re_{\mathrm{s}}\right)
+	=
+	\begin{cases}
+		\left(1-0.3314\sqrt{\beta}\right)
+		e^{-0.1Re_{\mathrm{s}}}
+		+0.3314\sqrt{\beta}, & Re_{\mathrm{s}}\leq 40 \\[6pt]
+		0.0524\sqrt{\beta Re_{\mathrm{s}}}, & Re_{\mathrm{s}}>40
+	\end{cases}
+\end{equation}
+其中
+\begin{equation}
+	\beta=\frac{0.5Re_{\mathrm{s}}}{Re_{\mathrm{HB}}},\qquad 0.005<\beta<0.4
+\end{equation}
+
+剪切流的雷诺数为
+\begin{equation}
+	Re_{\mathrm{s}}=\frac{\rho_{\mathrm{l}}d_{p}^{2}\omega_{\mathrm{l}}}{\mu_{\mathrm{l}}}
+\end{equation}
+
+作用在颗粒 \(p\) 上的旋转升力（Magnus）的计算公式由 Oesterle 给出：
+\begin{equation}
+	\bm{F}_{\mathrm{M}}
+	=C_{\mathrm{LM}}\frac{\rho_{\mathrm{l}}\pi}{8}d_{p}^{3}
+	\left|\bm{\nu}_{\mathrm{l}}-\bm{\nu}_{p}\right|
+	\frac{\left|\bm{\Omega}\times
+		\left(\bm{\nu}_{\mathrm{l}}-\bm{\nu}_{p}\right)\right|}
+	{\left|\bm{\Omega}\right|}
+\end{equation}
+其中，\(C_{\mathrm{LM}}\) 为剪切升力系数，可以表示为：
+\begin{equation}
+	C_{\mathrm{LM}}
+	=0.45+\left(\frac{Re_{r}}{Re_{\mathrm{HB}}}-0.454\right)
+	\exp\left(-0.5684Re_{r}Re_{\mathrm{HB}}^{-0.3}\right)
+\end{equation}
+
+颗粒拟温度的物理意义表示颗粒脉动的脉动能，能够在微尺度上反映颗粒脉动速度的剧烈程度，表征颗粒运动的无序程度，是颗粒相相互碰撞作用以及颗粒相和流体相相互作用的结果。颗粒拟温度的定义为
+\begin{equation}
+	\theta=\frac{1}{3N}\left[
+	\sum_{j=1}^{N}C_{xj}^{2}
+	+\sum_{j=1}^{N}C_{yj}^{2}
+	+\sum_{j=1}^{N}C_{zj}^{2}
+	\right]
+\end{equation}
+
+\subsection{液相控制模型}
+
+对于密度恒定的不可压缩流体，假设液相质量为常数，液体流动遵循 N--S 方程。液固两相流模型中流体相的连续性方程和 N--S 方程由下式给出：
+\begin{equation}
+	\frac{\partial(\rho_{\mathrm{l}}\epsilon_{\mathrm{l}})}{\partial t}
+	+\nabla\cdot(\rho_{\mathrm{l}}\epsilon_{\mathrm{l}}\bm{\nu}_{\mathrm{l}})=0
+\end{equation}
+\begin{equation}
+	\frac{\partial(\rho_{\mathrm{l}}\epsilon_{\mathrm{l}}\bm{\nu}_{\mathrm{l}})}{\partial t}
+	+\nabla\cdot(\rho_{\mathrm{l}}\epsilon_{\mathrm{l}}\bm{\nu}_{\mathrm{l}}\bm{\nu}_{\mathrm{l}})
+	=-\epsilon_{\mathrm{l}}\nabla P
+	-\nabla\cdot(\epsilon_{\mathrm{l}}\bm{\tau}_{\mathrm{l}})
+	+\epsilon_{\mathrm{l}}\rho_{\mathrm{l}}\bm{g}+\bm{F}_{p}
+\end{equation}
+式中，\(\bm{g}\) 为重力加速度，\(\rho_{\mathrm{l}}\) 为流体密度，\(P\) 和 \(\epsilon_{\mathrm{l}}\) 分别为流体相压力和体积分数，\(\bm{\nu}_{\mathrm{l}}\) 为流体速度，\(\bm{F}_{p}\) 为液固相间作用力，\(\bm{\tau}_{\mathrm{l}}\) 表示粘性应力张量。其中，液固相间作用力及粘性应力张量公式为
+\begin{equation}
+	\bm{F}_{p}
+	=-\frac{\sum_{i=1}^{k_{\mathrm{c}}}\bm{F}_{i,p}}{\Delta V}
+\end{equation}
+\begin{equation}
+	\bm{\tau}_{\mathrm{l}}
+	=\mu_{\mathrm{l}}\left[
+	\nabla\bm{\nu}_{\mathrm{l}}
+	+\left(\nabla\bm{\nu}_{\mathrm{l}}\right)^{T}
+	\right]
+	-\frac{2}{3}\mu_{\mathrm{l}}
+	\left(\nabla\cdot\bm{\nu}_{\mathrm{l}}\right)\bm{I}
+\end{equation}
+式中，\(\bm{F}_{p}\) 为液体对颗粒 \(p\) 的作用力，\(\mu_{\mathrm{l}}\) 为流体粘度，\(\bm{I}\) 为单位二阶张量。
+
+\subsection{湍流模型}
+
+考虑到高精度、应用简单、计算效率和通用性等需求，本文采用 \(k-\epsilon\) 标准模型作为研究基础来计算钻井液的湍流黏度，其中 \(k\) 为湍流动能，\(\epsilon\) 为耗散率。\(k\) 和 \(\epsilon\) 的输运方程分别表示为：
+\begin{equation}
+	\frac{\partial}{\partial t}(\rho_{\mathrm{l}}k)
+	+\frac{\partial}{\partial x_{i}}(\rho_{\mathrm{l}}k\nu_{\mathrm{l},i})
+	=\frac{\partial}{\partial x_{j}}\left[
+	\left(\mu+\frac{\mu_{\mathrm{t}}}{\sigma_{k}}\right)
+	\frac{\partial k}{\partial x_{j}}
+	\right]
+	+G_{k}-\rho_{\mathrm{l}}\epsilon-Y_{\mathrm{M}}
+\end{equation}
+\begin{equation}
+	\frac{\partial}{\partial t}(\rho_{\mathrm{l}}\epsilon)
+	+\frac{\partial}{\partial x_{i}}(\rho_{\mathrm{l}}\epsilon\nu_{\mathrm{l},i})
+	=\frac{\partial}{\partial x_{j}}\left[
+	\left(\mu+\frac{\mu_{\mathrm{t}}}{\sigma_{\epsilon}}\right)
+	\frac{\partial\epsilon}{\partial x_{j}}
+	\right]
+	+C_{1\epsilon}\frac{\epsilon}{k}
+	\left(G_{k}+C_{3\epsilon}G_{b}\right)
+	-C_{2\epsilon}\rho_{\mathrm{l}}\frac{\epsilon^{2}}{k}
+\end{equation}
+式中，\(\rho_{\mathrm{l}}\) 为液相密度，kg/m\(^{3}\)；\(\nu_{\mathrm{l}}\) 为液相速度，m/s；\(C_{1\epsilon}\)、\(C_{2\epsilon}\)、\(C_{3\epsilon}\) 为常数，且 \(C_{1\epsilon}=1.44\)，\(C_{2\epsilon}=1.92\)。\(\sigma_{k}\) 和 \(\sigma_{\epsilon}\) 分别为 \(k\) 和 \(\epsilon\) 的湍流普朗特数，其取值为 \(\sigma_{k}=1.0\)，\(\sigma_{\epsilon}=1.3\)。\(G_{k}\) 表示由于平均速度梯度产生的湍流动能；\(Y_{\mathrm{M}}\) 表示可压缩湍流脉动膨胀对整体耗散率的影响；\(\mu_{\mathrm{t}}\) 表示湍流黏度系数。\(G_{k}\)、\(Y_{\mathrm{M}}\)、\(\mu_{\mathrm{t}}\) 公式表示如下：
+\begin{equation}
+	Y_{\mathrm{M}}=2\rho_{\mathrm{l}}\epsilon M^{2}
+\end{equation}
+\begin{equation}
+	\mu_{\mathrm{t}}=\frac{\rho_{\mathrm{l}}C_{\mu}k^{2}}{\epsilon}
+\end{equation}
+
+为了模拟井筒内携带颗粒的特性，模型需要通过设计一个环形空间来实现。研究中建立了内径 \(\phi 88.9\) mm、外径 \(\phi 244.475\) mm、\(\phi 177.8\) mm、总长度为 \(1.5\) m 的光滑管柱，用于模拟钻杆（\(3\)-\(1/2'\)）和井筒（\(9\)-\(5/8'\)、\(7'\)），套管和钻杆同心。在模拟过程中，内部钻杆固定，钻井液以一定速度垂直于入口方向流入环形空间，并从另一端出口流出。环空模型如图 1.4、图 1.5 所示。在 EDEM 软件中，颗粒产生于“颗粒工厂”，其初始速度、角速度为零，角度随机。计算采用了非稳态 \(k-\epsilon\) 湍流模型，将颗粒设置为离散相，并利用多面体网格进行建模。边界条件包括速度入口、压力出口，管壁采用无滑移条件。一般计算参数具体数值见表 1.1，重力方向始终竖直向下，对于不同 \(\theta\) 的情况，流体域旋转相应角度。
+
+\begin{table}[H]
+	\centering
+	\caption{一般计算参数}
+	\begin{tabular}{llll}
+		\toprule
+		名称 & 符号 & 数值 & 单位 \\
+		\midrule
+		水平井筒长度 & \(L\) & 1.5 & m \\
+		井筒直径 & \(D_{\mathrm{H}}\) & 244.475/177.8 & mm \\
+		钻杆直径 & \(D_{\mathrm{P}}\) & 88.9 & mm \\
+		颗粒密度 & \(\rho_{\mathrm{P}}\) & -- & kg/m\(^{3}\) \\
+		压井液密度 & \(\rho_{\mathrm{l}}\) & -- & kg/m\(^{3}\) \\
+		井斜角 & \(\theta\) & 0.0、45.0、90.0 & \(^{\circ}\) \\
+		压井液入口流速 & \(\nu_{\mathrm{c}}\) & 0.17、0.27、0.37、0.59 & m/s \\
+		压井液粘度 & \(\mu\) & 1.0、1.7 & mPa·s \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+在井筒内颗粒物运移特性的研究中，基于对颗粒动力学行为控制作用的大小，选择流体流速 \(\nu_{\mathrm{c}}\)、流体粘度 \(\mu\) 和井斜角 \(\theta\) 作为主要控制变量。首先，流体流速 \(\nu_{\mathrm{c}}\) 是决定颗粒悬浮与输运能力的关键参数，流速直接影响流体的动能和湍流强度，进而调控颗粒的启动阈值、悬浮状态及沉积风险。其次，流体粘度 \(\mu\) 通过改变流体的粘滞阻力，显著影响颗粒的沉降速度及与流体的相互作用，高粘度流体可增强颗粒携带能力，但可能增加流动阻力。最后，井斜角 \(\theta\) 作为几何特征的核心变量，通过改变重力在井筒轴线方向的分量，直接影响颗粒的受力平衡：在斜井或水平井中，重力分量的减弱会加剧颗粒沉降的方位选择性，导致非对称沉积。这三个因素共同构成了颗粒运移的“动力--阻力--几何”三元耦合机制，能够系统表征复杂井筒环境下颗粒迁移的物理本质，为优化携粒效率、预测床层形成提供理论支撑。考虑到颗粒属性的不同会对其运移行为产生显著影响，于是，下文分别研究砂砾、铁屑、结垢物和蜡颗粒的运移和分布规律。
+
+\section{井筒内砂砾运移及分布规律研究}
+
+洗井作业中，冲砂工具和管柱的砂堵问题直接影响作业安全与效率。砂堵的本质是砂砾在工具与井筒环空内的异常堆积，其后果不仅限于工具功能失效，例如冲砂液循环中断、卡钻，还会导致非计划停工、设备维修成本攀升。通过仿真研究井筒内工具与井筒环空砂砾运移规律，可以预测砂砾在井筒环空内的运移速度以及沉积规律，为冲砂作业提供理论指导。
+
+根据现场提供的砂砾样本（见图 1.6）及其粒度分级统计数据（参见表 0.2），建立相对应的大小与数量的砂砾颗粒仿真模型（具体参数见表 0.3）。
+
+\begin{table}[H]
+	\centering
+	\caption{砂砾粒度分级统计}
+	\begin{tabular}{lll}
+		\toprule
+		分类 & 粒级区间/\(\mu\)m & 含量/\% \\
+		\midrule
+		砾石 & \(\leq 2000\) & 0.00 \\
+		巨砂 & 2000.00--1000.00 & 0.00 \\
+		粗砂 & 1000.00--500.00 & 1.03 \\
+		中砂 & 500.00--250.00 & 35.29 \\
+		细砂 & 250.00--125.00 & 47.15 \\
+		极细砂 & 125.00--62.50 & 13.99 \\
+		粗粉砂 & 62.50--31.25 & 1.92 \\
+		细粉砂 & 31.25--3.90 & 0.61 \\
+		粘土 & \(\leq 3.90\) & 0.00 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{仿真颗粒粒径及数量分布}
+	\begin{tabular}{llll}
+		\toprule
+		类型 & 砂砾颗粒数量/个 & 粒径分布比例/\% & 粒径大小/\(\mu\)m \\
+		\midrule
+		粗砂 & 1000 & 1.0 & 750 \\
+		中砂 & 35000 & 35.0 & 375 \\
+		细砂 & 47000 & 47.0 & 187.5 \\
+		极细砂 & 14000 & 14.0 & 93.75 \\
+		粗粉砂 & 2000 & 3.0 & 46.875 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+本项目涉及到的四类工具中，“四合一”工具的外部功能单元多，结构最为复杂，在工具的几何变径处会产生边界层分离和回流现象，是砂砾沉积的“危险位置”。于是，本文选择“四合一”工具的扶正器和强磁位置作为对象，研究砂砾在此处的沉积行为。建立强磁部位与 \(7'\) 井筒环空流体仿真模型，仿真模型数据见表 0.4。研究不同环空流速下（\(\nu_{\mathrm{c}}=0.37\) m/s、\(0.59\) m/s）砂砾的运移及沉降规律，探究砂砾是否会出现沉积或者堵塞现象。计算结果如图 1.8 所示。
+
+\begin{table}[H]
+	\centering
+	\caption{“四合一”工具砂砾沉积仿真模型数据}
+	\begin{tabular}{llll}
+		\toprule
+		名称 & 符号 & 数值 & 单位 \\
+		\midrule
+		水平井筒长度 & \(L\) & 1.5 & m \\
+		井筒直径 & \(D_{\mathrm{H}}\) & 177.8 & mm \\
+		钻杆直径 & \(D_{\mathrm{P}}\) & 88.9 & mm \\
+		颗粒密度 & \(\rho_{\mathrm{P}}\) & 2650.0 & kg/m\(^{3}\) \\
+		压井液密度 & \(\rho_{\mathrm{l}}\) & 1000.0 & kg/m\(^{3}\) \\
+		井斜角 & \(\theta\) & 90.0 & \(^{\circ}\) \\
+		压井液入口流速 & \(\nu_{\mathrm{c}}\) & 0.37、0.59 & m/s \\
+		压井液粘度 & \(\mu\) & 1.0 & mPa·s \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+图 1.9 描述的是压井液流速 \(0.37\) m/s 下井筒与工具环空内砂砾颗粒分布情况。从图可以看出，部分砂砾颗粒由于重力作用会在工具前端产生堆积，同时砂砾颗粒会随着工具的导流结构进行运移，在强磁部件的凹槽内也会有少量的砂砾堆积现象。
+
+图 1.10 描述的是相同时间步环空流速 \(0.37\) m/s、\(0.59\) m/s 下砂砾颗粒分布。从图中可以看出，环空流速增大时，靠近压力出口的砂砾颗粒越多，砂砾颗粒的运移效率明显加快。在相同时间步下，环空流速越大，颗粒运移速度越快。由于环空流速增大，流体的拖曳力增大，砂砾颗粒在轴向的速度增大，砂砾颗粒由于重力作用产生的沉积位置与流体入口的距离也变远。
+
+通过仿真发现，在冲砂作业时，如果环空流体中砂砾体积分数越大，越容易在工具与井筒下壁之间的环空中产生沉积，环空流速增大，砂砾运移效率加快，建议在作业时增大压井液流速即增大冲砂液排量以减小砂砾堆积的风险，降低砂堵概率。同时，工具的导流结构也对砂砾运移起到关键作用，砂砾颗粒会随着工具的导流结构进行运移，降低了砂堵的风险，为工具安全作业提供保障。
+
+上述研究仅仅从宏观上观测砂砾在井筒环空中的运移情况，无法提取井筒环空中不同具体位置的砂砾体积分数、砂砾速度及砂砾床厚度等数据。为此，本研究考虑井筒环空不同位置的砂砾量，基于欧拉液固两相流模型和 \(SST k-\omega\) 模型，建立了三维井眼环空颗粒运移模型，在分析砂砾体积分数和砂砾速度的基础上，通过 Fluent 分析整个环空中砂砾质量，提出了环空内含有颗粒质量的变化方法，分析了幂律流体中环空流速、井斜角度、压井液粘度等对环空内沉降的砂床高度的影响。所得结论对水平井和大位移井环空内井筒清洁和高效作业具有指导意义。
+
+\subsection{数值模型建立}
+
+根据实际工况，在钻井过程中，钻井液携带砂砾颗粒进入环空，因此内部环境为复杂的液--固两相流湍流流场，故选用 Eulerian 两相流模型对环空砂砾运移进行数值模拟，将环空流场视为稳定的不可压缩湍流流场。
+
+\subsubsection{幂律流体}
+
+钻井液属于非牛顿流体，其本构方程符合幂律流体，流变参数
+\begin{equation}
+	\tau=K\dot{\gamma}^{n}
+\end{equation}
+其中，\(K\) 为钻具内钻井液稠度系数，\(n\) 为钻井液流变指数。依据相关文献，\(K=2.38\)，\(n=0.80\)。
+
+\subsection{几何模型及边界条件}
+
+\subsubsection{几何模型}
+
+根据现场实际油井组合参数建立环空三维模型，如图 1.10 所示。实际水平井段很长，为了研究方便，取水平井模型长 \(1.5\) m，取曲率半径 \(1\) m、曲率为 \(90^{\circ}\) 的圆弧弯管模型模拟不同井斜角度，考虑井壁和钻杆表面光滑，计算流域由钻杆和井壁表面组成。采用多面体单元对所建模型进行网格划分。
+
+\subsubsection{边界条件}
+
+考虑模拟运算中的收敛性和稳定性，湍流流场的计算采用二阶迎风格式和 SIMPLE 算法。根据实际工况对模型入口边界条件定义，具体为：压井液速度入口和砂砾颗粒入口；出口边界条件为 outlet；将井壁与钻杆表面设为 stationary wall。具体模拟参数如下：井眼直径 244.475 mm，钻杆直径 88.9 mm，砂砾密度 \(2650\) kg/m\(^{3}\)，压井液密度 1000、1300、1400 kg/m\(^{3}\)，砂砾直径 250 \(\mu\)m，钻井液入口排量 25、40、100 m\(^{3}\)/h，压井液粘度为 1、2.3、5 cp。
+
+\subsection{数值模拟及结果分析}
+
+\subsubsection{环空砂砾沉降分析}
+
+通过对井筒环空内砂砾质量进行仿真，得到钻杆静止时环空内砂砾沉降质量变化曲线，如图 1.11 所示。由图可知，环空内砂砾质量曲线先呈线性增长，在 30 s 后不再继续增长，而是随时间在稳定值上下波动。这说明井筒内进入的砂砾量与出口排出的砂砾量接近，可判断环空内沉积的砂砾量达到稳定值，平均岩屑质量为 \(63.294\) kg。
+
+图 1.12 和图 1.13 分别为不同位置截面砂砾轴向速度云图和砂砾体积分数云图。其中水平段每个截面间距 \(500\) mm，井斜段井斜角度间隔 \(15^{\circ}\)，且距离入口 500、1000、1500 mm 处，井斜段 \(15^{\circ}\)、\(30^{\circ}\)、\(75^{\circ}\) 处截面进行放大。环空中砂砾量达到稳定后，由于整个环空中的砂砾不是均匀分布，所以不同位置砂砾速度和体积分数有一定差异。由图可知：环空上部为流体高速区，流速大；下部为低速区，流速趋近于 0。由于重力作用，砂砾趋向环空下部，大部分砂砾沉降在环空下部低速区，造成砂砾难以运移，最终形成砂砾床。
+
+\subsubsection{压井液流速对环空砂砾沉积的影响}
+
+图 1.14 为粘度 \(2.3\) cp，排量 25、40、100 m\(^{3}\)/h（0.17、0.27、0.69 m/s）时，不同流速下环空内砂砾质量随时间的变化曲线。由图可以看出，随着时间的延长，环空内沉降的砂砾质量趋于稳定，并且随着流速升高，环空内沉降的砂砾质量减小，且到达稳定的时间加快。
+
+假设环空内体积分数最大且沉积高度最高的位置为最容易发生砂堵位置，定为 block 点（简称 b 点）。图 1.15 为流速为 \(0.17\) m/s 时环空内砂砾的体积分数云图，则流速为 \(0.17\) m/s 时，b 点出现在水平段距离入口 \(1280\) mm 处，高度为 \(68\) mm。砂砾床主要沉积在水平段，随着井斜角度增加，砂砾体积分数逐渐减小，井斜 \(75^{\circ}\) 时，砂砾体积分数接近于 0。
+
+图 1.16 为流速为 \(0.27\) m/s 时环空内砂砾的体积分数云图，流速为 \(0.27\) m/s 时，b 点出现在水平段距离入口 \(1150\) mm 处，高度为 \(64\) mm。砂砾床主要沉积在水平段，相对于 \(0.17\) m/s 流速工况，砂砾在井斜段体积分数有所增加，砂砾向出口运移的效率增大。
+
+图 1.17 为流速为 \(0.69\) m/s 时环空内砂砾的体积分数云图，流速为 \(0.69\) m/s 时，b 点出现在水平段距离入口 \(1530\) mm 处，高度为 \(32\) mm。砂砾床沉积在水平段及小倾角井斜段，砂砾床高度明显降低，砂堵风险明显下降，且井斜段砂砾体积分数明显增大，砂砾运移效率增大。
+
+图 1.18 为 b 点高度随压井液流速变化曲线，由图中可以看到随着压井液流速增大，b 点高度逐渐减小。
+
+图 1.19 为 b 点不同压井液流速下砂砾体积分数和轴向速度云图，随着压井液流速增大，b 点砂砾体积分数减小，且砂砾流速增大，这说明环空排量的增大，增强了流体的携砂能力，促进了砂砾颗粒在环空中的流动性，增加了砂砾颗粒能量，为砂砾运移提供了更大的拖曳力，从而有效地提高了井筒内砂砾颗粒的运移效率。因此在实际作业中，要想减小砂堵风险，宜尽量采用更大的冲砂排量。
+
+\subsubsection{压井液粘度对环空砂砾沉积的影响}
+
+图 1.20 为流速 \(0.27\) m/s 时，粘度分别取 1.0、2.3、5.0 cp 时，不同粘度下环空内砂砾质量随时间的变化曲线。由图可以看出，随着时间的延长，环空内沉降的砂砾质量趋于稳定，并且随着粘度增大，环空内沉降的砂砾质量减小，且到达稳定的时间加快。
+
+图 1.21 为粘度为 \(1.0\) cp 时环空内砂砾的体积分数云图，则粘度为 \(1.0\) cp 时，b 点出现在水平段距离入口 \(800\)--\(1400\) mm 处，高度为 \(77.5\) mm。砂砾床主要沉积在水平段，随着井斜角度增加，砂砾体积分数逐渐减小，井斜 \(75^{\circ}\) 时，砂砾体积分数接近于 0。
+
+图 1.22 为粘度为 \(5.0\) cp 时环空内砂砾的体积分数云图，则粘度为 \(5.0\) cp 时，b 点出现在水平段距离入口 \(1000\) mm 处，高度为 \(25\) mm。砂砾床沉积在水平段及小倾角井斜段，砂砾床高度明显降低，砂堵风险明显下降，且井斜段砂砾体积分数明显增大，砂砾运移效率增大。
+
+图 1.23 为 b 点高度随压井液粘度变化曲线，由图中可以看到随着压井液粘度增大，b 点高度逐渐减小。
+
+图 1.24 为 b 点不同压井液粘度下砂砾体积分数和轴向速度云图，随着压井液粘度增大，b 点砂砾体积分数减小，但砂砾流速有减小的趋势，这说明压井液粘度的增大，增大了流体的携砂能力，但是会减小环空中流体的流动性，这说明增大压井液粘度可以抑制砂堵在井底的形成，但是也会增加砂砾上返的时间。因此在实际作业中，要想减小砂堵风险，宜采用粘度更大的压井液。
+
+\section{井筒内铁屑运移及分布规律}
 %20260704想法：仿真->实验->外推。这个研究属于“基础性研究”（与4.适用条件中“拓深技术理论及基础性研究”对应），界定了研究的性质——是基础理论研究，不是工程应用。目的是“揭示影响工具应用效果的主控因素”，对应5.1.2 ①的要求是“研究不同流速、粘度、井斜下的运移规律”，通过实验验证哪些参数是影响运移的“主控因素”（Re（实验已经证明）、井斜角的影响在全井筒模型实验中展示）。
 
 在井下封隔器套铣作业过程中，将产生包含多种形态碎屑的混合物（见图\ref{fig:iron_shavings_sample}），其中，金属碎屑（尤其是铁屑）不仅可能导致筛管堵塞风险，还可能导致工具活动部件卡滞。经磨铣封隔器作业上返的碎屑样本分析表明，金属碎屑主要包含环状颗粒、块状颗粒及丝状颗粒三种形态。其中，丝状铁屑因其特有的几何特征，易通过旋转与缠绕作用形成网状结构，从而显著提升孔隙滞留概率。该类颗粒的高长径比特性不仅加剧了运移过程的复杂性，其各向异性运动模式及增大的比表面积更强化了流体拖曳力与壁面吸附效应，为油井金属碎屑对流动通道的动态阻塞机制提供了更真实的物理表征。基于上述特性分析，本研究选取丝状铁屑作为典型颗粒开展建模研究，具体模型及参数见图\ref{fig:iron_particle_comparison}和表\ref{tab:simulation_params}。
@@ -313,9 +701,9 @@
 
 \begin{table}[htbp]
     \centering
-    \caption{钡锶垢颗粒运移仿真参数}
-    \label{tab:basr_simulation_params}
-    \begin{tabularx}{.9\textwidth}{ccXc}
+    \caption{锁锶垢颗粒运移仿真参数}
+    \label{tab:simulation_params}
+    \begin{tabularx}{.9\textwidth}{cCCc}
         \toprule % 顶部粗线
         名称 & 符号 & 数值 & 单位 \\
         \midrule % 中间细线
@@ -396,7 +784,7 @@
     \centering
     \caption{蜡垢运移仿真参数}
     \label{tab:wax_params}
-    \begin{tabularx}{.9\textwidth}{Xccc}
+    \begin{tabularx}{.9\textwidth}{CCCC}
         \toprule % 顶部粗线
         名称 & 符号 & 数值 & 单位 \\
         \midrule % 中间细线

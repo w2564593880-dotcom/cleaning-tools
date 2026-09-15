@@ -35,7 +35,7 @@
 \usepackage{graphicx}
 \usepackage{float}         % 提供 [H]：把图片精确固定在正文位置（不浮动，避免图跑到别的页/别的段落下面）      
 \usepackage{booktabs}      
-\usepackage{amsmath}       
+\usepackage{amsmath,amssymb,bm}       
 \usepackage{caption}       
 \usepackage{setspace}      
 \onehalfspacing 
@@ -76,6 +76,10 @@
 \setcounter{tocdepth}{3}
 
 \newcommand{\inch}{\,\text{''}} %自定义inch的双撇
+
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+
 
 \begin{document}
 
@@ -128,7 +132,7 @@
 \section{多功能过滤工具设计}
 	%\input{chapters/chapter3/part4-filter.tex}
 \section[可变径刮管工具设计]{可变径刮管工具设计\protect\footnote{合同条款：5.1.3井筒高效清洁关键技术配套工具设计——（4）可变径刮管工具设计}}
-	\input{chapters/chapter3/part5-variable-tool.tex}
+	%\input{chapters/chapter3/part5-variable-tool.tex}
 	
 \input{chapters/bib.tex}
 	

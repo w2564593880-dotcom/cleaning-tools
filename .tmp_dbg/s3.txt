@@ -1,8 +1,0 @@
-﻿aux_bytes=0
-NULs=0
-ctrlbytes=1
-aux_lines=1
-head:
-  H| 
-tail:
-  T| 

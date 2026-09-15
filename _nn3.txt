@@ -1,0 +1,12 @@
+﻿part2-4in1.tex:195: F_{\max} &= \frac{\pi \cdot (D^2 - d^2) \cdot \sigma_s}{4 \cdot n} \times 10^{-3} \nonumber \\
+part2-4in1.tex:196: &= \frac{3.14 \times (67^2 - 40^2) \times 930}{4 \times 1.5} \times 10^{-3} \nonumber \\
+part2-4in1.tex:207: F_{\max} &= \frac{[\pi \cdot (D^2 - d^2) ] \cdot \sigma_s}{4 \cdot n} \times 10^{-3} \nonumber \\
+part2-4in1.tex:208: &= \frac{[3.14 \times (92^2 - 71.6^2) ] \times 930}{4 \times 1.5} \times 10^{-3} \nonumber \\
+part2-4in1.tex:246: T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6} \nonumber \\
+part2-4in1.tex:247: &= \frac{613.8 \times 3.14 \times (67^4 - 40^4)}{16 \times 67} \times 10^{-6} \nonumber \\
+part2-4in1.tex:253: T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6} \nonumber \\
+part2-4in1.tex:254: &= \frac{613.8 \times 3.14 \times (92^4 - 71.6^4)}{16 \times 92} \times 10^{-6} \nonumber \\
+part5-variable-tool.tex:135: T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6} \nonumber \\
+part5-variable-tool.tex:136: &= \frac{704.88 \times 3.14 \times (62^4 - 38.1^4)}{16 \times 62} \times 10^{-6} \nonumber \\
+part5-variable-tool.tex:168: T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6} \nonumber \\
+part5-variable-tool.tex:169: &= \frac{704.88 \times 3.14 \times (80^4 - 66^4)}{16 \times 80} \times 10^{-6} \nonumber \\

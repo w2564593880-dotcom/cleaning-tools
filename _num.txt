@@ -1,0 +1,7 @@
+﻿12	10	chapters/chapter3/part1-3in1-design.tex
+7	7	chapters/chapter3/part1-3in1-verification.tex
+ERRS=3
+! Package fontspec Error: 
+! Package fontspec Error: 
+! Package fontspec Error: 
+Output written on main.pdf (133 pages).

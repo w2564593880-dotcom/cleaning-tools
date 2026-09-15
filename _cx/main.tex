@@ -1,0 +1,133 @@
+\documentclass[12pt, a4paper, zihao=-4, openright]{ctexrep}
+
+% 1. 字体设置：中文宋体，西文 Times New Roman
+\usepackage{newtxtext} 
+%\usepackage[UTF8, fontset=windows]{ctex} 
+
+% 2. 页面设置：A4幅面，常规边距
+\usepackage[a4paper, top=2.54cm, bottom=2.54cm, left=2.54cm, right=2.54cm]{geometry}
+
+% 3. 页眉页脚与双线设置
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyhead[C]{\leftmark} 
+%\renewcommand{\headrule}{\vspace{-0.4pt}\hrule height 1.5pt width \headwidth \vspace{-1.2pt}\hrule height 0.5pt width \headwidth}
+\fancyfoot[C]{\thepage}       
+
+% 4. 目录超链接与PDF元数据设置
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,          linkcolor=blue,        
+    urlcolor=blue,         
+    citecolor=green,       
+    %bookmarks=true,        
+    pdfstartview=FitH      
+}
+
+% 5. 章节排版控制
+\usepackage{titlesec}
+\titleformat{\chapter}[block]{\normalfont\huge\bfseries\centering}{第\,\thechapter\,章}{20pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{-10pt}{40pt}
+\titleformat{\section}[block]{\normalfont\Large\bfseries\raggedright}{\thesection}{1em}{}
+
+% 6. 其他常用宏包
+\usepackage{graphicx}      
+\usepackage{booktabs}      
+\usepackage{amsmath}       
+\usepackage{caption}       
+\usepackage{setspace}      
+\onehalfspacing 
+
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows.meta,calc} % 几何图形、箭头样式
+% 定义节点样式
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=white]
+\tikzstyle{process}   = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=white]
+\tikzstyle{decision}  = [diamond, aspect=3, minimum width=3cm, minimum height=1.0cm, text centered, draw=black, fill=white]
+\tikzstyle{arrow}     = [thick, ->, >=stealth] % 箭头样式
+
+% 7. 目录标题居中
+\renewcommand\contentsname{\hfill 目\quad 录 \hfill}
+
+% 8. 【新增】引入 GB/T 7714-2015 参考文献宏包
+\usepackage[numbers]{gbt7714}
+
+\usepackage{subfig}  %替代 subfigure，插入子图
+
+\usepackage{multirow}  % 画出有单元合并的表格
+
+\usepackage{footmisc} % 推荐加载此宏包以获得更好脚注效果
+
+\usepackage{tabularx}   % 自适应列宽宏包
+
+\usepackage{siunitx} %用于自定义inch的缩写
+
+
+
+% 1. 重命名 \paragraph 为 \subsubsubsection
+\newcommand{\subsubsubsection}[1]{\paragraph{#1}\mbox{}\\}
+
+% 2. 设置章节编号深度为3（包含 subsubsubsection）
+\setcounter{secnumdepth}{3}
+
+% 3. 设置目录显示深度为3（subsubsubsection 不出现在目录中）
+\setcounter{tocdepth}{3}
+
+\newcommand{\inch}{\,\text{''}} %自定义inch的双撇
+
+\begin{document}
+
+% === 封面部分 ===
+\begin{titlepage}
+    \centering 
+    \vspace*{4cm} 
+    {\Huge \bfseries \textcolor{red}{9-5/8\inch 井筒深度清洁关键技术升级研究及应用} \par} 
+    \vspace{2cm} 
+    {\Large \textcolor{red}{项目结题报告} \par} 
+    \vspace{4cm} 
+    {\Large \textcolor{red}{项目负责人：高德利} \par}
+    \vspace{1cm}
+    {\Large \textcolor{red}{承担单位：中国石油大学（北京）} \par}
+    \vspace{1cm}
+    {\Large \textcolor{red}{2026年9月16日} \par}
+\end{titlepage}
+
+% === 目录部分 ===
+\clearpage
+\pagenumbering{roman} 
+\tableofcontents
+
+% === 正文部分 ===
+\clearpage
+\pagenumbering{arabic} 
+\setcounter{page}{1}   
+
+
+% --- 第一章 ---
+\chapter{砂砾、铁屑、结垢物、蜡等井筒内的运移及分布规律研究}
+	\input{chapters/chapter1/chapter1.tex} % 引入颗粒物运移内容  
+% --- 第二章 ---
+\chapter{井筒内颗粒运移实验}
+	\input{chapters/chapter2/part1-horizontal-sand.tex} % 水平井冲砂
+	\input{chapters/chapter2/part2-full-well-model.tex} % 全井筒模型
+% --- 第三章 ---
+\chapter{深度清洁工具设计}
+\section[“三合一”脉冲式冲刮刷集成式井筒清洁工具设计]{“三合一”脉冲式冲刮刷集成式井筒清洁工具设计\protect\footnote{合同条款：5.1.3井筒高效清洁关键技术配套工具设计——（5）“三合一”脉冲式冲刮刷集成式井筒清洁工具设计}}\label{sec:design_of_3_in_1}
+	\input{chapters/chapter3/part1-3in1-design.tex}
+	\input{chapters/chapter3/part1-3in1-verification.tex}
+	\input{chapters/chapter3/part1-3in1-hydraulic-model.tex}
+	\input{chapters/chapter3/part1-3in1-setup-and-maintainance.tex}
+\section{“四合一”通刮刷磁集成式井筒清洁工具设计}
+	\input{chapters/chapter3/part2-4in1.tex}
+	\input{chapters/chapter3/part2-4in1-scraper-performance.tex}
+\section{大容量强磁吸附工具设计}
+	\input{chapters/chapter3/part3-magntictool.tex}
+\section{多功能过滤工具设计}
+	\input{chapters/chapter3/part4-filter.tex}
+\section[可变径刮管工具设计]{可变径刮管工具设计\protect\footnote{合同条款：5.1.3井筒高效清洁关键技术配套工具设计——（4）可变径刮管工具设计}}
+	\input{chapters/chapter3/part5-variable-tool.tex}
+	
+\input{chapters/bib.tex}
+	
+\end{document}

@@ -1,0 +1,8 @@
+﻿BLANK-IN-MATH  part1-3in1-design.tex:232
+MISMATCH     begin[aligned@90] closed by \end{align}  part1-3in1-verification.tex:94
+TYPO-END     \end{equationed}  part1-3in1-verification.tex:95
+BLANK-IN-MATH  part1-3in1-verification.tex:97
+BLANK-IN-MATH  part1-3in1-verification.tex:99
+BLANK-IN-MATH  part1-3in1-verification.tex:101
+BLANK-IN-MATH  part1-3in1-verification.tex:102
+UNCLOSED     equation@89  part1-3in1-verification.tex

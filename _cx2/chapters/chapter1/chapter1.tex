@@ -1,0 +1,511 @@
+在修井作业过程中，井筒内既有颗粒物及作业过程新产生的颗粒物对井筒工况构成显著影响，不仅会导致井下工具工作效率下降，更可能引发卡钻等重大安全事故。颗粒在井筒内的悬浮状态及运移特性关键影响参数有：颗粒粒径、密度；井眼尺寸、井斜角度；压井液密度、黏度及流速等多重因素。本章基于流体动力学理论和颗粒动力学，针对砂砾、铁屑、结垢物、蜡质等典型颗粒物在井筒内的运移规律开展系统性研究，通过构建EDEM与Fluent耦合仿真模型，定量分析流体参数（流速、粘度）及井筒结构参数（井斜角度）对固相颗粒运移轨迹、沉积速率及空间分布特征的作用机制。
+
+本章所阐述的仿真方案具体实施步骤如下。首先，构建颗粒物模型并完成相关参数配置，基于EDEM平台按照实际物理尺寸完成颗粒模型的注入操作；其次，在Fluent软件环境中搭建流体仿真模型，精确设定流体域边界条件，同步构建三维井筒与管柱模型以及环空结构模型；再者，通过建立Fluent与EDEM之间的双向耦合接口，模拟井筒真实工况条件下流速、粘度等关键参数对颗粒物运移轨迹、沉积速率及其空间分布特征的影响机制；最后，通过后处理模块实施量化分析，包括颗粒分布统计分析及动力学参数提取工作。具体操作流程详见图\ref{fig:flowchart}。
+    \begin{figure}[htbp]
+        \centering
+        \begin{tikzpicture}[node distance=2cm] % 节点间距为2cm
+            % 1. 流场初始化（起始节点）
+            \node (init) [startstop] {流场初始化};
+            % 2. 连续相流场计算（处理节点）
+            \node (flow) [process, below of=init] {连续相流场计算};
+            % 3. 颗粒模型注入（处理节点）
+            \node (inject) [process, below of=flow] {颗粒模型注入};
+            % 4. 颗粒时间步长计算（处理节点）
+            \node (time1) [process, below of=inject] {颗粒时间步长计算};
+            % 5. 颗粒时间步长计算（重复节点，保持流程一致性）
+            \node (time2) [process, below of=time1] {颗粒时间步长计算};
+            % 6. 颗粒轨迹计算（处理节点）
+            \node (trajectory) [process, below of=time2] {颗粒轨迹计算};
+            % 7. 更新连续相源项（处理节点）
+            \node (update) [process, below of=trajectory] {更新连续相源项};
+            % 8. 判断是否收敛（决策节点）
+            \node (converge) [decision, below of=update] {是否收敛};
+            % 9. 判断是否计算完成（决策节点）
+            \node (complete) [decision, below of=converge] {是否计算完成};
+            % 10. 计算结果（终止节点）
+            \node (result) [startstop, below of=complete] {计算结果};
+            % 11. 更新下一步时间数据（右侧辅助节点）
+            \node (nextstep) [process, right of=complete, xshift=4cm] {更新下一步时间数据};
+
+            % 绘制箭头连线
+            \draw [arrow] (init) -- (flow);                          % 流场初始化 → 连续相流场计算
+            \draw [arrow] (flow) -- (inject);                        % 连续相流场计算 → 颗粒模型注入
+            \draw [arrow] (inject) -- (time1);                       % 颗粒模型注入 → 颗粒时间步长计算
+            \draw [arrow] (time1) -- (time2);                        % 颗粒时间步长计算 → 颗粒时间步长计算
+            \draw [arrow] (time2) -- (trajectory);                   % 颗粒时间步长计算 → 颗粒轨迹计算
+            \draw [arrow] (trajectory) -- (update);                  % 颗粒轨迹计算 → 更新连续相源项
+            \draw [arrow] (update) -- (converge);                    % 更新连续相源项 → 判断是否收敛
+
+            % 收敛判断分支（未收敛→返回连续相流场计算）
+            \draw [arrow] (converge.west) -- ++(-1,0) |- (flow.west) node[midway, left] {否};
+
+            % 收敛后→计算完成判断
+            \draw [arrow] (converge) -- (complete);
+
+            % 计算完成判断分支（未完成→更新下一步时间数据→返回连续相流场计算）
+            \draw [arrow] (complete.east) -- (nextstep.west) node[midway, above] {否};
+            \draw [arrow] (nextstep.north) |- (flow.east);
+
+            % 计算完成→输出结果
+            \draw [arrow] (complete) -- (result) node[midway, right] {是};
+
+        \end{tikzpicture}
+        \caption{颗粒运移模型计算流程图}
+        \label{fig:flowchart}  
+    \end{figure}
+
+\section{基本理论和模拟条件}  
+\subsection{EDEM理论基础} 
+井筒中的颗粒在运动过程中相互接触和碰撞是不可避免的，颗粒间出现接触时将产生作用力。EDEM软件的理论基础是离散元法，离散单元法的基础模型是颗粒之间的相互接触，分析过程中颗粒所受外力作用以及力矩都是通过接触模型直接决定的。在进行离散元分析时根据分析工况将离散颗粒相接触模型分为干颗粒和湿颗粒两种类型。
+当计算物料为干颗粒时，颗粒与其余接触点之间不存在粘结的作用，此时接触模型即可选择EDEM软件中的Hertz-Mindlin基本接触模型，该模型也是EDEM软件中默认选择的颗粒接触模型。建立如图\ref{fig:particle_collision}所示的颗粒碰撞受力模型，并分析颗粒间力的传递。
+
+    \begin{figure}[htbp]
+    \centering
+    % 设置图片宽度为 8cm
+    \resizebox{8cm}{!}{%
+        \begin{tikzpicture}[
+            line width=1pt,
+            >=Stealth
+        ]
+            % --- 定义参数 ---
+            \def\Rone{2.0}      % 颗粒1半径
+            \def\Rtwo{1.4}      % 颗粒2半径
+            \def\angleOverlap{35} % 重叠角度控制
+            
+            % --- 计算坐标 ---
+            % 颗粒1中心在原点 (0,0)
+            % 颗粒2中心位置：距离 = R1 + R2 - delta(这里取个大概值让圆相交)
+            % 为了演示效果，设两圆心距离为 2.6 (R1+R2=3.4, 重叠约0.8)
+            \coordinate (C1) at (0,0);
+            \coordinate (C2) at (30:2.6); 
+            
+            % 计算交点附近的法线方向 (用于画重叠区域的弧线)
+            % 简单起见，我们直接在连心线上找一点画弧
+            \path (C1) -- (C2) coordinate[pos=0.7] (ContactPoint); 
+
+            % --- 绘制颗粒 (圆圈) ---
+            % 颗粒1 (黑色)
+            \draw[black, thick] (C1) circle (\Rone);
+            \node[right=2mm] at (C1) {颗粒1};
+            
+            % 颗粒2 (红色)
+            \draw[red, thick] (C2) circle (\Rtwo);
+            \node[below=2mm] at (C2) {颗粒2};
+
+            % --- 绘制半径 R ---
+            % R1 (左上方向)
+            \draw[<->, gray] (C1) -- ++(135:\Rone) node[midway, above left, black] {$R_1$};
+            % R2 (左上方向)
+            \draw[<->, gray] (C2) -- ++(135:\Rtwo) node[midway, above left, black] {$R_2$};
+
+            % --- 绘制力矢量 F (蓝色) ---
+            % F1 (左下方向)
+            \draw[->, blue, thick] (C1) -- ++(-135:1.2) node[midway, below left, black] {$F_1$};
+            % F2 (右上方向)
+            \draw[->, blue, thick] (C2) -- ++(45:0.8) node[midway, right, black] {$F_2$};
+
+            % --- 绘制重叠区域 δ ---
+            % 在接触点附近画一条紫色弧线表示重叠深度
+            % 这里的逻辑是画一段圆弧，颜色设为紫色
+            \draw[purple, very thick] 
+                ($(C1)!0.9!(C2)$) ++(120:0.3) arc (120:240:0.3);
+            
+            % 引出线和文字说明
+            \draw[gray, thin] ($(C1)!0.9!(C2) + (0,-0.2)$) -- ++(2,-1.5) node[right, text width=4cm, align=left] {重叠区域$\delta$};
+
+        \end{tikzpicture}%
+    }
+    \caption{双颗粒碰撞模型示意图}
+    \label{fig:particle_collision}
+\end{figure}
+
+\section{井筒内铁屑运移及分布规律}
+%20260704想法：仿真->实验->外推。这个研究属于“基础性研究”（与4.适用条件中“拓深技术理论及基础性研究”对应），界定了研究的性质——是基础理论研究，不是工程应用。目的是“揭示影响工具应用效果的主控因素”，对应5.1.2 ①的要求是“研究不同流速、粘度、井斜下的运移规律”，通过实验验证哪些参数是影响运移的“主控因素”（Re（实验已经证明）、井斜角的影响在全井筒模型实验中展示）。
+
+在井下封隔器套铣作业过程中，将产生包含多种形态碎屑的混合物（见图\ref{fig:iron_shavings_sample}），其中，金属碎屑（尤其是铁屑）不仅可能导致筛管堵塞风险，还可能导致工具活动部件卡滞。经磨铣封隔器作业上返的碎屑样本分析表明，金属碎屑主要包含环状颗粒、块状颗粒及丝状颗粒三种形态。其中，丝状铁屑因其特有的几何特征，易通过旋转与缠绕作用形成网状结构，从而显著提升孔隙滞留概率。该类颗粒的高长径比特性不仅加剧了运移过程的复杂性，其各向异性运动模式及增大的比表面积更强化了流体拖曳力与壁面吸附效应，为油井金属碎屑对流动通道的动态阻塞机制提供了更真实的物理表征。基于上述特性分析，本研究选取丝状铁屑作为典型颗粒开展建模研究，具体模型及参数见图\ref{fig:iron_particle_comparison}和表\ref{tab:simulation_params}。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{figure/iron-shavings-sample.jpg}
+    \caption{井下封隔器套铣作业中产生的金属碎屑样本}
+    \label{fig:iron_shavings_sample}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    % 子图 (a)
+    \subfloat[实际铁屑颗粒]{%
+        \begin{minipage}[t]{0.48\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{figure/iron-wire-actual.jpg}
+            \label{fig:actual}
+        \end{minipage}%
+    }
+    \hfill
+    % 子图 (b)
+    \subfloat[铁屑颗粒模型]{%
+        \begin{minipage}[t]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{figure/iron-wire-model.jpg}
+            \label{fig:model}
+        \end{minipage}%
+    }
+    % 总标题
+    \caption{铁屑颗粒及仿真模型}
+    \label{fig:iron_particle_comparison}
+\end{figure}
+
+\begin{table}[htbp]
+    \centering
+    \caption{铁屑颗粒运移仿真参数}
+    \label{tab:simulation_params}
+    % 设置列格式：
+    % c: 居中
+    % p{width}: 固定宽度并自动换行（适合较长的中文名称）
+    \begin{tabularx}{.9\textwidth}{cccXc} 
+        \toprule % 绘制顶部粗线
+        % 表头部分
+        序号 & 名称 & 符号 & 数值 & 单位 \\ 
+        \midrule % 绘制中间细线
+        
+        % 数据行
+        1 & 水平井筒长度 & $L$ & 1.5 & m \\
+        2 & 井筒直径 & $D_H$ & 244.475 & mm \\
+        3 & 钻杆直径 & $D_P$ & 88.9 & mm \\
+        4 & 颗粒密度 & $\rho_p$ & 7800.0 & kg/m$^3$ \\
+        5 & 压井液密度 & $\rho_l$ & 1000.0、1300.0 & kg/m$^3$ \\
+        6 & 井斜角 & $\theta$ & 0.0、45.0、90.0 & $^\circ$ \\
+        7 & 压井液入口流速 & $v_{in}$ & 0.17、0.27 & m/s \\
+        8 & 压井液粘度 & $\mu$ & 1.0、1.7 & mPa$\cdot$s \\
+        9 & 沉积域距离井壁高度 & $H$ & 40.0 & mm \\
+        10 & 颗粒与井壁静摩擦系数 & $\mu_s$ & 0.15 & - \\
+        11 & 颗粒与井壁滑动摩擦系数 & $\mu_k$ & 0.1 & - \\
+        
+        \bottomrule % 绘制底部粗线
+    \end{tabularx}
+\end{table}
+
+\subsection{压井液粘度对铁屑运移规律的影响}
+本节选取了两种不同类型的压井液进行比较，分别是流体的水和氯化钠溶液（比重为1.3）。两种压井液均可视为牛顿流体，但具有不同的粘度，对铁屑颗粒的携带效果可能存在差异。给定$\theta=90^\circ$、$v_{\mathrm{in}}=0.27\mathrm{m/s}$条件，通过模拟比较这两种压井液在携带铁屑颗粒方面的不同效果。图\ref{fig:iron_wire_distribution_velocity}描述的是不同压井液粘度下井筒内铁屑分布情况（以颗粒的速度进行着色）。从图可以看出，压井液粘度对铁屑颗粒运移效率的影响不大。随着压井液粘度的增加，移动铁屑床的速度略微增大。由于随着压井液粘度增大，铁屑颗粒运移效率略微增加，出口处的铁屑颗粒有增多现象。
+%通过对不同压井液的性能特点进行分析，可以为选择最适合的压井液粘度提供参考，从而优化洗井操作并提高效率。
+
+\begin{figure}[htbp]
+    \centering
+    % --- 子图 (a) ---
+    % 使用 minipage 控制宽度，这里设为 0.9\textwidth 让图片大一点
+    % [t] 表示顶部对齐，防止因为图片高度不同导致错位
+    \subfloat[$\mu = 1.0\mathrm{mPa}\cdot\mathrm{s}$]{
+        \begin{minipage}[t]{0.8\linewidth}
+            \centering
+            % 替换为你的第一张图片文件名
+            \includegraphics[width=\linewidth]{figure/iron-wire-distribution-1cp-velocity-colored.png} 
+            \label{fig:viscosity_1.0}
+        \end{minipage}
+    }
+    \vspace{0pt} % 上下两张图之间的垂直间距，可根据需要调整
+    % --- 子图 (b) ---
+    \subfloat[$\mu = 1.7\mathrm{mPa}\cdot\mathrm{s}$]{
+        \begin{minipage}[t]{0.8\linewidth}
+            \centering
+            % 替换为你的第二张图片文件名
+            \includegraphics[width=\linewidth]{figure/iron-wire-distribution-1dot7-cp-velocity-colored.png} 
+            \label{fig:viscosity_1.7}
+        \end{minipage}
+    }
+    % --- 总标题 ---
+    \caption{压井液粘度对铁屑颗粒速度分布的影响（$\theta=90^\circ$,\ $v_{\mathrm{in}}=0.27\mathrm{m/s}$）}
+    \label{fig:iron_wire_distribution_viscosity}
+\end{figure}
+
+图\ref{fig:iron_wire_mean_velocity_evolution_viscosity}为两种压井液粘度下井筒稳态后铁屑颗粒沉积域铁屑颗粒运移速度图。从图中可以看出，$\mu$从$1.0\mathrm{mPa\cdot s}$增加到$1.7\mathrm{mPa\cdot s}$时，粘度增加到$1.7$倍，但铁屑的平均运移速度只增加到$1.04$倍，证明压井液的粘度对铁屑运移的影响十分有限。
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figure/iron-wire-mean-velocity-evolution-viscosity.jpg}
+    \caption{压井液粘度对铁屑颗粒运移速度时间演变的影响（$\theta=90^\circ$,\ $v_{\mathrm{in}}=0.27\mathrm{m/s}$）}
+    \label{fig:iron_wire_mean_velocity_evolution_viscosity}
+\end{figure}
+
+\subsection{压井液流速对铁屑运移规律的影响}
+
+本节探究压井液流速对井筒环形空间内铁屑颗粒运移的影响。选取了水平段为研究对象，给定$\mu=1.7\mathrm{mPa\cdot s}$。
+
+图\ref{fig:iron_wire_distribution_velocity}描述的是两种流速下井筒内铁屑颗粒分布情况，入口流速对铁屑颗粒运移行为的影响显著。铁屑的密度较大，在两种进口流速下，均表现出在边运移边沉积的现象，在水平管的底部位置有形成颗粒床的趋势。
+随着压井液流速的增加，从颗粒工厂出发的铁屑颗粒整体上产生了更大的轴向位移，颗粒整体的瞬时速度也有增加的趋势。这是由于压井液流速增大时，铁屑颗粒受到流体沿轴向给予的拖拽力增加，铁屑颗粒沿轴向运移的速度增加。同时，增大的拖拽力也能对抗管壁摩擦效应，颗粒的运移效率增加。
+\begin{figure}[htbp]
+    \centering
+    % --- 子图 (a) ---
+    % 使用 minipage 控制宽度，这里设为 0.9\textwidth 让图片大一点
+    % [t] 表示顶部对齐，防止因为图片高度不同导致错位
+    \subfloat[$v_{\mathrm{in}} = 0.17\mathrm{m/s}$]{
+        \begin{minipage}[t]{0.8\linewidth}
+            \centering
+            % 替换为你的第一张图片文件名
+            \includegraphics[width=\linewidth]{figure/iron-wire-distribution-1dot7cp-0dot17mpers.png} 
+            \label{fig:distribution_velocity_0.17}
+        \end{minipage}
+    }
+    \vspace{0pt} % 上下两张图之间的垂直间距，可根据需要调整
+    % --- 子图 (b) ---
+    \subfloat[$v_{\mathrm{in}} = 0.27\mathrm{m/s}$]{
+        \begin{minipage}[t]{0.8\linewidth}
+            \centering
+            % 替换为你的第二张图片文件名
+            \includegraphics[width=\linewidth]{figure/iron-wire-distribution-1dot7cp-0dot27mpers.png} 
+            \label{fig:distribution_velocity_0.27}
+        \end{minipage}
+    }
+    % --- 总标题 ---
+    \caption{压井液流速对铁屑颗粒分布的影响（$\theta=90^\circ$,\ $\mu = 1.7\mathrm{mPa}\cdot\mathrm{s}$）}
+    \label{fig:iron_wire_distribution_velocity}
+\end{figure}
+
+铁屑颗粒的运动迹线图直观地展现了颗粒的运动轨迹，本文选取了井筒内的部分铁屑颗粒，绘制了两种流速下其迹线图，如图\ref{fig:iron_wire_particle_track_velocity}所示。从图中可以看出，在颗粒工厂中产生的铁屑颗粒一经产生，将很快获得轴向移动速度，这一点可从左上至右下的迹线得到证明；且进口流速越大，迹线的的斜率越小，颗粒获得的周向速度也越大。在两种情况下，颗粒落到管底后，以较大幅度弹跳的方式向前运动，而非形成密实的颗粒床以整体的形式运动。在\ref{fig:distribution_velocity_0.27}中，铁屑颗粒在颗粒工厂右边界附近的迹线混叠密度也低于前者，说明进口流速提升时，颗粒得以弥散开来，颗粒床的形成受到了抑制。
+
+%这两张图的总仿真时间是个很重要的变量。第一个总的仿真时间长，第二个总的仿真时间短。总仿真时间长，颗粒的运动轨迹就会更长，颗粒的运动轨迹就会更密集。总仿真时间短，颗粒的运动轨迹就会更短，颗粒的运动轨迹就会更稀疏。
+
+\begin{figure}[htbp]
+	\centering
+	% --- 子图 (a) ---
+	% 使用 minipage 控制宽度，这里设为 0.9\textwidth 让图片大一点
+	% [t] 表示顶部对齐，防止因为图片高度不同导致错位
+	\subfloat[$v_{\mathrm{in}} = 0.17\mathrm{m/s}$]{
+		\begin{minipage}[t]{0.8\linewidth}
+			\centering
+			% 替换为你的第一张图片文件名
+			\includegraphics[width=\linewidth]{figure/iron-wire-particle-track-1dot7cp-0dot17mpers.jpg} 
+			\label{fig:track_velocity_0.17}
+		\end{minipage}
+	}
+	\vspace{0pt} % 上下两张图之间的垂直间距，可根据需要调整
+	% --- 子图 (b) ---
+	\subfloat[$v_{\mathrm{in}} = 0.27\mathrm{m/s}$]{
+		\begin{minipage}[t]{0.8\linewidth}
+			\centering
+			% 替换为你的第二张图片文件名
+			\includegraphics[width=\linewidth]{figure/iron-wire-particle-track-1dot7cp-0dot27mpers.jpg} 
+			\label{fig:track_velocity_0.27}
+		\end{minipage}
+	}
+	% --- 总标题 ---
+	\caption{压井液流速对铁屑颗粒分布的影响（$\theta=90^\circ$,\ $\mu = 1.7\mathrm{mPa}\cdot\mathrm{s}$）}
+	\label{fig:iron_wire_particle_track_velocity}
+\end{figure}
+
+图\ref{fig:iron_wire_mean_velocity_evolution_incoming_velocity}给出了$v_{\mathrm{in}}=0.17\mathrm{m/s}$,\ $0.27\mathrm{m/s}$两种情况下铁屑颗粒在沉积域中运移速度定量结果。压井液流动产生的携屑作用足以克服井筒内壁摩擦作用，沉积在井筒底部的铁屑形成移动铁屑床。颗粒的平均轴向运动速度是小于来流（平均）速度，这说明铁屑颗粒在井筒内的运移过程中，受到井壁摩擦力的影响。随着时间的推移，铁屑颗粒在沉积域中的平均运移速度逐渐趋于稳定，表明颗粒在井筒内的运移达到了动态平衡状态。随着压井液流速的增加，井筒内沉积域铁屑颗粒运移速度也会大幅度增加，于是，压井液的流速对铁屑运移有显著影响。
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figure/iron-wire-mean-velocity-evolution-incoming-velocity.png}
+	\caption{压井液速度对铁屑颗粒运移速度时间演变的影响（$\mu=1.7\mathrm{mPa\cdot s}$）}
+	\label{fig:iron_wire_mean_velocity_evolution_incoming_velocity}
+\end{figure}
+
+\subsection{井斜对铁屑运移规律的影响}
+本节将探究井斜对于井筒环形空间内铁屑颗粒运移的影响。选取了水平井($\theta = 0^\circ$)、45°斜井($\theta = 45^\circ$)、直井($\theta = 90^\circ$)，钻井液入口流速$v_\mathrm{in}=0.27\mathrm{m/s}$，钻井液粘度给定为$\mu=1.7\mathrm{mPa\cdot s}$。
+
+图\ref{fig:iron_wire_distribution_3angles}描述了不同井斜角度下井筒内铁屑颗粒瞬时分布情况。图中可以看出，直井（$\theta = 0^\circ$）中井筒中铁屑不能向上迁移，目前的流体拖曳力不足以克服重力的作用。$\theta = 45^\circ$斜井中，铁屑床主要沉积在颗粒工厂附近的底部井壁上，距流体入口较近，流体出口附近几乎没有铁屑颗粒。$\theta = 90^\circ$的水平井，颗粒同样会聚集在井壁上，但颗粒床迁移的距离更远，聚集度更低，且出口处颗粒的数量比$\theta = 45^\circ$斜井中更多。
+%$\theta = 45^\circ$和$\theta = 90^\circ$两种情况下，铁屑床都由移动床和静止床两部分组成，静止床的出现意味着上部铁屑积压，流体拖曳力、重力和摩擦作用相平衡；移动床的出现意味着流体的拖拽作用足以克服重力和管壁摩擦对单个铁屑颗粒的作用，使铁屑持续运移。表明，单个颗粒的行为有别于一群颗粒的行为，颗粒-颗粒之间的相互作用会影响颗粒的运移行为。
+结合三种情况可以推测：第一，在直井中，作业产生的铁屑一定会下落至井底；第二，存在一个临界井斜$\theta_c$，当$\theta < \theta_c$时，铁屑颗粒会一致下落至井底形成堆积，而当$\theta > \theta_c$时，铁屑颗粒会在井筒壁面中形成堆积；第三，$\theta_c<45^\circ$，且其大小与流体的流速、粘度以及铁屑颗粒的密度、形状等因素相关。
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figure/iron-wire-distribution-1dot7cp-0dot27mpers-3angles.jpg}
+	\caption{井斜角对铁屑颗粒分布情况}
+	\label{fig:iron_wire_distribution_3angles}
+\end{figure}
+
+铁屑颗粒的流动迹线图可以直观地描述颗粒的运动轨迹。首先选取井筒内的部分铁屑颗粒，绘制不同井斜角度下部分铁屑流动迹线图，如图\ref{fig:iron_wire_track_3angles}所示。直井（$0^\circ$）中铁屑运动轨迹平直，说明铁屑几乎不与井壁产生接触（或碰撞），短促的轨迹说明颗粒将向井底沉积，不能持续沿流运移。各角斜井壁处与颗粒工厂处的颗粒速度均较小，水平井环空内的颗粒速度大于斜井的颗粒速度。这是由于井筒与重力夹角增加，导致环空中颗粒所受重力影响愈发明显，在自身重力影响下颗粒下沉的速度加快，钻井液在轴向上不足以提供给颗粒足够的悬浮能量，堆积到底部后形成颗粒床，岩屑运移的效率减弱。
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figure/iron-wire-particle-track-1dot7cp-0dot27mpers-3angles.jpg}
+	\caption{井斜角对铁屑运动轨迹的影响}
+	\label{fig:iron_wire_track_3angles}
+\end{figure}
+
+斜井（$\theta = 45^\circ$）中移动铁屑床的平均速度小于水平井（$\theta =90^\circ$）井斜移动铁屑床的平均速度，\ref{fig:iron_wire_velocity_3angles}所示。斜井中的铁屑颗粒迁移速度与环空平均流速接近，但斜井中铁屑颗粒的迁移速度仅为环空平均流速的一半左右。
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figure/iron-wire-mean-velocity-evolution-3angles.png}
+	\caption{井斜角对铁屑运动速度的影响}
+	\label{fig:iron_wire_velocity_3angles}
+\end{figure}
+
+综合上述仿真结果可以发现，压井液粘度增大和环空流速对铁屑颗粒的运移效率影响是正向的，所以选用更高粘度的压井液、采用更的洗井排量有助于铁屑颗粒从井筒中排出。但是，铁屑的运移行为受井筒倾角影响很大，在直井和小斜度井中，铁屑将难以通过常规的压井液循环的方式排出，需开发具有\textbf{吸附}、\textbf{过滤}功能的\textbf{专用清洁工具}将铁屑从井筒中捞出。针对丝状铁屑的仿真结果应可以推广片状、块状铁屑等，此类高密度屑在井筒中的运移能力差。
+
+\section{井筒内结垢物运移及分布规律研究}
+海上油井钡锶垢是由地层水与注入水（如海水）混合后，因钡（Ba²⁺）、锶（Sr²⁺）离子与硫酸根（SO₄²⁻）或碳酸根（CO₃²⁻）结合形成的难溶性无机盐（如硫酸钡、硫酸锶），在井筒、管道或设备表面沉积的坚硬垢层；其生成受高温高压、高矿化度及流动条件影响，易堵塞油流通道、加剧设备腐蚀，甚至因伴生放射性物质（如镭）带来安全与环保风险。
+研究钡锶垢的运移规律在油井洗井中至关重要，通过明确垢颗粒的迁移和沉降特性，优化洗井工艺参数，高效清除井筒和近井地带的顽固垢层，避免二次堵塞或地层伤害，从而恢复油井产能并延长寿命；同时可预测垢的沉积风险，指导防垢措施以减少设备腐蚀和放射性污染，降低维护成本与环境危害，并为建立结垢动力学模型、开发新型洗井技术提供理论支撑，最终实现安全、经济、环保的油田开发目标。
+
+建立两种大小不同的钡锶垢颗粒模型，如图\ref{fig:BaSr_particle}所示。通过调研钡锶垢物理性质及性状列举于表。
+
+\begin{figure}[htbp]
+    \centering
+    % 子图 (a)
+    \subfloat[钡锶垢实物]{%
+        \includegraphics[width=0.48\linewidth]{figure/BaSr-sample.png}%
+        \label{fig:BaSr_sample}%
+    }
+    \hfill
+    % 子图 (b)
+    \subfloat[SEM微观形貌]{%
+        \includegraphics[width=0.48\linewidth]{figure/BaSr-SEM.png}%
+        \label{fig:BaSr_SEM}%
+    }
+    \vspace{1em}
+    % 子图 (c)
+    \subfloat[垢仿真模型示意图]{%
+        \includegraphics[width=0.5\linewidth]{figure/BaSr-model.png}%
+        \label{fig:BaSr_model}%
+    }
+    \caption{铁屑颗粒及仿真模型对比}
+    \label{fig:BaSr_particle}
+\end{figure}
+
+\begin{table}[htbp]
+    \centering
+    \caption{锁锶垢颗粒运移仿真参数}
+    \label{tab:simulation_params}
+    \begin{tabularx}{.9\textwidth}{ccXc}
+        \toprule % 顶部粗线
+        名称 & 符号 & 数值 & 单位 \\
+        \midrule % 中间细线
+        水平井筒长度 & $L$ & 1.5 & m \\
+        井筒直径 & $D_H$ & 177.8 & mm \\
+        钻杆直径 & $D_P$ & 88.9 & mm \\
+        颗粒密度 & $\rho_P$ & 4336.0 & kg/m$^3$ \\
+        压井液密度 & $\rho_l$ & 1300.0 & kg/m$^3$ \\
+        井斜角度 & $\theta$ & 0、45、90 & $^\circ$ \\
+        压井液入口流速 & $v_{in}$ & 0.37、0.59 & m/s \\
+        压井液粘度 & $\mu$ & 1.7 & mPa$\cdot$s \\
+        沉积域距离井壁高度 & $H$ & 20.0 & mm \\
+        颗粒与井壁静摩擦系数 & $\mu_s$ & 0.5 & 1 \\
+        颗粒与井壁滑动摩擦系数 & $\mu_k$ & 0.4 & 1 \\
+        \bottomrule % 底部粗线
+    \end{tabularx}
+\end{table}
+
+\subsection{压井液流速对钡锶垢运移规律的影响}
+
+选取了井斜$\theta =45^\circ$，钻井液入口流速$V_{\mathrm{in}}=0.37$、$0.59\mathrm{m/s}$两种，洗井液粘度定为$1.7\mathrm{mPa\cdot s}$，钡锶垢颗粒有两种尺寸，特征长度约为$10\mathrm{mm}$和$4\mathrm{mm}$。
+
+图\ref{fig:Ba_Sr_distribution}描述的是不同压井液流速下井筒内钡锶垢颗粒分布，入口流速对钡锶垢颗粒运移效率的影响是十分明显的。随着压井液流速的增加，钡锶垢的运移速度也逐渐增大。由于随着压井液入口流速增大，使产生于颗粒工厂的铁屑颗粒及悬浮层铁屑颗粒具有更大的轴向位移，在相同仿真时间内，流速高的井筒内钡锶垢颗粒距离流体入口更远。
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figure/BaSr-distribution-Vin.jpg}
+	\caption{钡锶垢颗粒在井筒中的运移}
+	\label{fig:Ba_Sr_distribution}
+\end{figure}
+
+图\ref{fig:Ba_Sr_velocity_size}为钡锶垢在井筒压井液流速$V_{\mathrm{in}}=0.37\mathrm{m/s}$和$V_{\mathrm{in}}=0.59\mathrm{m/s}$稳态后颗粒沉积域运移速度图。选取Z方向为竖直向上方向。$V_{\mathrm{in}}=0.37\mathrm{m/s}$时，大垢落到井壁上后会滑向井底，小垢在进入沉积域后会以远远低于井筒内流体的速度(约为$0.05\mathrm{m/s}$)缓慢向压力出口运移。$V_{\mathrm{in}}=0.59\mathrm{m/s}$时，大垢在进入沉积域之后Z方向速度几乎为零，少许的速度波动是由颗粒碰撞引起的，因此大垢在接触井壁后会在井壁上发生沉积现象，小垢在进入沉积域后会以低于井筒内流体的速度向压力出口运移，运移速度为$0.25\mathrm{m/s}$左右。
+
+\begin{figure}[htbp]
+	\centering
+	\subfloat[$V_{\mathrm{in}}=0.37\mathrm{m/s}$]{%
+	\includegraphics[width=0.48\textwidth]{figure/BaSr-mean-velocity-evolution-vin-dot37.png}
+	}
+	\subfloat[$V_{\mathrm{in}}=0.59\mathrm{m/s}$]{%
+	\includegraphics[width=0.48\textwidth]{figure/BaSr-mean-velocity-evolution-vin-dot59.png}
+	}
+	\caption{钡锶垢颗粒在沉积域运移平均速度演化}
+	\label{fig:Ba_Sr_velocity_size}
+\end{figure}
+
+\subsection{井斜对钡锶垢运移规律的影响}
+
+图\ref{fig:Ba_Sr_distribution_3angles}描述了井斜角变化时井筒内钡锶垢颗粒分布情况。$\theta=45^\circ$与$\theta=90^\circ$井斜下的钡锶垢颗粒都沉积在井底并以一定的速度向压力出口方向运移，其中$\theta=45^\circ$井筒内钡锶垢颗粒运移速度要大于$\theta=90^\circ$井筒内钡锶垢的运移速度，大颗粒钡锶垢在$\theta=45^\circ$与$\theta=90^\circ$井筒环空中均能够观察到，在直井（$\theta=0^\circ$）井筒环空中没有发现大颗粒钡锶垢，推测由于重力作用大颗粒钡锶垢产生后即下落至井底。而小颗粒钡锶垢运移速度随着井筒倾角的增大而减小，可见井筒倾角对钡锶垢运移效率有很大影响，其影响要以颗粒实际大小为准。
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figure/BaSr-distribution-3angles.jpg}
+	\caption{钡锶垢颗粒在井筒中的运移}
+\label{fig:Ba_Sr_distribution_3angles}
+\end{figure}
+
+
+图\ref{fig:Ba_Sr_velocity_3angles}(a)描述的是不同井斜下大颗粒钡锶垢井筒内运移速度变化，从图中可以看出，井斜45°与井斜90°情况下大颗粒钡锶垢因为重力影响在接触井壁后运移速度几乎为零，因此会在井壁产生沉积现场。井斜0°情况下大颗粒钡锶垢在井筒环空中运移，速度小于零说明大颗粒钡锶垢在以流体速度相反的方向运移，预测会在井底产生沉积。\ref{fig:Ba_Sr_velocity_3angles}(b)述的是不同井斜下小颗粒钡锶垢井筒内运移速度变化，从图中可以看出，随着井斜角的增加，钡锶垢在井筒内的运移速度逐渐减小。0°井斜下，钡锶垢在四秒左右即有颗粒到达压力出口，因为到达压力出口的钡锶垢颗粒速度减为0，随着越来越多的钡锶垢颗粒到达压力出口，其平均运移速度逐渐减小。45°与90°井斜下，钡锶垢颗粒由于重力作用在接触井筒内壁后会以一定速度向压力出口运移。由此可见，井斜可以明显影响钡锶垢颗粒的运移效率。
+
+\begin{figure}[htbp]
+	\centering
+	\subfloat[$V_{\mathrm{in}}=0.37\mathrm{m/s}$]{%
+	\includegraphics[width=0.48\textwidth]{figure/BaSr-mean-velocity-evolution-big-size.png}
+	}
+	\subfloat[$V_{\mathrm{in}}=0.59\mathrm{m/s}$]{%
+	\includegraphics[width=0.48\textwidth]{figure/BaSr-mean-velocity-evolution-small-size.png}
+	}
+	\caption{钡锶垢颗粒在沉积域运移平均速度演化}
+	\label{fig:Ba_Sr_velocity_3angles}
+\end{figure}
+
+通过仿真发现，压井液流速增大，小钡锶垢颗粒的运移速度会相应增大，在进行洗井作业时可以增加压井液流速来提升洗井效率。在流速0.59m/s的情况下在，三种井斜工况，大钡锶垢颗粒都会发生沉积现象，0°井斜会沉积在井底，45°井斜先沉积在井壁之后会向井底滑移。90°井斜会沉积在井壁，因此要想冲洗大块钡锶垢需要更高排量的水泵。在45°与90°井斜，大小钡锶垢都会发生沉积现象，且小钡锶垢的运移速度远小于环空流体流速，因此在作业时要对斜井段与水平井段重点清洗。
+
+\section{井筒内蜡运移及分布规律研究}
+油井中的蜡垢是原油中高碳链石蜡（C18-C60烃类）在开采过程中因温度、压力等条件变化析出并沉积形成的固态或半固态混合物，主要成分为石蜡、沥青质、胶质及机械杂质。其形成机制与原油组成和开采环境密切相关：当原油从高温高压地层流向井筒时，随着温度降低和压力释放，石蜡溶解度下降，逐步结晶析出并附着在管壁、泵阀等设备表面，形成致密垢层。蜡垢的危害显著，包括堵塞油管降低产量、增加抽油能耗、加速设备磨损，甚至引发卡泵事故。
+研究蜡垢运移规律对油井洗井过程至关重要，通过揭示蜡垢运移与沉积的动态机制，能够优化洗井参数，提升清蜡效率并降低井筒堵塞风险；在保障油井稳产、提高经济效益的同时，减少环境污染，推动油气开采的绿色高效发展。本节对蜡垢进行迁移仿真所用到的仿真条件如表\ref{tab:wax_params}所示。
+
+\begin{table}[htbp]
+    \centering
+    \caption{蜡垢运移仿真参数}
+    \label{tab:wax_params}
+    \begin{tabularx}{.9\textwidth}{Xccc}
+        \toprule % 顶部粗线
+        名称 & 符号 & 数值 & 单位 \\
+        \midrule % 中间细线
+        水平井筒长度 & $L$ & 1.5 & m \\
+        井筒直径 & $D_H$ & 177.8 & mm \\
+        钻杆直径 & $D_P$ & 88.9 & mm \\
+        颗粒密度 & $\rho_P$ & 800.0 & kg/m$^3$ \\
+        压井液密度 & $\rho_l$ & 1300.0 & kg/m$^3$ \\
+        井斜角度 & $\theta$ & 0、45、90 & $^\circ$ \\
+        压井液入口流速 & $v_{in}$ & 0.37、0.59 & m/s \\
+        压井液粘度 & $\mu$ & 1.7 & mPa$\cdot$s \\
+        沉积域距离井壁高度 & $H$ & 20 & mm \\
+        颗粒模型大小 & - & 1、2、3、4 & mm \\
+        颗粒与井壁静摩擦系数 & $\mu_s$ & 0.6 & - \\
+        颗粒与井壁滑动摩擦系数 & $\mu_k$ & 0.2 & - \\
+        \bottomrule % 底部粗线
+    \end{tabularx}
+\end{table}
+
+\subsection{压井液流速对蜡垢运移规律的影响}
+
+在本节中，将改变压井液流速，探究压井液流速对于井筒环形空间内蜡垢颗粒运移的影响。选取了井斜45°，钻井液入口流速分别为0.37m/s、0.59m/s，钻井液粘度为1.7mPa·s，蜡垢颗粒粒径2mm，4mm，6mm，8mm四种。
+
+图\ref{fig:Wax_velocity_particle_size}(a)描述了流体流速0.37m/s不同粒径下45°井筒内沉积域蜡垢颗粒平均速度情况，从图中可以看出，进入沉积域后蜡垢会以大于井筒内流体的速度向压力出口运移，随着粒径的增大，其运移速度也越来越大，并在四秒后蜡垢颗粒陆续到达压力出口。图\ref{fig:Wax_velocity_particle_size}(b)描述了环空流体流速0.59m/s不同粒径下45°井筒内沉积域蜡垢颗粒平均速度情况，从图中可以看出，随着环空流体流速增大，蜡垢颗粒的运移速度也会增大，环空流体流速0.59m/s条件下，蜡垢颗粒在2.5秒后到达压力出口，相对于环空流体流速0.37m/s条件，蜡垢颗粒到达压力出口的速度变快。由此可见，环空流体流速对于蜡垢颗粒运移效率的影响显著。
+\begin{figure}[htbp]
+	\centering
+	\subfloat[$V_{\mathrm{in}}=0.37\mathrm{m/s}$]{%
+	\includegraphics[width=0.48\textwidth]{figure/Wax-mean-velocity-Vin-dot37mpersec.png}
+	}
+	\subfloat[$V_{\mathrm{in}}=0.59\mathrm{m/s}$]{%
+	\includegraphics[width=0.48\textwidth]{figure/Wax-mean-velocity-Vin-dot59mpersec.png}
+	}
+	\caption{蜡屑颗粒在沉积域运移平均速度演化}
+	\label{fig:Wax_velocity_particle_size}
+\end{figure}
+
+\subsection{井斜对蜡垢颗粒运移规律的影响}
+在本节中，将改变井筒倾角，探究井筒倾角对于井筒环形空间内蜡垢颗粒运移的影响。选取了井斜$\theta_c =0$°、45°、90°，钻井液入口流速为0.59m/s，钻井液粘度为1.7mPa·s，蜡垢颗粒粒径2mm，4mm，6mm，8mm四种。图1.28描述了环空流体流速0.59m/s不同粒径下0°井筒内沉积域蜡垢颗粒平均速度情况，从图中可以看出，随着蜡垢颗粒粒径增大，蜡垢颗粒的运移速度也会增大，且都高于环空流体流速。环空流体流速0.59m/s条件下，蜡垢颗粒在2.5秒后到达压力出口。与45°井筒倾角工况相比，0°倾角井筒内蜡垢颗粒具有更高的最大运移速度，但其到达最大运移速度的时间要长于45°井筒倾角工况。图1.29描述了环空流体流速0.59m/s不同粒径下90°井筒内沉积域蜡垢颗粒平均速度情况，从图中可以看出，随着蜡垢颗粒粒径增大，蜡垢颗粒的运移速度出现减小情况，且都低于环空流体流速。可见由于摩擦力的作用，会导致蜡垢颗粒的运移速度下降。环空流体流速0.59m/s条件下，蜡垢颗粒在4秒后到达压力出口。与0°、45°井筒倾角工况相比，90°倾角井筒内蜡垢颗粒最大运移速度明显下降，到达压力出口的时间变长，运移效率降低。
+
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figure/wax-distribution-3angles.png}
+	\caption{不同井斜下蜡垢颗粒井筒内运移分布图}
+\label{fig:wax_distribution_3angles}
+\end{figure}
+
+
+\begin{figure}[htbp]
+	\centering
+	\subfloat[$\theta=0^\circ$]{%
+	\includegraphics[width=0.48\textwidth]{figure/Wax-mean-velocity-Vin-dot59mpersec-theta-0.png}
+	}
+	\subfloat[$\theta=90^\circ$]{%
+	\includegraphics[width=0.48\textwidth]{figure/Wax-mean-velocity-Vin-dot59mpersec-theta-90.png}
+	}
+	\caption{井斜对蜡屑在沉积域运移平均速度演化的影响}
+	\label{fig:Wax_velocity_particle_size}
+\end{figure}
+
+通过这些仿真发现，蜡垢颗粒的运移规律跟颗粒大小有关，在0°与45°井斜条件下，蜡垢颗粒的粒径越大，其运移速度越大。90°井斜条件下，蜡垢颗粒越小，其运移速度越大。随着井斜角度增加，蜡垢颗粒的运移速度也逐渐减小。 在各个井段并未发生蜡垢沉积现象。

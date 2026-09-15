@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.7.6)  15 SEP 2026 12:14
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.7.6)  15 SEP 2026 13:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1242,7 +1242,7 @@ LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
 (Font)              scaled to size 5.0pt on input line 118.
 (./chapters/chapter3/part1-3in1-design.tex
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
-(Font)              scaled to size 15.05624pt on input line 3.
+(Font)              scaled to size 15.05624pt on input line 4.
 File: figure/chapter3/tool-structure-3-in-1.jpg Graphic file (type bmp)
 <figure/chapter3/tool-structure-3-in-1.jpg>
  [3
@@ -1268,14 +1268,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 File: figure/chapter3/swiper-in-3-in-1.png Graphic file (type bmp)
 <figure/chapter3/swiper-in-3-in-1.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--80
+Underfull \hbox (badness 10000) in paragraph at lines 81--81
 []|\TU/SimSun(0)/m/n/12.045 适 用 套
  []
 
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 10.53937pt on input line 88.
+(Font)              scaled to size 10.53937pt on input line 89.
 
-Underfull \hbox (badness 10000) in alignment at lines 104--104
+Underfull \hbox (badness 10000) in alignment at lines 105--105
 [][][][][][][][][] 
  []
 
@@ -1389,9 +1389,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [15]
-File: figure/chapter3/piston-displacement-VS-time.png Graphic file (type bmp)
-<figure/chapter3/piston-displacement-VS-time.png>
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1400,332 +1397,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [16]
-File: figure/chapter3/piston-velocity-VS-time.png Graphic file (type bmp)
-<figure/chapter3/piston-velocity-VS-time.png>
-File: figure/chapter3/piston-displacement-VS-Q.png Graphic file (type bmp)
-<figure/chapter3/piston-displacement-VS-Q.png>
-File: figure/chapter3/piston-velocity-VS-Q.png Graphic file (type bmp)
-<figure/chapter3/piston-velocity-VS-Q.png>
-File: figure/chapter3/pulse-module-frequency-stroke-VS-Q.png Graphic file (type bmp)
-<figure/chapter3/pulse-module-frequency-stroke-VS-Q.png>
+File: figure/chapter3/piston-displacement-VS-time.png Graphic file (type bmp)
+<figure/chapter3/piston-displacement-VS-time.png>
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.45398pt}.
 (fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
-
-[17]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.45398pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.45398pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
-
-[18]
-File: figure/chapter3/piston-displacement-VS-spring-K.png Graphic file (type bmp)
-<figure/chapter3/piston-displacement-VS-spring-K.png>
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.45398pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.45398pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
-
-[19]
-File: figure/chapter3/piston-velocity-VS-spring-K.png Graphic file (type bmp)
-<figure/chapter3/piston-velocity-VS-spring-K.png>
-File: figure/chapter3/pulse-module-frequency-stroke-VS-spring-K.png Graphic file (type bmp)
-<figure/chapter3/pulse-module-frequency-stroke-VS-spring-K.png>
-File: figure/chapter3/piston-displacement-VS-h.png Graphic file (type bmp)
-<figure/chapter3/piston-displacement-VS-h.png>
-File: figure/chapter3/piston-velocity-VS-h.png Graphic file (type bmp)
-<figure/chapter3/piston-velocity-VS-h.png>
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.45398pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.45398pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
-
-[20]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.45398pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.45398pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
-
-[21]
-File: figure/chapter3/piston-frequency-stroke-VS-h.png Graphic file (type bmp)
-<figure/chapter3/piston-frequency-stroke-VS-h.png>
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.45398pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.45398pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
-
-[22]
-File: figure/chapter3/pulser-mesh.jpg Graphic file (type bmp)
-<figure/chapter3/pulser-mesh.jpg>
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.45398pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.45398pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
-
-[23]
-File: figure/chapter3/sand-mass-in-annular-VS-time-pulser-rigid.png Graphic file (type bmp)
-<figure/chapter3/sand-mass-in-annular-VS-time-pulser-rigid.png>
-File: figure/chapter3/axial-velocity-near-nozzle-section.jpg Graphic file (type bmp)
-<figure/chapter3/axial-velocity-near-nozzle-section.jpg>
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.45398pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.45398pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
-
-[24]
-File: figure/chapter3/sand-volume-at-nozzle-section.jpg Graphic file (type bmp)
-<figure/chapter3/sand-volume-at-nozzle-section.jpg>
-File: figure/chapter3/sand-volume-at-verticle-section.jpg Graphic file (type bmp)
-<figure/chapter3/sand-volume-at-verticle-section.jpg>
-File: figure/chapter3/nozzle-sub-fluid-domain.png Graphic file (type bmp)
-<figure/chapter3/nozzle-sub-fluid-domain.png>
-File: figure/chapter3/nozzle-sub-fluid-domain-mesh.png Graphic file (type bmp)
-<figure/chapter3/nozzle-sub-fluid-domain-mesh.png>
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.45398pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.45398pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
-
-[25]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.45398pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.45398pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
-
-[26]
-File: figure/chapter3/case-wall-pressure-t-dot5s.png Graphic file (type bmp)
-<figure/chapter3/case-wall-pressure-t-dot5s.png>
-File: figure/chapter3/case-wall-shear-t-dot5s.png Graphic file (type bmp)
-<figure/chapter3/case-wall-shear-t-dot5s.png>
-File: figure/chapter3/nozzle-streamline-dot5s.png Graphic file (type bmp)
-<figure/chapter3/nozzle-streamline-dot5s.png>
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.45398pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.45398pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
-
-[27]
-File: figure/chapter3/monitoring-point-configuration.png Graphic file (type bmp)
-<figure/chapter3/monitoring-point-configuration.png>
-File: figure/chapter3/monitoring-points-pressure-T-dot5s.png Graphic file (type bmp)
-<figure/chapter3/monitoring-points-pressure-T-dot5s.png>
-File: figure/chapter3/monitoring-points-pressure-T-1s.png Graphic file (type bmp)
-<figure/chapter3/monitoring-points-pressure-T-1s.png>
-File: figure/chapter3/monitoring-points-pressure-T-2s.png Graphic file (type bmp)
-<figure/chapter3/monitoring-points-pressure-T-2s.png>
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.45398pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.45398pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
-
-[28]) (./chapters/chapter3/part1-3in1-setup-and-maintainance.tex
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.45398pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.45398pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
-
-[29]
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
-
- []
-
-File: figure/chapter3/part1-3in1/nozzle-unsetup-step1.png Graphic file (type bmp)
-<figure/chapter3/part1-3in1/nozzle-unsetup-step1.png>
-File: figure/chapter3/part1-3in1/nozzle-unsetup-step2.png Graphic file (type bmp)
-<figure/chapter3/part1-3in1/nozzle-unsetup-step2.png>
-File: figure/chapter3/part1-3in1/nozzle-unsetup-step3.png Graphic file (type bmp)
-<figure/chapter3/part1-3in1/nozzle-unsetup-step3.png>
-File: figure/chapter3/part1-3in1/nozzle-unsetup-step4.png Graphic file (type bmp)
-<figure/chapter3/part1-3in1/nozzle-unsetup-step4.png>
-File: figure/chapter3/part1-3in1/nozzle-unsetup-step5.png Graphic file (type bmp)
-<figure/chapter3/part1-3in1/nozzle-unsetup-step5.png>
-File: figure/chapter3/part1-3in1/nozzle-unsetup-step6.png Graphic file (type bmp)
-<figure/chapter3/part1-3in1/nozzle-unsetup-step6.png>
-File: figure/chapter3/part1-3in1/nozzle-unsetup-step7.png Graphic file (type bmp)
-<figure/chapter3/part1-3in1/nozzle-unsetup-step7.png>
-File: figure/chapter3/part1-3in1/nozzle-unsetup-step8.png Graphic file (type bmp)
-<figure/chapter3/part1-3in1/nozzle-unsetup-step8.png>
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.45398pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.45398pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
-
-[30]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.45398pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.45398pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
-
-[31]
-File: figure/chapter3/part1-3in1/nozzle-unsetup-step9.png Graphic file (type bmp)
-<figure/chapter3/part1-3in1/nozzle-unsetup-step9.png>
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.45398pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.45398pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
-
-[32]
-Underfull \hbox (badness 10000) in paragraph at lines 148--149
-
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.45398pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.45398pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
-
-[33]
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 183--184
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 195--196
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 201--202
-
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.45398pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.45398pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
-
-[34]
-Underfull \hbox (badness 10000) in paragraph at lines 210--211
-
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.45398pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.45398pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
-
-[35]
-Underfull \hbox (badness 10000) in paragraph at lines 234--235
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 239--240
-
- []
-
-) (./chapters/bib.tex
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.45398pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.45398pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
-
-[36]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.45398pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.45398pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
-
-[37] [38
-
-
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.45398pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.45398pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
-
-[39])
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.45398pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.45398pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
-
-[40] (./main.aux)
- ***********
-LaTeX2e <2025-11-01>
-L3 programming layer <2020/03/25>
- ***********
-
-
-LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 0.78749pt have occurred.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: E3FFBC6C0B9BE2C94F8D92D5BB129BDE;5767.
- ) 
-Here is how much of TeX's memory you used:
- 35650 strings out of 470139
- 827622 string characters out of 5477718
- 1173796 words of memory out of 5000000
- 63625 multiletter control sequences out of 15000+600000
- 638507 words of font info for 119 fonts, out of 8000000 for 9000
- 36 hyphenation exceptions out of 8191
- 93i,18n,117p,1200b,1241s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-Output written on main.pdf (43 pages).
+(fancyhdr) 

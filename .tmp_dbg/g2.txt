@@ -1,0 +1,18 @@
+﻿--- main.* state ---
+main.aux len=8192 mtime=13:14:56
+main.log len=69632 mtime=13:14:56
+main.pdf len=5550080 mtime=13:15:18
+main.toc len=0 mtime=13:14:55
+main.out len=0 mtime=13:14:54
+main.synctex.gz len=189304 mtime=13:14:50
+main_log_lines=1403
+banner_this_is_xetex=1
+banner_L3=2
+invalid_char=0
+error_bang=0
+undefined_cs=0
+output_written=
+--- log grep 2020/03/25 & L3 lines ---
+330| Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
+--- refs to stray pdf / build1 build2 in tex ---
+s\main.tex:121

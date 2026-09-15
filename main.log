@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.7.3)  14 SEP 2026 16:39
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.7.6)  15 SEP 2026 10:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**main
-(./main.tex
+**d:/cleaning-tools/main
+(d:/cleaning-tools/main.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
 (d:/texlive/2026/texmf-dist/tex/latex/ctex/ctexrep.cls (d:/texlive/2026/texmf-dist/tex/latex/ctex/config/ctexbackend.cfg
@@ -1043,12 +1043,27 @@ LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 80.
  (./main.aux
 
-LaTeX Warning: Label `tab:simulation_params' multiply defined.
+LaTeX Warning: Label `tab:pulsar_design_req' multiply defined.
 
 
-LaTeX Warning: Label `fig:Wax_velocity_particle_size' multiply defined.
+LaTeX Warning: Label `tab:product_requirements' multiply defined.
+
+
+LaTeX Warning: Label `fig:FEA_inner_pipe_3_in_1' multiply defined.
 
 )
+Runaway argument?
+{\contentsline {figure}{\numberline {3.21}{\ignorespaces 侧向出水\ETC.
+d:/cleaning-tools/main.tex:80: File ended while scanning use of \@writefile.
+<inserted text> 
+                \par 
+l.80 \begin{document}
+                     
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
@@ -1128,7 +1143,6 @@ LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 80.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 80.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -1188,68 +1202,64 @@ LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
 (Font)              scaled to size 24.09pt on input line 100.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
 (Font)              scaled to size 24.09pt on input line 100.
- (./main.toc
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
-(Font)              scaled to size 12.045pt on input line 1.
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 2.
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 2.
- [1
 
-
-])
+No file main.toc.
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.45398pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.45398pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
-
-[2]
-第一章
-(./chapters/chapter1/chapter1.tex
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
-(Font)              scaled to size 18.06749pt on input line 57.
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 15.05624pt on input line 58.
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
-(Font)              scaled to size 15.05624pt on input line 58.
-File: figure/kelipengzhuang.png Graphic file (type bmp)
-<figure/kelipengzhuang.png>
- [1
+[1
 
 
 ]
+第一章
+[1
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.45398pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.45398pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
-[2]
-File: figure/iron-shavings-sample.jpg Graphic file (type bmp)
-<figure/iron-shavings-sample.jpg>
-File: figure/iron-wire-actual.jpg Graphic file (type bmp)
-<figure/iron-wire-actual.jpg>
+]
+第二章
+[2
+
+]
+第三章
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
+(Font)              scaled to size 18.06749pt on input line 118.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 91.
-File: figure/iron-wire-model.jpg Graphic file (type bmp)
-<figure/iron-wire-model.jpg>
+(Font)              scaled to size 15.05624pt on input line 118.
+
+LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <18.06749> not available
+(Font)              size <17.28> substituted on input line 118.
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.45398pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.45398pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
+LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <15.05624> not available
+(Font)              size <14.4> substituted on input line 118.
 
-[3]
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
+(Font)              scaled to size 9.03374pt on input line 118.
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
+(Font)              scaled to size 6.0pt on input line 118.
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
+(Font)              scaled to size 5.0pt on input line 118.
+(./chapters/chapter3/part1-3in1-design.tex
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
+(Font)              scaled to size 15.05624pt on input line 3.
+File: figure/chapter3/tool-structure-3-in-1.jpg Graphic file (type bmp)
+<figure/chapter3/tool-structure-3-in-1.jpg>
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
+(Font)              scaled to size 12.045pt on input line 16.
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
+(Font)              scaled to size 8.0pt on input line 17.
+ [3
+
+]
+File: figure/chapter3/nozzle-sub.jpg Graphic file (type bmp)
+<figure/chapter3/nozzle-sub.jpg>
+File: figure/chapter3/pulse-module.jpg Graphic file (type bmp)
+<figure/chapter3/pulse-module.jpg>
+File: figure/chapter3/energy-storage-in-pulse-module.jpg Graphic file (type bmp)
+<figure/chapter3/energy-storage-in-pulse-module.jpg>
+File: figure/chapter3/restore-in-pulse-module.jpg Graphic file (type bmp)
+<figure/chapter3/restore-in-pulse-module.jpg>
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1258,22 +1268,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [4]
-File: figure/iron-wire-distribution-1cp-velocity-colored.png Graphic file (type bmp)
-<figure/iron-wire-distribution-1cp-velocity-colored.png>
+File: figure/chapter3/swiper-in-3-in-1.png Graphic file (type bmp)
+<figure/chapter3/swiper-in-3-in-1.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--80
+[]|\TU/SimSun(0)/m/n/12.045 适 用 套
+ []
+
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 152.
-File: figure/iron-wire-distribution-1dot7-cp-velocity-colored.png Graphic file (type bmp)
-<figure/iron-wire-distribution-1dot7-cp-velocity-colored.png>
-File: figure/iron-wire-mean-velocity-evolution-viscosity.jpg Graphic file (type bmp)
-<figure/iron-wire-mean-velocity-evolution-viscosity.jpg>
-File: figure/iron-wire-distribution-1dot7cp-0dot17mpers.png Graphic file (type bmp)
-<figure/iron-wire-distribution-1dot7cp-0dot17mpers.png>
-File: figure/iron-wire-distribution-1dot7cp-0dot27mpers.png Graphic file (type bmp)
-<figure/iron-wire-distribution-1dot7cp-0dot27mpers.png>
-File: figure/iron-wire-particle-track-1dot7cp-0dot17mpers.jpg Graphic file (type bmp)
-<figure/iron-wire-particle-track-1dot7cp-0dot17mpers.jpg>
-File: figure/iron-wire-particle-track-1dot7cp-0dot27mpers.jpg Graphic file (type bmp)
-<figure/iron-wire-particle-track-1dot7cp-0dot27mpers.jpg>
+(Font)              scaled to size 10.53937pt on input line 88.
+
+Underfull \hbox (badness 10000) in alignment at lines 104--104
+[][][][][][][][][] 
+ []
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1291,10 +1298,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [6]
-File: figure/iron-wire-mean-velocity-evolution-incoming-velocity.png Graphic file (type bmp)
-<figure/iron-wire-mean-velocity-evolution-incoming-velocity.png>
-File: figure/iron-wire-distribution-1dot7cp-0dot27mpers-3angles.jpg Graphic file (type bmp)
-<figure/iron-wire-distribution-1dot7cp-0dot27mpers-3angles.jpg>
+
+Package natbib Warning: Citation `ref26' on page 7 undefined on input line 229.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1304,9 +1309,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [7]
-File: figure/iron-wire-particle-track-1dot7cp-0dot27mpers-3angles.jpg Graphic file (type bmp)
-<figure/iron-wire-particle-track-1dot7cp-0dot27mpers-3angles.jpg>
-
+File: figure/chapter3/inner-pipe-3-in-1.png Graphic file (type bmp)
+<figure/chapter3/inner-pipe-3-in-1.png>
+File: figure/chapter3/inner-pipe-3-in-1-tensile-stress.png Graphic file (type bmp)
+<figure/chapter3/inner-pipe-3-in-1-tensile-stress.png>
+File: figure/chapter3/inner-pipe-3-in-1-torsional-stress.png Graphic file (type bmp)
+<figure/chapter3/inner-pipe-3-in-1-torsional-stress.png>
+) (./chapters/chapter3/part1-3in1-verification.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1315,9 +1324,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [8]
-File: figure/iron-wire-mean-velocity-evolution-3angles.png Graphic file (type bmp)
-<figure/iron-wire-mean-velocity-evolution-3angles.png>
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1326,13 +1332,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [9]
-File: figure/BaSr-sample.png Graphic file (type bmp)
-<figure/BaSr-sample.png>
-File: figure/BaSr-SEM.png Graphic file (type bmp)
-<figure/BaSr-SEM.png>
-File: figure/BaSr-model.png Graphic file (type bmp)
-<figure/BaSr-model.png>
 
+Package natbib Warning: Citation `ref26' on page 10 undefined on input line 86.
+
+File: figure/chapter3/inner-pipe-3-in-1.png Graphic file (type bmp)
+<figure/chapter3/inner-pipe-3-in-1.png>
+File: figure/chapter3/inner-pipe-3-in-1-tensile-stress.png Graphic file (type bmp)
+<figure/chapter3/inner-pipe-3-in-1-tensile-stress.png>
+File: figure/chapter3/inner-pipe-3-in-1-torsional-stress.png Graphic file (type bmp)
+<figure/chapter3/inner-pipe-3-in-1-torsional-stress.png>
+) (./chapters/chapter3/part1-3in1-hydraulic-model.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1341,13 +1350,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [10]
-File: figure/BaSr-distribution-Vin.jpg Graphic file (type bmp)
-<figure/BaSr-distribution-Vin.jpg>
-File: figure/BaSr-mean-velocity-evolution-vin-dot37.png Graphic file (type bmp)
-<figure/BaSr-mean-velocity-evolution-vin-dot37.png>
-File: figure/BaSr-mean-velocity-evolution-vin-dot59.png Graphic file (type bmp)
-<figure/BaSr-mean-velocity-evolution-vin-dot59.png>
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1356,8 +1358,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [11]
-File: figure/BaSr-distribution-3angles.jpg Graphic file (type bmp)
-<figure/BaSr-distribution-3angles.jpg>
+File: figure/chapter3/working-cycle-pulse-module.jpg Graphic file (type bmp)
+<figure/chapter3/working-cycle-pulse-module.jpg>
+File: figure/chapter3/force-analysis-reciprocating-piston.jpg Graphic file (type bmp)
+<figure/chapter3/force-analysis-reciprocating-piston.jpg>
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1367,10 +1371,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [12]
-File: figure/BaSr-mean-velocity-evolution-big-size.png Graphic file (type bmp)
-<figure/BaSr-mean-velocity-evolution-big-size.png>
-File: figure/BaSr-mean-velocity-evolution-small-size.png Graphic file (type bmp)
-<figure/BaSr-mean-velocity-evolution-small-size.png>
+File: figure/chapter3/FSI-logic.jpg Graphic file (type bmp)
+<figure/chapter3/FSI-logic.jpg>
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1380,11 +1382,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [13]
-File: figure/Wax-mean-velocity-Vin-dot37mpersec.png Graphic file (type bmp)
-<figure/Wax-mean-velocity-Vin-dot37mpersec.png>
-File: figure/Wax-mean-velocity-Vin-dot59mpersec.png Graphic file (type bmp)
-<figure/Wax-mean-velocity-Vin-dot59mpersec.png>
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1393,13 +1390,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [14]
-File: figure/wax-distribution-3angles.png Graphic file (type bmp)
-<figure/wax-distribution-3angles.png>
-File: figure/Wax-mean-velocity-Vin-dot59mpersec-theta-0.png Graphic file (type bmp)
-<figure/Wax-mean-velocity-Vin-dot59mpersec-theta-0.png>
-File: figure/Wax-mean-velocity-Vin-dot59mpersec-theta-90.png Graphic file (type bmp)
-<figure/Wax-mean-velocity-Vin-dot59mpersec-theta-90.png>
-)
+
+Package natbib Warning: Citation `ref68' on page 15 undefined on input line 175.
+
+
+Package natbib Warning: Citation `ref69' on page 15 undefined on input line 175.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1408,6 +1404,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [15]
+File: figure/chapter3/piston-displacement-VS-time.png Graphic file (type bmp)
+<figure/chapter3/piston-displacement-VS-time.png>
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1416,34 +1415,34 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [16]
-第二章
-[17
-
-]
-第三章
-
-LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <18.06749> not available
-(Font)              size <17.28> substituted on input line 118.
-
-
-LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <15.05624> not available
-(Font)              size <14.4> substituted on input line 118.
-
-(./chapters/chapter3/part5-variable-tool.tex
-File: figure/chapter3/part5/variable-scrapter-structure.png Graphic file (type bmp)
-<figure/chapter3/part5/variable-scrapter-structure.png>
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 10.53937pt on input line 19.
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 20.
+File: figure/chapter3/piston-velocity-VS-time.png Graphic file (type bmp)
+<figure/chapter3/piston-velocity-VS-time.png>
+File: figure/chapter3/piston-displacement-VS-Q.png Graphic file (type bmp)
+<figure/chapter3/piston-displacement-VS-Q.png>
+File: figure/chapter3/piston-velocity-VS-Q.png Graphic file (type bmp)
+<figure/chapter3/piston-velocity-VS-Q.png>
+File: figure/chapter3/pulse-module-frequency-stroke-VS-Q.png Graphic file (type bmp)
+<figure/chapter3/pulse-module-frequency-stroke-VS-Q.png>
 
 
-LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <10.53937> not available
-(Font)              size <10.95> substituted on input line 20.
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.45398pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.45398pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
-[18
+[17]
 
-]
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.45398pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.45398pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
+
+[18]
+File: figure/chapter3/piston-displacement-VS-spring-K.png Graphic file (type bmp)
+<figure/chapter3/piston-displacement-VS-spring-K.png>
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1452,6 +1451,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [19]
+File: figure/chapter3/piston-velocity-VS-spring-K.png Graphic file (type bmp)
+<figure/chapter3/piston-velocity-VS-spring-K.png>
+File: figure/chapter3/pulse-module-frequency-stroke-VS-spring-K.png Graphic file (type bmp)
+<figure/chapter3/pulse-module-frequency-stroke-VS-spring-K.png>
+File: figure/chapter3/piston-displacement-VS-h.png Graphic file (type bmp)
+<figure/chapter3/piston-displacement-VS-h.png>
+File: figure/chapter3/piston-velocity-VS-h.png Graphic file (type bmp)
+<figure/chapter3/piston-velocity-VS-h.png>
+
+
+LaTeX Warning: Reference `fig:piston_frequency_stroke_VS_h' on page 20 undefined on input line 282.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1468,6 +1479,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [21]
+File: figure/chapter3/piston-frequency-stroke-VS-h.png Graphic file (type bmp)
+<figure/chapter3/piston-frequency-stroke-VS-h.png>
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1476,18 +1490,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [22]
-File: figure/chapter3/part5/inner-pipe.png Graphic file (type bmp)
-<figure/chapter3/part5/inner-pipe.png>
-File: figure/chapter3/part5/tensile-strength.png Graphic file (type bmp)
-<figure/chapter3/part5/tensile-strength.png>
-File: figure/chapter3/part5/torsional-strength.png Graphic file (type bmp)
-<figure/chapter3/part5/torsional-strength.png>
-File: figure/chapter3/part5/unsetup/ball.png Graphic file (type bmp)
-<figure/chapter3/part5/unsetup/ball.png>
-File: figure/chapter3/part5/unsetup/unsetup-satefy-screw.png Graphic file (type bmp)
-<figure/chapter3/part5/unsetup/unsetup-satefy-screw.png>
-File: figure/chapter3/part5/unsetup/unsetup-two-subs.png Graphic file (type bmp)
-<figure/chapter3/part5/unsetup/unsetup-two-subs.png>
+
+LaTeX Warning: Reference `fig:pulser_mesh' on page 23 undefined on input line 297.
+
+File: figure/chapter3/pulser-mesh.jpg Graphic file (type bmp)
+<figure/chapter3/pulser-mesh.jpg>
+
+Package natbib Warning: Citation `ref70' on page 23 undefined on input line 310.
+
+
+LaTeX Warning: Reference `fig:sand_mass_in_annular_VS_time_pulser_rigid' on page 23 undefined on input line 316.
+
+
+Package natbib Warning: Citation `ref71' on page 23 undefined on input line 316.
+
+
+Package natbib Warning: Citation `ref72' on page 23 undefined on input line 316.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1497,20 +1515,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [23]
-File: figure/chapter3/part5/unsetup/unsetup-fasten-parts.png Graphic file (type bmp)
-<figure/chapter3/part5/unsetup/unsetup-fasten-parts.png>
-File: figure/chapter3/part5/unsetup/rotary-lever-set.png Graphic file (type bmp)
-<figure/chapter3/part5/unsetup/rotary-lever-set.png>
-File: figure/chapter3/part5/unsetup/end-links.png Graphic file (type bmp)
-<figure/chapter3/part5/unsetup/end-links.png>
-File: figure/chapter3/part5/unsetup/unsetup-scraper.png Graphic file (type bmp)
-<figure/chapter3/part5/unsetup/unsetup-scraper.png>
-File: figure/chapter3/part5/unsetup/left-links.png Graphic file (type bmp)
-<figure/chapter3/part5/unsetup/left-links.png>
-File: figure/chapter3/part5/unsetup/unsetup-inner-pipe.png Graphic file (type bmp)
-<figure/chapter3/part5/unsetup/unsetup-inner-pipe.png>
-File: figure/chapter3/part5/unsetup/unsetup-ball-and-seat.png Graphic file (type bmp)
-<figure/chapter3/part5/unsetup/unsetup-ball-and-seat.png>
+File: figure/chapter3/sand-mass-in-annular-VS-time-pulser-rigid.png Graphic file (type bmp)
+<figure/chapter3/sand-mass-in-annular-VS-time-pulser-rigid.png>
+
+
+LaTeX Warning: Reference `fig:axial_velocity_near_nozzle_section' on page 24 undefined on input line 325.
+
+File: figure/chapter3/axial-velocity-near-nozzle-section.jpg Graphic file (type bmp)
+<figure/chapter3/axial-velocity-near-nozzle-section.jpg>
+
+LaTeX Warning: Reference `fig:sand_volume_at_nozzle_section' on page 24 undefined on input line 333.
+
+File: figure/chapter3/sand-volume-at-nozzle-section.jpg Graphic file (type bmp)
+<figure/chapter3/sand-volume-at-nozzle-section.jpg>
+
+LaTeX Warning: Reference `fig:sand_volume_at_verticle_section' on page 24 undefined on input line 343.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1520,17 +1539,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [24]
-File: figure/chapter3/part5/unsetup/reseting-assembly.png Graphic file (type bmp)
-<figure/chapter3/part5/unsetup/reseting-assembly.png>
-File: figure/chapter3/part5/unsetup/resetting-assembly-unsetup.png Graphic file (type bmp)
-<figure/chapter3/part5/unsetup/resetting-assembly-unsetup.png>
-File: figure/chapter3/part5/unsetup/middle-body-inner-pipe-ball.png Graphic file (type bmp)
-<figure/chapter3/part5/unsetup/middle-body-inner-pipe-ball.png>
-File: figure/chapter3/part5/unsetup/middle-inner-pipe-unsetup.png Graphic file (type bmp)
-<figure/chapter3/part5/unsetup/middle-inner-pipe-unsetup.png>
-File: figure/chapter3/part5/unsetup/piston-spring-limiter.png Graphic file (type bmp)
-<figure/chapter3/part5/unsetup/piston-spring-limiter.png>
+File: figure/chapter3/sand-volume-at-verticle-section.jpg Graphic file (type bmp)
+<figure/chapter3/sand-volume-at-verticle-section.jpg>
 
+
+LaTeX Warning: Reference `fig:pulsing_nozzle_sub_model' on page 25 undefined on input line 355.
+
+
+LaTeX Warning: Reference `fig:pulsing_nozzle_sub_model' on page 25 undefined on input line 356.
+
+File: figure/chapter3/nozzle-sub-fluid-domain.png Graphic file (type bmp)
+<figure/chapter3/nozzle-sub-fluid-domain.png>
+File: figure/chapter3/nozzle-sub-fluid-domain-mesh.png Graphic file (type bmp)
+<figure/chapter3/nozzle-sub-fluid-domain-mesh.png>
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1539,16 +1560,35 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [25]
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
-(Font)              scaled to size 10.53937pt on input line 354.
-File: figure/chapter3/part5/10LperSec.png Graphic file (type bmp)
-<figure/chapter3/part5/10LperSec.png>
-File: figure/chapter3/part5/20LperSec.png Graphic file (type bmp)
-<figure/chapter3/part5/20LperSec.png>
-File: figure/chapter3/part5/30LperSec.png Graphic file (type bmp)
-<figure/chapter3/part5/30LperSec.png>
-File: figure/chapter3/part5/40LperSec.png Graphic file (type bmp)
-<figure/chapter3/part5/40LperSec.png>
+
+LaTeX Warning: Reference `fig:sress_distribution_at_case' on page 26 undefined on input line 380.
+
+
+LaTeX Warning: Reference `fig:case_wall_pressure_t_dot5s' on page 26 undefined on input line 380.
+
+
+LaTeX Warning: Reference `fig:case_wall_shear_t_dot5s' on page 26 undefined on input line 380.
+
+File: figure/chapter3/case-wall-pressure-t-dot5s.png Graphic file (type bmp)
+<figure/chapter3/case-wall-pressure-t-dot5s.png>
+File: figure/chapter3/case-wall-shear-t-dot5s.png Graphic file (type bmp)
+<figure/chapter3/case-wall-shear-t-dot5s.png>
+
+LaTeX Warning: Reference `fig:nozzle_streamline_dot5s' on page 26 undefined on input line 397.
+
+File: figure/chapter3/nozzle-streamline-dot5s.png Graphic file (type bmp)
+<figure/chapter3/nozzle-streamline-dot5s.png>
+
+LaTeX Warning: Reference `fig:sress_distribution_at_case' on page 26 undefined on input line 406.
+
+
+LaTeX Warning: Reference `fig:monitoring_point_configuration' on page 26 undefined on input line 406.
+
+
+LaTeX Warning: Reference `fig:monitoring_points_pressure_T_dot5s' on page 26 undefined on input line 406.
+
+
+LaTeX Warning: Reference `fig:monitoring_points_pressure_T_2s' on page 26 undefined on input line 406.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1566,6 +1606,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [27]
+File: figure/chapter3/monitoring-point-configuration.png Graphic file (type bmp)
+<figure/chapter3/monitoring-point-configuration.png>
+File: figure/chapter3/monitoring-points-pressure-T-dot5s.png Graphic file (type bmp)
+<figure/chapter3/monitoring-points-pressure-T-dot5s.png>
+File: figure/chapter3/monitoring-points-pressure-T-1s.png Graphic file (type bmp)
+<figure/chapter3/monitoring-points-pressure-T-1s.png>
+File: figure/chapter3/monitoring-points-pressure-T-2s.png Graphic file (type bmp)
+<figure/chapter3/monitoring-points-pressure-T-2s.png>
+
+
+LaTeX Warning: Reference `fig:monitoring_points_pressure_T_2s' on page 28 undefined on input line 435.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1573,7 +1625,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
-[28]) (./chapters/bib.tex
+[28]) (./chapters/chapter3/part1-3in1-setup-and-maintainance.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1581,10 +1633,27 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
-[29] [30
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
+ []
 
-])
+File: figure/chapter3/part1-3in1/nozzle-unsetup-step1.png Graphic file (type bmp)
+<figure/chapter3/part1-3in1/nozzle-unsetup-step1.png>
+File: figure/chapter3/part1-3in1/nozzle-unsetup-step2.png Graphic file (type bmp)
+<figure/chapter3/part1-3in1/nozzle-unsetup-step2.png>
+File: figure/chapter3/part1-3in1/nozzle-unsetup-step3.png Graphic file (type bmp)
+<figure/chapter3/part1-3in1/nozzle-unsetup-step3.png>
+File: figure/chapter3/part1-3in1/nozzle-unsetup-step4.png Graphic file (type bmp)
+<figure/chapter3/part1-3in1/nozzle-unsetup-step4.png>
+File: figure/chapter3/part1-3in1/nozzle-unsetup-step5.png Graphic file (type bmp)
+<figure/chapter3/part1-3in1/nozzle-unsetup-step5.png>
+File: figure/chapter3/part1-3in1/nozzle-unsetup-step6.png Graphic file (type bmp)
+<figure/chapter3/part1-3in1/nozzle-unsetup-step6.png>
+File: figure/chapter3/part1-3in1/nozzle-unsetup-step7.png Graphic file (type bmp)
+<figure/chapter3/part1-3in1/nozzle-unsetup-step7.png>
+File: figure/chapter3/part1-3in1/nozzle-unsetup-step8.png Graphic file (type bmp)
+<figure/chapter3/part1-3in1/nozzle-unsetup-step8.png>
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1592,7 +1661,133 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
-[31] (./main.aux)
+[30]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.45398pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.45398pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
+
+[31]
+File: figure/chapter3/part1-3in1/nozzle-unsetup-step9.png Graphic file (type bmp)
+<figure/chapter3/part1-3in1/nozzle-unsetup-step9.png>
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.45398pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.45398pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
+
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.45398pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.45398pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
+
+[33]
+Underfull \hbox (badness 10000) in paragraph at lines 167--168
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--196
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--202
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.45398pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.45398pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
+
+[34]
+Underfull \hbox (badness 10000) in paragraph at lines 210--211
+
+ []
+
+
+LaTeX Warning: Reference `sec:unstep_swiper' on page 35 undefined on input line 226.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.45398pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.45398pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
+
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 234--235
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--240
+
+ []
+
+) (./chapters/bib.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.45398pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.45398pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
+
+[36]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.45398pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.45398pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
+
+[37] [38
+
+
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.45398pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.45398pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
+
+[39])
+
+Package natbib Warning: There were undefined citations.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.45398pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.45398pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
+
+[40] (./main.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
@@ -1603,18 +1798,27 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.78749pt have occurred.
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0BADBFD8D4C6A495EB2BF56025F155DD;5439.
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  E3FFBC6C0B9BE2C94F8D92D5BB129BDE;5767.
  ) 
 Here is how much of TeX's memory you used:
- 35850 strings out of 470139
- 832970 string characters out of 5477718
- 1177063 words of memory out of 5000000
- 63822 multiletter control sequences out of 15000+600000
- 638523 words of font info for 121 fonts, out of 8000000 for 9000
+ 35627 strings out of 470139
+ 826658 string characters out of 5477718
+ 1172243 words of memory out of 5000000
+ 63604 multiletter control sequences out of 15000+600000
+ 638507 words of font info for 119 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 93i,14n,117p,1182b,1172s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,18n,117p,1200b,1183s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (34 pages).
+Output written on main.pdf (42 pages).

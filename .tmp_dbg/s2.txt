@@ -1,0 +1,30 @@
+﻿log len=69632 mtime=13:16:05
+lines=1403
+invalid=0
+output_written=
+texlive2026_hits=136
+other_tex_banner_hits=0
+auxread:
+  1044| (./main.aux
+  1055| \openout1 = `main.aux'.
+tail20:
+  T| (fancyhdr)                You might also make \topmargin smaller:
+  T| (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
+  T| 
+  T| [15]
+  T| File: figure/chapter3/piston-displacement-VS-time.png Graphic file (type bmp)
+  T| <figure/chapter3/piston-displacement-VS-time.png>
+  T| 
+  T| 
+  T| Package fancyhdr Warning: \headheight is too small (12.0pt): 
+  T| (fancyhdr)                Make it at least 14.45398pt, for example:
+  T| (fancyhdr)                \setlength{\headheight}{14.45398pt}.
+  T| (fancyhdr)                You might also make \topmargin smaller:
+  T| (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
+  T| 
+  T| [16]
+  T| File: figure/chapter3/piston-velocity-VS-time.png Graphic file (type bmp)
+  T| <figure/chapter3/piston-velocity-VS-time.png>
+  T| File: figure/chapter3/piston-displacement-VS-Q.png Graphic file (type bmp)
+  T| <figure/chapter3/piston-displacement-VS-Q.png>
+  T| File: figure/chapter3/piston-

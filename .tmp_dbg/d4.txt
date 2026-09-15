@@ -1,0 +1,22 @@
+﻿--- .vscode ---
+D:\cleaning-tools\.vscode\settings.json
+--- settings.json ---
+{
+    // 鏈粨搴撲笓鐢ㄩ厤鏂癸細鏈枃妗ｇ殑鍙傝€冩枃鐚槸 chapters/bib.tex 閲岀殑鎵嬪伐 thebibliography锛?
+    // 娌℃湁 .bib 鏂囦欢銆佹鏂囦篃娌℃湁 \cite锛屽洜姝ゅ叏灞€閰嶆柟涓殑 bibtex 姝ラ蹇呯劧鎶?
+    // "I found no \citation commands" / "I found no \bibdata command"锛坋xit 2锛夈€?
+    // 杩欓噷浠呰鐩?recipes锛屽幓鎺?bibtex 姝ラ锛泋elatex 宸ュ叿浠嶆部鐢ㄧ敤鎴峰叏灞€璁剧疆銆?
+    // 灏嗘潵鑻ユ敼涓?refs.bib + \bibliography + \cite 宸ヤ綔娴侊紝鍒犻櫎鏈枃浠跺嵆鍙仮澶嶅叏灞€閰嶆柟銆?
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "xelatex 脳3 (no bibtex)",
+            "tools": [
+                "xelatex",
+                "xelatex",
+                "xelatex"
+            ]
+        }
+    ],
+    "latex-workshop.latex.recipe.default": "first"
+}
+--- latexmkrc / Makefile ---

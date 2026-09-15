@@ -1,0 +1,20 @@
+﻿--- error lines ---
+L14497: ! Emergency stop.
+--- Undefined control sequence ctx ---
+d:/cleaning-tools/chapters/chapter3/part1-3in1-hydraulic-model.tex:1: Undefined control sequence.
+l.1 \subsection
+               {脉冲发生模块动力学模型及频率响应特性研究}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+d:/cleaning-tools/chapters/chapter3/part1-3in1-hydraulic-model.tex:2: Undefined control sequence.
+l.2 \subsubsection
+                  {脉冲发生模块流体-固体耦合机制及受力分析}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+d:/cleaning-tools/chapters/chapter3/part1-3in1-hydraulic-model.tex:4: Undefined control sequence.
+<write> ...g_cycle_pulse_module' on page \thepage 
+                                                  \space undefined\on@line .^^J
+l.4 如图\ref{fig:working_cycle_pulse_module}
+                                          所示，脉冲发生模块的工作工况主要分为四个阶段：
+--- emergency/stop ---
+L14497: ! Emergency stop.

@@ -1,0 +1,38 @@
+﻿18
+--- ALL ERRORS (line + next line) ---
+1571: ! Package fontspec Error: 
+1602: ! Package fontspec Error: 
+1622: ! Package fontspec Error: 
+2336: ! Missing $ inserted.
+2344: ! Missing } inserted.
+2355: ! Missing } inserted.
+2366: ! Missing \cr inserted.
+2373: ! Missing { inserted.
+2382: ! Missing $ inserted.
+2390: ! Misplaced \crcr.
+2401: ! Extra }, or forgotten \endgroup.
+2441: ! LaTeX Error: \begin{aligned} on input line 90 ended by \end{align}.
+2453: ! Missing $ inserted.
+2464: ! Display math should end with $$.
+2472: ! Missing } inserted.
+2484: ! LaTeX Error: \begin{equation} on input line 89 ended by \end{equationed}.
+2496: ! Missing $ inserted.
+2507: ! Display math should end with $$.
+--- ERROR MESSAGES ---
+2336: ! Missing $ inserted.
+2344: ! Missing } inserted.
+2355: ! Missing } inserted.
+2366: ! Missing \cr inserted.
+2373: ! Missing { inserted.
+2382: ! Missing $ inserted.
+2390: ! Misplaced \crcr.
+2401: ! Extra }, or forgotten \endgroup.
+2441: ! LaTeX Error: \begin{aligned} on input line 90 ended by \end{align}.
+2453: ! Missing $ inserted.
+2464: ! Display math should end with $$.
+2472: ! Missing } inserted.
+2484: ! LaTeX Error: \begin{equation} on input line 89 ended by \end{equationed}.
+2496: ! Missing $ inserted.
+2507: ! Display math should end with $$.
+--- which file ---
+2274: (./chapters/chapter3/part1-3in1-design.tex

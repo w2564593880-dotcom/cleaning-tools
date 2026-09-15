@@ -1,0 +1,82 @@
+diff --git a/chapters/chapter3/part1-3in1-design.tex b/chapters/chapter3/part1-3in1-design.tex
+index 728e88a..bd6b8ac 100644
+--- a/chapters/chapter3/part1-3in1-design.tex
++++ b/chapters/chapter3/part1-3in1-design.tex
+@@ -200,10 +200,11 @@ $n$ — 安全系数，取 $n = 1.5$。
+ 
+ 代入数据计算如下：
+-\begin{align}
++\begin{equation}
++\begin{aligned}
+     F_{\max} &= \frac{\pi \cdot (D^2 - d^2) \cdot \sigma_s}{4 \cdot n} \times 10^{-3} \\
+              &= \frac{3.14 \times (50^2 - 30^2) \times 825}{4 \times 1.5} \times 10^{-3} \\
+-             &= 690.8 \, \text{kN} \\
+-             &> 400 \, \text{kN}
+-\end{align}
++             &= 690.8 \, \text{kN} > 400 \, \text{kN}      
++\end{aligned}
++\end{equation}
+ 满足设计要求。
+ 
+@@ -224,15 +225,16 @@ $n$ — 安全系数，根据《机械设计手册》机械零部件强度计算
+ 
+ 代入数据计算得
+-\begin{align}
++\begin{equation}
++\begin{aligned}
+     T_{\max} &= \frac{\sigma_s \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D \cdot n} \times 10^{-6} \\
+              &= \frac{825 \times 3.14 \times (50^4 - 30^4)}{16 \times 50 \times 1.5} \times 10^{-6} \\
+-             &= 11.74 \, \text{kN} \cdot \text{m} \\
+-             &> 8 \, \text{kN} \cdot \text{m}
+-\end{align}
++             &= 11.74 \, \text{kN} \cdot \text{m} > 8 \, \text{kN} \cdot \text{m}
++\end{aligned}
++\end{equation}
+ 满足设计要求。
+ 
+ 2）主要受力件仿真校核
+ 
+-脉冲器的主要受力件为脉冲器心轴，危险截面出现在出水口，脉冲器芯轴的最大拉应力为630Mpa，小于设计要求，最大切应力为994Mpa，但范围极小，属于应力集中导致的局部小尺度高应力，不会引发整体塑性变形；强度满足设计要求。
++脉冲器的主要受力件为脉冲器心轴，危险截面出现在出水口，脉冲器芯轴的最大拉应力为630MPa，小于设计要求，最大切应力为994MPa，但范围极小，属于应力集中导致的局部小尺度高应力，不会引发整体塑性变形；强度满足设计要求。
+ 
+ 
+@@ -252,3 +254,3 @@ $n$ — 安全系数，根据《机械设计手册》机械零部件强度计算
+ 	\caption{脉冲发生器薄弱零件强度有限元分析}
+ 	\label{fig:FEA_inner_pipe_3_in_1}
+-\end{figure}
+\ No newline at end of file
++\end{figure}
+diff --git a/chapters/chapter3/part1-3in1-verification.tex b/chapters/chapter3/part1-3in1-verification.tex
+index 82bb5c3..6d2b9fa 100644
+--- a/chapters/chapter3/part1-3in1-verification.tex
++++ b/chapters/chapter3/part1-3in1-verification.tex
+@@ -66,6 +66,5 @@ $n$ — 安全系数，取 $n = 1.5$。
+     F_{\max} &= \frac{\pi \cdot (D^2 - d^2) \cdot \sigma_s}{4 \cdot n} \times 10^{-3} \\
+              &= \frac{3.14 \times (50^2 - 30^2) \times 825}{4 \times 1.5} \times 10^{-3} \\
+-             &= 690.8 \, \text{kN} \\
+-             &> 400 \, \text{kN}
++             &= 690.8 \, \text{kN} > 400 \, \text{kN}
+ \end{aligned}
+ \end{equation}
+@@ -88,10 +87,11 @@ $n$ — 安全系数，根据《机械设计手册》机械零部件强度计算
+ 
+ 代入数据计算得：
+-\begin{align}
++\begin{equation}
++\begin{aligned}
+     T_{\max} &= \frac{\sigma_s \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D \cdot n} \times 10^{-6} \\
+              &= \frac{825 \times 3.14 \times (50^4 - 30^4)}{16 \times 50 \times 1.5} \times 10^{-6} \\
+-             &= 11.74 \, \text{kN} \cdot \text{m} \\
+-             &> 8 \, \text{kN} \cdot \text{m}
+-\end{align}
++             &= 11.74 \, \text{kN} \cdot \text{m} > 8 \, \text{kN} \cdot \text{m} 
++\end{aligned}
++\end{equation}
+ 满足设计要求。
+ 
+@@ -116,3 +116,3 @@ $n$ — 安全系数，根据《机械设计手册》机械零部件强度计算
+ 	\caption{脉冲发生器薄弱零件强度有限元分析}
+ 	\label{fig:FEA_inner_pipe_3_in_1}
+-\end{figure}
+\ No newline at end of file
++\end{figure}

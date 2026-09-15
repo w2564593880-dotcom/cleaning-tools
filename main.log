@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.7.6)  15 SEP 2026 13:30
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.7.6)  15 SEP 2026 14:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1041,17 +1041,7 @@ Package fontspec Info:
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
 (Font)              scaled to size 12.045pt on input line 80.
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 80.
- (./main.aux
-
-LaTeX Warning: Label `tab:pulsar_design_req' multiply defined.
-
-
-LaTeX Warning: Label `tab:product_requirements' multiply defined.
-
-
-LaTeX Warning: Label `fig:FEA_inner_pipe_3_in_1' multiply defined.
-
-)
+ (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
@@ -1195,16 +1185,34 @@ LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
 (Font)              scaled to size 12.045pt on input line 1.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 4.
+(Font)              scaled to size 8.0pt on input line 3.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 4.
- [1
-
-
-])
+(Font)              scaled to size 6.0pt on input line 3.
+)
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
+ [1
+
+
+]
+第一章
+[1
+
+
+]
+第二章
+(./chapters/chapter2/part1-horizontal-sand.tex [2
+
+]
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
+(Font)              scaled to size 18.06749pt on input line 11.
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
+(Font)              scaled to size 15.05624pt on input line 14.
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
+(Font)              scaled to size 15.05624pt on input line 14.
+File: figure/chapter2/horizontal-washing-experiment-setup.png Graphic file (type bmp)
+<figure/chapter2/horizontal-washing-experiment-setup.png>
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1213,50 +1221,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
-[2]
-第一章
-[1
-
-
-]
-第二章
-[2
-
-]
-第三章
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
-(Font)              scaled to size 18.06749pt on input line 118.
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 15.05624pt on input line 118.
-
-LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <18.06749> not available
-(Font)              size <17.28> substituted on input line 118.
-
-
-LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <15.05624> not available
-(Font)              size <14.4> substituted on input line 118.
-
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 118.
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 118.
-(./chapters/chapter3/part1-3in1-design.tex
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
-(Font)              scaled to size 15.05624pt on input line 4.
-File: figure/chapter3/tool-structure-3-in-1.jpg Graphic file (type bmp)
-<figure/chapter3/tool-structure-3-in-1.jpg>
- [3
-
-]
-File: figure/chapter3/nozzle-sub.jpg Graphic file (type bmp)
-<figure/chapter3/nozzle-sub.jpg>
-File: figure/chapter3/pulse-module.jpg Graphic file (type bmp)
-<figure/chapter3/pulse-module.jpg>
-File: figure/chapter3/energy-storage-in-pulse-module.jpg Graphic file (type bmp)
-<figure/chapter3/energy-storage-in-pulse-module.jpg>
-File: figure/chapter3/restore-in-pulse-module.jpg Graphic file (type bmp)
-<figure/chapter3/restore-in-pulse-module.jpg>
-
+[3]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1265,19 +1230,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [4]
-File: figure/chapter3/swiper-in-3-in-1.png Graphic file (type bmp)
-<figure/chapter3/swiper-in-3-in-1.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 81--81
-[]|\TU/SimSun(0)/m/n/12.045 适 用 套
- []
-
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 10.53937pt on input line 89.
-
-Underfull \hbox (badness 10000) in alignment at lines 105--105
-[][][][][][][][][] 
- []
+File: figure/chapter2/IncomingReVStstar.png Graphic file (type bmp)
+<figure/chapter2/IncomingReVStstar.png>
+File: figure/chapter2/stagenation-with-inflection-point.png Graphic file (type bmp)
+<figure/chapter2/stagenation-with-inflection-point.png>
+File: figure/chapter2/bed-front-profile-VS-Rein.png Graphic file (type bmp)
+<figure/chapter2/bed-front-profile-VS-Rein.png>
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1295,6 +1253,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [6]
+File: figure/chapter2/bed-oscillation.png Graphic file (type bmp)
+<figure/chapter2/bed-oscillation.png>
+File: figure/chapter2/M-shaped-bed-height.png Graphic file (type bmp)
+<figure/chapter2/M-shaped-bed-height.png>
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1303,13 +1266,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [7]
-File: figure/chapter3/inner-pipe-3-in-1.png Graphic file (type bmp)
-<figure/chapter3/inner-pipe-3-in-1.png>
-File: figure/chapter3/inner-pipe-3-in-1-tensile-stress.png Graphic file (type bmp)
-<figure/chapter3/inner-pipe-3-in-1-tensile-stress.png>
-File: figure/chapter3/inner-pipe-3-in-1-torsional-stress.png Graphic file (type bmp)
-<figure/chapter3/inner-pipe-3-in-1-torsional-stress.png>
-) (./chapters/chapter3/part1-3in1-verification.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1318,6 +1274,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [8]
+File: figure/chapter2/eta-gamma.png Graphic file (type bmp)
+<figure/chapter2/eta-gamma.png>
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1326,13 +1285,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [9]
-File: figure/chapter3/inner-pipe-3-in-1.png Graphic file (type bmp)
-<figure/chapter3/inner-pipe-3-in-1.png>
-File: figure/chapter3/inner-pipe-3-in-1-tensile-stress.png Graphic file (type bmp)
-<figure/chapter3/inner-pipe-3-in-1-tensile-stress.png>
-File: figure/chapter3/inner-pipe-3-in-1-torsional-stress.png Graphic file (type bmp)
-<figure/chapter3/inner-pipe-3-in-1-torsional-stress.png>
-) (./chapters/chapter3/part1-3in1-hydraulic-model.tex
+File: figure/chapter2/bed-profile-guar-gel.png Graphic file (type bmp)
+<figure/chapter2/bed-profile-guar-gel.png>
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1341,6 +1296,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [10]
+File: figure/chapter2/p-star-VS-t-star.png Graphic file (type bmp)
+<figure/chapter2/p-star-VS-t-star.png>
+File: figure/chapter2/Vs-star-VS-Rein.png Graphic file (type bmp)
+<figure/chapter2/Vs-star-VS-Rein.png>
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1349,10 +1309,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [11]
-File: figure/chapter3/working-cycle-pulse-module.jpg Graphic file (type bmp)
-<figure/chapter3/working-cycle-pulse-module.jpg>
-File: figure/chapter3/force-analysis-reciprocating-piston.jpg Graphic file (type bmp)
-<figure/chapter3/force-analysis-reciprocating-piston.jpg>
+File: figure/chapter2/H-star-VS-Rein.png Graphic file (type bmp)
+<figure/chapter2/H-star-VS-Rein.png>
+File: figure/chapter2/Rel-VS-Rein.png Graphic file (type bmp)
+<figure/chapter2/Rel-VS-Rein.png>
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1362,9 +1322,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [12]
-File: figure/chapter3/FSI-logic.jpg Graphic file (type bmp)
-<figure/chapter3/FSI-logic.jpg>
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1373,6 +1330,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [13]
+File: figure/chapter2/phis-VS-Rein.png Graphic file (type bmp)
+<figure/chapter2/phis-VS-Rein.png>
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1388,7 +1348,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
-[15]
+[15]) (./chapters/chapter2/part2-full-well-model.tex
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
+(Font)              scaled to size 9.03374pt on input line 8.
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
+(Font)              scaled to size 5.0pt on input line 8.
+File: figure/chapter2/iron-washing-test-rig.png Graphic file (type bmp)
+<figure/chapter2/iron-washing-test-rig.png>
+File: figure/chapter2/iron-bed-7dot85mperh.png Graphic file (type bmp)
+<figure/chapter2/iron-bed-7dot85mperh.png>
+File: figure/chapter2/iron-bed-10dot00mperh.png Graphic file (type bmp)
+<figure/chapter2/iron-bed-10dot00mperh.png>
+File: figure/chapter2/iron-bed-11dot70mperh.png Graphic file (type bmp)
+<figure/chapter2/iron-bed-11dot70mperh.png>
+
+Overfull \hbox (4.50652pt too wide) in paragraph at lines 31--41
+ [][][][][][] 
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
@@ -1397,12 +1374,28 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
 
 [16]
-File: figure/chapter3/piston-displacement-VS-time.png Graphic file (type bmp)
-<figure/chapter3/piston-displacement-VS-time.png>
+File: figure/chapter2/iron-bed-15dot70mperh.png Graphic file (type bmp)
+<figure/chapter2/iron-bed-15dot70mperh.png>
+File: figure/chapter2/iron-bed-15dot83mperh.png Graphic file (type bmp)
+<figure/chapter2/iron-bed-15dot83mperh.png>
+File: figure/chapter2/iron-bed-17dot44mperh.png Graphic file (type bmp)
+<figure/chapter2/iron-bed-17dot44mperh.png>
 
+Overfull \hbox (4.50652pt too wide) in paragraph at lines 53--63
+ [][][][][][] 
+ []
+
+File: figure/chapter2/video-clip-theta-le-72-degree.png Graphic file (type bmp)
+<figure/chapter2/video-clip-theta-le-72-degree.png>
+File: figure/chapter2/extraction-of-pack-area-theta-le-72-degree.png Graphic file (type bmp)
+<figure/chapter2/extraction-of-pack-area-theta-le-72-degree.png>
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.45398pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.45398pt}.
 (fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr) 
+(fancyhdr)                \addtolength{\topmargin}{-2.45398pt}.
+
+[17]
+
+Package fancyhdr Warning: \headheight is too sm

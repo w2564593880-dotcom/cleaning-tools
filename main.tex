@@ -9,11 +9,35 @@
 
 % 3. 页眉页脚与双线设置
 \usepackage{fancyhdr}
+%\pagestyle{fancy}
+%\fancyhf{} 
+%\fancyhead[C]{\leftmark} 
+%%\renewcommand{\headrule}{\vspace{-0.4pt}\hrule height 1.5pt width \headwidth \vspace{-1.2pt}\hrule height 0.5pt width \headwidth}
+%\fancyfoot[C]{\thepage}       
+
+
+% 3. 设置常规的 fancy 样式
 \pagestyle{fancy}
-\fancyhf{} 
-\fancyhead[C]{\leftmark} 
-%\renewcommand{\headrule}{\vspace{-0.4pt}\hrule height 1.5pt width \headwidth \vspace{-1.2pt}\hrule height 0.5pt width \headwidth}
-\fancyfoot[C]{\thepage}       
+\fancyhf{} % 清除默认设置
+\fancyhead[C]{\leftmark} % 居中显示章标题
+\fancyfoot[C]{\thepage} % 居中显示页码
+
+% 自定义双线页眉
+\renewcommand{\headrule}{%
+	\vspace{-0.4pt}\hrule height 1.5pt width \headwidth 
+	\vspace{-1.2pt}\hrule height 0.5pt width \headwidth
+}
+
+% 2. 关键步骤：重新定义 plain 样式，使其与 fancy 保持一致
+\fancypagestyle{plain}{%
+	\fancyhf{} % 清除 plain 样式的默认设置
+	\fancyhead[C]{\leftmark} % 让章标题页也显示居中的章标题
+	\fancyfoot[C]{\thepage} % 让章标题页也显示居中的页码
+	\renewcommand{\headrule}{% % 让章标题页也有双线页眉
+		\vspace{-0.4pt}\hrule height 1.5pt width \headwidth 
+		\vspace{-1.2pt}\hrule height 0.5pt width \headwidth
+	}
+}
 
 % 4. 目录超链接与PDF元数据设置
 \usepackage{hyperref}
@@ -91,7 +115,7 @@
     \vspace{2cm} 
     {\Large \textcolor{red}{项目结题报告} \par} 
     \vspace{4cm} 
-    {\Large \textcolor{red}{项目负责人：高德利} \par}
+    {\Large \textcolor{red}{项目负责人：刘维} \par}
     \vspace{1cm}
     {\Large \textcolor{red}{承担单位：中国石油大学（北京）} \par}
     \vspace{1cm}

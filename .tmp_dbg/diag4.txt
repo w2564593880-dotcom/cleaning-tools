@@ -1,0 +1,94 @@
+﻿### grep 2020/03/25 and L3 programming layer in repo text files
+scanned_files=23
+L3HIT build1.txt n=1 first_line=6 :: L3 programming layer <2026-01-19>
+L3HIT build2.txt n=1 first_line=6 :: L3 programming layer <2026-01-19>
+L3HIT main.log n=2 first_line=9 :: L3 programming layer <2026-01-19>
+L3HIT chapters\chapter3\part1-3in1-hydraulic-model.log n=1 first_line=9 :: L3 programming layer <2026-01-19>
+### stray build artifacts in repo (outside root)
+2026-09-15 13:08:04 27052 .tmp_dbg\c1.log
+2026-09-15 13:09:14 27052 .tmp_dbg\c2.log
+2026-09-15 13:06:43 799411 chapters\chapter3\part1-3in1-hydraulic-model.log
+2026-09-15 13:06:43 9444 chapters\chapter3\part1-3in1-hydraulic-model.synctex.gz
+stray_artifact_count=4
+### pdfs whose basename matches a sibling .tex (possible stray fragment builds)
+2026-09-15 13:09:14 14293525 main.pdf
+2026-09-15 13:06:43 23354 chapters\chapter3\part1-3in1-hydraulic-model.pdf
+### xelatex resolution
+xelatex -> D:\texlive\2026\bin\windows\xelatex.exe
+PATH entries mentioning tex:
+  D:\texlive\2026\bin\windows
+DIR D:\texlive
+### global vscode settings (latex-workshop / xelatex)
+global_settings=C:\Users\Administrator\AppData\Roaming\Code\User\settings.json
+11|     "latex-workshop.latex.recipes": [
+13|             "name": "xelatex",
+15|                 "xelatex"
+19|             "name": "xelatex -> bibtex -> xelatex*2",
+21|                 "xelatex",
+23|                 "xelatex",
+24|                 "xelatex"
+28|     "latex-workshop.latex.tools": [
+30|             "name": "xelatex",
+31|             "command": "xelatex",
+48|     "latex-workshop.synctex.afterBuild.enabled": true,
+49|     "latex-workshop.view.pdf.viewer": "tab",
+50|     "latex-workshop.latex.clean.fileTypes": [
+### c1/c2 log fingerprints
+d:\cleaning-tools\.tmp_dbg\c1.log hash=E07065F50A90C509279EB9CC4257EBB2843E53FFAB139005C23E465A8096DFA4 lines=576
+  -- head --
+  This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex)
+   restricted \write18 enabled.
+  entering extended mode
+  (./main.tex
+  LaTeX2e <2025-11-01>
+  L3 programming layer <2026-01-19>
+  (d:/texlive/2026/texmf-dist/tex/latex/ctex/ctexrep.cls
+  (d:/texlive/2026/texmf-dist/tex/latex/ctex/config/ctexbackend.cfg)
+  (d:/texlive/2026/texmf-dist/tex/latex/l3kernel/expl3.sty
+  (d:/texlive/2026/texmf-dist/tex/latex/l3backend/l3backend-xetex.def))
+  Document Class: ctexrep 2022/07/14 v2.5.10 Chinese adapter for class report (CT
+  EX)
+  (d:/texlive/2026/texmf-dist/tex/latex/ctex/ctexhook.sty)
+  (d:/texlive/2026/texmf-dist/tex/latex/ctex/ctexpatch.sty)
+  (d:/texlive/2026/texmf-dist/tex/latex/base/fix-cm.sty
+  -- tail --
+  LaTeX Font Warning: Size substitutions with differences
+  (Font)              up to 0.78749pt have occurred.
+  
+  
+  LaTeX Warning: There were multiply-defined labels.
+  
+   )
+  (see the transcript file for additional information)
+  Output written on main.pdf (44 pages).
+  Transcript written on main.log.
+  invalid_char_hits=0
+d:\cleaning-tools\.tmp_dbg\c2.log hash=E07065F50A90C509279EB9CC4257EBB2843E53FFAB139005C23E465A8096DFA4 lines=576
+  -- head --
+  This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex)
+   restricted \write18 enabled.
+  entering extended mode
+  (./main.tex
+  LaTeX2e <2025-11-01>
+  L3 programming layer <2026-01-19>
+  (d:/texlive/2026/texmf-dist/tex/latex/ctex/ctexrep.cls
+  (d:/texlive/2026/texmf-dist/tex/latex/ctex/config/ctexbackend.cfg)
+  (d:/texlive/2026/texmf-dist/tex/latex/l3kernel/expl3.sty
+  (d:/texlive/2026/texmf-dist/tex/latex/l3backend/l3backend-xetex.def))
+  Document Class: ctexrep 2022/07/14 v2.5.10 Chinese adapter for class report (CT
+  EX)
+  (d:/texlive/2026/texmf-dist/tex/latex/ctex/ctexhook.sty)
+  (d:/texlive/2026/texmf-dist/tex/latex/ctex/ctexpatch.sty)
+  (d:/texlive/2026/texmf-dist/tex/latex/base/fix-cm.sty
+  -- tail --
+  LaTeX Font Warning: Size substitutions with differences
+  (Font)              up to 0.78749pt have occurred.
+  
+  
+  LaTeX Warning: There were multiply-defined labels.
+  
+   )
+  (see the transcript file for additional information)
+  Output written on main.pdf (44 pages).
+  Transcript written on main.log.
+  invalid_char_hits=0

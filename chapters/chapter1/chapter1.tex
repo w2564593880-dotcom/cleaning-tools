@@ -145,7 +145,7 @@ JKR 模型的法向力由重叠量 \(\delta\) 和引入的新参数表面能 \(\
 	F_{\mathrm{c}}=-\frac{3}{2}\pi\gamma R_{\mathrm{eq}}
 \end{equation}
 
-颗粒与颗粒间接触模型是 EDEM 中使用的 Hertz--Mindlin 默认模型，该模型适用于描述各种形状颗粒之间的接触行为，包括圆形、椭圆形和不规则形状颗粒，如图 1.2、图 1.3 所示。Hertz--Mindlin 模型在描述颗粒间接触力和相互作用时具有广泛的适用性，并且考虑了颗粒的变形和滑移等实际因素。Hertz--Mindlin 接触模型示意图见图 1.3。
+颗粒与颗粒间接触模型是 EDEM 中使用的 Hertz--Mindlin 默认模型，该模型适用于描述各种形状颗粒之间的接触行为，包括圆形、椭圆形和不规则形状颗粒，如图 1.3、图 1.4 所示。Hertz--Mindlin 模型在描述颗粒间接触力和相互作用时具有广泛的适用性，并且考虑了颗粒的变形和滑移等实际因素。Hertz--Mindlin 接触模型示意图见图 1.3。
 
 此外，在采用 EDEM 软件进行模拟计算过程中，还需要做如下假设：
 \begin{enumerate}
@@ -154,6 +154,20 @@ JKR 模型的法向力由重叠量 \(\delta\) 和引入的新参数表面能 \(\
 	\item 颗粒与颗粒接触时可以产生部分重叠量，但重叠量大小与颗粒尺寸大小相比要小很多；
 	\item 在每个计算步长内，外界激励不能被任意颗粒同时传播到它的相邻颗粒。在所有的计算时间内，任意颗粒上的合力可以通过相互接触的颗粒之间的相互作用唯一确定。
 \end{enumerate}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.6\textwidth]{figure/hertz-mindlin-contact-model.png}
+	\caption{Hertz--Mindlin 接触模式示意图}
+	\label{fig:hertz_mindlin_contact_model}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.6\textwidth]{figure/hertzian-soft-sphere-model.png}
+	\caption{Hertzian 软球模型}
+	\label{fig:hertzian_soft_sphere_model}
+\end{figure}
 
 \subsection{液固相间作用模型}
 
@@ -306,7 +320,21 @@ JKR 模型的法向力由重叠量 \(\delta\) 和引入的新参数表面能 \(\
 	\mu_{\mathrm{t}}=\frac{\rho_{\mathrm{l}}C_{\mu}k^{2}}{\epsilon}
 \end{equation}
 
-为了模拟井筒内携带颗粒的特性，模型需要通过设计一个环形空间来实现。研究中建立了内径 \(\phi 88.9\) mm、外径 \(\phi 244.475\) mm、\(\phi 177.8\) mm、总长度为 \(1.5\) m 的光滑管柱，用于模拟钻杆（\(3\)-\(1/2'\)）和井筒（\(9\)-\(5/8'\)、\(7'\)），套管和钻杆同心。在模拟过程中，内部钻杆固定，钻井液以一定速度垂直于入口方向流入环形空间，并从另一端出口流出。环空模型如图 1.4、图 1.5 所示。在 EDEM 软件中，颗粒产生于“颗粒工厂”，其初始速度、角速度为零，角度随机。计算采用了非稳态 \(k-\epsilon\) 湍流模型，将颗粒设置为离散相，并利用多面体网格进行建模。边界条件包括速度入口、压力出口，管壁采用无滑移条件。一般计算参数具体数值见表 1.1，重力方向始终竖直向下，对于不同 \(\theta\) 的情况，流体域旋转相应角度。
+为了模拟井筒内携带颗粒的特性，模型需要通过设计一个环形空间来实现。研究中建立了内径 \(\phi 88.9\) mm、外径 \(\phi 244.475\) mm、\(\phi 177.8\) mm、总长度为 \(1.5\) m 的光滑管柱，用于模拟钻杆（\(3\)-\(1/2'\)）和井筒（\(9\)-\(5/8'\)、\(7'\)），套管和钻杆同心。在模拟过程中，内部钻杆固定，钻井液以一定速度垂直于入口方向流入环形空间，并从另一端出口流出。环空模型如图 1.5、图 1.6 所示。在 EDEM 软件中，颗粒产生于“颗粒工厂”，其初始速度、角速度为零，角度随机。计算采用了非稳态 \(k-\epsilon\) 湍流模型，将颗粒设置为离散相，并利用多面体网格进行建模。边界条件包括速度入口、压力出口，管壁采用无滑移条件。一般计算参数具体数值见表 1.1，重力方向始终竖直向下，对于不同 \(\theta\) 的情况，流体域旋转相应角度。
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.9\textwidth]{figure/fluid-domain-geometry.png}
+	\caption{流体域几何模型示意图}
+	\label{fig:fluid_domain_geometry}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.9\textwidth]{figure/fluid-domain-polyhedral-mesh.jpg}
+	\caption{流体域多面体单元离散示意图}
+	\label{fig:fluid_domain_mesh}
+\end{figure}
 
 \begin{table}[H]
 	\centering
@@ -333,7 +361,14 @@ JKR 模型的法向力由重叠量 \(\delta\) 和引入的新参数表面能 \(\
 
 洗井作业中，冲砂工具和管柱的砂堵问题直接影响作业安全与效率。砂堵的本质是砂砾在工具与井筒环空内的异常堆积，其后果不仅限于工具功能失效，例如冲砂液循环中断、卡钻，还会导致非计划停工、设备维修成本攀升。通过仿真研究井筒内工具与井筒环空砂砾运移规律，可以预测砂砾在井筒环空内的运移速度以及沉积规律，为冲砂作业提供理论指导。
 
-根据现场提供的砂砾样本（见图 1.6）及其粒度分级统计数据（参见表 0.2），建立相对应的大小与数量的砂砾颗粒仿真模型（具体参数见表 0.3）。
+根据现场提供的砂砾样本（见图 1.7）及其粒度分级统计数据（参见表 0.2），建立相对应的大小与数量的砂砾颗粒仿真模型（具体参数见表 0.3）。
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figure/sand-sample.jpg}
+	\caption{井筒出砂样本}
+	\label{fig:sand_sample}
+\end{figure}
 
 \begin{table}[H]
 	\centering
@@ -371,7 +406,7 @@ JKR 模型的法向力由重叠量 \(\delta\) 和引入的新参数表面能 \(\
 	\end{tabular}
 \end{table}
 
-本项目涉及到的四类工具中，“四合一”工具的外部功能单元多，结构最为复杂，在工具的几何变径处会产生边界层分离和回流现象，是砂砾沉积的“危险位置”。于是，本文选择“四合一”工具的扶正器和强磁位置作为对象，研究砂砾在此处的沉积行为。建立强磁部位与 \(7'\) 井筒环空流体仿真模型，仿真模型数据见表 0.4。研究不同环空流速下（\(\nu_{\mathrm{c}}=0.37\) m/s、\(0.59\) m/s）砂砾的运移及沉降规律，探究砂砾是否会出现沉积或者堵塞现象。计算结果如图 1.8 所示。
+本项目涉及到的四类工具中，“四合一”工具的外部功能单元多，结构最为复杂，在工具的几何变径处会产生边界层分离和回流现象，是砂砾沉积的“危险位置”。于是，本文选择“四合一”工具的扶正器和强磁位置作为对象，研究砂砾在此处的沉积行为。建立强磁部位与 \(7'\) 井筒环空流体仿真模型，仿真模型数据见表 1.4。研究不同环空流速下（\(\nu_{\mathrm{c}}=0.37\) m/s、\(0.59\) m/s）砂砾的运移及沉降规律，探究砂砾是否会出现沉积或者堵塞现象。计算结果如图 1.8 所示。
 
 \begin{table}[H]
 	\centering
@@ -392,9 +427,38 @@ JKR 模型的法向力由重叠量 \(\delta\) 和引入的新参数表面能 \(\
 	\end{tabular}
 \end{table}
 
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=\textwidth]{figure/tool-and-wellbore-simulation-model.png}
+	\caption{工具及井筒仿真模型}
+	\label{fig:tool_wellbore_model}
+\end{figure}
+
 图 1.9 描述的是压井液流速 \(0.37\) m/s 下井筒与工具环空内砂砾颗粒分布情况。从图可以看出，部分砂砾颗粒由于重力作用会在工具前端产生堆积，同时砂砾颗粒会随着工具的导流结构进行运移，在强磁部件的凹槽内也会有少量的砂砾堆积现象。
 
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=\textwidth]{figure/sand-distribution-tool-vin-dot37.png}
+	\caption{压井液流速 0.37 m/s 下井筒与工具环空内砂砾颗粒分布}
+	\label{fig:sand_distribution_tool_vin_dot37}
+\end{figure}
+
 图 1.10 描述的是相同时间步环空流速 \(0.37\) m/s、\(0.59\) m/s 下砂砾颗粒分布。从图中可以看出，环空流速增大时，靠近压力出口的砂砾颗粒越多，砂砾颗粒的运移效率明显加快。在相同时间步下，环空流速越大，颗粒运移速度越快。由于环空流速增大，流体的拖曳力增大，砂砾颗粒在轴向的速度增大，砂砾颗粒由于重力作用产生的沉积位置与流体入口的距离也变远。
+
+\begin{figure}[htbp]
+	\centering
+	\subfloat[环空流速 0.37 m/s]{%
+		\includegraphics[width=0.98\textwidth]{figure/sand-distribution-annular-vin-dot37.png}
+		\label{fig:sand_distribution_annular_vin_dot37}
+	}
+	\vspace{0pt}
+	\subfloat[环空流速 0.59 m/s]{%
+		\includegraphics[width=0.98\textwidth]{figure/sand-distribution-annular-vin-dot59.png}
+		\label{fig:sand_distribution_annular_vin_dot59}
+	}
+	\caption{相同时间步不同环空流速下砂砾颗粒分布}
+	\label{fig:sand_distribution_annular_vin}
+\end{figure}
 
 通过仿真发现，在冲砂作业时，如果环空流体中砂砾体积分数越大，越容易在工具与井筒下壁之间的环空中产生沉积，环空流速增大，砂砾运移效率加快，建议在作业时增大压井液流速即增大冲砂液排量以减小砂砾堆积的风险，降低砂堵概率。同时，工具的导流结构也对砂砾运移起到关键作用，砂砾颗粒会随着工具的导流结构进行运移，降低了砂堵的风险，为工具安全作业提供保障。
 
@@ -416,7 +480,14 @@ JKR 模型的法向力由重叠量 \(\delta\) 和引入的新参数表面能 \(\
 
 \subsubsection{几何模型}
 
-根据现场实际油井组合参数建立环空三维模型，如图 1.10 所示。实际水平井段很长，为了研究方便，取水平井模型长 \(1.5\) m，取曲率半径 \(1\) m、曲率为 \(90^{\circ}\) 的圆弧弯管模型模拟不同井斜角度，考虑井壁和钻杆表面光滑，计算流域由钻杆和井壁表面组成。采用多面体单元对所建模型进行网格划分。
+根据现场实际油井组合参数建立环空三维模型，如图 1.11 所示。实际水平井段很长，为了研究方便，取水平井模型长 \(1.5\) m，取曲率半径 \(1\) m、曲率为 \(90^{\circ}\) 的圆弧弯管模型模拟不同井斜角度，考虑井壁和钻杆表面光滑，计算流域由钻杆和井壁表面组成。采用多面体单元对所建模型进行网格划分。
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figure/annular-3d-model.png}
+	\caption{环空三维模型}
+	\label{fig:annular_3d_model}
+\end{figure}
 
 \subsubsection{边界条件}
 
@@ -426,35 +497,133 @@ JKR 模型的法向力由重叠量 \(\delta\) 和引入的新参数表面能 \(\
 
 \subsubsection{环空砂砾沉降分析}
 
-通过对井筒环空内砂砾质量进行仿真，得到钻杆静止时环空内砂砾沉降质量变化曲线，如图 1.11 所示。由图可知，环空内砂砾质量曲线先呈线性增长，在 30 s 后不再继续增长，而是随时间在稳定值上下波动。这说明井筒内进入的砂砾量与出口排出的砂砾量接近，可判断环空内沉积的砂砾量达到稳定值，平均岩屑质量为 \(63.294\) kg。
+通过对井筒环空内砂砾质量进行仿真，得到钻杆静止时环空内砂砾沉降质量变化曲线，如图 1.12 所示。由图可知，环空内砂砾质量曲线先呈线性增长，在 30 s 后不再继续增长，而是随时间在稳定值上下波动。这说明井筒内进入的砂砾量与出口排出的砂砾量接近，可判断环空内沉积的砂砾量达到稳定值，平均岩屑质量为 \(63.294\) kg。
 
-图 1.12 和图 1.13 分别为不同位置截面砂砾轴向速度云图和砂砾体积分数云图。其中水平段每个截面间距 \(500\) mm，井斜段井斜角度间隔 \(15^{\circ}\)，且距离入口 500、1000、1500 mm 处，井斜段 \(15^{\circ}\)、\(30^{\circ}\)、\(75^{\circ}\) 处截面进行放大。环空中砂砾量达到稳定后，由于整个环空中的砂砾不是均匀分布，所以不同位置砂砾速度和体积分数有一定差异。由图可知：环空上部为流体高速区，流速大；下部为低速区，流速趋近于 0。由于重力作用，砂砾趋向环空下部，大部分砂砾沉降在环空下部低速区，造成砂砾难以运移，最终形成砂砾床。
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figure/sand-mass-in-annular-VS-time.png}
+	\caption{环空内砂砾质量变化曲线}
+	\label{fig:sand_mass_in_annular_VS_time}
+\end{figure}
+
+图 1.13 和图 1.14 分别为不同位置截面砂砾轴向速度云图和砂砾体积分数云图。其中水平段每个截面间距 \(500\) mm，井斜段井斜角度间隔 \(15^{\circ}\)，且距离入口 500、1000、1500 mm 处，井斜段 \(15^{\circ}\)、\(30^{\circ}\)、\(75^{\circ}\) 处截面进行放大。环空中砂砾量达到稳定后，由于整个环空中的砂砾不是均匀分布，所以不同位置砂砾速度和体积分数有一定差异。由图可知：环空上部为流体高速区，流速大；下部为低速区，流速趋近于 0。由于重力作用，砂砾趋向环空下部，大部分砂砾沉降在环空下部低速区，造成砂砾难以运移，最终形成砂砾床。
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figure/sand-velocity-cloud-sections.png}
+	\caption{不同截面砂砾速度云图}
+	\label{fig:sand_velocity_cloud_sections}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figure/sand-volume-fraction-cloud-sections.png}
+	\caption{不同截面砂砾体积分数云图}
+	\label{fig:sand_volume_fraction_cloud_sections}
+\end{figure}
 
 \subsubsection{压井液流速对环空砂砾沉积的影响}
 
-图 1.14 为粘度 \(2.3\) cp，排量 25、40、100 m\(^{3}\)/h（0.17、0.27、0.69 m/s）时，不同流速下环空内砂砾质量随时间的变化曲线。由图可以看出，随着时间的延长，环空内沉降的砂砾质量趋于稳定，并且随着流速升高，环空内沉降的砂砾质量减小，且到达稳定的时间加快。
+图 1.15 为粘度 \(2.3\) cp，排量 25、40、100 m\(^{3}\)/h（0.17、0.27、0.69 m/s）时，不同流速下环空内砂砾质量随时间的变化曲线。由图可以看出，随着时间的延长，环空内沉降的砂砾质量趋于稳定，并且随着流速升高，环空内沉降的砂砾质量减小，且到达稳定的时间加快。
 
-假设环空内体积分数最大且沉积高度最高的位置为最容易发生砂堵位置，定为 block 点（简称 b 点）。图 1.15 为流速为 \(0.17\) m/s 时环空内砂砾的体积分数云图，则流速为 \(0.17\) m/s 时，b 点出现在水平段距离入口 \(1280\) mm 处，高度为 \(68\) mm。砂砾床主要沉积在水平段，随着井斜角度增加，砂砾体积分数逐渐减小，井斜 \(75^{\circ}\) 时，砂砾体积分数接近于 0。
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figure/sand-mass-in-annular-VS-time-flowrate.png}
+	\caption{不同流速下环空内砂砾质量随时间的变化曲线}
+	\label{fig:sand_mass_in_annular_VS_time_flowrate}
+\end{figure}
 
-图 1.16 为流速为 \(0.27\) m/s 时环空内砂砾的体积分数云图，流速为 \(0.27\) m/s 时，b 点出现在水平段距离入口 \(1150\) mm 处，高度为 \(64\) mm。砂砾床主要沉积在水平段，相对于 \(0.17\) m/s 流速工况，砂砾在井斜段体积分数有所增加，砂砾向出口运移的效率增大。
+假设环空内体积分数最大且沉积高度最高的位置为最容易发生砂堵位置，定为 block 点（简称 b 点）。图 1.16 为流速为 \(0.17\) m/s 时环空内砂砾的体积分数云图，则流速为 \(0.17\) m/s 时，b 点出现在水平段距离入口 \(1280\) mm 处，高度为 \(68\) mm。砂砾床主要沉积在水平段，随着井斜角度增加，砂砾体积分数逐渐减小，井斜 \(75^{\circ}\) 时，砂砾体积分数接近于 0。
 
-图 1.17 为流速为 \(0.69\) m/s 时环空内砂砾的体积分数云图，流速为 \(0.69\) m/s 时，b 点出现在水平段距离入口 \(1530\) mm 处，高度为 \(32\) mm。砂砾床沉积在水平段及小倾角井斜段，砂砾床高度明显降低，砂堵风险明显下降，且井斜段砂砾体积分数明显增大，砂砾运移效率增大。
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figure/sand-volume-fraction-vin-dot17.png}
+	\caption{流速为 0.17 m/s 时环空内砂砾的体积分数云图}
+	\label{fig:sand_volume_fraction_vin_dot17}
+\end{figure}
 
-图 1.18 为 b 点高度随压井液流速变化曲线，由图中可以看到随着压井液流速增大，b 点高度逐渐减小。
+图 1.17 为流速为 \(0.27\) m/s 时环空内砂砾的体积分数云图，流速为 \(0.27\) m/s 时，b 点出现在水平段距离入口 \(1150\) mm 处，高度为 \(64\) mm。砂砾床主要沉积在水平段，相对于 \(0.17\) m/s 流速工况，砂砾在井斜段体积分数有所增加，砂砾向出口运移的效率增大。
 
-图 1.19 为 b 点不同压井液流速下砂砾体积分数和轴向速度云图，随着压井液流速增大，b 点砂砾体积分数减小，且砂砾流速增大，这说明环空排量的增大，增强了流体的携砂能力，促进了砂砾颗粒在环空中的流动性，增加了砂砾颗粒能量，为砂砾运移提供了更大的拖曳力，从而有效地提高了井筒内砂砾颗粒的运移效率。因此在实际作业中，要想减小砂堵风险，宜尽量采用更大的冲砂排量。
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figure/sand-volume-fraction-vin-dot27.png}
+	\caption{流速为 0.27 m/s 时环空内砂砾的体积分数云图}
+	\label{fig:sand_volume_fraction_vin_dot27}
+\end{figure}
+
+图 1.18 为流速为 \(0.69\) m/s 时环空内砂砾的体积分数云图，流速为 \(0.69\) m/s 时，b 点出现在水平段距离入口 \(1530\) mm 处，高度为 \(32\) mm。砂砾床沉积在水平段及小倾角井斜段，砂砾床高度明显降低，砂堵风险明显下降，且井斜段砂砾体积分数明显增大，砂砾运移效率增大。
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figure/sand-volume-fraction-vin-dot69.png}
+	\caption{流速为 0.69 m/s 时环空内砂砾的体积分数云图}
+	\label{fig:sand_volume_fraction_vin_dot69}
+\end{figure}
+
+图 1.19 为 b 点高度随压井液流速变化曲线，由图中可以看到随着压井液流速增大，b 点高度逐渐减小。
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figure/b-point-height-VS-flowrate.png}
+	\caption{b 点高度随压井液流速变化曲线}
+	\label{fig:b_point_height_VS_flowrate}
+\end{figure}
+
+图 1.20 为 b 点不同压井液流速下砂砾体积分数和轴向速度云图，随着压井液流速增大，b 点砂砾体积分数减小，且砂砾流速增大，这说明环空排量的增大，增强了流体的携砂能力，促进了砂砾颗粒在环空中的流动性，增加了砂砾颗粒能量，为砂砾运移提供了更大的拖曳力，从而有效地提高了井筒内砂砾颗粒的运移效率。因此在实际作业中，要想减小砂堵风险，宜尽量采用更大的冲砂排量。
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figure/sand-volume-fraction-velocity-at-b-point-flowrate.png}
+	\caption{b 点不同压井液流速下砂砾体积分数和轴向速度云图}
+	\label{fig:sand_volume_fraction_velocity_at_b_point_flowrate}
+\end{figure}
 
 \subsubsection{压井液粘度对环空砂砾沉积的影响}
 
-图 1.20 为流速 \(0.27\) m/s 时，粘度分别取 1.0、2.3、5.0 cp 时，不同粘度下环空内砂砾质量随时间的变化曲线。由图可以看出，随着时间的延长，环空内沉降的砂砾质量趋于稳定，并且随着粘度增大，环空内沉降的砂砾质量减小，且到达稳定的时间加快。
+图 1.21 为流速 \(0.27\) m/s 时，粘度分别取 1.0、2.3、5.0 cp 时，不同粘度下环空内砂砾质量随时间的变化曲线。由图可以看出，随着时间的延长，环空内沉降的砂砾质量趋于稳定，并且随着粘度增大，环空内沉降的砂砾质量减小，且到达稳定的时间加快。
 
-图 1.21 为粘度为 \(1.0\) cp 时环空内砂砾的体积分数云图，则粘度为 \(1.0\) cp 时，b 点出现在水平段距离入口 \(800\)--\(1400\) mm 处，高度为 \(77.5\) mm。砂砾床主要沉积在水平段，随着井斜角度增加，砂砾体积分数逐渐减小，井斜 \(75^{\circ}\) 时，砂砾体积分数接近于 0。
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figure/sand-mass-in-annular-VS-time-viscosity.png}
+	\caption{不同粘度下环空内砂砾质量随时间的变化曲线}
+	\label{fig:sand_mass_in_annular_VS_time_viscosity}
+\end{figure}
 
-图 1.22 为粘度为 \(5.0\) cp 时环空内砂砾的体积分数云图，则粘度为 \(5.0\) cp 时，b 点出现在水平段距离入口 \(1000\) mm 处，高度为 \(25\) mm。砂砾床沉积在水平段及小倾角井斜段，砂砾床高度明显降低，砂堵风险明显下降，且井斜段砂砾体积分数明显增大，砂砾运移效率增大。
+图 1.22 为粘度为 \(1.0\) cp 时环空内砂砾的体积分数云图，则粘度为 \(1.0\) cp 时，b 点出现在水平段距离入口 \(800\)--\(1400\) mm 处，高度为 \(77.5\) mm。砂砾床主要沉积在水平段，随着井斜角度增加，砂砾体积分数逐渐减小，井斜 \(75^{\circ}\) 时，砂砾体积分数接近于 0。
 
-图 1.23 为 b 点高度随压井液粘度变化曲线，由图中可以看到随着压井液粘度增大，b 点高度逐渐减小。
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figure/sand-volume-fraction-mu-1cp.png}
+	\caption{粘度为 1.0 cp 时环空内砂砾的体积分数云图}
+	\label{fig:sand_volume_fraction_mu_1cp}
+\end{figure}
 
-图 1.24 为 b 点不同压井液粘度下砂砾体积分数和轴向速度云图，随着压井液粘度增大，b 点砂砾体积分数减小，但砂砾流速有减小的趋势，这说明压井液粘度的增大，增大了流体的携砂能力，但是会减小环空中流体的流动性，这说明增大压井液粘度可以抑制砂堵在井底的形成，但是也会增加砂砾上返的时间。因此在实际作业中，要想减小砂堵风险，宜采用粘度更大的压井液。
+图 1.23 为粘度为 \(5.0\) cp 时环空内砂砾的体积分数云图，则粘度为 \(5.0\) cp 时，b 点出现在水平段距离入口 \(1000\) mm 处，高度为 \(25\) mm。砂砾床沉积在水平段及小倾角井斜段，砂砾床高度明显降低，砂堵风险明显下降，且井斜段砂砾体积分数明显增大，砂砾运移效率增大。
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figure/sand-volume-fraction-mu-5cp.png}
+	\caption{粘度为 5.0 cp 时环空内砂砾的体积分数云图}
+	\label{fig:sand_volume_fraction_mu_5cp}
+\end{figure}
+
+图 1.24 为 b 点高度随压井液粘度变化曲线，由图中可以看到随着压井液粘度增大，b 点高度逐渐减小。
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figure/b-point-height-VS-viscosity.png}
+	\caption{b 点高度随压井液粘度变化曲线}
+	\label{fig:b_point_height_VS_viscosity}
+\end{figure}
+
+图 1.25 为 b 点不同压井液粘度下砂砾体积分数和轴向速度云图，随着压井液粘度增大，b 点砂砾体积分数减小，但砂砾流速有减小的趋势，这说明压井液粘度的增大，增大了流体的携砂能力，但是会减小环空中流体的流动性，这说明增大压井液粘度可以抑制砂堵在井底的形成，但是也会增加砂砾上返的时间。因此在实际作业中，要想减小砂堵风险，宜采用粘度更大的压井液。
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figure/sand-volume-fraction-velocity-at-b-point-viscosity.png}
+	\caption{b 点不同压井液粘度下砂砾体积分数和轴向速度云图}
+	\label{fig:sand_volume_fraction_velocity_at_b_point_viscosity}
+\end{figure}
 
 \section{井筒内铁屑运移及分布规律}
 %20260704想法：仿真->实验->外推。这个研究属于“基础性研究”（与4.适用条件中“拓深技术理论及基础性研究”对应），界定了研究的性质——是基础理论研究，不是工程应用。目的是“揭示影响工具应用效果的主控因素”，对应5.1.2 ①的要求是“研究不同流速、粘度、井斜下的运移规律”，通过实验验证哪些参数是影响运移的“主控因素”（Re（实验已经证明）、井斜角的影响在全井筒模型实验中展示）。
@@ -808,7 +977,7 @@ JKR 模型的法向力由重叠量 \(\delta\) 和引入的新参数表面能 \(\
 
 本节改变压井液流速，探究其对井筒环形空间内蜡垢颗粒运移的影响。取井斜45°，压井液入口流速分别为0.37m/s、0.59m/s，粘度取$1.7\mathrm{mPa\cdot s}$，蜡垢颗粒粒径取2mm、4mm、6mm、8mm四种。
 
-图\ref{fig:Wax_velocity_particle_size}(a)描述了流体流速0.37m/s不同粒径下45°井筒内沉积域蜡垢颗粒平均速度情况，从图中可以看出，进入沉积域后蜡垢会以大于井筒内流体的速度向压力出口运移，随着粒径的增大，其运移速度也越来越大，并在四秒后蜡垢颗粒陆续到达压力出口。图\ref{fig:Wax_velocity_particle_size}(b)描述了环空流体流速0.59m/s不同粒径下45°井筒内沉积域蜡垢颗粒平均速度情况，从图中可以看出，随着环空流体流速增大，蜡垢颗粒的运移速度也会增大，环空流体流速0.59m/s条件下，蜡垢颗粒在2.5秒后到达压力出口，相对于环空流体流速0.37m/s条件，蜡垢颗粒到达压力出口的速度变快。由此可见，环空流体流速对于蜡垢颗粒运移效率的影响显著。
+图1.41(a)描述了流体流速0.37m/s不同粒径下45°井筒内沉积域蜡垢颗粒平均速度情况，从图中可以看出，进入沉积域后蜡垢会以大于井筒内流体的速度向压力出口运移，随着粒径的增大，其运移速度也越来越大，并在四秒后蜡垢颗粒陆续到达压力出口。图1.41(b)描述了环空流体流速0.59m/s不同粒径下45°井筒内沉积域蜡垢颗粒平均速度情况，从图中可以看出，随着环空流体流速增大，蜡垢颗粒的运移速度也会增大，环空流体流速0.59m/s条件下，蜡垢颗粒在2.5秒后到达压力出口，相对于环空流体流速0.37m/s条件，蜡垢颗粒到达压力出口的速度变快。由此可见，环空流体流速对于蜡垢颗粒运移效率的影响显著。
 \begin{figure}[htbp]
 	\centering
 	\subfloat[$V_{\mathrm{in}}=0.37\mathrm{m/s}$]{%

@@ -1,0 +1,72 @@
+﻿EXIT=1
+! Package fontspec Error: 
+(fontspec)                The font "FangSong" cannot be found; this may be
+(fontspec)                but usually is not a fontspec bug. Either there is
+(fontspec)                a typo in the font name/file, the font is not
+-----
+! Package fontspec Error: 
+(fontspec)                The font "FangSong" cannot be found; this may be
+(fontspec)                but usually is not a fontspec bug. Either there is
+(fontspec)                a typo in the font name/file, the font is not
+-----
+! Package fontspec Error: 
+(fontspec)                The font "FangSong" cannot be found; this may be
+(fontspec)                but usually is not a fontspec bug. Either there is
+(fontspec)                a typo in the font name/file, the font is not
+-----
+! Missing $ inserted.
+<inserted text> 
+                $
+l.232 
+-----
+! Missing } inserted.
+<inserted text> 
+                }
+l.232 
+-----
+! Missing } inserted.
+<inserted text> 
+                }
+l.232 
+-----
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.232 
+-----
+! Missing { inserted.
+<inserted text> 
+                {
+l.232 
+-----
+! Missing $ inserted.
+<inserted text> 
+                $
+l.232 
+-----
+! Misplaced \crcr.
+\endaligned ->\crcr 
+                    \egroup \restorecolumn@ \egroup 
+l.233 \end{aligned}
+-----
+! Extra }, or forgotten \endgroup.
+\endaligned ...cr \egroup \restorecolumn@ \egroup 
+                                                  
+l.233 \end{aligned}
+-----
+! LaTeX Error: \begin{aligned} on input line 90 ended by \end{align}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+-----
+! Missing $ inserted.
+<inserted text> 
+                $
+l.94 \end{align}
+-----
+! Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.94 \end{align}
+-----
+Output written on main.pdf (133 pages).

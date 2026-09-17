@@ -1,0 +1,21 @@
+﻿EXIT=1
+ERRCOUNT=18
+! Package fontspec Error: 
+! Package fontspec Error: 
+! Package fontspec Error: 
+! Missing $ inserted.
+! Missing } inserted.
+! Missing } inserted.
+! Missing \cr inserted.
+! Missing { inserted.
+! Missing $ inserted.
+! Misplaced \crcr.
+! Extra }, or forgotten \endgroup.
+! LaTeX Error: \begin{aligned} on input line 90 ended by \end{align}.
+! Missing $ inserted.
+! Display math should end with $$.
+! Missing } inserted.
+! LaTeX Error: \begin{equation} on input line 89 ended by \end{equationed}.
+! Missing $ inserted.
+! Display math should end with $$.
+Output written on main.pdf (133 pages).

@@ -203,12 +203,13 @@ $n$——安全系数，取 $n = 1.5$。
 （2）心轴抗拉危险截面 2：为 $2.75''\text{-}8$ Stub ACME 内螺纹根部。
 
 根据公式\ref{eq:tensile_strength_circular_section}和图\ref{fig:inner_pipe_for_strength_analysis}，取$D=92\,\textrm{mm}$、$d=71.6\,\textrm{mm}$（参见图纸ZKG700004A局部视图I），则心轴上$2.75''\text{-}8$ Stub ACME 内螺纹根部最大拉力：
-\begin{align}
-    F_{\max} &= \frac{[\pi \cdot (D^2 - d^2) ] \cdot \sigma_s}{4 \cdot n} \times 10^{-3} \nonumber \\
-    &= \frac{[3.14 \times (92^2 - 71.6^2) ] \times 930}{4 \times 1.5} \times 10^{-3} \nonumber \\
+\begin{equation}
+\begin{aligned}
+    F_{\max} &= \frac{[\pi \cdot (D^2 - d^2) ] \cdot \sigma_s}{4 \cdot n} \times 10^{-3} \\
+    &= \frac{[3.14 \times (92^2 - 71.6^2) ] \times 930}{4 \times 1.5} \times 10^{-3} \\
     &= 1624.30 \, \text{kN} > 1000 \, \text{kN}
-\end{align}
-
+\end{aligned}
+\end{equation}
 于是，危险截面2满足拉伸强度设计要求。
 
 

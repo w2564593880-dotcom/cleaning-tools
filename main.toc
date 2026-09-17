@@ -1,0 +1,142 @@
+\contentsline {chapter}{\numberline {第一章\hspace {.3em}}砂砾、铁屑、结垢物、蜡等井筒内的运移及分布规律研究}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}基本理论和模拟条件}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}EDEM理论基础}{1}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}液固相间作用模型}{5}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}液相控制模型}{7}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.4}湍流模型}{7}{subsection.1.1.4}%
+\contentsline {section}{\numberline {1.2}井筒内砂砾运移及分布规律研究}{9}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}数值模型建立}{12}{subsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.1.1}幂律流体}{12}{subsubsection.1.2.1.1}%
+\contentsline {subsection}{\numberline {1.2.2}几何模型及边界条件}{12}{subsection.1.2.2}%
+\contentsline {subsubsection}{\numberline {1.2.2.1}几何模型}{12}{subsubsection.1.2.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2.2}边界条件}{13}{subsubsection.1.2.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}数值模拟及结果分析}{13}{subsection.1.2.3}%
+\contentsline {subsubsection}{\numberline {1.2.3.1}环空砂砾沉降分析}{13}{subsubsection.1.2.3.1}%
+\contentsline {subsubsection}{\numberline {1.2.3.2}压井液流速对环空砂砾沉积的影响}{15}{subsubsection.1.2.3.2}%
+\contentsline {subsubsection}{\numberline {1.2.3.3}压井液粘度对环空砂砾沉积的影响}{18}{subsubsection.1.2.3.3}%
+\contentsline {section}{\numberline {1.3}井筒内铁屑运移及分布规律}{19}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}压井液粘度对铁屑运移规律的影响}{22}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}压井液流速对铁屑运移规律的影响}{24}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}井斜对铁屑运移规律的影响}{26}{subsection.1.3.3}%
+\contentsline {section}{\numberline {1.4}井筒内结垢物运移及分布规律研究}{28}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}压井液流速对钡锶垢运移规律的影响}{28}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}井斜对钡锶垢运移规律的影响}{30}{subsection.1.4.2}%
+\contentsline {section}{\numberline {1.5}井筒内蜡垢运移及分布规律研究}{31}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}压井液流速对蜡垢运移规律的影响}{33}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}井斜对蜡垢颗粒运移规律的影响}{33}{subsection.1.5.2}%
+\contentsline {section}{\numberline {1.6}本章小结}{34}{section.1.6}%
+\contentsline {chapter}{\numberline {第二章\hspace {.3em}}井筒内颗粒运移实验}{37}{chapter.2}%
+\contentsline {section}{\numberline {2.1}水平井筒冲砂实验}{38}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}实验装置及实验方法}{38}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}实验结果与讨论}{39}{subsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.2.1}清水冲砂}{39}{subsubsection.2.1.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.2.2}胍胶液冲砂}{44}{subsubsection.2.1.2.2}%
+\contentsline {subsubsection}{\numberline {2.1.2.3}砂床运移行为的控制因素分析及讨论}{45}{subsubsection.2.1.2.3}%
+\contentsline {section}{\numberline {2.2}全井筒模型颗粒运移实验}{51}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}实验结果及讨论}{52}{subsection.2.2.1}%
+\contentsline {section}{\numberline {2.3}本章小结}{55}{section.2.3}%
+\contentsline {chapter}{\numberline {第三章\hspace {.3em}}深度清洁工具设计}{57}{chapter.3}%
+\contentsline {section}{\numberline {3.1}“三合一”脉冲式冲刮刷集成式井筒清洁工具设计}{57}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}水力脉冲冲砂洗井工具结构组成}{57}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}水力脉冲冲砂洗井工具结构设计及工作原理}{58}{subsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.2.1}水力脉冲冲砂洗井工具旋转喷头模块设计}{58}{subsubsection.3.1.2.1}%
+\contentsline {subsubsection}{\numberline {3.1.2.2}水力脉冲冲砂洗井工具脉冲发生模块设计}{58}{subsubsection.3.1.2.2}%
+\contentsline {subsubsection}{\numberline {3.1.2.3}毛刷刮管模块设计}{59}{subsubsection.3.1.2.3}%
+\contentsline {subsection}{\numberline {3.1.3}设计计算与校核}{61}{subsection.3.1.3}%
+\contentsline {subsubsection}{\numberline {3.1.3.1}脉冲器计算与校核}{61}{subsubsection.3.1.3.1}%
+\contentsline {subsection}{\numberline {3.1.4}设计计算与校核}{62}{subsection.3.1.4}%
+\contentsline {subsubsection}{\numberline {3.1.4.1}脉冲器计算与校核}{62}{subsubsection.3.1.4.1}%
+\contentsline {subsection}{\numberline {3.1.5}脉冲发生模块动力学模型及频率响应特性研究}{66}{subsection.3.1.5}%
+\contentsline {subsubsection}{\numberline {3.1.5.1}脉冲发生模块流体-固体耦合机制及受力分析}{66}{subsubsection.3.1.5.1}%
+\contentsline {subsubsection}{\numberline {3.1.5.2}脉冲发生模块瞬态动力学模型构建}{68}{subsubsection.3.1.5.2}%
+\contentsline {subsubsection}{\numberline {3.1.5.3}关键设计参数对脉冲发生模块动力学特性的影响规律}{71}{subsubsection.3.1.5.3}%
+\contentsline {subsection}{\numberline {3.1.6}水力脉冲冲砂洗井工具下砂砾运移仿真分析}{78}{subsection.3.1.6}%
+\contentsline {subsubsection}{\numberline {3.1.6.1}脉冲发生模块的网格划分与边界条件}{78}{subsubsection.3.1.6.1}%
+\contentsline {subsubsection}{\numberline {3.1.6.2}水力脉冲冲砂洗井工具对携砂效率的影响}{80}{subsubsection.3.1.6.2}%
+\contentsline {subsection}{\numberline {3.1.7}水力脉冲喷头流动仿真}{81}{subsection.3.1.7}%
+\contentsline {subsubsection}{\numberline {3.1.7.1}水力脉冲计算域的构建与离散}{81}{subsubsection.3.1.7.1}%
+\contentsline {subsubsection}{\numberline {3.1.7.2}仿真结果及讨论}{82}{subsubsection.3.1.7.2}%
+\contentsline {subsection}{\numberline {3.1.8}拆装步骤及操作方式}{85}{subsection.3.1.8}%
+\contentsline {subsubsection}{\numberline {3.1.8.1}脉冲器拆装步骤及操作方式}{85}{subsubsection.3.1.8.1}%
+\contentsline {subsubsection}{\numberline {3.1.8.2}旋转喷头拆装步骤及操作方式}{86}{subsubsection.3.1.8.2}%
+\contentsline {paragraph}{拆卸}{86}{subsubsection.3.1.8.2}%
+\contentsline {paragraph}{装配}{88}{figure.caption.119}%
+\contentsline {paragraph}{注油}{89}{figure.caption.119}%
+\contentsline {paragraph}{功能测试}{90}{figure.caption.119}%
+\contentsline {paragraph}{操作方法}{90}{figure.caption.119}%
+\contentsline {subsubsection}{\numberline {3.1.8.3}液压刮管器拆装步骤及操作方式}{90}{subsubsection.3.1.8.3}%
+\contentsline {paragraph}{下井前准备}{90}{subsubsection.3.1.8.3}%
+\contentsline {paragraph}{操作方法}{91}{subsubsection.3.1.8.3}%
+\contentsline {paragraph}{注意事项}{91}{subsubsection.3.1.8.3}%
+\contentsline {subsubsection}{\numberline {3.1.8.4}毛刷刮管器拆装步骤及操作方式}{91}{subsubsection.3.1.8.4}%
+\contentsline {paragraph}{拆卸}{91}{subsubsection.3.1.8.4}%
+\contentsline {paragraph}{装配}{92}{subsubsection.3.1.8.4}%
+\contentsline {paragraph}{使用方法}{92}{subsubsection.3.1.8.4}%
+\contentsline {paragraph}{操作方法}{92}{subsubsection.3.1.8.4}%
+\contentsline {subsection}{\numberline {3.1.9}维护与保养}{92}{subsection.3.1.9}%
+\contentsline {section}{\numberline {3.2}“四合一”通刮刷磁集成式井筒清洁工具设计}{93}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}工具总体结构设计}{93}{subsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.1.1}四合一工具主要功能部件}{94}{subsubsection.3.2.1.1}%
+\contentsline {subsubsection}{\numberline {3.2.1.2}四合一工具辅助结构}{96}{subsubsection.3.2.1.2}%
+\contentsline {subsection}{\numberline {3.2.2}设计计算与校核}{96}{subsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.2.1}主要受力件的螺纹强度校核}{96}{subsubsection.3.2.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2.2}主要受力件的零件强度校核}{97}{subsubsection.3.2.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.2.3}主要受力件的零件强度抗扭校核}{98}{subsubsection.3.2.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.2.4}弹簧的力学计算}{101}{subsubsection.3.2.2.4}%
+\contentsline {subsection}{\numberline {3.2.3}刮板刮削效果评价}{103}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}操作方式}{108}{subsection.3.2.4}%
+\contentsline {subsubsection}{\numberline {3.2.4.1} 使用方法}{108}{subsubsection.3.2.4.1}%
+\contentsline {subsubsection}{\numberline {3.2.4.2} 操作方法}{108}{subsubsection.3.2.4.2}%
+\contentsline {subsection}{\numberline {3.2.5}维护与保养}{109}{subsection.3.2.5}%
+\contentsline {subsubsection}{\numberline {3.2.5.1}保养}{109}{subsubsection.3.2.5.1}%
+\contentsline {subsubsection}{\numberline {3.2.5.2}管子站维修}{109}{subsubsection.3.2.5.2}%
+\contentsline {subsection}{\numberline {3.2.6}测试与检查}{109}{subsection.3.2.6}%
+\contentsline {section}{\numberline {3.3}大容量强磁吸附工具设计}{110}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}大容量强磁吸附工具结构及工作原理}{110}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}强磁工具结构设计}{110}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}强磁工具结构设计计算与校核}{112}{subsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.3.1}吸附容量计算}{115}{subsubsection.3.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.3.2}防退扣部分抗扭计算}{116}{subsubsection.3.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.4}永磁材料选型}{117}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.5}井筒清洁工具中磁铁布置研究}{118}{subsection.3.3.5}%
+\contentsline {subsubsection}{\numberline {3.3.5.1}强磁工具吸附力理论模型}{119}{subsubsection.3.3.5.1}%
+\contentsline {subsubsection}{\numberline {3.3.5.2}上部结构磁铁仿真模拟}{120}{subsubsection.3.3.5.2}%
+\contentsline {subsubsection}{\numberline {3.3.5.3}下部结构仿真模拟}{124}{subsubsection.3.3.5.3}%
+\contentsline {subsection}{\numberline {3.3.6}两种结构对强磁工具最大磁性分布的影响}{127}{subsection.3.3.6}%
+\contentsline {subsection}{\numberline {3.3.7}强磁工具骨架材料对最大磁性分布的影响}{127}{subsection.3.3.7}%
+\contentsline {subsection}{\numberline {3.3.8}永磁材料的退磁影响因素}{128}{subsection.3.3.8}%
+\contentsline {subsubsection}{\numberline {3.3.8.1}强磁工具操作方式}{129}{subsubsection.3.3.8.1}%
+\contentsline {subsubsection}{\numberline {3.3.8.2}强磁工具维护与保养}{130}{subsubsection.3.3.8.2}%
+\contentsline {subsubsection}{\numberline {3.3.8.3}强磁工具检验与测试}{130}{subsubsection.3.3.8.3}%
+\contentsline {subsection}{\numberline {3.3.9}强磁工具适用井况、管柱组合与施工工艺}{130}{subsection.3.3.9}%
+\contentsline {subsubsection}{\numberline {3.3.9.1}强磁工具适用井况}{130}{subsubsection.3.3.9.1}%
+\contentsline {subsubsection}{\numberline {3.3.9.2}强磁工具管柱组合}{131}{subsubsection.3.3.9.2}%
+\contentsline {subsubsection}{\numberline {3.3.9.3}强磁工具施工工艺步骤}{131}{subsubsection.3.3.9.3}%
+\contentsline {section}{\numberline {3.4}多功能过滤工具设计}{131}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}工具总体结构设计}{131}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}过滤工具设计计算与校核}{132}{subsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.2.1}主要受力件的螺纹强度校核}{132}{subsubsection.3.4.2.1}%
+\contentsline {subsubsection}{\numberline {3.4.2.2}主要受力件的零件抗拉强度校核}{133}{subsubsection.3.4.2.2}%
+\contentsline {subsubsection}{\numberline {3.4.2.3}主要受力件的零件抗扭强度校核}{135}{subsubsection.3.4.2.3}%
+\contentsline {subsubsection}{\numberline {3.4.2.4}过滤容积计算}{136}{subsubsection.3.4.2.4}%
+\contentsline {subsection}{\numberline {3.4.3}操作方式}{138}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}维护与保养}{139}{subsection.3.4.4}%
+\contentsline {section}{\numberline {3.5}可变径刮管工具设计}{139}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}工具总体结构设计}{139}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}可变径刮管工具设计计算与校核}{140}{subsection.3.5.2}%
+\contentsline {subsubsection}{\numberline {3.5.2.1}主要受力件的螺纹强度校核}{140}{subsubsection.3.5.2.1}%
+\contentsline {subsubsection}{\numberline {3.5.2.2}主要受力件的零件抗拉强度校核}{141}{subsubsection.3.5.2.2}%
+\contentsline {subsubsection}{\numberline {3.5.2.3}主要受力件的零件抗扭强度校核}{141}{subsubsection.3.5.2.3}%
+\contentsline {subsubsection}{\numberline {3.5.2.4}球座剪钉剪切力与节流泵压计算}{142}{subsubsection.3.5.2.4}%
+\contentsline {subsubsection}{\numberline {3.5.2.5}节流喷嘴的尺寸和节流压力关系}{143}{subsubsection.3.5.2.5}%
+\contentsline {subsubsection}{\numberline {3.5.2.6}连杆销抗剪切强度计算}{143}{subsubsection.3.5.2.6}%
+\contentsline {subsubsection}{\numberline {3.5.2.7}主要受力件仿真校核}{144}{subsubsection.3.5.2.7}%
+\contentsline {subsection}{\numberline {3.5.3}拆装步骤}{144}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}操作方式}{147}{subsection.3.5.4}%
+\contentsline {subsubsection}{\numberline {3.5.4.1}下井前准备}{147}{subsubsection.3.5.4.1}%
+\contentsline {subsubsection}{\numberline {3.5.4.2}操作}{147}{subsubsection.3.5.4.2}%
+\contentsline {subsubsection}{\numberline {3.5.4.3}注意事项}{149}{subsubsection.3.5.4.3}%
+\contentsline {subsection}{\numberline {3.5.5}维护与保养}{149}{subsection.3.5.5}%
+\contentsline {section}{\numberline {3.6}清洁工具组合工艺}{150}{section.3.6}%
+\contentsline {section}{\numberline {3.7}本章小结}{150}{section.3.7}%
+\contentsline {chapter}{参考文献}{153}{section.3.7}%

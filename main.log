@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.7.19)  20 SEP 2026 22:09
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.7.19)  20 SEP 2026 22:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1260,9 +1260,9 @@ File: figure/hertzian-soft-sphere-model.png Graphic file (type bmp)
 
 ] [2] [3] [4] [5] [6]
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
-(Font)              scaled to size 8.0pt on input line 297.
+(Font)              scaled to size 8.0pt on input line 295.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
-(Font)              scaled to size 6.0pt on input line 297.
+(Font)              scaled to size 6.0pt on input line 295.
  [7]
 File: figure/fluid-domain-geometry.png Graphic file (type bmp)
 <figure/fluid-domain-geometry.png>
@@ -1279,7 +1279,7 @@ File: figure/sand-distribution-tool-vin-dot37.png Graphic file (type bmp)
 File: figure/sand-distribution-annular-vin-dot37.png Graphic file (type bmp)
 <figure/sand-distribution-annular-vin-dot37.png>
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 506.
+(Font)              scaled to size 9.03374pt on input line 504.
 File: figure/sand-distribution-annular-vin-dot59.png Graphic file (type bmp)
 <figure/sand-distribution-annular-vin-dot59.png>
  [11]
@@ -1332,7 +1332,7 @@ File: figure/iron-wire-model.jpg Graphic file (type bmp)
 File: figure/iron-wire-distribution-1cp-velocity-colored.png Graphic file (type bmp)
 <figure/iron-wire-distribution-1cp-velocity-colored.png>
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 763.
+(Font)              scaled to size 5.0pt on input line 761.
 File: figure/iron-wire-distribution-1dot7-cp-velocity-colored.png Graphic file (type bmp)
 <figure/iron-wire-distribution-1dot7-cp-velocity-colored.png>
 File: figure/iron-wire-mean-velocity-evolution-viscosity.jpg Graphic file (type bmp)
@@ -1357,7 +1357,7 @@ File: figure/iron-wire-mean-velocity-evolution-3angles.png Graphic file (type bm
 <figure/iron-wire-mean-velocity-evolution-3angles.png>
  [25] [26]
 
-LaTeX Warning: Reference `tab:basr_simulation_params' on page 27 undefined on input line 899.
+LaTeX Warning: Reference `tab:basr_simulation_params' on page 27 undefined on input line 897.
 
 File: figure/BaSr-sample.png Graphic file (type bmp)
 <figure/BaSr-sample.png>

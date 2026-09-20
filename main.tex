@@ -15,6 +15,40 @@
 %%\renewcommand{\headrule}{\vspace{-0.4pt}\hrule height 1.5pt width \headwidth \vspace{-1.2pt}\hrule height 0.5pt width \headwidth}
 %\fancyfoot[C]{\thepage}       
 
+\usepackage{enumitem}
+
+% 第一套：圆圈序号 ①②③④，最多10条，用于你现在附件
+% 【注意】不要用 enumitem 的 \newlist/\setlist 定义它：enumitem 在每个列表开始时会把
+%   \value 临时重定义成自己的宏去测量 label 宽度（enumitem.sty 里的 widest 机制），
+%   与本 label 中的 \ifcase\value{...} 冲突；编译时每次 \begin{circlist} 都会插入一个 0
+%   并报 "Missing number, treated as zero."，PDF 里的序号还会变成 “0circlisti” 之类乱码。
+%   这里改用 LaTeX 原生 list：label 在排版每一项时才展开；\usecounter 会让计数器在每次
+%   \begin{circlist} 时自动归零，因此每个列表都从 ① 重新开始。
+\newcounter{circlist}
+\newcommand{\circlistlabel}{%
+    \ifcase\value{circlist}\or①\or②\or③\or④\or⑤\or⑥\or⑦\or⑧\or⑨\or⑩\else\arabic{circlist}\fi}
+\newenvironment{circlist}%
+    {\begin{list}{\circlistlabel}%
+        {\usecounter{circlist}%
+        \setlength{\leftmargin}{2em}%
+        \setlength{\labelwidth}{1.2em}%
+        \setlength{\labelsep}{0.8em}%
+        \setlength{\itemsep}{0pt}%
+        \setlength{\parsep}{0pt}%
+        \setlength{\partopsep}{0pt}%
+        \setlength{\topsep}{0.4em}%
+        \setlength{\listparindent}{0pt}}}%
+    {\end{list}}
+
+% 第二套：括号序号 (1)(2)(3)，无限条，留给后面用
+\newlist{paralist}{enumerate}{1}
+\setlist[paralist]{
+    label=(\arabic*),
+    leftmargin=2em,
+    itemsep=0pt
+}
+
+
 
 % 3. 设置常规的 fancy 样式
 \pagestyle{fancy}
@@ -182,5 +216,19 @@
 	%\input{chapters/chapter3/part5-variable-tool.tex}
 	
 \input{chapters/bib.tex}
-	
+
+\newpage
+% 重置全部计数器，解决3.0.1这种错乱编号，重点重置chapter
+\appendix
+% \chapter* 不会给 chapter 计数器增值，于是 \thesection（=\Alph{chapter}.\arabic{section}）里的
+% \Alph{0} 为空，小节编号会显示成 “.1”“.1.1”。这里手动把 chapter 置为 1，编号即 A.1、A.2。
+\setcounter{chapter}{1}
+
+\chapter*{附件1}
+\addcontentsline{toc}{chapter}{附件1}
+% \chapter* 不更新页眉标记，手动设置，否则附件页眉会继续沿用上一章的“参考文献”
+\markboth{附件1}{附件1}
+
+\input{chapters/appendix1.tex}
+
 \end{document}

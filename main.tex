@@ -5,7 +5,7 @@
 %\usepackage[UTF8, fontset=windows]{ctex} 
 
 % 2. 页面设置：A4幅面，常规边距
-\usepackage[a4paper, top=2.54cm, bottom=2.54cm, left=2.54cm, right=2.54cm]{geometry}
+\usepackage[a4paper, top=2.54cm, bottom=2.54cm, left=2.54cm, right=2.54cm, headheight=15pt]{geometry}
 
 % 3. 页眉页脚与双线设置
 \usepackage{fancyhdr}
@@ -163,7 +163,14 @@
 
 \newcolumntype{C}{>{\centering\arraybackslash}X}
 
-
+% 允许浮动体占据页面最多 90% 的空间（默认 50%）
+\renewcommand{\floatpagefraction}{0.9}
+% 页面顶部最多 90% 为浮动体
+\renewcommand{\topfraction}{0.9}
+% 页面底部最多 90% 为浮动体
+\renewcommand{\bottomfraction}{0.9}
+% 正文最少占 10%
+\renewcommand{\textfraction}{0.1}
 
 \begin{document}
 

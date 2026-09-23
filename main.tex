@@ -5,7 +5,7 @@
 %\usepackage[UTF8, fontset=windows]{ctex} 
 
 % 2. 页面设置：A4幅面，常规边距
-\usepackage[a4paper, top=2.54cm, bottom=2.54cm, left=2.54cm, right=2.54cm]{geometry}
+\usepackage[a4paper, top=2.54cm, bottom=2.54cm, left=2.54cm, right=2.54cm, headheight=15pt]{geometry}
 
 % 3. 页眉页脚与双线设置
 \usepackage{fancyhdr}
@@ -85,9 +85,35 @@
 
 % 5. 章节排版控制
 \usepackage{titlesec}
-\titleformat{\chapter}[block]{\normalfont\huge\bfseries\centering}{第\,\thechapter\,章}{20pt}{\Huge}
-\titlespacing*{\chapter}{0pt}{-10pt}{40pt}
-\titleformat{\section}[block]{\normalfont\Large\bfseries\raggedright}{\thesection}{1em}{}
+\usepackage{indentfirst} %强制所有章节后的首段自动首行缩进，完美解决问题
+
+% 章标题：四号字（\large），居中
+\titleformat{\chapter}[block]
+  {\normalfont\large\centering}   % 四号字 + 粗体 + 居中
+  {第\,\thechapter\,章}
+  {20pt}
+  {\large}                                 % 标题文字也用四号
+
+\titlespacing*{\chapter}{0pt}{-10pt}{10pt}
+
+% 节标题：小四号字（\normalsize），左对齐，标题后空0.5行
+\titleformat{\section}[block]
+  {\normalfont\normalsize\raggedright}  % 小四号 + 粗体 + 左对齐
+  {\thesection}
+  {1em}
+  {}
+
+% 关键：节标题后空0.5行
+% 正文默认行距约为20pt（小四号固定行距），0.5行 ≈ 10pt
+\titlespacing*{\section}{0pt}{12pt}{10pt}
+
+% 小节标题：小四号字（\normalsize），左对齐
+\titleformat{\subsection}[block]
+  {\normalfont\normalsize\raggedright}  % 小四号 + 粗体 + 左对齐
+  {\thesubsection}
+  {1em}
+  {}
+\titlespacing*{\subsection}{0pt}{10pt}{4pt}
 
 % 6. 其他常用宏包
 \usepackage{graphicx}
@@ -137,7 +163,14 @@
 
 \newcolumntype{C}{>{\centering\arraybackslash}X}
 
-
+% 允许浮动体占据页面最多 90% 的空间（默认 50%）
+\renewcommand{\floatpagefraction}{0.9}
+% 页面顶部最多 90% 为浮动体
+\renewcommand{\topfraction}{0.9}
+% 页面底部最多 90% 为浮动体
+\renewcommand{\bottomfraction}{0.9}
+% 正文最少占 10%
+\renewcommand{\textfraction}{0.1}
 
 \begin{document}
 
@@ -172,27 +205,27 @@
 	\input{chapters/chapter1/chapter1.tex} % 引入颗粒物运移内容  
 % --- 第二章 ---
 \chapter{井筒内颗粒运移实验}
-	\input{chapters/chapter2/part1-horizontal-sand.tex} % 水平井冲砂
-	\input{chapters/chapter2/part2-full-well-model.tex} % 全井筒模型
+	%\input{chapters/chapter2/part1-horizontal-sand.tex} % 水平井冲砂
+	%\input{chapters/chapter2/part2-full-well-model.tex} % 全井筒模型
 % --- 第三章 ---
 \chapter{深度清洁工具设计}
 
-井筒清洁是油气井作业的关键工序，其核心是清除井筒内的岩屑、砂粒、蜡垢、水垢、腐蚀产物等杂质，以保障井筒畅通、恢复产能、延长服役寿命，贯穿钻井、完井、修井及生产的全周期。现有井筒清洁技术功能单一、施工效率低，一体化与集成化程度低，难以满足油田开采降本增效的需求。为此，本研究通过理论研究丰富产品系列，形成了一套针对 9-5/8\inch 井筒的深度清洁工艺技术。本章针对该工艺技术的核心清洁工具，按照单工具工艺与工具组合工艺两部分展开：首先分别完成“三合一”脉冲式冲刮刷集成式井筒清洁工具、“四合一”通刮刷磁集成式井筒清洁工具、大容量强磁吸附工具、多功能过滤工具和可变径刮管工具的结构设计、理论计算与仿真校核，并给出各工具的使用与维护要求；然后结合不同井况要求给出上述工具的组合方式，以减少下钻趟数、提高作业效率。
+井筒清洁是油气井钻井、完井、修井和生产等作业环节中的关键工序，主要用于清除井筒内的砂砾、铁屑、结垢物及蜡等杂质，从而保障井筒畅通、恢复和提高油气井产能，并延长井筒及相关工具的服役寿命。然而，现有井筒清洁技术普遍存在功能单一、施工效率不高以及工具一体化、集成化程度不足等问题，难以满足油田降本增效的实际需求。针对上述问题，本研究通过开展相关理论研究，完善井筒清洁工具系列，形成了适用于 9-5/8\inch 井筒的深度清洁工艺技术。本章围绕该工艺技术所涉及的核心清洁工具展开论述，主要包括单工具设计及工具组合应用两部分。首先，针对“三合一”脉冲式冲刮刷集成式井筒清洁工具、“四合一”通刮刷磁集成式井筒清洁工具、大容量强磁吸附工具、多功能过滤工具和可变径刮管工具，分别开展结构设计、理论计算和仿真校核，并明确各工具的使用与维护要求。在此基础上，结合不同井况和清洁需求，提出相应的工具组合方案，以减少下钻趟数、提高施工效率。
 
 \section[“三合一”脉冲式冲刮刷集成式井筒清洁工具设计]{“三合一”脉冲式冲刮刷集成式井筒清洁工具设计\protect\footnote{合同条款：5.1.3井筒高效清洁关键技术配套工具设计——（5）“三合一”脉冲式冲刮刷集成式井筒清洁工具设计}}\label{sec:design_of_3_in_1}
-	\input{chapters/chapter3/part1-3in1-design.tex}
-	\input{chapters/chapter3/part1-3in1-verification.tex}
-	\input{chapters/chapter3/part1-3in1-hydraulic-model.tex}
-	\input{chapters/chapter3/part1-3in1-setup-and-maintainance.tex}
+	%\input{chapters/chapter3/part1-3in1-design.tex}
+	%\input{chapters/chapter3/part1-3in1-verification.tex}
+	%\input{chapters/chapter3/part1-3in1-hydraulic-model.tex}
+	%\input{chapters/chapter3/part1-3in1-setup-and-maintainance.tex}
 \section{“四合一”通刮刷磁集成式井筒清洁工具设计}
-	\input{chapters/chapter3/part2-4in1.tex}
-	\input{chapters/chapter3/part2-4in1-scraper-performance.tex}
+	%\input{chapters/chapter3/part2-4in1.tex}
+	%\input{chapters/chapter3/part2-4in1-scraper-performance.tex}
 \section{大容量强磁吸附工具设计}
-	\input{chapters/chapter3/part3-magntictool.tex}
+	%\input{chapters/chapter3/part3-magntictool.tex}
 \section{多功能过滤工具设计}
-	\input{chapters/chapter3/part4-filter.tex}
+	%\input{chapters/chapter3/part4-filter.tex}
 \section[可变径刮管工具设计]{可变径刮管工具设计\protect\footnote{合同条款：5.1.3井筒高效清洁关键技术配套工具设计——（4）可变径刮管工具设计}}
-	\input{chapters/chapter3/part5-variable-tool.tex}
+	%\input{chapters/chapter3/part5-variable-tool.tex}
 	
 \input{chapters/bib.tex}
 

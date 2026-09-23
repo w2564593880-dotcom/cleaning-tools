@@ -1,0 +1,52 @@
+\contentsline {chapter}{\numberline {第一章\hspace {.3em}}砂砾、铁屑、结垢物、蜡等井筒内的运移及分布规律研究}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}基本理论和模拟条件}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}EDEM理论基础}{1}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}液固相间作用模型}{6}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}液相控制模型}{7}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.4}湍流模型}{8}{subsection.1.1.4}%
+\contentsline {section}{\numberline {1.2}井筒内砂砾运移及分布规律研究}{9}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}数值模型建立}{12}{subsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.1.1}幂律流体}{12}{subsubsection.1.2.1.1}%
+\contentsline {subsection}{\numberline {1.2.2}几何模型及边界条件}{12}{subsection.1.2.2}%
+\contentsline {subsubsection}{\numberline {1.2.2.1}几何模型}{12}{subsubsection.1.2.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2.2}边界条件}{13}{subsubsection.1.2.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}数值模拟及结果分析}{13}{subsection.1.2.3}%
+\contentsline {subsubsection}{\numberline {1.2.3.1}环空砂砾沉降分析}{13}{subsubsection.1.2.3.1}%
+\contentsline {subsubsection}{\numberline {1.2.3.2}洗井液流速对环空砂砾沉积的影响}{14}{subsubsection.1.2.3.2}%
+\contentsline {subsubsection}{\numberline {1.2.3.3}洗井液粘度对环空砂砾沉积的影响}{18}{subsubsection.1.2.3.3}%
+\contentsline {section}{\numberline {1.3}井筒内铁屑运移及分布规律}{21}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}洗井液粘度对铁屑运移规律的影响}{21}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}洗井液流速对铁屑运移规律的影响}{23}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}井斜对铁屑运移规律的影响}{25}{subsection.1.3.3}%
+\contentsline {section}{\numberline {1.4}井筒内结垢物运移及分布规律研究}{27}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}洗井液流速对钡锶垢运移规律的影响}{27}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}井斜对钡锶垢运移规律的影响}{29}{subsection.1.4.2}%
+\contentsline {section}{\numberline {1.5}井筒内蜡垢运移及分布规律研究}{31}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}洗井液流速对蜡垢运移规律的影响}{31}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}井斜对蜡垢颗粒运移规律的影响}{32}{subsection.1.5.2}%
+\contentsline {section}{\numberline {1.6}本章小结}{32}{section.1.6}%
+\contentsline {chapter}{\numberline {第二章\hspace {.3em}}井筒内颗粒运移实验}{36}{chapter.2}%
+\contentsline {chapter}{\numberline {第三章\hspace {.3em}}深度清洁工具设计}{37}{chapter.3}%
+\contentsline {section}{\numberline {3.1}“三合一”脉冲式冲刮刷集成式井筒清洁工具设计}{37}{section.3.1}%
+\contentsline {section}{\numberline {3.2}“四合一”通刮刷磁集成式井筒清洁工具设计}{37}{section.3.2}%
+\contentsline {section}{\numberline {3.3}大容量强磁吸附工具设计}{37}{section.3.3}%
+\contentsline {section}{\numberline {3.4}多功能过滤工具设计}{37}{section.3.4}%
+\contentsline {section}{\numberline {3.5}可变径刮管工具设计}{37}{section.3.5}%
+\contentsline {chapter}{参考文献}{38}{section.3.5}%
+\contentsline {chapter}{附件1}{40}{appendix*.53}%
+\contentsline {section}{\numberline {A.1}服务范围}{40}{section.A.1}%
+\contentsline {subsection}{\numberline {A.1.1}深度清洁工艺技术现状及适应性研究}{40}{subsection.A.1.1}%
+\contentsline {subsection}{\numberline {A.1.2}井筒高效清洁技术配套理论研究}{40}{subsection.A.1.2}%
+\contentsline {subsection}{\numberline {A.1.3}井筒高效清洁技术配套工具设计}{40}{subsection.A.1.3}%
+\contentsline {subsection}{\numberline {A.1.4}工具应用效果的多因素分析方法研究}{40}{subsection.A.1.4}%
+\contentsline {subsection}{\numberline {A.1.5}井筒清洁工具性能评价与作业参数优选研究}{40}{subsection.A.1.5}%
+\contentsline {subsection}{\numberline {A.1.6}评价实验过程运转映射数字孪生技术研究}{40}{subsection.A.1.6}%
+\contentsline {section}{\numberline {A.2}技术要求}{41}{section.A.2}%
+\contentsline {subsection}{\numberline {A.2.1}深度清洁工艺技术现状及适应性研究}{41}{subsection.A.2.1}%
+\contentsline {subsection}{\numberline {A.2.2}井筒高效清洁技术配套理论研究}{41}{subsection.A.2.2}%
+\contentsline {subsection}{\numberline {A.2.3}井筒高效清洁技术配套工具设计}{41}{subsection.A.2.3}%
+\contentsline {subsection}{\numberline {A.2.4}工具应用效果的多因素分析方法研究}{42}{subsection.A.2.4}%
+\contentsline {subsection}{\numberline {A.2.5}井筒清洁工具性能评价与作业参数优选研究}{42}{subsection.A.2.5}%
+\contentsline {subsection}{\numberline {A.2.6}评价实验过程运转映射数字孪生技术研究}{42}{subsection.A.2.6}%
+\contentsline {subsection}{\numberline {A.2.7}乙方向甲方提交成果}{42}{subsection.A.2.7}%
+\contentsline {subsection}{\numberline {A.2.8}知识产权保护}{42}{subsection.A.2.8}%

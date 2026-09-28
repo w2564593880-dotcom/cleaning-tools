@@ -173,9 +173,9 @@ $2.75''\text{-}8$ Stub ACME 螺纹代入数据计算如下：
 
 \subsubsection{主要受力件的零件强度校核}
 
-清洁工具的主要受力件为心轴，其危险截面有两处，分别为$2.75''\text{-}8$ Stub ACME 外螺纹根部、$2.75''\text{-}8$ Stub ACME 内螺纹根部。本文用解析法、数值模拟两种方法对心轴的强度进行校核。
+清洁工具的主要受力件为芯轴，其危险截面有两处，分别为$2.75''\text{-}8$ Stub ACME 外螺纹根部、$2.75''\text{-}8$ Stub ACME 内螺纹根部。本文用解析法、数值模拟两种方法对芯轴的强度进行校核。
 
-（1）心轴抗拉危险截面1：为$2.75''\text{-}8$ Stub ACME 外螺纹根部。
+（1）芯轴抗拉危险截面1：为$2.75''\text{-}8$ Stub ACME 外螺纹根部。
 
 对于环形零件截面，抗拉强度计算公式：
 \begin{equation}
@@ -201,22 +201,23 @@ $n$——安全系数，取 $n = 1.5$。
 
 于是，危险截面1满足抗拉设计要求。
 
-（2）心轴抗拉危险截面 2：为 $2.75''\text{-}8$ Stub ACME 内螺纹根部。
+（2）芯轴抗拉危险截面 2：为 $2.75''\text{-}8$ Stub ACME 内螺纹根部。
 
 根据公式\ref{eq:tensile_strength_circular_section}和图\ref{fig:inner_pipe_for_strength_analysis}，取$D=92\,\textrm{mm}$、$d=71.6\,\textrm{mm}$（参见图纸ZKG700004A局部视图I），则心轴上$2.75''\text{-}8$ Stub ACME 内螺纹根部最大拉力：
 \begin{equation}
 \begin{aligned}
-    F_{\max} &= \frac{[\pi \cdot (D^2 - d^2) ] \cdot \sigma_s}{4 \cdot n} \times 10^{-3} \\
-    &= \frac{[3.14 \times (92^2 - 71.6^2) ] \times 930}{4 \times 1.5} \times 10^{-3} \\
-    &= 1624.30 \, \text{kN} > 1000 \, \text{kN}
+F_{\text{max}} &= \frac{\left[\pi \cdot \dfrac{(D^2-d^2)}{4} - 3\cdot b\cdot h\right] \cdot \sigma_s}{n} \times 10^{-3} \\
+&= \frac{\left[3.14 \times \dfrac{(92^2-71.6^2)}{4} - 3 \times 10 \times 10.2\right] \times 930}{1.5} \times 10^{-3} \\
+&= 1435\,\text{kN} > 1000\,\text{kN}
 \end{aligned}
 \end{equation}
+
 于是，危险截面2满足拉伸强度设计要求。
 
 
 \subsubsection{主要受力件的零件强度抗扭校核}
 
-四合一工具的受扭危险零件仍为图\ref{fig:inner_pipe_for_strength_analysis}所示心轴螺纹结构根部截面，以及用于零件之间周向定位的端面键，如图\ref{fig:flat_shear_key}所示。下面进行螺纹危险截面的抗扭强度计算。截面抗扭强度$T_{\max}$计算式为
+四合一工具的受扭危险零件仍为图\ref{fig:inner_pipe_for_strength_analysis}所示芯轴螺纹结构根部截面，以及用于零件之间周向定位的端面键，如图\ref{fig:flat_shear_key}所示。下面进行螺纹危险截面的抗扭强度计算。截面抗扭强度$T_{\max}$计算式为
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=.4\textwidth]{figure/chapter3/flat-shear-key.png}
@@ -243,7 +244,7 @@ $n$——材料许用切应力与许用拉应力之比，根据《机械设计�
 
 $[\tau]$——材料许用切应力，MPa。
 
-对于心轴的危险截面1，代入材料的力学和几何参数计算得
+对于芯轴的危险截面1，代入材料的力学和几何参数计算得
 \begin{align}
     T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6} \nonumber \\
     &= \frac{613.8 \times 3.14 \times (67^4 - 40^4)}{16 \times 67} \times 10^{-6} \nonumber \\
@@ -259,7 +260,7 @@ $[\tau]$——材料许用切应力，MPa。
 
 于是，工具的两个危险截面都满足抗扭强度要求。
 
-有限元计算结果如图\ref{fig:FEA_verification_shaft}所示。主要受力件为心轴，危险截面出现在变径处，最大拉应力为1379\,MPa，最大切应力为937\,MPa。该峰值由变径台阶处的几何突变引起，属局部应力集中效应；按净截面进行的解析校核（式\ref{eq:tensile_strength_circular_section}）其名义应力低于材料许用值（安全系数1.5），故整体强度满足设计要求。%为降低局部应力集中、提高强度储备，建议在危险截面增加过渡圆角。
+有限元计算结果如图\ref{fig:FEA_verification_shaft}所示。主要受力件为芯轴，危险截面出现在变径处，最大拉应力为1379\,MPa，最大切应力为937\,MPa。该峰值由变径台阶处的几何突变引起，属局部应力集中效应；按净截面进行的解析校核（式\ref{eq:tensile_strength_circular_section}）其名义应力低于材料许用值（安全系数1.5），故整体强度满足设计要求。%为降低局部应力集中、提高强度储备，建议在危险截面增加过渡圆角。
 
 \begin{figure}[htbp]
 	\centering
@@ -270,13 +271,13 @@ $[\tau]$——材料许用切应力，MPa。
 	\subfloat[扭转载荷下应力分布]{%
 	\includegraphics[width=0.5\textwidth]{figure/chapter3/inner-pipe-torsional-strength-simulation.png}
 	}
-	\caption{心轴零件受力有限元分析}
+	\caption{芯轴零件受力有限元分析}
 	\label{fig:FEA_verification_shaft}
 \end{figure}
 
-对于端面键，其材料牌号为4145H，抗扭危险截面为端面键截面（键的数量为 2）。
+对于外筒件，其材料牌号为4145H，抗扭危险截面为端面键截面（键的数量为 2）。
 
-端面键抗扭强度 $\tau$ 计算：
+外筒件抗扭强度 $\tau$ 计算：
 \begin{align}
     \tau &= \frac{T_{\max}}{b \cdot h \cdot d} \times 10^{-6} \\
     T_{\max} &= \frac{n_2 \cdot [\tau] \cdot b \cdot h \cdot d}{n_1} \times 10^{-6} \\
@@ -298,14 +299,22 @@ $[\tau]$——材料许用切应力，MPa。
     
     $n_1$ ——安全系数，取 $n_1=1.5$；
     
-    $n_2$ ——端面键数量，取 $n_2=2$。
+    $n_2$ —端面键数量，取 $n_2=3$。（上挡环 $3\times30_{-0.25}\ \text{EQS}$，对应中连接套 $3\times31^{+0.25}\ \text{EQS}$ 键槽）；
 
-端面键能承受的最大扭矩：
+
+外筒件能承受的最大扭矩：
 \begin{equation}
-    T_{\max} = \frac{n_2 \cdot [\tau] \cdot b \cdot h \cdot d}{n_1} \times 10^{-6} = \frac{2 \times 545.82 \times 30 \times 13.5 \times 90}{1.5} \times 10^{-6} = 26.53 > 17\,\text{kN}\cdot\text{m}
+\begin{aligned}
+T_{\text{max}}&=\frac{n_2\cdot [\tau]\cdot b\cdot h\cdot r}{n_{2x}\times 10}\times 10^{-6}
+=\frac{3\times 545.82\times 30\times 15\times 47}{1.5\times 10}\times 10^{-6}\\
+&=23.09\,\text{kN}\cdot\text{m} > 17\,\text{kN}\cdot\text{m}
+\end{aligned}
 \end{equation}
 
-于是，端面键满足抗扭强度要求。
+注：端面键数量、键宽、键高与分布圆半径按7in图纸取值（上挡环ZKG700006A、中连接套ZKG700007A），分布圆半径取上挡环 $R47_{-0.25}$；若键高按 $13.5\,\text{mm}$ 计，则 $T_{\text{max}}=20.78\,\text{kN}\cdot\text{m}$，仍大于 $17\,\text{kN}\cdot\text{m}$。
+
+
+于是，外筒件满足抗扭强度要求。
 
 \subsubsection{弹簧的力学计算}
 
@@ -370,16 +379,17 @@ $[\tau]$——材料许用切应力，MPa。
 \begin{equation}
     P' = \frac{G \cdot d^4}{8 \cdot D_2^3 \cdot n} = \frac{79000 \times 3^4}{8 \times 22^3 \times 3} = 25 \, \text{N/mm}
 \end{equation}
+注：按图纸 ZKG7000-01-5 技术要求，刮刀与毛刷预紧弹簧的自由高度 35mm、有效圈数 3、总圈数 5、弹簧刚度 22.5N/mm；图纸给出的试验载荷为 137.25±13.7N（对应高度 28.90mm）和 401.4±40.1N（对应高度 17.16mm）。本节按刚度 22.5N/mm、工作高度 29mm 与 23mm 计算，对应载荷 135N 和 270N。
 考虑端部约束与装配预压的影响，后续载荷与应力计算均取弹簧的有效刚度，即 $P' = 22 \, \text{N/mm}$。
 
 弹簧最小工作载荷$P_1$
 \begin{equation}
-    P_1 = P' \cdot (H - H_1) = 22 \times (35 - 29) = 132 \, \text{N}
+    P_1 = P' \cdot (H - H_1) = 22.5 \times (35 - 29) = 135 \, \text{N}
 \end{equation}
 
 弹簧最大工作载荷$P_n$
 \begin{equation}
-    P_n = P' \cdot (H - H_2) = 22 \times (35 - 23) = 264 \, \text{N}
+    P_n = P' \cdot (H - H_2) = 22.5 \times (35 - 23) = 270 \, \text{N}
 \end{equation}
 
 弹簧旋绕比$C$
@@ -394,7 +404,7 @@ $[\tau]$——材料许用切应力，MPa。
 
 弹簧最大切应力$\tau_{\max}$
 \begin{equation}
-    \tau_{\max} = \frac{8 \cdot K \cdot D_2}{\pi \cdot d^3} \times P_n = \frac{8 \times 1.2 \times 22}{3.14 \times 3^3} \times 264 = 657.7 \, \text{MPa} < 710 \, \text{MPa}
+    \tau_{\max} = \frac{8 \cdot K \cdot D_2}{\pi \cdot d^3} \times P_n = \frac{8 \times 1.2 \times 22}{3.14 \times 3^3} \times 270 = 672.6 \, \text{MPa} < 710 \, \text{MPa}
 \end{equation}
 
 于是，刮刀与毛刷强度满足要求。

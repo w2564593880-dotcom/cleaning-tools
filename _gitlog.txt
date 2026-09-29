@@ -1,0 +1,32 @@
+7d335a4 修改强度校核
+14cdf89 修改菱形刮刀实验数据图，实验结论
+50f8a5e Merge branch 'main' of https://github.com/w2564593880-dotcom/cleaning-tools
+afd9b06 Create Graph1.jpg
+ef759db 接触模型的pdf文件小更新
+26f9c59 修正了Hertz-Mindlin颗粒接触模型
+eec0647 修改了标题的字号和间距
+ec1c160 Merge branch 'pr/22'
+5a58546 修改第一章
+129442d 加入合同对应页数
+b53a476 加入合同
+be8d097 Merge branch 'main' of https://github.com/w2564593880-dotcom/cleaning-tools
+df8b93e 工具工艺技术更新
+847e948 第三章工艺技术
+b68d6a2 sep15lastcompile
+06a2129 Merge branch 'pr/15'
+d2f66b4 第一章小结
+d93212b 目录页码变成大写的罗马数字
+0ecdf58 第一章小结
+dc60a49 第一次完整编译
+ M chapters/chapter3/part2-4in1.tex
+ M main.aux
+ M main.log
+ M main.out
+ M main.pdf
+ M main.tex
+ M main.toc
+?? _g1.txt
+?? _g2.txt
+?? _gitlog.txt
+?? _grep1.txt
+?? _ls3.txt

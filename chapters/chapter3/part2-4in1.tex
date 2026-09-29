@@ -139,29 +139,31 @@
     [\tau] &= \frac{\sigma_s}{n}
 \end{aligned}
 \end{equation}
+公式出自《机械设计手册》螺纹连接（紧固件连接）部分"螺纹牙的剪切强度计算"。力学模型是把螺纹牙看成悬臂，牙根截面受剪切，在螺纹副拉脱时牙先被剪断，因此用牙根面积 π·d₁·b 乘旋合圈数 z 作为受剪面积。手册同时给出两个系数：$k_z$是螺纹各圈载荷不均系数（前几圈承担大部分载荷），n 是螺纹牙校核的安全系数。
+
 式中，$F_{\max}$---工具最大拉力，kN；
 
 $[\tau]$---螺纹牙的剪切强度，MPa；
 
 $k_z$---螺纹各圈的载荷不均系数，根据《机械设计手册》螺纹连接（紧固件连接）部分中螺纹牙的剪切强度计算及各圈螺纹载荷分配的规定\cite{ref26}，取 $k_z = 0.56$；
 
-$d_1$---螺纹底径，mm；
+$d_1$---螺纹底径，67.94mm；(图纸 ZKG700004A：2.75"-8 StubACME 小径为 67.940～68.100，取小值)
 
-$b$---螺纹牙根宽度，取 $b=1.833\,\text{mm}$；
+$b$---螺纹牙根宽度，取 $b=1.833\,\text{mm}$；(按 ASME B1.8 Stub ACME 牙型（8 牙/in，螺距 3.175mm）计算的牙底宽度$b = 0.58p = 0.58 \times 3.175 = 1.8415\,\text{mm}$，取小值 $b=1.833\,\text{mm}$)
 
 $n$---安全系数，按《机械设计手册》螺纹连接部分中螺纹牙强度校核的安全系数取值规定\cite{ref26}，取 $n = 2.5$；
 
 $z$---旋合圈数，取 $z=35$；
 
-$\sigma_s$---材料最小屈服强度，930 MPa (4330V-155 KSI)。
+$\sigma_s$---材料最小屈服强度，930 MPa (4330V-155 KSI)。(图纸：4330V 屈服强度≥930MP)
 %4330V-155 KSI 是一种美标高强度低合金钢的牌号与强度等级组合标识，常用于石油、天然气及航空航天等对材料强度和韧性要求极高的领域。4330V：这是美国钢铁协会（AISI）标准下的合金结构钢牌号，属于镍铬钼钒系钢。它在4330钢的基础上添加了钒（V），以提升强度、硬度和抗疲劳性能。该材料通常经过真空电弧重熔（VAR）工艺处理，具有优异的淬透性、低温冲击韧性和抗裂纹扩展能力。155 KSI：表示该材料经热处理后达到的最小屈服强度为155千磅每平方英寸（KSI），换算约为1069 MPa。这属于超高强度级别，适用于承受极端载荷和冲击的工况。这种钢材的典型应用包括石油钻具、井下工具、航空紧固件和高应力传动部件。其化学成分中碳含量约0.28–0.33%，镍含量2.0–2.5%，铬0.6–0.9%，钼0.2–0.3%，钒0.15–0.3%，这些元素共同赋予其高强度与高韧性的平衡。
 
 $2.75''\text{-}8$ Stub ACME 螺纹代入数据计算如下：
-\begin{align*}
-    F_{\max} &= [\tau] \cdot k_z \cdot \pi \cdot d_1 \cdot b \cdot z \cdot 10^{-3} \\
+\begin{align}
+    F_{\max} &= [\tau] \cdot k_z \cdot \pi \cdot d_1 \cdot b \cdot z \cdot 10^{-3} \nonumber \\
     &= 372 \times 0.56 \times 3.14 \times 67.94 \times 1.833 \times 35 \times 10^{-3} = 2851.13 \text{kN} \\
-    &> 1000 \text{kN}
-\end{align*}
+    &> 1000 \text{kN} \nonumber
+\end{align}
 于是，螺纹满足抗拉设计要求。
 
 \begin{figure}[htbp]
@@ -212,6 +214,16 @@ F_{\text{max}} &= \frac{\left[\pi \cdot \dfrac{(D^2-d^2)}{4} - 3\cdot b\cdot h\r
 \end{aligned}
 \end{equation}
 
+式中，$F_{\max}$——该危险截面（内螺纹根部）能承受的最大拉力，kN；$D=92\,\textrm{mm}$ 为该处外径（图纸 ZKG700004A 主视图标注的 Ø92）；$d=71.6\,\textrm{mm}$ 为内螺纹根部退刀槽直径（图纸 ZKG700004A 局部视图 I 标注的 Ø71.60），该处壁厚在螺纹段内最小，故取为危险截面；$\sigma_s=930\,\textrm{MPa}$、$n=1.5$ 与危险截面 1 取值相同；
+
+$b$——截面处径向螺纹孔的孔径，取 $b=10\,\textrm{mm}$（M10 螺纹的公称直径）；
+
+$h$——截面处壁厚，取 $h=(D-d)/2=(92-71.6)/2=10.2\,\textrm{mm}$。
+
+式中 $-3bh$ 一项为心轴上 3 个径向螺纹孔所占面积的扣除项：四合一工具的心轴在该截面上沿周向均布 3 个径向 M10 螺纹孔（图纸 ZKG700004A 的 B-B 视图，标注为 3×M10-8H EQS，螺纹标准 GB/T 196），用于安装内六角凹端紧定螺钉，限制上接头与心轴的相对转动和轴向移动。该孔沿径向穿过壁厚，在与心轴轴线垂直的横截面上即形成 3 个宽 $b$、深 $h$ 的矩形缺口（径向圆孔与横截面的交线正是宽 $b$、深 $h$ 的矩形），因此受拉净截面由圆环面积 $\pi (D^2-d^2)/4$ 减小为 $\pi (D^2-d^2)/4-3bh$。其中，$3$ 为孔的个数，$b$、$h$ 分别为孔宽与孔深，$3bh=3\times 10\times 10.2=306\,\textrm{mm}^2$，占圆环面积（$\pi (92^2-71.6^2)/4\approx 2620\,\textrm{mm}^2$）的 11.7\%，即 $\pi (92^2-71.6^2)/4-3bh\approx 2620-306=2314\,\textrm{mm}^2$。由量纲亦可校核该式的正确性：$[\pi (D^2-d^2)/4-3bh]$ 的单位为 $\textrm{mm}^2$，与 $\sigma_s$ 的单位 $\textrm{MPa}\,(\textrm{N/mm}^2)$ 相乘后为 N，乘 $10^{-3}$ 后即为 kN。
+
+若不计该 3 个孔的削弱，截面可承受的拉力为 $2620\times 930/1.5\times 10^{-3}=1624\,\textrm{kN}$；若孔的取位更靠近螺纹大径侧（按该处内孔 Ø67 计，壁厚 $(92-67)/2=12.5\,\textrm{mm}$），扣减面积为 $3\times 10\times 12.5=375\,\textrm{mm}^2$，$F_{\max}$ 降为 $1392\,\textrm{kN}$。三种取法均大于 1000\,kN 的设计要求，说明危险截面 2 的结论对孔的位置与取法不敏感。
+
 于是，危险截面2满足拉伸强度设计要求。
 
 
@@ -229,7 +241,7 @@ F_{\text{max}} &= \frac{\left[\pi \cdot \dfrac{(D^2-d^2)}{4} - 3\cdot b\cdot h\r
 \begin{equation}
 \begin{aligned}	
     T_{\max} & =  \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6}\\
-    [\tau] &= n \cdot \sigma_s 
+    [\tau] &= \alpha \cdot \sigma_s 
     \end{aligned}
 \end{equation}
 式中，$T_{\max}$——工具最大扭矩，kN·m；
@@ -238,11 +250,13 @@ $D$——危险截面外径，mm；
 
 $d$——危险截面内径，mm；
 
-$\sigma_s$——材料屈服应力，MPa；
+$\sigma_s$——材料屈服应力，取 $\sigma_s=930\,\textrm{MPa}$（按图纸 ZKG700004A 技术要求取材料 4330V 的屈服强度下限，与抗拉校核取值一致），MPa；
 
-$n$——材料许用切应力与许用拉应力之比，根据《机械设计手册》零件强度校核中许用应力折减系数的取值规定\cite{ref26}，取$n = 0.66$；
+$\alpha$——材料许用切应力与许用拉应力之比（许用应力折减系数），根据《机械设计手册》零件强度校核中许用应力折减系数的取值规定\cite{ref26}，取$\alpha = 0.66$；
 
 $[\tau]$——材料许用切应力，MPa。
+
+注：本小节同时用到安全系数与端面键个数，为避免与折减系数混淆，折减系数统一记为 $\alpha$，安全系数记为 $n_1$，端面键个数记为 $n_2$。
 
 对于芯轴的危险截面1，代入材料的力学和几何参数计算得
 \begin{align}
@@ -275,38 +289,38 @@ $[\tau]$——材料许用切应力，MPa。
 	\label{fig:FEA_verification_shaft}
 \end{figure}
 
-对于外筒件，其材料牌号为4145H，抗扭危险截面为端面键截面（键的数量为 2）。
+对于外筒件，其材料牌号为4145H，抗扭危险截面为端面键截面（键的数量为 3）。
 
 外筒件抗扭强度 $\tau$ 计算：
 \begin{align}
-    \tau &= \frac{T_{\max}}{b \cdot h \cdot d} \times 10^{-6} \\
-    T_{\max} &= \frac{n_2 \cdot [\tau] \cdot b \cdot h \cdot d}{n_1} \times 10^{-6} \\
-    [\tau] &= n \cdot \sigma_s = 0.66 \times 827\,\text{MPa} = 545.82\,\text{MPa}
+    \tau &= \frac{T_{\max}}{n_2 \cdot b \cdot h \cdot r} \times 10^{6} \\
+    T_{\max} &= \frac{n_2 \cdot [\tau] \cdot b \cdot h \cdot r}{n_1} \times 10^{-6} \\
+    [\tau] &= \alpha \cdot \sigma_s = 0.66 \times 827\,\text{MPa} = 545.82\,\text{MPa}
 \end{align}
-式中，$T_{\max}$ —— 扭矩，$\text{kN}\cdot\text{m}$；
+式中，$T_{\max}$ —— 外筒件能承受的最大扭矩，$\text{kN}\cdot\text{m}$；
 
-    $\sigma_s$ ——材料屈服应力，$\text{MPa}$；
+    $\sigma_s$ ——外筒件材料屈服应力，取 $\sigma_s=827\,\text{MPa}$（图纸 ZKG700006A 与 ZKG700007A 技术要求：材料 4145，屈服强度 $\ge$ 827\,MPa），$\text{MPa}$；
     
-    $d$ ——危险截面内径，$\text{mm}$；
+    $r$ ——端面键的分布圆半径，$\text{mm}$；
     
     $b$ ——端面键宽度，$\text{mm}$；
     
     $h$ ——端面键高度，$\text{mm}$；
     
-    $n$ ——许用剪应力与许用拉应力系数，根据《机械设计手册》零件强度校核中许用应力折减系数的取值规定\cite{ref26}，取 $n=0.66$；
+    $\alpha$ ——许用剪应力与许用拉应力系数（折减系数），根据《机械设计手册》零件强度校核中许用应力折减系数的取值规定\cite{ref26}，取 $\alpha=0.66$；
     
     $[\tau]$ ——材料许用切应力，$\text{MPa}$；
     
     $n_1$ ——安全系数，取 $n_1=1.5$；
     
-    $n_2$ —端面键数量，取 $n_2=3$。（上挡环 $3\times30_{-0.25}\ \text{EQS}$，对应中连接套 $3\times31^{+0.25}\ \text{EQS}$ 键槽）；
+    $n_2$ ——端面键数量，取 $n_2=3$（上挡环 ZKG700006A 上为 $3\times30_{-0.25}\ \text{EQS}$ 键，对应中连接套 ZKG700007A 上的 $3\times31^{+0.25}\ \text{EQS}$ 键槽，沿周向均布 3 处）；
 
 
 外筒件能承受的最大扭矩：
 \begin{equation}
 \begin{aligned}
-T_{\text{max}}&=\frac{n_2\cdot [\tau]\cdot b\cdot h\cdot r}{n_{2x}\times 10}\times 10^{-6}
-=\frac{3\times 545.82\times 30\times 15\times 47}{1.5\times 10}\times 10^{-6}\\
+T_{\text{max}}&=\frac{n_2\cdot [\tau]\cdot b\cdot h\cdot r}{n_1}\times 10^{-6}
+=\frac{3\times 545.82\times 30\times 15\times 47}{1.5}\times 10^{-6}\\
 &=23.09\,\text{kN}\cdot\text{m} > 17\,\text{kN}\cdot\text{m}
 \end{aligned}
 \end{equation}
@@ -380,7 +394,7 @@ T_{\text{max}}&=\frac{n_2\cdot [\tau]\cdot b\cdot h\cdot r}{n_{2x}\times 10}\tim
     P' = \frac{G \cdot d^4}{8 \cdot D_2^3 \cdot n} = \frac{79000 \times 3^4}{8 \times 22^3 \times 3} = 25 \, \text{N/mm}
 \end{equation}
 注：按图纸 ZKG7000-01-5 技术要求，刮刀与毛刷预紧弹簧的自由高度 35mm、有效圈数 3、总圈数 5、弹簧刚度 22.5N/mm；图纸给出的试验载荷为 137.25±13.7N（对应高度 28.90mm）和 401.4±40.1N（对应高度 17.16mm）。本节按刚度 22.5N/mm、工作高度 29mm 与 23mm 计算，对应载荷 135N 和 270N。
-考虑端部约束与装配预压的影响，后续载荷与应力计算均取弹簧的有效刚度，即 $P' = 22 \, \text{N/mm}$。
+考虑端部约束与装配预压的影响，后续载荷与应力计算均取弹簧的有效刚度，即 $P' = 22.5 \, \text{N/mm}$。
 
 弹簧最小工作载荷$P_1$
 \begin{equation}
@@ -465,13 +479,13 @@ T_{\text{max}}&=\frac{n_2\cdot [\tau]\cdot b\cdot h\cdot r}{n_{2x}\times 10}\tim
         材料许用切应力 $[\tau]$ & $613.8\,\text{MPa}$ \\
         心轴最大扭力 $T_{\max1}$ & $31.63\,\text{kN}\cdot\text{m}$ \\
         弹簧许用切应力 & $710\,\text{MPa}$ \\
-        弹簧刚度 $P'$ & $22\,\text{N/mm}$ \\
-        弹簧最小工作载荷 $P_1$ & $132\,\text{N}$ \\
-        弹簧最大工作载荷 $P_n$ & $264\,\text{N}$ \\
+        弹簧刚度 $P'$ & $22.5\,\text{N/mm}$ \\
+        弹簧最小工作载荷 $P_1$ & $135\,\text{N}$ \\
+        弹簧最大工作载荷 $P_n$ & $270\,\text{N}$ \\
         弹簧旋绕比 $C$ & $7.33$ \\
         弹簧曲度系数 $K$ & $1.2$ \\
-        弹簧最大切应力 $\tau_{\max}$ & $657.7\,\text{MPa}$ \\
-        端面键抗扭 $T_{\max2}$ & $26.53\,\text{kN}\cdot\text{m}$ \\
+        弹簧最大切应力 $\tau_{\max}$ & $672.6\,\text{MPa}$ \\
+        端面键抗扭 $T_{\max2}$ & $23.09\,\text{kN}\cdot\text{m}$ \\
         \bottomrule
     \end{tabularx}
 \end{table}

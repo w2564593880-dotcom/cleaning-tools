@@ -179,7 +179,7 @@ F_{\max} = \frac{A \cdot \sigma_s}{n} \times 10^{-3} = \frac{3185.38 \times 930}
 \begin{align*}
     \tau &= \frac{16 \cdot D \cdot T_{\max}}{\pi \cdot (D^4 - d^4)} \times 10^{6} \\
     T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6} \\
-    [\tau] &= n \cdot \sigma_s = 0.66 \times 930\,\text{MPa} = 620\,\text{MPa}
+    [\tau] &= n \cdot \sigma_s = 0.66 \times 930\,\text{MPa} = 613.8\,\text{MPa}
 \end{align*}
 式中，$T_{\max}$---工具最大扭矩，$\text{kN} \cdot \text{m}$；
 
@@ -198,39 +198,47 @@ $n$---许用切应力与许用拉应力之比，根据《机械设计手册》�
 （1）提升短节 3.625\inch-8 Stub ACME 内螺纹根部最大扭矩
 \begin{align}
     T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6} 
-             = \frac{620 \times 3.14 \times (120.65^4 - 45.72^4)}{16 \times 120.65} \times 10^{-6} \\
-             &= 209.28\,\text{kN} \cdot \text{m} > 18\,\text{kN} \cdot \text{m}
+             = \frac{613.8 \times 3.14 \times (120.65^4 - 45.72^4)}{16 \times 120.65} \times 10^{-6} \\
+             &= 207.19\,\text{kN} \cdot \text{m} > 18\,\text{kN} \cdot \text{m}
 \end{align}
 满足设计要求。
 
 （2）滤进接头 3.625\inch-8 Stub ACME 外螺纹根部最大扭矩
 \begin{align}
     T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6} 
-             = \frac{620 \times 3.14 \times (88.09^4 - 45.72^4)}{16 \times 88.09} \times 10^{-6} \\
-             &= 77.14\,\text{kN} \cdot \text{m} > 18\,\text{kN} \cdot \text{m}
+             = \frac{613.8 \times 3.14 \times (88.09^4 - 45.72^4)}{16 \times 88.09} \times 10^{-6} \\
+             &= 76.37\,\text{kN} \cdot \text{m} > 18\,\text{kN} \cdot \text{m}
 \end{align}
 满足设计要求。
 
 （3）滤出接头 3.625\inch-8 Stub ACME 外螺纹根部最大扭矩
 \begin{align}
     T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6} 
-             = \frac{620 \times 3.14 \times (88.60^4 - 44.45^4)}{16 \times 88.60} \times 10^{-6} \\
-             &= 79.26\,\text{kN} \cdot \text{m} > 18\,\text{kN} \cdot \text{m}
+             = \frac{613.8 \times 3.14 \times (88.60^4 - 44.45^4)}{16 \times 88.60} \times 10^{-6} \\
+             &= 78.47\,\text{kN} \cdot \text{m} > 18\,\text{kN} \cdot \text{m}
 \end{align}
 满足设计要求。
 
 （4）下接头 3.625\inch-8 Stub ACME 内螺纹根部最大扭矩
 \begin{align}
     T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6} 
-             = \frac{620 \times 3.14 \times (120.65^4 - 93.40^4)}{16 \times 120.65} \times 10^{-6} \\
-             &= 136.94\,\text{kN} \cdot \text{m} > 18\,\text{kN} \cdot \text{m}
+             = \frac{613.8 \times 3.14 \times (120.65^4 - 93.40^4)}{16 \times 120.65} \times 10^{-6} \\
+             &= 135.57\,\text{kN} \cdot \text{m} > 18\,\text{kN} \cdot \text{m}
 \end{align}
 满足设计要求。
 
 
-在上述理论计算的基础上，采用有限元方法对主要受力件的结构强度进行复核。过滤工具的薄弱零件及其受载后的应力分布分别如图~\ref{fig:weak_part_filter}和图~\ref{fig:weak_part_filter_fea}所示，主要受力件为提升短节、下接头、滤进接头和滤出接头，危险截面出现在螺纹根部及变径处。
+在上述理论计算的基础上，采用有限元方法对过滤工具主要受力件的结构强度进行复核，过滤工具的薄弱零件及其受载后的应力分布分别如图~\ref{fig:weak_part_filter}和图~\ref{fig:weak_part_filter_fea}所示。计算材料均取 4145H（弹性模量 206\,GPa、泊松比 0.3），屈服强度取 930\,MPa（图纸技术要求）；按安全系数 1.5 计，材料许用拉应力为 620\,MPa，许用切应力按 0.66 倍屈服强度取 613.8\,MPa。计算按工具实际装配的传力方式施加约束与载荷：受拉工况在一端螺纹连接部位施加 1000\,kN（\(1.0\times10^{6}\)\,N）轴向拉力，受扭工况在一端螺纹连接部位施加 18\,kN$\cdot$m 扭矩，另一端均以锥面定位约束。
 
-滤出接头的最大拉应力为 238 MPa，远小于设计要求；最大切应力为 2555 MPa，出现在变径处，但范围极小，属于应力集中导致的局部小尺度高应力，不会引发整体塑性变形，强度满足设计要求。滤进接头的最大拉应力为 206 MPa，远小于设计要求；最大切应力为 2610 MPa，出现在变径处，但范围极小，属于应力集中导致的局部小尺度高应力，不会引发整体塑性变形，强度满足设计要求。
+（1）滤进接头受拉。施加的拉力小于该接头按理论校核所得的最小许用拉力 2184.4\,kN（凹槽根部），与理论计算结果一致。等效应力（von Mises）的最大值为 1408\,MPa，出现在距左端约 190\,mm 的台阶（变径）处，并沿轴向迅速衰减，距台阶根部 2\,mm 处为 706\,MPa、4\,mm 处为 555\,MPa、6\,mm 处降至 519\,MPa，高应力区厚度仅数毫米。造成局部高应力的原因是台阶处的几何突变引起的应力集中，其影响范围局限于台阶根部很小的区域内，并受周围弹性材料约束，不会引起整体塑性变形。该危险截面的名义轴向拉应力为 284\,MPa（按 1000\,kN 拉力与实体测得的净截面积 3523.3\,mm$^{2}$ 计算）。以距台阶根部 4\,mm、6\,mm 处的等效应力作为评定值，二者分别为 555\,MPa 和 519\,MPa，均小于材料许用拉应力 620\,MPa，对应材料屈服强度 930\,MPa 的安全系数分别为 1.68 和 1.79，均大于设计要求的 1.5，故滤进接头的抗拉强度满足设计要求。
+
+（2）滤进接头受扭。施加的扭矩 18\,kN$\cdot$m 小于该截面按理论校核所得许用扭矩 76.37\,kN$\cdot$m，与理论计算结果一致。等效应力（von Mises）的最大值为 1114\,MPa，出现在台阶（变径）处，并沿轴向迅速衰减，距台阶根部 4\,mm 处为 544\,MPa、6\,mm 处为 522\,MPa，高应力区厚度仅数毫米。该峰值由台阶处的几何突变引起的应力集中所致，影响范围局限于台阶根部很小的区域内，并受周围弹性材料约束，不会引起整体塑性变形。以距台阶根部 4\,mm、6\,mm 处的等效应力作为评定值，二者分别为 544\,MPa 和 522\,MPa，均小于材料许用切应力 613.8\,MPa，对应材料屈服强度 930\,MPa 的安全系数分别为 1.71 和 1.78，均大于设计要求的 1.5，故滤进接头的抗扭强度满足设计要求。
+
+（3）滤出接头受拉。施加的拉力小于该接头按理论校核所得的最小许用拉力 1974.94\,kN（凹槽根部），与理论计算结果一致。等效应力（von Mises）的最大值为 1337\,MPa，出现在变径台阶处，并沿轴向迅速衰减，距台阶根部 2\,mm 处为 663\,MPa、4\,mm 处为 597\,MPa、6\,mm 处降至 564\,MPa，高应力区厚度仅数毫米。造成局部高应力的原因是变径处的几何突变引起的应力集中，其影响范围局限于台阶根部很小的区域内，并受周围弹性材料约束，不会引起整体塑性变形。该危险截面的名义轴向拉应力为 314\,MPa（按 1000\,kN 拉力与实体测得的净截面积 3185.38\,mm$^{2}$ 计算）。以距台阶根部 4\,mm、6\,mm 处的等效应力作为评定值，二者分别为 597\,MPa 和 564\,MPa，均小于材料许用拉应力 620\,MPa，对应材料屈服强度 930\,MPa 的安全系数分别为 1.56 和 1.65，均大于设计要求的 1.5，故滤出接头的抗拉强度满足设计要求。
+
+（4）滤出接头受扭。施加的扭矩 18\,kN$\cdot$m 小于该截面按理论校核所得许用扭矩 78.47\,kN$\cdot$m，与理论计算结果一致。等效应力（von Mises）的最大值为 1066\,MPa，出现在变径台阶处，并沿轴向迅速衰减，距台阶根部 2\,mm 处为 560\,MPa、4\,mm 处为 515\,MPa、6\,mm 处降至 500\,MPa，高应力区厚度仅数毫米。该峰值由变径处的几何突变引起的应力集中所致，影响范围局限于台阶根部很小的区域内，并受周围弹性材料约束，不会引起整体塑性变形。以距台阶根部 4\,mm、6\,mm 处的等效应力作为评定值，二者分别为 515\,MPa 和 500\,MPa，均小于材料许用切应力 613.8\,MPa，对应材料屈服强度 930\,MPa 的安全系数分别为 1.81 和 1.86，均大于设计要求的 1.5，故滤出接头的抗扭强度满足设计要求。
+
+综合上述四种工况的有限元复核结果，滤进接头与滤出接头在 1000\,kN 轴向拉力和 18\,kN$\cdot$m 扭矩作用下，距变径台阶根部 4$\sim$6\,mm 处的等效应力均小于材料许用应力，对应屈服强度的安全系数均大于 1.5；峰值应力均由变径处的几何突变引起的局部应力集中所致，作用范围仅数毫米，并受周围弹性材料约束，不会引起整体塑性变形。因此，滤进接头与滤出接头的抗拉、抗扭强度均满足设计要求。
 
 \begin{figure}[htbp]
     \centering
@@ -254,25 +262,25 @@ $n$---许用切应力与许用拉应力之比，根据《机械设计手册》�
     \centering
     % 子图 (a)
     \subfloat[滤出接头受拉应力分布]{%
-        \includegraphics[width=0.45\linewidth]{figure/chapter3/filter-outlet-sub-tensile-stress.png}%
+        \includegraphics[width=0.45\linewidth]{figure/simulation/lvchulashen.png}%
         \label{fig:fea_filter_outlet_tension}
     }
     \hfill
     % 子图 (b)
     \subfloat[滤出接头受扭应力分布]{%
-        \includegraphics[width=0.45\linewidth]{figure/chapter3/filter-outlet-sub-torsion-stress.png}%
+        \includegraphics[width=0.45\linewidth]{figure/simulation/lvchuniuju.png}%
         \label{fig:fea_filter_outlet_torsion}
     }
     \vspace{1em}
       % 子图 (c)
     \subfloat[滤进接头受拉应力分布]{%
-        \includegraphics[width=0.45\linewidth]{figure/chapter3/filter-inlet-sub-tensile-stress.png}%
+        \includegraphics[width=0.45\linewidth]{figure/simulation/lvjinlashen.png}%
         \label{fig:fea_filter_inlet_tension}
     }
     \hfill
       % 子图 (d)
     \subfloat[滤进接头受扭应力分布]{%
-        \includegraphics[width=0.45\linewidth]{figure/chapter3/filter-inlet-sub-torsional-stress.png}%
+        \includegraphics[width=0.45\linewidth]{figure/simulation/lvjinniuju.png}%
         \label{fig:fea_filter_inlet_torsion}
     }
         \caption{过滤工具薄弱零件受载有限元分析结果}
@@ -321,12 +329,12 @@ $d$---小径，mm。
         滤进接头最大拉力 $F_{\max3}$ & $2759.4\,\text{kN}$ \\
         滤出接头最大拉力 $F_{\max4}$ & $2859.0\,\text{kN}$ \\
         下接头最大拉力 $F_{\max5}$ & $2838.8\,\text{kN}$ \\
-        材料许用切应力 $[\tau]$ & $620\,\text{MPa}$ \\
+        材料许用切应力 $[\tau]$ & $613.8\,\text{MPa}$ \\
         最大扭矩 & $39\,\text{kN}\cdot\text{m}$ \\
-        提升短节最大扭力 $T_{\max1}$ & $209.3\,\text{kN}\cdot\text{m}$ \\
-        滤进接头最大扭力 $T_{\max2}$ & $77.1\,\text{kN}\cdot\text{m}$ \\
-        滤出接头最大扭力 $T_{\max3}$ & $79.3\,\text{kN}\cdot\text{m}$ \\
-        下接头最大扭力 $T_{\max4}$ & $136.9\,\text{kN}\cdot\text{m}$ \\
+        提升短节最大扭力 $T_{\max1}$ & $207.2\,\text{kN}\cdot\text{m}$ \\
+        滤进接头最大扭力 $T_{\max2}$ & $76.4\,\text{kN}\cdot\text{m}$ \\
+        滤出接头最大扭力 $T_{\max3}$ & $78.5\,\text{kN}\cdot\text{m}$ \\
+        下接头最大扭力 $T_{\max4}$ & $135.6\,\text{kN}\cdot\text{m}$ \\
         过滤容量 & $18\,\text{L}$ \\
         \bottomrule % 底线
     \end{tabularx}

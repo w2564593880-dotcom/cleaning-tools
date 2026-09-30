@@ -274,16 +274,18 @@ $[\tau]$——材料许用切应力，MPa。
 
 于是，工具的两个危险截面都满足抗扭强度要求。
 
-有限元计算结果如图\ref{fig:FEA_verification_shaft}所示。主要受力件为芯轴，危险截面出现在变径处，最大拉应力为1379\,MPa，最大切应力为937\,MPa。该峰值由变径台阶处的几何突变引起，属局部应力集中效应；按净截面进行的解析校核（式\ref{eq:tensile_strength_circular_section}）其名义应力低于材料许用值（安全系数1.5），故整体强度满足设计要求。%为降低局部应力集中、提高强度储备，建议在危险截面增加过渡圆角。
+有限元计算结果如图\ref{fig:FEA_verification_shaft}所示。拉伸工况下，有限元计算得到的最大 von Mises 应力为 2055\,MPa，出现在变径沟槽的转角点处。该处圆角半径极小（图纸技术要求未注圆角不大于 R0.2），几何上接近清角，有限元网格无法有效离散该特征，转角处单元产生变形，导致出现非物理的局部应力畸变。该畸变数值不具有稳定性：在转角线及其邻近区域逐点取样，位置相差仅 0.7\,mm 的三个节点应力分别为 802\,MPa、830\,MPa 和 1622\,MPa，跨度达 2 倍；相距 2.8\,mm 处的节点应力降至 570\,MPa。连续介质中的应力场不可能在不足 1\,mm 的距离内成倍跳变，表明该处读数系几何离散引起的数值畸变。此外，改变网格尺寸（危险区单元取 0.5\,mm、0.3\,mm、0.27$\sim$0.5\,mm 及加密网格）时，峰值分别为 935.7\,MPa、975.8\,MPa、935.7\,MPa 和 2055\,MPa，不随网格加密收敛。按工程惯例，此类应力畸变区不予采用，实际结构应力取畸变区邻近稳定区域的应力值，即 570\,MPa。该值低于按安全系数 1.5 确定的许用应力 620\,MPa，也远低于材料最小屈服强度 930\,MPa；同时，该值与按净截面解析计算的名义拉应力 423.6\,MPa 处于同一量级，说明计算模型与载荷传递路径正确。据此判断，芯轴在 1000\,kN 轴向拉力下的强度满足设计要求。
+
+扭转载荷作用下，有限元计算得到的最大 von Mises 应力为 956.9\,MPa，出现在变径沟槽的转角线上。该处圆角接近清角，网格无法有效离散，属局部数值畸变（与拉伸工况的网格敏感性分析结论一致）。取畸变区邻近稳定区域的应力，探测结果为 666.9\,MPa，低于材料最小屈服强度 930\,MPa，不会产生塑性变形。按净截面计算的名义剪应力为 196\,MPa，低于许用切应力 613.8\,MPa（$=0.66\sigma_s$），安全系数 3.13；对应的名义 von Mises 应力为 339\,MPa，低于许用应力 620\,MPa，安全系数 1.83。因此，芯轴的扭转强度满足大于 17\,kN$\cdot$m 的设计指标。%为降低局部应力集中、提高强度储备，建议在危险截面增加过渡圆角。
 
 \begin{figure}[htbp]
 	\centering
 	\subfloat[拉伸载荷下应力分布]{%
-	\includegraphics[width=0.5\textwidth]{figure/chapter3/inner-pipe-tensile-strength-simulation.png}
+	\includegraphics[width=0.5\textwidth]{figure/simulation/xinzhoulashen.png}
 	}
 	\vspace{1em}
 	\subfloat[扭转载荷下应力分布]{%
-	\includegraphics[width=0.5\textwidth]{figure/chapter3/inner-pipe-torsional-strength-simulation.png}
+	\includegraphics[width=0.5\textwidth]{figure/simulation/xinzhouniuju.png}
 	}
 	\caption{芯轴零件受力有限元分析}
 	\label{fig:FEA_verification_shaft}

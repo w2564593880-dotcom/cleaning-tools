@@ -11,19 +11,19 @@
     \centering
     % 子图 (a)
     \subfloat[钡锶垢实物]{%
-        \includegraphics[width=0.48\linewidth]{figure/BaSr-sample.png}%
+        \includegraphics[width=0.4\linewidth]{figure/BaSr-sample.png}%
         \label{fig:BaSr_sample}%
     }
-    \hfill
+    %\hfill
     % 子图 (b)
     \subfloat[SEM微观形貌]{%
-        \includegraphics[width=0.48\linewidth]{figure/BaSr-SEM.png}%
+        \includegraphics[width=0.4\linewidth]{figure/BaSr-SEM.png}%
         \label{fig:BaSr_SEM}%
     }
     \vspace{1em}
     % 子图 (c)
     \subfloat[垢仿真模型示意图]{%
-        \includegraphics[width=0.5\linewidth]{figure/BaSr-model.png}%
+        \includegraphics[width=0.4\linewidth]{figure/BaSr-model.png}%
         \label{fig:BaSr_model}%
     }
     \caption{钡锶垢颗粒及仿真模型对比}
@@ -32,7 +32,7 @@
 
 \begin{table}[htbp]
     \centering
-    \caption{锁锶垢颗粒运移仿真参数}
+    \caption{钡锶垢颗粒运移仿真参数}
     \label{tab:basr_simulation_params}
     \begin{tabularx}{.9\textwidth}{CCCC}
         \toprule % 顶部粗线
@@ -47,15 +47,15 @@
         洗井液入口流速 & $v_{in}$ & 0.37、0.59 & m/s \\
         洗井液粘度 & $\mu$ & 1.7 & mPa$\cdot$s \\
         沉积域距离井壁高度 & $H$ & 20.0 & mm \\
-        颗粒与井壁静摩擦系数 & $\mu_s$ & 0.5 & - \\
-        颗粒与井壁滑动摩擦系数 & $\mu_k$ & 0.4 & - \\
+        颗粒-井壁静摩擦系数 & $\mu_s$ & 0.5 & - \\
+        颗粒-井壁滑动摩擦系数 & $\mu_k$ & 0.4 & - \\
         \bottomrule % 底部粗线
     \end{tabularx}
 \end{table}
 
 \subsection{洗井液流速对钡锶垢运移规律的影响}
 
-选取井斜$\theta = 45^\circ$，洗井液入口流速$V_{\mathrm{in}}$取$0.37\mathrm{m/s}$和$0.59\mathrm{m/s}$两种，洗井液粘度取$1.7\mathrm{mPa\cdot s}$，钡锶垢颗粒有两种尺寸，特征长度约为$10\mathrm{mm}$和$4\mathrm{mm}$。
+选取井斜$\theta = 45^\circ$，洗井液入口流速$V_{\mathrm{in}}$取$0.37\mathrm{m/s}$和$0.59\mathrm{m/s}$两种，洗井液粘度取$1.7\mathrm{mPa\cdot s}$，钡锶垢颗粒有两种尺寸，特征长度$\bar{L}$约为$10\mathrm{mm}$和$4\mathrm{mm}$。
 
 图\ref{fig:Ba_Sr_distribution}描述的是不同洗井液流速下井筒内钡锶垢颗粒的分布情况，入口流速对钡锶垢颗粒运移效率的影响十分明显。随着洗井液流速增大，钡锶垢颗粒的运移速度逐渐增大。由于洗井液入口流速增大，产生于颗粒工厂的钡锶垢颗粒及悬浮层颗粒具有更大的轴向位移，在相同的仿真时间内，流速高时井筒内钡锶垢颗粒距离流体入口更远。
 \begin{figure}[htbp]
@@ -81,7 +81,7 @@
 
 \subsection{井斜对钡锶垢运移规律的影响}
 
-图\ref{fig:Ba_Sr_distribution_3angles}描述了井斜角变化时井筒内钡锶垢颗粒分布情况。$\theta=45^\circ$与$\theta=90^\circ$井斜下的钡锶垢颗粒都沉积在井底并以一定的速度向压力出口方向运移，其中$\theta=45^\circ$井筒内钡锶垢颗粒运移速度要大于$\theta=90^\circ$井筒内钡锶垢的运移速度，大颗粒钡锶垢在$\theta=45^\circ$与$\theta=90^\circ$井筒环空中均能够观察到，在直井（$\theta=0^\circ$）井筒环空中没有发现大颗粒钡锶垢，推测由于重力作用大颗粒钡锶垢产生后即下落至井底。而小颗粒钡锶垢运移速度随着井筒倾角的增大而减小，可见井筒倾角对钡锶垢运移效率有很大影响，其影响要以颗粒实际大小为准。
+图\ref{fig:Ba_Sr_distribution_3angles}描述了井斜角变化时井筒内钡锶垢颗粒分布情况。$\theta=45^\circ$与$\theta=90^\circ$井斜下的钡锶垢颗粒都沉积在井底并以一定的速度向压力出口方向运移，其中$\theta=45^\circ$井筒内钡锶垢颗粒运移速度要大于$\theta=90^\circ$井筒内钡锶垢的运移速度，大颗粒钡锶垢在$\theta=45^\circ$与$\theta=90^\circ$井筒环空中均能够观察到，在直井（$\theta=0^\circ$）井筒环空中没有发现大颗粒钡锶垢，推测由于重力作用大颗粒钡锶垢产生后即下落至井底。而小颗粒钡锶垢运移速度随着井筒倾角的增大而减小，可见井筒倾角对钡锶垢运移效率有很大影响，其影响的大小取决于颗粒的尺寸。
 
 \begin{figure}[htbp]
 	\centering
@@ -110,7 +110,7 @@
 \section{井筒内蜡垢运移及分布规律研究}
 
 油井中的蜡垢是原油中高碳链石蜡（$C_{18}$～$C_{60}$烃类）在开采过程中因温度、压力等条件变化析出并沉积形成的固态或半固态混合物，主要成分为石蜡、沥青质、胶质及机械杂质。其形成机制与原油组成和开采环境密切相关：当原油从高温高压地层流向井筒时，随着温度降低和压力释放，石蜡溶解度下降，逐步结晶析出并附着在管壁、泵阀等设备表面，形成致密垢层。蜡垢的危害显著：会堵塞油管导致产量下降，增加抽油能耗，加速设备磨损，甚至引发卡泵事故。
-研究蜡垢运移规律对油井洗井过程至关重要，通过揭示蜡垢运移与沉积的动态机制，能够优化洗井参数，提升清蜡效率并降低井筒堵塞风险；在保障油井稳产、提高经济效益的同时，减少环境污染，推动油气开采的绿色高效发展。本节对蜡垢进行迁移仿真所用到的仿真条件如表\ref{tab:wax_params}所示。
+研究蜡垢运移规律对油井洗井过程至关重要，通过揭示蜡垢运移与沉积的动态机制，能够优化洗井参数，提升清蜡效率并降低井筒堵塞风险；在保障油井稳产、提高经济效益的同时，减少环境污染，推动油气开采的绿色高效发展。本节假设蜡垢已经在井筒清洁工具的作用下形成了颗粒状，对颗粒在井筒中的运移行为进行仿真，仿真条件如表\ref{tab:wax_params}所示。
 
 \begin{table}[htbp]
     \centering
@@ -121,17 +121,17 @@
         名称 & 符号 & 数值 & 单位 \\
         \midrule % 中间细线
         水平井筒长度 & $L$ & 1.5 & m \\
-        井筒直径 & $D_H$ & 177.8 & mm \\
-        钻杆直径 & $D_P$ & 88.9 & mm \\
-        颗粒密度 & $\rho_P$ & 800.0 & kg/m$^3$ \\
-        洗井液密度 & $\rho_l$ & 1300.0 & kg/m$^3$ \\
+        井筒直径 & $D_\mathrm{H}$ & 177.8 & mm \\
+        钻杆直径 & $D_\mathrm{P}$ & 88.9 & mm \\
+        颗粒密度 & $\rho_\mathrm{P}$ & 800.0 & kg/m$^3$ \\
+        洗井液密度 & $\rho_\mathrm{l}$ & 1300.0 & kg/m$^3$ \\
         井斜角度 & $\theta$ & 0、45、90 & $^\circ$ \\
-        洗井液入口流速 & $v_{in}$ & 0.37、0.59 & m/s \\
+        洗井液入口流速 & $v_{\mathrm{in}}$ & 0.37、0.59 & m/s \\
         洗井液粘度 & $\mu$ & 1.7 & mPa$\cdot$s \\
         沉积域距离井壁高度 & $H$ & 20 & mm \\
-        颗粒模型大小 & - & 1、2、3、4 & mm \\
-        颗粒与井壁静摩擦系数 & $\mu_s$ & 0.6 & - \\
-        颗粒与井壁滑动摩擦系数 & $\mu_k$ & 0.2 & - \\
+        颗粒模型大小 & $d_\mathrm{p}$ & 2--8 & mm \\
+        颗粒与井壁静摩擦系数 & $\mu_\mathrm{s}$ & 0.6 & - \\
+        颗粒与井壁滑动摩擦系数 & $\mu_\mathrm{k}$ & 0.2 & - \\
         \bottomrule % 底部粗线
     \end{tabularx}
 \end{table}
@@ -144,10 +144,10 @@
 \begin{figure}[htbp]
 	\centering
 	\subfloat[$V_{\mathrm{in}}=0.37\mathrm{m/s}$]{%
-	\includegraphics[width=0.48\textwidth]{figure/Wax-mean-velocity-Vin-dot37mpersec.png}
+	\includegraphics[width=0.48\textwidth]{figure/chapter1/Wax-mean-velocity-Vin-dot37mpersec.png}
 	}
 	\subfloat[$V_{\mathrm{in}}=0.59\mathrm{m/s}$]{%
-	\includegraphics[width=0.48\textwidth]{figure/Wax-mean-velocity-Vin-dot59mpersec.png}
+	\includegraphics[width=0.48\textwidth]{figure/chapter1/Wax-mean-velocity-Vin-dot59mpersec.png}
 	}
 	\caption{蜡垢颗粒在沉积域运移平均速度演化}
 	\label{fig:Wax_velocity_particle_size}
@@ -168,10 +168,10 @@
 \begin{figure}[htbp]
 	\centering
 	\subfloat[$\theta=0^\circ$]{%
-	\includegraphics[width=0.48\textwidth]{figure/Wax-mean-velocity-Vin-dot59mpersec-theta-0.png}
+	\includegraphics[width=0.48\textwidth]{figure/chapter1/Wax-mean-velocity-Vin-dot59mpersec-theta-0.png}
 	}
 	\subfloat[$\theta=90^\circ$]{%
-	\includegraphics[width=0.48\textwidth]{figure/Wax-mean-velocity-Vin-dot59mpersec-theta-90.png}
+	\includegraphics[width=0.48\textwidth]{figure/chapter1/Wax-mean-velocity-Vin-dot59mpersec-theta-90.png}
 	}
 	\caption{井斜对蜡垢颗粒在沉积域运移平均速度演化的影响}
 	\label{fig:wax_velocity_3angles}

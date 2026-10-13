@@ -17,20 +17,14 @@
     \centering
     % 子图 (a)
     \subfloat[实际铁屑颗粒]{%
-        \begin{minipage}[t]{0.48\linewidth}
-            \centering
-            \includegraphics[width=\linewidth]{figure/iron-wire-actual.jpg}
+            \includegraphics[width=0.45\linewidth]{figure/iron-wire-actual.jpg}
             \label{fig:actual}
-        \end{minipage}%
     }
     \hfill
     % 子图 (b)
     \subfloat[铁屑颗粒模型]{%
-        \begin{minipage}[t]{0.42\linewidth}
-            \centering
-            \includegraphics[width=\linewidth]{figure/iron-wire-model.jpg}
+                    \includegraphics[width=0.4\linewidth]{figure/iron-wire-model.jpg}
             \label{fig:model}
-        \end{minipage}%
     }
     % 总标题
     \caption{铁屑颗粒及仿真模型}
@@ -53,12 +47,12 @@
         
         % 数据行
         1 & 水平井筒长度 & $L$ & 1.5 & m \\
-        2 & 井筒直径 & $D_H$ & 244.475 & mm \\
-        3 & 钻杆直径 & $D_P$ & 88.9 & mm \\
-        4 & 颗粒密度 & $\rho_p$ & 7800.0 & kg/m$^3$ \\
-        5 & 洗井液密度 & $\rho_l$ & 1000.0、1300.0 & kg/m$^3$ \\
+        2 & 井筒直径 & $D_\mathrm{H}$ & 244.475 & mm \\
+        3 & 钻杆直径 & $D_\mathrm{P}$ & 88.9 & mm \\
+        4 & 颗粒密度 & $\rho_\mathrm{p}$ & 7800.0 & kg/m$^3$ \\
+        5 & 洗井液密度 & $\rho_\mathrm{l}$ & 1000.0、1300.0 & kg/m$^3$ \\
         6 & 井斜角 & $\theta$ & 0.0、45.0、90.0 & $^\circ$ \\
-        7 & 洗井液入口流速 & $v_{in}$ & 0.17、0.27 & m/s \\
+        7 & 洗井液入口流速 & $v_{\mathrm{in}}$ & 0.17、0.27 & m/s \\
         8 & 洗井液粘度 & $\mu$ & 1.0、1.7 & mPa$\cdot$s \\
         9 & 沉积域距离井壁高度 & $H$ & 40.0 & mm \\
         10 & 颗粒与井壁静摩擦系数 & $\mu_s$ & 0.15 & - \\
@@ -78,22 +72,15 @@
     % 使用 minipage 控制宽度，这里设为 0.9\textwidth 让图片大一点
     % [t] 表示顶部对齐，防止因为图片高度不同导致错位
     \subfloat[$\mu = 1.0\mathrm{mPa}\cdot\mathrm{s}$]{
-        \begin{minipage}[t]{0.8\linewidth}
-            \centering
-            % 替换为你的第一张图片文件名
-            \includegraphics[width=\linewidth]{figure/iron-wire-distribution-1cp-velocity-colored.png} 
+            \includegraphics[width=0.7\linewidth]{figure/iron-wire-distribution-1cp-velocity-colored.png} 
             \label{fig:viscosity_1.0}
-        \end{minipage}
     }
     \vspace{0pt} % 上下两张图之间的垂直间距，可根据需要调整
     % --- 子图 (b) ---
     \subfloat[$\mu = 1.7\mathrm{mPa}\cdot\mathrm{s}$]{
-        \begin{minipage}[t]{0.8\linewidth}
-            \centering
             % 替换为你的第二张图片文件名
-            \includegraphics[width=\linewidth]{figure/iron-wire-distribution-1dot7-cp-velocity-colored.png} 
+            \includegraphics[width=0.7\linewidth]{figure/iron-wire-distribution-1dot7-cp-velocity-colored.png} 
             \label{fig:viscosity_1.7}
-        \end{minipage}
     }
     % --- 总标题 ---
     \caption{洗井液粘度对铁屑颗粒速度分布的影响（$\theta=90^\circ$,\ $v_{\mathrm{in}}=0.27\mathrm{m/s}$）}
@@ -123,23 +110,15 @@
     % 使用 minipage 控制宽度，这里设为 0.9\textwidth 让图片大一点
     % [t] 表示顶部对齐，防止因为图片高度不同导致错位
     \subfloat[$v_{\mathrm{in}} = 0.17\mathrm{m/s}$]{
-        \begin{minipage}[t]{0.8\linewidth}
-            \centering
-            % 替换为你的第一张图片文件名
-            \includegraphics[width=\linewidth]{figure/iron-wire-distribution-1dot7cp-0dot17mpers.png} 
+            \includegraphics[width=.7\linewidth]{figure/iron-wire-distribution-1dot7cp-0dot17mpers.png} 
             \label{fig:distribution_velocity_0.17}
-        \end{minipage}
     }
     \vspace{0pt} % 上下两张图之间的垂直间距，可根据需要调整
     % --- 子图 (b) ---
     \subfloat[$v_{\mathrm{in}} = 0.27\mathrm{m/s}$]{
-        \begin{minipage}[t]{0.8\linewidth}
-            \centering
-            % 替换为你的第二张图片文件名
-            \includegraphics[width=\linewidth]{figure/iron-wire-distribution-1dot7cp-0dot27mpers.png} 
-            \label{fig:distribution_velocity_0.27}
-        \end{minipage}
-    }
+       \includegraphics[width=.7\linewidth]{figure/iron-wire-distribution-1dot7cp-0dot27mpers.png} 
+       \label{fig:distribution_velocity_0.27}
+       }
     % --- 总标题 ---
     \caption{洗井液流速对铁屑颗粒分布的影响（$\theta=90^\circ$,\ $\mu = 1.7\mathrm{mPa}\cdot\mathrm{s}$）}
     \label{fig:iron_wire_distribution_velocity}
@@ -157,22 +136,14 @@
 	% 使用 minipage 控制宽度，这里设为 0.9\textwidth 让图片大一点
 	% [t] 表示顶部对齐，防止因为图片高度不同导致错位
 	\subfloat[$v_{\mathrm{in}} = 0.17\mathrm{m/s}$]{
-		\begin{minipage}[t]{0.8\linewidth}
-			\centering
-			% 替换为你的第一张图片文件名
-			\includegraphics[width=\linewidth]{figure/iron-wire-particle-track-1dot7cp-0dot17mpers.jpg} 
+		\includegraphics[width=.7\linewidth]{figure/iron-wire-particle-track-1dot7cp-0dot17mpers.jpg} 
 			\label{fig:track_velocity_0.17}
-		\end{minipage}
 	}
 	\vspace{0pt} % 上下两张图之间的垂直间距，可根据需要调整
 	% --- 子图 (b) ---
 	\subfloat[$v_{\mathrm{in}} = 0.27\mathrm{m/s}$]{
-		\begin{minipage}[t]{0.8\linewidth}
-			\centering
-			% 替换为你的第二张图片文件名
-			\includegraphics[width=\linewidth]{figure/iron-wire-particle-track-1dot7cp-0dot27mpers.jpg} 
-			\label{fig:track_velocity_0.27}
-		\end{minipage}
+		\includegraphics[width=.7\linewidth]{figure/iron-wire-particle-track-1dot7cp-0dot27mpers.jpg} 
+		\label{fig:track_velocity_0.27}
 	}
 	% --- 总标题 ---
 	\caption{洗井液流速对铁屑颗粒分布的影响（$\theta=90^\circ$,\ $\mu = 1.7\mathrm{mPa}\cdot\mathrm{s}$）}
@@ -194,14 +165,14 @@
 %$\theta = 45^\circ$和$\theta = 90^\circ$两种情况下，铁屑床都由移动床和静止床两部分组成，静止床的出现意味着上部铁屑积压，流体拖曳力、重力和摩擦作用相平衡；移动床的出现意味着流体的拖拽作用足以克服重力和管壁摩擦对单个铁屑颗粒的作用，使铁屑持续运移。表明，单个颗粒的行为有别于一群颗粒的行为，颗粒-颗粒之间的相互作用会影响颗粒的运移行为。
 结合三种情况可以推测：第一，铁屑在直井中排出很困难；第二，对于给定的泵排量，存在一个临界井斜$\theta_c$，当$\theta < \theta_c$时，铁屑颗粒会在井筒壁面中持续堆积，最终将形成稳定的沉积床，而当$\theta > \theta_c$时，铁屑颗粒的运移行为是沉积成床与随流迁移的混合模式；第三，目前可以判断$\theta<45^\circ$，且其大小主要与铁屑颗粒的形状及流体流速相关。
 
+铁屑颗粒的流动迹线图可以直观地描述颗粒的运动轨迹。首先选取井筒内的部分铁屑颗粒，绘制不同井斜角度下部分铁屑流动迹线图，如图\ref{fig:iron_wire_track_3angles}所示。直井（$0^\circ$）中铁屑运动轨迹平直，说明铁屑几乎不与井壁产生接触（或碰撞），短促的轨迹说明颗粒将向井底沉积，不能持续随流运移。各井斜条件下井壁处与颗粒工厂处的颗粒速度均较小，水平井环空内的颗粒速度大于斜井。这是由于井筒轴线与重力方向的夹角增大，环空中颗粒所受重力的影响愈发显著，颗粒在自身重力作用下下沉加快，洗井液在轴向上不足以提供足够的悬浮能量，颗粒堆积到底部后形成颗粒床，运移效率明显降低。
+
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.7\textwidth]{figure/iron-wire-distribution-1dot7cp-0dot27mpers-3angles.jpg}
 	\caption{井斜角对铁屑颗粒分布情况}
 	\label{fig:iron_wire_distribution_3angles}
 \end{figure}
-
-铁屑颗粒的流动迹线图可以直观地描述颗粒的运动轨迹。首先选取井筒内的部分铁屑颗粒，绘制不同井斜角度下部分铁屑流动迹线图，如图\ref{fig:iron_wire_track_3angles}所示。直井（$0^\circ$）中铁屑运动轨迹平直，说明铁屑几乎不与井壁产生接触（或碰撞），短促的轨迹说明颗粒将向井底沉积，不能持续随流运移。各井斜条件下井壁处与颗粒工厂处的颗粒速度均较小，水平井环空内的颗粒速度大于斜井。这是由于井筒轴线与重力方向的夹角增大，环空中颗粒所受重力的影响愈发显著，颗粒在自身重力作用下下沉加快，洗井液在轴向上不足以提供足够的悬浮能量，颗粒堆积到底部后形成颗粒床，运移效率明显降低。
 
 \begin{figure}[htbp]
 	\centering

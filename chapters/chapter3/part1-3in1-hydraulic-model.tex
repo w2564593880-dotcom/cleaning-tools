@@ -120,7 +120,7 @@ $\eta$为形状修正系数，取决于长宽比$b/h$。
 \end{equation}
 取活塞初始静止位置为原点，其向下运动方向为正。活塞蓄能阶段的运动微分方程为：
 \begin{equation}
-	\frac{d^2}{dt^2}+C_1\left(\frac{dx}{dt}\right)^2+\left(C_2 x+C_3\right)\frac{dx}{dt}+C_4 x+ C_5 =0
+	\frac{d^2x}{dt^2}+C_1\left(\frac{dx}{dt}\right)^2+\left(C_2 x+C_3\right)\frac{dx}{dt}+C_4 x+ C_5 =0
 \end{equation}
 
 式中， $C_1$为非线性阻力系数，物体在流体中高速运动时，会产生与速度平方成正比的阻力：
@@ -422,7 +422,7 @@ x'\big|_{t=t_3} &\equiv v_2
     \caption{环空携屑仿真基本参数}
     \label{tab:annulus_sand_simulation_params}
     \renewcommand{\arraystretch}{1.5} % 增加行高，使表格更美观
-    \begin{tabularx}{.9\textwidth}{Xcc}
+    \begin{tabularx}{.9\textwidth}{CCC}
         \toprule % 顶线
         名称 & 数值 & 单位 \\
         \midrule % 栏目线

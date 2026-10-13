@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.7.19)  13 OCT 2026 15:09
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.7.19)  13 OCT 2026 17:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1259,75 +1259,74 @@ File: figure/BaSr-distribution-Vin.jpg Graphic file (type bmp)
 
 
 ]
-File: figure/BaSr-mean-velocity-evolution-vin-dot37.png Graphic file (type bmp)
-<figure/BaSr-mean-velocity-evolution-vin-dot37.png>
+File: figure/chapter1/BaSr-mean-velocity-evolution-vin-dot37.png Graphic file (type bmp)
+<figure/chapter1/BaSr-mean-velocity-evolution-vin-dot37.png>
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
 (Font)              scaled to size 5.0pt on input line 74.
-File: figure/BaSr-mean-velocity-evolution-vin-dot59.png Graphic file (type bmp)
-<figure/BaSr-mean-velocity-evolution-vin-dot59.png>
+File: figure/chapter1/BaSr-mean-velocity-evolution-vin-dot59.png Graphic file (type bmp)
+<figure/chapter1/BaSr-mean-velocity-evolution-vin-dot59.png>
  [2]
 File: figure/BaSr-distribution-3angles.jpg Graphic file (type bmp)
 <figure/BaSr-distribution-3angles.jpg>
  [3]
-File: figure/BaSr-mean-velocity-evolution-big-size.png Graphic file (type bmp)
-<figure/BaSr-mean-velocity-evolution-big-size.png>
-File: figure/BaSr-mean-velocity-evolution-small-size.png Graphic file (type bmp)
-<figure/BaSr-mean-velocity-evolution-small-size.png>
- [4]
+File: figure/chapter1/BaSr-mean-velocity-evolution-big-size.png Graphic file (type bmp)
+<figure/chapter1/BaSr-mean-velocity-evolution-big-size.png>
+File: figure/chapter1/BaSr-mean-velocity-evolution-small-size.png Graphic file (type bmp)
+<figure/chapter1/BaSr-mean-velocity-evolution-small-size.png>
 File: figure/chapter1/Wax-mean-velocity-Vin-dot37mpersec.png Graphic file (type bmp)
 <figure/chapter1/Wax-mean-velocity-Vin-dot37mpersec.png>
 File: figure/chapter1/Wax-mean-velocity-Vin-dot59mpersec.png Graphic file (type bmp)
 <figure/chapter1/Wax-mean-velocity-Vin-dot59mpersec.png>
- [5]
+ [4] [5]
 File: figure/wax-distribution-3angles.png Graphic file (type bmp)
 <figure/wax-distribution-3angles.png>
 File: figure/chapter1/Wax-mean-velocity-Vin-dot59mpersec-theta-0.png Graphic file (type bmp)
 <figure/chapter1/Wax-mean-velocity-Vin-dot59mpersec-theta-0.png>
 File: figure/chapter1/Wax-mean-velocity-Vin-dot59mpersec-theta-90.png Graphic file (type bmp)
 <figure/chapter1/Wax-mean-velocity-Vin-dot59mpersec-theta-90.png>
- [6] [7]) [8] [9]
+ [6] [7]) [8]
 第二章
-[10
+[9
 
 ]
 第三章
-(./chapters/bib.tex [11
+(./chapters/bib.tex [10
 
-] [12
+] [11
 
 
-]) [13] (./chapters/appendix1.tex [14
+]) [12] (./chapters/appendix1.tex [13
 
 ]
 
-LaTeX Warning: Reference `keliyunyi' on page 15 undefined on input line 52.
+LaTeX Warning: Reference `keliyunyi' on page 14 undefined on input line 52.
 
 
-LaTeX Warning: Reference `citimoni' on page 15 undefined on input line 53.
+LaTeX Warning: Reference `citimoni' on page 14 undefined on input line 53.
 
 
-LaTeX Warning: Reference `shuilimaichong' on page 15 undefined on input line 54.
+LaTeX Warning: Reference `shuilimaichong' on page 14 undefined on input line 54.
 
 
-LaTeX Warning: Reference `siheyi' on page 15 undefined on input line 61.
+LaTeX Warning: Reference `siheyi' on page 14 undefined on input line 61.
 
 
-LaTeX Warning: Reference `darongliangqiangci' on page 15 undefined on input line 62.
+LaTeX Warning: Reference `darongliangqiangci' on page 14 undefined on input line 62.
 
 
-LaTeX Warning: Reference `duogongnengguolv' on page 15 undefined on input line 63.
+LaTeX Warning: Reference `duogongnengguolv' on page 14 undefined on input line 63.
 
 
-LaTeX Warning: Reference `kebianjingguaguan' on page 15 undefined on input line 64.
+LaTeX Warning: Reference `kebianjingguaguan' on page 14 undefined on input line 64.
 
 
-LaTeX Warning: Reference `sanheyi' on page 15 undefined on input line 65.
+LaTeX Warning: Reference `sanheyi' on page 14 undefined on input line 65.
 
-[15]
+[14]
 
-LaTeX Warning: Reference `guaban' on page 16 undefined on input line 76.
+LaTeX Warning: Reference `guaban' on page 15 undefined on input line 76.
 
-) [16] (./main.aux)
+) [15] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
@@ -1341,11 +1340,11 @@ Package rerunfilecheck Info: File `main.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  36240 strings out of 468174
- 824023 string characters out of 5433150
- 1194724 words of memory out of 5000000
+ 824311 string characters out of 5433150
+ 1193724 words of memory out of 5000000
  64346 multiletter control sequences out of 15000+600000
  641455 words of font info for 122 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  93i,13n,117p,1215b,1170s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (18 pages).
+Output written on main.pdf (17 pages).

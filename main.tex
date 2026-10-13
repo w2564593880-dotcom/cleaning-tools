@@ -48,6 +48,8 @@
     itemsep=0pt
 }
 
+\setlist[enumerate]{nosep} %设置条目间距为0，避免条目间距过大
+
 
 
 % 3. 设置常规的 fancy 样式
@@ -115,12 +117,31 @@
   {}
 \titlespacing*{\subsection}{0pt}{10pt}{4pt}
 
+% 用 titlesec 显式设置 paragraph 格式，去掉加粗
+\titleformat{\paragraph}[block]
+  {\normalfont\normalsize}
+  {\theparagraph}
+  {1em}
+  {}
+
+\titlespacing*{\paragraph}{0pt}{1ex}{1ex}
+
+% 1. 重命名 \paragraph 为 \subsubsubsection
+\newcommand{\subsubsubsection}[1]{\paragraph{#1}}
+
+% 2. 设置章节编号深度为3（包含 subsubsubsection）
+\setcounter{secnumdepth}{3}
+
+% 3. 设置目录显示深度为3（subsubsubsection 不出现在目录中）
+\setcounter{tocdepth}{3}
+
 % 6. 其他常用宏包
 \usepackage{graphicx}
 \usepackage{float}         % 提供 [H]：把图片精确固定在正文位置（不浮动，避免图跑到别的页/别的段落下面）      
 \usepackage{booktabs}      
 \usepackage{amsmath,amssymb,bm}       
 \usepackage{caption}       
+\captionsetup[subfloat]{skip=1pt}
 \usepackage{setspace}      
 \onehalfspacing 
 
@@ -148,22 +169,9 @@
 
 \usepackage{siunitx} %用于自定义inch的缩写
 
-
-
-% 1. 重命名 \paragraph 为 \subsubsubsection
-\newcommand{\subsubsubsection}[1]{\paragraph{#1}\mbox{}\\}
-
-% 2. 设置章节编号深度为3（包含 subsubsubsection）
-\setcounter{secnumdepth}{3}
-
-% 3. 设置目录显示深度为3（subsubsubsection 不出现在目录中）
-\setcounter{tocdepth}{3}
-
 \newcommand{\inch}{\,\text{''}} %自定义inch的双撇
 
 \newcolumntype{C}{>{\centering\arraybackslash}X}
-% 定宽居中列（表 3.6“标准版与加长版两种配置”用；X 列宽度自适应，内容长短不一时列宽会跳动）
-\newcolumntype{K}[1]{>{\centering\arraybackslash}p{#1}}
 
 % 允许浮动体占据页面最多 90% 的空间（默认 50%）
 \renewcommand{\floatpagefraction}{0.9}
@@ -173,6 +181,17 @@
 \renewcommand{\bottomfraction}{0.9}
 % 正文最少占 10%
 \renewcommand{\textfraction}{0.1}
+
+
+% 导言区：再挂一个钩子，防止 ctex 覆盖
+\AtBeginDocument{
+  \titleformat{\paragraph}[block]
+    {\normalfont\normalsize}
+    {\theparagraph}
+    {1em}
+    {}%
+  \titlespacing*{\paragraph}{0pt}{1ex}{1ex}%
+}
 
 \begin{document}
 
@@ -188,7 +207,7 @@
     \vspace{1cm}
     {\Large \textcolor{red}{承担单位：中国石油大学（北京）} \par}
     \vspace{1cm}
-    {\Large \textcolor{red}{2026年9月16日} \par}
+    {\Large \textcolor{red}{2026年9月22日} \par}
 \end{titlepage}
 
 % === 目录部分 ===
@@ -204,30 +223,35 @@
 
 % --- 第一章 ---
 \chapter{砂砾、铁屑、结垢物、蜡等井筒内的运移及分布规律研究}
-	%\input{chapters/chapter1/chapter1.tex} % 引入颗粒物运移内容  
+    % 引入颗粒物运移内容  
+    \input{chapters/chapter1/part1-theory-basis.tex} 
+    \input{chapters/chapter1/part2-sand-sendiment.tex}
+    \input{chapters/chapter1/part3-iron-wire-sendiment.tex}
+    \input{chapters/chapter1/part4-scale-wax.tex}
 % --- 第二章 ---
 \chapter{井筒内颗粒运移实验}
-	%\input{chapters/chapter2/part1-horizontal-sand.tex} % 水平井冲砂
-	%\input{chapters/chapter2/part2-full-well-model.tex} % 全井筒模型
+	\input{chapters/chapter2/part1-horizontal-sand.tex} % 水平井冲砂
+	\input{chapters/chapter2/part2-full-well-model.tex} % 全井筒模型
 % --- 第三章 ---
 \chapter{深度清洁工具设计}
 
-井筒清洁是油气井钻井、完井、修井和生产等作业环节中的关键工序，主要用于清除井筒内的砂砾、铁屑、结垢物及蜡等杂质，从而保障井筒畅通、恢复和提高油气井产能，并延长井筒及相关工具的服役寿命。然而，现有井筒清洁技术普遍存在功能单一、施工效率不高以及工具一体化、集成化程度不足等问题，难以满足油田降本增效的实际需求。针对上述问题，本研究通过开展相关理论研究，完善井筒清洁工具系列，形成了适用于 9-5/8\inch 井筒的深度清洁工艺技术。本章围绕该工艺技术所涉及的核心清洁工具展开论述，主要包括单工具设计及工具组合应用两部分。首先，针对“三合一”脉冲式冲刮刷集成式井筒清洁工具、“四合一”通刮刷磁集成式井筒清洁工具、大容量强磁吸附工具、多功能过滤工具和可变径刮管工具，分别开展结构设计、理论计算和仿真校核，并明确各工具的使用与维护要求。在此基础上，结合不同井况和清洁需求，提出相应的工具组合方案，以减少下钻趟数、提高施工效率。
+井筒清洁是油气井钻井、完井、修井和生产等作业环节中的关键工序，主要用于清除井筒内的砂砾、铁屑、结垢物及蜡等杂质，从而保障井筒畅通、恢复和提高油气井产能，并延长井筒及相关工具的服役寿命。然而，现有井筒清洁技术普遍存在功能单一、施工效率不高以及工具一体化、集成化程度不足等问题，难以满足油田降本增效的实际需求。针对上述问题，本研究通过开展相关理论研究，完善井筒清洁工具系列，形成了适用于 9-5/8\inch 井筒的深度清洁工艺技术。本章围绕该工艺技术所涉及的核心清洁工具展开论述，主要包括单工具设计及工具组合应用两部分。首先，针对“三合一”脉冲式冲刮刷集成式井筒清洁工具、“四合一”通刮刷磁集成式井筒清洁工具、大容量强磁吸附工具、多功能过滤工具和可变径刮管工具，分别开展结构设计、理论计算和仿真校核，并明确各工具的使用与维护要求。在此基础上，结合不同井况和清洁需求，提出相应的工具组合方案，以减少下钻趟数、提高施工效率。与现有的工具相比，其功能更加丰富，施工效率更高，且具有更强的适应性和可操作性，能够满足不同井况下的深度清洁需求。
 
 \section[“三合一”脉冲式冲刮刷集成式井筒清洁工具设计]{“三合一”脉冲式冲刮刷集成式井筒清洁工具设计\protect\footnote{合同条款：5.1.3井筒高效清洁关键技术配套工具设计——（5）“三合一”脉冲式冲刮刷集成式井筒清洁工具设计}}\label{sec:design_of_3_in_1}
-	\input{chapters/chapter3/part1-3in1-design.tex}
-	\input{chapters/chapter3/part1-3in1-verification.tex}
-	\input{chapters/chapter3/part1-3in1-hydraulic-model.tex}
-	\input{chapters/chapter3/part1-3in1-setup-and-maintainance.tex}
+	%\input{chapters/chapter3/part1-3in1-design.tex}
+	%\input{chapters/chapter3/part1-3in1-verification.tex}
+	%\input{chapters/chapter3/part1-3in1-hydraulic-model.tex}
+	%\input{chapters/chapter3/part1-3in1-setup-and-maintainance.tex}
 \section{“四合一”通刮刷磁集成式井筒清洁工具设计}
-	\input{chapters/chapter3/part2-4in1.tex}
-	\input{chapters/chapter3/part2-4in1-scraper-performance.tex}
+	%\input{chapters/chapter3/part2-4in1.tex}
+	%\input{chapters/chapter3/part2-4in1-scraper-performance.tex}
+	%\input{chapters/chapter3/part2-4in1-magnet-performance.tex}
 \section{大容量强磁吸附工具设计}
-	\input{chapters/chapter3/part3-magntictool.tex}
+	%\input{chapters/chapter3/part3-magntictool.tex}
 \section{多功能过滤工具设计}
-	\input{chapters/chapter3/part4-filter.tex}
+	%\input{chapters/chapter3/part4-filter.tex}
 \section[可变径刮管工具设计]{可变径刮管工具设计\protect\footnote{合同条款：5.1.3井筒高效清洁关键技术配套工具设计——（4）可变径刮管工具设计}}
-	\input{chapters/chapter3/part5-variable-tool.tex}
+	%\input{chapters/chapter3/part5-variable-tool.tex}
 	
 \input{chapters/bib.tex}
 

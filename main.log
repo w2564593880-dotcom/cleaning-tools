@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.7.6)  13 OCT 2026 22:05
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.7.6)  14 OCT 2026 16:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1074,7 +1074,11 @@ Package fontspec Info:
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
 (Font)              scaled to size 12.045pt on input line 196.
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 196.
- (./main.aux)
+ (./main.aux
+
+LaTeX Warning: Label `fig:field_result_in_upper_sub_radial_magnetization' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 196.
@@ -1229,11 +1233,11 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 
-])
+] [2] [3])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [2]
+ [4]
 第一章
 (./chapters/chapter1/part1-theory-basis.tex [1
 
@@ -1361,4 +1365,100 @@ File: figure/BaSr-mean-velocity-evolution-small-size.png Graphic file (type bmp)
 File: figure/Wax-mean-velocity-Vin-dot37mpersec.png Graphic file (type bmp)
 <figure/Wax-mean-velocity-Vin-dot37mpersec.png>
 File: figure/Wax-mean-velocity-Vin-dot59mpersec.png Graphic file (type bmp)
-<figure/Wax-m
+<figure/Wax-mean-velocity-Vin-dot59mpersec.png>
+ [29]
+File: figure/wax-distribution-3angles.png Graphic file (type bmp)
+<figure/wax-distribution-3angles.png>
+File: figure/Wax-mean-velocity-Vin-dot59mpersec-theta-0.png Graphic file (type bmp)
+<figure/Wax-mean-velocity-Vin-dot59mpersec-theta-0.png>
+File: figure/Wax-mean-velocity-Vin-dot59mpersec-theta-90.png Graphic file (type bmp)
+<figure/Wax-mean-velocity-Vin-dot59mpersec-theta-90.png>
+ [30] [31] [32]) [33]
+第二章
+(./chapters/chapter2/part1-horizontal-sand.tex [34
+
+]
+File: figure/chapter2/horizontal-washing-experiment-setup.png Graphic file (type bmp)
+<figure/chapter2/horizontal-washing-experiment-setup.png>
+ [35] [36]
+File: figure/chapter2/IncomingReVStstar.png Graphic file (type bmp)
+<figure/chapter2/IncomingReVStstar.png>
+File: figure/chapter2/stagenation-with-inflection-point.png Graphic file (type bmp)
+<figure/chapter2/stagenation-with-inflection-point.png>
+File: figure/chapter2/bed-front-profile-VS-Rein.png Graphic file (type bmp)
+<figure/chapter2/bed-front-profile-VS-Rein.png>
+ [37] [38]
+File: figure/chapter2/bed-oscillation.png Graphic file (type bmp)
+<figure/chapter2/bed-oscillation.png>
+File: figure/chapter2/M-shaped-bed-height.png Graphic file (type bmp)
+<figure/chapter2/M-shaped-bed-height.png>
+ [39] [40]
+File: figure/chapter2/eta-gamma.png Graphic file (type bmp)
+<figure/chapter2/eta-gamma.png>
+ [41]
+File: figure/chapter2/bed-profile-guar-gel.png Graphic file (type bmp)
+<figure/chapter2/bed-profile-guar-gel.png>
+ [42]
+File: figure/chapter2/p-star-VS-t-star.png Graphic file (type bmp)
+<figure/chapter2/p-star-VS-t-star.png>
+File: figure/chapter2/Vs-star-VS-Rein.png Graphic file (type bmp)
+<figure/chapter2/Vs-star-VS-Rein.png>
+ [43]
+File: figure/chapter2/H-star-VS-Rein.png Graphic file (type bmp)
+<figure/chapter2/H-star-VS-Rein.png>
+File: figure/chapter2/Rel-VS-Rein.png Graphic file (type bmp)
+<figure/chapter2/Rel-VS-Rein.png>
+ [44] [45]
+File: figure/chapter2/phis-VS-Rein.png Graphic file (type bmp)
+<figure/chapter2/phis-VS-Rein.png>
+ [46] [47]) (./chapters/chapter2/part2-full-well-model.tex
+File: figure/chapter2/iron-washing-test-rig.png Graphic file (type bmp)
+<figure/chapter2/iron-washing-test-rig.png>
+File: figure/chapter2/iron-bed-7dot85mperh.png Graphic file (type bmp)
+<figure/chapter2/iron-bed-7dot85mperh.png>
+File: figure/chapter2/iron-bed-10dot00mperh.png Graphic file (type bmp)
+<figure/chapter2/iron-bed-10dot00mperh.png>
+File: figure/chapter2/iron-bed-11dot70mperh.png Graphic file (type bmp)
+<figure/chapter2/iron-bed-11dot70mperh.png>
+
+Overfull \hbox (4.50652pt too wide) in paragraph at lines 31--41
+ [][][][][][] 
+ []
+
+[48]
+File: figure/chapter2/iron-bed-15dot70mperh.png Graphic file (type bmp)
+<figure/chapter2/iron-bed-15dot70mperh.png>
+File: figure/chapter2/iron-bed-15dot83mperh.png Graphic file (type bmp)
+<figure/chapter2/iron-bed-15dot83mperh.png>
+File: figure/chapter2/iron-bed-17dot44mperh.png Graphic file (type bmp)
+<figure/chapter2/iron-bed-17dot44mperh.png>
+
+Overfull \hbox (4.50652pt too wide) in paragraph at lines 53--63
+ [][][][][][] 
+ []
+
+File: figure/chapter2/video-clip-theta-le-72-degree.png Graphic file (type bmp)
+<figure/chapter2/video-clip-theta-le-72-degree.png>
+File: figure/chapter2/extraction-of-pack-area-theta-le-72-degree.png Graphic file (type bmp)
+<figure/chapter2/extraction-of-pack-area-theta-le-72-degree.png>
+[49]
+File: figure/chapter2/bed-position-VS-flow-rate-inclined-section.png Graphic file (type bmp)
+<figure/chapter2/bed-position-VS-flow-rate-inclined-section.png>
+ [50]
+Overfull \hbox (22.62273pt too wide) in paragraph at lines 124--134
+ [][] 
+ []
+
+[51] [52]) [53]
+第三章
+(./chapters/chapter3/part1-3in1-design.tex
+File: figure/chapter3/tool-structure-3-in-1.jpg Graphic file (type bmp)
+<figure/chapter3/tool-structure-3-in-1.jpg>
+ [54
+
+]
+File: figure/chapter3/nozzle-sub.jpg Graphic file (type bmp)
+<figure/chapter3/nozzle-sub.jpg>
+File: figure/chapter3/pulse-module.jpg Graphic file (type bmp)
+<figure/chapter3/pulse-module.jpg>
+ [55

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.7.19)  13 OCT 2026 17:35
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.7.19)  14 OCT 2026 16:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1083,7 +1083,11 @@ Package fontspec Info:
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
 (Font)              scaled to size 12.045pt on input line 196.
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 196.
- (./main.aux)
+ (./main.aux
+
+LaTeX Warning: Label `fig:field_result_in_upper_sub_radial_magnetization' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 196.
@@ -1235,14 +1239,14 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
+) [1
+
+
+])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [1
-
-
-]
+ [2]
 第一章
 (./chapters/chapter1/part4-scale-wax.tex
 File: figure/BaSr-sample.png Graphic file (type bmp)
@@ -1290,43 +1294,141 @@ File: figure/chapter1/Wax-mean-velocity-Vin-dot59mpersec-theta-90.png Graphic fi
 
 ]
 第三章
-(./chapters/bib.tex [10
+(./chapters/chapter3/part3-magntictool.tex
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
+(Font)              scaled to size 10.53937pt on input line 15.
 
-] [11
+Overfull \hbox (3.6131pt too wide) in paragraph at lines 43--43
+[]|[]| 
+ []
 
 
-]) [12] (./chapters/appendix1.tex [13
+Underfull \hbox (badness 10000) in paragraph at lines 43--43
+[]|\TU/TeXGyreTermesX(0)/m/n/10.53937 9.5-
+ []
+
+[10
+
+]
+File: figure/chapter3/structure-dqc-mag-tool.png Graphic file (type bmp)
+<figure/chapter3/structure-dqc-mag-tool.png>
+ [11] [12] [13]
+Overfull \hbox (8.71545pt too wide) in paragraph at lines 148--149
+[]$\OML/cmm/m/it/12.045 D$\TU/TeXGyreTermesX(0)/m/n/12.045 —\TU/STSong(0)/m/n/12.045 危 险 截 面 外 径，|  按 图 纸 \TU/TeXGyreTermesX(0)/m/n/12.045 DQC700003A \TU/STSong(0)/m/n/12.045 心 轴 标 注 的 外 螺 纹 小 径  |（\TU/TeXGyreTermesX(0)/m/n/12.045 70.485$\OMS/cmsy/m/n/12.045 ^^X$\TU/TeXGyreTermesX(0)/m/n/12.045 70.643mm\TU/STSong(0)/m/n/12.045 ）|
+ []
+
+
+Overfull \hbox (1.81364pt too wide) in paragraph at lines 174--175
+[]$\OML/cmm/m/it/12.045 d$\TU/TeXGyreTermesX(0)/m/n/12.045 —\TU/STSong(0)/m/n/12.045 危 险 截 面 内 径，|  取 与 内 螺 纹 配 合 的 外 螺 纹 小 径 $\OML/cmm/m/it/12.045 d \OT1/cmr/m/n/12.045 = 70\OML/cmm/m/it/12.045 :\OT1/cmr/m/n/12.045 30 []$ |\TU/STSong(0)/m/n/12.045 （图 纸 \TU/TeXGyreTermesX(0)/m/n/12.045 DQC700003A\TU/STSong(0)/m/n/12.045 ，|
+ []
+
+[14]
+Overfull \hbox (8.71545pt too wide) in paragraph at lines 204--205
+[]$\OML/cmm/m/it/12.045 D$\TU/TeXGyreTermesX(0)/m/n/12.045 —\TU/STSong(0)/m/n/12.045 危 险 截 面 外 径，|  按 图 纸 \TU/TeXGyreTermesX(0)/m/n/12.045 DQC700003A \TU/STSong(0)/m/n/12.045 心 轴 标 注 的 外 螺 纹 小 径  |（\TU/TeXGyreTermesX(0)/m/n/12.045 70.485$\OMS/cmsy/m/n/12.045 ^^X$\TU/TeXGyreTermesX(0)/m/n/12.045 70.643mm\TU/STSong(0)/m/n/12.045 ）|
+ []
+
+[15]
+File: figure/chapter3/lowwer-sub-mag-tool.png Graphic file (type bmp)
+<figure/chapter3/lowwer-sub-mag-tool.png>
+File: figure/chapter3/torsion-stress-lowwer-sub-mag-tool.png Graphic file (type bmp)
+<figure/chapter3/torsion-stress-lowwer-sub-mag-tool.png>
+ [16] [17] [18]
+File: figure/chapter3/demagnetization-SmCo5.png Graphic file (type bmp)
+<figure/chapter3/demagnetization-SmCo5.png>
+File: figure/chapter3/demagnatization-N45UH.png Graphic file (type bmp)
+<figure/chapter3/demagnatization-N45UH.png>
+ [19]
+File: figure/chapter3/magnetic-distribution-on-tool.png Graphic file (type bmp)
+<figure/chapter3/magnetic-distribution-on-tool.png>
+File: figure/chapter3/structure-upper-magnetic-sub.png Graphic file (type bmp)
+<figure/chapter3/structure-upper-magnetic-sub.png>
+File: figure/chapter3/structure-lowwer-magnetic-sub.png Graphic file (type bmp)
+<figure/chapter3/structure-lowwer-magnetic-sub.png>
+ [20] [21]
+File: figure/chapter3/magnet-configuration-upper-sub.png Graphic file (type bmp)
+<figure/chapter3/magnet-configuration-upper-sub.png>
+ [22]
+File: figure/chapter3/radial-magnetization-in-upper-sub.png Graphic file (type bmp)
+<figure/chapter3/radial-magnetization-in-upper-sub.png>
+File: figure/chapter3/circumferencial-magnetization-in-upper-sub.png Graphic file (type bmp)
+<figure/chapter3/circumferencial-magnetization-in-upper-sub.png>
+File: figure/chapter3/boundary-condition-upper-sub.png Graphic file (type bmp)
+<figure/chapter3/boundary-condition-upper-sub.png>
+File: figure/chapter3/mesh-upper-sub.png Graphic file (type bmp)
+<figure/chapter3/mesh-upper-sub.png>
+File: figure/chapter3/magnetic-vector-distribution-upper-sub.png Graphic file (type bmp)
+<figure/chapter3/magnetic-vector-distribution-upper-sub.png>
+File: figure/chapter3/contour-magnetic-field-upper-sub.png Graphic file (type bmp)
+<figure/chapter3/contour-magnetic-field-upper-sub.png>
+ [23]
+File: figure/chapter3/magnetic-vector-distribution-upper-sub-circum-magnatization.png Graphic file (type bmp)
+<figure/chapter3/magnetic-vector-distribution-upper-sub-circum-magnatization.png>
+File: figure/chapter3/contour-magnetic-field-upper-sub-circum-magnatization.png Graphic file (type bmp)
+<figure/chapter3/contour-magnetic-field-upper-sub-circum-magnatization.png>
+ [24]
+File: figure/chapter3/magnet-configuration-lowwer-sub.png Graphic file (type bmp)
+<figure/chapter3/magnet-configuration-lowwer-sub.png>
+File: figure/chapter3/lowwer-sub-magnetization-radial.png Graphic file (type bmp)
+<figure/chapter3/lowwer-sub-magnetization-radial.png>
+File: figure/chapter3/lowwer-sub-cross-magnetization.png Graphic file (type bmp)
+<figure/chapter3/lowwer-sub-cross-magnetization.png>
+File: figure/chapter3/lowwer-sub-circumferential-magnetization.png Graphic file (type bmp)
+<figure/chapter3/lowwer-sub-circumferential-magnetization.png>
+File: figure/chapter3/boundary-condition-lowwer-sub.png Graphic file (type bmp)
+<figure/chapter3/boundary-condition-lowwer-sub.png>
+File: figure/chapter3/mesh-upper-sub.png Graphic file (type bmp)
+<figure/chapter3/mesh-upper-sub.png>
+File: figure/chapter3/magnetic-vector-distribution-lowwer-sub-radial.png Graphic file (type bmp)
+<figure/chapter3/magnetic-vector-distribution-lowwer-sub-radial.png>
+File: figure/chapter3/contour-magnetic-field-lowwer-sub-radial.png Graphic file (type bmp)
+<figure/chapter3/contour-magnetic-field-lowwer-sub-radial.png>
+File: figure/chapter3/magnetic-vector-distribution-lowwer-sub-cross.png Graphic file (type bmp)
+<figure/chapter3/magnetic-vector-distribution-lowwer-sub-cross.png>
+File: figure/chapter3/contour-magnetic-field-lowwer-sub-cross.png Graphic file (type bmp)
+<figure/chapter3/contour-magnetic-field-lowwer-sub-cross.png>
+File: figure/chapter3/magnetic-vector-distribution-lowwer-sub-circumferential.png Graphic file (type bmp)
+<figure/chapter3/magnetic-vector-distribution-lowwer-sub-circumferential.png>
+File: figure/chapter3/contour-magnetic-field-lowwer-sub-circumferential.png Graphic file (type bmp)
+<figure/chapter3/contour-magnetic-field-lowwer-sub-circumferential.png>
+ [25] [26] [27] [28]
+File: figure/chapter3/mag-field-distribution-4145-steel-frame.png Graphic file (type bmp)
+<figure/chapter3/mag-field-distribution-4145-steel-frame.png>
+File: figure/chapter3/mag-field-distribution-aliminium-frame.png Graphic file (type bmp)
+<figure/chapter3/mag-field-distribution-aliminium-frame.png>
+ [29] [30] [31] [32]) (./chapters/chapter3/part3-magnetictool-magnet-performance.tex
+File: figure/chapter3/scraper-test-rig.png Graphic file (type bmp)
+<figure/chapter3/scraper-test-rig.png>
+File: figure/chapter3/scapter-measurement-mechanism.png Graphic file (type bmp)
+<figure/chapter3/scapter-measurement-mechanism.png>
+) (./chapters/bib.tex [33] [34] [35
+
+
+]) [36] (./chapters/appendix1.tex [37
 
 ]
 
-LaTeX Warning: Reference `keliyunyi' on page 14 undefined on input line 52.
+LaTeX Warning: Reference `keliyunyi' on page 38 undefined on input line 52.
 
 
-LaTeX Warning: Reference `citimoni' on page 14 undefined on input line 53.
+LaTeX Warning: Reference `shuilimaichong' on page 38 undefined on input line 54.
 
 
-LaTeX Warning: Reference `shuilimaichong' on page 14 undefined on input line 54.
+LaTeX Warning: Reference `siheyi' on page 38 undefined on input line 61.
 
 
-LaTeX Warning: Reference `siheyi' on page 14 undefined on input line 61.
+LaTeX Warning: Reference `duogongnengguolv' on page 38 undefined on input line 63.
 
 
-LaTeX Warning: Reference `darongliangqiangci' on page 14 undefined on input line 62.
+LaTeX Warning: Reference `kebianjingguaguan' on page 38 undefined on input line 64.
 
 
-LaTeX Warning: Reference `duogongnengguolv' on page 14 undefined on input line 63.
+LaTeX Warning: Reference `sanheyi' on page 38 undefined on input line 65.
 
+[38]
 
-LaTeX Warning: Reference `kebianjingguaguan' on page 14 undefined on input line 64.
+LaTeX Warning: Reference `guaban' on page 39 undefined on input line 76.
 
-
-LaTeX Warning: Reference `sanheyi' on page 14 undefined on input line 65.
-
-[14]
-
-LaTeX Warning: Reference `guaban' on page 15 undefined on input line 76.
-
-) [15] (./main.aux)
+) [39] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
@@ -1335,16 +1437,19 @@ L3 programming layer <2020/03/25>
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0A06C1861A6ACE2A3C91612ADEBA3B73;5309.
+(rerunfilecheck)             Checksum: 1D57FDF57DF4141D0201689336C29918;8506.
  ) 
 Here is how much of TeX's memory you used:
- 36240 strings out of 468174
- 824311 string characters out of 5433150
- 1193724 words of memory out of 5000000
- 64346 multiletter control sequences out of 15000+600000
- 641455 words of font info for 122 fonts, out of 8000000 for 9000
+ 36768 strings out of 468174
+ 852287 string characters out of 5433150
+ 1202785 words of memory out of 5000000
+ 64829 multiletter control sequences out of 15000+600000
+ 645514 words of font info for 140 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 93i,13n,117p,1215b,1170s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,16n,117p,1215b,1151s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (17 pages).
+Output written on main.pdf (42 pages).

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.7.19)  14 OCT 2026 16:01
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.7.19)  15 OCT 2026 16:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1229,14 +1229,14 @@ LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
 (Font)              scaled to size 12.045pt on input line 1.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 2.
+(Font)              scaled to size 8.0pt on input line 4.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 2.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
+(Font)              scaled to size 6.0pt on input line 4.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
@@ -1248,52 +1248,19 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
  [2]
 第一章
-(./chapters/chapter1/part4-scale-wax.tex
-File: figure/BaSr-sample.png Graphic file (type bmp)
-<figure/BaSr-sample.png>
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 16.
-File: figure/BaSr-SEM.png Graphic file (type bmp)
-<figure/BaSr-SEM.png>
-File: figure/BaSr-model.png Graphic file (type bmp)
-<figure/BaSr-model.png>
-File: figure/BaSr-distribution-Vin.jpg Graphic file (type bmp)
-<figure/BaSr-distribution-Vin.jpg>
- [1
+[1
 
 
 ]
-File: figure/chapter1/BaSr-mean-velocity-evolution-vin-dot37.png Graphic file (type bmp)
-<figure/chapter1/BaSr-mean-velocity-evolution-vin-dot37.png>
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 74.
-File: figure/chapter1/BaSr-mean-velocity-evolution-vin-dot59.png Graphic file (type bmp)
-<figure/chapter1/BaSr-mean-velocity-evolution-vin-dot59.png>
- [2]
-File: figure/BaSr-distribution-3angles.jpg Graphic file (type bmp)
-<figure/BaSr-distribution-3angles.jpg>
- [3]
-File: figure/chapter1/BaSr-mean-velocity-evolution-big-size.png Graphic file (type bmp)
-<figure/chapter1/BaSr-mean-velocity-evolution-big-size.png>
-File: figure/chapter1/BaSr-mean-velocity-evolution-small-size.png Graphic file (type bmp)
-<figure/chapter1/BaSr-mean-velocity-evolution-small-size.png>
-File: figure/chapter1/Wax-mean-velocity-Vin-dot37mpersec.png Graphic file (type bmp)
-<figure/chapter1/Wax-mean-velocity-Vin-dot37mpersec.png>
-File: figure/chapter1/Wax-mean-velocity-Vin-dot59mpersec.png Graphic file (type bmp)
-<figure/chapter1/Wax-mean-velocity-Vin-dot59mpersec.png>
- [4] [5]
-File: figure/wax-distribution-3angles.png Graphic file (type bmp)
-<figure/wax-distribution-3angles.png>
-File: figure/chapter1/Wax-mean-velocity-Vin-dot59mpersec-theta-0.png Graphic file (type bmp)
-<figure/chapter1/Wax-mean-velocity-Vin-dot59mpersec-theta-0.png>
-File: figure/chapter1/Wax-mean-velocity-Vin-dot59mpersec-theta-90.png Graphic file (type bmp)
-<figure/chapter1/Wax-mean-velocity-Vin-dot59mpersec-theta-90.png>
- [6] [7]) [8]
 第二章
-[9
+[2
 
 ]
 第三章
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
+(Font)              scaled to size 9.03374pt on input line 240.
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
+(Font)              scaled to size 5.0pt on input line 240.
 (./chapters/chapter3/part3-magntictool.tex
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
 (Font)              scaled to size 10.53937pt on input line 15.
@@ -1307,12 +1274,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--43
 []|\TU/TeXGyreTermesX(0)/m/n/10.53937 9.5-
  []
 
-[10
+[3
 
 ]
 File: figure/chapter3/structure-dqc-mag-tool.png Graphic file (type bmp)
 <figure/chapter3/structure-dqc-mag-tool.png>
- [11] [12] [13]
+ [4] [5] [6]
 Overfull \hbox (8.71545pt too wide) in paragraph at lines 148--149
 []$\OML/cmm/m/it/12.045 D$\TU/TeXGyreTermesX(0)/m/n/12.045 —\TU/STSong(0)/m/n/12.045 危 险 截 面 外 径，|  按 图 纸 \TU/TeXGyreTermesX(0)/m/n/12.045 DQC700003A \TU/STSong(0)/m/n/12.045 心 轴 标 注 的 外 螺 纹 小 径  |（\TU/TeXGyreTermesX(0)/m/n/12.045 70.485$\OMS/cmsy/m/n/12.045 ^^X$\TU/TeXGyreTermesX(0)/m/n/12.045 70.643mm\TU/STSong(0)/m/n/12.045 ）|
  []
@@ -1322,32 +1289,35 @@ Overfull \hbox (1.81364pt too wide) in paragraph at lines 174--175
 []$\OML/cmm/m/it/12.045 d$\TU/TeXGyreTermesX(0)/m/n/12.045 —\TU/STSong(0)/m/n/12.045 危 险 截 面 内 径，|  取 与 内 螺 纹 配 合 的 外 螺 纹 小 径 $\OML/cmm/m/it/12.045 d \OT1/cmr/m/n/12.045 = 70\OML/cmm/m/it/12.045 :\OT1/cmr/m/n/12.045 30 []$ |\TU/STSong(0)/m/n/12.045 （图 纸 \TU/TeXGyreTermesX(0)/m/n/12.045 DQC700003A\TU/STSong(0)/m/n/12.045 ，|
  []
 
-[14]
+[7]
 Overfull \hbox (8.71545pt too wide) in paragraph at lines 204--205
 []$\OML/cmm/m/it/12.045 D$\TU/TeXGyreTermesX(0)/m/n/12.045 —\TU/STSong(0)/m/n/12.045 危 险 截 面 外 径，|  按 图 纸 \TU/TeXGyreTermesX(0)/m/n/12.045 DQC700003A \TU/STSong(0)/m/n/12.045 心 轴 标 注 的 外 螺 纹 小 径  |（\TU/TeXGyreTermesX(0)/m/n/12.045 70.485$\OMS/cmsy/m/n/12.045 ^^X$\TU/TeXGyreTermesX(0)/m/n/12.045 70.643mm\TU/STSong(0)/m/n/12.045 ）|
  []
 
-[15]
+[8]
 File: figure/chapter3/lowwer-sub-mag-tool.png Graphic file (type bmp)
 <figure/chapter3/lowwer-sub-mag-tool.png>
 File: figure/chapter3/torsion-stress-lowwer-sub-mag-tool.png Graphic file (type bmp)
 <figure/chapter3/torsion-stress-lowwer-sub-mag-tool.png>
- [16] [17] [18]
+ [9]
+File: figure/chapter3/magnetic-adsorption-capacity.jpg Graphic file (type bmp)
+<figure/chapter3/magnetic-adsorption-capacity.jpg>
+ [10] [11] [12]
 File: figure/chapter3/demagnetization-SmCo5.png Graphic file (type bmp)
 <figure/chapter3/demagnetization-SmCo5.png>
 File: figure/chapter3/demagnatization-N45UH.png Graphic file (type bmp)
 <figure/chapter3/demagnatization-N45UH.png>
- [19]
+ [13]
 File: figure/chapter3/magnetic-distribution-on-tool.png Graphic file (type bmp)
 <figure/chapter3/magnetic-distribution-on-tool.png>
 File: figure/chapter3/structure-upper-magnetic-sub.png Graphic file (type bmp)
 <figure/chapter3/structure-upper-magnetic-sub.png>
 File: figure/chapter3/structure-lowwer-magnetic-sub.png Graphic file (type bmp)
 <figure/chapter3/structure-lowwer-magnetic-sub.png>
- [20] [21]
+ [14]
 File: figure/chapter3/magnet-configuration-upper-sub.png Graphic file (type bmp)
 <figure/chapter3/magnet-configuration-upper-sub.png>
- [22]
+ [15]
 File: figure/chapter3/radial-magnetization-in-upper-sub.png Graphic file (type bmp)
 <figure/chapter3/radial-magnetization-in-upper-sub.png>
 File: figure/chapter3/circumferencial-magnetization-in-upper-sub.png Graphic file (type bmp)
@@ -1356,16 +1326,16 @@ File: figure/chapter3/boundary-condition-upper-sub.png Graphic file (type bmp)
 <figure/chapter3/boundary-condition-upper-sub.png>
 File: figure/chapter3/mesh-upper-sub.png Graphic file (type bmp)
 <figure/chapter3/mesh-upper-sub.png>
+ [16]
 File: figure/chapter3/magnetic-vector-distribution-upper-sub.png Graphic file (type bmp)
 <figure/chapter3/magnetic-vector-distribution-upper-sub.png>
 File: figure/chapter3/contour-magnetic-field-upper-sub.png Graphic file (type bmp)
 <figure/chapter3/contour-magnetic-field-upper-sub.png>
- [23]
 File: figure/chapter3/magnetic-vector-distribution-upper-sub-circum-magnatization.png Graphic file (type bmp)
 <figure/chapter3/magnetic-vector-distribution-upper-sub-circum-magnatization.png>
 File: figure/chapter3/contour-magnetic-field-upper-sub-circum-magnatization.png Graphic file (type bmp)
 <figure/chapter3/contour-magnetic-field-upper-sub-circum-magnatization.png>
- [24]
+ [17]
 File: figure/chapter3/magnet-configuration-lowwer-sub.png Graphic file (type bmp)
 <figure/chapter3/magnet-configuration-lowwer-sub.png>
 File: figure/chapter3/lowwer-sub-magnetization-radial.png Graphic file (type bmp)
@@ -1390,45 +1360,45 @@ File: figure/chapter3/magnetic-vector-distribution-lowwer-sub-circumferential.pn
 <figure/chapter3/magnetic-vector-distribution-lowwer-sub-circumferential.png>
 File: figure/chapter3/contour-magnetic-field-lowwer-sub-circumferential.png Graphic file (type bmp)
 <figure/chapter3/contour-magnetic-field-lowwer-sub-circumferential.png>
- [25] [26] [27] [28]
+ [18] [19] [20] [21]
 File: figure/chapter3/mag-field-distribution-4145-steel-frame.png Graphic file (type bmp)
 <figure/chapter3/mag-field-distribution-4145-steel-frame.png>
 File: figure/chapter3/mag-field-distribution-aliminium-frame.png Graphic file (type bmp)
 <figure/chapter3/mag-field-distribution-aliminium-frame.png>
- [29] [30] [31] [32]) (./chapters/chapter3/part3-magnetictool-magnet-performance.tex
-File: figure/chapter3/scraper-test-rig.png Graphic file (type bmp)
-<figure/chapter3/scraper-test-rig.png>
-File: figure/chapter3/scapter-measurement-mechanism.png Graphic file (type bmp)
-<figure/chapter3/scapter-measurement-mechanism.png>
-) (./chapters/bib.tex [33] [34] [35
+ [22] [23] [24] [25]) (./chapters/chapter3/part3-magnetictool-magnet-performance.tex [26]
+File: figure/chapter3/magnet-test-rig-labeled.png Graphic file (type bmp)
+<figure/chapter3/magnet-test-rig-labeled.png>
+File: figure/chapter3/magnet-test-rig-photo.png Graphic file (type bmp)
+<figure/chapter3/magnet-test-rig-photo.png>
+ [27] [28]) (./chapters/bib.tex [29] [30
 
 
-]) [36] (./chapters/appendix1.tex [37
+]) [31] (./chapters/appendix1.tex [32
 
 ]
 
-LaTeX Warning: Reference `keliyunyi' on page 38 undefined on input line 52.
+LaTeX Warning: Reference `keliyunyi' on page 33 undefined on input line 52.
 
 
-LaTeX Warning: Reference `shuilimaichong' on page 38 undefined on input line 54.
+LaTeX Warning: Reference `shuilimaichong' on page 33 undefined on input line 54.
 
 
-LaTeX Warning: Reference `siheyi' on page 38 undefined on input line 61.
+LaTeX Warning: Reference `siheyi' on page 33 undefined on input line 61.
 
 
-LaTeX Warning: Reference `duogongnengguolv' on page 38 undefined on input line 63.
+LaTeX Warning: Reference `duogongnengguolv' on page 33 undefined on input line 63.
 
 
-LaTeX Warning: Reference `kebianjingguaguan' on page 38 undefined on input line 64.
+LaTeX Warning: Reference `kebianjingguaguan' on page 33 undefined on input line 64.
 
 
-LaTeX Warning: Reference `sanheyi' on page 38 undefined on input line 65.
+LaTeX Warning: Reference `sanheyi' on page 33 undefined on input line 65.
 
-[38]
+[33]
 
-LaTeX Warning: Reference `guaban' on page 39 undefined on input line 76.
+LaTeX Warning: Reference `guaban' on page 34 undefined on input line 76.
 
-) [39] (./main.aux)
+) [34] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
@@ -1441,15 +1411,15 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 1D57FDF57DF4141D0201689336C29918;8506.
+(rerunfilecheck)             Checksum: CAFAE2443E0093434A69E8E1109DC60E;7365.
  ) 
 Here is how much of TeX's memory you used:
- 36768 strings out of 468174
- 852287 string characters out of 5433150
- 1202785 words of memory out of 5000000
- 64829 multiletter control sequences out of 15000+600000
+ 36616 strings out of 468174
+ 845217 string characters out of 5433150
+ 1201008 words of memory out of 5000000
+ 64696 multiletter control sequences out of 15000+600000
  645514 words of font info for 140 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  93i,16n,117p,1215b,1151s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (42 pages).
+Output written on main.pdf (37 pages).

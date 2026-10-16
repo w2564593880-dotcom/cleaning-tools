@@ -1,0 +1,13 @@
+\documentclass[UTF8,fontset=none,12pt,a4paper,openany]{ctexrep}
+\usepackage{fontspec}
+\IfFontExistsTF{Times New Roman}{\setmainfont{Times New Roman}}{\setmainfont{TeX Gyre Termes}}
+\IfFontExistsTF{SimSun}{\setCJKmainfont[AutoFakeBold=2]{SimSun}}{\setCJKmainfont[AutoFakeBold=2]{FandolSong-Regular}}
+\IfFontExistsTF{SimHei}{\setCJKsansfont{SimHei}}{\setCJKsansfont{FandolHei-Regular}}
+\input{chapters/research4-6/fonts.tex}
+\input{chapters/research4-6/preamble.tex}
+\usepackage[hidelinks]{hyperref}
+\setcounter{secnumdepth}{2}
+\begin{document}
+\setcounter{chapter}{3}
+\input{chapters/research4-6/entry.tex}
+\end{document}

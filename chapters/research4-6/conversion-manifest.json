@@ -1,0 +1,702 @@
+{
+  "source_filename": "项目成果总结报告_研究内容4至6.docx",
+  "source_sha256": "5315993ab193249290b0f8b2b5c143b858f52e785bdf51ae44ff1ac07d835f79",
+  "base_commit": "ab11767c341add0e154131f2ff00a9f8c017ecf6",
+  "figures": [
+    {
+      "number": "4-1",
+      "caption": "套磨铣实验系统及工具工件装夹",
+      "images": [
+        {
+          "file": "figure/research4-6/fig4-01-1.jpg",
+          "width_mm": 146.5,
+          "pixels": [
+            1387,
+            658
+          ],
+          "crop": {
+            "l": 0,
+            "t": 0,
+            "r": 0,
+            "b": 0
+          },
+          "source_media": "media/image1.jpeg"
+        }
+      ]
+    },
+    {
+      "number": "4-2",
+      "caption": "四组工具与材料条件下的五变量相关性矩阵",
+      "images": [
+        {
+          "file": "figure/research4-6/fig4-02-1.png",
+          "width_mm": 146.5,
+          "pixels": [
+            3460,
+            3732
+          ],
+          "crop": {
+            "l": 0,
+            "t": 0,
+            "r": 0,
+            "b": 0
+          },
+          "source_media": "media/image2.png"
+        }
+      ]
+    },
+    {
+      "number": "4-3",
+      "caption": "四组实验中钻速随钻压的变化",
+      "images": [
+        {
+          "file": "figure/research4-6/fig4-03-1.png",
+          "width_mm": 146.5,
+          "pixels": [
+            3460,
+            2480
+          ],
+          "crop": {
+            "l": 0,
+            "t": 0,
+            "r": 0,
+            "b": 0
+          },
+          "source_media": "media/image3.png"
+        }
+      ]
+    },
+    {
+      "number": "4-4",
+      "caption": "不同钻压区间内转速与三项性能的相关性",
+      "images": [
+        {
+          "file": "figure/research4-6/fig4-04-1.png",
+          "width_mm": 146.5,
+          "pixels": [
+            4291,
+            1955
+          ],
+          "crop": {
+            "l": 0,
+            "t": 0,
+            "r": 0,
+            "b": 0
+          },
+          "source_media": "media/image4.png"
+        }
+      ]
+    },
+    {
+      "number": "4-5",
+      "caption": "井筒工具应用数据集现场查询界面",
+      "images": [
+        {
+          "file": "figure/research4-6/fig4-05-1.png",
+          "width_mm": 120.0,
+          "pixels": [
+            1977,
+            1112
+          ],
+          "crop": {
+            "l": 0,
+            "t": 0,
+            "r": 0,
+            "b": 0
+          },
+          "source_media": "media/image5.png"
+        }
+      ]
+    },
+    {
+      "number": "4-6",
+      "caption": "井筒工具应用数据集室内实验查询界面",
+      "images": [
+        {
+          "file": "figure/research4-6/fig4-06-1.png",
+          "width_mm": 120.0,
+          "pixels": [
+            1977,
+            1112
+          ],
+          "crop": {
+            "l": 0,
+            "t": 0,
+            "r": 0,
+            "b": 0
+          },
+          "source_media": "media/image6.png"
+        }
+      ]
+    },
+    {
+      "number": "5-1",
+      "caption": "刮板除垢评价装置及装夹方式",
+      "images": [
+        {
+          "file": "figure/research4-6/fig5-01-1.png",
+          "width_mm": 123.0,
+          "pixels": [
+            739,
+            552
+          ],
+          "crop": {
+            "l": 0,
+            "t": 0,
+            "r": 0,
+            "b": 0
+          },
+          "source_media": "media/image7.png"
+        }
+      ]
+    },
+    {
+      "number": "5-2",
+      "caption": "弹簧压缩量与刮削厚度的测量原理",
+      "images": [
+        {
+          "file": "figure/research4-6/fig5-02-1.png",
+          "width_mm": 146.5,
+          "pixels": [
+            2986,
+            654
+          ],
+          "crop": {
+            "l": 0,
+            "t": 0,
+            "r": 0,
+            "b": 0
+          },
+          "source_media": "media/image8.png"
+        }
+      ]
+    },
+    {
+      "number": "5-3",
+      "caption": "菱形刮板单次刮削厚度与弹簧压缩估计值",
+      "images": [
+        {
+          "file": "figure/research4-6/fig5-03-1.png",
+          "width_mm": 142.0,
+          "pixels": [
+            1771,
+            1356
+          ],
+          "crop": {
+            "l": 0,
+            "t": 0,
+            "r": 0,
+            "b": 0
+          },
+          "source_media": "media/image9.png"
+        }
+      ]
+    },
+    {
+      "number": "5-4",
+      "caption": "斜齿形刮板单次刮削厚度与弹簧压缩量",
+      "images": [
+        {
+          "file": "figure/research4-6/fig5-04-1.jpg",
+          "width_mm": 142.0,
+          "pixels": [
+            1673,
+            1280
+          ],
+          "crop": {
+            "l": 0,
+            "t": 0,
+            "r": 0,
+            "b": 0
+          },
+          "source_media": "media/image10.jpeg"
+        }
+      ]
+    },
+    {
+      "number": "5-5",
+      "caption": "刮削后刀齿表面形貌及容屑情况",
+      "images": [
+        {
+          "file": "figure/research4-6/fig5-05-1.png",
+          "width_mm": 142.0,
+          "pixels": [
+            475,
+            450
+          ],
+          "crop": {
+            "l": 0,
+            "t": 0,
+            "r": 0,
+            "b": 0
+          },
+          "source_media": "media/image11.png"
+        }
+      ]
+    },
+    {
+      "number": "5-6",
+      "caption": "硬垢与蜡垢刷洗后的垢面及刷体形貌",
+      "images": [
+        {
+          "file": "figure/research4-6/fig5-06-1.jpg",
+          "width_mm": 70.0,
+          "pixels": [
+            3072,
+            1422
+          ],
+          "crop": {
+            "l": 0,
+            "t": 0,
+            "r": 0,
+            "b": 0
+          },
+          "source_media": "media/image12.jpeg"
+        },
+        {
+          "file": "figure/research4-6/fig5-06-2.jpg",
+          "width_mm": 70.0,
+          "pixels": [
+            3072,
+            1422
+          ],
+          "crop": {
+            "l": 0,
+            "t": 0,
+            "r": 0,
+            "b": 0
+          },
+          "source_media": "media/image13.jpeg"
+        }
+      ]
+    },
+    {
+      "number": "5-7",
+      "caption": "磁铁吸附力测试装置原理与实物",
+      "images": [
+        {
+          "file": "figure/research4-6/fig5-07-1.png",
+          "width_mm": 146.5,
+          "pixels": [
+            3000,
+            700
+          ],
+          "crop": {
+            "l": 0,
+            "t": 0,
+            "r": 0,
+            "b": 0
+          },
+          "source_media": "media/image14.png"
+        }
+      ]
+    },
+    {
+      "number": "5-8",
+      "caption": "室内实验数据建模与作业参数优化流程",
+      "images": [
+        {
+          "file": "figure/research4-6/fig5-08-1.png",
+          "width_mm": 146.5,
+          "pixels": [
+            2167,
+            726
+          ],
+          "crop": {
+            "l": 0,
+            "t": 0,
+            "r": 0,
+            "b": 0
+          },
+          "source_media": "media/image15.png"
+        }
+      ]
+    },
+    {
+      "number": "5-9",
+      "caption": "四组工具钻速预测值与实验值对比",
+      "images": [
+        {
+          "file": "figure/research4-6/fig5-09-1.png",
+          "width_mm": 136.0,
+          "pixels": [
+            4000,
+            3172
+          ],
+          "crop": {
+            "l": 0,
+            "t": 0,
+            "r": 0,
+            "b": 0
+          },
+          "source_media": "media/image16.png"
+        }
+      ]
+    },
+    {
+      "number": "5-10",
+      "caption": "四组工具扭矩预测值与实验值对比",
+      "images": [
+        {
+          "file": "figure/research4-6/fig5-10-1.png",
+          "width_mm": 136.0,
+          "pixels": [
+            4000,
+            3172
+          ],
+          "crop": {
+            "l": 0,
+            "t": 0,
+            "r": 0,
+            "b": 0
+          },
+          "source_media": "media/image17.png"
+        }
+      ]
+    },
+    {
+      "number": "5-11",
+      "caption": "四组工具磨损量预测值与实验值对比",
+      "images": [
+        {
+          "file": "figure/research4-6/fig5-11-1.png",
+          "width_mm": 136.0,
+          "pixels": [
+            4000,
+            3172
+          ],
+          "crop": {
+            "l": 0,
+            "t": 0,
+            "r": 0,
+            "b": 0
+          },
+          "source_media": "media/image18.png"
+        }
+      ]
+    },
+    {
+      "number": "5-12",
+      "caption": "平底式磨铣加工45号钢的性能权衡及推荐区域",
+      "images": [
+        {
+          "file": "figure/research4-6/fig5-12-1.png",
+          "width_mm": 146.5,
+          "pixels": [
+            2485,
+            1852
+          ],
+          "crop": {
+            "l": 0,
+            "t": 7800,
+            "r": 0,
+            "b": 0
+          },
+          "source_media": "media/image19.png"
+        }
+      ]
+    },
+    {
+      "number": "5-13",
+      "caption": "刀翼式磨铣加工45号钢的性能权衡及推荐区域",
+      "images": [
+        {
+          "file": "figure/research4-6/fig5-13-1.png",
+          "width_mm": 146.5,
+          "pixels": [
+            2443,
+            1852
+          ],
+          "crop": {
+            "l": 0,
+            "t": 7800,
+            "r": 0,
+            "b": 0
+          },
+          "source_media": "media/image20.png"
+        }
+      ]
+    },
+    {
+      "number": "5-14",
+      "caption": "套铣加工45号钢的性能权衡及推荐区域",
+      "images": [
+        {
+          "file": "figure/research4-6/fig5-14-1.png",
+          "width_mm": 146.5,
+          "pixels": [
+            2443,
+            1852
+          ],
+          "crop": {
+            "l": 0,
+            "t": 7800,
+            "r": 0,
+            "b": 0
+          },
+          "source_media": "media/image21.png"
+        }
+      ]
+    },
+    {
+      "number": "5-15",
+      "caption": "套铣加工铸铁的性能权衡及推荐区域",
+      "images": [
+        {
+          "file": "figure/research4-6/fig5-15-1.png",
+          "width_mm": 146.5,
+          "pixels": [
+            1055,
+            794
+          ],
+          "crop": {
+            "l": 0,
+            "t": 0,
+            "r": 0,
+            "b": 0
+          },
+          "source_media": "media/image22.png"
+        }
+      ]
+    },
+    {
+      "number": "5-16",
+      "caption": "套铣加工45号钢的相关性分析界面",
+      "images": [
+        {
+          "file": "figure/research4-6/fig5-16-1.png",
+          "width_mm": 132.0,
+          "pixels": [
+            871,
+            646
+          ],
+          "crop": {
+            "l": 0,
+            "t": 0,
+            "r": 0,
+            "b": 0
+          },
+          "source_media": "media/image23.png"
+        }
+      ]
+    },
+    {
+      "number": "6-1",
+      "caption": "井筒清洁工具评价实验装置实物",
+      "images": [
+        {
+          "file": "figure/research4-6/fig6-01-1.jpg",
+          "width_mm": 146.5,
+          "pixels": [
+            1290,
+            725
+          ],
+          "crop": {
+            "l": 0,
+            "t": 0,
+            "r": 0,
+            "b": 0
+          },
+          "source_media": "media/image24.jpeg"
+        }
+      ]
+    },
+    {
+      "number": "6-2",
+      "caption": "评价实验装置数字孪生模型",
+      "images": [
+        {
+          "file": "figure/research4-6/fig6-02-1.png",
+          "width_mm": 146.5,
+          "pixels": [
+            2772,
+            1285
+          ],
+          "crop": {
+            "l": 0,
+            "t": 0,
+            "r": 0,
+            "b": 0
+          },
+          "source_media": "media/image25.png"
+        }
+      ]
+    },
+    {
+      "number": "6-3",
+      "caption": "现场联调中的评价装置控制界面",
+      "images": [
+        {
+          "file": "figure/research4-6/fig6-03-1.jpg",
+          "width_mm": 120.0,
+          "pixels": [
+            939,
+            705
+          ],
+          "crop": {
+            "l": 0,
+            "t": 0,
+            "r": 0,
+            "b": 0
+          },
+          "source_media": "media/image26.jpeg"
+        }
+      ]
+    },
+    {
+      "number": "6-4",
+      "caption": "现场联调中的数字孪生运行界面",
+      "images": [
+        {
+          "file": "figure/research4-6/fig6-04-1.jpg",
+          "width_mm": 120.0,
+          "pixels": [
+            949,
+            712
+          ],
+          "crop": {
+            "l": 0,
+            "t": 0,
+            "r": 0,
+            "b": 0
+          },
+          "source_media": "media/image27.jpeg"
+        }
+      ]
+    },
+    {
+      "number": "6-5",
+      "caption": "数字孪生系统联调及参数比对签章说明",
+      "images": [
+        {
+          "file": "figure/research4-6/fig6-05-1.png",
+          "width_mm": 126.107,
+          "pixels": [
+            1174,
+            1564
+          ],
+          "crop": {
+            "l": 0,
+            "t": 0,
+            "r": 0,
+            "b": 0
+          },
+          "source_media": "media/image28.png"
+        }
+      ]
+    },
+    {
+      "number": "6-6",
+      "caption": "盖章说明的参数比对及计算方法附页",
+      "images": [
+        {
+          "file": "figure/research4-6/fig6-06-1.png",
+          "width_mm": 117.0,
+          "pixels": [
+            1012,
+            1430
+          ],
+          "crop": {
+            "l": 0,
+            "t": 0,
+            "r": 0,
+            "b": 0
+          },
+          "source_media": "media/image29.png"
+        }
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "number": "4-1",
+      "caption": "工具应用数据集的主要内容",
+      "rows": 3,
+      "columns": 3
+    },
+    {
+      "number": "4-2",
+      "caption": "现场日报的分析数据量",
+      "rows": 5,
+      "columns": 5
+    },
+    {
+      "number": "4-3",
+      "caption": "典型套铣作业中钻压与地面扭矩的相关性",
+      "rows": 5,
+      "columns": 4
+    },
+    {
+      "number": "4-4",
+      "caption": "室内套磨铣实验的工具与材料",
+      "rows": 5,
+      "columns": 4
+    },
+    {
+      "number": "4-5",
+      "caption": "四组实验的实测性能范围",
+      "rows": 5,
+      "columns": 4
+    },
+    {
+      "number": "5-1",
+      "caption": "五类研发工具的实验评价重点",
+      "rows": 7,
+      "columns": 3
+    },
+    {
+      "number": "5-2",
+      "caption": "毛刷刷洗工况及测点位置变化",
+      "rows": 3,
+      "columns": 6
+    },
+    {
+      "number": "5-3",
+      "caption": "四合一强磁模块8次拉脱测量结果",
+      "rows": 10,
+      "columns": 3
+    },
+    {
+      "number": "5-4",
+      "caption": "四组性能预测模型及交叉验证RMSE",
+      "rows": 5,
+      "columns": 5
+    },
+    {
+      "number": "5-5",
+      "caption": "非支配组合数量及算例筛选条件",
+      "rows": 5,
+      "columns": 5
+    },
+    {
+      "number": "5-6",
+      "caption": "推荐组合的预测性能范围",
+      "rows": 5,
+      "columns": 4
+    },
+    {
+      "number": "5-7",
+      "caption": "各组推荐参数及其预测性能示例",
+      "rows": 5,
+      "columns": 6
+    },
+    {
+      "number": "5-8",
+      "caption": "平底式磨铣正向预测与反向推荐算例",
+      "rows": 3,
+      "columns": 3
+    },
+    {
+      "number": "6-1",
+      "caption": "数字孪生系统组成及作用",
+      "rows": 6,
+      "columns": 3
+    },
+    {
+      "number": "6-2",
+      "caption": "现场联调画面的对应参数",
+      "rows": 4,
+      "columns": 5
+    }
+  ]
+}

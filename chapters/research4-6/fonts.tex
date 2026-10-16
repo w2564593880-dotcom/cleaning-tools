@@ -1,0 +1,6 @@
+% Declare before newtxtext: it installs global fontspec file-name defaults.
+% Font selection remains local to entry.tex; other chapters keep their own fonts.
+\ifdefined\IfFontExistsTF
+  \IfFontExistsTF{Times New Roman}{\newfontfamily\rFortySixRoman[NFSSFamily=r46roman]{Times New Roman}}{}
+  \IfFontExistsTF{SimSun}{\setCJKfamilyfont{r46song}[AutoFakeBold=2]{SimSun}\newcommand{\rFortySixCJK}{\CJKfamily{r46song}}}{}
+\fi

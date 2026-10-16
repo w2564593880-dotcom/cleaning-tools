@@ -1,0 +1,32 @@
+% Shared dependencies and locally scoped Word-body formatting for chapters 4--6.
+\usepackage{graphicx,float,longtable,array}
+\usepackage{xcolor,colortbl}
+\usepackage{caption,setspace,fancyhdr,titlesec,geometry,indentfirst}
+\definecolor{r46gray}{HTML}{EAEAEA}
+\definecolor{r46border}{HTML}{D9D9D9}
+\DeclareCaptionFont{r46caption}{\fontsize{12}{18}\selectfont}
+\newcommand{\rFortySixFonts}{\ifdefined\defaultfontfeatures\defaultfontfeatures{}\fi\ifdefined\rFortySixRoman\rFortySixRoman\fi\ifdefined\rFortySixCJK\rFortySixCJK\fi}
+\makeatletter
+\newcommand{\rFortySixFormat}{%
+  \renewcommand{\normalsize}{\fontsize{12}{17}\selectfont}% setspace restores this size
+  \let\@currsize\normalsize%
+  \ifdefined\rFortySixRoman\renewcommand{\rmdefault}{r46roman}\fi%
+  \ifdefined\rFortySixCJK\renewcommand{\CJKrmdefault}{r46song}\renewcommand{\CJKfamilydefault}{r46song}\fi%
+  \rFortySixFonts\fontsize{12}{17}\selectfont\setstretch{1.5}%
+  \setlength{\parindent}{2em}\setlength{\parskip}{5pt}%
+  \renewcommand{\thefigure}{\thechapter-\arabic{figure}}%
+  \renewcommand{\thetable}{\thechapter-\arabic{table}}%
+  \captionsetup{font=r46caption,labelfont=normalfont,labelsep=quad,skip=6pt}%
+  \titleformat{\chapter}[block]{\normalfont\rFortySixFonts\bfseries\fontsize{15}{22.5}\selectfont}{第\thechapter 章}{0.5em}{}%
+  \titlespacing{\chapter}{0pt}{-22.25pt}{6pt}%
+  \titleformat{\section}[block]{\normalfont\rFortySixFonts\bfseries\fontsize{14}{21}\selectfont}{\thesection}{0.5em}{}%
+  \titlespacing{\section}{0pt}{10pt}{6pt}%
+  \titleformat{\subsection}[block]{\normalfont\rFortySixFonts\bfseries\fontsize{12}{18}\selectfont}{\thesubsection}{0.5em}{}%
+  \titlespacing{\subsection}{0pt}{10pt}{6pt}%
+  \fancyhf{}\fancyhead[L]{\includegraphics[width=19mm]{figure/research4-6/cosl-header.png}}%
+  \fancyfoot[C]{\fontsize{10}{12}\selectfont\thepage}%
+  \renewcommand{\headrule}{\hrule height0.8pt\vspace{1pt}\hrule height0.4pt}%
+  \fancypagestyle{plain}{\fancyhf{}\fancyhead[L]{\includegraphics[width=19mm]{figure/research4-6/cosl-header.png}}\fancyfoot[C]{\fontsize{10}{12}\selectfont\thepage}\renewcommand{\headrule}{\hrule height0.8pt\vspace{1pt}\hrule height0.4pt}}%
+  \pagestyle{fancy}%
+}
+\makeatother

@@ -383,7 +383,32 @@ $10^{-6}$---量纲换算系数，$\text{mm}^3$换算为L（$1\,\text{L} = 10^6\,
 	\end{aligned}
 \end{equation}
 
-考虑到强磁工具可组合使用，两根工具组合以后容量为 $56.52\,\text{L} > 50\,\text{L}$，满足吸附容量设计要求。对于9-5/8\inch 规格的工具，加工了吸附结构，如图\ref{fig:magnetic_adsorption_capacity}所示。经测试，单根工具的吸附容量为 $V_{\max} \approx 8\,\text{L}$，与按式（\ref{eq:mag_tool_adsorption_capacity}）计算的结果一致。
+考虑到强磁工具可组合使用，两根工具组合以后容量为 $56.52\,\text{L} > 50\,\text{L}$，满足吸附容量设计要求。
+
+对于9-5/8\inch 规格的工具，加工了吸附结构，如图\ref{fig:magnetic_adsorption_capacity}所示。9-5/8\inch 规格工具的侧吸容量按下述公式计算。
+
+9-5/8\inch 规格强磁架的吸附沟槽由中央隔台分开的两个磁铁槽组成，上部强磁架零件图纸（图纸DQC9625-01-2 上部强磁架）对沟槽的标注为：沟槽外缘总宽 $5\times 50$、单侧磁铁槽宽 $5\times 17.50$、磁铁槽深 $5\times 25$（单位均为mm）。则单条沟槽的吸附截面面积 $s'$ 为：
+\begin{equation}
+    s' = 2 \cdot b' \cdot h'_{s} = 2 \times 17.50 \times 25 = 875\,\text{mm}^2
+    \label{eq:mag_tool_side_section_9625}
+\end{equation}
+式中，$s'$---9-5/8\inch 规格单条沟槽的吸附截面面积，$\text{mm}^2$；即中央隔台两侧两个磁铁槽截面面积之和；
+
+$b'$---9-5/8\inch 规格单侧磁铁槽宽度，mm；按图纸标注取 $b' = 17.50\,\text{mm}$；
+
+$h'_{s}$---9-5/8\inch 规格磁铁槽深度，mm；按图纸标注取 $h'_{s} = 25\,\text{mm}$。
+
+9-5/8\inch 规格工具上端为2个结构相同的强磁架，单个强磁架沿轴向布置5条吸附沟槽；沟槽长度与7\inch 规格取同一量测基准（两规格强磁架的轴向长度均为530\,mm），取 $h' = 500\,\text{mm}$。则9-5/8\inch 规格工具的侧吸容量 $V'_{\text{侧}}$ 为：
+\begin{equation}
+	\begin{aligned}
+    V'_{\text{侧}} &= 2 \cdot 5 \cdot s' \cdot h' \times 10^{-6} \\
+                  &= 2 \times 5 \times 875 \times 500 \times 10^{-6} \\
+                  &= 4.38(\text{L})
+	\end{aligned}
+    \label{eq:mag_tool_side_capacity_9625}
+\end{equation}
+
+经测试，9-5/8\inch 规格单根工具的总吸附容量为 $V_{\max} = 8\,\text{L}$。
 
 \begin{figure}[H]
 	\centering

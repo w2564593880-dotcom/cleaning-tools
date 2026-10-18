@@ -6,7 +6,8 @@
 %\usepackage[UTF8, fontset=windows]{ctex} 
 
 % 2. 页面设置：A4幅面，常规边距
-\usepackage[a4paper, top=2.54cm, bottom=2.54cm, left=2.54cm, right=2.54cm, headheight=15pt]{geometry}
+% 全文版心统一：左右 2.54cm、上下 25.4mm，页眉区高度/间距/页脚距与 entry.tex 一致
+\usepackage[a4paper, top=25.4mm, bottom=25.4mm, left=2.54cm, right=2.54cm, headheight=22pt, headsep=5mm, footskip=8mm]{geometry}
 
 % 3. 页眉页脚与双线设置
 \usepackage{fancyhdr}
@@ -54,25 +55,27 @@
 
 
 % 3. 设置常规的 fancy 样式
+% 页眉页脚与第4~6章（chapters/research4-6/entry.tex）完全一致：
+%   左上角 COSL 标识 19mm + 细双线页眉（0.8pt / 0.4pt）+ 居中 10pt 页码
 \pagestyle{fancy}
 \fancyhf{} % 清除默认设置
-\fancyhead[C]{\leftmark} % 居中显示章标题
-\fancyfoot[C]{\thepage} % 居中显示页码
+\fancyhead[L]{\includegraphics[width=19mm]{figure/research4-6/cosl-header.png}}
+\fancyfoot[C]{\fontsize{10}{12}\selectfont\thepage}
 
-% 自定义双线页眉
+% 自定义细双线页眉（与第4~6章一致）
 \renewcommand{\headrule}{%
-	\vspace{-0.4pt}\hrule height 1.5pt width \headwidth 
-	\vspace{-1.2pt}\hrule height 0.5pt width \headwidth
+	\hrule height 0.8pt width \headwidth
+	\vspace{1pt}\hrule height 0.4pt width \headwidth
 }
 
 % 2. 关键步骤：重新定义 plain 样式，使其与 fancy 保持一致
 \fancypagestyle{plain}{%
 	\fancyhf{} % 清除 plain 样式的默认设置
-	\fancyhead[C]{\leftmark} % 让章标题页也显示居中的章标题
-	\fancyfoot[C]{\thepage} % 让章标题页也显示居中的页码
-	\renewcommand{\headrule}{% % 让章标题页也有双线页眉
-		\vspace{-0.4pt}\hrule height 1.5pt width \headwidth 
-		\vspace{-1.2pt}\hrule height 0.5pt width \headwidth
+	\fancyhead[L]{\includegraphics[width=19mm]{figure/research4-6/cosl-header.png}}
+	\fancyfoot[C]{\fontsize{10}{12}\selectfont\thepage}
+	\renewcommand{\headrule}{%
+		\hrule height 0.8pt width \headwidth
+		\vspace{1pt}\hrule height 0.4pt width \headwidth
 	}
 }
 
@@ -90,18 +93,20 @@
 \usepackage{titlesec}
 \usepackage{indentfirst} %强制所有章节后的首段自动首行缩进，完美解决问题
 
-% 章标题：四号字（\large），居中
+% 章标题：15pt 加粗，居中（字号取自 COSL 项目成果总结报告模板的一级标题）
+% 行距按 1.25 倍设定：15pt × 1.25 = 18.75pt
 \titleformat{\chapter}[block]
-  {\normalfont\large\centering}   % 四号字 + 粗体 + 居中
+  {\normalfont\centering\bfseries\fontsize{15}{18.75}\selectfont}
   {第\,\thechapter\,章}
   {20pt}
-  {\large}                                 % 标题文字也用四号
+  {}
 
 \titlespacing*{\chapter}{0pt}{-10pt}{10pt}
 
-% 节标题：小四号字（\normalsize），左对齐，标题后空0.5行
+% 节标题：14pt 加粗，左对齐（字号取自模板的二级标题）
+% 行距 14pt × 1.25 = 17.5pt
 \titleformat{\section}[block]
-  {\normalfont\normalsize\raggedright}  % 小四号 + 粗体 + 左对齐
+  {\normalfont\raggedright\bfseries\fontsize{14}{17.5}\selectfont}
   {\thesection}
   {1em}
   {}
@@ -110,17 +115,17 @@
 % 正文默认行距约为20pt（小四号固定行距），0.5行 ≈ 10pt
 \titlespacing*{\section}{0pt}{12pt}{10pt}
 
-% 小节标题：小四号字（\normalsize），左对齐
+% 小节标题（三级）：字号沿用原来的 12pt，加粗，行距 12pt × 1.25 = 15pt
 \titleformat{\subsection}[block]
-  {\normalfont\normalsize\raggedright}  % 小四号 + 粗体 + 左对齐
+  {\normalfont\raggedright\bfseries\fontsize{12}{15}\selectfont}
   {\thesubsection}
   {1em}
   {}
 \titlespacing*{\subsection}{0pt}{10pt}{4pt}
 
-% 用 titlesec 显式设置 paragraph 格式，去掉加粗
+% 四级标题（paragraph）：字号沿用原来的 12pt，不加粗，行距 1.25
 \titleformat{\paragraph}[block]
-  {\normalfont\normalsize}
+  {\normalfont\fontsize{12}{15}\selectfont}
   {\theparagraph}
   {1em}
   {}
@@ -144,7 +149,7 @@
 \usepackage{caption}       
 \captionsetup[subfloat]{skip=1pt}
 \usepackage{setspace}      
-\onehalfspacing 
+\setstretch{1.25}   % 行距：1.25 倍（原为 \onehalfspacing，约 1.5 倍）
 
 \usepackage{tikz}
 \usetikzlibrary{shapes.geometric, arrows.meta,calc} % 几何图形、箭头样式
@@ -187,17 +192,34 @@
 % 导言区：再挂一个钩子，防止 ctex 覆盖
 \AtBeginDocument{
   \titleformat{\paragraph}[block]
-    {\normalfont\normalsize}
+    {\normalfont\fontsize{12}{15}\selectfont}
     {\theparagraph}
     {1em}
     {}%
   \titlespacing*{\paragraph}{0pt}{1ex}{1ex}%
 }
 
+% === 图表注释（题注）统一格式 ===
+% 字号 12pt、行距 1.25（12pt × 1.25 = 15pt），与模板一致
+% 编号与注释文字之间用空格分隔（如 “图3-1 刮板刮削简化力学模型”），不用冒号
+\usepackage{pdfpages}   % 插入官方封面 PDF
+\DeclareCaptionFont{reportcaption}{\fontsize{12}{15}\selectfont}
+\captionsetup{font=reportcaption,labelfont=normalfont,labelsep=space,skip=6pt}
+% 图表编号统一为 “章-序号”：图3-1、表3-1（与模板表3-1、第4~6章一致）
+\renewcommand{\thefigure}{\thechapter-\arabic{figure}}
+\renewcommand{\thetable}{\thechapter-\arabic{table}}
+
 % Research contents 4--6: dependencies; original chapter switches are preserved.
 \input{chapters/research4-6/preamble.tex}
 
 \begin{document}
+
+% === 官方封面（附件7.7 项目成果总结报告 / 7.8 知识产权不侵权声明 / 7.9 签字页）===
+% 三页由 Word 原件转换得到，放在报告最前面，版式保持原件不变
+\includepdfset{pagecommand={\thispagestyle{empty}}}
+\includepdf[pages=1,fitpaper=true]{cover/cover-1.pdf}
+\includepdf[pages=1,fitpaper=true]{cover/cover-2.pdf}
+\includepdf[pages=1,fitpaper=true]{cover/cover-3.pdf}
 
 % === 封面部分 ===
 \begin{titlepage}
@@ -254,9 +276,9 @@
 	\input{chapters/chapter3/part3-magntictool.tex}
   \input{chapters/chapter3/part3-magnetictool-magnet-performance.tex}
 \section{多功能过滤工具设计}
-	%\input{chapters/chapter3/part4-filter.tex}
+	\input{chapters/chapter3/part4-filter.tex}
 \section[可变径刮管工具设计]{可变径刮管工具设计\protect\footnote{合同条款：5.1.3井筒高效清洁关键技术配套工具设计——（4）可变径刮管工具设计}}
-	%\input{chapters/chapter3/part5-variable-tool.tex}
+	\input{chapters/chapter3/part5-variable-tool.tex}
 	
 % Research contents 4--6, with locally scoped Word-body formatting.
 \input{chapters/research4-6/entry.tex}

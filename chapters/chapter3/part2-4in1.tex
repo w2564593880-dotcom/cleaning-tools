@@ -10,9 +10,7 @@
 
 该工具的作业机制上是通过机械切削、挤压破碎与辅助清扫的协同作用实现套管内壁硬垢的高效清除。工作时，工具在外部驱动力作用下沿套管轴向运动，心轴将动力传递至各功能模块。刮刀模块中，安装于刀架上的齿形刮刀在弹簧预紧力作用下始终保持与管壁的贴合状态；当刀齿尖端接触硬垢层时，产生较大的局部接触应力，对垢层进行压入与剪切，促使硬垢内部萌生裂纹并逐步扩展，最终导致垢层破碎与剥离。采用弹簧浮动加载结构后，刀片可根据垢层厚度与管壁形态变化自动调节伸缩量，在维持稳定切削压力的同时避免刚性冲击对刀具造成的损伤。在刮削作业完成后，后方毛刷模块对破碎后残留的细小颗粒进行清扫，进一步提升管壁清洁度；磁吸模块则对清理过程中产生的铁磁性碎屑进行有效吸附，防止其再次沉积。此外，工具心轴上设置有扭曲弹簧部件，当刮刀遇到顽固坚硬杂物时可被压缩储能，通过障碍后释放能量以起到缓冲保护作用。通过刮削、刷洗与磁吸的多级协同，该工具能够实现对套管内壁硬垢的高效、彻底清除。
 
-对应的工具规格分别为7\inch 、9-5/8\inch 和13-3/8\inch，共形成3种规格的工具设计图纸，主要技术参数见表\ref{tab:zkg_params}。
-
-
+对应的工具规格分别为7\inch 、9-5/8\inch 和13-3/8\inch，共形成3种规格的工具设计图纸，主要技术参数见表\ref{tab:zkg_params}，注：表中抗拉、抗扭数值为对应规格工具所用接头（NC38、NC50、6-5/8\,REG）的额定载荷。三种规格工具的强磁部件均选用烧结钐钴（SmCo5）永磁材料，磁性材料耐温不低于合同要求的$150\,^\circ\mathrm{C}$，选型依据与耐温验证方法见\ref{subsubsec:4in1_magnet_material}节。
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=1.\textwidth]{figure/chapter3/structure-4-in-1.png}
@@ -49,10 +47,6 @@
 
 %对表中的数值进行说明：
 %套管磅级：套管单位长度的重量，PPF：Pounds Per Foot（磅每英尺）
-
-注：表中抗拉、抗扭数值为对应规格工具所用接头（NC38、NC50、6-5/8\,REG）的额定载荷。
-
-三种规格工具的强磁部件均选用烧结钐钴（SmCo5）永磁材料，磁性材料耐温不低于合同要求的$150\,^\circ\mathrm{C}$，选型依据与耐温验证方法见\ref{subsubsec:4in1_magnet_material}节。
 
 \subsubsection{四合一工具主要功能部件}
 
@@ -213,8 +207,8 @@ $n$——安全系数，取 $n = 1.5$。
 
 根据图\ref{fig:inner_pipe_for_strength_analysis}，取$D=67\,\textrm{mm}$（螺纹根部净截面外径），$d=40\,\textrm{mm}$，则$2.75''\text{-}8$ Stub ACME 外螺纹根部最大拉力：
 \begin{align}
-    F_{\max} &= \frac{\pi \cdot (D^2 - d^2) \cdot \sigma_s}{4 \cdot n} \times 10^{-3} \nonumber \\
-    &= \frac{3.14 \times (67^2 - 40^2) \times 930}{4 \times 1.5} \times 10^{-3} \nonumber \\
+    F_{\max} &= \frac{\pi \cdot (D^2 - d^2) \cdot \sigma_s}{4 \cdot n} \times 10^{-3}  \\
+    &= \frac{3.14 \times (67^2 - 40^2) \times 930}{4 \times 1.5} \times 10^{-3}  \\
     &= 1406.08 \, \text{kN} > 1000 \, \text{kN}
 \end{align}
 
@@ -224,14 +218,14 @@ $n$——安全系数，取 $n = 1.5$。
 
 根据公式\ref{eq:tensile_strength_circular_section}和图\ref{fig:inner_pipe_for_strength_analysis}，取$D=92\,\textrm{mm}$、$d=71.6\,\textrm{mm}$（参见图纸ZKG700004A局部视图I），则心轴上$2.75''\text{-}8$ Stub ACME 内螺纹根部最大拉力：
 \begin{equation}
-\begin{aligned}
-F_{\text{max}} &= \frac{\left[\pi \cdot \dfrac{(D^2-d^2)}{4} - 3\cdot b\cdot h\right] \cdot \sigma_s}{n} \times 10^{-3} \\
-&= \frac{\left[3.14 \times \dfrac{(92^2-71.6^2)}{4} - 3 \times 10 \times 10.2\right] \times 930}{1.5} \times 10^{-3} \\
-&= 1435\,\text{kN} > 1000\,\text{kN}
-\end{aligned}
+    \begin{aligned}
+    F_{\text{max}} &= \frac{\left[\pi \cdot \dfrac{(D^2-d^2)}{4} - 3\cdot b\cdot h\right] \cdot \sigma_s}{n} \times 10^{-3} \\
+    &= \frac{\left[3.14 \times \dfrac{(92^2-71.6^2)}{4} - 3 \times 10 \times 10.2\right] \times 930}{1.5} \times 10^{-3} \\
+    &= 1435\,\text{kN} > 1000\,\text{kN}
+    \end{aligned}
 \end{equation}
 
-式中，$F_{\max}$——该危险截面（内螺纹根部）能承受的最大拉力，kN；$D=92\,\textrm{mm}$ 为该处外径（图纸 ZKG700004A 主视图标注的 Ø92）；$d=71.6\,\textrm{mm}$ 为内螺纹根部退刀槽直径（图纸 ZKG700004A 局部视图 I 标注的 $\phi 71.60$），该处壁厚在螺纹段内最小，故取为危险截面；$\sigma_s=930\,\textrm{MPa}$、$n=1.5$ 与危险截面 1 取值相同；
+式中，$F_{\max}$——该危险截面（内螺纹根部）能承受的最大拉力，kN；$D=92\,\textrm{mm}$ 为该处外径（图纸 ZKG700004A 主视图标注的 $\phi 92$）；$d=71.6\,\textrm{mm}$ 为内螺纹根部退刀槽直径（图纸 ZKG700004A 局部视图 I 标注的 $\phi 71.60$），该处壁厚在螺纹段内最小，故取为危险截面；$\sigma_s=930\,\textrm{MPa}$、$n=1.5$ 与危险截面 1 取值相同；
 
 $b$——截面处径向螺纹孔的孔径，取 $b=10\,\textrm{mm}$（M10 螺纹的公称直径）；
 
@@ -256,9 +250,9 @@ $-3bh$ 为心轴上 3 个径向螺纹孔所占面积的扣除项：四合一工�
 
 %\tau & =  \frac{16 \cdot D \cdot T_{\max}}{\pi \cdot (D^4 - d^4)} \times 10^6\\
 \begin{equation}
-\begin{aligned}	
-    T_{\max} & =  \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6}\\
-    [\tau] &= \alpha \cdot \sigma_s 
+    \begin{aligned}	
+        T_{\max} & =  \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6}\\
+        [\tau] &= \alpha \cdot \sigma_s 
     \end{aligned}
 \end{equation}
 式中，$T_{\max}$——工具最大扭矩，kN·m；
@@ -276,18 +270,22 @@ $[\tau]$——材料许用切应力，MPa。
 注：本小节同时用到安全系数与端面键个数，为避免与折减系数混淆，折减系数统一记为 $\alpha$，安全系数记为 $n_1$，端面键个数记为 $n_2$。
 
 对于芯轴的危险截面1，代入材料的力学和几何参数计算得
-\begin{align}
-    T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6} \nonumber \\
-    &= \frac{613.8 \times 3.14 \times (67^4 - 40^4)}{16 \times 67} \times 10^{-6} \nonumber \\
-    &= 31.63\,\text{kN} \cdot \text{m} > 17\,\text{kN} \cdot \text{m}
-\end{align}
+\begin{equation}
+    \begin{aligned}
+        T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6}  \\
+        &= \frac{613.8 \times 3.14 \times (67^4 - 40^4)}{16 \times 67} \times 10^{-6}  \\
+        &= 31.63\,\text{kN} \cdot \text{m} > 17\,\text{kN} \cdot \text{m}
+    \end{aligned}
+\end{equation}
 
 对于危险截面2，代入材料的力学和几何参数计算得
-\begin{align}
-    T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6} \nonumber \\
-    &= \frac{613.8 \times 3.14 \times (92^4 - 71.6^4)}{16 \times 92} \times 10^{-6} \nonumber \\
-    &= 59.39\,\text{kN} \cdot \text{m} > 17\,\text{kN} \cdot \text{m}
-\end{align}
+\begin{equation}
+    \begin{aligned}
+        T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6}  \\
+        &= \frac{613.8 \times 3.14 \times (92^4 - 71.6^4)}{16 \times 92} \times 10^{-6}  \\
+        &= 59.39\,\text{kN} \cdot \text{m} > 17\,\text{kN} \cdot \text{m}
+    \end{aligned}
+\end{equation}
 
 于是，工具的两个危险截面都满足抗扭强度要求。
 
@@ -311,11 +309,13 @@ $[\tau]$——材料许用切应力，MPa。
 对于外筒件，其材料牌号为4145H，抗扭危险截面为端面键截面（键的数量为 3）。
 
 外筒件抗扭强度 $\tau$ 计算：
-\begin{align}
-    \tau &= \frac{T_{\max}}{n_2 \cdot b \cdot h \cdot r} \times 10^{6} \\
-    T_{\max} &= \frac{n_2 \cdot [\tau] \cdot b \cdot h \cdot r}{n_1} \times 10^{-6} \\
-    [\tau] &= \alpha \cdot \sigma_s = 0.66 \times 827\,\text{MPa} = 545.82\,\text{MPa}
-\end{align}
+\begin{equation}
+    \begin{aligned}
+        \tau &= \frac{T_{\max}}{n_2 \cdot b \cdot h \cdot r} \times 10^{6} \\
+        T_{\max} &= \frac{n_2 \cdot [\tau] \cdot b \cdot h \cdot r}{n_1} \times 10^{-6} \\
+        [\tau] &= \alpha \cdot \sigma_s = 0.66 \times 827\,\text{MPa} = 545.82\,\text{MPa}
+    \end{aligned}
+\end{equation}
 式中，$T_{\max}$ —— 外筒件能承受的最大扭矩，$\text{kN}\cdot\text{m}$；
 
     $\sigma_s$ ——外筒件材料屈服应力，取 $\sigma_s=827\,\text{MPa}$（图纸 ZKG700006A 与 ZKG700007A 技术要求：材料 4145，屈服强度 $\ge$ 827\,MPa），$\text{MPa}$；
@@ -344,7 +344,7 @@ T_{\text{max}}&=\frac{n_2\cdot [\tau]\cdot b\cdot h\cdot r}{n_1}\times 10^{-6}
 \end{aligned}
 \end{equation}
 
-注：端面键数量、键宽、键高与分布圆半径按7in图纸取值（上挡环ZKG700006A、中连接套ZKG700007A），分布圆半径取上挡环 $R47_{-0.25}$；若键高按 $13.5\,\text{mm}$ 计，则 $T_{\text{max}}=20.78\,\text{kN}\cdot\text{m}$，仍大于 $17\,\text{kN}\cdot\text{m}$。
+注：端面键数量、键宽、键高与分布圆半径按7\inch 图纸取值（上挡环ZKG700006A、中连接套ZKG700007A），分布圆半径取上挡环 $R47_{-0.25}$；若键高按 $13.5\,\text{mm}$ 计，则 $T_{\text{max}}=20.78\,\text{kN}\cdot\text{m}$，仍大于 $17\,\text{kN}\cdot\text{m}$。
 
 
 于是，外筒件满足抗扭强度要求。

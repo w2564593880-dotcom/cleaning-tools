@@ -110,7 +110,7 @@
 
 （4）免拆解检修，运行状态可直观检查。工具设有观察孔与清理盖板，起出井口后可直接通过观察孔检查碎屑收集量，拆卸清理盖板即可清理积存的碎屑，无需对工具本体进行整体拆解。
 
-（5）主要受力件强度校核完整。本工具对提升短节、滤进接头、滤出接头、下接头等主要受力件的连接螺纹（3.625\inch-8 Stub ACME）进行了牙剪切、根部拉伸与抗扭强度计算，对 7 处危险截面进行了校核并开展了有限元复核，安全系数为 $1.56$—$1.86$，工具可随钻柱旋转（允许转速 $\ge 120\,\text{rpm}$）。
+（5）主要受力件强度校核完整。本工具对提升短节、滤进接头、滤出接头、下接头等主要受力件的连接螺纹（3.625\inch-8 Stub ACME）进行了牙剪切、根部拉伸与抗扭强度计算，对 7 处危险截面进行了校核并开展了有限元复核，安全系数为 $1.56\sim 1.86$，工具可随钻柱旋转（允许转速 $\ge 120\,\text{rpm}$）。
 
 \subsubsection{过滤工具设计计算与校核}
 \subsubsection{主要受力件的螺纹强度校核}
@@ -118,17 +118,19 @@
 过滤工具的主要受力件为提升短节、滤进接头、滤出接头和下接头，其连接螺纹均为 3.625\inch-8 Stub ACME（材料 4145H，图纸GLGJ70001A、GLGJ70002A、GLGJ70013A、GLGJ70015A技术要求均为：调质后屈服强度$\ge 930$\,MPa、抗拉强度$\ge 1080$\,MPa）。
 
 螺纹牙的剪切强度按下式计算：
-\begin{align}
+\begin{equation}
+\begin{aligned}
     F_{\max} &= [\tau] \cdot k_z \cdot \pi \cdot d_1 \cdot b \cdot z \cdot 10^{-3} \\
     [\tau] &= \frac{\sigma_s}{n}
-\end{align}
+\end{aligned}
+\end{equation}
 式中，$F_{\max}$---工具最大拉力，kN；
 
 $[\tau]$---螺纹牙的许用剪切强度，MPa；
 
 $k_z$---螺纹各圈的载荷不均系数，根据《机械设计手册》螺纹连接（紧固件连接）部分中螺纹牙的剪切强度计算及各圈螺纹载荷分配的规定\cite{ref26}，取 $k_z = 0.56$；
 
-$d_1$---螺纹底径，按图纸GLGJ70002A滤进接头标注的3.625\inch-8 Stub ACME外螺纹小径（Ø89.100$\sim$Ø89.660\,mm）取 $d_1 = 89.66\,\text{mm}$；
+$d_1$---螺纹底径，按图纸GLGJ70002A滤进接头标注的3.625\inch-8 Stub ACME外螺纹小径（$\phi 89.100\sim \phi 89.660\,\mathrm{mm}$）取 $d_1 = 89.66\,\text{mm}$；
 
 $b$---螺纹牙根宽度，mm；按ASME B1.8规定的ACME牙型，由螺距$p=25.4/8=3.175\,\text{mm}$与基本牙型高度$h_0=p/2=1.588\,\text{mm}$计算得 $b = 1.310\,\text{mm}$；
 
@@ -139,13 +141,13 @@ $\sigma_s$---材料最小屈服强度，按图纸技术要求取 930 MPa；
 $n$---安全系数，根据《机械设计手册》螺纹连接部分中螺纹牙强度校核的安全系数取值规定\cite{ref26}，取 $n = 2.5$。
 
 将 3.625\inch-8 Stub ACME 螺纹的相关参数代入，计算得：
-\begin{align}
-    F_{\max} &= [\tau] \cdot k_z \cdot \pi \cdot d_1 \cdot b \cdot z \cdot 10^{-3} \\
-             &= 372 \times 0.56 \times 3.14 \times 89.66 \times 1.310 \times 22 \times 10^{-3} \\
-             &= 1690.26\,\text{kN} \\
-             &> 1000\,\text{kN}
-\end{align}
-
+\begin{equation}
+    \begin{aligned}
+        F_{\max} &= [\tau] \cdot k_z \cdot \pi \cdot d_1 \cdot b \cdot z \cdot 10^{-3} \\
+                &= 372 \times 0.56 \times 3.14 \times 89.66 \times 1.310 \times 22 \times 10^{-3} \\
+                &= 1690.26\,\text{kN} > 1000\,\text{kN}
+    \end{aligned}
+\end{equation}
 计算结果表明，螺纹牙的剪切强度满足设计要求。
 
 
@@ -171,7 +173,7 @@ $D$---危险截面外径，mm；各受力件取值如下：
 
 \quad 提升短节内螺纹根部：按图纸GLGJ70001A标注的外圆取 $D = 120.65\,\text{mm}$；
 
-\quad 滤进接头外螺纹根部：按图纸GLGJ70002A标注的外螺纹小径（Ø89.100$\sim$Ø89.660\,mm）取 $D = 88.09\,\text{mm}$；
+\quad 滤进接头外螺纹根部：按图纸GLGJ70002A标注的外螺纹小径（$\phi 89.100\sim \phi 89.660 $）取 $D = 88.09\,\text{mm}$；
 
 \quad 滤出接头外螺纹根部：按图纸GLGJ70013A标注取 $D = 88.60\,\text{mm}$；
 
@@ -190,19 +192,23 @@ $\sigma_s$---材料最小屈服强度，按图纸技术要求取 930 MPa；
 $n$---安全系数，取 $n = 1.5$。
 
 （1）提升短节 3.625\inch-8 Stub ACME 内螺纹根部最大拉力
-\begin{align}
-    F_{\max} &= \frac{\pi \cdot (D^2 - d^2) \cdot \sigma_s}{4 \cdot n} \times 10^{-3} 
-             = \frac{3.14 \times (120.65^2 - 93.40^2) \times 930}{4 \times 1.5} \times 10^{-3} \\
-             &= 2838.85\,\text{kN} > 1000\,\text{kN}
-\end{align}
+\begin{equation}
+    \begin{aligned}
+        F_{\max} &= \frac{\pi \cdot (D^2 - d^2) \cdot \sigma_s}{4 \cdot n} \times 10^{-3} 
+                = \frac{3.14 \times (120.65^2 - 93.40^2) \times 930}{4 \times 1.5} \times 10^{-3} \\
+                &= 2838.85\,\text{kN} > 1000\,\text{kN}
+    \end{aligned}
+\end{equation}
 满足设计要求。
 
 （2）滤进接头 3.625\inch-8 Stub ACME 外螺纹根部最大拉力
-\begin{align}
-    F_{\max} &= \frac{\pi \cdot (D^2 - d^2) \cdot \sigma_s}{4 \cdot n} \times 10^{-3} 
-             = \frac{3.14 \times (88.09^2 - 45.72^2) \times 930}{4 \times 1.5} \times 10^{-3} \\
-             &= 2759.36\,\text{kN} > 1000\,\text{kN}
-\end{align}
+\begin{equation}
+    \begin{aligned}
+        F_{\max} &= \frac{\pi \cdot (D^2 - d^2) \cdot \sigma_s}{4 \cdot n} \times 10^{-3} 
+                = \frac{3.14 \times (88.09^2 - 45.72^2) \times 930}{4 \times 1.5} \times 10^{-3} \\
+                &= 2759.36\,\text{kN} > 1000\,\text{kN}
+    \end{aligned}
+\end{equation}
 满足设计要求。
 
 （3）滤进接头凹槽根部最大拉力（该处截面不规则，面积由实体测量得到）
@@ -212,11 +218,13 @@ F_{\max} = \frac{A \cdot \sigma_s}{n} \times 10^{-3} = \frac{3523.3 \times 930}{
 满足设计要求。
 
 （4）滤出接头 3.625\inch-8 Stub ACME 外螺纹根部最大拉力
-\begin{align}
-    F_{\max} &= \frac{\pi \cdot (D^2 - d^2) \cdot \sigma_s}{4 \cdot n} \times 10^{-3} 
-             = \frac{3.14 \times (88.60^2 - 44.45^2) \times 930}{4 \times 1.5} \times 10^{-3} \\
-             &= 2858.95\,\text{kN} > 1000\,\text{kN}
-\end{align}
+\begin{equation}
+    \begin{aligned}
+        F_{\max} &= \frac{\pi \cdot (D^2 - d^2) \cdot \sigma_s}{4 \cdot n} \times 10^{-3} 
+                = \frac{3.14 \times (88.60^2 - 44.45^2) \times 930}{4 \times 1.5} \times 10^{-3} \\
+                &= 2858.95\,\text{kN} > 1000\,\text{kN}
+    \end{aligned}
+\end{equation}
 满足设计要求。
 
 （5）滤出接头凹槽根部最大拉力（该处截面不规则，面积由实体测量得到）
@@ -226,11 +234,13 @@ F_{\max} = \frac{A \cdot \sigma_s}{n} \times 10^{-3} = \frac{3185.38 \times 930}
 满足设计要求。
 
 （6）下接头 3.625\inch-8 Stub ACME 内螺纹根部最大拉力
-\begin{align}
-    F_{\max} &= \frac{\pi \cdot (D^2 - d^2) \cdot \sigma_s}{4 \cdot n} \times 10^{-3} 
-             = \frac{3.14 \times (120.65^2 - 93.40^2) \times 930}{4 \times 1.5} \times 10^{-3} \\
-             &= 2838.85\,\text{kN} > 1000\,\text{kN}
-\end{align}
+\begin{equation}
+    \begin{aligned}
+        F_{\max} &= \frac{\pi \cdot (D^2 - d^2) \cdot \sigma_s}{4 \cdot n} \times 10^{-3} 
+                 = \frac{3.14 \times (120.65^2 - 93.40^2) \times 930}{4 \times 1.5} \times 10^{-3} \\
+                 &= 2838.85\,\text{kN} > 1000\,\text{kN}
+    \end{aligned}
+\end{equation}
 满足设计要求。
 
 
@@ -247,11 +257,13 @@ F_{\max} = \frac{A \cdot \sigma_s}{n} \times 10^{-3} = \frac{3185.38 \times 930}
 下接头：3.625\inch-8 Stub ACME 内螺纹根部。
 
 抗扭强度按下式计算：
-\begin{align*}
-    \tau &= \frac{16 \cdot D \cdot T_{\max}}{\pi \cdot (D^4 - d^4)} \times 10^{6} \\
-    T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6} \\
-    [\tau] &= n \cdot \sigma_s = 0.66 \times 930\,\text{MPa} = 613.8\,\text{MPa}
-\end{align*}
+\begin{equation}
+    \begin{aligned}
+        \tau &= \frac{16 \cdot D \cdot T_{\max}}{\pi \cdot (D^4 - d^4)} \times 10^{6} \\
+        T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6} \\
+        [\tau] &= n \cdot \sigma_s = 0.66 \times 930\,\text{MPa} = 613.8\,\text{MPa}
+    \end{aligned}
+\end{equation}
 式中，$T_{\max}$---工具最大扭矩，$\text{kN} \cdot \text{m}$；
 
 $\tau$---危险截面的切应力，MPa；
@@ -267,35 +279,43 @@ $d$---危险截面内径，与抗拉校核各受力件取值相同；
 $n$---许用切应力与许用拉应力之比，根据《机械设计手册》零件强度校核中许用应力折减系数的取值规定\cite{ref26}，取 $n=0.66$（其理论依据为第四强度理论，纯剪切时 $\tau_s = \sigma_s/\sqrt{3} \approx 0.577\sigma_s$，工程上取 $0.66$ 作为折减系数）。
 
 （1）提升短节 3.625\inch-8 Stub ACME 内螺纹根部最大扭矩
-\begin{align}
-    T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6} 
-             = \frac{613.8 \times 3.14 \times (120.65^4 - 93.40^4)}{16 \times 120.65} \times 10^{-6} \\
-             &= 65.60\,\text{kN} \cdot \text{m} > 18\,\text{kN} \cdot \text{m}
-\end{align}
-满足设计要求。（提升短节内孔为Ø93.40\,mm，原稿误按滤进接头内径Ø45.72\,mm代入，得207.19\,$\text{kN}\cdot\text{m}$，与此处截面不符，已更正。）
+\begin{equation}
+    \begin{aligned}
+        T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6} 
+                = \frac{613.8 \times 3.14 \times (120.65^4 - 93.40^4)}{16 \times 120.65} \times 10^{-6} \\
+                &= 65.60\,\text{kN} \cdot \text{m} > 18\,\text{kN} \cdot \text{m}
+    \end{aligned}
+\end{equation}
+满足设计要求。
 
 （2）滤进接头 3.625\inch-8 Stub ACME 外螺纹根部最大扭矩
-\begin{align}
-    T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6} 
-             = \frac{613.8 \times 3.14 \times (88.09^4 - 45.72^4)}{16 \times 88.09} \times 10^{-6} \\
-             &= 76.37\,\text{kN} \cdot \text{m} > 18\,\text{kN} \cdot \text{m}
-\end{align}
+\begin{equation}
+    \begin{aligned}
+        T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6} 
+                = \frac{613.8 \times 3.14 \times (88.09^4 - 45.72^4)}{16 \times 88.09} \times 10^{-6} \\
+                &= 76.37\,\text{kN} \cdot \text{m} > 18\,\text{kN} \cdot \text{m}
+    \end{aligned}
+\end{equation}
 满足设计要求。
 
 （3）滤出接头 3.625\inch-8 Stub ACME 外螺纹根部最大扭矩
-\begin{align}
-    T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6} 
-             = \frac{613.8 \times 3.14 \times (88.60^4 - 44.45^4)}{16 \times 88.60} \times 10^{-6} \\
-             &= 78.47\,\text{kN} \cdot \text{m} > 18\,\text{kN} \cdot \text{m}
-\end{align}
+\begin{equation}
+    \begin{aligned}
+        T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6} 
+                 = \frac{613.8 \times 3.14 \times (88.60^4 - 44.45^4)}{16 \times 88.60} \times 10^{-6} \\
+                 &= 78.47\,\text{kN} \cdot \text{m} > 18\,\text{kN} \cdot \text{m}
+    \end{aligned}
+\end{equation}
 满足设计要求。
 
 （4）下接头 3.625\inch-8 Stub ACME 内螺纹根部最大扭矩
-\begin{align}
-    T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6} 
+\begin{equation}
+    \begin{aligned}
+        T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6} 
              = \frac{613.8 \times 3.14 \times (120.65^4 - 93.40^4)}{16 \times 120.65} \times 10^{-6} \\
              &= 135.57\,\text{kN} \cdot \text{m} > 18\,\text{kN} \cdot \text{m}
-\end{align}
+    \end{aligned}
+\end{equation}
 满足设计要求。
 
 
@@ -414,11 +434,13 @@ $d$---过滤腔小径，mm；按图纸GLGJ70018A加长过滤内筒外圆取 $d =
 $10^{-6}$---量纲换算系数，$\text{mm}^3$换算为L（$1\,\text{L} = 10^6\,\text{mm}^3$）。
 
 代入数值计算得：
-\begin{align}
-    V &= L \cdot A = L \cdot \frac{\pi \cdot (D^2 - d^2)}{4} \times 10^{-6} \\
-      &= 4864.56 \times \frac{\pi \cdot (100.26^2 - 73.03^2)}{4} \times 10^{-6} \\
-      &= 18.0\,\text{L} \ge 15\,\text{L}
-\end{align}
+\begin{equation}
+    \begin{aligned}
+        V &= L \cdot A = L \cdot \frac{\pi \cdot (D^2 - d^2)}{4} \times 10^{-6} \\
+        &= 4864.56 \times \frac{\pi \cdot (100.26^2 - 73.03^2)}{4} \times 10^{-6} \\
+        &= 18.0\,\text{L} \ge 15\,\text{L}
+    \end{aligned}
+\end{equation}
 满足设计要求。
 
 

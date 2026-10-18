@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.11.7)  17 OCT 2026 11:21
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.11.7)  18 OCT 2026 13:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -992,11 +992,7 @@ Package fontspec Info: Font family 'TeXGyreTermesX(0)' created for font
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
 (Font)              scaled to size 12.045pt on input line 200.
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 200.
- (./main.aux
-
-LaTeX Warning: Label `fig:field_result_in_upper_sub_radial_magnetization' multiply defined.
-
-)
+ (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 200.
@@ -1173,139 +1169,130 @@ LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
 (Font)              scaled to size 9.03374pt on input line 244.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
 (Font)              scaled to size 5.0pt on input line 244.
-(./chapters/chapter3/part3-magntictool.tex
+(./chapters/chapter3/part2-4in1.tex [3
+
+]
+File: figure/chapter3/structure-4-in-1.png Graphic file (type bmp)
+<figure/chapter3/structure-4-in-1.png>
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 10.53937pt on input line 15.
-
-Overfull \hbox (3.61288pt too wide) in paragraph at lines 43--43
-[]|[]| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 43--43
-[]|\TU/TeXGyreTermesX(0)/m/n/10.53937 9.5-
- []
-
-[3
-
-]
-File: figure/chapter3/structure-dqc-mag-tool.png Graphic file (type bmp)
-<figure/chapter3/structure-dqc-mag-tool.png>
-File: figure/chapter3/structure-upper-magnetic-sub.png Graphic file (type bmp)
-<figure/chapter3/structure-upper-magnetic-sub.png>
-File: figure/chapter3/structure-lowwer-magnetic-sub.png Graphic file (type bmp)
-<figure/chapter3/structure-lowwer-magnetic-sub.png>
+(Font)              scaled to size 10.53937pt on input line 25.
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
+(Font)              scaled to size 7.0pt on input line 29.
  [4]
-File: figure/chapter3/magnogard-magnet-tool.png Graphic file (type bmp)
-<figure/chapter3/magnogard-magnet-tool.png>
- [5] [6] [7] [8]
-Overfull \hbox (1.22234pt too wide) in paragraph at lines 250--251
-[]$\OML/cmm/m/it/12.045 d$\TU/TeXGyreTermesX(0)/m/n/12.045 —\TU/SimSun(0)/m/n/12.045 危 险 截 面 内 径，|  取 与 内 螺 纹 配 合 的 外 螺 纹 小 径 $\OML/cmm/m/it/12.045 d \OT1/cmr/m/n/12.045 = 70\OML/cmm/m/it/12.045 :\OT1/cmr/m/n/12.045 30 []$ |\TU/SimSun(0)/m/n/12.045 （图 纸 \TU/TeXGyreTermesX(0)/m/n/12.045 DQC700003A\TU/SimSun(0)/m/n/12.045 ，|
- []
+File: figure/chapter3/mechanism-scratcher-4-in-1.png Graphic file (type bmp)
+<figure/chapter3/mechanism-scratcher-4-in-1.png>
+File: figure/chapter3/mechanism-swiper-4-in-1.png Graphic file (type bmp)
+<figure/chapter3/mechanism-swiper-4-in-1.png>
+File: figure/chapter3/mechanism-mag-sub-4-in-1.png Graphic file (type bmp)
+<figure/chapter3/mechanism-mag-sub-4-in-1.png>
+File: figure/chapter3/mechanism-torsional-spring-4-in-1.png Graphic file (type bmp)
+<figure/chapter3/mechanism-torsional-spring-4-in-1.png>
+File: figure/chapter3/dynamic-system-torsional-spring-mechanism-4-in-1.png Graphic file (type bmp)
+<figure/chapter3/dynamic-system-torsional-spring-mechanism-4-in-1.png>
+ [5]
+File: figure/chapter3/upper-sub-4-in-1.png Graphic file (type bmp)
+<figure/chapter3/upper-sub-4-in-1.png>
+File: figure/chapter3/lowwer-sub-4-in-1.png Graphic file (type bmp)
+<figure/chapter3/lowwer-sub-4-in-1.png>
 
-[9]
-Overfull \hbox (9.76527pt too wide) in paragraph at lines 280--281
-[]$\OML/cmm/m/it/12.045 D$\TU/TeXGyreTermesX(0)/m/n/12.045 —\TU/SimSun(0)/m/n/12.045 危 险 截 面 外 径，|  按 图 纸 \TU/TeXGyreTermesX(0)/m/n/12.045 DQC700003A \TU/SimSun(0)/m/n/12.045 心 轴 标 注 的 外 螺 纹 小 径  |（\TU/TeXGyreTermesX(0)/m/n/12.045 70.485$\OMS/cmsy/m/n/12.045 ^^X$\TU/TeXGyreTermesX(0)/m/n/12.045 70.643mm\TU/SimSun(0)/m/n/12.045 ）|
- []
 
-[10]
-File: figure/chapter3/lowwer-sub-mag-tool.png Graphic file (type bmp)
-<figure/chapter3/lowwer-sub-mag-tool.png>
-File: figure/chapter3/torsion-stress-lowwer-sub-mag-tool.png Graphic file (type bmp)
-<figure/chapter3/torsion-stress-lowwer-sub-mag-tool.png>
- [11]
-File: figure/chapter3/magnetic-adsorption-capacity.jpg Graphic file (type bmp)
-<figure/chapter3/magnetic-adsorption-capacity.jpg>
- [12] [13] [14]
-File: figure/chapter3/demagnetization-SmCo5.png Graphic file (type bmp)
-<figure/chapter3/demagnetization-SmCo5.png>
-File: figure/chapter3/demagnatization-N45UH.png Graphic file (type bmp)
-<figure/chapter3/demagnatization-N45UH.png>
- [15] [16]
-File: figure/chapter3/magnet-configuration-upper-sub.png Graphic file (type bmp)
-<figure/chapter3/magnet-configuration-upper-sub.png>
-File: figure/chapter3/radial-magnetization-in-upper-sub.png Graphic file (type bmp)
-<figure/chapter3/radial-magnetization-in-upper-sub.png>
-File: figure/chapter3/circumferencial-magnetization-in-upper-sub.png Graphic file (type bmp)
-<figure/chapter3/circumferencial-magnetization-in-upper-sub.png>
-File: figure/chapter3/boundary-condition-upper-sub.png Graphic file (type bmp)
-<figure/chapter3/boundary-condition-upper-sub.png>
-File: figure/chapter3/mesh-upper-sub.png Graphic file (type bmp)
-<figure/chapter3/mesh-upper-sub.png>
- [17]
-File: figure/chapter3/magnetic-vector-distribution-upper-sub.png Graphic file (type bmp)
-<figure/chapter3/magnetic-vector-distribution-upper-sub.png>
-File: figure/chapter3/contour-magnetic-field-upper-sub.png Graphic file (type bmp)
-<figure/chapter3/contour-magnetic-field-upper-sub.png>
- [18] [19]
-File: figure/chapter3/magnetic-vector-distribution-upper-sub-circum-magnatization.png Graphic file (type bmp)
-<figure/chapter3/magnetic-vector-distribution-upper-sub-circum-magnatization.png>
-File: figure/chapter3/contour-magnetic-field-upper-sub-circum-magnatization.png Graphic file (type bmp)
-<figure/chapter3/contour-magnetic-field-upper-sub-circum-magnatization.png>
-File: figure/chapter3/magnet-configuration-lowwer-sub.png Graphic file (type bmp)
-<figure/chapter3/magnet-configuration-lowwer-sub.png>
-File: figure/chapter3/lowwer-sub-magnetization-radial.png Graphic file (type bmp)
-<figure/chapter3/lowwer-sub-magnetization-radial.png>
-File: figure/chapter3/lowwer-sub-cross-magnetization.png Graphic file (type bmp)
-<figure/chapter3/lowwer-sub-cross-magnetization.png>
-File: figure/chapter3/lowwer-sub-circumferential-magnetization.png Graphic file (type bmp)
-<figure/chapter3/lowwer-sub-circumferential-magnetization.png>
+LaTeX Warning: Reference `tab:magnet_params' on page 6 undefined on input line 132.
+
+[6]
+
+LaTeX Warning: Reference `fig:demagnetization_SmCo5' on page 7 undefined on input line 136.
+
+[7]
+File: figure/chapter3/inner-pipe-for-strength-analysis.png Graphic file (type bmp)
+<figure/chapter3/inner-pipe-for-strength-analysis.png>
+ [8] [9]
+File: figure/chapter3/flat-shear-key.png Graphic file (type bmp)
+<figure/chapter3/flat-shear-key.png>
+ [10] [11]
+File: figure/simulation/xinzhoulashen.png Graphic file (type bmp)
+<figure/simulation/xinzhoulashen.png>
+File: figure/simulation/xinzhouniuju.png Graphic file (type bmp)
+<figure/simulation/xinzhouniuju.png>
+ [12]
+File: figure/chapter3/pitch-spring.png Graphic file (type bmp)
+<figure/chapter3/pitch-spring.png>
+File: figure/chapter3/oscillating-spring.png Graphic file (type bmp)
+<figure/chapter3/oscillating-spring.png>
+ [13] [14]) (./chapters/chapter3/part2-4in1-scraper-performance.tex [15]
+File: figure/chapter3/scraper-test-rig.png Graphic file (type bmp)
+<figure/chapter3/scraper-test-rig.png>
+File: figure/chapter3/scapter-measurement-mechanism.png Graphic file (type bmp)
+<figure/chapter3/scapter-measurement-mechanism.png>
+ [16] [17]
+File: figure/chapter3/scale-1.jpg Graphic file (type bmp)
+<figure/chapter3/scale-1.jpg>
+File: figure/chapter3/scale-4.jpg Graphic file (type bmp)
+<figure/chapter3/scale-4.jpg>
+File: figure/chapter3/scale-3.jpg Graphic file (type bmp)
+<figure/chapter3/scale-3.jpg>
+File: figure/chapter3/scale-5.jpg Graphic file (type bmp)
+<figure/chapter3/scale-5.jpg>
+ [18]
+File: figure/chapter3/scraper-1.jpg Graphic file (type bmp)
+<figure/chapter3/scraper-1.jpg>
+File: figure/chapter3/scraper-4.jpg Graphic file (type bmp)
+<figure/chapter3/scraper-4.jpg>
+File: figure/chapter3/scraper-3.jpg Graphic file (type bmp)
+<figure/chapter3/scraper-3.jpg>
+File: figure/chapter3/scraper-5.jpg Graphic file (type bmp)
+<figure/chapter3/scraper-5.jpg>
+ [19]
+File: figure/chapter3/scatch-depth-sping-comprassion.jpg Graphic file (type bmp)
+<figure/chapter3/scatch-depth-sping-comprassion.jpg>
  [20]
-File: figure/chapter3/boundary-condition-lowwer-sub.png Graphic file (type bmp)
-<figure/chapter3/boundary-condition-lowwer-sub.png>
-File: figure/chapter3/mesh-upper-sub.png Graphic file (type bmp)
-<figure/chapter3/mesh-upper-sub.png>
-File: figure/chapter3/magnetic-vector-distribution-lowwer-sub-radial.png Graphic file (type bmp)
-<figure/chapter3/magnetic-vector-distribution-lowwer-sub-radial.png>
-File: figure/chapter3/contour-magnetic-field-lowwer-sub-radial.png Graphic file (type bmp)
-<figure/chapter3/contour-magnetic-field-lowwer-sub-radial.png>
-File: figure/chapter3/magnetic-vector-distribution-lowwer-sub-cross.png Graphic file (type bmp)
-<figure/chapter3/magnetic-vector-distribution-lowwer-sub-cross.png>
-File: figure/chapter3/contour-magnetic-field-lowwer-sub-cross.png Graphic file (type bmp)
-<figure/chapter3/contour-magnetic-field-lowwer-sub-cross.png>
-File: figure/chapter3/magnetic-vector-distribution-lowwer-sub-circumferential.png Graphic file (type bmp)
-<figure/chapter3/magnetic-vector-distribution-lowwer-sub-circumferential.png>
-File: figure/chapter3/contour-magnetic-field-lowwer-sub-circumferential.png Graphic file (type bmp)
-<figure/chapter3/contour-magnetic-field-lowwer-sub-circumferential.png>
+File: figure/chapter3/xiechiguaban/1.png Graphic file (type bmp)
+<figure/chapter3/xiechiguaban/1.png>
+File: figure/chapter3/xiechiguaban/2.png Graphic file (type bmp)
+<figure/chapter3/xiechiguaban/2.png>
+File: figure/chapter3/xiechiguaban/3.png Graphic file (type bmp)
+<figure/chapter3/xiechiguaban/3.png>
+File: figure/chapter3/xiechiguaban/4.png Graphic file (type bmp)
+<figure/chapter3/xiechiguaban/4.png>
  [21] [22] [23]
-File: figure/chapter3/mag-field-distribution-4145-steel-frame.png Graphic file (type bmp)
-<figure/chapter3/mag-field-distribution-4145-steel-frame.png>
-File: figure/chapter3/mag-field-distribution-aliminium-frame.png Graphic file (type bmp)
-<figure/chapter3/mag-field-distribution-aliminium-frame.png>
- [24] [25] [26] [27]) (./chapters/chapter3/part3-magnetictool-magnet-performance.tex [28]
-File: figure/chapter3/magnet-test-rig-labeled.png Graphic file (type bmp)
-<figure/chapter3/magnet-test-rig-labeled.png>
-File: figure/chapter3/magnet-test-rig-photo.png Graphic file (type bmp)
-<figure/chapter3/magnet-test-rig-photo.png>
- [29] [30]) (./chapters/bib.tex [31] [32] [33
+File: figure/chapter3/xiechiguaban/xiechixing.jpg Graphic file (type bmp)
+<figure/chapter3/xiechiguaban/xiechixing.jpg>
+ [24]
+File: figure/chapter3/maoshuashiyan/brush-wax-scale-before.jpg Graphic file (type bmp)
+<figure/chapter3/maoshuashiyan/brush-wax-scale-before.jpg>
+File: figure/chapter3/maoshuashiyan/brush-wax-scale-after.jpg Graphic file (type bmp)
+<figure/chapter3/maoshuashiyan/brush-wax-scale-after.jpg>
+File: figure/chapter3/maoshuashiyan/brush-hard-scale-before.jpg Graphic file (type bmp)
+<figure/chapter3/maoshuashiyan/brush-hard-scale-before.jpg>
+File: figure/chapter3/maoshuashiyan/brush-hard-scale-after.jpg Graphic file (type bmp)
+<figure/chapter3/maoshuashiyan/brush-hard-scale-after.jpg>
+ [25] [26] [27]) (./chapters/bib.tex [28] [29
 
 
-]) [34] (./chapters/appendix1.tex [35
+]) [30] (./chapters/appendix1.tex [31
 
 ]
 
-LaTeX Warning: Reference `keliyunyi' on page 36 undefined on input line 52.
+LaTeX Warning: Reference `keliyunyi' on page 32 undefined on input line 52.
 
 
-LaTeX Warning: Reference `shuilimaichong' on page 36 undefined on input line 54.
+LaTeX Warning: Reference `citimoni' on page 32 undefined on input line 53.
 
 
-LaTeX Warning: Reference `siheyi' on page 36 undefined on input line 61.
+LaTeX Warning: Reference `shuilimaichong' on page 32 undefined on input line 54.
 
 
-LaTeX Warning: Reference `duogongnengguolv' on page 36 undefined on input line 63.
+LaTeX Warning: Reference `darongliangqiangci' on page 32 undefined on input line 62.
 
 
-LaTeX Warning: Reference `kebianjingguaguan' on page 36 undefined on input line 64.
+LaTeX Warning: Reference `duogongnengguolv' on page 32 undefined on input line 63.
 
 
-LaTeX Warning: Reference `sanheyi' on page 36 undefined on input line 65.
+LaTeX Warning: Reference `kebianjingguaguan' on page 32 undefined on input line 64.
 
-[36]
 
-LaTeX Warning: Reference `guaban' on page 37 undefined on input line 76.
+LaTeX Warning: Reference `sanheyi' on page 32 undefined on input line 65.
 
-) [37] (./main.aux)
+[32]) [33] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -1314,19 +1301,16 @@ L3 programming layer <2020/03/25>
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 646B598F4EA715D8A0F5D0A68EDABFEE;7549.
+(rerunfilecheck)             Checksum: AC3AE3797CE179EA0BE09A7148809A1C;6688.
  ) 
 Here is how much of TeX's memory you used:
- 37112 strings out of 474773
- 853307 string characters out of 5761289
- 1968842 words of memory out of 5000000
- 58577 multiletter control sequences out of 15000+600000
- 575974 words of font info for 150 fonts, out of 8000000 for 9000
+ 37064 strings out of 474773
+ 845781 string characters out of 5761289
+ 1957842 words of memory out of 5000000
+ 58527 multiletter control sequences out of 15000+600000
+ 575958 words of font info for 148 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  93i,18n,117p,1216b,1024s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (40 pages).
+Output written on main.pdf (36 pages).

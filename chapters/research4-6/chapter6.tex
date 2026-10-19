@@ -13,19 +13,18 @@
 \begin{table}[H]
 \centering
 \setstretch{1}
-\fontsize{10.5}{15.75}\selectfont
+\fontsize{12}{15}\selectfont
 \setlength{\tabcolsep}{3pt}
-\renewcommand{\arraystretch}{1.1}
-\arrayrulecolor{r46border}
+\renewcommand{\arraystretch}{1.5}
 \caption{数字孪生系统组成及作用}\label{tab:r46-6-1}
-\begin{tabular}{|>{\centering\arraybackslash}m{0.333333\dimexpr\linewidth-6\tabcolsep-4\arrayrulewidth\relax}|>{\centering\arraybackslash}m{0.333333\dimexpr\linewidth-6\tabcolsep-4\arrayrulewidth\relax}|>{\centering\arraybackslash}m{0.333333\dimexpr\linewidth-6\tabcolsep-4\arrayrulewidth\relax}|}
-\hline
-\rowcolor{r46gray} \textbf{层级} & \textbf{主要内容} & \textbf{承担的功能} \\ \hline
-物理层 & 台架、工具、工件及传感器 & 执行实验并测量运行参数 \\ \hline
-通信层 & 控制系统接口与数据读取服务 & 传送测量值、设备状态和时间 \\ \hline
-数据层 & 实时参数、实验信息和历史记录 & 整理、保存及查询实验数据 \\ \hline
-模型层 & 设备三维模型与运动部件 & 根据位移、转速更新运行状态 \\ \hline
-应用层 & 数据总览和实验场景界面 & 显示装置、监测参数及实验过程 \\ \hline
+\begin{tabular}{>{\centering\arraybackslash}m{0.333333\dimexpr\linewidth-6\tabcolsep-4\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.333333\dimexpr\linewidth-6\tabcolsep-4\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.333333\dimexpr\linewidth-6\tabcolsep-4\arrayrulewidth\relax}}
+\toprule
+ 层级 & 主要内容 & 承担的功能 \\ \midrule
+物理层 & 台架、工具、工件及传感器 & 执行实验并测量运行参数 \\ 
+通信层 & 控制系统接口与数据读取服务 & 传送测量值、设备状态和时间 \\ 
+数据层 & 实时参数、实验信息和历史记录 & 整理、保存及查询实验数据 \\ 
+模型层 & 设备三维模型与运动部件 & 根据位移、转速更新运行状态 \\ 
+应用层 & 数据总览和实验场景界面 & 显示装置、监测参数及实验过程 \\ \bottomrule
 \end{tabular}
 \end{table}
 
@@ -76,17 +75,16 @@
 \begin{table}[H]
 \centering
 \setstretch{1}
-\fontsize{10.5}{15.75}\selectfont
+\fontsize{12}{15}\selectfont
 \setlength{\tabcolsep}{3pt}
-\renewcommand{\arraystretch}{1.1}
-\arrayrulecolor{r46border}
+\renewcommand{\arraystretch}{1.5}
 \caption{现场联调画面的对应参数}\label{tab:r46-6-2}
-\begin{tabular}{|>{\centering\arraybackslash}m{0.273979\dimexpr\linewidth-10\tabcolsep-6\arrayrulewidth\relax}|>{\centering\arraybackslash}m{0.184948\dimexpr\linewidth-10\tabcolsep-6\arrayrulewidth\relax}|>{\centering\arraybackslash}m{0.198599\dimexpr\linewidth-10\tabcolsep-6\arrayrulewidth\relax}|>{\centering\arraybackslash}m{0.157526\dimexpr\linewidth-10\tabcolsep-6\arrayrulewidth\relax}|>{\centering\arraybackslash}m{0.184948\dimexpr\linewidth-10\tabcolsep-6\arrayrulewidth\relax}|}
-\hline
-\rowcolor{r46gray} \textbf{核对参数} & \textbf{设备端} & \textbf{孪生端} & \textbf{绝对差值} & \textbf{数值一致度} \\ \hline
-钻压/推拉力 & −7.0 kN & −7 kN & 0 kN & 100\% \\ \hline
-转速 & 50 r/min & 50 r/min & 0 r/min & 100\% \\ \hline
-位移/累计进尺 & 6040 mm & 6039.64 mm & 0.36 mm & 99.99404\% \\ \hline
+\begin{tabular}{>{\centering\arraybackslash}m{0.273979\dimexpr\linewidth-10\tabcolsep-6\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.184948\dimexpr\linewidth-10\tabcolsep-6\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.198599\dimexpr\linewidth-10\tabcolsep-6\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.157526\dimexpr\linewidth-10\tabcolsep-6\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.184948\dimexpr\linewidth-10\tabcolsep-6\arrayrulewidth\relax}}
+\toprule
+ 核对参数 & 设备端 & 孪生端 & 绝对差值 & 数值一致度 \\ \midrule
+钻压/推拉力 & −7.0 kN & −7 kN & 0 kN & 100\% \\ 
+转速 & 50 r/min & 50 r/min & 0 r/min & 100\% \\ 
+位移/累计进尺 & 6040 mm & 6039.64 mm & 0.36 mm & 99.99404\% \\ \bottomrule
 \end{tabular}
 \end{table}
 

@@ -1,0 +1,510 @@
+% !TeX root = ../../main.tex
+\subsection{工具总体结构设计}
+\label{siheyi}
+“四合一”通刮刷磁集成式井筒清洁工具\footnote{下文简称为“四合一工具”}
+%是一种集通井扶正、机械刮削、刷洗清扫与强磁吸附四项功能（简称“通、刮、刷、磁”）于一体的井筒清洁装备。该工具主要用于清除套管内壁的水泥残留、铁屑、毛刺、石蜡及油污等沉积物，以满足新井射孔前的井筒净化要求，并为封隔器等密封工具提供合格的坐封环境。同时，针对长期服役油井出现的套管内壁缩径、破裂及毛刺等损伤，该工具可辅助进行井筒内径检测与管壁修复。
+是一种用于清洁套管内壁的工具。能够清洁套管内壁上得水泥残留、铁屑、毛刺、石蜡及油污等沉积物，结构上具备通径、刮削、刷洗、强磁吸附功能于一体，各功能之间通过模块化连接，进行互换，结构简单，操作灵活。在自由旋转模式下，中心管旋转，外筒不旋转，当刮管器被卡时，过提载荷使销钉剪切，成一体化结构，利用旋转提拉使刮管器解卡。
+%补充工具总体结构图示。
+
+工具的结构如图\ref{fig:structure_4_in_1}所示，采用长轴式布局，主要由上接头、心轴系统、连接套、刮刀模块、毛刷模块、磁吸清理模块及辅助定位机构组成。各功能单元沿轴向依次排布，通过模块化连接方式实现组合，使工具兼具结构简洁性与操作灵活性。心轴作为核心承载部件，承担轴向推力、旋转载荷及各功能模块产生的反作用力，并确保各模块在工作过程中保持同轴状态。刮刀模块与毛刷模块可根据实际作业需求选装组合，以适应不同井况的清洁要求。
+
+该工具的作业机制上是通过机械切削、挤压破碎与辅助清扫的协同作用实现套管内壁硬垢的高效清除。工作时，工具在外部驱动力作用下沿套管轴向运动，心轴将动力传递至各功能模块。刮刀模块中，安装于刀架上的齿形刮刀在弹簧预紧力作用下始终保持与管壁的贴合状态；当刀齿尖端接触硬垢层时，产生较大的局部接触应力，对垢层进行压入与剪切，促使硬垢内部萌生裂纹并逐步扩展，最终导致垢层破碎与剥离。采用弹簧浮动加载结构后，刀片可根据垢层厚度与管壁形态变化自动调节伸缩量，在维持稳定切削压力的同时避免刚性冲击对刀具造成的损伤。在刮削作业完成后，后方毛刷模块对破碎后残留的细小颗粒进行清扫，进一步提升管壁清洁度；磁吸模块则对清理过程中产生的铁磁性碎屑进行有效吸附，防止其再次沉积。此外，工具心轴上设置有扭曲弹簧部件，当刮刀遇到顽固坚硬杂物时可被压缩储能，通过障碍后释放能量以起到缓冲保护作用。通过刮削、刷洗与磁吸的多级协同，该工具能够实现对套管内壁硬垢的高效、彻底清除。
+
+对应的工具规格分别为7\inch 、9-5/8\inch 和13-3/8\inch，共形成3种规格的工具设计图纸，主要技术参数见表\ref{tab:zkg_params}。
+
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=1.\textwidth]{figure/chapter3/structure-4-in-1.png}
+	\caption{四合一工具总体结构}
+	\label{fig:structure_4_in_1}
+\end{figure}
+
+\begin{table}[htbp]
+\centering
+\caption{四合一工具技术参数}
+\label{tab:zkg_params}
+\small % 列数较多，适当缩小字号，避免超出正文版心
+\setlength{\tabcolsep}{4pt} % 减小列间距
+\renewcommand{\arraystretch}{1.3} % 增加行高，使表格不拥挤
+% tabular* + \extracolsep{\fill}：弹性列间距自动伸展，使表格总宽度与正文版心宽度（\textwidth）一致
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}cccccccccc@{}}
+\toprule
+规格 & \begin{tabular}[c]{@{}c@{}}总长\\ (mm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}水眼\\ (mm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}套管磅级\\ PPF\end{tabular} & \begin{tabular}[c]{@{}c@{}}扶正体\\ 外径\\ (mm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}刮刀外径\\ (mm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}本体外径\\ (mm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}接头扣\\ (API)\end{tabular}& \begin{tabular}[c]{@{}c@{}}抗拉\\ (T)\end{tabular} & \begin{tabular}[c]{@{}c@{}}抗扭\\ ($\mathrm{kN\cdot m}$)\end{tabular} \\
+\midrule
+\multirow{4}{*}{7\inch} & \multirow{4}{*}{6500} & \multirow{4}{*}{40} & 17$\sim$20 & 158.24 & 159.77$\sim$171.96 & \multirow{4}{*}{139.7} & \multirow{4}{*}{NC38} & \multirow{4}{*}{160} & \multirow{4}{*}{20} \\
+& & & 20$\sim$26 & 155.58 & 155.70$\sim$167.89 & & & & \\
+& & & 26$\sim$32 & 151.38 & 151.13$\sim$163.32 & & & & \\
+& & & 32$\sim$35 & 146.05 & 146.56$\sim$158.75 & & & & \\
+\midrule
+\multirow{3}{*}{9-5/8\inch} & \multirow{3}{*}{6492} & \multirow{3}{*}{57.15} & 29.3$\sim$32.3 & 222.25 & 224.28$\sim$245.62 & \multirow{3}{*}{203.2} & \multirow{3}{*}{NC50} & \multirow{3}{*}{400} & \multirow{3}{*}{50} \\
+& & & 36$\sim$53.5 & 213 & 212.09$\sim$233.68 & & & & \\
+& & & 47$\sim$59.4 & 209 & 209.04$\sim$230.38 & & & & \\
+\midrule
+\multirow{2}{*}{13-3/8\inch} & \multirow{2}{*}{6512} & \multirow{2}{*}{71.4} & 54.5$\sim$72 & 308 & 306.83$\sim$328.17 & \multirow{2}{*}{285.75} & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}6-5/8\\ REG\end{tabular}} & \multirow{2}{*}{780} & \multirow{2}{*}{110} \\
+& & & 77$\sim$92 & 301.63 & 298.96$\sim$320.29 & & & & \\
+\bottomrule
+\end{tabular*}
+\end{table}
+
+%对表中的数值进行说明：
+%套管磅级：套管单位长度的重量，PPF：Pounds Per Foot（磅每英尺）
+
+注：表中抗拉、抗扭数值为对应规格工具所用接头（NC38、NC50、6-5/8\,REG）的额定载荷。
+
+三种规格工具的强磁部件均选用烧结钐钴（SmCo5）永磁材料，磁性材料耐温不低于合同要求的$150\,^\circ\mathrm{C}$，选型依据与耐温验证方法见\ref{subsubsec:4in1_magnet_material}节。
+
+\subsubsection{四合一工具主要功能部件}
+
+四合一工具主要功能部件如图\ref{fig:main_function_unite_4_in_1}所示。
+
+刮刀模块（图\ref{fig:mechanism_scratcher_4_in_1}）是工具完成硬垢破碎的核心部件，主要包括刀架、固定环、固定销、挡块、弹簧以及可更换齿形刀片。刀片安装于刀架槽内，在弹簧作用下能够产生径向浮动位移，使刀片能够适应套管内壁尺寸变化。当工具进入套管后，刀片受到管壁限制并保持与内壁接触。
+        工具运动过程中，刀片齿尖首先接触硬垢层，通过较小接触面积形成较高局部压力，使垢层产生压裂和剪切破坏。当应力超过硬垢强度后，裂纹扩展并导致垢层剥离。
+        
+   毛刷模块（图\ref{fig:mechanism_swiper_4_in_1}）安装于刮刀模块后方，主要用于清除刮削后的残余垢屑。毛刷块同样采用浮动安装方式，可以根据套管内壁变化自动调整接触状态。在刮刀完成硬垢破碎后，毛刷通过柔性接触将附着的小颗粒和残余沉积物清除，提高最终清洁效果，降低碎屑重新附着的可能性。
+   
+   强磁部件（图\ref{fig:mechanism_mag_sub_4_in_1}）通过固定销分别与两侧的挡环配合。主要作用是回收清洁过程中产生的磁性碎物。部分金属腐蚀产物和铁屑无法通过循环液及时排出，容易重新沉积于套管内部。强磁模块利用磁场吸附作用，将铁磁性颗粒吸附在工具表面，并随工具一起带出，实现井筒净化。
+   
+   扭曲弹簧（图\ref{fig:mechanism_torsional_spring_4_in_1}）左端通过定位止转键与左侧扶正器的卡槽插接配合。右端以同样的方式与中挡环配合。工具中的扭曲弹簧部件不仅起到弹性支撑作用，还具有缓冲和保护功能。正常工作时，弹簧使刮刀片和毛刷块保持一定径向压力，保证其持续接触套管内壁。当遇到较坚硬或突出的障碍物时，弹簧被压缩并储存能量，避免冲击载荷直接传递至工具连接部位；通过障碍后，弹簧释放能量，使刀片恢复工作位置，如图\ref{fig:flexible_scratch_system_4_in_1}所示。该结构提高了工具通过性和清洁稳定性，同时降低刀具损坏风险。
+        
+\begin{figure}[htbp]
+    \centering
+    % 子图 (a)
+    \subfloat[刮刀部件结构]{%
+        \includegraphics[height=4.3cm]{figure/chapter3/mechanism-scratcher-4-in-1.png}%
+        \label{fig:mechanism_scratcher_4_in_1}
+    }
+    \hfill
+    % 子图 (b)
+    \subfloat[毛刷部件结构]{%
+        \includegraphics[height=4.3cm]{figure/chapter3/mechanism-swiper-4-in-1.png}%
+        \label{fig:mechanism_swiper_4_in_1}%
+    }
+    \\[1.2em] % 真正换行，两行子图等高（四张图统一 height=4.3cm）
+      % 子图 (c)
+    \subfloat[强磁部件结构]{%
+        \includegraphics[height=4.3cm]{figure/chapter3/mechanism-mag-sub-4-in-1.png}%
+        \label{fig:mechanism_mag_sub_4_in_1}%
+    }
+    \hfill
+    % 子图 (d)
+    \subfloat[扭曲弹簧部件结构]{%
+        \includegraphics[height=4.3cm]{figure/chapter3/mechanism-torsional-spring-4-in-1.png}%
+      \label{fig:mechanism_torsional_spring_4_in_1}%
+    }
+    \caption{四合一工具主要功能单元}
+        \label{fig:main_function_unite_4_in_1}
+\end{figure}
+      
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=\textwidth]{figure/chapter3/dynamic-system-torsional-spring-mechanism-4-in-1.png
+}
+	\caption{弹性刮削动力系统结构}
+	\label{fig:flexible_scratch_system_4_in_1}
+\end{figure}
+
+%图中文字太小！
+%术语已统一：该部件统一称“扭曲弹簧”（与图3.2(d)、图3.8(b)一致）
+
+\subsubsection{四合一工具辅助结构}
+
+四合一工具辅助结构如图\ref{fig:additional_unite_4_in_1}所示。扶正器套装于心轴外侧，轴向依靠上接头及下游组件的台阶端面限位，径向包覆螺纹连接部位。
+扶正器外侧设计有螺旋导流槽，螺旋导流槽允许钻井液/工作介质流过，不阻碍流体循环；同时支撑套管内壁使心轴居中，承受径向摩擦载荷，保护心轴与螺纹，改善工具下入性能。上接头作为四合一工具与外部管柱之间的连接部件，主要承担轴向载荷传递作用。其内部与心轴螺纹连接，使外部输入的轴向力能够有效传递至工具主体。
+上接头外右侧空套一个扶正器。内六角凹端紧定螺钉用于限制上接头与心轴的轴向移动，防止螺纹松动。
+
+\begin{figure}[htbp]
+    \centering
+    % 子图 (a)
+    \subfloat[上接头结构]{%
+        \includegraphics[width=0.48\textwidth]{figure/chapter3/upper-sub-4-in-1.png}%
+        \label{fig:upper_sub_4_in_1}
+    }
+    \hfill % 两图横向并排：各占半栏宽（0.48\textwidth×2 + \hfill = 一行放得下）
+    % 子图 (b)
+    \subfloat[下接头结构]{%
+        \includegraphics[width=0.48\textwidth]{figure/chapter3/lowwer-sub-4-in-1.png}%
+        \label{fig:lowwer_sub_4_in_1}%
+    }
+    \caption{四合一工具辅助结构介绍}
+        \label{fig:additional_unite_4_in_1}
+\end{figure}
+
+\subsubsection{强磁部件永磁材料选型与耐温性}
+\label{subsubsec:4in1_magnet_material}
+
+强磁部件依靠永磁体产生的磁场吸附铁磁性碎屑，永磁体的磁性能随工作温度升高而衰减，高温下还可能发生不可逆退磁，因此磁性材料的耐温能力是强磁部件的关键设计约束。合同条款5.2.1.3（1）对“四合一”集成式井筒清洁工具明确要求“磁性材料耐温$\ge 150\,^\circ\mathrm{C}$”，本节据此开展永磁材料选型。
+
+永磁材料选择时，应衡量材料工作温度、各温度下的内禀矫顽力（$H_{cj}$）与最大磁能积（$BH_{\max}$）等因素：在满足使用温度的前提下，选择最大磁能积较大的永磁材料，以获得更大的吸附力；并优先选择内禀矫顽力较大的材料，该类磁材的抗退磁能力和耐温性能更佳，可使工具在高温井筒环境中保持磁性稳定。经调研，符合井筒清洁工具应用场景的候选永磁材料性能参数见后文3.3节表\ref{tab:magnet_params}。
+
+对比可知：铝镍钴（AlNiCo）的最高工作温度为$450$—$550\,^\circ\mathrm{C}$，耐温能力最好，但其最大磁能积小，达到设计吸附力所需的磁体体积过大，在强磁部件的径向尺寸限制下难以布置；铁氧体（Ferrite）的最高工作温度约$250\,^\circ\mathrm{C}$，磁能积低且材质较脆；钕铁硼（NdFeB，H系列）在地面常温环境下表观磁性最强，但其最高工作温度仅为$120\,^\circ\mathrm{C}$、居里温度约$340\,^\circ\mathrm{C}$，工具下井后随温度升高磁性大幅衰减，不能满足合同$150\,^\circ\mathrm{C}$的耐温指标；烧结钐钴（SmCo5）的居里温度为$700$—$850\,^\circ\mathrm{C}$，最高工作温度为$250$—$350\,^\circ\mathrm{C}$，且在$150\,^\circ\mathrm{C}$—$200\,^\circ\mathrm{C}$区间内其内禀矫顽力$H_{cj}$仍保持在$-15.8$至$-14.2\,\mathrm{kOe}$之间，而钕铁硼N45UH在同一温度区间的$H_{cj}$仅为$-9.0$至$-6.0\,\mathrm{kOe}$。
+
+综合上述对比，四合一工具强磁部件的永磁体选用烧结钐钴SmCo5材料，其不同温度下的退磁曲线见后文3.3节图\ref{fig:demagnetization_SmCo5}。该材料最高工作温度$250$—$350\,^\circ\mathrm{C}$，相对合同$\ge 150\,^\circ\mathrm{C}$的耐温指标具有$100\,^\circ\mathrm{C}$以上的温度裕量；居里温度$700$—$850\,^\circ\mathrm{C}$远高于井筒实际工作温度，工具工作温度范围内发生的退磁均可逆，温度降低后磁性能大部分恢复，可保证强磁部件在高温井筒中重复使用时磁性能不发生累积衰减。
+
+为验证磁性材料及强磁部件的耐温性能满足$150\,^\circ\mathrm{C}$指标要求，按本报告3.3节给出的测试方法进行检验：磁铁材料依据不可逆磁通损失检测，取长径比$L/D=0.7$的标准圆柱试样饱和充磁后，在开路状态下加热至$150\,^\circ\mathrm{C}$并保温$2$小时，冷却至室温后测量开路磁通，不可逆磁通损失小于$5\%$即可判定该磁材在$150\,^\circ\mathrm{C}$下耐温合格；强磁部件组装完成后放入恒温箱，在$150\,^\circ\mathrm{C}$下保温$2$小时，取出冷却至室温测量其表磁或磁通量，加热前后衰减比例小于$5\%$即可判定强磁部件耐温合格。
+
+\subsection[设计计算与校核]{设计计算与校核\protect\footnote{合同条款：5.2.1.3井筒高效清洁关键技术配套工具设计——（1）“四合一”集成式井筒清洁工具具备通刮刷磁吸功能，磁性材料耐温$\ge 150\,^\circ\mathrm{C}$，抗拉$>=100\mathrm{T}$，抗扭$>17\mathrm{kN}\cdot \mathrm{m}$，刮刷范围实现360$^{\circ}$周向全覆盖}}
+
+本节校核涉及两种材料：心轴采用4330V-155\,KSI高强钢（最小屈服强度930\,MPa），端面键采用4145H钢（屈服强度827\,MPa）。工具的抗拉设计指标为$\geq1000$\,kN，抗扭设计指标为$>17\,\mathrm{kN\cdot m}$。
+
+%“2.75”-8 Stub ACME” 是一种常用于石油井下设备（如完井工具）的短牙梯形传动螺纹（Stub Acme Thread），ACME不是缩写，在机械工程领域，它特指 Acme Thread（爱克姆螺纹）。这是一种具有 29° 牙型角的梯形传动螺纹，其标准由美国标准协会（ANSI）制定。-8表示每英寸8个牙。
+\subsubsection{主要受力件的螺纹强度校核}
+四合一工具的主要受力件的螺纹强度危险点出现在心轴（图号：ZKG700004A）上，工具有三种规格，7\inch 规格的工具螺纹尺寸最小，最可能出现强度问题，于是螺纹抗拉强度校核以7\inch 规格作为计算依据，零件结构及尺寸如图\ref{fig:inner_pipe_for_strength_analysis}所示，其连接螺纹为$2.75''\text{-}8$ Stub ACME（爱克姆短牙梯形传动螺纹，8牙每英寸）。螺纹牙剪切强度计算：
+\begin{equation}
+\begin{aligned}
+    F_{\max} &= [\tau] \cdot k_z \cdot \pi \cdot d_1 \cdot b \cdot z \cdot 10^{-3} \\
+    [\tau] &= \frac{\sigma_s}{n}
+\end{aligned}
+\end{equation}
+式中，$F_{\max}$---工具最大拉力，kN；
+
+$[\tau]$---螺纹牙的剪切强度，MPa；
+
+$k_z$---螺纹各圈的载荷不均系数，根据《机械设计手册》螺纹连接（紧固件连接）部分中螺纹牙的剪切强度计算及各圈螺纹载荷分配的规定\cite{ref26}，取 $k_z = 0.56$；
+
+$d_1$---螺纹底径，67.94mm；(图纸 ZKG700004A：2.75"-8 StubACME 小径为 67.940～68.100，取小值)
+
+$b$---螺纹牙根宽度，取 $b=1.833\,\text{mm}$；(按 ASME B1.8 Stub ACME 牙型（8 牙/in，螺距 3.175mm）计算的牙底宽度$b = 0.58p = 0.58 \times 3.175 = 1.8415\,\text{mm}$，取小值 $b=1.833\,\text{mm}$)
+
+$n$---安全系数，按《机械设计手册》螺纹连接部分中螺纹牙强度校核的安全系数取值规定\cite{ref26}，取 $n = 2.5$；
+
+$z$---旋合圈数，取 $z=35$；
+
+$\sigma_s$---材料最小屈服强度，930 MPa (4330V-155 KSI)。(图纸：4330V 屈服强度≥930MP)
+%4330V-155 KSI 是一种美标高强度低合金钢的牌号与强度等级组合标识，常用于石油、天然气及航空航天等对材料强度和韧性要求极高的领域。4330V：这是美国钢铁协会（AISI）标准下的合金结构钢牌号，属于镍铬钼钒系钢。它在4330钢的基础上添加了钒（V），以提升强度、硬度和抗疲劳性能。该材料通常经过真空电弧重熔（VAR）工艺处理，具有优异的淬透性、低温冲击韧性和抗裂纹扩展能力。155 KSI：表示该材料经热处理后达到的最小屈服强度为155千磅每平方英寸（KSI），换算约为1069 MPa。这属于超高强度级别，适用于承受极端载荷和冲击的工况。这种钢材的典型应用包括石油钻具、井下工具、航空紧固件和高应力传动部件。其化学成分中碳含量约0.28–0.33%，镍含量2.0–2.5%，铬0.6–0.9%，钼0.2–0.3%，钒0.15–0.3%，这些元素共同赋予其高强度与高韧性的平衡。
+
+公式出自《机械设计手册》螺纹连接（紧固件连接）部分"螺纹牙的剪切强度计算"。力学模型是把螺纹牙看成悬臂，牙根截面受剪切，在螺纹副拉脱时牙先被剪断，因此用牙根面积 \(\pi \cdot d_1 \cdot b\) 乘旋合圈数 \(z\) 作为受剪面积。手册同时给出两个系数：$k_z$是螺纹各圈载荷不均系数（前几圈承担大部分载荷），n 是螺纹牙校核的安全系数。
+
+$2.75''\text{-}8$ Stub ACME 螺纹代入数据计算如下：
+\begin{align}
+    F_{\max} &= [\tau] \cdot k_z \cdot \pi \cdot d_1 \cdot b \cdot z \cdot 10^{-3} \nonumber \\
+    &= 372 \times 0.56 \times 3.14 \times 67.94 \times 1.833 \times 35 \times 10^{-3} = 2851.13 \text{kN} \\
+    &> 1000 \text{kN} \nonumber
+\end{align}
+于是，螺纹满足抗拉设计要求。
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=1.\textwidth]{figure/chapter3/inner-pipe-for-strength-analysis.png}
+	\caption{7\inch 规格工具的心轴结构}
+	\label{fig:inner_pipe_for_strength_analysis}
+\end{figure}
+
+\subsubsection{主要受力件的零件强度校核}
+
+清洁工具的主要受力件为芯轴，其危险截面有两处，分别为$2.75\inch\text{-}8$ Stub ACME 外螺纹根部、$2.75\inch\text{-}8$ Stub ACME 内螺纹根部。本文用解析法、数值模拟两种方法对芯轴的强度进行校核。
+
+（1）芯轴抗拉危险截面1：为$2.75\inch\text{-}8$ Stub ACME 外螺纹根部。
+
+对于环形零件截面，抗拉强度计算公式：
+\begin{equation}
+    F_{\max} = \frac{[\pi \cdot (D^2 - d^2)] \cdot \sigma_s}{4 \cdot n} \times 10^{-3}
+    \label{eq:tensile_strength_circular_section}
+\end{equation}
+式中，$F_{\max}$——工具最大拉力，kN；
+
+$D$——危险截面外径，mm；
+
+$d$——危险截面内径，mm；
+
+$\sigma_s$——材料最小屈服强度：930 MPa (4330V-155 KSI)；
+
+$n$——安全系数，取 $n = 1.5$。
+
+根据图\ref{fig:inner_pipe_for_strength_analysis}，取$D=67\,\textrm{mm}$（螺纹根部净截面外径），$d=40\,\textrm{mm}$，则$2.75''\text{-}8$ Stub ACME 外螺纹根部最大拉力：
+\begin{align}
+    F_{\max} &= \frac{\pi \cdot (D^2 - d^2) \cdot \sigma_s}{4 \cdot n} \times 10^{-3} \nonumber \\
+    &= \frac{3.14 \times (67^2 - 40^2) \times 930}{4 \times 1.5} \times 10^{-3} \nonumber \\
+    &= 1406.08 \, \text{kN} > 1000 \, \text{kN}
+\end{align}
+
+于是，危险截面1满足抗拉设计要求。
+
+（2）芯轴抗拉危险截面 2：为 $2.75''\text{-}8$ Stub ACME 内螺纹根部。
+
+根据公式\ref{eq:tensile_strength_circular_section}和图\ref{fig:inner_pipe_for_strength_analysis}，取$D=92\,\textrm{mm}$、$d=71.6\,\textrm{mm}$（参见图纸ZKG700004A局部视图I），则心轴上$2.75''\text{-}8$ Stub ACME 内螺纹根部最大拉力：
+\begin{equation}
+\begin{aligned}
+F_{\text{max}} &= \frac{\left[\pi \cdot \dfrac{(D^2-d^2)}{4} - 3\cdot b\cdot h\right] \cdot \sigma_s}{n} \times 10^{-3} \\
+&= \frac{\left[3.14 \times \dfrac{(92^2-71.6^2)}{4} - 3 \times 10 \times 10.2\right] \times 930}{1.5} \times 10^{-3} \\
+&= 1435\,\text{kN} > 1000\,\text{kN}
+\end{aligned}
+\end{equation}
+
+式中，$F_{\max}$——该危险截面（内螺纹根部）能承受的最大拉力，kN；$D=92\,\textrm{mm}$ 为该处外径（图纸 ZKG700004A 主视图标注的 Ø92）；$d=71.6\,\textrm{mm}$ 为内螺纹根部退刀槽直径（图纸 ZKG700004A 局部视图 I 标注的 $\phi 71.60$），该处壁厚在螺纹段内最小，故取为危险截面；$\sigma_s=930\,\textrm{MPa}$、$n=1.5$ 与危险截面 1 取值相同；
+
+$b$——截面处径向螺纹孔的孔径，取 $b=10\,\textrm{mm}$（M10 螺纹的公称直径）；
+
+$h$——截面处壁厚，取 $h=(D-d)/2=(92-71.6)/2=10.2\,\textrm{mm}$。
+
+$-3bh$ 为心轴上 3 个径向螺纹孔所占面积的扣除项：四合一工具的心轴在该截面上沿周向均布 3 个径向 M10 螺纹孔（图纸 ZKG700004A 的 B-B 视图，标注为 3×M10-8H EQS，螺纹标准 GB/T 196），用于安装内六角凹端紧定螺钉，限制上接头与心轴的相对转动和轴向移动。该孔沿径向穿过壁厚，在与心轴轴线垂直的横截面上即形成 3 个宽 $b$、深 $h$ 的矩形缺口（径向圆孔与横截面的交线正是宽 $b$、深 $h$ 的矩形），因此受拉净截面由圆环面积 $\pi (D^2-d^2)/4$ 减小为 $\pi (D^2-d^2)/4-3bh$。其中，$3$ 为孔的个数，$b$、$h$ 分别为孔宽与孔深，$3bh=3\times 10\times 10.2=306\,\textrm{mm}^2$，占圆环面积（$\pi (92^2-71.6^2)/4\approx 2620\,\textrm{mm}^2$）的 11.7\%，即 $\pi (92^2-71.6^2)/4-3bh\approx 2620-306=2314\,\textrm{mm}^2$。由量纲亦可校核该式的正确性：$[\pi (D^2-d^2)/4-3bh]$ 的单位为 $\textrm{mm}^2$，与 $\sigma_s$ 的单位 $\textrm{MPa}\,(\textrm{N/mm}^2)$ 相乘后为 N，乘 $10^{-3}$ 后即为 kN。
+
+若不计该 3 个孔的削弱，截面可承受的拉力为 $2620\times 930/1.5\times 10^{-3}=1624\,\textrm{kN}$；若孔的取位更靠近螺纹大径侧（按该处内孔 \(\phi 67\) 计，壁厚 $(92-67)/2=12.5\,\textrm{mm}$），扣减面积为 $3\times 10\times 12.5=375\,\textrm{mm}^2$，$F_{\max}$ 降为 $1392\,\textrm{kN}$。三种取法均大于 1000\,kN 的设计要求，说明危险截面 2 的结论对孔的位置与取法不敏感。
+
+于是，危险截面2满足拉伸强度设计要求。
+
+
+\subsubsection{主要受力件的零件强度抗扭校核}
+
+四合一工具的受扭危险零件仍为图\ref{fig:inner_pipe_for_strength_analysis}所示芯轴螺纹结构根部截面，以及用于零件之间周向定位的端面键，如图\ref{fig:flat_shear_key}所示。下面进行螺纹危险截面的抗扭强度计算。截面抗扭强度$T_{\max}$计算式为
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=.4\textwidth]{figure/chapter3/flat-shear-key.png}
+	\caption{端面抗扭键结构}
+	\label{fig:flat_shear_key}
+\end{figure}
+
+%\tau & =  \frac{16 \cdot D \cdot T_{\max}}{\pi \cdot (D^4 - d^4)} \times 10^6\\
+\begin{equation}
+\begin{aligned}	
+    T_{\max} & =  \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6}\\
+    [\tau] &= \alpha \cdot \sigma_s 
+    \end{aligned}
+\end{equation}
+式中，$T_{\max}$——工具最大扭矩，kN·m；
+
+$D$——危险截面外径，mm；
+
+$d$——危险截面内径，mm；
+
+$\sigma_s$——材料屈服应力，取 $\sigma_s=930\,\textrm{MPa}$（按图纸 ZKG700004A 技术要求取材料 4330V 的屈服强度下限，与抗拉校核取值一致），MPa；
+
+$\alpha$——材料许用切应力与许用拉应力之比（许用应力折减系数），根据《机械设计手册》零件强度校核中许用应力折减系数的取值规定\cite{ref26}，取$\alpha = 0.66$；
+
+$[\tau]$——材料许用切应力，MPa。
+
+注：本小节同时用到安全系数与端面键个数，为避免与折减系数混淆，折减系数统一记为 $\alpha$，安全系数记为 $n_1$，端面键个数记为 $n_2$。
+
+对于芯轴的危险截面1，代入材料的力学和几何参数计算得
+\begin{align}
+    T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6} \nonumber \\
+    &= \frac{613.8 \times 3.14 \times (67^4 - 40^4)}{16 \times 67} \times 10^{-6} \nonumber \\
+    &= 31.63\,\text{kN} \cdot \text{m} > 17\,\text{kN} \cdot \text{m}
+\end{align}
+
+对于危险截面2，代入材料的力学和几何参数计算得
+\begin{align}
+    T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6} \nonumber \\
+    &= \frac{613.8 \times 3.14 \times (92^4 - 71.6^4)}{16 \times 92} \times 10^{-6} \nonumber \\
+    &= 59.39\,\text{kN} \cdot \text{m} > 17\,\text{kN} \cdot \text{m}
+\end{align}
+
+于是，工具的两个危险截面都满足抗扭强度要求。
+
+有限元计算结果如图\ref{fig:FEA_verification_shaft}所示。拉伸工况下，有限元计算得到的最大 von Mises 应力为 2055\,MPa，出现在变径沟槽的转角点处。该处圆角半径极小（图纸技术要求未注圆角不大于 R0.2），几何上接近清角，有限元网格无法有效离散该特征，转角处单元产生变形，导致出现非物理的局部应力畸变。该畸变数值不具有稳定性：在转角线及其邻近区域逐点取样，位置相差仅 0.7\,mm 的三个节点应力分别为 802\,MPa、830\,MPa 和 1622\,MPa，跨度达 2 倍；相距 2.8\,mm 处的节点应力降至 570\,MPa。连续介质中的应力场不可能在不足 1\,mm 的距离内成倍跳变，表明该处读数系几何离散引起的数值畸变。此外，改变网格尺寸（危险区单元取 0.5\,mm、0.3\,mm、0.27$\sim$0.5\,mm 及加密网格）时，峰值分别为 935.7\,MPa、975.8\,MPa、935.7\,MPa 和 2055\,MPa，不随网格加密收敛。按工程惯例，此类应力畸变区不予采用，实际结构应力取畸变区邻近稳定区域的应力值，即 570\,MPa。该值低于按安全系数 1.5 确定的许用应力 620\,MPa，也远低于材料最小屈服强度 930\,MPa；同时，该值与按净截面解析计算的名义拉应力 423.6\,MPa 处于同一量级，说明计算模型与载荷传递路径正确。据此判断，芯轴在 1000\,kN 轴向拉力下的强度满足设计要求。
+
+扭转载荷作用下，有限元计算得到的最大 von Mises 应力为 956.9\,MPa，出现在变径沟槽的转角线上。该处圆角接近清角，网格无法有效离散，属局部数值畸变（与拉伸工况的网格敏感性分析结论一致）。取畸变区邻近稳定区域的应力，探测结果为 666.9\,MPa，低于材料最小屈服强度 930\,MPa，不会产生塑性变形。按净截面计算的名义剪应力为 196\,MPa，低于许用切应力 613.8\,MPa（$=0.66\sigma_s$），安全系数 3.13；对应的名义 von Mises 应力为 339\,MPa，低于许用应力 620\,MPa，安全系数 1.83。因此，芯轴的扭转强度满足大于 17\,kN$\cdot$m 的设计指标。%为降低局部应力集中、提高强度储备，建议在危险截面增加过渡圆角。
+
+\begin{figure}[htbp]
+	\centering
+	\subfloat[拉伸载荷下应力分布]{%
+	\includegraphics[width=0.45\textwidth]{figure/simulation/xinzhoulashen.png}
+	}
+	%\vspace{1em}
+	\subfloat[扭转载荷下应力分布]{%
+	\includegraphics[width=0.45\textwidth]{figure/simulation/xinzhouniuju.png}
+	}
+	\caption{芯轴零件受力有限元分析}
+	\label{fig:FEA_verification_shaft}
+\end{figure}
+
+对于外筒件，其材料牌号为4145H，抗扭危险截面为端面键截面（键的数量为 3）。
+
+外筒件抗扭强度 $\tau$ 计算：
+\begin{align}
+    \tau &= \frac{T_{\max}}{n_2 \cdot b \cdot h \cdot r} \times 10^{6} \\
+    T_{\max} &= \frac{n_2 \cdot [\tau] \cdot b \cdot h \cdot r}{n_1} \times 10^{-6} \\
+    [\tau] &= \alpha \cdot \sigma_s = 0.66 \times 827\,\text{MPa} = 545.82\,\text{MPa}
+\end{align}
+式中，$T_{\max}$ —— 外筒件能承受的最大扭矩，$\text{kN}\cdot\text{m}$；
+
+    $\sigma_s$ ——外筒件材料屈服应力，取 $\sigma_s=827\,\text{MPa}$（图纸 ZKG700006A 与 ZKG700007A 技术要求：材料 4145，屈服强度 $\ge$ 827\,MPa），$\text{MPa}$；
+    
+    $r$ ——端面键的分布圆半径，$\text{mm}$；
+    
+    $b$ ——端面键宽度，$\text{mm}$；
+    
+    $h$ ——端面键高度，$\text{mm}$；
+    
+    $\alpha$ ——许用剪应力与许用拉应力系数（折减系数），根据《机械设计手册》零件强度校核中许用应力折减系数的取值规定\cite{ref26}，取 $\alpha=0.66$；
+    
+    $[\tau]$ ——材料许用切应力，$\text{MPa}$；
+    
+    $n_1$ ——安全系数，取 $n_1=1.5$；
+    
+    $n_2$ ——端面键数量，取 $n_2=3$（上挡环 ZKG700006A 上为 $3\times30_{-0.25}^0\ \text{EQS}$ 键，对应中连接套 ZKG700007A 上的 $3\times31^{+0.25}_0\ \text{EQS}$ 键槽，沿周向均布 3 处）；
+
+
+外筒件能承受的最大扭矩：
+\begin{equation}
+\begin{aligned}
+T_{\text{max}}&=\frac{n_2\cdot [\tau]\cdot b\cdot h\cdot r}{n_1}\times 10^{-6}
+=\frac{3\times 545.82\times 30\times 15\times 47}{1.5}\times 10^{-6}\\
+&=23.09\,\text{kN}\cdot\text{m} > 17\,\text{kN}\cdot\text{m}
+\end{aligned}
+\end{equation}
+
+注：端面键数量、键宽、键高与分布圆半径按7in图纸取值（上挡环ZKG700006A、中连接套ZKG700007A），分布圆半径取上挡环 $R47_{-0.25}$；若键高按 $13.5\,\text{mm}$ 计，则 $T_{\text{max}}=20.78\,\text{kN}\cdot\text{m}$，仍大于 $17\,\text{kN}\cdot\text{m}$。
+
+
+于是，外筒件满足抗扭强度要求。
+
+\subsubsection{弹簧的力学计算}
+
+四合一工具中设计了毛刷和刮刀的预紧弹簧以及扭曲弹簧，如图\ref{fig:spring}所示。
+\begin{figure}[htbp]
+	\centering
+	\subfloat[刮刀、毛刷预紧弹簧]{%
+	\includegraphics[width=0.2\textwidth]{figure/chapter3/pitch-spring.png}
+	}
+	%\vspace{1em}
+	\subfloat[扭曲弹簧]{%
+	\includegraphics[width=0.55\textwidth]{figure/chapter3/oscillating-spring.png}
+	}
+	\caption{四合一工具中的弹簧零件}
+	\label{fig:spring}
+\end{figure}
+
+毛刷和刮刀的预紧弹簧参数列举于表\ref{tab:spring_parameters_pitch}，扭曲弹簧的参数列举于表\ref{tab:spring_params_rebounce}。
+\begin{table}[htbp]
+    \centering
+    \caption{毛刷与刮刀预紧弹簧技术参数表}
+    \label{tab:spring_parameters_pitch}
+    \renewcommand{\arraystretch}{1.3} % 增加行高，使表格更美观
+    \begin{tabularx}{\textwidth}{CCCC} % 4 列：参数名/数值 两对并排，压缩表格高度
+        \toprule % 顶线
+        \textbf{参数名称} & \textbf{数值} & \textbf{参数名称} & \textbf{数值} \\
+        \midrule % 栏目线
+        弹簧外径 $D$ & 25\,mm & 弹簧自由高度 $H$ & 35\,mm \\
+        弹簧内径 $D_1$ & 19\,mm & 弹簧总圈数 $n_1$ & 5 \\
+        弹簧中径 $D_2$ & 22\,mm & 弹簧有效圈数 $n$ & 3 \\
+        弹簧线径 $d$ & 3\,mm & 最小工作高度 $H_1$ & 29\,mm \\
+        弹簧剪切弹性模量 $G$ & 79\,GPa & 最大工作高度 $H_2$ & 23\,mm \\
+        许用切应力 $[\tau]$ & 710\,MPa & & \\
+        \bottomrule % 底线
+    \end{tabularx}
+\end{table}
+
+\begin{table}[htbp]
+    \centering
+    \caption{扭曲弹簧技术参数表}
+    \label{tab:spring_params_rebounce}
+    \renewcommand{\arraystretch}{1.3} % 与表3.2统一行高
+    \begin{tabularx}{\textwidth}{CCCC} % 4 列：参数名/数值 两对并排，压缩表格高度
+        \toprule % 顶线
+        \textbf{参数名称} & \textbf{数值} & \textbf{参数名称} & \textbf{数值} \\
+        \midrule % 栏目线
+        弹簧外径 $D$ & 120\,mm & 弹簧自由高度 $H$ & 440\,mm \\
+        弹簧内径 $D_1$ & 80\,mm & 弹簧总圈数 $n_1$ & 11 \\
+        弹簧中径 $D_2$ & 100\,mm & 弹簧有效圈数 $n$ & 9 \\
+        弹簧截面宽度 $b$ & 20\,mm & 最小工作高度 $H_1$ & 400\,mm \\
+        弹簧截面高度 $h$ & 20\,mm & 最大工作高度 $H_2$ & 390\,mm \\
+        弹簧剪切弹性模量 $G$ & 79\,GPa & 许用切应力 $[\tau]$ & 710\,MPa \\
+        弹簧系数 $\gamma'$ & 5.57 & 弹簧系数 $\beta'$ & 2.404 \\
+        \bottomrule % 底线
+    \end{tabularx}
+\end{table}
+
+刮刀与毛刷弹簧的力学计算如下。
+
+
+弹簧刚度$P'$为
+\begin{equation}
+    P' = \frac{G \cdot d^4}{8 \cdot D_2^3 \cdot n} = \frac{79000 \times 3^4}{8 \times 22^3 \times 3} = 25 \, \text{N/mm}
+\end{equation}
+注：按图纸 ZKG7000-01-5 技术要求，刮刀与毛刷预紧弹簧的自由高度 35mm、有效圈数 3、总圈数 5、弹簧刚度 22.5N/mm；图纸给出的试验载荷为 137.25±13.7N（对应高度 28.90mm）和 401.4±40.1N（对应高度 17.16mm）。本节按刚度 22.5N/mm、工作高度 29mm 与 23mm 计算，对应载荷 135N 和 270N。
+考虑端部约束与装配预压的影响，后续载荷与应力计算均取弹簧的有效刚度，即 $P' = 22.5 \, \text{N/mm}$。
+
+弹簧最小工作载荷$P_1$
+\begin{equation}
+    P_1 = P' \cdot (H - H_1) = 22.5 \times (35 - 29) = 135 \, \text{N}
+\end{equation}
+
+弹簧最大工作载荷$P_n$
+\begin{equation}
+    P_n = P' \cdot (H - H_2) = 22.5 \times (35 - 23) = 270 \, \text{N}
+\end{equation}
+
+弹簧旋绕比$C$
+\begin{equation}
+    C = \frac{D_2}{d} = \frac{22}{3} = 7.33
+\end{equation}
+
+弹簧曲度系数$K$
+\begin{equation}
+    K = \frac{4 \cdot C - 1}{4 \cdot C - 4} + \frac{0.615}{C} = \frac{4 \times 7.33 - 1}{4 \times 7.33 - 4} + \frac{0.615}{7.33} = 1.2
+\end{equation}
+
+弹簧最大切应力$\tau_{\max}$
+\begin{equation}
+    \tau_{\max} = \frac{8 \cdot K \cdot D_2}{\pi \cdot d^3} \times P_n = \frac{8 \times 1.2 \times 22}{3.14 \times 3^3} \times 270 = 672.6 \, \text{MPa} < 710 \, \text{MPa}
+\end{equation}
+
+于是，刮刀与毛刷强度满足要求。
+
+扭曲弹簧的力学计算如下。
+
+扭曲弹簧刚度$P'$
+\begin{equation}
+    P' = \frac{G \cdot b^2 \cdot h^2}{\gamma' \cdot D_2^3 \cdot n} = \frac{79000 \times 20^2 \times 20^2}{5.57 \times 100^3 \times 9} = 252 \, \text{N/mm}
+\end{equation}
+
+弹簧最小工作载荷$P_1$
+\begin{equation}
+    P_1 = P' \cdot (H - H_1) = 252 \times (440 - 400) = 10080 \, \text{N}
+\end{equation}
+
+弹簧最大工作载荷$P_n$
+\begin{equation}
+    P_n = P' \cdot (H - H_2) = 252 \times (440 - 390) = 12600 \, \text{N}
+\end{equation}
+
+弹簧旋绕比$C$
+\begin{equation}
+    C = \frac{D_2}{h} = \frac{100}{20} = 5
+\end{equation}
+
+弹簧曲度系数$K$
+\begin{equation}
+    K = \frac{4 \cdot C - 1}{4 \cdot C - 4} + \frac{0.615}{C} = \frac{4 \times 5 - 1}{4 \times 5 - 4} + \frac{0.615}{5} = 1.31
+\end{equation}
+
+弹簧最大切应力$\tau_{\max}$
+\begin{equation}
+    \tau_{\max} = \frac{\beta' \cdot K \cdot D_2}{b \cdot h \cdot \sqrt{b \cdot h}} \cdot P_n = \frac{2.404 \times 1.31 \times 100}{20 \times 20 \times \sqrt{20 \times 20}} \times 12600 = 496 \, \text{MPa} < 710 \, \text{MPa}
+\end{equation}
+
+于是，扭曲弹簧的强度满足设计要求。
+
+
+
+综合上述，各主要受力件的性能数据统计于表\ref{tab:force_data_statistics}中。
+
+
+\begin{table}[htbp]
+    \centering
+    \caption{受力件数据统计表}
+    \label{tab:force_data_statistics}
+    \renewcommand{\arraystretch}{1.3} % 与表3.1~3.3统一行高
+    \begin{tabularx}{0.8\textwidth}{CC}  % 关键：使用 tabularx + \textwidth + X列
+        \toprule
+        \textbf{受力类型} & \textbf{数据}\\
+        \midrule
+        NC38 最大拉力 & $3000\,\text{kN}$ \\
+        材料屈服强度 $\sigma_s$ & $930\,\text{MPa}$ \\
+        螺纹最大剪切力 $F_{\max1}$ & $2851.13\,\text{kN}$ \\
+        心轴最大拉力 $F_{\max2}$ & $1406.08\,\text{kN}$ \\
+        NC38 最大扭矩 & $44.3\,\text{kN}\cdot\text{m}$ \\
+        材料许用切应力 $[\tau]$ & $613.8\,\text{MPa}$ \\
+        心轴最大扭力 $T_{\max1}$ & $31.63\,\text{kN}\cdot\text{m}$ \\
+        弹簧许用切应力 & $710\,\text{MPa}$ \\
+        弹簧刚度 $P'$ & $22.5\,\text{N/mm}$ \\
+        弹簧最小工作载荷 $P_1$ & $135\,\text{N}$ \\
+        弹簧最大工作载荷 $P_n$ & $270\,\text{N}$ \\
+        弹簧旋绕比 $C$ & $7.33$ \\
+        弹簧曲度系数 $K$ & $1.2$ \\
+        弹簧最大切应力 $\tau_{\max}$ & $672.6\,\text{MPa}$ \\
+        端面键抗扭 $T_{\max2}$ & $23.09\,\text{kN}\cdot\text{m}$ \\
+        \bottomrule
+    \end{tabularx}
+\end{table}

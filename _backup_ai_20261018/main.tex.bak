@@ -1,0 +1,280 @@
+\documentclass[12pt, a4paper, zihao=-4, openright]{ctexrep}
+\input{chapters/research4-6/fonts.tex}
+
+% 1. 字体设置：中文宋体，西文 Times New Roman
+\usepackage{newtxtext} 
+%\usepackage[UTF8, fontset=windows]{ctex} 
+
+% 2. 页面设置：A4幅面，常规边距
+\usepackage[a4paper, top=2.54cm, bottom=2.54cm, left=2.54cm, right=2.54cm, headheight=15pt]{geometry}
+
+% 3. 页眉页脚与双线设置
+\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%\fancyhf{} 
+%\fancyhead[C]{\leftmark} 
+%%\renewcommand{\headrule}{\vspace{-0.4pt}\hrule height 1.5pt width \headwidth \vspace{-1.2pt}\hrule height 0.5pt width \headwidth}
+%\fancyfoot[C]{\thepage}       
+
+\usepackage{enumitem}
+
+% 第一套：圆圈序号 ①②③④，最多10条，用于你现在附件
+% 【注意】不要用 enumitem 的 \newlist/\setlist 定义它：enumitem 在每个列表开始时会把
+%   \value 临时重定义成自己的宏去测量 label 宽度（enumitem.sty 里的 widest 机制），
+%   与本 label 中的 \ifcase\value{...} 冲突；编译时每次 \begin{circlist} 都会插入一个 0
+%   并报 "Missing number, treated as zero."，PDF 里的序号还会变成 “0circlisti” 之类乱码。
+%   这里改用 LaTeX 原生 list：label 在排版每一项时才展开；\usecounter 会让计数器在每次
+%   \begin{circlist} 时自动归零，因此每个列表都从 ① 重新开始。
+\newcounter{circlist}
+\newcommand{\circlistlabel}{%
+    \ifcase\value{circlist}\or①\or②\or③\or④\or⑤\or⑥\or⑦\or⑧\or⑨\or⑩\else\arabic{circlist}\fi}
+\newenvironment{circlist}%
+    {\begin{list}{\circlistlabel}%
+        {\usecounter{circlist}%
+        \setlength{\leftmargin}{2em}%
+        \setlength{\labelwidth}{1.2em}%
+        \setlength{\labelsep}{0.8em}%
+        \setlength{\itemsep}{0pt}%
+        \setlength{\parsep}{0pt}%
+        \setlength{\partopsep}{0pt}%
+        \setlength{\topsep}{0.4em}%
+        \setlength{\listparindent}{0pt}}}%
+    {\end{list}}
+
+% 第二套：括号序号 (1)(2)(3)，无限条，留给后面用
+\newlist{paralist}{enumerate}{1}
+\setlist[paralist]{
+    label=(\arabic*),
+    leftmargin=2em,
+    itemsep=0pt
+}
+
+\setlist[enumerate]{nosep} %设置条目间距为0，避免条目间距过大
+
+
+
+% 3. 设置常规的 fancy 样式
+\pagestyle{fancy}
+\fancyhf{} % 清除默认设置
+\fancyhead[C]{\leftmark} % 居中显示章标题
+\fancyfoot[C]{\thepage} % 居中显示页码
+
+% 自定义双线页眉
+\renewcommand{\headrule}{%
+	\vspace{-0.4pt}\hrule height 1.5pt width \headwidth 
+	\vspace{-1.2pt}\hrule height 0.5pt width \headwidth
+}
+
+% 2. 关键步骤：重新定义 plain 样式，使其与 fancy 保持一致
+\fancypagestyle{plain}{%
+	\fancyhf{} % 清除 plain 样式的默认设置
+	\fancyhead[C]{\leftmark} % 让章标题页也显示居中的章标题
+	\fancyfoot[C]{\thepage} % 让章标题页也显示居中的页码
+	\renewcommand{\headrule}{% % 让章标题页也有双线页眉
+		\vspace{-0.4pt}\hrule height 1.5pt width \headwidth 
+		\vspace{-1.2pt}\hrule height 0.5pt width \headwidth
+	}
+}
+
+% 4. 目录超链接与PDF元数据设置
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,          linkcolor=blue,        
+    urlcolor=blue,         
+    citecolor=green,       
+    %bookmarks=true,        
+    pdfstartview=FitH      
+}
+
+% 5. 章节排版控制
+\usepackage{titlesec}
+\usepackage{indentfirst} %强制所有章节后的首段自动首行缩进，完美解决问题
+
+% 章标题：四号字（\large），居中
+\titleformat{\chapter}[block]
+  {\normalfont\large\centering}   % 四号字 + 粗体 + 居中
+  {第\,\thechapter\,章}
+  {20pt}
+  {\large}                                 % 标题文字也用四号
+
+\titlespacing*{\chapter}{0pt}{-10pt}{10pt}
+
+% 节标题：小四号字（\normalsize），左对齐，标题后空0.5行
+\titleformat{\section}[block]
+  {\normalfont\normalsize\raggedright}  % 小四号 + 粗体 + 左对齐
+  {\thesection}
+  {1em}
+  {}
+
+% 关键：节标题后空0.5行
+% 正文默认行距约为20pt（小四号固定行距），0.5行 ≈ 10pt
+\titlespacing*{\section}{0pt}{12pt}{10pt}
+
+% 小节标题：小四号字（\normalsize），左对齐
+\titleformat{\subsection}[block]
+  {\normalfont\normalsize\raggedright}  % 小四号 + 粗体 + 左对齐
+  {\thesubsection}
+  {1em}
+  {}
+\titlespacing*{\subsection}{0pt}{10pt}{4pt}
+
+% 用 titlesec 显式设置 paragraph 格式，去掉加粗
+\titleformat{\paragraph}[block]
+  {\normalfont\normalsize}
+  {\theparagraph}
+  {1em}
+  {}
+
+\titlespacing*{\paragraph}{0pt}{1ex}{1ex}
+
+% 1. 重命名 \paragraph 为 \subsubsubsection
+\newcommand{\subsubsubsection}[1]{\paragraph{#1}}
+
+% 2. 设置章节编号深度为3（包含 subsubsubsection）
+\setcounter{secnumdepth}{3}
+
+% 3. 设置目录显示深度为3（subsubsubsection 不出现在目录中）
+\setcounter{tocdepth}{3}
+
+% 6. 其他常用宏包
+\usepackage{graphicx}
+\usepackage{float}         % 提供 [H]：把图片精确固定在正文位置（不浮动，避免图跑到别的页/别的段落下面）      
+\usepackage{booktabs}      
+\usepackage{amsmath,amssymb,bm}       
+\usepackage{caption}       
+\captionsetup[subfloat]{skip=1pt}
+\usepackage{setspace}      
+\onehalfspacing 
+
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows.meta,calc} % 几何图形、箭头样式
+% 定义节点样式
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=white]
+\tikzstyle{process}   = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=white]
+\tikzstyle{decision}  = [diamond, aspect=3, minimum width=3cm, minimum height=1.0cm, text centered, draw=black, fill=white]
+\tikzstyle{arrow}     = [thick, ->, >=stealth] % 箭头样式
+
+% 7. 目录标题居中
+\renewcommand\contentsname{\hfill 目\quad 录 \hfill}
+
+% 8. 【新增】引入 GB/T 7714-2015 参考文献宏包
+\usepackage[numbers]{gbt7714}
+
+\usepackage{subfig}  %替代 subfigure，插入子图
+
+\usepackage{multirow}  % 画出有单元合并的表格
+
+\usepackage{footmisc} % 推荐加载此宏包以获得更好脚注效果
+
+\usepackage{tabularx}   % 自适应列宽宏包
+
+\usepackage{siunitx} %用于自定义inch的缩写
+
+\newcommand{\inch}{\,\text{''}} %自定义inch的双撇
+
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+% 允许浮动体占据页面最多 90% 的空间（默认 50%）
+\renewcommand{\floatpagefraction}{0.9}
+% 页面顶部最多 90% 为浮动体
+\renewcommand{\topfraction}{0.9}
+% 页面底部最多 90% 为浮动体
+\renewcommand{\bottomfraction}{0.9}
+% 正文最少占 10%
+\renewcommand{\textfraction}{0.1}
+
+
+% 导言区：再挂一个钩子，防止 ctex 覆盖
+\AtBeginDocument{
+  \titleformat{\paragraph}[block]
+    {\normalfont\normalsize}
+    {\theparagraph}
+    {1em}
+    {}%
+  \titlespacing*{\paragraph}{0pt}{1ex}{1ex}%
+}
+
+% Research contents 4--6: dependencies; original chapter switches are preserved.
+\input{chapters/research4-6/preamble.tex}
+
+\begin{document}
+
+% === 封面部分 ===
+\begin{titlepage}
+    \centering 
+    \vspace*{4cm} 
+    {\Huge \bfseries \textcolor{red}{9-5/8\inch 井筒深度清洁关键技术升级研究及应用} \par} 
+    \vspace{2cm} 
+    {\Large \textcolor{red}{项目结题报告} \par} 
+    \vspace{4cm} 
+    {\Large \textcolor{red}{项目负责人：刘维} \par}
+    \vspace{1cm}
+    {\Large \textcolor{red}{承担单位：中国石油大学（北京）} \par}
+    \vspace{1cm}
+    {\Large \textcolor{red}{2026年9月22日} \par}
+\end{titlepage}
+
+% === 目录部分 ===
+\clearpage
+\pagenumbering{Roman} 
+\tableofcontents
+
+% === 正文部分 ===
+\clearpage
+\pagenumbering{arabic} 
+\setcounter{page}{1}   
+
+
+% --- 第一章 ---
+\chapter{砂砾、铁屑、结垢物、蜡等井筒内的运移及分布规律研究}
+    % 引入颗粒物运移内容  
+    %\input{chapters/chapter1/part1-theory-basis.tex} 
+    %\input{chapters/chapter1/part2-sand-sendiment.tex}
+    %\input{chapters/chapter1/part3-iron-wire-sendiment.tex}
+    %\input{chapters/chapter1/part4-scale-wax.tex}
+% --- 第二章 ---
+\chapter{井筒内颗粒运移实验}
+	%\input{chapters/chapter2/part1-horizontal-sand.tex} % 水平井冲砂
+	%\input{chapters/chapter2/part2-full-well-model.tex} % 全井筒模型
+% --- 第三章 ---
+\chapter{深度清洁工具设计}
+
+井筒清洁是油气井钻井、完井、修井和生产等作业环节中的关键工序，主要用于清除井筒内的砂砾、铁屑、结垢物及蜡等杂质，从而保障井筒畅通、恢复和提高油气井产能，并延长井筒及相关工具的服役寿命。然而，现有井筒清洁技术普遍存在功能单一、施工效率不高以及工具一体化、集成化程度不足等问题，难以满足油田降本增效的实际需求。针对上述问题，本研究通过开展相关理论研究，完善井筒清洁工具系列，形成了适用于 9-5/8\inch 井筒的深度清洁工艺技术。本章围绕该工艺技术所涉及的核心清洁工具展开论述，主要包括单工具设计及工具组合应用两部分。首先，针对“三合一”脉冲式冲刮刷集成式井筒清洁工具、“四合一”通刮刷磁集成式井筒清洁工具、大容量强磁吸附工具、多功能过滤工具和可变径刮管工具，分别开展结构设计、理论计算和仿真校核，并明确各工具的使用与维护要求。在此基础上，结合不同井况和清洁需求，提出相应的工具组合方案，以减少下钻趟数、提高施工效率。与现有的工具相比，其功能更加丰富，施工效率更高，且具有更强的适应性和可操作性，能够满足不同井况下的深度清洁需求。
+
+\section[“三合一”脉冲式冲刮刷集成式井筒清洁工具设计]{“三合一”脉冲式冲刮刷集成式井筒清洁工具设计\protect\footnote{合同条款：5.1.3井筒高效清洁关键技术配套工具设计——（5）“三合一”脉冲式冲刮刷集成式井筒清洁工具设计}}\label{sec:design_of_3_in_1}
+	\input{chapters/chapter3/part1-3in1-design.tex}
+	\input{chapters/chapter3/part1-3in1-verification.tex}
+	%\input{chapters/chapter3/part1-3in1-hydraulic-model.tex}
+	%\input{chapters/chapter3/part1-3in1-setup-and-maintainance.tex}
+\section{“四合一”通刮刷磁集成式井筒清洁工具设计}
+	\input{chapters/chapter3/part2-4in1.tex}
+  %\input{chapters/chapter3/part2-4in1-simulation.tex}
+	%\input{chapters/chapter3/part2-4in1-scraper-performance.tex}
+\section{大容量强磁吸附工具设计}
+	%\input{chapters/chapter3/part3-magntictool.tex}
+  %\input{chapters/chapter3/part3-magnetictool-magnet-performance.tex}
+\section{多功能过滤工具设计}
+	%\input{chapters/chapter3/part4-filter.tex}
+\section[可变径刮管工具设计]{可变径刮管工具设计\protect\footnote{合同条款：5.1.3井筒高效清洁关键技术配套工具设计——（4）可变径刮管工具设计}}
+	%\input{chapters/chapter3/part5-variable-tool.tex}
+	
+% Research contents 4--6, with locally scoped Word-body formatting.
+%\input{chapters/research4-6/entry.tex}
+
+\input{chapters/bib.tex}
+
+\newpage
+% 重置全部计数器，解决3.0.1这种错乱编号，重点重置chapter
+\appendix
+% \chapter* 不会给 chapter 计数器增值，于是 \thesection（=\Alph{chapter}.\arabic{section}）里的
+% \Alph{0} 为空，小节编号会显示成 “.1”“.1.1”。这里手动把 chapter 置为 1，编号即 A.1、A.2。
+\setcounter{chapter}{1}
+
+\chapter*{附件1}
+\addcontentsline{toc}{chapter}{附件1}
+% \chapter* 不更新页眉标记，手动设置，否则附件页眉会继续沿用上一章的“参考文献”
+\markboth{附件1}{附件1}
+
+\input{chapters/appendix1.tex}
+
+\end{document}

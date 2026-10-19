@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.7.19)  18 OCT 2026 16:03
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.7.19)  19 OCT 2026 09:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -562,7 +562,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip75
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 87.
+Package hyperref Info: Option `colorlinks' set `true' on input line 90.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \ttl@box=\box58
@@ -1004,29 +1004,62 @@ Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages 
 \l__siunitx_unit_tmp_int=\count400
 \l__siunitx_unit_position_int=\count401
 \l__siunitx_unit_total_int=\count402
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2025/07/23 v0.6g Insert pages of external PDF documents (AM)
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count403
+\calc@Bcount=\count404
+\calc@Adimen=\dimen371
+\calc@Bdimen=\dimen372
+\calc@Askip=\skip92
+\calc@Bskip=\skip93
+LaTeX Info: Redefining \setlength on input line 86.
+LaTeX Info: Redefining \addtolength on input line 87.
+\calc@Ccount=\count405
+\calc@Cskip=\skip94
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2025/12/10 v3.0d eso-pic (RN)
+\ESO@tempdima=\dimen373
+\ESO@tempdimb=\dimen374
+)
+\AM@pagewidth=\dimen375
+\AM@pageheight=\dimen376
+\AM@fboxrule=\dimen377
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/pdfpages/ppxetex.def
+File: ppxetex.def 2025/07/23 v0.6g Pdfpages driver for XeTeX (AM)
+)
+\pdfpages@includegraphics@status=\count406
+\AM@pagebox=\box84
+\AM@global@opts=\toks47
+\AM@pagecnt=\count407
+\AM@toc@title=\toks48
+\AM@lof@heading=\toks49
+\c@AM@survey=\count408
+\AM@templatesizebox=\box85
 ) (./chapters/research4-6/preamble.tex (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
-\LTleft=\skip92
-\LTright=\skip93
-\LTpre=\skip94
-\LTpost=\skip95
-\LTchunksize=\count403
-\LTcapwidth=\dimen371
-\LT@head=\box84
-\LT@firsthead=\box85
-\LT@foot=\box86
-\LT@lastfoot=\box87
-\LT@gbox=\box88
-\LT@cols=\count404
-\LT@rows=\count405
-\c@LT@tables=\count406
-\c@LT@chunks=\count407
-\LT@p@ftn=\toks47
+\LTleft=\skip95
+\LTright=\skip96
+\LTpre=\skip97
+\LTpost=\skip98
+\LTchunksize=\count409
+\LTcapwidth=\dimen378
+\LT@head=\box86
+\LT@firsthead=\box87
+\LT@foot=\box88
+\LT@lastfoot=\box89
+\LT@gbox=\box90
+\LT@cols=\count410
+\LT@rows=\count411
+\c@LT@tables=\count412
+\c@LT@chunks=\count413
+\LT@p@ftn=\toks50
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2024/10/29 v1.0k Color table columns (DPC)
-\everycr=\toks48
-\minrowclearance=\skip96
-\rownum=\count408
+\everycr=\toks51
+\minrowclearance=\skip99
+\rownum=\count414
 )) (/usr/local/texlive/2025/texmf-dist/tex/latex/newtx/TeXGyreTermesX.fontspec)
 
 Package fontspec Info: 
@@ -1122,8 +1155,8 @@ Package fontspec Info:
 (fontspec)             <->s*[1]"[TeXGyreTermesX-BoldSlanted.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;+smcp;+pcap;mapping=tex-text;"
 
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 12.045pt on input line 200.
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 200.
+(Font)              scaled to size 12.045pt on input line 215.
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 215.
  (./main.aux
 
 LaTeX Warning: Label `fig:field_result_in_upper_sub_radial_magnetization' multiply defined.
@@ -1131,26 +1164,26 @@ LaTeX Warning: Label `fig:field_result_in_upper_sub_radial_magnetization' multip
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 200.
-LaTeX Font Info:    ... okay on input line 200.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 200.
-LaTeX Font Info:    ... okay on input line 200.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 200.
-LaTeX Font Info:    ... okay on input line 200.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 200.
-LaTeX Font Info:    ... okay on input line 200.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 200.
-LaTeX Font Info:    ... okay on input line 200.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 200.
-LaTeX Font Info:    ... okay on input line 200.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 200.
-LaTeX Font Info:    ... okay on input line 200.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 200.
-LaTeX Font Info:    ... okay on input line 200.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 200.
-LaTeX Font Info:    ... okay on input line 200.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 200.
-LaTeX Font Info:    ... okay on input line 200.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 215.
+LaTeX Font Info:    ... okay on input line 215.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 215.
+LaTeX Font Info:    ... okay on input line 215.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 215.
+LaTeX Font Info:    ... okay on input line 215.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 215.
+LaTeX Font Info:    ... okay on input line 215.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 215.
+LaTeX Font Info:    ... okay on input line 215.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 215.
+LaTeX Font Info:    ... okay on input line 215.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 215.
+LaTeX Font Info:    ... okay on input line 215.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 215.
+LaTeX Font Info:    ... okay on input line 215.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 215.
+LaTeX Font Info:    ... okay on input line 215.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 215.
+LaTeX Font Info:    ... okay on input line 215.
 
 Package fontspec Info: 
 (fontspec)             Adjusting the maths setup (use [no-math] to avoid
@@ -1158,56 +1191,56 @@ Package fontspec Info:
 
 \symlegacymaths=\mathgroup9
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 200.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 200.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 200.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 200.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 200.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 200.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 200.
-LaTeX Font Info:    Redeclaring math accent \check on input line 200.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 200.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 200.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 200.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 200.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 200.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 200.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 200.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 200.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 200.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 200.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 200.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 200.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 200.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 200.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 200.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 200.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 215.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 215.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 215.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 215.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 215.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 215.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 215.
+LaTeX Font Info:    Redeclaring math accent \check on input line 215.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 215.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 215.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 215.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 215.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 215.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 215.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 215.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 215.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 215.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 215.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 215.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 215.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 215.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 215.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 215.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 215.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 200.
+(Font)              `operators' in the math version `normal' on input line 215.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/TeXGyreTermesX(0)/m/n on input line 200.
+(Font)                  OT1/cmr/m/n --> TU/TeXGyreTermesX(0)/m/n on input line 215.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 200.
+(Font)              `operators' in the math version `bold' on input line 215.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/TeXGyreTermesX(0)/m/n on input line 200.
+(Font)                  OT1/cmr/bx/n --> TU/TeXGyreTermesX(0)/m/n on input line 215.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/TeXGyreTermesX(0)/m/n --> TU/TeXGyreTermesX(0)/m/n on input line 200.
+(Font)                  TU/TeXGyreTermesX(0)/m/n --> TU/TeXGyreTermesX(0)/m/n on input line 215.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/TeXGyreTermesX(0)/m/it on input line 200.
+(Font)                  OT1/cmr/m/it --> TU/TeXGyreTermesX(0)/m/it on input line 215.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/TeXGyreTermesX(0)/b/n on input line 200.
+(Font)                  OT1/cmr/bx/n --> TU/TeXGyreTermesX(0)/b/n on input line 215.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 200.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 215.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 200.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 215.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/TeXGyreTermesX(0)/m/n --> TU/TeXGyreTermesX(0)/b/n on input line 200.
+(Font)                  TU/TeXGyreTermesX(0)/m/n --> TU/TeXGyreTermesX(0)/b/n on input line 215.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/TeXGyreTermesX(0)/b/it on input line 200.
+(Font)                  OT1/cmr/bx/it --> TU/TeXGyreTermesX(0)/b/it on input line 215.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 200.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 215.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 200.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 215.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1218,18 +1251,18 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(72.2698pt, 452.96826pt, 72.2698pt)
-* v-part:(T,H,B)=(72.2698pt, 700.50723pt, 72.2698pt)
+* v-part:(T,H,B)=(72.26997pt, 700.5069pt, 72.26997pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=452.96826pt
-* \textheight=700.50723pt
+* \textheight=700.5069pt
 * \oddsidemargin=-0.00018pt
 * \evensidemargin=-0.00018pt
-* \topmargin=-40.00018pt
-* \headheight=15.0pt
-* \headsep=25.0pt
+* \topmargin=-36.22638pt
+* \headheight=22.0pt
+* \headsep=14.22636pt
 * \topskip=12.0pt
-* \footskip=30.0pt
+* \footskip=22.76219pt
 * \marginparwidth=35.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
@@ -1243,7 +1276,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 200.
+Package hyperref Info: Link coloring ON on input line 215.
 (./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
@@ -1258,21 +1291,74 @@ Package caption Info: End \AtBeginDocument code.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 200.
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 26.09749pt on input line 206.
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
-(Font)              scaled to size 26.09749pt on input line 206.
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 18.06749pt on input line 208.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 215.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2025-06-23 v0.14 Display of landscape pages in PDF
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2025-06-23 v0.14 Display of landscape pages in PDF (HO)
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
+))
+File: cover/cover-1.pdf Graphic file (type pdf)
+<use cover/cover-1.pdf>
+File: cover/cover-1.pdf Graphic file (type pdf)
+<use cover/cover-1.pdf, page 1>
+File: cover/cover-1.pdf Graphic file (type pdf)
+<use cover/cover-1.pdf, page 1>
+File: cover/cover-1.pdf Graphic file (type pdf)
+<use cover/cover-1.pdf, page 1>
+File: cover/cover-1.pdf Graphic file (type pdf)
+<use cover/cover-1.pdf, page 1>
+File: cover/cover-1.pdf Graphic file (type pdf)
+<use cover/cover-1.pdf, page 1>
  [1
+
+
+]
+File: cover/cover-2.pdf Graphic file (type pdf)
+<use cover/cover-2.pdf>
+File: cover/cover-2.pdf Graphic file (type pdf)
+<use cover/cover-2.pdf, page 1>
+File: cover/cover-2.pdf Graphic file (type pdf)
+<use cover/cover-2.pdf, page 1>
+File: cover/cover-2.pdf Graphic file (type pdf)
+<use cover/cover-2.pdf, page 1>
+File: cover/cover-2.pdf Graphic file (type pdf)
+<use cover/cover-2.pdf, page 1>
+File: cover/cover-2.pdf Graphic file (type pdf)
+<use cover/cover-2.pdf, page 1>
+ [2
+
+]
+File: cover/cover-3.pdf Graphic file (type pdf)
+<use cover/cover-3.pdf>
+File: cover/cover-3.pdf Graphic file (type pdf)
+<use cover/cover-3.pdf, page 1>
+File: cover/cover-3.pdf Graphic file (type pdf)
+<use cover/cover-3.pdf, page 1>
+File: cover/cover-3.pdf Graphic file (type pdf)
+<use cover/cover-3.pdf, page 1>
+File: cover/cover-3.pdf Graphic file (type pdf)
+<use cover/cover-3.pdf, page 1>
+File: cover/cover-3.pdf Graphic file (type pdf)
+<use cover/cover-3.pdf, page 1>
+ [3
 
 ]
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 15.05624pt on input line 220.
- (./main.toc
+(Font)              scaled to size 26.09749pt on input line 228.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
-(Font)              scaled to size 12.045pt on input line 1.
+(Font)              scaled to size 26.09749pt on input line 228.
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
+(Font)              scaled to size 18.06749pt on input line 230.
+ [1]
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
+(Font)              scaled to size 12.045pt on input line 242.
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
+(Font)              scaled to size 15.0pt on input line 242.
+ (./main.toc
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
 (Font)              scaled to size 8.0pt on input line 4.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
@@ -1284,31 +1370,63 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 36.
+ [1
 
 
-] [2])
+]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [2]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [3])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [3]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [4]
 第一章
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
 [1
 
 
 ]
 第二章
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
 [2
 
 ]
 第三章
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
+(Font)              scaled to size 14.0pt on input line 266.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 266.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 244.
+(Font)              scaled to size 14.0pt on input line 266.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 244.
+(Font)              scaled to size 9.79996pt on input line 266.
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
+(Font)              scaled to size 7.0pt on input line 266.
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
+(Font)              scaled to size 9.03374pt on input line 266.
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
+(Font)              scaled to size 5.0pt on input line 266.
 (./chapters/chapter3/part2-4in1-simulation.tex
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
+(Font)              scaled to size 12.0pt on input line 2.
 File: figure/chapter3/4in1-sim/scraper-fem-model.png Graphic file (type bmp)
 <figure/chapter3/4in1-sim/scraper-fem-model.png>
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
+(Font)              scaled to size 12.0pt on input line 17.
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
  [3
 
 ]
@@ -1318,7 +1436,12 @@ File: figure/chapter3/4in1-sim/mesh-independence.png Graphic file (type bmp)
 <figure/chapter3/4in1-sim/mesh-independence.png>
 File: figure/chapter3/4in1-sim/scraper-mesh.png Graphic file (type bmp)
 <figure/chapter3/4in1-sim/scraper-mesh.png>
- [4] [5]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [4]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [5]
 File: figure/chapter3/4in1-sim/scraping-effect-150n.png Graphic file (type bmp)
 <figure/chapter3/4in1-sim/scraping-effect-150n.png>
 File: figure/chapter3/4in1-sim/scraping-effect-180n.png Graphic file (type bmp)
@@ -1355,6 +1478,8 @@ File: figure/chapter3/4in1-sim/cutting-force-250n.png Graphic file (type bmp)
 <figure/chapter3/4in1-sim/cutting-force-250n.png>
 File: figure/chapter3/4in1-sim/cutting-force-300n.png Graphic file (type bmp)
 <figure/chapter3/4in1-sim/cutting-force-300n.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
 [6]
 File: figure/chapter3/4in1-sim/brush-structure.png Graphic file (type bmp)
 <figure/chapter3/4in1-sim/brush-structure.png>
@@ -1366,7 +1491,15 @@ File: figure/chapter3/4in1-sim/brush-contact-stress-2.png Graphic file (type bmp
 <figure/chapter3/4in1-sim/brush-contact-stress-2.png>
 File: figure/chapter3/4in1-sim/brush-contact-stress-3.png Graphic file (type bmp)
 <figure/chapter3/4in1-sim/brush-contact-stress-3.png>
- [7] [8] [9]) (./chapters/chapter3/part3-magntictool.tex
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [7]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [8]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [9]) (./chapters/chapter3/part3-magntictool.tex
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
 (Font)              scaled to size 10.53937pt on input line 15.
 
@@ -1379,6 +1512,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--43
 []|\TU/TeXGyreTermesX(0)/m/n/10.53937 9.5-
  []
 
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
 [10]
 File: figure/chapter3/structure-dqc-mag-tool.png Graphic file (type bmp)
 <figure/chapter3/structure-dqc-mag-tool.png>
@@ -1386,33 +1521,89 @@ File: figure/chapter3/structure-upper-magnetic-sub.png Graphic file (type bmp)
 <figure/chapter3/structure-upper-magnetic-sub.png>
 File: figure/chapter3/structure-lowwer-magnetic-sub.png Graphic file (type bmp)
 <figure/chapter3/structure-lowwer-magnetic-sub.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
  [11]
 File: figure/chapter3/magnogard-magnet-tool.png Graphic file (type bmp)
 <figure/chapter3/magnogard-magnet-tool.png>
- [12] [13] [14] [15]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [12]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [13]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [14]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [15]
 Overfull \hbox (25.90364pt too wide) in paragraph at lines 250--251
 []$\OML/cmm/m/it/12.045 d$\TU/TeXGyreTermesX(0)/m/n/12.045 —\TU/STSong(0)/m/n/12.045 危 险 截 面 内 径，|  取 与 内 螺 纹 配 合 的 外 螺 纹 小 径 $\OML/cmm/m/it/12.045 d \OT1/cmr/m/n/12.045 = 70\OML/cmm/m/it/12.045 :\OT1/cmr/m/n/12.045 30 []$ |\TU/STSong(0)/m/n/12.045 （参 见 图 纸 \TU/TeXGyreTermesX(0)/m/n/12.045 DQC700003A\TU/STSong(0)/m/n/12.045 ，|
  []
 
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
 [16]
-Overfull \hbox (8.71545pt too wide) in paragraph at lines 280--281
-[]$\OML/cmm/m/it/12.045 D$\TU/TeXGyreTermesX(0)/m/n/12.045 —\TU/STSong(0)/m/n/12.045 危 险 截 面 外 径，|  按 图 纸 \TU/TeXGyreTermesX(0)/m/n/12.045 DQC700003A \TU/STSong(0)/m/n/12.045 心 轴 标 注 的 外 螺 纹 小 径  |（\TU/TeXGyreTermesX(0)/m/n/12.045 70.485$\OMS/cmsy/m/n/12.045 ^^X$\TU/TeXGyreTermesX(0)/m/n/12.045 70.643mm\TU/STSong(0)/m/n/12.045 ）|
- []
-
-[17]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [17]
 File: figure/chapter3/lowwer-sub-mag-tool.png Graphic file (type bmp)
 <figure/chapter3/lowwer-sub-mag-tool.png>
 File: figure/chapter3/torsion-stress-lowwer-sub-mag-tool.png Graphic file (type bmp)
 <figure/chapter3/torsion-stress-lowwer-sub-mag-tool.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
  [18]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [19]
 File: figure/chapter3/magnetic-adsorption-capacity.jpg Graphic file (type bmp)
 <figure/chapter3/magnetic-adsorption-capacity.jpg>
- [19] [20] [21]
+
+
+./chapters/chapter3/part3-magntictool.tex:434: LaTeX Error: \mathrm allowed only in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.434 ...节脚注所列合同条款 5.2.1.3（2）：抗扭 $\ge 18$\,\mathrm
+                                                  {kN}$\cdot$\mathrm{m}）；
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./chapters/chapter3/part3-magntictool.tex:434: LaTeX Error: \mathrm allowed only in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.434 ...2）：抗扭 $\ge 18$\,\mathrm{kN}$\cdot$\mathrm
+                                                  {m}）；
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[20]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [21]
 File: figure/chapter3/demagnetization-SmCo5.png Graphic file (type bmp)
 <figure/chapter3/demagnetization-SmCo5.png>
 File: figure/chapter3/demagnatization-N45UH.png Graphic file (type bmp)
 <figure/chapter3/demagnatization-N45UH.png>
- [22] [23]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [22]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [23]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [24]
 File: figure/chapter3/magnet-configuration-upper-sub.png Graphic file (type bmp)
 <figure/chapter3/magnet-configuration-upper-sub.png>
 File: figure/chapter3/radial-magnetization-in-upper-sub.png Graphic file (type bmp)
@@ -1423,25 +1614,31 @@ File: figure/chapter3/boundary-condition-upper-sub.png Graphic file (type bmp)
 <figure/chapter3/boundary-condition-upper-sub.png>
 File: figure/chapter3/mesh-upper-sub.png Graphic file (type bmp)
 <figure/chapter3/mesh-upper-sub.png>
- [24]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [25]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [26]
 File: figure/chapter3/magnetic-vector-distribution-upper-sub.png Graphic file (type bmp)
 <figure/chapter3/magnetic-vector-distribution-upper-sub.png>
 File: figure/chapter3/contour-magnetic-field-upper-sub.png Graphic file (type bmp)
 <figure/chapter3/contour-magnetic-field-upper-sub.png>
- [25] [26]
 File: figure/chapter3/magnetic-vector-distribution-upper-sub-circum-magnatization.png Graphic file (type bmp)
 <figure/chapter3/magnetic-vector-distribution-upper-sub-circum-magnatization.png>
 File: figure/chapter3/contour-magnetic-field-upper-sub-circum-magnatization.png Graphic file (type bmp)
 <figure/chapter3/contour-magnetic-field-upper-sub-circum-magnatization.png>
 File: figure/chapter3/magnet-configuration-lowwer-sub.png Graphic file (type bmp)
 <figure/chapter3/magnet-configuration-lowwer-sub.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [27]
 File: figure/chapter3/lowwer-sub-magnetization-radial.png Graphic file (type bmp)
 <figure/chapter3/lowwer-sub-magnetization-radial.png>
 File: figure/chapter3/lowwer-sub-cross-magnetization.png Graphic file (type bmp)
 <figure/chapter3/lowwer-sub-cross-magnetization.png>
 File: figure/chapter3/lowwer-sub-circumferential-magnetization.png Graphic file (type bmp)
 <figure/chapter3/lowwer-sub-circumferential-magnetization.png>
- [27]
 File: figure/chapter3/boundary-condition-lowwer-sub.png Graphic file (type bmp)
 <figure/chapter3/boundary-condition-lowwer-sub.png>
 File: figure/chapter3/mesh-upper-sub.png Graphic file (type bmp)
@@ -1458,80 +1655,367 @@ File: figure/chapter3/magnetic-vector-distribution-lowwer-sub-circumferential.pn
 <figure/chapter3/magnetic-vector-distribution-lowwer-sub-circumferential.png>
 File: figure/chapter3/contour-magnetic-field-lowwer-sub-circumferential.png Graphic file (type bmp)
 <figure/chapter3/contour-magnetic-field-lowwer-sub-circumferential.png>
-
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [28]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [29]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [30]
 Overfull \hbox (24.65851pt too wide) in paragraph at lines 874--892
  [][] 
  []
 
-[28] [29] [30]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[31]
 File: figure/chapter3/mag-field-distribution-4145-steel-frame.png Graphic file (type bmp)
 <figure/chapter3/mag-field-distribution-4145-steel-frame.png>
 File: figure/chapter3/mag-field-distribution-aliminium-frame.png Graphic file (type bmp)
 <figure/chapter3/mag-field-distribution-aliminium-frame.png>
- [31] [32] [33] [34]) (./chapters/chapter3/part3-magnetictool-magnet-performance.tex [35]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [32]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [33]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [34]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [35]) (./chapters/chapter3/part3-magnetictool-magnet-performance.tex
 File: figure/chapter3/magnet-test-rig-labeled.png Graphic file (type bmp)
 <figure/chapter3/magnet-test-rig-labeled.png>
 File: figure/chapter3/magnet-test-rig-photo.png Graphic file (type bmp)
 <figure/chapter3/magnet-test-rig-photo.png>
- [36] [37]) (./chapters/research4-6/entry.tex [38] [39]
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: xetex
-* paper: a4paper
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(90.3375pt, 416.83289pt, 90.3375pt)
-* v-part:(T,H,B)=(72.26997pt, 700.5069pt, 72.26997pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=416.83289pt
-* \textheight=700.5069pt
-* \oddsidemargin=18.0675pt
-* \evensidemargin=18.0675pt
-* \topmargin=-36.22638pt
-* \headheight=22.0pt
-* \headsep=14.22636pt
-* \topskip=12.0pt
-* \footskip=22.76219pt
-* \marginparwidth=35.0pt
-* \marginparsep=10.0pt
-* \columnsep=10.0pt
-* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
- (./chapters/research4-6/chapter4.tex
-第四章
-LaTeX Font Info:    Calculating math sizes for size <10.5> on input line 21.
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 10.5pt on input line 21.
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 7.34996pt on input line 21.
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 5.25pt on input line 21.
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
-[40
+ [36]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [37])
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [38] (./chapters/chapter3/part4-filter.tex
+File: figure/chapter3/guolvqi.png Graphic file (type bmp)
+<figure/chapter3/guolvqi.png>
 
+Overfull \hbox (24.75555pt too wide) in paragraph at lines 62--63
+[]\TU/STSong(0)/m/n/12.045 目 前 国 外 具 有 代 表 性 的 钻 柱 过 滤 工 具 为 \TU/TeXGyreTermesX(0)/m/n/12.045 Schlumberger \TU/STSong(0)/m/n/12.045 ／ \TU/TeXGyreTermesX(0)/m/n/12.045 M-I SWACO \TU/STSong(0)/m/n/12.045 公 司 的 \TU/TeXGyreTermesX(0)/m/n/12.045 MUDGARD
+ []
 
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[39]
+Underfull \hbox (badness 10000) in paragraph at lines 91--91
+[]|\TU/STSong(0)/m/n/9.03374 内 通 径 按 套 管 规 格 系 列 化 设 计，| \TU/TeXGyreTermesX(0)/m/n/9.03374 7[]\TU/STSong(0)/m/n/9.03374 规 格 为
+ []
 
-]
+File: figure/chapter3/mudgard-filter-tool.png Graphic file (type bmp)
+<figure/chapter3/mudgard-filter-tool.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[40]
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
  [41]
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
  [42]
+Overfull \hbox (7.92567pt too wide) in paragraph at lines 176--177
+[] \TU/STSong(0)/m/n/12.045 滤 进 接 头 外 螺 纹 根 部：|  按 图 纸 \TU/TeXGyreTermesX(0)/m/n/12.045 GLGJ70002A \TU/STSong(0)/m/n/12.045 标 注 的 外 螺 纹 小 径  |（$\OML/cmm/m/it/12.045 ^^^\OT1/cmr/m/n/12.045 89\OML/cmm/m/it/12.045 :\OT1/cmr/m/n/12.045 100 \OMS/cmsy/m/n/12.045 ^^X \OML/cmm/m/it/12.045 ^^^\OT1/cmr/m/n/12.045 89\OML/cmm/m/it/12.045 :\OT1/cmr/m/n/12.045 660$\TU/STSong(0)/m/n/12.045 ）|
+ []
+
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[43]
+Overfull \hbox (30.37057pt too wide) in paragraph at lines 269--270
+[]$\OML/cmm/m/it/12.045 D$\TU/TeXGyreTermesX(0)/m/n/12.045 —\TU/STSong(0)/m/n/12.045 危 险 截 面 外 径，| \TU/TeXGyreTermesX(0)/m/n/12.045 mm |\TU/STSong(0)/m/n/12.045 （与 抗 拉 校 核 各 受 力 件 取 值 相 同：|  图 号 \TU/TeXGyreTermesX(0)/m/n/12.045 GLGJ70001A\TU/STSong(0)/m/n/12.045 、| \TU/TeXGyreTermesX(0)/m/n/12.045 GLGJ70002A\TU/STSong(0)/m/n/12.045 、|
+ []
+
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[44]
+Overfull \hbox (26.37903pt too wide) in paragraph at lines 271--272
+[]$\OML/cmm/m/it/12.045 d$\TU/TeXGyreTermesX(0)/m/n/12.045 —\TU/STSong(0)/m/n/12.045 危 险 截 面 内 径，| \TU/TeXGyreTermesX(0)/m/n/12.045 mm |\TU/STSong(0)/m/n/12.045 （与 抗 拉 校 核 各 受 力 件 取 值 相 同：|  图 号 \TU/TeXGyreTermesX(0)/m/n/12.045 GLGJ70001A\TU/STSong(0)/m/n/12.045 、| \TU/TeXGyreTermesX(0)/m/n/12.045 GLGJ70002A\TU/STSong(0)/m/n/12.045 、|
+ []
+
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[45]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [46]
+Overfull \hbox (6.05904pt too wide) in paragraph at lines 354--355
+[]|\TU/STSong(0)/m/n/12.045 （\TU/TeXGyreTermesX(0)/m/n/12.045 1\TU/STSong(0)/m/n/12.045 ）|  滤 进 接 头 受 拉。|  施 加 的 拉 力 小 于 该 接 头 按 理 论 校 核 所 得 的 最 小 许 用 拉 力 \TU/TeXGyreTermesX(0)/m/n/12.045 2184.4kN
+ []
+
+
+Overfull \hbox (12.08153pt too wide) in paragraph at lines 358--359
+[]|\TU/STSong(0)/m/n/12.045 （\TU/TeXGyreTermesX(0)/m/n/12.045 3\TU/STSong(0)/m/n/12.045 ）|  滤 出 接 头 受 拉。|  施 加 的 拉 力 小 于 该 接 头 按 理 论 校 核 所 得 的 最 小 许 用 拉 力 \TU/TeXGyreTermesX(0)/m/n/12.045 1974.94kN
+ []
+
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[47]
+File: figure/chapter3/filter-outlet-sub.png Graphic file (type bmp)
+<figure/chapter3/filter-outlet-sub.png>
+File: figure/chapter3/filter-inlet-sub.png Graphic file (type bmp)
+<figure/chapter3/filter-inlet-sub.png>
+File: figure/simulation/lvchulashen.png Graphic file (type bmp)
+<figure/simulation/lvchulashen.png>
+File: figure/simulation/lvchuniuju.png Graphic file (type bmp)
+<figure/simulation/lvchuniuju.png>
+File: figure/simulation/lvjinlashen.png Graphic file (type bmp)
+<figure/simulation/lvjinlashen.png>
+File: figure/simulation/lvjinniuju.png Graphic file (type bmp)
+<figure/simulation/lvjinniuju.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [48]
+Overfull \hbox (15.11421pt too wide) in paragraph at lines 420--421
+[]$\OML/cmm/m/it/12.045 L$\TU/TeXGyreTermesX(0)/m/n/12.045 —\TU/STSong(0)/m/n/12.045 过 滤 腔 长 度，| \TU/TeXGyreTermesX(0)/m/n/12.045 mm |\TU/STSong(0)/m/n/12.045 （取 \TU/TeXGyreTermesX(0)/m/n/12.045 4864.56mm\TU/STSong(0)/m/n/12.045 ，|  图 号 \TU/TeXGyreTermesX(0)/m/n/12.045 GLGJ70012A |\TU/STSong(0)/m/n/12.045 《加 长 过 滤 套 筒》 、| \TU/TeXGyreTermesX(0)/m/n/12.045 GLGJ70021A
+ []
+
+)
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [49] (./chapters/chapter3/part5-variable-tool.tex
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [50]
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+[]|\TU/STSong(0)/m/n/9.03374 收 回 待 命  |（投 球
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+[]|\TU/TeXGyreTermesX(0)/m/n/9.03374 136mm |\TU/STSong(0)/m/n/9.03374 （本 体
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+[]|\TU/STSong(0)/m/n/9.03374 复 位 弹 簧 收 回 至
+ []
+
+File: figure/chapter3/part5/variable-scrapter-structure.png Graphic file (type bmp)
+<figure/chapter3/part5/variable-scrapter-structure.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[51]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [52]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [53]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [54]
+Overfull \hbox (17.57654pt too wide) in paragraph at lines 161--162
+[]$\OML/cmm/m/it/12.045 D$\TU/TeXGyreTermesX(0)/m/n/12.045 —\TU/STSong(0)/m/n/12.045 危 险 截 面 外 径，| \TU/TeXGyreTermesX(0)/m/n/12.045 mm |\TU/STSong(0)/m/n/12.045 （取 值 与 抗 拉 校 核 相 同：|  刮 刀 芯 轴 $\OML/cmm/m/it/12.045 D \OT1/cmr/m/n/12.045 = 62$\TU/TeXGyreTermesX(0)/m/n/12.045 mm\TU/STSong(0)/m/n/12.045 ，|  图 号 \TU/TeXGyreTermesX(0)/m/n/12.045 BJG700004A
+ []
+
+
+Overfull \hbox (3.9052pt too wide) in paragraph at lines 161--162
+\TU/STSong(0)/m/n/12.045 左 端 牙 槽 根 外 圆；|  芯 轴 连 接 筒 $\OML/cmm/m/it/12.045 D \OT1/cmr/m/n/12.045 = 80$\TU/TeXGyreTermesX(0)/m/n/12.045 mm\TU/STSong(0)/m/n/12.045 ，|  图 号 \TU/TeXGyreTermesX(0)/m/n/12.045 BJG700014A \TU/STSong(0)/m/n/12.045 外 圆 标 注 $\OML/cmm/m/it/12.045 ^^^\OT1/cmr/m/n/12.045 80 []/[]$\TU/STSong(0)/m/n/12.045 ） ；| 
+ []
+
+
+Overfull \hbox (18.7665pt too wide) in paragraph at lines 163--164
+[]$\OML/cmm/m/it/12.045 d$\TU/TeXGyreTermesX(0)/m/n/12.045 —\TU/STSong(0)/m/n/12.045 危 险 截 面 内 径，| \TU/TeXGyreTermesX(0)/m/n/12.045 mm |\TU/STSong(0)/m/n/12.045 （取 值 与 抗 拉 校 核 相 同：|  刮 刀 芯 轴 $\OML/cmm/m/it/12.045 d \OT1/cmr/m/n/12.045 = 38\OML/cmm/m/it/12.045 :\OT1/cmr/m/n/12.045 1$\TU/TeXGyreTermesX(0)/m/n/12.045 mm\TU/STSong(0)/m/n/12.045 ，|  图 号 \TU/TeXGyreTermesX(0)/m/n/12.045 BJG700004A
+ []
+
+
+Overfull \hbox (16.62329pt too wide) in paragraph at lines 192--193
+[]\TU/STSong(0)/m/n/12.045 刮 壁 器 的 球 座 圆 周 设 计 \TU/TeXGyreTermesX(0)/m/n/12.045 4 \TU/STSong(0)/m/n/12.045 组 剪 钉 参 与 剪 切  |（图 纸 \TU/TeXGyreTermesX(0)/m/n/12.045 BJG700015A \TU/STSong(0)/m/n/12.045 球 座 标 注 $\OT1/cmr/m/n/12.045 4 \OMS/cmsy/m/n/12.045 ^^B \OT1/cmr/m/n/12.045 4\OML/cmm/m/it/12.045 :\OT1/cmr/m/n/12.045 80 []/0$
+ []
+
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[55]
+Overfull \hbox (5.15842pt too wide) in paragraph at lines 207--208
+[]$\OML/cmm/m/it/12.045 R$\TU/TeXGyreTermesX(0)/m/n/12.045 —\TU/STSong(0)/m/n/12.045 单 个 剪 钉 的 半 径，| \TU/TeXGyreTermesX(0)/m/n/12.045 mm |\TU/STSong(0)/m/n/12.045 （图 号 \TU/TeXGyreTermesX(0)/m/n/12.045 BJG700015A |\TU/STSong(0)/m/n/12.045 《球 座》|  端 面 剪 钉 孔 径 标 注 $\OT1/cmr/m/n/12.045 4\OML/cmm/m/it/12.045 :\OT1/cmr/m/n/12.045 80 []/0$\TU/STSong(0)/m/n/12.045 ，|
+ []
+
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[56]
+Overfull \hbox (18.25308pt too wide) in paragraph at lines 266--267
+[]$\OML/cmm/m/it/12.045 d$\TU/TeXGyreTermesX(0)/m/n/12.045 —\TU/STSong(0)/m/n/12.045 连 杆 销 的 最 小 直 径，| \TU/TeXGyreTermesX(0)/m/n/12.045 mm |\TU/STSong(0)/m/n/12.045 （取 \TU/TeXGyreTermesX(0)/m/n/12.045 10mm\TU/STSong(0)/m/n/12.045 ，|  图 号 \TU/TeXGyreTermesX(0)/m/n/12.045 BJG700005A |\TU/STSong(0)/m/n/12.045 《活 动 座 铰 链 销》 、| \TU/TeXGyreTermesX(0)/m/n/12.045 BJG700007A
+ []
+
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[57]
+File: figure/chapter3/part5/inner-pipe.png Graphic file (type bmp)
+<figure/chapter3/part5/inner-pipe.png>
+File: figure/simulation/guadaoxinzhou-lashen.png Graphic file (type bmp)
+<figure/simulation/guadaoxinzhou-lashen.png>
+File: figure/simulation/gaudaoxinzhou-niuju.png Graphic file (type bmp)
+<figure/simulation/gaudaoxinzhou-niuju.png>
+File: figure/chapter3/part5/unsetup/ball.png Graphic file (type bmp)
+<figure/chapter3/part5/unsetup/ball.png>
+File: figure/chapter3/part5/unsetup/unsetup-satefy-screw.png Graphic file (type bmp)
+<figure/chapter3/part5/unsetup/unsetup-satefy-screw.png>
+File: figure/chapter3/part5/unsetup/unsetup-two-subs.png Graphic file (type bmp)
+<figure/chapter3/part5/unsetup/unsetup-two-subs.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [58]
+File: figure/chapter3/part5/unsetup/unsetup-fasten-parts.png Graphic file (type bmp)
+<figure/chapter3/part5/unsetup/unsetup-fasten-parts.png>
+File: figure/chapter3/part5/unsetup/rotary-lever-set.png Graphic file (type bmp)
+<figure/chapter3/part5/unsetup/rotary-lever-set.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [59]
+File: figure/chapter3/part5/unsetup/end-links.png Graphic file (type bmp)
+<figure/chapter3/part5/unsetup/end-links.png>
+File: figure/chapter3/part5/unsetup/unsetup-scraper.png Graphic file (type bmp)
+<figure/chapter3/part5/unsetup/unsetup-scraper.png>
+File: figure/chapter3/part5/unsetup/left-links.png Graphic file (type bmp)
+<figure/chapter3/part5/unsetup/left-links.png>
+File: figure/chapter3/part5/unsetup/unsetup-inner-pipe.png Graphic file (type bmp)
+<figure/chapter3/part5/unsetup/unsetup-inner-pipe.png>
+File: figure/chapter3/part5/unsetup/unsetup-ball-and-seat.png Graphic file (type bmp)
+<figure/chapter3/part5/unsetup/unsetup-ball-and-seat.png>
+File: figure/chapter3/part5/unsetup/reseting-assembly.png Graphic file (type bmp)
+<figure/chapter3/part5/unsetup/reseting-assembly.png>
+File: figure/chapter3/part5/unsetup/resetting-assembly-unsetup.png Graphic file (type bmp)
+<figure/chapter3/part5/unsetup/resetting-assembly-unsetup.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [60]
+File: figure/chapter3/part5/unsetup/middle-body-inner-pipe-ball.png Graphic file (type bmp)
+<figure/chapter3/part5/unsetup/middle-body-inner-pipe-ball.png>
+File: figure/chapter3/part5/unsetup/middle-inner-pipe-unsetup.png Graphic file (type bmp)
+<figure/chapter3/part5/unsetup/middle-inner-pipe-unsetup.png>
+File: figure/chapter3/part5/unsetup/piston-spring-limiter.png Graphic file (type bmp)
+<figure/chapter3/part5/unsetup/piston-spring-limiter.png>
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
+(Font)              scaled to size 9.03374pt on input line 403.
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [61]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [62]
+Overfull \hbox (4.54172pt too wide) in paragraph at lines 461--462
+[]\TU/STSong(0)/m/n/12.045 本 可 变 径 刮 管 器 应 与 \TU/TeXGyreTermesX(0)/m/n/12.045 7[]\TU/STSong(0)/m/n/12.045 及 以 上 其 它 刮 管 器 配 合 使 用；|  本 工 具 刮 刀 收 回 外 径 \TU/TeXGyreTermesX(0)/m/n/12.045 136mm\TU/STSong(0)/m/n/12.045 、|
+ []
+
+File: figure/chapter3/part5/10LperSec.png Graphic file (type bmp)
+<figure/chapter3/part5/10LperSec.png>
+File: figure/chapter3/part5/20LperSec.png Graphic file (type bmp)
+<figure/chapter3/part5/20LperSec.png>
+File: figure/chapter3/part5/30LperSec.png Graphic file (type bmp)
+<figure/chapter3/part5/30LperSec.png>
+File: figure/chapter3/part5/40LperSec.png Graphic file (type bmp)
+<figure/chapter3/part5/40LperSec.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[63]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [64]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [65]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [66]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [67]) (./chapters/research4-6/entry.tex
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [68]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [69] (./chapters/research4-6/chapter4.tex
+第四章
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[70
+
+
+]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [71]
 File: figure/research4-6/fig4-01-1.jpg Graphic file (type bmp)
 <figure/research4-6/fig4-01-1.jpg>
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
- [43]
+ [72]
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/
+<figure/research4-6/cosl-header.png>
+ [73]
+File: figure/research4-6/fig4-02-1.png Graphic file (type bmp)
+<figure/research4-6/fig4-02-1.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [74]
+File: figure/research4-6/fig4-03-1.png Graphic file (type bmp)
+<figure/research4-6/fig4-03-1.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [75]
+File: figure/research4-6/fig4-04-1.png Graphic file (type bmp)
+<figure/research4-6/fig4-04-1.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [76]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [77]
+File: figure/research4-6/fig4-05-1.png Graphic file (type bmp)
+<figure/research4-6/fig4-05-1.png>
+File: figure/research4-6/fig4-06-1.png Graphic file (type bmp)
+<figure/research4-6/fig4-06-1.png>
+) (./chapters/research4-6/chapter5.tex
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [78]
+第五章
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[79
+
+]
+File: figure/research4-6/fig5-01-1.png Graphic file (type bmp)
+<figure/research4-6/fig5-01-1.png>
+File: figure/research4-6/fig5-02-1.png Graphic file (type bmp)
+<figure/research4-6/fig5-02-1.png>
+File: figure/research4-6/fig5-03-1.png Graphic file (type bmp)
+<figure/research4-6/fig5-03-1.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [80]
+File: figure/research4-6/fig5-04-1.jpg Graphic file (type bmp)
+<figure/research4-6/fig5-04-1.jpg>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [81]
+File: figure/research4-6/fig5-05-1.png Graphic file (type bmp)
+<figure/research4-6/fig5-05-1.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [82]
+Missing character: There is no ₂ (U+2082) in font Times New Roman/OT:script=latn;language=dflt;!
+Missing character: There is no ₂ (U+2082) in font Times New Roman/OT:script=latn;language=dflt;!
+Missing character: There is no ₂ (U+2082) in font Times New Roman/OT:script=latn;language=dflt;!
+Missing character: There is no ₂ (U+2082) in font Times New Roman/OT:script=latn;language=dflt;!
+Missing character: There is no ₂ (U+2082) in font Times New Roman/OT:script=latn;language=dflt;!
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[83]
+File: figure/research4-6/fig5-06-1.jpg Graphic file (type bmp)
+<figure/research4-6/fig5-06-1.jpg>
+File: figure/research4-6/fig5-06-2.jpg Graphic file (type bmp)
+<figure/research4-6/fig5-06-2.jpg>
+File: figure/research4-6/fig5-0

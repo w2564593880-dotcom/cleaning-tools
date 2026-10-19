@@ -182,7 +182,7 @@ MSQ型毛刷刮管器是用于清除井下套管内壁上的残余水泥，泥�
         \toprule % 顶线
         硬度 & 最小屈服强度 & 伸长率 & 夏比冲击功 \\
         \midrule % 栏目线
-        285-321(HB) & $\sigma_S \ge 785\text{MPa}$ & $13\%$ & $Akv \ge 54\text{J}$ \\
+        285-321(HB) & $\sigma_{\mathrm{S}} \ge 785\text{MPa}$ & $13\%$ & $Akv \ge 54\text{J}$ \\
         \bottomrule % 底线
     \end{tabularx}
 \end{table}
@@ -193,18 +193,18 @@ MSQ型毛刷刮管器是用于清除井下套管内壁上的残余水泥，泥�
 （1）许用拉力计算
 
 \begin{equation}
-    F_{\max} = \frac{[\pi \cdot (D^2 - d^2)] \cdot \sigma_s}{4 \cdot n} \times 10^{-3}
+    F_{\max} = \frac{[\pi \cdot (D^2 - d^2)] \cdot \sigma_{\mathrm{s}}}{4 \cdot n} \times 10^{-3}
 \end{equation}
 
 式中，$F_{\max}$ — 工具最大拉力，kN；\\
 $D$ — 危险截面外径，mm；\\
 $d$ — 危险截面内径，mm；\\
-$\sigma_s$ — 材料最小屈服强度：825 MPa (4145H)；\\
+$\sigma_{\mathrm{s}}$ — 材料最小屈服强度：825 MPa (4145H)；\\
 $n$ — 安全系数，取 $n = 1.5$。
 
 代入数据计算如下：
 \begin{align}
-    F_{\max} &= \frac{\pi \cdot (D^2 - d^2) \cdot \sigma_s}{4 \cdot n} \times 10^{-3} \\
+    F_{\max} &= \frac{\pi \cdot (D^2 - d^2) \cdot \sigma_{\mathrm{s}}}{4 \cdot n} \times 10^{-3} \\
              &= \frac{3.14 \times (50^2 - 30^2) \times 825}{4 \times 1.5} \times 10^{-3} \\
              &= 690.8 \, \text{kN} \\
              &> 400 \, \text{kN}
@@ -214,18 +214,18 @@ $n$ — 安全系数，取 $n = 1.5$。
 (2) 许用扭矩计算
 
 \begin{equation}
-    T_{\max} = \frac{\sigma_s \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D \cdot n} \times 10^{-6}
+    T_{\max} = \frac{\sigma_{\mathrm{s}} \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D \cdot n} \times 10^{-6}
 \end{equation}
 
 式中，$T_{\max}$ — 最大扭矩，$\text{kN} \cdot \text{m}$；\\
-$\sigma_s$ — 材料屈服应力，MPa；\\
+$\sigma_{\mathrm{s}}$ — 材料屈服应力，MPa；\\
 $D$ — 危险截面外径，mm；\\
 $d$ — 危险截面内径，mm；\\
 $n$ — 安全系数，根据《机械设计手册》机械零部件强度计算中安全系数的取值规定\cite{ref26}，取 $n = 1.5$。
 
 代入数据计算得：
 \begin{align}
-    T_{\max} &= \frac{\sigma_s \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D \cdot n} \times 10^{-6} \\
+    T_{\max} &= \frac{\sigma_{\mathrm{s}} \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D \cdot n} \times 10^{-6} \\
              &= \frac{825 \times 3.14 \times (50^4 - 30^4)}{16 \times 50 \times 1.5} \times 10^{-6} \\
              &= 11.74 \, \text{kN} \cdot \text{m} \\
              &> 8 \, \text{kN} \cdot \text{m}
@@ -288,7 +288,7 @@ $n$ — 安全系数，根据《机械设计手册》机械零部件强度计算
         硬度 & 最小屈服强度 & 伸长率 & 夏比冲击功 \\
         \midrule % 栏目线
         285-321(HB) & 
-        \begin{tabular}[c]{@{}l@{}}主体 $\sigma_S \ge 730\,\text{MPa}$ \\ 心轴 $\sigma_S \ge 1068\,\text{MPa}$\end{tabular} & 
+        \begin{tabular}[c]{@{}l@{}}主体 $\sigma_{\mathrm{S}} \ge 730\,\text{MPa}$ \\ 心轴 $\sigma_{\mathrm{S}} \ge 1068\,\text{MPa}$\end{tabular} & 
         $13\%$ & 
         $Akv \ge 54\,\text{J}$ \\
         \bottomrule % 底线
@@ -300,18 +300,18 @@ $n$ — 安全系数，根据《机械设计手册》机械零部件强度计算
 
 (1)	许用拉力计算
 \begin{equation}
-    F_{\max} = \frac{[\pi \cdot (D^2 - d^2)] \cdot \sigma_s}{4 \cdot n} \times 10^{-3}
+    F_{\max} = \frac{[\pi \cdot (D^2 - d^2)] \cdot \sigma_{\mathrm{s}}}{4 \cdot n} \times 10^{-3}
 \end{equation}
 
 \noindent 式中，$F_{\max}$ — 工具最大拉力，kN；\\
 $D$ — 危险截面外径，mm；\\
 $d$ — 危险截面内径，mm；\\
-$\sigma_s$ — 材料最小屈服强度：1068 MPa (4330V-155KSI)；\\
+$\sigma_{\mathrm{s}}$ — 材料最小屈服强度：1068 MPa (4330V-155KSI)；\\
 $n$ — 安全系数，取 $n = 1.5$。
 
 代入数据计算如下：
 \begin{align*}
-    F_{\max} &= \frac{\pi \cdot (D^2 - d^2) \cdot \sigma_s}{4 \cdot n} \times 10^{-3} \\
+    F_{\max} &= \frac{\pi \cdot (D^2 - d^2) \cdot \sigma_{\mathrm{s}}}{4 \cdot n} \times 10^{-3} \\
              &= \frac{3.14 \times (41^2 - 25^2) \times 1068}{4 \times 1.5} \times 10^{-3} \\
              &= 590.22 \, \text{kN} > 400 \, \text{kN}
 \end{align*}
@@ -320,18 +320,18 @@ $n$ — 安全系数，取 $n = 1.5$。
 (2) 许用扭矩计算
 
 \begin{equation}
-    T_{\max} = \frac{\sigma_s \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D \cdot n} \times 10^{-6}
+    T_{\max} = \frac{\sigma_{\mathrm{s}} \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D \cdot n} \times 10^{-6}
 \end{equation}
 
 \noindent 式中，$T_{\max}$ — 工具最大扭矩，$\text{kN} \cdot \text{m}$；\\
-$\sigma_s$ — 材料屈服应力，MPa；\\
+$\sigma_{\mathrm{s}}$ — 材料屈服应力，MPa；\\
 $D$ — 危险截面外径，mm；\\
 $d$ — 危险截面内径，mm；\\
 $n$ — 安全系数，根据《机械设计手册》机械零部件强度计算中安全系数的取值规定\cite{ref26}，取 $n = 1.5$。
 
 代入数据计算得：
 \begin{align*}
-    T_{\max} &= \frac{\sigma_s \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D \cdot n} \times 10^{-6} \\
+    T_{\max} &= \frac{\sigma_{\mathrm{s}} \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D \cdot n} \times 10^{-6} \\
              &= \frac{1068 \times 3.14 \times (41^4 - 25^4)}{16 \times 41 \times 1.5} \times 10^{-6} \\
              &= 8.3 \, \text{kN} \cdot \text{m} > 8 \, \text{kN} \cdot \text{m}
 \end{align*}
@@ -394,7 +394,7 @@ $n$ — 安全系数，根据《机械设计手册》机械零部件强度计算
         硬度 & 最小屈服强度 & 伸长率 & 夏比冲击功 \\
         \midrule % 栏目线
         285-321(HB) & 
-        $\sigma_S \ge 785\,\text{MPa}$ & 
+        $\sigma_{\mathrm{S}} \ge 785\,\text{MPa}$ & 
         $13\%$ & 
         $Akv \ge 54\,\text{J}$ \\
         \bottomrule % 底线
@@ -406,7 +406,7 @@ $n$ — 安全系数，根据《机械设计手册》机械零部件强度计算
 (1) 许用拉力计算
 
 \begin{equation}
-    F_{\max} = \frac{[\pi \cdot (D^2 - d^2)] \cdot \sigma_s}{4 \cdot n} \times 10^{-3}
+    F_{\max} = \frac{[\pi \cdot (D^2 - d^2)] \cdot \sigma_{\mathrm{s}}}{4 \cdot n} \times 10^{-3}
 \end{equation}
 式中，$F_{\max}$ — 工具最大拉力，kN；
 
@@ -414,13 +414,13 @@ $D$ — 危险截面外径，mm；
 
 $d$ — 危险截面内径，mm；
 
-$\sigma_s$ — 材料最小屈服强度：825 MPa (4145H)；
+$\sigma_{\mathrm{s}}$ — 材料最小屈服强度：825 MPa (4145H)；
 
 $n$ — 安全系数，取 $n = 1.5$。
 
 代入数据计算如下：
 \begin{align}
-    F_{\max} &= \frac{\pi \cdot (D^2 - d^2) \cdot \sigma_s}{4 \cdot n} \times 10^{-3} \\
+    F_{\max} &= \frac{\pi \cdot (D^2 - d^2) \cdot \sigma_{\mathrm{s}}}{4 \cdot n} \times 10^{-3} \\
              &= \frac{3.14 \times (80^2 - 63^2) \times 825}{4 \times 1.5} \times 10^{-3} \\
              &= 1049.58 \, \text{kN} > 400 \, \text{kN}
 \end{align}
@@ -429,17 +429,17 @@ $n$ — 安全系数，取 $n = 1.5$。
 (2) 许用扭矩计算
 
 \begin{equation}
-    T_{\max} = \frac{\sigma_s \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D \cdot n} \times 10^{-6}
+    T_{\max} = \frac{\sigma_{\mathrm{s}} \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D \cdot n} \times 10^{-6}
 \end{equation}
 式中，$T_{\max}$ — 最大扭矩，$\text{kN}\cdot\text{m}$；\\
-$\sigma_s$ — 材料屈服应力，MPa；\\
+$\sigma_{\mathrm{s}}$ — 材料屈服应力，MPa；\\
 $D$ — 危险截面外径，mm；\\
 $d$ — 危险截面内径，mm；\\
 $n$ — 安全系数，根据《机械设计手册》机械零部件强度计算中安全系数的取值规定\cite{ref26}，取 $n = 1.5$。
 
 代入数据计算得：
 \begin{align}
-    T_{\max} &= \frac{\sigma_s \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D \cdot n} \times 10^{-6} \\
+    T_{\max} &= \frac{\sigma_{\mathrm{s}} \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D \cdot n} \times 10^{-6} \\
              &= \frac{825 \times 3.14 \times (80^4 - 63^4)}{16 \times 80 \times 1.5} \times 10^{-6} \\
              &= 34 \, \text{kN}\cdot\text{m} > 8 \, \text{kN}\cdot\text{m}
 \end{align}
@@ -504,7 +504,7 @@ $n$ — 安全系数，根据《机械设计手册》机械零部件强度计算
         \midrule
         % 数据行
         285--321 & 
-        $\sigma_S \ge 785$ & 
+        $\sigma_{\mathrm{S}} \ge 785$ & 
         $13$ & 
         $Akv \ge 54$ \\
         \bottomrule
@@ -515,17 +515,17 @@ $n$ — 安全系数，根据《机械设计手册》机械零部件强度计算
 
 
 \begin{equation}
-    F_{\max} = \frac{[\pi \cdot (D^2 - d^2)] \cdot \sigma_s}{4 \cdot n} \times 10^{-3}
+    F_{\max} = \frac{[\pi \cdot (D^2 - d^2)] \cdot \sigma_{\mathrm{s}}}{4 \cdot n} \times 10^{-3}
 \end{equation}
 式中，$F_{\max}$ — 工具最大拉力，kN；\\
 $D$ — 危险截面外径，mm；\\
 $d$ — 危险截面内径，mm；\\
-$\sigma_s$ — 材料最小屈服强度：825 MPa (4145H)；\\
+$\sigma_{\mathrm{s}}$ — 材料最小屈服强度：825 MPa (4145H)；\\
 $n$ — 安全系数，取 $n = 1.5$。
 
 代入数据计算如下：
 \begin{align}
-    F_{\max} &= \frac{\pi \cdot (D^2 - d^2) \cdot \sigma_s}{4 \cdot n} \times 10^{-3} \\
+    F_{\max} &= \frac{\pi \cdot (D^2 - d^2) \cdot \sigma_{\mathrm{s}}}{4 \cdot n} \times 10^{-3} \\
              &= \frac{3.14 \times (48^2 - 30^2) \times 825}{4 \times 1.5} \times 10^{-3} \\
              &= 683 \, \text{kN} > 400 \, \text{kN}
 \end{align}
@@ -535,17 +535,17 @@ $n$ — 安全系数，取 $n = 1.5$。
 
 
 \begin{equation}
-    T_{\max} = \frac{\sigma_s \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D \cdot n} \times 10^{-6}
+    T_{\max} = \frac{\sigma_{\mathrm{s}} \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D \cdot n} \times 10^{-6}
 \end{equation}
 式中，$T_{\max}$ — 最大扭矩，$\text{kN}\cdot\text{m}$；\\
-$\sigma_s$ — 材料屈服应力，MPa；\\
+$\sigma_{\mathrm{s}}$ — 材料屈服应力，MPa；\\
 $D$ — 危险截面外径，mm；\\
 $d$ — 危险截面内径，mm；\\
 $n$ — 安全系数，根据《机械设计手册》机械零部件强度计算中安全系数的取值规定\cite{ref26}，取 $n = 1.5$。
 
 代入数据计算得：
 \begin{align}
-    T_{\max} &= \frac{\sigma_s \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D \cdot n} \times 10^{-6} \\
+    T_{\max} &= \frac{\sigma_{\mathrm{s}} \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D \cdot n} \times 10^{-6} \\
              &= \frac{825 \times 3.14 \times (48^4 - 30^4)}{16 \times 48 \times 1.5} \times 10^{-6} \\
              &= 10.12 \, \text{kN}\cdot\text{m} > 8 \, \text{kN}\cdot\text{m}
 \end{align}

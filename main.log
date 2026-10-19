@@ -2294,4 +2294,150 @@ File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
  [89]
-File: figure/research4-6/fig5-12-1.png Graphic file (typ
+File: figure/research4-6/fig5-12-1.png Graphic file (type bmp)
+<figure/research4-6/fig5-12-1.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [90]
+File: figure/research4-6/fig5-13-1.png Graphic file (type bmp)
+<figure/research4-6/fig5-13-1.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [91]
+File: figure/research4-6/fig5-14-1.png Graphic file (type bmp)
+<figure/research4-6/fig5-14-1.png>
+File: figure/research4-6/fig5-15-1.png Graphic file (type bmp)
+<figure/research4-6/fig5-15-1.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [92]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [93]
+File: figure/research4-6/fig5-16-1.png Graphic file (type bmp)
+<figure/research4-6/fig5-16-1.png>
+) (./chapters/research4-6/chapter6.tex
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [94]
+第六章
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[95
+
+]
+File: figure/research4-6/fig6-01-1.jpg Graphic file (type bmp)
+<figure/research4-6/fig6-01-1.jpg>
+File: figure/research4-6/fig6-02-1.png Graphic file (type bmp)
+<figure/research4-6/fig6-02-1.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [96]
+File: figure/research4-6/fig6-03-1.jpg Graphic file (type bmp)
+<figure/research4-6/fig6-03-1.jpg>
+File: figure/research4-6/fig6-04-1.jpg Graphic file (type bmp)
+<figure/research4-6/fig6-04-1.jpg>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [97]
+File: figure/research4-6/fig6-05-1.png Graphic file (type bmp)
+<figure/research4-6/fig6-05-1.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [98]
+File: figure/research4-6/fig6-06-1.png Graphic file (type bmp)
+<figure/research4-6/fig6-06-1.png>
+)
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [99]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [100]) (./chapters/bib.tex
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [101
+
+
+
+])
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [102] (./chapters/appendix1.tex
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [103
+
+]
+
+LaTeX Warning: Reference `keliyunyi' on page 104 undefined on input line 52.
+
+
+LaTeX Warning: Reference `citimoni' on page 104 undefined on input line 53.
+
+
+LaTeX Warning: Reference `shuilimaichong' on page 104 undefined on input line 54.
+
+
+LaTeX Warning: Reference `siheyi' on page 104 undefined on input line 61.
+
+
+LaTeX Warning: Reference `darongliangqiangci' on page 104 undefined on input line 62.
+
+
+LaTeX Warning: Reference `duogongnengguolv' on page 104 undefined on input line 63.
+
+
+LaTeX Warning: Reference `kebianjingguaguan' on page 104 undefined on input line 64.
+
+
+LaTeX Warning: Reference `sanheyi' on page 104 undefined on input line 65.
+
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[104]
+
+LaTeX Warning: Reference `guaban' on page 105 undefined on input line 76.
+
+)
+
+Package natbib Warning: There were undefined citations.
+
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[105] (./main.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2020/03/25>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  29441C459FAF890C9F80F56D3574C602;18111.
+ ) 
+Here is how much of TeX's memory you used:
+ 39050 strings out of 468174
+ 923819 string characters out of 5433150
+ 1231215 words of memory out of 5000000
+ 66951 multiletter control sequences out of 15000+600000
+ 653149 words of font info for 197 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 93i,20n,117p,1411b,1470s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on main.pdf (110 pages).

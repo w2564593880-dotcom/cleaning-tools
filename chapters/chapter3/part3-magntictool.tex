@@ -161,10 +161,12 @@
 
 大容量强磁工具的主要受力件为心轴，其连接螺纹为 2.85\inch-8 Stub ACME。螺纹牙剪切强度计算：
 
-\begin{align}
-    F_{\max} &= [\tau] \cdot k_z \cdot \pi \cdot d_1 \cdot b \cdot z \times 10^{-3} \\
-    [\tau] &= \frac{\sigma_{\mathrm{s}}}{n}
-\end{align}
+\begin{equation}
+    \begin{aligned}
+        F_{\max} &= [\tau] \cdot k_z \cdot \pi \cdot d_1 \cdot b \cdot z \times 10^{-3} \\
+        [\tau] &= \frac{\sigma_{\mathrm{s}}}{n}
+    \end{aligned}
+\end{equation}
 式中，$F_{\max}$---工具最大拉力，kN（设计指标 $\ge 1000$\,kN，见本节脚注所列合同条款 5.2.1.3（2）：抗拉 $\ge 100$\,T）；
 
 $[\tau]$---螺纹牙的剪切强度，MPa（按 $[\tau]=\sigma_{\mathrm{s}}/n$ 计算）；
@@ -183,12 +185,14 @@ $\sigma_{\mathrm{s}}$---材料最小屈服强度，取 930\,MPa（图号 DQC7000
 
 
 2.85\inch-8 Stub ACME 螺纹代入数据计算如下：
-\begin{align}
-    F_{\max} &= [\tau] \cdot k_z \cdot \pi \cdot d_1 \cdot b \cdot z \times 10^{-3} \\
-             &= 372 \times 0.56 \times 3.14 \times 70.30 \times 1.833 \times 35 \times 10^{-3} \\
-             &= 2950.16 \, \text{kN} \\
-             &> 1000 \, \text{kN}
-\end{align}
+\begin{equation}
+    \begin{aligned}
+        F_{\max} &= [\tau] \cdot k_z \cdot \pi \cdot d_1 \cdot b \cdot z \times 10^{-3} \\
+                 &= 372 \times 0.56 \times 3.14 \times 70.30 \times 1.833 \times 35 \times 10^{-3} \\
+                 &= 2950.16 \, \text{kN} \\
+                 &> 1000 \, \text{kN}
+    \end{aligned}
+\end{equation}
 
 于是，螺纹的强度满足设计要求。
 
@@ -198,9 +202,11 @@ $\sigma_{\mathrm{s}}$---材料最小屈服强度，取 930\,MPa（图号 DQC7000
 （1）轴抗拉危险截面1：为2.85\inch -8 Stub ACME外螺纹根部
 
 抗拉强度$F_{\max}$为
-\begin{align}
-    F_{\max} &= \left[\pi \cdot (D^2 - d^2)\right] \cdot \sigma_{\mathrm{s}} / (4 \cdot n) \times 10^{-3}
-\end{align}
+\begin{equation}
+    \begin{aligned}
+        F_{\max} &= \left[\pi \cdot (D^2 - d^2)\right] \cdot \sigma_{\mathrm{s}} / (4 \cdot n) \times 10^{-3}
+    \end{aligned}
+\end{equation}
 式中，$F_{\max}$---工具最大拉力，kN（设计指标 $\ge 1000$\,kN，见本节脚注所列合同条款 5.2.1.3（2）：抗拉 $\ge 100$\,T）；
 
 $D$---危险截面外径，取 70.30\,mm（图号 DQC700003A--心轴主视图标注的外螺纹小径 70.485$\sim$70.643\,mm，偏安全取小值侧）；
@@ -212,11 +218,13 @@ $\sigma_{\mathrm{s}}$---材料最小屈服强度，取 930\,MPa（图号 DQC7000
 $n$---安全系数，取 $n = 1.5$（按《机械设计手册》机械零部件强度计算中安全系数的取值规定\cite{ref26}）。
 
 心轴2.85\inch-8 Stub ACME 外螺纹根部最大拉力：
-\begin{align}
-    F_{\max} &= \left[\pi \cdot (D^2 - d^2) \cdot \sigma_{\mathrm{s}} / (4 \cdot n)\right] \times 10^{-3} \\
-             &= \left[3.14 \times (70.30^2 - 40^2) \times 930 / (4 \times 1.5)\right] \times 10^{-3} \\
-             &= 1627.42 \, \text{kN} > 1000 \, \text{kN}
-\end{align}
+\begin{equation}
+    \begin{aligned}
+        F_{\max} &= \left[\pi \cdot (D^2 - d^2) \cdot \sigma_{\mathrm{s}} / (4 \cdot n)\right] \times 10^{-3} \\
+                 &= \left[3.14 \times (70.30^2 - 40^2) \times 930 / (4 \times 1.5)\right] \times 10^{-3} \\
+                 &= 1627.42 \, \text{kN} > 1000 \, \text{kN}
+    \end{aligned}
+\end{equation}
 于是，外螺纹根部满足设计要求。
 
 （2）心轴抗拉危险截面2：为2.85\inch -8 Stub ACME内螺纹根部。
@@ -236,11 +244,13 @@ $\sigma_{\mathrm{s}}$---材料最小屈服强度，取 930\,MPa（图号 DQC7000
 $n$---安全系数，取 $n = 1.5$（按《机械设计手册》机械零部件强度计算中安全系数的取值规定\cite{ref26}）。
 
 心轴 2.85\inch -8 Stub ACME 内螺纹根部最大拉力
-\begin{align}
-    F_{\max} &= \frac{\pi \cdot (D^2 - d^2) \cdot \sigma_{\mathrm{s}}}{4 \cdot n} \times 10^{-3} \\
-             &= \frac{3.14 \times (100^2 - 70.30^2) \times 930}{4 \times 1.5} \times 10^{-3} \\
-             &= 2462.93 \text{kN} > 1000 \text{kN}
-\end{align}
+\begin{equation}
+    \begin{aligned}
+        F_{\max} &= \frac{\pi \cdot (D^2 - d^2) \cdot \sigma_{\mathrm{s}}}{4 \cdot n} \times 10^{-3} \\
+                 &= \frac{3.14 \times (100^2 - 70.30^2) \times 930}{4 \times 1.5} \times 10^{-3} \\
+                 &= 2462.93 \text{kN} > 1000 \text{kN}
+    \end{aligned}
+\end{equation}
 
 于是，内螺纹根部强度满足设计要求。
 
@@ -270,22 +280,26 @@ $n$---许用剪应力与许用拉应力系数，取 $n = 0.66$（按《机械设
 $[\tau]$---材料许用切应力，MPa（按 $[\tau]=n\sigma_{\mathrm{s}} = 0.66\times 930$\,MPa 计算）。
 
 心轴 2.85\inch -8 Stub ACME 外螺纹根部最大扭矩：
-\begin{align}
-    T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6} \\
-             &= \frac{613.8 \times 3.14 \times (70.30^4 - 40^4)}{16 \times 70.30} \times 10^{-6} \\
-             &= 35.98\,\text{kN}\cdot\text{m} > 18\,\text{kN}\cdot\text{m}
-\end{align}
+\begin{equation}
+    \begin{aligned}
+        T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6} \\
+                 &= \frac{613.8 \times 3.14 \times (70.30^4 - 40^4)}{16 \times 70.30} \times 10^{-6} \\
+                 &= 35.98\,\text{kN}\cdot\text{m} > 18\,\text{kN}\cdot\text{m}
+    \end{aligned}
+\end{equation}
 
 于是，心轴外螺纹根部抗扭强度满足设计要求。
 
 （2）心轴抗扭危险截面2：为2.85\inch -8 Stub ACME内螺纹根部。
 
 抗扭强度 $\tau$ 计算：
-\begin{align}
-    \tau &= \frac{16 \cdot D \cdot T_{\max}}{\pi \cdot (D^4 - d^4)} \times 10^6 \\
-    T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6} \\
-    [\tau] &= n \cdot \sigma_{\mathrm{s}} = 0.66 \times 930\,\text{MPa} = 613.8\,\text{MPa}
-\end{align}
+\begin{equation}
+    \begin{aligned}
+        \tau &= \frac{16 \cdot D \cdot T_{\max}}{\pi \cdot (D^4 - d^4)} \times 10^6 \\
+        T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6} \\
+        [\tau] &= n \cdot \sigma_{\mathrm{s}} = 0.66 \times 930\,\text{MPa} = 613.8\,\text{MPa}
+    \end{aligned}
+\end{equation}
 式中，$T_{\max}$---工具最大扭矩，kN$\cdot$m（设计指标 $\ge 18$\,kN$\cdot$m，见本节脚注所列合同条款 5.2.1.3（2）：抗扭 $\ge 18$\,kN$\cdot$m）；
 
 $\sigma_{\mathrm{s}}$---材料屈服应力，取 930\,MPa（图号 DQC700003A--心轴技术要求：材料 4330V-155KSI，调质后屈服强度 $\ge 930$\,MPa）；
@@ -299,11 +313,13 @@ $n$---许用剪应力与许用拉应力系数，取 $n = 0.66$（按《机械设
 $[\tau]$---材料许用切应力，MPa（按 $[\tau]=n\sigma_{\mathrm{s}} = 0.66\times 930$\,MPa 计算）。
 
 心轴 2.85\inch -8 Stub ACME 内螺纹根部最大扭矩：
-\begin{align}
-    T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6} \\
-             &= \frac{613.8 \times 3.14 \times (100^4 - 70.30^4)}{16 \times 100} \times 10^{-6} \\
-             &= 86.29\,\text{kN}\cdot\text{m} > 18\,\text{kN}\cdot\text{m}
-\end{align}
+\begin{equation}
+    \begin{aligned}
+        T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6} \\
+                 &= \frac{613.8 \times 3.14 \times (100^4 - 70.30^4)}{16 \times 100} \times 10^{-6} \\
+                 &= 86.29\,\text{kN}\cdot\text{m} > 18\,\text{kN}\cdot\text{m}
+    \end{aligned}
+\end{equation}
 
 于是，内螺纹根部抗扭强度满足设计要求。
 
@@ -425,11 +441,13 @@ $D'_u$---9-5/8\inch 规格上部强磁架外圆直径，mm（取 $D'_u = 184.16\
 大容量强磁工具的防退扣主要薄点为下接头端面键（图纸DQC700007A--下接头）。下面为下接头端面键抗扭计算。端面键抗扭危险截面：为端面键截面（键的数量为6，图纸DQC700007A--下接头端面均布6条螺旋槽）。
 
 防退扣抗扭强度 $\tau$ 计算：
-\begin{align}
-    \tau &= \frac{T_{\max}}{3 \cdot b \cdot h \cdot d} \times 10^{-6} \\
-    T_{\max} &= \frac{3 \cdot [\tau] \cdot b \cdot h \cdot d}{n_1} \times 10^{-6} \\
-    [\tau] &= n \cdot \sigma_{\mathrm{s}} = 0.66 \times 827\,\text{MPa} = 545.82\,\text{MPa}
-\end{align}
+\begin{equation}
+    \begin{aligned}
+        \tau &= \frac{T_{\max}}{3 \cdot b \cdot h \cdot d} \times 10^{-6} \\
+        T_{\max} &= \frac{3 \cdot [\tau] \cdot b \cdot h \cdot d}{n_1} \times 10^{-6} \\
+        [\tau] &= n \cdot \sigma_{\mathrm{s}} = 0.66 \times 827\,\text{MPa} = 545.82\,\text{MPa}
+    \end{aligned}
+\end{equation}
 式中，$T_{\max}$---最大防退扣扭矩，kN$\cdot$m（设计指标 $\ge 18$\,kN$\cdot$m，见本节脚注所列合同条款 5.2.1.3（2）：抗扭 $\ge 18$\,kN$\cdot$m）；
 
 $\sigma_{\mathrm{s}}$---材料屈服应力，MPa（取 827\,MPa，按端面键材料 4145H 的屈服强度，见图号 DQC700007A--下接头技术要求第 1 条：调质后屈服强度 $\ge 827$\,MPa）；
@@ -449,11 +467,13 @@ $[\tau]$---材料许用切应力，MPa（按 $[\tau]=n\sigma_{\mathrm{s}} = 0.66
 $n_1$---安全系数，取 $n_1 = 1.5$（按《机械设计手册》机械零部件强度计算中安全系数的取值规定\cite{ref26}）。
 
 下接头端面键截面防退扣最大扭矩：
-\begin{align}
-    T_{\max} &= \frac{3 \cdot [\tau] \cdot b \cdot h \cdot d}{n_1} \times 10^{-6} \\
-             &= \frac{3 \times 545.82 \times 19 \times 11.75 \times 73.5}{1.5} \times 10^{-6} \\
-             &= 17.87\,\text{kN}\cdot\text{m}
-\end{align}
+\begin{equation}
+    \begin{aligned}
+        T_{\max} &= \frac{3 \cdot [\tau] \cdot b \cdot h \cdot d}{n_1} \times 10^{-6} \\
+                 &= \frac{3 \times 545.82 \times 19 \times 11.75 \times 73.5}{1.5} \times 10^{-6} \\
+                 &= 17.87\,\text{kN}\cdot\text{m}
+    \end{aligned}
+\end{equation}
 
 需要说明的是，上述计算值为按半周3个端面键受剪、且计入安全系数$n_1 = 1.5$后的\textbf{许用}防退扣扭矩。该值略低于合同规定的抗扭$\ge 18\,\text{kN}\cdot\text{m}$设计指标，其原因是端面键为螺纹退扣的\textbf{后备}防退结构，而非工具的主传扭路径：工具的主传扭由心轴2.85\inch-8 Stub ACME螺纹承担（外螺纹根部35.98\,kN$\cdot$m、内螺纹根部86.29\,kN$\cdot$m，均远大于18\,kN$\cdot$m），端面键的作用是在扭矩与振动导致螺纹趋于退扣时才参与承载。若按6个端面键全部同时受剪计算，其许用防退扣扭矩为35.7\,kN$\cdot$m，可满足指标要求。
 

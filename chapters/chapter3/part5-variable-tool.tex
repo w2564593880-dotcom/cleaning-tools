@@ -145,11 +145,13 @@ $n$---安全系数，取 $n = 1.5$（按《机械设计手册》机械零部件�
 9-5/8\inch 可变径刮壁器的主要受力件为刮刀心轴和心轴连接筒，其抗扭危险截面与抗拉校核相同，分别位于刮刀心轴小螺纹 $\mathrm{Tr}\,65 \times 4-8e$ 螺纹根部和心轴连接筒内螺纹 $\mathrm{Tr}\,65 \times 4-8H$ 螺纹根部。
 
 抗扭强度按下式计算：
-\begin{align}
-    \tau &= \frac{16 \cdot D \cdot T_{\max}}{\pi \cdot (D^4 - d^4)} \times 10^{6} \\
-    T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6} \\
-    [\tau] &= n \cdot \sigma_{\mathrm{s}} = 0.66 \times 1068\,\mathrm{MPa} = 704.88\,\mathrm{MPa}
-\end{align}
+\begin{equation}
+    \begin{aligned}
+        \tau &= \frac{16 \cdot D \cdot T_{\max}}{\pi \cdot (D^4 - d^4)} \times 10^{6} \\
+        T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6} \\
+        [\tau] &= n \cdot \sigma_{\mathrm{s}} = 0.66 \times 1068\,\mathrm{MPa} = 704.88\,\mathrm{MPa}
+    \end{aligned}
+\end{equation}
 式中，$T_{\max}$---工具最大扭矩，kN$\cdot$m（设计指标 $>17$\,kN$\cdot$m，见本节脚注所列合同条款 5.2.1.3（4））；
 
 $\tau$---危险截面的切应力，MPa（按 $\tau = 16DT_{\max}/[\pi(D^4-d^4)]$ 计算）；

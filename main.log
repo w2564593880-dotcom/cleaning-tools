@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.7.19)  20 OCT 2026 17:11
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.7.19)  21 OCT 2026 11:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1157,7 +1157,21 @@ Package fontspec Info:
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
 (Font)              scaled to size 12.045pt on input line 215.
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 215.
- (./main.aux)
+ (./main.aux
+Invalid UTF-8 byte or sequence at line 105 replaced by U+FFFD.
+)
+Runaway argument?
+{{1-16}{18}{相� 
+/Users/yaobenchun/Documents/GitHub/cleaning-tools/main.tex:215: File ended while scanning use of \@newl@bel.
+<inserted text> 
+                \par 
+l.215 \begin{document}
+                      
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 215.
@@ -1237,7 +1251,6 @@ LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 215.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 215.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -1354,286 +1367,631 @@ LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
 (Font)              scaled to size 12.045pt on input line 242.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
 (Font)              scaled to size 15.0pt on input line 242.
- (./main.toc
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 4.
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 4.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 35.
- [1
-
-
-])
+ (./main.toc)
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
- [2]
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 245.
+ [1
+
+
+]
 第一章
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
-[1
-
-
-]
-第二章
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
-[2
-
-]
-第三章
+(./chapters/chapter1/part1-theory-basis.tex
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
-(Font)              scaled to size 14.0pt on input line 266.
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 266.
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 14.0pt on input line 266.
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 9.79996pt on input line 266.
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 266.
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 266.
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 266.
-(./chapters/chapter3/part5-variable-tool.tex
+(Font)              scaled to size 14.0pt on input line 7.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 2.
+(Font)              scaled to size 12.0pt on input line 9.
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
+(Font)              scaled to size 8.0pt on input line 12.
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
+(Font)              scaled to size 6.0pt on input line 12.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 12.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 12.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
- [3
+ [1
+
 
 ]
+File: figure/kelipengzhuang.png Graphic file (type bmp)
+<figure/kelipengzhuang.png>
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 10.
+(Font)              scaled to size 9.03374pt on input line 76.
+File: figure/hertz-mindlin-contact-model.png Graphic file (type bmp)
+<figure/hertz-mindlin-contact-model.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--19
-[]|\TU/STSong(0)/m/n/9.03374 收 回 待 命  |（投 球
+Overfull \hbox (9.03372pt too wide) in paragraph at lines 76--82
+ [][][][] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 19--19
-[]|\TU/TeXGyreTermesX(0)/m/n/9.03374 136mm |\TU/STSong(0)/m/n/9.03374 （本 体
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 22--22
-[]|\TU/STSong(0)/m/n/9.03374 复 位 弹 簧 收 回 至
- []
-
-File: figure/chapter3/part5/variable-scrapter-structure.png Graphic file (type bmp)
-<figure/chapter3/part5/variable-scrapter-structure.png>
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 10.53937pt on input line 39.
+(Font)              scaled to size 12.0pt on input line 82.
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[2]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [3]
+Overfull \hbox (0.23183pt too wide) in paragraph at lines 193--195
+[]\TU/STSong(0)/m/n/12.045 当 处 理 湿 颗 粒 且 颗 粒 间 存 在 液 桥 力 等 粘 性 作 用 时，|  接 触 模 型 通 常 选 用 \TU/TeXGyreTermesX(0)/m/n/12.045 Hertz–Mindlin
+ []
+
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
 [4]
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
  [5]
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
+(Font)              scaled to size 8.0pt on input line 323.
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
+(Font)              scaled to size 6.0pt on input line 323.
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
- [6]
+ [6]) (./chapters/chapter1/part2-sand-sendiment.tex
+File: figure/sand-sample.jpg Graphic file (type bmp)
+<figure/sand-sample.jpg>
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
  [7]
-Overfull \hbox (17.57654pt too wide) in paragraph at lines 161--162
-[]$\OML/cmm/m/it/12.045 D$\TU/TeXGyreTermesX(0)/m/n/12.045 —\TU/STSong(0)/m/n/12.045 危 险 截 面 外 径，| \TU/TeXGyreTermesX(0)/m/n/12.045 mm |\TU/STSong(0)/m/n/12.045 （取 值 与 抗 拉 校 核 相 同：|  刮 刀 芯 轴 $\OML/cmm/m/it/12.045 D \OT1/cmr/m/n/12.045 = 62$\TU/TeXGyreTermesX(0)/m/n/12.045 mm\TU/STSong(0)/m/n/12.045 ，|  图 号 \TU/TeXGyreTermesX(0)/m/n/12.045 BJG700004A
- []
-
-
-Overfull \hbox (3.9052pt too wide) in paragraph at lines 161--162
-\TU/STSong(0)/m/n/12.045 左 端 牙 槽 根 外 圆；|  芯 轴 连 接 筒 $\OML/cmm/m/it/12.045 D \OT1/cmr/m/n/12.045 = 80$\TU/TeXGyreTermesX(0)/m/n/12.045 mm\TU/STSong(0)/m/n/12.045 ，|  图 号 \TU/TeXGyreTermesX(0)/m/n/12.045 BJG700014A \TU/STSong(0)/m/n/12.045 外 圆 标 注 $\OML/cmm/m/it/12.045 ^^^\OT1/cmr/m/n/12.045 80 []/[]$\TU/STSong(0)/m/n/12.045 ） ；| 
- []
-
-
-Overfull \hbox (18.7665pt too wide) in paragraph at lines 163--164
-[]$\OML/cmm/m/it/12.045 d$\TU/TeXGyreTermesX(0)/m/n/12.045 —\TU/STSong(0)/m/n/12.045 危 险 截 面 内 径，| \TU/TeXGyreTermesX(0)/m/n/12.045 mm |\TU/STSong(0)/m/n/12.045 （取 值 与 抗 拉 校 核 相 同：|  刮 刀 芯 轴 $\OML/cmm/m/it/12.045 d \OT1/cmr/m/n/12.045 = 38\OML/cmm/m/it/12.045 :\OT1/cmr/m/n/12.045 1$\TU/TeXGyreTermesX(0)/m/n/12.045 mm\TU/STSong(0)/m/n/12.045 ，|  图 号 \TU/TeXGyreTermesX(0)/m/n/12.045 BJG700004A
- []
-
-
-Overfull \hbox (16.62329pt too wide) in paragraph at lines 192--193
-[]\TU/STSong(0)/m/n/12.045 刮 壁 器 的 球 座 圆 周 设 计 \TU/TeXGyreTermesX(0)/m/n/12.045 4 \TU/STSong(0)/m/n/12.045 组 剪 钉 参 与 剪 切  |（图 纸 \TU/TeXGyreTermesX(0)/m/n/12.045 BJG700015A \TU/STSong(0)/m/n/12.045 球 座 标 注 $\OT1/cmr/m/n/12.045 4 \OMS/cmsy/m/n/12.045 ^^B \OT1/cmr/m/n/12.045 4\OML/cmm/m/it/12.045 :\OT1/cmr/m/n/12.045 80 []/0$
- []
-
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
-[8]
-Overfull \hbox (5.15842pt too wide) in paragraph at lines 207--208
-[]$\OML/cmm/m/it/12.045 R$\TU/TeXGyreTermesX(0)/m/n/12.045 —\TU/STSong(0)/m/n/12.045 单 个 剪 钉 的 半 径，| \TU/TeXGyreTermesX(0)/m/n/12.045 mm |\TU/STSong(0)/m/n/12.045 （图 号 \TU/TeXGyreTermesX(0)/m/n/12.045 BJG700015A |\TU/STSong(0)/m/n/12.045 《球 座》|  端 面 剪 钉 孔 径 标 注 $\OT1/cmr/m/n/12.045 4\OML/cmm/m/it/12.045 :\OT1/cmr/m/n/12.045 80 []/0$\TU/STSong(0)/m/n/12.045 ，|
- []
-
+ [8]
+File: figure/annular-3d-model.png Graphic file (type bmp)
+<figure/annular-3d-model.png>
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
-[9]
-Overfull \hbox (18.25308pt too wide) in paragraph at lines 266--267
-[]$\OML/cmm/m/it/12.045 d$\TU/TeXGyreTermesX(0)/m/n/12.045 —\TU/STSong(0)/m/n/12.045 连 杆 销 的 最 小 直 径，| \TU/TeXGyreTermesX(0)/m/n/12.045 mm |\TU/STSong(0)/m/n/12.045 （取 \TU/TeXGyreTermesX(0)/m/n/12.045 10mm\TU/STSong(0)/m/n/12.045 ，|  图 号 \TU/TeXGyreTermesX(0)/m/n/12.045 BJG700005A |\TU/STSong(0)/m/n/12.045 《活 动 座 铰 链 销》 、| \TU/TeXGyreTermesX(0)/m/n/12.045 BJG700007A
- []
-
+ [9]
+File: figure/chapter1/sand-mass-in-annular-VS-time.png Graphic file (type bmp)
+<figure/chapter1/sand-mass-in-annular-VS-time.png>
+File: figure/chapter1/sand-velocity-cloud-sections.png Graphic file (type bmp)
+<figure/chapter1/sand-velocity-cloud-sections.png>
+File: figure/chapter1/sand-volume-fraction-cloud-sections.png Graphic file (type bmp)
+<figure/chapter1/sand-volume-fraction-cloud-sections.png>
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
-[10]
-File: figure/chapter3/part5/inner-pipe.png Graphic file (type bmp)
-<figure/chapter3/part5/inner-pipe.png>
-File: figure/simulation/guadaoxinzhou-lashen.png Graphic file (type bmp)
-<figure/simulation/guadaoxinzhou-lashen.png>
-File: figure/simulation/gaudaoxinzhou-niuju.png Graphic file (type bmp)
-<figure/simulation/gaudaoxinzhou-niuju.png>
-File: figure/chapter3/part5/unsetup/ball.png Graphic file (type bmp)
-<figure/chapter3/part5/unsetup/ball.png>
-File: figure/chapter3/part5/unsetup/unsetup-satefy-screw.png Graphic file (type bmp)
-<figure/chapter3/part5/unsetup/unsetup-satefy-screw.png>
-File: figure/chapter3/part5/unsetup/unsetup-two-subs.png Graphic file (type bmp)
-<figure/chapter3/part5/unsetup/unsetup-two-subs.png>
+ [10]
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
  [11]
-File: figure/chapter3/part5/unsetup/unsetup-fasten-parts.png Graphic file (type bmp)
-<figure/chapter3/part5/unsetup/unsetup-fasten-parts.png>
-File: figure/chapter3/part5/unsetup/rotary-lever-set.png Graphic file (type bmp)
-<figure/chapter3/part5/unsetup/rotary-lever-set.png>
+File: figure/chapter1/sand-mass-in-annular-VS-time-flowrate.png Graphic file (type bmp)
+<figure/chapter1/sand-mass-in-annular-VS-time-flowrate.png>
+File: figure/sand-volume-fraction-vin-dot17.png Graphic file (type bmp)
+<figure/sand-volume-fraction-vin-dot17.png>
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
+(Font)              scaled to size 5.0pt on input line 133.
+File: figure/sand-volume-fraction-vin-dot27.png Graphic file (type bmp)
+<figure/sand-volume-fraction-vin-dot27.png>
+File: figure/sand-volume-fraction-vin-dot69.png Graphic file (type bmp)
+<figure/sand-volume-fraction-vin-dot69.png>
+File: figure/chapter1/b-point-height-VS-flowrate.png Graphic file (type bmp)
+<figure/chapter1/b-point-height-VS-flowrate.png>
+File: figure/sand-volume-fraction-velocity-at-b-point-flowrate.png Graphic file (type bmp)
+<figure/sand-volume-fraction-velocity-at-b-point-flowrate.png>
+File: figure/chapter1/sand-mass-in-annular-VS-time-viscosity.png Graphic file (type bmp)
+<figure/chapter1/sand-mass-in-annular-VS-time-viscosity.png>
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
  [12]
-File: figure/chapter3/part5/unsetup/end-links.png Graphic file (type bmp)
-<figure/chapter3/part5/unsetup/end-links.png>
-File: figure/chapter3/part5/unsetup/unsetup-scraper.png Graphic file (type bmp)
-<figure/chapter3/part5/unsetup/unsetup-scraper.png>
-File: figure/chapter3/part5/unsetup/left-links.png Graphic file (type bmp)
-<figure/chapter3/part5/unsetup/left-links.png>
-File: figure/chapter3/part5/unsetup/unsetup-inner-pipe.png Graphic file (type bmp)
-<figure/chapter3/part5/unsetup/unsetup-inner-pipe.png>
-File: figure/chapter3/part5/unsetup/unsetup-ball-and-seat.png Graphic file (type bmp)
-<figure/chapter3/part5/unsetup/unsetup-ball-and-seat.png>
-File: figure/chapter3/part5/unsetup/reseting-assembly.png Graphic file (type bmp)
-<figure/chapter3/part5/unsetup/reseting-assembly.png>
-File: figure/chapter3/part5/unsetup/resetting-assembly-unsetup.png Graphic file (type bmp)
-<figure/chapter3/part5/unsetup/resetting-assembly-unsetup.png>
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
  [13]
-File: figure/chapter3/part5/unsetup/middle-body-inner-pipe-ball.png Graphic file (type bmp)
-<figure/chapter3/part5/unsetup/middle-body-inner-pipe-ball.png>
-File: figure/chapter3/part5/unsetup/middle-inner-pipe-unsetup.png Graphic file (type bmp)
-<figure/chapter3/part5/unsetup/middle-inner-pipe-unsetup.png>
-File: figure/chapter3/part5/unsetup/piston-spring-limiter.png Graphic file (type bmp)
-<figure/chapter3/part5/unsetup/piston-spring-limiter.png>
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
-(Font)              scaled to size 9.03374pt on input line 403.
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
  [14]
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [15]
-Overfull \hbox (4.54172pt too wide) in paragraph at lines 461--462
-[]\TU/STSong(0)/m/n/12.045 本 可 变 径 刮 管 器 应 与 \TU/TeXGyreTermesX(0)/m/n/12.045 7[]\TU/STSong(0)/m/n/12.045 及 以 上 其 它 刮 管 器 配 合 使 用；|  本 工 具 刮 刀 收 回 外 径 \TU/TeXGyreTermesX(0)/m/n/12.045 136mm\TU/STSong(0)/m/n/12.045 、|
- []
+File: figure/sand-volume-fraction-mu-1cp.png Graphic file (type bmp)
+<figure/sand-volume-fraction-mu-1cp.png>
+File: figure/sand-volume-fraction-mu-5cp.png Graphic file (type bmp)
+<figure/sand-volume-fraction-mu-5cp.png>
+File: figure/chapter1/b-point-height-VS-viscosity.png Graphic file (type bmp)
+<figure/chapter1/b-point-height-VS-viscosity.png>
+File: figure/sand-volume-fraction-velocity-at-b-point-viscosity.png Graphic file (type bmp)
+<figure/sand-volume-fraction-velocity-at-b-point-viscosity.png>
 
-File: figure/chapter3/part5/10LperSec.png Graphic file (type bmp)
-<figure/chapter3/part5/10LperSec.png>
-File: figure/chapter3/part5/20LperSec.png Graphic file (type bmp)
-<figure/chapter3/part5/20LperSec.png>
-File: figure/chapter3/part5/30LperSec.png Graphic file (type bmp)
-<figure/chapter3/part5/30LperSec.png>
-File: figure/chapter3/part5/40LperSec.png Graphic file (type bmp)
-<figure/chapter3/part5/40LperSec.png>
+
+LaTeX Warning: Reference `fig:sand_distribution_annular_vin' on page 15 undefined on input line 215.
+
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
-[16]
+[15]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [16]
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
  [17]
+File: figure/tool-and-wellbore-simulation-model.png Graphic file (type bmp)
+<figure/tool-and-wellbore-simulation-model.png>
+File: figure/sand-distribution-annular-vin-dot37.png Graphic file (type bmp)
+<figure/sand-distribution-annular-vin-dot37.png>
+File: figure/sand-distribution-annular-vin-dot59.png Graphic file (type bmp)
+<figure/sand-distribution-annular-vin-dot59.png>
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
- [18]
+ [18]) (./chapters/chapter1/part3-iron-wire-sendiment.tex
+
+LaTeX Warning: Reference `fig:iron_shavings_sample' on page 19 undefined on input line 7.
+
+
+LaTeX Warning: Reference `fig:iron_particle_comparison' on page 19 undefined on input line 7.
+
+
+LaTeX Warning: Reference `tab:simulation_params' on page 19 undefined on input line 7.
+
+File: figure/iron-shavings-sample.jpg Graphic file (type bmp)
+<figure/iron-shavings-sample.jpg>
+File: figure/iron-wire-actual.jpg Graphic file (type bmp)
+<figure/iron-wire-actual.jpg>
+File: figure/iron-wire-model.jpg Graphic file (type bmp)
+<figure/iron-wire-model.jpg>
+
+LaTeX Warning: Reference `fig:iron_wire_distribution_viscosity' on page 19 undefined on input line 66.
+
+
+LaTeX Warning: Reference `fig:iron_wire_mean_velocity_evolution_viscosity' on page 19 undefined on input line 66.
+
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
- [19]
+[19]
+File: figure/iron-wire-distribution-1cp-velocity-colored.png Graphic file (type bmp)
+<figure/iron-wire-distribution-1cp-velocity-colored.png>
+File: figure/iron-wire-distribution-1dot7-cp-velocity-colored.png Graphic file (type bmp)
+<figure/iron-wire-distribution-1dot7-cp-velocity-colored.png>
+File: figure/chapter1/iron-wire-mean-velocity-evolution-viscosity.png Graphic file (type bmp)
+<figure/chapter1/iron-wire-mean-velocity-evolution-viscosity.png>
+File: figure/chapter1/iron-wire-velocity-VS-viscosity.png Graphic file (type bmp)
+<figure/chapter1/iron-wire-velocity-VS-viscosity.png>
+
+
+LaTeX Warning: Reference `fig:iron_wire_distribution_velocity' on page 20 undefined on input line 105.
+
+File: figure/iron-wire-distribution-1dot7cp-0dot17mpers.png Graphic file (type bmp)
+<figure/iron-wire-distribution-1dot7cp-0dot17mpers.png>
+File: figure/iron-wire-distribution-1dot7cp-0dot27mpers.png Graphic file (type bmp)
+<figure/iron-wire-distribution-1dot7cp-0dot27mpers.png>
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
- [20]) (./chapters/bib.tex
+[20]
+
+LaTeX Warning: Reference `fig:iron_wire_particle_track_velocity' on page 21 undefined on input line 127.
+
+
+LaTeX Warning: Reference `fig:distribution_velocity_0.27' on page 21 undefined on input line 127.
+
+File: figure/iron-wire-particle-track-1dot7cp-0dot17mpers.jpg Graphic file (type bmp)
+<figure/iron-wire-particle-track-1dot7cp-0dot17mpers.jpg>
+File: figure/iron-wire-particle-track-1dot7cp-0dot27mpers.jpg Graphic file (type bmp)
+<figure/iron-wire-particle-track-1dot7cp-0dot27mpers.jpg>
+
+LaTeX Warning: Reference `fig:iron_wire_mean_velocity_evolution_incoming_velocity' on page 21 undefined on input line 153.
+
+File: figure/chapter1/iron-wire-mean-velocity-evolution-incoming-velocity.png Graphic file (type bmp)
+<figure/chapter1/iron-wire-mean-velocity-evolution-incoming-velocity.png>
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
- [21]
+[21]
+
+LaTeX Warning: Reference `fig:iron_wire_distribution_3angles' on page 22 undefined on input line 164.
+
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
- [22]
+[22]
+
+LaTeX Warning: Reference `fig:iron_wire_track_3angles' on page 23 undefined on input line 168.
+
+File: figure/iron-wire-distribution-1dot7cp-0dot27mpers-3angles.jpg Graphic file (type bmp)
+<figure/iron-wire-distribution-1dot7cp-0dot27mpers-3angles.jpg>
+File: figure/iron-wire-particle-track-1dot7cp-0dot27mpers-3angles.jpg Graphic file (type bmp)
+<figure/iron-wire-particle-track-1dot7cp-0dot27mpers-3angles.jpg>
+
+LaTeX Warning: Reference `fig:iron_wire_velocity_5angles' on page 23 undefined on input line 184.
+
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
- [23
-
-
-])
+[23]
+File: figure/chapter1/iron-wire-mean-velocity-evolution-5angles.png Graphic file (type bmp)
+<figure/chapter1/iron-wire-mean-velocity-evolution-5angles.png>
+) (./chapters/chapter1/part4-scale-wax.tex
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
- [24] (./chapters/appendix1.tex
+ [24]
+
+LaTeX Warning: Reference `fig:BaSr_particle' on page 25 undefined on input line 8.
+
+
+LaTeX Warning: Reference `tab:basr_simulation_params' on page 25 undefined on input line 8.
+
+File: figure/BaSr-sample.png Graphic file (type bmp)
+<figure/BaSr-sample.png>
+File: figure/BaSr-SEM.png Graphic file (type bmp)
+<figure/BaSr-SEM.png>
+File: figure/BaSr-model.png Graphic file (type bmp)
+<figure/BaSr-model.png>
+
+LaTeX Warning: Reference `fig:Ba_Sr_distribution' on page 25 undefined on input line 60.
+
+File: figure/BaSr-distribution-Vin.jpg Graphic file (type bmp)
+<figure/BaSr-distribution-Vin.jpg>
+
+LaTeX Warning: Reference `fig:Ba_Sr_velocity_size' on page 25 undefined on input line 68.
+
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
- [25
-
-]
-
-LaTeX Warning: Reference `keliyunyi' on page 26 undefined on input line 52.
-
-
-LaTeX Warning: Reference `citimoni' on page 26 undefined on input line 53.
+[25]
+File: figure/chapter1/BaSr-mean-velocity-evolution-vin-dot37.png Graphic file (type bmp)
+<figure/chapter1/BaSr-mean-velocity-evolution-vin-dot37.png>
+File: figure/chapter1/BaSr-mean-velocity-evolution-vin-dot59.png Graphic file (type bmp)
+<figure/chapter1/BaSr-mean-velocity-evolution-vin-dot59.png>
 
 
-LaTeX Warning: Reference `shuilimaichong' on page 26 undefined on input line 54.
+LaTeX Warning: Reference `fig:Ba_Sr_distribution_3angles' on page 26 undefined on input line 84.
+
+File: figure/BaSr-distribution-3angles.jpg Graphic file (type bmp)
+<figure/BaSr-distribution-3angles.jpg>
+
+LaTeX Warning: Reference `fig:Ba_Sr_velocity_3angles' on page 26 undefined on input line 94.
 
 
-LaTeX Warning: Reference `siheyi' on page 26 undefined on input line 61.
-
-
-LaTeX Warning: Reference `darongliangqiangci' on page 26 undefined on input line 62.
-
-
-LaTeX Warning: Reference `duogongnengguolv' on page 26 undefined on input line 63.
-
-
-LaTeX Warning: Reference `sanheyi' on page 26 undefined on input line 65.
+LaTeX Warning: Reference `fig:Ba_Sr_velocity_3angles' on page 26 undefined on input line 94.
 
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
 [26]
-
-LaTeX Warning: Reference `guaban' on page 27 undefined on input line 76.
-
-)
+File: figure/chapter1/BaSr-mean-velocity-evolution-big-size.png Graphic file (type bmp)
+<figure/chapter1/BaSr-mean-velocity-evolution-big-size.png>
+File: figure/chapter1/BaSr-mean-velocity-evolution-small-size.png Graphic file (type bmp)
+<figure/chapter1/BaSr-mean-velocity-evolution-small-size.png>
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
- [27] (./main.aux)
- ***********
-LaTeX2e <2025-11-01>
-L3 programming layer <2020/03/25>
- ***********
+ [27]
+
+LaTeX Warning: Reference `tab:wax_params' on page 28 undefined on input line 113.
+
+File: figure/chapter1/Wax-mean-velocity-Vin-dot37mpersec.png Graphic file (type bmp)
+<figure/chapter1/Wax-mean-velocity-Vin-dot37mpersec.png>
+File: figure/chapter1/Wax-mean-velocity-Vin-dot59mpersec.png Graphic file (type bmp)
+<figure/chapter1/Wax-mean-velocity-Vin-dot59mpersec.png>
+
+LaTeX Warning: Reference `fig:wax_velocity_3angles' on page 28 undefined on input line 157.
 
 
-LaTeX Warning: There were undefined references.
+LaTeX Warning: Reference `fig:wax_velocity_3angles' on page 28 undefined on input line 157.
 
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D0A7E8CA5E8891096BC77F2A95F39D86;6484.
- ) 
-Here is how much of TeX's memory you used:
- 37735 strings out of 468174
- 863054 string characters out of 5433150
- 1217914 words of memory out of 5000000
- 65750 multiletter control sequences out of 15000+600000
- 653085 words of font info for 189 fonts, out of 8000000 for 9000
- 1348 hyphenation exceptions out of 8191
- 93i,17n,117p,1411b,1157s stack positions out of 10000i,1000n,20000p,200000b,200000s
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[28]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [29]
+File: figure/wax-distribution-3angles.png Graphic file (type bmp)
+<figure/wax-distribution-3angles.png>
+File: figure/chapter1/Wax-mean-velocity-Vin-dot59mpersec-theta-0.png Graphic file (type bmp)
+<figure/chapter1/Wax-mean-velocity-Vin-dot59mpersec-theta-0.png>
+File: figure/chapter1/Wax-mean-velocity-Vin-dot59mpersec-theta-90.png Graphic file (type bmp)
+<figure/chapter1/Wax-mean-velocity-Vin-dot59mpersec-theta-90.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [30]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [31])
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [32]
+第二章
+(./chapters/chapter2/part1-horizontal-sand.tex
 
-Output written on main.pdf (33 pages).
+Package natbib Warning: Citation `ref1' on page 33 undefined on input line 5.
+
+
+Package natbib Warning: Citation `ref2' on page 33 undefined on input line 5.
+
+
+Package natbib Warning: Citation `ref3' on page 33 undefined on input line 5.
+
+
+Package natbib Warning: Citation `ref4' on page 33 undefined on input line 5.
+
+
+Package natbib Warning: Citation `ref5' on page 33 undefined on input line 5.
+
+
+Package natbib Warning: Citation `ref6' on page 33 undefined on input line 5.
+
+
+Package natbib Warning: Citation `ref7' on page 33 undefined on input line 5.
+
+
+Package natbib Warning: Citation `ref8' on page 33 undefined on input line 5.
+
+
+Package natbib Warning: Citation `ref9' on page 33 undefined on input line 5.
+
+
+Package natbib Warning: Citation `ref10' on page 33 undefined on input line 5.
+
+
+Package natbib Warning: Citation `ref2' on page 33 undefined on input line 5.
+
+
+Package natbib Warning: Citation `ref11' on page 33 undefined on input line 5.
+
+
+Package natbib Warning: Citation `ref12' on page 33 undefined on input line 5.
+
+
+Package natbib Warning: Citation `ref13' on page 33 undefined on input line 5.
+
+
+Package natbib Warning: Citation `ref14' on page 33 undefined on input line 5.
+
+
+Package natbib Warning: Citation `ref15' on page 33 undefined on input line 7.
+
+
+Package natbib Warning: Citation `ref16' on page 33 undefined on input line 7.
+
+
+Package natbib Warning: Citation `ref17' on page 33 undefined on input line 7.
+
+
+Package natbib Warning: Citation `ref18' on page 33 undefined on input line 7.
+
+
+Package natbib Warning: Citation `ref19' on page 33 undefined on input line 7.
+
+
+Package natbib Warning: Citation `ref20' on page 33 undefined on input line 7.
+
+
+Package natbib Warning: Citation `ref21' on page 33 undefined on input line 7.
+
+
+Package natbib Warning: Citation `ref22' on page 33 undefined on input line 7.
+
+
+Package natbib Warning: Citation `ref23' on page 33 undefined on input line 7.
+
+
+Package natbib Warning: Citation `ref24' on page 33 undefined on input line 7.
+
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[33
+
+]
+
+LaTeX Warning: Reference `fig:horizontal_washing_experiment_setup' on page 34 undefined on input line 15.
+
+File: figure/chapter2/horizontal-washing-experiment-setup.png Graphic file (type bmp)
+<figure/chapter2/horizontal-washing-experiment-setup.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[34]
+
+LaTeX Warning: Reference `tab:sand_params' on page 35 undefined on input line 28.
+
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[35]
+
+LaTeX Warning: Reference `fig:incoming_Re_variation' on page 36 undefined on input line 58.
+
+File: figure/chapter2/IncomingReVStstar.png Graphic file (type bmp)
+<figure/chapter2/IncomingReVStstar.png>
+
+LaTeX Warning: Reference `fig:stagnation_inflection_point' on page 36 undefined on input line 66.
+
+File: figure/chapter2/stagenation-with-inflection-point.png Graphic file (type bmp)
+<figure/chapter2/stagenation-with-inflection-point.png>
+
+LaTeX Warning: Reference `fig:bed_front_profile_Rein' on page 36 undefined on input line 75.
+
+File: figure/chapter2/bed-front-profile-VS-Rein.png Graphic file (type bmp)
+<figure/chapter2/bed-front-profile-VS-Rein.png>
+
+LaTeX Warning: Reference `fig:bed_front_profile_Rein' on page 36 undefined on input line 84.
+
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[36]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [37]
+
+LaTeX Warning: Reference `fig:bed_front_profile_Rein' on page 38 undefined on input line 86.
+
+
+LaTeX Warning: Reference `fig:bed_front_profile_Rein' on page 38 undefined on input line 88.
+
+
+LaTeX Warning: Reference `fig:bed_front_profile_Rein' on page 38 undefined on input line 88.
+
+
+LaTeX Warning: Reference `fig:bed_oscillation' on page 38 undefined on input line 91.
+
+File: figure/chapter2/bed-oscillation.png Graphic file (type bmp)
+<figure/chapter2/bed-oscillation.png>
+
+LaTeX Warning: Reference `fig:M_shaped_bed_height' on page 38 undefined on input line 99.
+
+File: figure/chapter2/M-shaped-bed-height.png Graphic file (type bmp)
+<figure/chapter2/M-shaped-bed-height.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[38]
+
+LaTeX Warning: Reference `fig:eta_gamma' on page 39 undefined on input line 109.
+
+
+Package natbib Warning: Citation `ref25' on page 39 undefined on input line 109.
+
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[39]
+File: figure/chapter2/eta-gamma.png Graphic file (type bmp)
+<figure/chapter2/eta-gamma.png>
+
+
+LaTeX Warning: Reference `eq:Re_MR' on page 40 undefined on input line 129.
+
+
+LaTeX Warning: Reference `fig:bed_profile_guar_gel' on page 40 undefined on input line 131.
+
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[40]
+File: figure/chapter2/bed-profile-guar-gel.png Graphic file (type bmp)
+<figure/chapter2/bed-profile-guar-gel.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [41]
+
+LaTeX Warning: Reference `fig:p_star_VS_t_star' on page 42 undefined on input line 156.
+
+
+LaTeX Warning: Reference `fig:p_star_VS_t_star' on page 42 undefined on input line 156.
+
+
+LaTeX Warning: Reference `fig:Vs_star_VS_Rein' on page 42 undefined on input line 156.
+
+File: figure/chapter2/p-star-VS-t-star.png Graphic file (type bmp)
+<figure/chapter2/p-star-VS-t-star.png>
+File: figure/chapter2/Vs-star-VS-Rein.png Graphic file (type bmp)
+<figure/chapter2/Vs-star-VS-Rein.png>
+
+LaTeX Warning: Reference `fig:H_star_VS_Rein' on page 42 undefined on input line 181.
+
+
+LaTeX Warning: Reference `fig:Rel_VS_Rein' on page 42 undefined on input line 181.
+
+
+LaTeX Warning: Reference `eq:Re_def' on page 42 undefined on input line 181.
+
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[42]
+File: figure/chapter2/H-star-VS-Rein.png Graphic file (type bmp)
+<figure/chapter2/H-star-VS-Rein.png>
+File: figure/chapter2/Rel-VS-Rein.png Graphic file (type bmp)
+<figure/chapter2/Rel-VS-Rein.png>
+
+
+LaTeX Warning: Reference `fig:Rel_VS_Rein' on page 43 undefined on input line 201.
+
+
+LaTeX Warning: Reference `eq:Rel_vs_Rein' on page 43 undefined on input line 206.
+
+
+LaTeX Warning: Reference `tab:sand_params' on page 43 undefined on input line 206.
+
+
+LaTeX Warning: Reference `eq:Rel_vs_Rein' on page 43 undefined on input line 208.
+
+
+LaTeX Warning: Reference `fig:H_star_VS_Rein' on page 43 undefined on input line 208.
+
+
+LaTeX Warning: Reference `fig:Vs_star_VS_Rein' on page 43 undefined on input line 210.
+
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[43]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [44]
+
+LaTeX Warning: Reference `fig:H_star_VS_Rein' on page 45 undefined on input line 212.
+
+
+LaTeX Warning: Reference `fig:phis_VS_Rein' on page 45 undefined on input line 214.
+
+
+LaTeX Warning: Reference `fig:H_star_VS_Rein' on page 45 undefined on input line 214.
+
+File: figure/chapter2/phis-VS-Rein.png Graphic file (type bmp)
+<figure/chapter2/phis-VS-Rein.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[45]
+
+Package natbib Warning: Citation `ref21' on page 46 undefined on input line 226.
+
+
+Package natbib Warning: Citation `ref22' on page 46 undefined on input line 226.
+
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[46]) (./chapters/chapter2/part2-full-well-model.tex
+
+LaTeX Warning: Reference `fig:iron_washing_test_rig' on page 47 undefined on input line 8.
+
+File: figure/chapter2/iron-washing-test-rig.png Graphic file (type bmp)
+<figure/chapter2/iron-washing-test-rig.png>
+
+LaTeX Warning: Reference `fig:iron_bed_horizontal' on page 47 undefined on input line 22.
+
+File: figure/chapter2/iron-bed-7dot85mperh.png Graphic file (type bmp)
+<figure/chapter2/iron-bed-7dot85mperh.png>
+File: figure/chapter2/iron-bed-10dot00mperh.png Graphic file (type bmp)
+<figure/chapter2/iron-bed-10dot00mperh.png>
+File: figure/chapter2/iron-bed-11dot70mperh.png Graphic file (type bmp)
+<figure/chapter2/iron-bed-11dot70mperh.png>
+
+Overfull \hbox (4.50652pt too wide) in paragraph at lines 31--41
+ [][][][][][] 
+ []
+
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[47]
+
+LaTeX Warning: Reference `fig:iron_bed_bend' on page 48 undefined on input line 45.
+
+
+LaTeX Warning: Reference `fig:iron_bed_vertical' on page 48 undefined on input line 45.
+
+File: figure/chapter2/iron-bed-15dot70mperh.png Graphic file (type bmp)
+<figure/chapter2/iron-bed-15dot70mperh.png>
+File: figure/chapter2/iron-bed-15dot83mperh.png Graphic file (type bmp)
+<figure/chapter2/iron-bed-15dot83mperh.png>
+File: figure/chapter2/iron-bed-17dot44mperh.png Graphic file (type bmp)
+<figure/chapter2/iron-bed-17dot44mperh.png>
+
+Overfull \hbox (4.50652pt too wide) in paragraph at lines 53--63
+ [][][][][][] 
+ []
+
+File: figure/chapter2/video-clip-theta-le-72-degree.png Graphic file (type bmp)
+<figure/chapter2/video-clip-theta-le-72-degree.png>
+File: figure/chapter2/extraction-of-pack-area-theta-le-72-degree.png Graphic file (type bmp)
+<figure/chapter2/extraction-of-pack-area-theta-le-72-degree.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[48]
+
+LaTeX Warning: Reference `fig:bed_position_VS_flow_rate_inclined_section' on page 49 undefined on input line 100.
+
+File: figure/chapter2/bed-position-VS-flow-rate-inclined-section.png Graphic file (type bmp)
+<figure/chapter2/bed-position-VS-flow-rate-inclined-section.png>
+
+LaTeX Warning: Reference `tab:model_comparison' on page 49 undefined on input line 117.
+
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[49]
+Overfull \hbox (22.62262pt too wide) in paragraph at lines 124--134
+ [][] 
+ []
+
+File: figure/research4-6/cosl-header.png Graphic file 

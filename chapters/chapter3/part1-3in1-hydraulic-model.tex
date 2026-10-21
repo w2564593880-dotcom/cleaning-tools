@@ -42,17 +42,17 @@
 \begin{equation}
 	k=\eta\cdot\frac{G\cdot b\cdot h^3}{n\cdot D^3}
 \end{equation}
-式中，$G$为弹簧材料的弹性模量，$\mathrm{Pa}$；
+式中，$G$--弹簧材料的弹性模量，$\mathrm{Pa}$；
 
-$b$为弹簧截面的径向宽度；
+$b$--弹簧截面的径向宽度；
 
-$h$为截面轴向高度；
+$h$--截面轴向高度；
 
-$D$为弹簧的中径；
+$D$--弹簧的中径；
 
-$n$为有效圈数；
+$n$--有效圈数；
 
-$\eta$为形状修正系数，取决于长宽比$b/h$。
+$\eta$--形状修正系数，取决于长宽比$b/h$。
 
 在脉冲发生模块工作过程中，弹簧力$F_s$随活塞位移$x(t)$呈线性变化关系：
 \begin{equation}
@@ -61,13 +61,13 @@ $\eta$为形状修正系数，取决于长宽比$b/h$。
 
 活塞在往复运动中受到密封件的干摩擦力$F_f$以及流体层间剪切产生的粘性阻尼力。为简化计算，通常采用等效粘性阻尼模型：
 \begin{equation}
-	F_d(t)=C\frac{dx(t)}{dt}
+	F_d(t)=C\frac{\mathrm{d}x(t)}{\mathrm{d}t}
 \end{equation}
 式中，$C$为摩擦等效阻尼系数。
 
 由于活塞在液体中高频振荡，会带动周围部分流体共同运动，从而产生惯性力$F_a$：
 \begin{equation}
-	F_a(t)=m\frac{d^2x(t)}{dt^2}
+	F_a(t)=m\frac{\mathrm{d}^2x(t)}{\mathrm{d}t^2}
 \end{equation}
 式中，$m$为活塞及所有随动运动件的等效总质量，kg。
 
@@ -98,17 +98,17 @@ $\eta$为形状修正系数，取决于长宽比$b/h$。
 根据流体连续性方程：
 
 \begin{equation}
-	Q = A_1\frac{dx}{dt}+Q_n
+	Q = A_1\frac{\mathrm{d}x}{\mathrm{d}t}+Q_n
 \end{equation}
-式中，$A_1\frac{\mathrm{d}x}{\mathrm{d}t}$为用于推动活塞向上运动的体积变化率；$Q_n$为节流排量，$\mathrm{m^3/h}$。
+式中，$A_1{\mathrm{d}x}/{\mathrm{d}t}$为用于推动活塞向上运动的体积变化率；$Q_\mathrm{n}$为节流排量，$\mathrm{m^3/h}$。
 
 根据流体力学中的薄壁小孔流出模型，流经节流喷嘴的流量$Q_n$与缸内外压差$P(t)-P_{\mathrm{out}}$的关系为
 \begin{equation}
-	Q_n=C_dA_n\sqrt{\frac{2\left[P(t)-P_{\mathrm{out}}\right]}{\rho_w}}
+	Q_\mathrm{n}=C_\mathrm{d}A_\mathrm{n}\sqrt{\frac{2\left[P(t)-P_{\mathrm{out}}\right]}{\rho_w}}
 \end{equation}
-式中，$C_d$为喷嘴的流量系数；$A_n$为节流喷嘴的截面积，$\mathrm{m^2}$；$\rho_w$为流体密度，$\mathrm{kg/m^3}$。
+式中，$C_\mathrm{d}$为喷嘴的流量系数；$A_\mathrm{n}$为节流喷嘴的截面积，$\mathrm{m^2}$；$\rho_\mathrm{w}$为流体密度，$\mathrm{kg/m^3}$。
 
-由于$Q \gg A_1\frac{\mathrm{d}x}{\mathrm{d}t}$，活塞运动对系统总流量的扰动微乎其微。将$Q_n$代入，则
+由于$Q \gg A_1{\mathrm{d}x}/{\mathrm{d}t}$，活塞运动对系统总流量的扰动微乎其微。将$Q_\mathrm{n}$代入，则
 \begin{equation}
 	P(t)-P_{\mathrm{out}}=\Delta P_{\mathrm{close}}
 \end{equation}
@@ -120,7 +120,7 @@ $\eta$为形状修正系数，取决于长宽比$b/h$。
 \end{equation}
 取活塞初始静止位置为原点，其向下运动方向为正。活塞蓄能阶段的运动微分方程为：
 \begin{equation}
-	\frac{d^2x}{dt^2}+C_1\left(\frac{dx}{dt}\right)^2+\left(C_2 x+C_3\right)\frac{dx}{dt}+C_4 x+ C_5 =0
+	\frac{\mathrm{d}^2x}{\mathrm{d}t^2}+C_1\left(\frac{\mathrm{d}x}{\mathrm{d}t}\right)^2+\left(C_2 x+C_3\right)\frac{\mathrm{d}x}{\mathrm{d}t}+C_4 x+ C_5 =0
 \end{equation}
 
 式中， $C_1$为非线性阻力系数，物体在流体中高速运动时，会产生与速度平方成正比的阻力：
@@ -145,7 +145,7 @@ $C_4$为弹簧刚度与静水压恢复项：
  
  活塞开启阶段的运动微分方程为：
  \begin{equation}
-\frac{d^2 x}{dt^2}+C_1\left(\frac{dx}{dt}\right)^2 +(C_2 x+C_3)\frac{dx}{dt}+C_4 x +C_6=0
+\frac{\mathrm{d}^2 x}{\mathrm{d}t^2}+C_1\left(\frac{\mathrm{d}x}{\mathrm{d}t}\right)^2 +(C_2 x+C_3)\frac{\mathrm{d}x}{\mathrm{d}t}+C_4 x +C_6=0
 \end{equation}
 
  式中：

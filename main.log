@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.7.19)  19 OCT 2026 09:12
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.7.19)  20 OCT 2026 17:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1157,8 +1157,7 @@ Package fontspec Info:
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
 (Font)              scaled to size 12.045pt on input line 215.
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 215.
-
-No file main.aux.
+ (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 215.
@@ -1238,6 +1237,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 215.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 215.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -1273,16 +1273,14 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring ON on input line 215.
+(./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: longtable package is loaded.
-(/usr/local/texlive/2025/texmf-dist/tex/latex/caption/ltcaption.sty
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
@@ -1356,19 +1354,33 @@ LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
 (Font)              scaled to size 12.045pt on input line 242.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
 (Font)              scaled to size 15.0pt on input line 242.
+ (./main.toc
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
+(Font)              scaled to size 8.0pt on input line 4.
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
+(Font)              scaled to size 6.0pt on input line 4.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 35.
+ [1
 
-No file main.toc.
+
+])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 245.
-[1
-
-
-]
+ [2]
 第一章
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
@@ -1392,616 +1404,20 @@ LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
 (Font)              scaled to size 9.79996pt on input line 266.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
 (Font)              scaled to size 7.0pt on input line 266.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 266.
-(/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 266.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
 (Font)              scaled to size 9.03374pt on input line 266.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 266.
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
 (Font)              scaled to size 5.0pt on input line 266.
- (./chapters/chapter3/part2-4in1-simulation.tex
+(./chapters/chapter3/part5-variable-tool.tex
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
 (Font)              scaled to size 12.0pt on input line 2.
-
-
-LaTeX Warning: Reference `fig:scraper_fem_model' on page 3 undefined on input line 12.
-
-File: figure/chapter3/4in1-sim/scraper-fem-model.png Graphic file (type bmp)
-<figure/chapter3/4in1-sim/scraper-fem-model.png>
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 17.
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
-[3
+ [3
 
 ]
-
-LaTeX Warning: Reference `fig:scraper_boundary' on page 4 undefined on input line 27.
-
-File: figure/chapter3/4in1-sim/scraper-boundary-conditions.png Graphic file (type bmp)
-<figure/chapter3/4in1-sim/scraper-boundary-conditions.png>
-
-LaTeX Warning: Reference `tab:mesh_independence' on page 4 undefined on input line 40.
-
-
-LaTeX Warning: Reference `fig:mesh_independence' on page 4 undefined on input line 40.
-
-
-LaTeX Warning: Reference `fig:scraper_mesh' on page 4 undefined on input line 40.
-
-File: figure/chapter3/4in1-sim/mesh-independence.png Graphic file (type bmp)
-<figure/chapter3/4in1-sim/mesh-independence.png>
-File: figure/chapter3/4in1-sim/scraper-mesh.png Graphic file (type bmp)
-<figure/chapter3/4in1-sim/scraper-mesh.png>
-
-LaTeX Warning: Reference `tab:driving_force' on page 4 undefined on input line 78.
-
-
-LaTeX Warning: Reference `fig:scraping_effect' on page 4 undefined on input line 80.
-
-
-LaTeX Warning: Reference `fig:cutting_force' on page 4 undefined on input line 80.
-
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
-[4]
-
-LaTeX Warning: Reference `fig:scraping_effect' on page 5 undefined on input line 82.
-
-
-LaTeX Warning: Reference `fig:cutting_force' on page 5 undefined on input line 82.
-
-
-LaTeX Warning: Reference `fig:scraping_effect' on page 5 undefined on input line 84.
-
-
-LaTeX Warning: Reference `fig:cutting_force' on page 5 undefined on input line 84.
-
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
-[5]
-
-LaTeX Warning: Reference `fig:scraping_effect' on page 6 undefined on input line 86.
-
-
-LaTeX Warning: Reference `fig:cutting_force' on page 6 undefined on input line 86.
-
-File: figure/chapter3/4in1-sim/scraping-effect-150n.png Graphic file (type bmp)
-<figure/chapter3/4in1-sim/scraping-effect-150n.png>
-File: figure/chapter3/4in1-sim/scraping-effect-180n.png Graphic file (type bmp)
-<figure/chapter3/4in1-sim/scraping-effect-180n.png>
-File: figure/chapter3/4in1-sim/scraping-effect-250n.png Graphic file (type bmp)
-<figure/chapter3/4in1-sim/scraping-effect-250n.png>
-File: figure/chapter3/4in1-sim/scraping-effect-300n.png Graphic file (type bmp)
-<figure/chapter3/4in1-sim/scraping-effect-300n.png>
-
-Overfull \hbox (3.01125pt too wide) in paragraph at lines 109--122
- [][] 
- []
-
-
-Overfull \hbox (3.01125pt too wide) in paragraph at lines 109--122
- [][] 
- []
-
-
-Overfull \hbox (3.01125pt too wide) in paragraph at lines 109--122
- [][] 
- []
-
-
-Overfull \hbox (3.01125pt too wide) in paragraph at lines 109--122
- [][] 
- []
-
-File: figure/chapter3/4in1-sim/cutting-force-150n.png Graphic file (type bmp)
-<figure/chapter3/4in1-sim/cutting-force-150n.png>
-File: figure/chapter3/4in1-sim/cutting-force-180n.png Graphic file (type bmp)
-<figure/chapter3/4in1-sim/cutting-force-180n.png>
-File: figure/chapter3/4in1-sim/cutting-force-250n.png Graphic file (type bmp)
-<figure/chapter3/4in1-sim/cutting-force-250n.png>
-File: figure/chapter3/4in1-sim/cutting-force-300n.png Graphic file (type bmp)
-<figure/chapter3/4in1-sim/cutting-force-300n.png>
-
-LaTeX Warning: Reference `fig:brush_structure' on page 6 undefined on input line 162.
-
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
-[6]
-File: figure/chapter3/4in1-sim/brush-structure.png Graphic file (type bmp)
-<figure/chapter3/4in1-sim/brush-structure.png>
-
-
-LaTeX Warning: Reference `fig:brush_model' on page 7 undefined on input line 171.
-
-File: figure/chapter3/4in1-sim/brush-wire-model.png Graphic file (type bmp)
-<figure/chapter3/4in1-sim/brush-wire-model.png>
-
-LaTeX Warning: Reference `fig:brush_contact_stress' on page 7 undefined on input line 180.
-
-
-LaTeX Warning: Reference `tab:brush_contact_stress' on page 7 undefined on input line 180.
-
-File: figure/chapter3/4in1-sim/brush-contact-stress-1.png Graphic file (type bmp)
-<figure/chapter3/4in1-sim/brush-contact-stress-1.png>
-File: figure/chapter3/4in1-sim/brush-contact-stress-2.png Graphic file (type bmp)
-<figure/chapter3/4in1-sim/brush-contact-stress-2.png>
-File: figure/chapter3/4in1-sim/brush-contact-stress-3.png Graphic file (type bmp)
-<figure/chapter3/4in1-sim/brush-contact-stress-3.png>
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
-[7]
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [8]
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [9]) (./chapters/chapter3/part3-magntictool.tex
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 10.53937pt on input line 15.
-
-Overfull \hbox (3.61288pt too wide) in paragraph at lines 43--43
-[]|[]| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 43--43
-[]|\TU/TeXGyreTermesX(0)/m/n/10.53937 9.5-
- []
-
-
-LaTeX Warning: Reference `fig:structure_dqc_mag_tool' on page 10 undefined on input line 50.
-
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
-[10]
-File: figure/chapter3/structure-dqc-mag-tool.png Graphic file (type bmp)
-<figure/chapter3/structure-dqc-mag-tool.png>
-File: figure/chapter3/structure-upper-magnetic-sub.png Graphic file (type bmp)
-<figure/chapter3/structure-upper-magnetic-sub.png>
-File: figure/chapter3/structure-lowwer-magnetic-sub.png Graphic file (type bmp)
-<figure/chapter3/structure-lowwer-magnetic-sub.png>
-
-
-LaTeX Warning: Reference `fig:structure_magnetic_tool' on page 11 undefined on input line 75.
-
-
-LaTeX Warning: Reference `fig:structure_magnetic_tool' on page 11 undefined on input line 77.
-
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
-[11]
-
-LaTeX Warning: Reference `sec:mag_tool_check' on page 12 undefined on input line 81.
-
-
-LaTeX Warning: Reference `sec:mag_tool_check' on page 12 undefined on input line 83.
-
-
-LaTeX Warning: Reference `tab:mag_tool_structure_params' on page 12 undefined on input line 87.
-
-
-LaTeX Warning: Reference `tab:mag_tool_compare' on page 12 undefined on input line 119.
-
-File: figure/chapter3/magnogard-magnet-tool.png Graphic file (type bmp)
-<figure/chapter3/magnogard-magnet-tool.png>
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
-[12]
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [13]
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [14]
-
-Package natbib Warning: Citation `ref26' on page 15 undefined on input line 188.
-
-
-Package natbib Warning: Citation `ref26' on page 15 undefined on input line 194.
-
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
-[15]
-
-Package natbib Warning: Citation `ref26' on page 16 undefined on input line 228.
-
-
-Overfull \hbox (25.90364pt too wide) in paragraph at lines 250--251
-[]$\OML/cmm/m/it/12.045 d$\TU/TeXGyreTermesX(0)/m/n/12.045 —\TU/STSong(0)/m/n/12.045 危 险 截 面 内 径，|  取 与 内 螺 纹 配 合 的 外 螺 纹 小 径 $\OML/cmm/m/it/12.045 d \OT1/cmr/m/n/12.045 = 70\OML/cmm/m/it/12.045 :\OT1/cmr/m/n/12.045 30 []$ |\TU/STSong(0)/m/n/12.045 （参 见 图 纸 \TU/TeXGyreTermesX(0)/m/n/12.045 DQC700003A\TU/STSong(0)/m/n/12.045 ，|
- []
-
-
-Package natbib Warning: Citation `ref26' on page 16 undefined on input line 254.
-
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
-[16]
-
-Package natbib Warning: Citation `ref26' on page 17 undefined on input line 286.
-
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
-[17]
-
-Package natbib Warning: Citation `ref26' on page 18 undefined on input line 316.
-
-
-LaTeX Warning: Reference `fig:torsion_stress_lowwer_sub_mag_tool' on page 18 undefined on input line 331.
-
-
-LaTeX Warning: Reference `sec:mag_tool_check' on page 18 undefined on input line 331.
-
-File: figure/chapter3/lowwer-sub-mag-tool.png Graphic file (type bmp)
-<figure/chapter3/lowwer-sub-mag-tool.png>
-File: figure/chapter3/torsion-stress-lowwer-sub-mag-tool.png Graphic file (type bmp)
-<figure/chapter3/torsion-stress-lowwer-sub-mag-tool.png>
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
-[18]
-
-LaTeX Warning: Reference `fig:magnetic_adsorption_capacity' on page 19 undefined on input line 391.
-
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
-[19]
-File: figure/chapter3/magnetic-adsorption-capacity.jpg Graphic file (type bmp)
-<figure/chapter3/magnetic-adsorption-capacity.jpg>
-
-
-./chapters/chapter3/part3-magntictool.tex:434: LaTeX Error: \mathrm allowed only in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.434 ...节脚注所列合同条款 5.2.1.3（2）：抗扭 $\ge 18$\,\mathrm
-                                                  {kN}$\cdot$\mathrm{m}）；
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./chapters/chapter3/part3-magntictool.tex:434: LaTeX Error: \mathrm allowed only in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.434 ...2）：抗扭 $\ge 18$\,\mathrm{kN}$\cdot$\mathrm
-                                                  {m}）；
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
-[20]
-
-Package natbib Warning: Citation `ref26' on page 21 undefined on input line 446.
-
-
-Package natbib Warning: Citation `ref26' on page 21 undefined on input line 450.
-
-
-LaTeX Warning: Reference `tab:mag_tool_force_data' on page 21 undefined on input line 462.
-
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
-[21]
-
-LaTeX Warning: Reference `tab:magnet_params' on page 22 undefined on input line 502.
-
-
-LaTeX Warning: Reference `fig:demagnetization_SmCo5' on page 22 undefined on input line 502.
-
-
-LaTeX Warning: Reference `fig:demagnatization_N45UH' on page 22 undefined on input line 502.
-
-File: figure/chapter3/demagnetization-SmCo5.png Graphic file (type bmp)
-<figure/chapter3/demagnetization-SmCo5.png>
-File: figure/chapter3/demagnatization-N45UH.png Graphic file (type bmp)
-<figure/chapter3/demagnatization-N45UH.png>
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
-[22]
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [23]
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [24]
-
-LaTeX Warning: Reference `tab:smco5_params' on page 25 undefined on input line 578.
-
-
-LaTeX Warning: Reference `tab:304_properties_180c' on page 25 undefined on input line 578.
-
-File: figure/chapter3/magnet-configuration-upper-sub.png Graphic file (type bmp)
-<figure/chapter3/magnet-configuration-upper-sub.png>
-
-LaTeX Warning: Reference `fig:magnet_configuration_upper_sub' on page 25 undefined on input line 640.
-
-
-LaTeX Warning: Reference `fig:two_magnetization_upper_sub' on page 25 undefined on input line 640.
-
-File: figure/chapter3/radial-magnetization-in-upper-sub.png Graphic file (type bmp)
-<figure/chapter3/radial-magnetization-in-upper-sub.png>
-File: figure/chapter3/circumferencial-magnetization-in-upper-sub.png Graphic file (type bmp)
-<figure/chapter3/circumferencial-magnetization-in-upper-sub.png>
-File: figure/chapter3/boundary-condition-upper-sub.png Graphic file (type bmp)
-<figure/chapter3/boundary-condition-upper-sub.png>
-File: figure/chapter3/mesh-upper-sub.png Graphic file (type bmp)
-<figure/chapter3/mesh-upper-sub.png>
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
-[25]
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [26]
-File: figure/chapter3/magnetic-vector-distribution-upper-sub.png Graphic file (type bmp)
-<figure/chapter3/magnetic-vector-distribution-upper-sub.png>
-File: figure/chapter3/contour-magnetic-field-upper-sub.png Graphic file (type bmp)
-<figure/chapter3/contour-magnetic-field-upper-sub.png>
-File: figure/chapter3/magnetic-vector-distribution-upper-sub-circum-magnatization.png Graphic file (type bmp)
-<figure/chapter3/magnetic-vector-distribution-upper-sub-circum-magnatization.png>
-File: figure/chapter3/contour-magnetic-field-upper-sub-circum-magnatization.png Graphic file (type bmp)
-<figure/chapter3/contour-magnetic-field-upper-sub-circum-magnatization.png>
-
-
-LaTeX Warning: Reference `fig:magnet_configuration_lowwer_sub' on page 27 undefined on input line 727.
-
-
-LaTeX Warning: Reference `tab:smco5_params' on page 27 undefined on input line 727.
-
-
-LaTeX Warning: Reference `tab:304_properties_180c' on page 27 undefined on input line 727.
-
-File: figure/chapter3/magnet-configuration-lowwer-sub.png Graphic file (type bmp)
-<figure/chapter3/magnet-configuration-lowwer-sub.png>
-
-LaTeX Warning: Reference `fig:computation_setup_lowwer_sub' on page 27 undefined on input line 736.
-
-
-LaTeX Warning: Reference `fig:field_result_in_lowwer_sub_3_magnetization' on page 27 undefined on input line 736.
-
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
-[27]
-File: figure/chapter3/lowwer-sub-magnetization-radial.png Graphic file (type bmp)
-<figure/chapter3/lowwer-sub-magnetization-radial.png>
-File: figure/chapter3/lowwer-sub-cross-magnetization.png Graphic file (type bmp)
-<figure/chapter3/lowwer-sub-cross-magnetization.png>
-File: figure/chapter3/lowwer-sub-circumferential-magnetization.png Graphic file (type bmp)
-<figure/chapter3/lowwer-sub-circumferential-magnetization.png>
-File: figure/chapter3/boundary-condition-lowwer-sub.png Graphic file (type bmp)
-<figure/chapter3/boundary-condition-lowwer-sub.png>
-File: figure/chapter3/mesh-upper-sub.png Graphic file (type bmp)
-<figure/chapter3/mesh-upper-sub.png>
-File: figure/chapter3/magnetic-vector-distribution-lowwer-sub-radial.png Graphic file (type bmp)
-<figure/chapter3/magnetic-vector-distribution-lowwer-sub-radial.png>
-File: figure/chapter3/contour-magnetic-field-lowwer-sub-radial.png Graphic file (type bmp)
-<figure/chapter3/contour-magnetic-field-lowwer-sub-radial.png>
-File: figure/chapter3/magnetic-vector-distribution-lowwer-sub-cross.png Graphic file (type bmp)
-<figure/chapter3/magnetic-vector-distribution-lowwer-sub-cross.png>
-File: figure/chapter3/contour-magnetic-field-lowwer-sub-cross.png Graphic file (type bmp)
-<figure/chapter3/contour-magnetic-field-lowwer-sub-cross.png>
-File: figure/chapter3/magnetic-vector-distribution-lowwer-sub-circumferential.png Graphic file (type bmp)
-<figure/chapter3/magnetic-vector-distribution-lowwer-sub-circumferential.png>
-File: figure/chapter3/contour-magnetic-field-lowwer-sub-circumferential.png Graphic file (type bmp)
-<figure/chapter3/contour-magnetic-field-lowwer-sub-circumferential.png>
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [28]
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [29]
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [30]
-
-LaTeX Warning: Reference `tab:magnetic_intensity' on page 31 undefined on input line 841.
-
-
-LaTeX Warning: Reference `tab:strong_magnet_data' on page 31 undefined on input line 865.
-
-
-Overfull \hbox (24.65851pt too wide) in paragraph at lines 874--892
- [][] 
- []
-
-
-LaTeX Warning: Reference `tab:aluminum_params' on page 31 undefined on input line 899.
-
-
-LaTeX Warning: Reference `fig:mag_field_frame_material' on page 31 undefined on input line 899.
-
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
-[31]
-File: figure/chapter3/mag-field-distribution-4145-steel-frame.png Graphic file (type bmp)
-<figure/chapter3/mag-field-distribution-4145-steel-frame.png>
-File: figure/chapter3/mag-field-distribution-aliminium-frame.png Graphic file (type bmp)
-<figure/chapter3/mag-field-distribution-aliminium-frame.png>
-
-
-LaTeX Warning: Reference `tab:aluminum_vs_4145_steel' on page 32 undefined on input line 934.
-
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
-[32]
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [33]
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [34]
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [35]) (./chapters/chapter3/part3-magnetictool-magnet-performance.tex
-
-LaTeX Warning: Reference `fig:magnet_test_rig' on page 36 undefined on input line 6.
-
-File: figure/chapter3/magnet-test-rig-labeled.png Graphic file (type bmp)
-<figure/chapter3/magnet-test-rig-labeled.png>
-File: figure/chapter3/magnet-test-rig-photo.png Graphic file (type bmp)
-<figure/chapter3/magnet-test-rig-photo.png>
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
-[36]
-
-LaTeX Warning: Reference `tab:magnet_adsorption_force' on page 37 undefined on input line 29.
-
-
-LaTeX Warning: Reference `tab:magnet_adsorption_force' on page 37 undefined on input line 54.
-
-
-LaTeX Warning: Reference `eq:cv' on page 37 undefined on input line 74.
-
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
-[37]
-
-LaTeX Warning: Reference `eq:btest' on page 38 undefined on input line 83.
-
-)
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [38] (./chapters/chapter3/part4-filter.tex
-
-LaTeX Warning: Reference `fig:filter_tool_structure' on page 39 undefined on input line 10.
-
-File: figure/chapter3/guolvqi.png Graphic file (type bmp)
-<figure/chapter3/guolvqi.png>
-
-LaTeX Warning: Reference `tab:filter_tool_params' on page 39 undefined on input line 21.
-
-
-LaTeX Warning: Reference `tab:filter_tool_compare' on page 39 undefined on input line 62.
-
-
-Overfull \hbox (24.75555pt too wide) in paragraph at lines 62--63
-[]\TU/STSong(0)/m/n/12.045 目 前 国 外 具 有 代 表 性 的 钻 柱 过 滤 工 具 为 \TU/TeXGyreTermesX(0)/m/n/12.045 Schlumberger \TU/STSong(0)/m/n/12.045 ／ \TU/TeXGyreTermesX(0)/m/n/12.045 M-I SWACO \TU/STSong(0)/m/n/12.045 公 司 的 \TU/TeXGyreTermesX(0)/m/n/12.045 MUDGARD
- []
-
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
-[39]
-Underfull \hbox (badness 10000) in paragraph at lines 91--91
-[]|\TU/STSong(0)/m/n/9.03374 内 通 径 按 套 管 规 格 系 列 化 设 计，| \TU/TeXGyreTermesX(0)/m/n/9.03374 7[]\TU/STSong(0)/m/n/9.03374 规 格 为
- []
-
-File: figure/chapter3/mudgard-filter-tool.png Graphic file (type bmp)
-<figure/chapter3/mudgard-filter-tool.png>
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
-[40]
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [41]
-
-Package natbib Warning: Citation `ref26' on page 42 undefined on input line 131.
-
-
-Package natbib Warning: Citation `ref26' on page 42 undefined on input line 141.
-
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
-[42]
-Overfull \hbox (7.92567pt too wide) in paragraph at lines 176--177
-[] \TU/STSong(0)/m/n/12.045 滤 进 接 头 外 螺 纹 根 部：|  按 图 纸 \TU/TeXGyreTermesX(0)/m/n/12.045 GLGJ70002A \TU/STSong(0)/m/n/12.045 标 注 的 外 螺 纹 小 径  |（$\OML/cmm/m/it/12.045 ^^^\OT1/cmr/m/n/12.045 89\OML/cmm/m/it/12.045 :\OT1/cmr/m/n/12.045 100 \OMS/cmsy/m/n/12.045 ^^X \OML/cmm/m/it/12.045 ^^^\OT1/cmr/m/n/12.045 89\OML/cmm/m/it/12.045 :\OT1/cmr/m/n/12.045 660$\TU/STSong(0)/m/n/12.045 ）|
- []
-
-
-Package natbib Warning: Citation `ref26' on page 43 undefined on input line 186.
-
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
-[43]
-Overfull \hbox (30.37057pt too wide) in paragraph at lines 269--270
-[]$\OML/cmm/m/it/12.045 D$\TU/TeXGyreTermesX(0)/m/n/12.045 —\TU/STSong(0)/m/n/12.045 危 险 截 面 外 径，| \TU/TeXGyreTermesX(0)/m/n/12.045 mm |\TU/STSong(0)/m/n/12.045 （与 抗 拉 校 核 各 受 力 件 取 值 相 同：|  图 号 \TU/TeXGyreTermesX(0)/m/n/12.045 GLGJ70001A\TU/STSong(0)/m/n/12.045 、| \TU/TeXGyreTermesX(0)/m/n/12.045 GLGJ70002A\TU/STSong(0)/m/n/12.045 、|
- []
-
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
-[44]
-Overfull \hbox (26.37903pt too wide) in paragraph at lines 271--272
-[]$\OML/cmm/m/it/12.045 d$\TU/TeXGyreTermesX(0)/m/n/12.045 —\TU/STSong(0)/m/n/12.045 危 险 截 面 内 径，| \TU/TeXGyreTermesX(0)/m/n/12.045 mm |\TU/STSong(0)/m/n/12.045 （与 抗 拉 校 核 各 受 力 件 取 值 相 同：|  图 号 \TU/TeXGyreTermesX(0)/m/n/12.045 GLGJ70001A\TU/STSong(0)/m/n/12.045 、| \TU/TeXGyreTermesX(0)/m/n/12.045 GLGJ70002A\TU/STSong(0)/m/n/12.045 、|
- []
-
-
-Package natbib Warning: Citation `ref26' on page 45 undefined on input line 273.
-
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
-[45]
-
-LaTeX Warning: Reference `fig:weak_part_filter' on page 46 undefined on input line 352.
-
-
-LaTeX Warning: Reference `fig:weak_part_filter_fea' on page 46 undefined on input line 352.
-
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
-[46]
-Overfull \hbox (6.05904pt too wide) in paragraph at lines 354--355
-[]|\TU/STSong(0)/m/n/12.045 （\TU/TeXGyreTermesX(0)/m/n/12.045 1\TU/STSong(0)/m/n/12.045 ）|  滤 进 接 头 受 拉。|  施 加 的 拉 力 小 于 该 接 头 按 理 论 校 核 所 得 的 最 小 许 用 拉 力 \TU/TeXGyreTermesX(0)/m/n/12.045 2184.4kN
- []
-
-
-Overfull \hbox (12.08153pt too wide) in paragraph at lines 358--359
-[]|\TU/STSong(0)/m/n/12.045 （\TU/TeXGyreTermesX(0)/m/n/12.045 3\TU/STSong(0)/m/n/12.045 ）|  滤 出 接 头 受 拉。|  施 加 的 拉 力 小 于 该 接 头 按 理 论 校 核 所 得 的 最 小 许 用 拉 力 \TU/TeXGyreTermesX(0)/m/n/12.045 1974.94kN
- []
-
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
-[47]
-File: figure/chapter3/filter-outlet-sub.png Graphic file (type bmp)
-<figure/chapter3/filter-outlet-sub.png>
-File: figure/chapter3/filter-inlet-sub.png Graphic file (type bmp)
-<figure/chapter3/filter-inlet-sub.png>
-File: figure/simulation/lvchulashen.png Graphic file (type bmp)
-<figure/simulation/lvchulashen.png>
-File: figure/simulation/lvchuniuju.png Graphic file (type bmp)
-<figure/simulation/lvchuniuju.png>
-File: figure/simulation/lvjinlashen.png Graphic file (type bmp)
-<figure/simulation/lvjinlashen.png>
-File: figure/simulation/lvjinniuju.png Graphic file (type bmp)
-<figure/simulation/lvjinniuju.png>
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [48]
-Overfull \hbox (15.11421pt too wide) in paragraph at lines 420--421
-[]$\OML/cmm/m/it/12.045 L$\TU/TeXGyreTermesX(0)/m/n/12.045 —\TU/STSong(0)/m/n/12.045 过 滤 腔 长 度，| \TU/TeXGyreTermesX(0)/m/n/12.045 mm |\TU/STSong(0)/m/n/12.045 （取 \TU/TeXGyreTermesX(0)/m/n/12.045 4864.56mm\TU/STSong(0)/m/n/12.045 ，|  图 号 \TU/TeXGyreTermesX(0)/m/n/12.045 GLGJ70012A |\TU/STSong(0)/m/n/12.045 《加 长 过 滤 套 筒》 、| \TU/TeXGyreTermesX(0)/m/n/12.045 GLGJ70021A
- []
-
-
-LaTeX Warning: Reference `tab:force_data_filter' on page 49 undefined on input line 441.
-
-
-LaTeX Warning: Reference `tab:force_data_filter' on page 49 undefined on input line 470.
-
-)
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [49] (./chapters/chapter3/part5-variable-tool.tex
-
-LaTeX Warning: Reference `fig:variable_scrapter_structure' on page 50 undefined on input line 4.
-
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
-[50]
-
-LaTeX Warning: Reference `tab:ggq95_states' on page 51 undefined on input line 6.
-
-
-LaTeX Warning: Reference `tab:ggq95' on page 51 undefined on input line 6.
-
+(Font)              scaled to size 12.0pt on input line 10.
 
 Underfull \hbox (badness 10000) in paragraph at lines 19--19
 []|\TU/STSong(0)/m/n/9.03374 收 回 待 命  |（投 球
@@ -2019,33 +1435,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--22
 
 File: figure/chapter3/part5/variable-scrapter-structure.png Graphic file (type bmp)
 <figure/chapter3/part5/variable-scrapter-structure.png>
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
+(Font)              scaled to size 10.53937pt on input line 39.
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
-[51]
-
-Package natbib Warning: Citation `ref26' on page 52 undefined on input line 71.
-
-
-Package natbib Warning: Citation `ref26' on page 52 undefined on input line 81.
-
+[4]
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
-[52]
-
-LaTeX Warning: Reference `tab:parts_list' on page 53 undefined on input line 109.
-
-
-Package natbib Warning: Citation `ref26' on page 53 undefined on input line 111.
-
+ [5]
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
-[53]
-
-LaTeX Warning: Reference `tab:parts_list' on page 54 undefined on input line 159.
-
+ [6]
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
-[54]
+ [7]
 Overfull \hbox (17.57654pt too wide) in paragraph at lines 161--162
 []$\OML/cmm/m/it/12.045 D$\TU/TeXGyreTermesX(0)/m/n/12.045 —\TU/STSong(0)/m/n/12.045 危 险 截 面 外 径，| \TU/TeXGyreTermesX(0)/m/n/12.045 mm |\TU/STSong(0)/m/n/12.045 （取 值 与 抗 拉 校 核 相 同：|  刮 刀 芯 轴 $\OML/cmm/m/it/12.045 D \OT1/cmr/m/n/12.045 = 62$\TU/TeXGyreTermesX(0)/m/n/12.045 mm\TU/STSong(0)/m/n/12.045 ，|  图 号 \TU/TeXGyreTermesX(0)/m/n/12.045 BJG700004A
  []
@@ -2061,33 +1464,27 @@ Overfull \hbox (18.7665pt too wide) in paragraph at lines 163--164
  []
 
 
-Package natbib Warning: Citation `ref26' on page 55 undefined on input line 165.
-
-
 Overfull \hbox (16.62329pt too wide) in paragraph at lines 192--193
 []\TU/STSong(0)/m/n/12.045 刮 壁 器 的 球 座 圆 周 设 计 \TU/TeXGyreTermesX(0)/m/n/12.045 4 \TU/STSong(0)/m/n/12.045 组 剪 钉 参 与 剪 切  |（图 纸 \TU/TeXGyreTermesX(0)/m/n/12.045 BJG700015A \TU/STSong(0)/m/n/12.045 球 座 标 注 $\OT1/cmr/m/n/12.045 4 \OMS/cmsy/m/n/12.045 ^^B \OT1/cmr/m/n/12.045 4\OML/cmm/m/it/12.045 :\OT1/cmr/m/n/12.045 80 []/0$
  []
 
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
-[55]
+[8]
 Overfull \hbox (5.15842pt too wide) in paragraph at lines 207--208
 []$\OML/cmm/m/it/12.045 R$\TU/TeXGyreTermesX(0)/m/n/12.045 —\TU/STSong(0)/m/n/12.045 单 个 剪 钉 的 半 径，| \TU/TeXGyreTermesX(0)/m/n/12.045 mm |\TU/STSong(0)/m/n/12.045 （图 号 \TU/TeXGyreTermesX(0)/m/n/12.045 BJG700015A |\TU/STSong(0)/m/n/12.045 《球 座》|  端 面 剪 钉 孔 径 标 注 $\OT1/cmr/m/n/12.045 4\OML/cmm/m/it/12.045 :\OT1/cmr/m/n/12.045 80 []/0$\TU/STSong(0)/m/n/12.045 ，|
  []
 
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
-[56]
+[9]
 Overfull \hbox (18.25308pt too wide) in paragraph at lines 266--267
 []$\OML/cmm/m/it/12.045 d$\TU/TeXGyreTermesX(0)/m/n/12.045 —\TU/STSong(0)/m/n/12.045 连 杆 销 的 最 小 直 径，| \TU/TeXGyreTermesX(0)/m/n/12.045 mm |\TU/STSong(0)/m/n/12.045 （取 \TU/TeXGyreTermesX(0)/m/n/12.045 10mm\TU/STSong(0)/m/n/12.045 ，|  图 号 \TU/TeXGyreTermesX(0)/m/n/12.045 BJG700005A |\TU/STSong(0)/m/n/12.045 《活 动 座 铰 链 销》 、| \TU/TeXGyreTermesX(0)/m/n/12.045 BJG700007A
  []
 
-
-LaTeX Warning: Reference `fig:FEA_inner_pipe_variable' on page 57 undefined on input line 282.
-
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
-[57]
+[10]
 File: figure/chapter3/part5/inner-pipe.png Graphic file (type bmp)
 <figure/chapter3/part5/inner-pipe.png>
 File: figure/simulation/guadaoxinzhou-lashen.png Graphic file (type bmp)
@@ -2102,14 +1499,14 @@ File: figure/chapter3/part5/unsetup/unsetup-two-subs.png Graphic file (type bmp)
 <figure/chapter3/part5/unsetup/unsetup-two-subs.png>
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
- [58]
+ [11]
 File: figure/chapter3/part5/unsetup/unsetup-fasten-parts.png Graphic file (type bmp)
 <figure/chapter3/part5/unsetup/unsetup-fasten-parts.png>
 File: figure/chapter3/part5/unsetup/rotary-lever-set.png Graphic file (type bmp)
 <figure/chapter3/part5/unsetup/rotary-lever-set.png>
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
- [59]
+ [12]
 File: figure/chapter3/part5/unsetup/end-links.png Graphic file (type bmp)
 <figure/chapter3/part5/unsetup/end-links.png>
 File: figure/chapter3/part5/unsetup/unsetup-scraper.png Graphic file (type bmp)
@@ -2126,31 +1523,24 @@ File: figure/chapter3/part5/unsetup/resetting-assembly-unsetup.png Graphic file 
 <figure/chapter3/part5/unsetup/resetting-assembly-unsetup.png>
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
- [60]
+ [13]
 File: figure/chapter3/part5/unsetup/middle-body-inner-pipe-ball.png Graphic file (type bmp)
 <figure/chapter3/part5/unsetup/middle-body-inner-pipe-ball.png>
 File: figure/chapter3/part5/unsetup/middle-inner-pipe-unsetup.png Graphic file (type bmp)
 <figure/chapter3/part5/unsetup/middle-inner-pipe-unsetup.png>
 File: figure/chapter3/part5/unsetup/piston-spring-limiter.png Graphic file (type bmp)
 <figure/chapter3/part5/unsetup/piston-spring-limiter.png>
-
-
-LaTeX Warning: Reference `tab:parts_list' on page 61 undefined on input line 392.
-
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
 (Font)              scaled to size 9.03374pt on input line 403.
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
-[61]
+ [14]
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
- [62]
+ [15]
 Overfull \hbox (4.54172pt too wide) in paragraph at lines 461--462
 []\TU/STSong(0)/m/n/12.045 本 可 变 径 刮 管 器 应 与 \TU/TeXGyreTermesX(0)/m/n/12.045 7[]\TU/STSong(0)/m/n/12.045 及 以 上 其 它 刮 管 器 配 合 使 用；|  本 工 具 刮 刀 收 回 外 径 \TU/TeXGyreTermesX(0)/m/n/12.045 136mm\TU/STSong(0)/m/n/12.045 、|
  []
-
-
-LaTeX Warning: Reference `fig:pressure_decrease_with_Q_size' on page 63 undefined on input line 462.
 
 File: figure/chapter3/part5/10LperSec.png Graphic file (type bmp)
 <figure/chapter3/part5/10LperSec.png>
@@ -2162,255 +1552,70 @@ File: figure/chapter3/part5/40LperSec.png Graphic file (type bmp)
 <figure/chapter3/part5/40LperSec.png>
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
-[63]
-
-LaTeX Warning: Reference `kebianjingguaguan' on page 64 undefined on input line 495.
-
+[16]
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
-[64]
+ [17]
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
- [65]
+ [18]
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
- [66]
+ [19]
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
- [67]) (./chapters/research4-6/entry.tex
+ [20]) (./chapters/bib.tex
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
- [68]
+ [21]
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
- [69] (./chapters/research4-6/chapter4.tex
-第四章
+ [22]
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
-[70
-
-
-]
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [71]
-File: figure/research4-6/fig4-01-1.jpg Graphic file (type bmp)
-<figure/research4-6/fig4-01-1.jpg>
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [72]
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [73]
-File: figure/research4-6/fig4-02-1.png Graphic file (type bmp)
-<figure/research4-6/fig4-02-1.png>
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [74]
-File: figure/research4-6/fig4-03-1.png Graphic file (type bmp)
-<figure/research4-6/fig4-03-1.png>
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [75]
-File: figure/research4-6/fig4-04-1.png Graphic file (type bmp)
-<figure/research4-6/fig4-04-1.png>
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [76]
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [77]
-File: figure/research4-6/fig4-05-1.png Graphic file (type bmp)
-<figure/research4-6/fig4-05-1.png>
-File: figure/research4-6/fig4-06-1.png Graphic file (type bmp)
-<figure/research4-6/fig4-06-1.png>
-) (./chapters/research4-6/chapter5.tex
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [78]
-第五章
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
-[79
-
-]
-File: figure/research4-6/fig5-01-1.png Graphic file (type bmp)
-<figure/research4-6/fig5-01-1.png>
-File: figure/research4-6/fig5-02-1.png Graphic file (type bmp)
-<figure/research4-6/fig5-02-1.png>
-File: figure/research4-6/fig5-03-1.png Graphic file (type bmp)
-<figure/research4-6/fig5-03-1.png>
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [80]
-File: figure/research4-6/fig5-04-1.jpg Graphic file (type bmp)
-<figure/research4-6/fig5-04-1.jpg>
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [81]
-File: figure/research4-6/fig5-05-1.png Graphic file (type bmp)
-<figure/research4-6/fig5-05-1.png>
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [82]
-Missing character: There is no ₂ (U+2082) in font Times New Roman/OT:script=latn;language=dflt;!
-Missing character: There is no ₂ (U+2082) in font Times New Roman/OT:script=latn;language=dflt;!
-Missing character: There is no ₂ (U+2082) in font Times New Roman/OT:script=latn;language=dflt;!
-Missing character: There is no ₂ (U+2082) in font Times New Roman/OT:script=latn;language=dflt;!
-Missing character: There is no ₂ (U+2082) in font Times New Roman/OT:script=latn;language=dflt;!
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
-[83]
-File: figure/research4-6/fig5-06-1.jpg Graphic file (type bmp)
-<figure/research4-6/fig5-06-1.jpg>
-File: figure/research4-6/fig5-06-2.jpg Graphic file (type bmp)
-<figure/research4-6/fig5-06-2.jpg>
-File: figure/research4-6/fig5-07-1.png Graphic file (type bmp)
-<figure/research4-6/fig5-07-1.png>
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [84]
-Missing character: There is no ₀ (U+2080) in font Times New Roman/OT:script=latn;language=dflt;!
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
-[85]
-File: figure/research4-6/fig5-08-1.png Graphic file (type bmp)
-<figure/research4-6/fig5-08-1.png>
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [86]
-File: figure/research4-6/fig5-09-1.png Graphic file (type bmp)
-<figure/research4-6/fig5-09-1.png>
-File: figure/research4-6/fig5-10-1.png Graphic file (type bmp)
-<figure/research4-6/fig5-10-1.png>
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [87]
-File: figure/research4-6/fig5-11-1.png Graphic file (type bmp)
-<figure/research4-6/fig5-11-1.png>
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [88]
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [89]
-File: figure/research4-6/fig5-12-1.png Graphic file (type bmp)
-<figure/research4-6/fig5-12-1.png>
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [90]
-File: figure/research4-6/fig5-13-1.png Graphic file (type bmp)
-<figure/research4-6/fig5-13-1.png>
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [91]
-File: figure/research4-6/fig5-14-1.png Graphic file (type bmp)
-<figure/research4-6/fig5-14-1.png>
-File: figure/research4-6/fig5-15-1.png Graphic file (type bmp)
-<figure/research4-6/fig5-15-1.png>
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [92]
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [93]
-File: figure/research4-6/fig5-16-1.png Graphic file (type bmp)
-<figure/research4-6/fig5-16-1.png>
-) (./chapters/research4-6/chapter6.tex
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [94]
-第六章
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
-[95
-
-]
-File: figure/research4-6/fig6-01-1.jpg Graphic file (type bmp)
-<figure/research4-6/fig6-01-1.jpg>
-File: figure/research4-6/fig6-02-1.png Graphic file (type bmp)
-<figure/research4-6/fig6-02-1.png>
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [96]
-File: figure/research4-6/fig6-03-1.jpg Graphic file (type bmp)
-<figure/research4-6/fig6-03-1.jpg>
-File: figure/research4-6/fig6-04-1.jpg Graphic file (type bmp)
-<figure/research4-6/fig6-04-1.jpg>
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [97]
-File: figure/research4-6/fig6-05-1.png Graphic file (type bmp)
-<figure/research4-6/fig6-05-1.png>
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [98]
-File: figure/research4-6/fig6-06-1.png Graphic file (type bmp)
-<figure/research4-6/fig6-06-1.png>
-)
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [99]
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [100]) (./chapters/bib.tex
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [101
-
+ [23
 
 
 ])
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
- [102] (./chapters/appendix1.tex
+ [24] (./chapters/appendix1.tex
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
- [103
+ [25
 
 ]
 
-LaTeX Warning: Reference `keliyunyi' on page 104 undefined on input line 52.
+LaTeX Warning: Reference `keliyunyi' on page 26 undefined on input line 52.
 
 
-LaTeX Warning: Reference `citimoni' on page 104 undefined on input line 53.
+LaTeX Warning: Reference `citimoni' on page 26 undefined on input line 53.
 
 
-LaTeX Warning: Reference `shuilimaichong' on page 104 undefined on input line 54.
+LaTeX Warning: Reference `shuilimaichong' on page 26 undefined on input line 54.
 
 
-LaTeX Warning: Reference `siheyi' on page 104 undefined on input line 61.
+LaTeX Warning: Reference `siheyi' on page 26 undefined on input line 61.
 
 
-LaTeX Warning: Reference `darongliangqiangci' on page 104 undefined on input line 62.
+LaTeX Warning: Reference `darongliangqiangci' on page 26 undefined on input line 62.
 
 
-LaTeX Warning: Reference `duogongnengguolv' on page 104 undefined on input line 63.
+LaTeX Warning: Reference `duogongnengguolv' on page 26 undefined on input line 63.
 
 
-LaTeX Warning: Reference `kebianjingguaguan' on page 104 undefined on input line 64.
-
-
-LaTeX Warning: Reference `sanheyi' on page 104 undefined on input line 65.
+LaTeX Warning: Reference `sanheyi' on page 26 undefined on input line 65.
 
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
-[104]
+[26]
 
-LaTeX Warning: Reference `guaban' on page 105 undefined on input line 76.
+LaTeX Warning: Reference `guaban' on page 27 undefined on input line 76.
 
 )
-
-Package natbib Warning: There were undefined citations.
-
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
-[105] (./main.aux
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)
+ [27] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
@@ -2419,25 +1624,16 @@ L3 programming layer <2020/03/25>
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  29441C459FAF890C9F80F56D3574C602;18111.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: D0A7E8CA5E8891096BC77F2A95F39D86;6484.
  ) 
 Here is how much of TeX's memory you used:
- 39050 strings out of 468174
- 923819 string characters out of 5433150
- 1231215 words of memory out of 5000000
- 66951 multiletter control sequences out of 15000+600000
- 653149 words of font info for 197 fonts, out of 8000000 for 9000
+ 37735 strings out of 468174
+ 863054 string characters out of 5433150
+ 1217914 words of memory out of 5000000
+ 65750 multiletter control sequences out of 15000+600000
+ 653085 words of font info for 189 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 93i,20n,117p,1411b,1470s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,17n,117p,1411b,1157s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (110 pages).
+Output written on main.pdf (33 pages).

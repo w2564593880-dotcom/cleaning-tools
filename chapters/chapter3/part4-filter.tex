@@ -38,7 +38,7 @@
         \begin{tabular}[c]{@{}c@{}}本体\\外径\\(mm)\end{tabular}& 
         \begin{tabular}[c]{@{}c@{}}本体\\内径\\(mm)\end{tabular}& 
         \begin{tabular}[c]{@{}c@{}}许用抗拉\\强度\\(kN)\end{tabular}& 
-        \begin{tabular}[c]{@{}c@{}}许用抗扭\\强度\\($\text{kN}\cdot\text{m}$)\end{tabular} & 
+        \begin{tabular}[c]{@{}c@{}}许用抗扭\\强度\\(kN$\cdot$m)\end{tabular} & 
         \begin{tabular}[c]{@{}c@{}}最大\\转数\\(rpm)\end{tabular} & 
         \begin{tabular}[c]{@{}c@{}}碎屑存储量\\(L)\end{tabular} \\
         \midrule
@@ -52,7 +52,7 @@
     \end{tabularx}
 \end{table}
 
-注：表中"本体外径"为计入上、下扶正套筒后的工具最大外径，取139.7\,mm（接头及筒体本体外径为$\phi 120.65$，见图纸GLGJ70001A、GLGJ70015A）；"本体内径"指工具的最小过流内径，取零件图GLGJ70018A加长过滤内筒的内孔尺寸$\phi 35.05\pm 0.25\,\text{mm}$（滤进接头、滤出接头、下接头等接头处的内孔分别为$\phi 45.72$、$\phi 44.45$、$\phi 44.45\,\text{mm}$，见图GLGJ70002A、GLGJ70013A、GLGJ70015A）；"碎屑存储量"为按过滤腔容积并计入滤网孔隙率后的有效存储量。表中数据为 7\inch 工具（GLGJ70000A）的规格。
+注：表中"本体外径"为计入上、下扶正套筒后的工具最大外径，取139.7\,mm（接头及筒体本体外径为$\phi 120.65$，见图纸GLGJ70001A--上接头、GLGJ70015A）；"本体内径"指工具的最小过流内径，取零件图GLGJ70018A加长过滤内筒的内孔尺寸$\phi 35.05\pm 0.25\,\text{mm}$（滤进接头、滤出接头、下接头等接头处的内孔分别为$\phi 45.72$、$\phi 44.45$、$\phi 44.45\,\text{mm}$，见图GLGJ70002A、GLGJ70013A、GLGJ70015A）；"碎屑存储量"为按过滤腔容积并计入滤网孔隙率后的有效存储量。表中数据为 7\inch 工具（GLGJ70000A）的规格。
 
 
 
@@ -112,21 +112,21 @@
 
 （5）主要受力件强度校核完整。本工具对提升短节、滤进接头、滤出接头、下接头等主要受力件的连接螺纹（3.625\inch-8 Stub ACME）进行了牙剪切、根部拉伸与抗扭强度计算，对 7 处危险截面进行了校核并开展了有限元复核，安全系数为 $1.56\sim 1.86$，工具可随钻柱旋转（允许转速 $\ge 120\,\text{rpm}$）。
 
-\subsubsection{过滤工具设计计算与校核}
+\subsection{过滤工具设计计算与校核}
 \subsubsection{主要受力件的螺纹强度校核}
 
-过滤工具的主要受力件为提升短节、滤进接头、滤出接头和下接头，其连接螺纹均为 3.625\inch-8 Stub ACME（材料 4145H，图纸GLGJ70001A、GLGJ70002A、GLGJ70013A、GLGJ70015A技术要求均为：调质后屈服强度$\ge 930$\,MPa、抗拉强度$\ge 1080$\,MPa）。
+过滤工具的主要受力件为提升短节、滤进接头、滤出接头和下接头，其连接螺纹均为 3.625\inch-8 Stub ACME（材料 4145H，图纸GLGJ70001A--上接头、GLGJ70002A、GLGJ70013A、GLGJ70015A技术要求均为：调质后屈服强度$\ge 930$\,MPa、抗拉强度$\ge 1080$\,MPa）。
 
 螺纹牙的剪切强度按下式计算：
 \begin{equation}
-\begin{aligned}
-    F_{\max} &= [\tau] \cdot k_z \cdot \pi \cdot d_1 \cdot b \cdot z \cdot 10^{-3} \\
-    [\tau] &= \frac{\sigma_s}{n}
-\end{aligned}
+    \begin{aligned}
+        F_{\max} &= [\tau] \cdot k_z \cdot \pi \cdot d_1 \cdot b \cdot z \cdot 10^{-3} \\
+        [\tau] &= \frac{\sigma_{\mathrm{s}}}{n}
+    \end{aligned}
 \end{equation}
 式中，$F_{\max}$---工具最大拉力，kN（设计指标 $\ge 1000$\,kN，即合同条款 5.2.1.3 规定的抗拉 $\ge 100$\,T）；
 
-$[\tau]$---螺纹牙的许用剪切强度，MPa（按 $[\tau]=\sigma_s/n$ 计算）；
+$[\tau]$---螺纹牙的许用剪切强度，MPa（按 $[\tau]=\sigma_{\mathrm{s}}/n$ 计算）；
 
 $k_z$---螺纹各圈的载荷不均系数，取 $k_z = 0.56$（按《机械设计手册》螺纹连接（紧固件连接）部分中螺纹牙的剪切强度计算及各圈螺纹载荷分配的规定\cite{ref26}）；
 
@@ -134,9 +134,9 @@ $d_1$---螺纹底径，取 89.66\,mm（图号 GLGJ70002A--滤进接头\ 主视�
 
 $b$---螺纹牙根宽度，取 $b = 1.310\,\text{mm}$（按 ASME B1.8 规定的 ACME 牙型，由螺距 $p=25.4/8=3.175\,\text{mm}$ 与基本牙型高度 $h_0=p/2=1.588\,\text{mm}$ 计算）；
 
-$z$---旋合圈数，取 $z = 22$（图号 GLGJ70002A《滤进接头》外螺纹、GLGJ70001A《上接头》内螺纹的旋合长度标注除以螺距 3.175\,mm 折合）；
+$z$---旋合圈数，取 $z = 22$（图号 GLGJ70002A--滤进接头外螺纹、GLGJ70001A--上接头内螺纹的旋合长度标注除以螺距 3.175\,mm 折合）；
 
-$\sigma_s$---材料最小屈服强度，取 930\,MPa（图号 GLGJ70001A《上接头》、GLGJ70002A《滤进接头》、GLGJ70013A《滤出接头》、GLGJ70015A《下接头》技术要求：材料 4145H，调质后屈服强度 $\ge 930$\,MPa、抗拉强度 $\ge 1080$\,MPa）；
+$\sigma_{\mathrm{s}}$---材料最小屈服强度，取 930\,MPa（图号 GLGJ70001A--上接头、GLGJ70002A--滤进接头、GLGJ70013A--滤出接头、GLGJ70015A--下接头技术要求：材料 4145H，调质后屈服强度 $\ge 930$\,MPa、抗拉强度 $\ge 1080$\,MPa）；
 
 $n$---安全系数，取 $n = 2.5$（按《机械设计手册》螺纹连接部分中螺纹牙强度校核的安全系数取值规定\cite{ref26}）。
 
@@ -165,7 +165,7 @@ $n$---安全系数，取 $n = 2.5$（按《机械设计手册》螺纹连接部�
 
 抗拉强度按下式计算：
 \begin{equation}
-F_{\max} = \frac{\pi \cdot (D^2 - d^2) \cdot \sigma_s}{4 \cdot n} \times 10^{-3}
+F_{\max} = \frac{\pi \cdot (D^2 - d^2) \cdot \sigma_{\mathrm{s}}}{4 \cdot n} \times 10^{-3}
 \end{equation}
 式中，$F_{\max}$---工具最大拉力，kN（设计指标 $\ge 1000$\,kN，即合同条款 5.2.1.3 规定的抗拉 $\ge 100$\,T）；
 
@@ -179,16 +179,16 @@ $D$---危险截面外径，mm；各受力件取值如下：
 
 \quad 下接头内螺纹根部：按图纸GLGJ70015A标注的外圆取 $D = 120.65\,\text{mm}$；
 
-$d$---危险截面内径，mm（提升短节与下接头取 93.40\,mm：图号 GLGJ70001A《上接头》、GLGJ70015A《下接头》内螺纹端标注，该处为内螺纹牙槽与端部内孔的过渡截面，为偏安全取该截面参与抗拉校核；滤进接头取 45.72\,mm：图号 GLGJ70002A《滤进接头》内孔标注；滤出接头取 44.45\,mm：图号 GLGJ70013A《滤出接头》内孔标注）；
+$d$---危险截面内径，mm（提升短节与下接头取 93.40\,mm：图号 GLGJ70001A--上接头、GLGJ70015A--下接头内螺纹端标注，该处为内螺纹牙槽与端部内孔的过渡截面，为偏安全取该截面参与抗拉校核；滤进接头取 45.72\,mm：图号 GLGJ70002A--滤进接头内孔标注；滤出接头取 44.45\,mm：图号 GLGJ70013A--滤出接头内孔标注）；
 
-$\sigma_s$---材料最小屈服强度，取 930\,MPa（图号 GLGJ70001A《上接头》、GLGJ70002A《滤进接头》、GLGJ70013A《滤出接头》、GLGJ70015A《下接头》技术要求：调质后屈服强度 $\ge 930$\,MPa、抗拉强度 $\ge 1080$\,MPa）；
+$\sigma_{\mathrm{s}}$---材料最小屈服强度，取 930\,MPa（图号 GLGJ70001A--上接头、GLGJ70002A--滤进接头、GLGJ70013A--滤出接头、GLGJ70015A--下接头技术要求：调质后屈服强度 $\ge 930$\,MPa、抗拉强度 $\ge 1080$\,MPa）；
 
 $n$---安全系数，取 $n = 1.5$（按《机械设计手册》机械零部件强度计算中安全系数的取值规定\cite{ref26}）。
 
 （1）提升短节 3.625\inch-8 Stub ACME 内螺纹根部最大拉力
 \begin{equation}
     \begin{aligned}
-        F_{\max} &= \frac{\pi \cdot (D^2 - d^2) \cdot \sigma_s}{4 \cdot n} \times 10^{-3} 
+        F_{\max} &= \frac{\pi \cdot (D^2 - d^2) \cdot \sigma_\mathrm{s}}{4 \cdot n} \times 10^{-3} 
                 = \frac{3.14 \times (120.65^2 - 93.40^2) \times 930}{4 \times 1.5} \times 10^{-3} \\
                 &= 2838.85\,\text{kN} > 1000\,\text{kN}
     \end{aligned}
@@ -198,7 +198,7 @@ $n$---安全系数，取 $n = 1.5$（按《机械设计手册》机械零部件�
 （2）滤进接头 3.625\inch-8 Stub ACME 外螺纹根部最大拉力
 \begin{equation}
     \begin{aligned}
-        F_{\max} &= \frac{\pi \cdot (D^2 - d^2) \cdot \sigma_s}{4 \cdot n} \times 10^{-3} 
+        F_{\max} &= \frac{\pi \cdot (D^2 - d^2) \cdot \sigma_\mathrm{s}}{4 \cdot n} \times 10^{-3} 
                 = \frac{3.14 \times (88.09^2 - 45.72^2) \times 930}{4 \times 1.5} \times 10^{-3} \\
                 &= 2759.36\,\text{kN} > 1000\,\text{kN}
     \end{aligned}
@@ -207,14 +207,14 @@ $n$---安全系数，取 $n = 1.5$（按《机械设计手册》机械零部件�
 
 （3）滤进接头凹槽根部最大拉力（该处截面不规则，面积由实体测量得到）
 \begin{equation}
-F_{\max} = \frac{A \cdot \sigma_s}{n} \times 10^{-3} = \frac{3523.3 \times 930}{1.5} \times 10^{-3} = 2184.4\,\text{kN} \geq 1000\,\text{kN}
+F_{\max} = \frac{A \cdot \sigma_{\mathrm{s}}}{n} \times 10^{-3} = \frac{3523.3 \times 930}{1.5} \times 10^{-3} = 2184.4\,\text{kN} \geq 1000\,\text{kN}
 \end{equation}
 满足设计要求。
 
 （4）滤出接头 3.625\inch-8 Stub ACME 外螺纹根部最大拉力
 \begin{equation}
     \begin{aligned}
-        F_{\max} &= \frac{\pi \cdot (D^2 - d^2) \cdot \sigma_s}{4 \cdot n} \times 10^{-3} 
+        F_{\max} &= \frac{\pi \cdot (D^2 - d^2) \cdot \sigma_\mathrm{s}}{4 \cdot n} \times 10^{-3} 
                 = \frac{3.14 \times (88.60^2 - 44.45^2) \times 930}{4 \times 1.5} \times 10^{-3} \\
                 &= 2858.95\,\text{kN} > 1000\,\text{kN}
     \end{aligned}
@@ -223,14 +223,14 @@ F_{\max} = \frac{A \cdot \sigma_s}{n} \times 10^{-3} = \frac{3523.3 \times 930}{
 
 （5）滤出接头凹槽根部最大拉力（该处截面不规则，面积由实体测量得到）
 \begin{equation}
-F_{\max} = \frac{A \cdot \sigma_s}{n} \times 10^{-3} = \frac{3185.38 \times 930}{1.5} \times 10^{-3} = 1974.94\,\text{kN} \geq 1000\,\text{kN}
+F_{\max} = \frac{A \cdot \sigma_{\mathrm{s}}}{n} \times 10^{-3} = \frac{3185.38 \times 930}{1.5} \times 10^{-3} = 1974.94\,\text{kN} \geq 1000\,\text{kN}
 \end{equation}
 满足设计要求。
 
 （6）下接头 3.625\inch-8 Stub ACME 内螺纹根部最大拉力
 \begin{equation}
     \begin{aligned}
-        F_{\max} &= \frac{\pi \cdot (D^2 - d^2) \cdot \sigma_s}{4 \cdot n} \times 10^{-3} 
+        F_{\max} &= \frac{\pi \cdot (D^2 - d^2) \cdot \sigma_{\mathrm{s}}}{4 \cdot n} \times 10^{-3}
                  = \frac{3.14 \times (120.65^2 - 93.40^2) \times 930}{4 \times 1.5} \times 10^{-3} \\
                  &= 2838.85\,\text{kN} > 1000\,\text{kN}
     \end{aligned}
@@ -255,29 +255,29 @@ F_{\max} = \frac{A \cdot \sigma_s}{n} \times 10^{-3} = \frac{3185.38 \times 930}
     \begin{aligned}
         \tau &= \frac{16 \cdot D \cdot T_{\max}}{\pi \cdot (D^4 - d^4)} \times 10^{6} \\
         T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6} \\
-        [\tau] &= n \cdot \sigma_s = 0.66 \times 930\,\text{MPa} = 613.8\,\text{MPa}
+        [\tau] &= n \cdot \sigma_{\mathrm{s}} = 0.66 \times 930\,\text{MPa} = 613.8\,\text{MPa}
     \end{aligned}
 \end{equation}
-式中，$T_{\max}$---工具最大扭矩，$\text{kN} \cdot \text{m}$；
+式中，$T_{\max}$---工具最大扭矩，kN$\cdot$m（设计指标 $>18$\,kN$\cdot$m，即合同条款 5.2.1.3 规定的抗扭指标）；
 
 $\tau$---危险截面的切应力，MPa（按 $\tau = 16DT_{\max}/[\pi(D^4-d^4)]$ 计算）；
 
-$[\tau]$---材料许用切应力，MPa（按 $[\tau]=n\sigma_s = 0.66\sigma_s$ 计算）；
+$[\tau]$---材料许用切应力，MPa（按 $[\tau]=n\sigma_{\mathrm{s}} = 0.66\sigma_{\mathrm{s}}$ 计算）；
 
-$\sigma_s$---材料屈服强度，取 930\,MPa（图号 GLGJ70001A《上接头》、GLGJ70002A《滤进接头》、GLGJ70013A《滤出接头》、GLGJ70015A《下接头》技术要求：调质后屈服强度 $\ge 930$\,MPa）；
+$\sigma_{\mathrm{s}}$---材料屈服强度，取 930\,MPa（图号 GLGJ70001A--上接头、GLGJ70002A--滤进接头、GLGJ70013A--滤出接头、GLGJ70015A--下接头技术要求：调质后屈服强度 $\ge 930$\,MPa）；
 
 $D$---危险截面外径，mm（与抗拉校核各受力件取值相同：图号 GLGJ70001A、GLGJ70002A、GLGJ70013A、GLGJ70015A 主视图对应截面标注，即 120.65、88.09、88.60、120.65\,mm）；
 
 $d$---危险截面内径，mm（与抗拉校核各受力件取值相同：图号 GLGJ70001A、GLGJ70002A、GLGJ70013A、GLGJ70015A 内孔标注，即 93.40、45.72、44.45、93.40\,mm）；
 
-$n$---许用切应力与许用拉应力之比，取 $n=0.66$（按《机械设计手册》零件强度校核中许用应力折减系数的取值规定\cite{ref26}；其理论依据为第四强度理论，纯剪切时 $\tau_s = \sigma_s/\sqrt{3} \approx 0.577\sigma_s$，工程上取 $0.66$ 作为折减系数）。
+$n$---许用切应力与许用拉应力之比，取 $n=0.66$（按《机械设计手册》零件强度校核中许用应力折减系数的取值规定\cite{ref26}；其理论依据为第四强度理论，纯剪切时 $\tau_{\mathrm{s}} = \sigma_{\mathrm{s}}/\sqrt{3} \approx 0.577\sigma_{\mathrm{s}}$，工程上取 $0.66$ 作为折减系数）。
 
 （1）提升短节 3.625\inch-8 Stub ACME 内螺纹根部最大扭矩
 \begin{equation}
     \begin{aligned}
-        T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6} 
-                = \frac{613.8 \times 3.14 \times (120.65^4 - 93.40^4)}{16 \times 120.65} \times 10^{-6} \\
-                &= 65.60\,\text{kN} \cdot \text{m} > 18\,\text{kN} \cdot \text{m}
+        T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6}
+                 = \frac{613.8 \times 3.14 \times (120.65^4 - 93.40^4)}{16 \times 120.65} \times 10^{-6} \\
+                 &= 65.60\,\text{kN} \cdot \text{m} > 18\,\text{kN} \cdot \text{m}
     \end{aligned}
 \end{equation}
 满足设计要求。
@@ -315,27 +315,27 @@ $n$---许用切应力与许用拉应力之比，取 $n=0.66$（按《机械设�
 
 \subsubsection{NC38 接头强度校核}
 
-过滤工具的两端均通过 NC38 接头与管柱连接（图纸GLGJ70001A提升短节左端为NC38外螺纹、GLGJ70015A下接头右端为NC38外螺纹，标准API Spec 7-2），该接头为工具串承受拉、扭载荷的又一薄弱环节，故补充校核如下。
+过滤工具的两端均通过 NC38 接头与管柱连接（图纸GLGJ70001A--上接头提升短节左端为NC38外螺纹、GLGJ70015A下接头右端为NC38外螺纹，标准API Spec 7-2），该接头为工具串承受拉、扭载荷的又一薄弱环节，故补充校核如下。
 
-按图纸GLGJ70001A、GLGJ70015A标注，NC38接头处的最小截面为过渡段外圆 $\phi 95.25\pm0.76\,\text{mm}$ 与内孔 $\phi 44.45\pm0.25\,\text{mm}$ 构成的圆环截面，即
+按图纸GLGJ70001A--上接头、GLGJ70015A标注，NC38接头处的最小截面为过渡段外圆 $\phi 95.25\pm0.76\,\text{mm}$ 与内孔 $\phi 44.45\pm0.25\,\text{mm}$ 构成的圆环截面，即
 \begin{equation}
     A = \frac{\pi \cdot (D^2 - d^2)}{4} = \frac{3.14 \times (95.25^2 - 44.45^2)}{4} = 5571.4\,\text{mm}^2
 \end{equation}
-式中，$D$---NC38接头过渡段外径，按图纸取 $D = 95.25\,\text{mm}$；
+式中，$D$---NC38接头过渡段外径，mm（按图纸取 $D = 95.25$\,mm）；
 
-$d$---NC38接头内孔直径，按图纸取 $d = 44.45\,\text{mm}$。
+$d$---NC38接头内孔直径，mm（按图纸取 $d = 44.45$\,mm）。
 
 （1）抗拉校核。在 $1000\,\text{kN}$ 轴向拉力作用下，该截面名义拉应力为
 \begin{equation}
     \sigma = \frac{F}{A} = \frac{1.0 \times 10^{6}}{5571.4} = 179.5\,\text{MPa}
 \end{equation}
-小于材料许用拉应力 $\sigma_s/n = 930/1.5 = 620\,\text{MPa}$，安全系数为 $930/179.5 = 5.18$，大于设计要求的 1.5，故NC38接头抗拉强度满足设计要求。
+小于材料许用拉应力 $\sigma_{\mathrm{s}}/n = 930/1.5 = 620\,\text{MPa}$，安全系数为 $930/179.5 = 5.18$，大于设计要求的 1.5，故NC38接头抗拉强度满足设计要求。
 
 （2）抗扭校核。该截面的抗扭截面系数为
 \begin{equation}
     W_p = \frac{\pi \cdot (D^4 - d^4)}{16 \cdot D} = \frac{3.14 \times (95.25^4 - 44.45^4)}{16 \times 95.25} = 1.6155 \times 10^{5}\,\text{mm}^3
 \end{equation}
-按第四强度理论取 $[\tau] = 0.66\sigma_s = 613.8\,\text{MPa}$，则该截面可传递的扭矩为
+按第四强度理论取 $[\tau] = 0.66\sigma_{\mathrm{s}} = 613.8\,\text{MPa}$，则该截面可传递的扭矩为
 \begin{equation}
     T_{\max} = [\tau] \cdot W_p = 613.8 \times 1.6155 \times 10^{5} \times 10^{-6} = 99.2\,\text{kN}\cdot\text{m}
 \end{equation}
@@ -346,7 +346,7 @@ $d$---NC38接头内孔直径，按图纸取 $d = 44.45\,\text{mm}$。
     F_{\max} = [\tau] \cdot k_z \cdot \pi \cdot d_1 \cdot b \cdot z \times 10^{-3}
              = \frac{930}{2.5} \times 0.56 \times 3.14 \times 103.9 \times 2.905 \times 14 \times 10^{-3} = 2764.1\,\text{kN}
 \end{equation}
-大于 $1000\,\text{kN}$ 的设计指标。综合（1）$\sim$（3）可知，NC38接头过渡段圆环截面的抗拉能力为 $3454\,\text{kN}$（按 $A\sigma_s/n$ 计算，见图纸GLGJ70001A、GLGJ70015A标注的 $\phi 95.25$ 过渡段外圆与 $\phi 44.45$ 内孔），为该接头各校核项中的最小值，即在拉、扭载荷下 NC38 接头以过渡段圆环截面为控制截面，其抗拉、抗扭与螺纹牙剪切强度均满足设计要求。需要指出的是，实际作业时NC38接头的上扣扭矩应按API Spec 7-2推荐的螺纹脂上扣扭矩值控制，以免因扭矩过大造成螺纹损伤。
+大于 $1000\,\text{kN}$ 的设计指标。综合（1）$\sim$（3）可知，NC38接头过渡段圆环截面的抗拉能力为 $3454\,\text{kN}$（按 $A\sigma_{\mathrm{s}}/n$ 计算，见图纸GLGJ70001A--上接头、GLGJ70015A标注的 $\phi 95.25$ 过渡段外圆与 $\phi 44.45$ 内孔），为该接头各校核项中的最小值，即在拉、扭载荷下 NC38 接头以过渡段圆环截面为控制截面，其抗拉、抗扭与螺纹牙剪切强度均满足设计要求。需要指出的是，实际作业时NC38接头的上扣扭矩应按API Spec 7-2推荐的螺纹脂上扣扭矩值控制，以免因扭矩过大造成螺纹损伤。
 
 
 在上述理论计算的基础上，采用有限元方法对过滤工具主要受力件的结构强度进行复核，过滤工具的薄弱零件及其受载后的应力分布分别如图~\ref{fig:weak_part_filter}和图~\ref{fig:weak_part_filter_fea}所示。计算材料均取 4145H（图纸技术要求：调质后屈服强度$\ge 930$\,MPa、抗拉强度$\ge 1080$\,MPa；有限元计算取弹性模量 206\,GPa、泊松比 0.3），屈服强度取 930\,MPa；按安全系数 1.5 计，材料许用切应力按 0.66 倍屈服强度取 613.8\,MPa（与前述理论校核取值一致）。计算按工具实际装配的传力方式施加约束与载荷：受拉工况在一端螺纹连接部位施加 1000\,kN（\(1.0\times10^{6}\)\,N）轴向拉力，受扭工况在一端螺纹连接部位施加 18\,kN$\cdot$m 扭矩，另一端均以锥面定位约束。
@@ -417,15 +417,15 @@ V = L \cdot A = L \cdot \frac{\pi \cdot (D^2 - d^2)}{4} \times 10^{-6}
 \end{equation}
 式中，$V$---过滤容量，L（设计指标 $\ge 15$\,L，见本节计算结果）；
 
-$L$---过滤腔长度，mm（取 4864.56\,mm，图号 GLGJ70012A《加长过滤套筒》、GLGJ70021A《加长过滤外筒》零件图标注的过滤段长度）；
+$L$---过滤腔长度，mm（取 4864.56\,mm，图号 GLGJ70012A--加长过滤套筒、GLGJ70021A--加长过滤外筒零件图标注的过滤段长度）；
 
-$A$---过滤腔环形截面积，$\mathrm{mm}^2$（由过滤外筒内壁与过滤内筒外壁围成的环形面积确定，$A=\pi(D^2-d^2)/4$）；
+$A$---过滤腔环形截面积，mm$^2$（由过滤外筒内壁与过滤内筒外壁围成的环形面积确定，$A=\pi(D^2-d^2)/4$）；
 
-$D$---过滤腔大径，mm（取 100.26\,mm，图号 GLGJ70021A《加长过滤外筒》主视图内孔标注）；
+$D$---过滤腔大径，mm（取 100.26\,mm，图号 GLGJ70021A--加长过滤外筒主视图内孔标注）；
 
-$d$---过滤腔小径，mm（取 73.03\,mm，图号 GLGJ70018A《加长过滤内筒》主视图外圆标注）；
+$d$---过滤腔小径，mm（取 73.03\,mm，图号 GLGJ70018A--加长过滤内筒主视图外圆标注）；
 
-$10^{-6}$---量纲换算系数，$\text{mm}^3$换算为L（$1\,\text{L} = 10^6\,\text{mm}^3$）。
+$10^{-6}$---量纲换算系数，mm$^3$换算为L（$1\,\text{L} = 10^6\,\text{mm}^3$）。
 
 代入数值计算得：
 \begin{equation}
@@ -447,9 +447,9 @@ $10^{-6}$---量纲换算系数，$\text{mm}^3$换算为L（$1\,\text{L} = 10^6\,
     \renewcommand{\arraystretch}{1.5} % 增加行高，使表格更美观
     \begin{tabularx}{.9\textwidth}{Xc}
         \toprule % 顶线
-        \textbf{受力类型} & \textbf{数据} \\
+        受力类型 & 数据 \\
         \midrule % 栏目线
-        材料屈服强度 $\sigma_s$ & $930\,\text{MPa}$ \\
+        材料屈服强度 $\sigma_{\mathrm{s}}$ & $930\,\text{MPa}$ \\
         螺纹最大剪切力 $F_{\max1}$ & $1690.3\,\text{kN}$ \\
         NC38接头螺纹最大剪切力 $F_{\max0}$ & $2764.1\,\text{kN}$ \\
         提升短节最大拉力 $F_{\max2}$ & $2838.8\,\text{kN}$ \\

@@ -13,16 +13,16 @@
   \ifdefined\rFortySixRoman\renewcommand{\rmdefault}{r46roman}\fi%
   \ifdefined\rFortySixCJK\renewcommand{\CJKrmdefault}{r46song}\renewcommand{\CJKfamilydefault}{r46song}\fi%
   \rFortySixFonts\fontsize{12}{15}\selectfont\setstretch{1.2}%
-  \setlength{\parindent}{2em}\setlength{\parskip}{5pt}%
+  \setlength{\parindent}{2em}\setlength{\parskip}{0pt}%
   \renewcommand{\thefigure}{\thechapter-\arabic{figure}}%
   \renewcommand{\thetable}{\thechapter-\arabic{table}}%
   \captionsetup{font=r46caption,labelfont=normalfont,labelsep=space,skip=6pt}%
-  \titleformat{\chapter}[block]{\normalfont\rFortySixFonts\bfseries\fontsize{15}{18.75}\selectfont}{第\thechapter 章}{0.5em}{}%
-  \titlespacing{\chapter}{0pt}{-22.25pt}{6pt}%
-  \titleformat{\section}[block]{\normalfont\rFortySixFonts\bfseries\fontsize{14}{17.5}\selectfont}{\thesection}{0.5em}{}%
-  \titlespacing{\section}{0pt}{10pt}{6pt}%
-  \titleformat{\subsection}[block]{\normalfont\rFortySixFonts\bfseries\fontsize{12}{15}\selectfont}{\thesubsection}{0.5em}{}%
-  \titlespacing{\subsection}{0pt}{10pt}{6pt}%
+  \titleformat{\chapter}[block]{\normalfont\centering\bfseries\fontsize{15}{18.75}\selectfont}{第\,\thechapter\,章}{20pt}{}%
+  \titlespacing*{\chapter}{0pt}{-10pt}{10pt}%
+  \titleformat{\section}[block]{\normalfont\raggedright\bfseries\fontsize{14}{17.5}\selectfont}{\thesection}{1em}{}%
+  \titlespacing*{\section}{0pt}{12pt}{10pt}%
+  \titleformat{\subsection}[block]{\normalfont\raggedright\bfseries\fontsize{12}{15}\selectfont}{\thesubsection}{1em}{}%
+  \titlespacing*{\subsection}{0pt}{10pt}{4pt}%
   \fancyhf{}\fancyhead[L]{\includegraphics[width=19mm]{figure/research4-6/cosl-header.png}}%
   \fancyfoot[C]{\fontsize{10}{12}\selectfont\thepage}%
   \renewcommand{\headrule}{\hrule height0.8pt\vspace{1pt}\hrule height0.4pt}%

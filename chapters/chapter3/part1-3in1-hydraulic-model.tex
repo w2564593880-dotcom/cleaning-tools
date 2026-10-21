@@ -1,10 +1,11 @@
 \subsection{脉冲发生模块动力学模型及频率响应特性研究}
+\label{shuilimaichong}
 \subsubsection{脉冲发生模块流体-固体耦合机制及受力分析}
 
 如图\ref{fig:working_cycle_pulse_module}所示，脉冲发生模块的工作工况主要分为四个阶段：
 
 \begin{itemize}
-	\item 蓄能阶段：当高压流体经由钻柱进入脉冲发生模块芯轴腔室时，由于侧向出水孔处于关闭状态，下方长开喷嘴具有节流效果，流体经过活塞腔入水孔进入腔室，腔室形成半封闭空间。随着泵入流量$Q_{\mathrm{in}}$的持续补充，流体被压缩，腔内静压力$P(t)$迅速升高。
+	\item 蓄能阶段：当高压流体经由钻柱进入脉冲发生模块心轴腔室时，由于侧向出水孔处于关闭状态，下方长开喷嘴具有节流效果，流体经过活塞腔入水孔进入腔室，腔室形成半封闭空间。随着泵入流量$Q_{\mathrm{in}}$的持续补充，流体被压缩，腔内静压力$P(t)$迅速升高。
 	\item 开启阶段：当液压力作用在活塞端面产生的推力超过弹簧预紧力及摩擦力之和时，活塞克服阻力向开启方向位移。当位移达到设计临界点$L$时，出水孔打开，活塞从出水孔打开处向上运动至最远点（速度为零处）。
 	\item 喷射阶段：腔内高压流体瞬间经喷头排出，形成高速脉冲射流冲击井筒环空，活塞从最远点返回至侧向出水孔。 
 	\item 复位阶段：随着压力下降，弹簧势能释放，驱动活塞迅速复位至初始位置，关闭出水孔，系统进入下一个循环。
@@ -32,11 +33,13 @@
 \begin{equation}
 	F_p(t)=\left[P(t)-P_{\mathrm{out}}\right]\cdot A_1
 \end{equation}
-式中，$A_1$为活塞有效受压面积，其计算公式为：
+式中，$A_1$--活塞有效受压面积，其计算公式为：
 \begin{equation}
 	A_1=\frac{\pi}{4}\left(r_1^2-r_2^2\right)
 \end{equation}
-式中，$r_1$为活塞腔外径，$\mathrm{m}$；$r_2$为活塞腔内径，$\mathrm{m}$。
+式中，$r_1$--活塞腔外径，m；
+
+$r_2$--活塞腔内径，m。
 
 本装置采用高刚度矩形截面螺旋弹簧作为复位元件，在同等安装空间下可提供更大的恢复力，且其刚度特性受截面长宽比影响显著。根据材料力学及弹簧设计理论，矩形截面弹簧的等效刚度$k$可表征为：
 \begin{equation}
@@ -63,17 +66,17 @@ $\eta$--形状修正系数，取决于长宽比$b/h$。
 \begin{equation}
 	F_d(t)=C\frac{\mathrm{d}x(t)}{\mathrm{d}t}
 \end{equation}
-式中，$C$为摩擦等效阻尼系数。
+式中，$C$--摩擦等效阻尼系数。
 
 由于活塞在液体中高频振荡，会带动周围部分流体共同运动，从而产生惯性力$F_a$：
 \begin{equation}
 	F_a(t)=m\frac{\mathrm{d}^2x(t)}{\mathrm{d}t^2}
 \end{equation}
-式中，$m$为活塞及所有随动运动件的等效总质量，kg。
+式中，$m$--活塞及所有随动运动件的等效总质量，kg。
 
 （2）流固耦合响应特性分析
 
-脉冲发生模块的工作过程包括芯轴内腔的非稳态流场以及活塞运动两个方面，系统的动力学行为由流体压力场的变化与活塞的机械响应共同决定。
+脉冲发生模块的工作过程包括心轴内腔的非稳态流场以及活塞运动两个方面，系统的动力学行为由流体压力场的变化与活塞的机械响应共同决定。
 
 \begin{figure}[htbp]
 	\centering
@@ -100,13 +103,19 @@ $\eta$--形状修正系数，取决于长宽比$b/h$。
 \begin{equation}
 	Q = A_1\frac{\mathrm{d}x}{\mathrm{d}t}+Q_n
 \end{equation}
-式中，$A_1{\mathrm{d}x}/{\mathrm{d}t}$为用于推动活塞向上运动的体积变化率；$Q_\mathrm{n}$为节流排量，$\mathrm{m^3/h}$。
+式中，$A_1{\mathrm{d}x}/{\mathrm{d}t}$--用于推动活塞向上运动的体积变化率；
+
+$Q_\mathrm{n}$--节流排量，$\mathrm{m^3/h}$。
 
 根据流体力学中的薄壁小孔流出模型，流经节流喷嘴的流量$Q_n$与缸内外压差$P(t)-P_{\mathrm{out}}$的关系为
 \begin{equation}
 	Q_\mathrm{n}=C_\mathrm{d}A_\mathrm{n}\sqrt{\frac{2\left[P(t)-P_{\mathrm{out}}\right]}{\rho_w}}
 \end{equation}
-式中，$C_\mathrm{d}$为喷嘴的流量系数；$A_\mathrm{n}$为节流喷嘴的截面积，$\mathrm{m^2}$；$\rho_\mathrm{w}$为流体密度，$\mathrm{kg/m^3}$。
+式中，$C_\mathrm{d}$--喷嘴的流量系数；
+
+$A_\mathrm{n}$--节流喷嘴的截面积，$\mathrm{m^2}$；
+
+$\rho_\mathrm{w}$--流体密度，$\mathrm{kg/m^3}$。
 
 由于$Q \gg A_1{\mathrm{d}x}/{\mathrm{d}t}$，活塞运动对系统总流量的扰动微乎其微。将$Q_\mathrm{n}$代入，则
 \begin{equation}
@@ -123,7 +132,7 @@ $\eta$--形状修正系数，取决于长宽比$b/h$。
 	\frac{\mathrm{d}^2x}{\mathrm{d}t^2}+C_1\left(\frac{\mathrm{d}x}{\mathrm{d}t}\right)^2+\left(C_2 x+C_3\right)\frac{\mathrm{d}x}{\mathrm{d}t}+C_4 x+ C_5 =0
 \end{equation}
 
-式中， $C_1$为非线性阻力系数，物体在流体中高速运动时，会产生与速度平方成正比的阻力：
+式中，$C_1$--非线性阻力系数，物体在流体中高速运动时，会产生与速度平方成正比的阻力：
 \begin{equation}
 	C_1=\frac{C_DA_2\rho_w}{2V\rho_f}
 \end{equation}
@@ -141,7 +150,29 @@ $C_4$为弹簧刚度与静水压恢复项：
  $C_5$为常数驱动力项，不随时间、位移和速度改变：
  %这儿没写完
  
- 式中：$r_1$为活塞腔外径，$m$；$r_2$为活塞腔内径，$m$；$C_D$为量纲阻力系数,它随着物体的形状和雷诺数而变，流体作用于流体的阻力大小与其成正比；$\rho_w$为流体密度，$\mathrm{kg/m^3}$；$\rho_f$为活塞密度，$\mathrm{kg/m^3}$；$K$为弹簧刚度，$N/m$；$V$为活塞体积，$m^3$；$\delta$为活塞与缸体之间的间隙，$m$；$l_1$为从侧向出水孔到活塞下端距离，$m$；$l_2$为活塞总长度，$m$；$\mu $，流体粘度，$Pa\cdot s$；$g$为重力加速度，$m/s^2$。
+式中，$r_1$--活塞腔外径，m；
+
+$r_2$--活塞腔内径，m；
+
+$C_D$--量纲阻力系数（随物体的形状和雷诺数而变，流体作用于流体的阻力大小与其成正比）；
+
+$\rho_w$--流体密度，kg/m$^3$；
+
+$\rho_f$--活塞密度，kg/m$^3$；
+
+$K$--弹簧刚度，N/m；
+
+$V$--活塞体积，m$^3$；
+
+$\delta$--活塞与缸体之间的间隙，m；
+
+$l_1$--从侧向出水孔到活塞下端的距离，m；
+
+$l_2$--活塞总长度，m；
+
+$\mu$--流体粘度，Pa$\cdot$s；
+
+$g$--重力加速度，m/s$^2$。
  
  活塞开启阶段的运动微分方程为：
  \begin{equation}
@@ -174,7 +205,6 @@ C_6=\frac{1}{\rho_f V}
 \end{equation}
 
   式中：
-程
   \begin{equation}\label{eq:C7}
 C_7=\frac{K+\pi r_1 g \delta \rho_w}{\rho_f V}
 \end{equation}
@@ -262,7 +292,13 @@ x'\big|_{t=t_3} &\equiv v_2
 \right.
 \end{equation}
 
-式中：$h$为侧向出水孔距活塞下端的距离，$\mathrm{m}$；$h_1$为活塞运动的最高点高度，$\mathrm{m}$；$v_1$为上升时活塞运动到侧向出水孔处的速度，$\mathrm{m/s}$；$v_2$为下降时活塞运动到侧向出水孔处的速度，$\mathrm{m/s}$。
+式中，$h$--侧向出水孔距活塞下端的距离，m；
+
+$h_1$--活塞运动的最高点高度，m；
+
+$v_1$--上升时活塞运动到侧向出水孔处的速度，m/s；
+
+$v_2$--下降时活塞运动到侧向出水孔处的速度，m/s。
 
 根据上述模型及定解条件即可确定出脉冲发生模块的脉冲周期,以及在脉冲过程中任意时刻活塞的运动速度、位置等参数\cite{ref27,ref28}。
 
@@ -314,11 +350,17 @@ x'\big|_{t=t_3} &\equiv v_2
 	\label{fig:piston_velocity_VS_Q}
 \end{figure}
 
-脉冲发生模块排量与工作频率、冲程关系特征曲线如图\ref{fig:pulse_module_frequency_stroke_VS_Q}所示。由图可知，在额定工作区间内，活塞最大冲程对流量$Q$的变化极其敏感，且呈现出高度稳定的准线性增长趋势；提高流量虽能有效提升脉冲发生模块的工作频率，但其演化轨迹表现出明显的非线性特征。
+脉冲发生模块排量与工作频率、冲程关系特征曲线如图\ref{fig:pulse_module_frequency_stroke_VS_Q}所示，其中图\ref{fig:pulse_module_frequency_stroke_VS_Q}(a)为脉冲频率随排量的变化，图\ref{fig:pulse_module_frequency_stroke_VS_Q}(b)为活塞最大冲程随排量的变化。由图可知，在额定工作区间内，活塞最大冲程对流量$Q$的变化极其敏感，且呈现出高度稳定的准线性增长趋势；提高流量虽能有效提升脉冲发生模块的工作频率，但其演化轨迹表现出明显的非线性特征。
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=0.7\textwidth]{figure/chapter3/pulse-module-frequency-stroke-VS-Q.png}
+	\subfloat[脉冲频率随排量变化]{%
+		\includegraphics[width=0.48\textwidth]{figure/chapter3/3-14.png}
+	}
+	\hfill
+	\subfloat[活塞最大冲程随排量变化]{%
+		\includegraphics[width=0.48\textwidth]{figure/chapter3/3-14-1.png}
+	}
 	\caption{脉冲发生模块排量与工作频率、冲程关系特征曲线}
 	\label{fig:pulse_module_frequency_stroke_VS_Q}
 \end{figure}
@@ -343,11 +385,17 @@ x'\big|_{t=t_3} &\equiv v_2
 	\label{fig:piston_velocity_VS_spring_K}
 \end{figure}
 
-脉冲发生模块弹簧刚度$K$与工作频率、冲程关系特征曲线如图\ref{fig:pulse_module_frequency_stroke_VS_spring_K}所示，由图可知，随着弹簧刚度的逐级递增，活塞冲程呈现单调递减趋势。与冲程规律相反，工作频率随弹簧刚度的增加而增大。观察频率曲线的斜率可以发现，在低刚度向中等刚度过渡时，提频效果最为显著；但随着刚度进一步向$850\ \mathrm{kN/m}$以上逼近，曲线爬升趋势放缓。这表明单纯依靠增加机械刚度来提频存在物理极限，过度强化刚度会反向制约下击效率。
+脉冲发生模块弹簧刚度$K$与工作频率、冲程关系特征曲线如图\ref{fig:pulse_module_frequency_stroke_VS_spring_K}所示，其中图\ref{fig:pulse_module_frequency_stroke_VS_spring_K}(a)为工作频率随弹簧刚度的变化，图\ref{fig:pulse_module_frequency_stroke_VS_spring_K}(b)为活塞最大冲程随弹簧刚度的变化。由图可知，随着弹簧刚度的逐级递增，活塞冲程呈现单调递减趋势。与冲程规律相反，工作频率随弹簧刚度的增加而增大。观察频率曲线的斜率可以发现，在低刚度向中等刚度过渡时，提频效果最为显著；但随着刚度进一步向$850\ \mathrm{kN/m}$以上逼近，曲线爬升趋势放缓。这表明单纯依靠增加机械刚度来提频存在物理极限，过度强化刚度会反向制约下击效率。
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=0.7\textwidth]{figure/chapter3/pulse-module-frequency-stroke-VS-spring-K.png}
+	\subfloat[工作频率随弹簧刚度变化]{%
+		\includegraphics[width=0.48\textwidth]{figure/chapter3/3-17.png}
+	}
+	\hfill
+	\subfloat[活塞最大冲程随弹簧刚度变化]{%
+		\includegraphics[width=0.48\textwidth]{figure/chapter3/3-17-1.png}
+	}
 	\caption{脉冲发生模块弹簧刚度$K$与工作频率、冲程关系特征曲线}
 	\label{fig:pulse_module_frequency_stroke_VS_spring_K}
 \end{figure}
@@ -371,17 +419,22 @@ x'\big|_{t=t_3} &\equiv v_2
 \end{figure}
 
 
-侧向出水孔高度对工作频率与冲程的影响特征曲线如图\ref{fig:piston_frequency_stroke_VS_h}所示，随着侧向出水孔高度$h$增大，活塞蓄能阶段距离延长，单次脉冲耗时拉长，脉冲发生模块工作频率减小。图中灰色虚点线代表了泄流孔的物理开启阈值，而蓝色实线代表活塞的最大位移距离。两者之间填充的浅蓝色阴影区域，即表征了活塞越过开孔位置后的开孔有效余量。随着侧向出水孔高度$h$增大，阴影区域的形态收缩，脉冲发生模块开孔有效余量减少，因此在设计脉冲发生模块时，应保证适宜的开孔有效余量，既要保证足够的脉冲频率，也要满足足够的活塞冲程。
+侧向出水孔高度对工作频率与冲程的影响特征曲线如图\ref{fig:piston_frequency_stroke_VS_h}所示，其中图\ref{fig:piston_frequency_stroke_VS_h}(a)为工作频率随侧向出水孔高度的变化，图\ref{fig:piston_frequency_stroke_VS_h}(b)为活塞最大冲程随侧向出水孔高度的变化。随着侧向出水孔高度$h$增大，活塞蓄能阶段距离延长，单次脉冲耗时拉长，脉冲发生模块工作频率减小。活塞最大冲程与泄流孔开启高度$h$之间的差值，即表征了活塞越过开孔位置后的开孔有效余量。随着侧向出水孔高度$h$增大，$h$的增幅大于活塞最大冲程的增幅，开孔有效余量相应减少，因此在设计脉冲发生模块时，应保证适宜的开孔有效余量，既要保证足够的脉冲频率，也要满足足够的活塞冲程。
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=0.7\textwidth]{figure/chapter3/piston-frequency-stroke-VS-h.png}
+	\subfloat[工作频率随侧向出水孔高度变化]{%
+		\includegraphics[width=0.48\textwidth]{figure/chapter3/3-20.png}
+	}
+	\hfill
+	\subfloat[活塞最大冲程随侧向出水孔高度变化]{%
+		\includegraphics[width=0.48\textwidth]{figure/chapter3/3-20-1.png}
+	}
 	\caption{侧向出水孔高度$h$对工作频率与冲程的影响特征曲线}
 	\label{fig:piston_frequency_stroke_VS_h}
 \end{figure}
 
 \subsection{水力脉冲冲砂洗井工具下砂砾运移仿真分析}
-\label{shuilimaichong}
 在上一小节中，本文对脉冲冲砂洗井工具进行了结构设计与动力学特性研究，建立了脉冲发生模块的瞬态动力学数学模型，并深入研究了输入排量$Q$、工具矩形弹簧刚度$K$、工具侧向出水孔高度$h$等核心参数对系统频率与冲程的影响规律。
 
 本小节采用FLUENT软件对使用脉冲冲砂洗井工具时环空井眼的清洁过程进行数值模拟，对比分析有无工具对环空内砂砾质量的影响，评估水力脉冲冲砂洗井工具的冲砂洗井效率优势。
@@ -444,7 +497,7 @@ x'\big|_{t=t_3} &\equiv v_2
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=0.7\textwidth]{figure/chapter3/sand-mass-in-annular-VS-time-pulser-rigid.png}
+	\includegraphics[width=0.7\textwidth]{figure/chapter3/3-22.png}
 	\caption{环空砂砾质量变化对比图}
 	\label{fig:sand_mass_in_annular_VS_time_pulser_rigid}
 \end{figure}
@@ -479,7 +532,7 @@ x'\big|_{t=t_3} &\equiv v_2
 \subsection{水力脉冲喷头流动仿真}
 \subsubsection{水力脉冲计算域的构建与离散}
 
-为了定量研究清洁工具产生的脉冲射流的清洁作用，需建立流动模型，采用流体动力学方法进行研究。在建立流动模型过程中，考虑到工具的外部表面平滑（如图\ref{fig:tool_structure_3_in_1}所示），且水力脉冲对井筒的影响的窗口是喷嘴，为了研究脉冲频率的影响，依据隔离法的思想，可将研究对象选为喷嘴以外的环空区域，所构建的流体域如图\ref{fig:pulsing_nozzle_sub_model}(a)所示。
+为了定量研究清洁工具产生的脉冲射流的清洁作用，需建立流动模型，采用流体动力学方法进行研究。在建立流动模型过程中，考虑到工具的外部表面平滑，且水力脉冲对井筒的影响的窗口是喷嘴，为了研究脉冲频率的影响，依据隔离法的思想，可将研究对象选为喷嘴以外的环空区域，所构建的流体域如图\ref{fig:pulsing_nozzle_sub_model}(a)所示。
 网格划分采用多面体网格，其可产生更多的邻居单元，能够更精确地计算控制体的梯度；在边界附近增加三层边界层以准确捕获流动特征，提高计算精度。此外，对流道尺寸变化较大的区域进行局部加密、优化网格质量，并完成网格无关性验证，最终的离散结果如图\ref{fig:pulsing_nozzle_sub_model}(b)所示。
 \begin{figure}[htbp]
 	\centering

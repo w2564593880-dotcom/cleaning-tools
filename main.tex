@@ -290,9 +290,12 @@
 \newpage
 % 重置全部计数器，解决3.0.1这种错乱编号，重点重置chapter
 \appendix
-% \chapter* 不会给 chapter 计数器增值，于是 \thesection（=\Alph{chapter}.\arabic{section}）里的
-% \Alph{0} 为空，小节编号会显示成 “.1”“.1.1”。这里手动把 chapter 置为 1，编号即 A.1、A.2。
+% \chapter* 不增加 chapter 计数器，而 \appendix 已把 chapter、section 计数器清零：
+% 若不再手动置位，\thesection（=\Alph{chapter}.\arabic{section}）里的 \Alph{0} 为空，
+% 小节编号会显示成 “.1”“.1.1”。这里把 chapter 置为 1，并改用阿拉伯数字编号，
+% 使“附件1”下的小节编号为 1.1、1.2、1.1.1，与标题中的“附件1”一致。
 \setcounter{chapter}{1}
+\renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
 
 \chapter*{附件1}
 \addcontentsline{toc}{chapter}{附件1}

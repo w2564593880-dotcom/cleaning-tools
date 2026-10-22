@@ -1,130 +1,133 @@
 % !TeX root = ../main.tex
-% === 【修改】GB/T 7714-2015 参考文献 ===
+% ============================================================================
+% 参考文献（GB/T 7714—2015 顺序编码制）
+%
+% 说明：
+%   1) 本表为手写 thebibliography，main.tex 中的 gbt7714 宏包只负责标号形式，
+%      不会替作者补文献类型标识、卷期页，故每条须按 GB/T 7714 逐条录入；
+%   2) 中文期刊：主要责任者. 题名[J]. 刊名, 年, 卷(期): 起-止页.
+%      中文专著：主要责任者. 书名[M]. 版本. 出版地: 出版者, 出版年.
+%      学位论文：主要责任者. 题名[D]. 地点: 授予单位, 年.
+%      析出/会议：主要责任者. 题名[M]//或[C]//来源. 出版地: 出版者, 年: 页码.
+%   3) 英文条目：姓全大写、名缩写不加点、作者间用逗号；超过 3 位加 ", et al."；
+%      刊名用全称，英文题名只首字母大写（专有名词除外）；
+%   4) \bibitem 键名 ref1–ref31 与正文 \cite 一一对应，请勿改动键名与顺序。
+%
+% 待作者核定（原稿信息缺失，此处未擅自补全，定稿前请补齐）：
+%   ref1   缺出版地、出版者
+%   ref3   起止页缺失（原稿第 24(2) 期仅录 "4"）
+%   ref11  起止页缺失
+%   ref30  缺"地点: 授予单位"
+%   ref31  缺"地点: 授予单位"
+% ============================================================================
 \clearpage % 参考文献另起一页
-\addcontentsline{toc}{chapter}{参考文献} % 将参考文献加入目录
-
-% \bibliographystyle{gbt7714-numerical} % 已由 gbt7714 宏包([numbers])在 \begin{document} 时自动写入，重复声明会使 bibtex 报 "Illegal, another \bibstyle command"
 \begin{thebibliography}{99}
+\phantomsection
+\addcontentsline{toc}{chapter}{参考文献} % 放在 \begin{thebibliography} 之后：该环境内部会先 \chapter*（openright 下可能补空白页），先登记目录会指到空白页
 
-\bibitem{ref1} % 期刊文章示例
-Wicks, M. Transport of Solids at Low Concentration in Horizontal Pipes. In Advances in Solid–Liquid Flow in Pipes and Its Application; 1971; pp. 101–124.
+% ---------------------------------------------------------------------------
+% 一、砂/固相颗粒在管道与井筒中的运移与沉积
+% ---------------------------------------------------------------------------
+\bibitem{ref1} % [M]// 专著析出文献（原 Wicks 在 Advances in Solid-Liquid Flow in Pipes and Its Application 中的一章）
+WICKS M. Transport of solids at low concentration in horizontal pipes[M]//Advances in solid-liquid flow in pipes and its application. 1971: 101-124.
 
-\bibitem{ref2} % 期刊文章示例
-King, M.J.S.; Fairhurst, C.P.; and Hill, T.J. Solids Transport in Multiphase Flows—Application to High-Viscosity Systems. ASME. J. Energy Resour. Technol. 2001, 123, 200–204. 
+\bibitem{ref2} % [J]
+KING M J S, FAIRHURST C P, HILL T J. Solids transport in multiphase flows: application to high-viscosity systems[J]. Journal of Energy Resources Technology, 2001, 123: 200-204.
 
+\bibitem{ref3} % [J]（起止页待补）
+李明忠, 王卫阳, 何岩峰, 等. 垂直井筒携砂规律研究[J]. 石油大学学报(自然科学版), 2000, 24(2): 4.
 
-\bibitem{ref3} % 期刊文章示例
-李明忠, 王卫阳, 何岩峰, 等. 垂直井筒携砂规律研究[J]. 石油大学学报: 自然科学版, 2000, 24(2): 4.
+\bibitem{ref4} % [J]
+李明忠, 王卫阳, 赵国景. 垂直井筒井液携砂流动规律研究及其在油井生产中的应用[J]. 实验力学, 2002(3): 385-392.
 
+\bibitem{ref5} % [J]（原文页码 130-132+138，"+"为转页，GB 体例改用逗号）
+王治中, 邓金根, 孙福街, 等. 井筒砂粒运移规律室内模拟实验研究[J]. 石油学报, 2006(4): 130-132, 138.
 
-\bibitem{ref4} % 期刊文章示例
-李明忠, 王卫阳, 赵国景. 垂直井筒井液携砂流动规律研究及其在油井生产中的应用[J]. 实验力学, 2002(03): 385-392.
-
-
-\bibitem{ref5} % 期刊文章示例
-王治中, 邓金根, 孙福街, 等. 井筒砂粒运移规律室内模拟实验研究[J]. 石油学报, 2006(04): 130-132+138.
-
-
-\bibitem{ref6} % 期刊文章示例
+\bibitem{ref6} % [D]
 苏健鹏. 水平-竖直集气管道砂沉积规律与携砂特性研究[D]. 青岛: 中国石油大学(华东), 2019.
 
+\bibitem{ref7} % [C]// 会议论文（原稿作者姓名重复两遍，已删；补会议论文编号 OTC-18691-MS）
+DANIELSON T J. Sand transport modeling in multiphase pipelines[C]//Proceedings of the Offshore Technology Conference. Houston: Offshore Technology Conference, 2007: OTC-18691-MS.
 
-\bibitem{ref7} % 期刊文章示例
-Danielson, T.J. Danielson, Thomas J. Sand Transport Modeling in Multiphase Pipelines. In Proceedings of the Offshore Technology Conference, Houston, Texas, USA, 30 April-3 May 2007. 
+\bibitem{ref8} % [D]
+ZEINALI H. Effect of near-wall turbulence on selective removal of particles from sand beds deposited in pipelines[D]. Edmonton: University of Alberta, 2012.
 
+\bibitem{ref9} % [D]（长江大学在荆州，非"湖北"）
+侯学文. 水平井冲砂作业砂液两相流动与沉降特性研究[D]. 荆州: 长江大学, 2024.
 
-\bibitem{ref8} % 期刊文章示例
-Zeinali, H. Effect of Near-Wall Turbulence on Selective Removal of Particles from Sand Beds Deposited in Pipelines. Ph.D. University of Alberta, Edmonton, Alberta, AB, Canada, 2012.
+\bibitem{ref10} % [J]
+ARCHIBONG-ESO A, ALIYU A M, YAN W, et al. Experimental study on sand transport characteristics in horizontal and inclined two-phase solid-liquid pipe flow[J]. Journal of Pipeline Systems Engineering and Practice, 2020, 11: 04019050.
 
+\bibitem{ref11} % [J]（起止页待补）
+DOAN Q T, DOAN L T, FAROUQ ALI S M, et al. Sand deposition inside a horizontal well: a simulation approach[J]. Journal of Canadian Petroleum Technology, 2000, 39(10).
 
-\bibitem{ref9} % 期刊文章示例
-侯学文. 水平井冲砂作业砂液两相流动与沉降特性研究[D]. 湖北: 长江大学, 2024.
+\bibitem{ref12} % [D]
+NAJMI K. Particle transport in single-phase and multiphase horizontal pipes with emphasis on the effect of viscosity[D]. Tulsa: The University of Tulsa, 2015.
 
+\bibitem{ref13} % [J]（原稿页码 "149-456" 显系误录，按起页与卷期改为 149-156，请对照原文复核）
+PIROOZIAN A, ISMAIL I, YAACOB Z, et al. Impact of drilling fluid viscosity, velocity and hole inclination on cuttings transport in horizontal and highly deviated wells[J]. Journal of Petroleum Exploration and Production Technology, 2012, 2(3): 149-156.
 
-\bibitem{ref10} % 期刊文章示例
-Archibong-Eso, A.; Aliyu, A.M.; Yan, W.; Okeke, N.E.; Baba, Y.D.; Fajemidupe, O.; Yeung, H. Experimental Study on Sand Transport Characteristics in Horizontal and Inclined Two-Phase Solid–Liquid Pipe Flow. J. Pipeline Syst. Eng. Pract. 2020, 11, 04019050.
+\bibitem{ref14} % [J]
+SORGUN M. Simple correlations and analysis of cuttings transport with Newtonian and non-Newtonian fluids in horizontal and deviated wells[J]. Journal of Energy Resources Technology, 2013, 135(3): 032903.
 
-
-\bibitem{ref11} % 期刊文章示例
-Doan, Q.T.; Doan, L.T.; Farouq Ali, S.M.; Oguztoreli, M. Sand Deposition inside a Horizontal Well—A Simulation Approach. J. Can. Pet. Technol. 2000, 39(10).
-
-
-\bibitem{ref12} % 期刊文章示例
-Najmi, K. Particle Transport in Single-Phase and Multiphase Horizontal Pipes with Emphasis on the Effect of Viscosity; The University of Tulsa,Tulsa, Oklahoma, USA, 2015.
-
-
-\bibitem{ref13} % 期刊文章示例
-Piroozian, A.; Ismail, I.; Yaacob, Z.; Babakhani, P; Ismail, A. Impact of Drilling Fluid Viscosity, Velocity and Hole Inclination on Cuttings Transport in Horizontal and Highly Deviated Wells. J. Pet. Explor. Prod. Technol 2. 2012 :149-456.
-
-
-\bibitem{ref14} % 期刊文章示例
-Sorgun, M. Simple Correlations and Analysis of Cuttings Transport with Newtonian and Non-Newtonian Fluids in Horizontal and Deviated Wells. ASME. J. Energy Resour. Technol. September 2013, 135, 032903.
-
-
-\bibitem{ref15} % 期刊文章示例
+% ---------------------------------------------------------------------------
+% 二、泥沙运动力学（含水沙休止角、起动概率与推移质输移）
+% ---------------------------------------------------------------------------
+\bibitem{ref15} % [D]
 陈珊. 变化水环境中散体沙休止角的初步研究[D]. 武汉: 武汉大学, 2014.
 
+\bibitem{ref16} % [J]
+徐进超, 李云, 宣国祥, 等. 船闸泄水作用下引航道中动水冲沙规律[J]. 水科学进展, 2016, 27(2): 186-195.
 
-\bibitem{ref16} % 期刊文章示例
-徐进超, 李云, 宣国祥, 等. 船闸泄水作用下引航道中动水冲沙规律[J]. 水科学进展, 2016, 27(02): 186-195.
-
-
-\bibitem{ref17} % 期刊文章示例
+\bibitem{ref17} % [D]
 温庆文. 紫坪铺水库清水下泄河道冲刷演变研究[D]. 雅安: 四川农业大学, 2022.
 
-
-\bibitem{ref18} % 期刊文章示例
+\bibitem{ref18} % [D]
 周双. 推移质泥沙随机起动与输移机理研究[D]. 咸阳: 西北农林科技大学, 2022.
 
+\bibitem{ref19} % [J]
+段自豪, 陈杰, 蒋昌波, 等. 非恒定流作用下的推移质泥沙输移实验研究[J]. 中国科学: 技术科学, 2019, 49(11): 1372-1382.
 
-\bibitem{ref19} % 期刊文章示例
-段自豪, 陈杰, 蒋昌波, 等. 非恒定流作用下的推移质泥沙输移实验研究[J]. 中国科学：技术科学, 2019, 49(11): 1372-1382.
+\bibitem{ref20} % [R] 科技报告（原 Technical Bulletin No. 1026）
+EINSTEIN H A. The bed-load function for sediment transportation in open channel flows[R]. Washington D C: US Department of Agriculture, 1950.
 
+% ---------------------------------------------------------------------------
+% 三、井筒岩屑运移、携砂性能与流变参数
+% ---------------------------------------------------------------------------
+\bibitem{ref21} % [D]（长江大学在荆州）
+夏齐. 不同粘度液-砂流动规律及携砂性能研究[D]. 荆州: 长江大学, 2024.
 
-\bibitem{ref20} % 期刊文章示例
-Einstein, H.A. The Bed-Load Function for Sediment Transportation in Open Channel Flows; Tech. Bulletin No. 1026; US Department of Agriculture: Washington, D.C. USA, 1950.
+\bibitem{ref22} % [D]（东北石油大学在大庆，非"黑龙江"）
+洪贯洲. 基于CFD-DEM方法对井筒内岩屑运移过程液固两相流动研究[D]. 大庆: 东北石油大学, 2024.
 
-
-\bibitem{ref21} % 期刊文章示例
-夏齐. 不同粘度液-砂流动规律及携砂性能研究[D]. 湖北: 长江大学, 2024.
-
-
-\bibitem{ref22} % 期刊文章示例
-洪贯洲. 基于CFD-DEM方法对井筒内岩屑运移过程液固两相流动研究[D]. 黑龙江: 东北石油大学, 2024.
-
-
-\bibitem{ref23} % 期刊文章示例
+\bibitem{ref23} % [D]
 朱娜. 大位移钻井岩屑运移规律与阻卡机理研究[D]. 北京: 中国石油大学(北京), 2022.
 
+\bibitem{ref24} % [J]
+SOEPYAN F B, CREMASCHI S, SARICA C, et al. Solids transport models comparison and fine-tuning for horizontal, low-concentration flow in single-phase carrier fluid[J]. AIChE Journal, 2014, 60(1): 76-122.
 
-\bibitem{ref24} % 期刊文章示例
-Soepyan, F.B.; Cremaschi, S.; Sarica, C.; Subramani, H.J.; Kouba G.E. Solids Transport Models Comparison and Fine-Tuning for Horizontal, Low-Concentration Flow in Single-Phase Carrier Fluid. AIChE J. 2014, 60(1), 76–122.
+\bibitem{ref25} % [J]（原文 6-12+81，"+"为转页）
+赵鉴楚, 耿强. 低聚物非牛顿流体流变参数的确定与流动计算[J]. 石油化工设计, 2026, 43(1): 6-12, 81.
 
+% ---------------------------------------------------------------------------
+% 四、工具强度校核、水力脉冲与基础教材
+% ---------------------------------------------------------------------------
+\bibitem{ref26} % [M] 专著（第 6 版）
+成大先. 机械设计手册[M]. 6版. 北京: 化学工业出版社, 2016.
 
-\bibitem{ref25} % 期刊文章示例
-赵鉴楚,耿强.低聚物非牛顿流体流变参数的确定与流动计算[J].石油化工设计,2026,43(1):6-12+81.
-
-\bibitem{ref26} % 机械设计手册（螺纹连接强度校核取值依据）
-成大先. 机械设计手册[M]. 第六版. 北京: 化学工业出版社, 2016.
-
-
-\bibitem{ref27} 
+\bibitem{ref27} % [J]
 蒲春生, 时宇. 井下低频水力振动器的工作特性研究[J]. 石油矿场机械, 2005, 34(6): 23-27.
 
-\bibitem{ref28} 
-杨永印, 吴志坚, 沈忠厚, 王瑞和. 低压脉冲射流的调制机理及调制器振动模拟[J]. 石油大学学报(自然科学版), 2003, 27(3): 40-42.
+\bibitem{ref28} % [J]
+杨永印, 吴志坚, 沈忠厚, 等. 低压脉冲射流的调制机理及调制器振动模拟[J]. 石油大学学报(自然科学版), 2003, 27(3): 40-42.
 
-\bibitem{ref29} 
-袁恩熙. 工程流体力学[J]. 石油工业出版社, 北京, 1986.
-\bibitem{ref30} 
+\bibitem{ref29} % [M] 专著（原稿误标 [J]，且出版地与出版者顺序倒置）
+袁恩熙. 工程流体力学[M]. 北京: 石油工业出版社, 1986.
+
+\bibitem{ref30} % [D]（地点与授予单位待补）
 韩雪莹. 大位移井眼岩屑运移仿真分析及定向脉冲射流工具研究[D]. 2023.
 
-\bibitem{ref31} 
+\bibitem{ref31} % [D]（地点与授予单位待补）
 胡成. 水平井砂粒运移规律及清砂工具研究[D]. 2020.
 
 \end{thebibliography}
-
-
-
-
-

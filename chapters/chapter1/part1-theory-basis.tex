@@ -164,7 +164,7 @@
 	\delta_{\mathrm{t}}^{n+1} = \delta_{\mathrm{t}}^{n} + \Delta t \cdot {v}_\mathrm{t}^\mathrm{rel}
 \end{equation}
 
-综合上述，根据式(\ref{eq:normal_particle_elastic_force})和式(\ref{eq:normal_shear_damping_force})，可得颗粒间的法向总接触力 ；根据式子(\ref{eq:normal_shear_damping_force})和式(\ref{eq:shear_damping_force})，可得颗粒间的切向总接触力。当然，切向摩擦力还要收到库伦摩擦定律的限制，在切向总接触里超过静摩擦力（用静摩擦系数\(\mu_s\)进行表征）时进行截断。
+综合上述，根据式(\ref{eq:normal_particle_elastic_force})和式(\ref{eq:normal_shear_damping_force})，可得颗粒间的法向总接触力 ；根据式子(\ref{eq:normal_shear_damping_force})和式(\ref{eq:shear_damping_force})，可得颗粒间的切向总接触力。当然，切向摩擦力还要收到库仑摩擦定律的限制，在切向总接触力超过静摩擦力（用静摩擦系数\(\mu_s\)进行表征）时进行截断。
 
 % 法向总接触力
 \begin{equation}
@@ -329,7 +329,7 @@ JKR 模型的法向力取决于法向重叠量 $\alpha$ 和表面能 $\gamma$，
 	\exp\left(-0.5684Re_{r}Re_{\mathrm{HB}}^{-0.3}\right)
 \end{equation}
 
-颗粒拟温度的物理意义表示颗粒脉动的脉动能，能够在微尺度上反映颗粒脉动速度的剧烈程度，表征颗粒运动的无序程度，是颗粒相相互碰撞作用以及颗粒相和流体相相互作用的结果。颗粒拟温度的定义为
+颗粒拟温度的物理意义表征颗粒脉动动能，能够在微尺度上反映颗粒脉动速度的剧烈程度，表征颗粒运动的无序程度，是颗粒相相互碰撞作用以及颗粒相和流体相相互作用的结果。颗粒拟温度的定义为
 \begin{equation}
 	\theta=\frac{1}{3N}\left[
 	\sum_{j=1}^{N}C_{xj}^{2}

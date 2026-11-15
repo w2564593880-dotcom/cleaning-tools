@@ -394,7 +394,7 @@ $n$ — 安全系数，根据《机械设计手册》机械零部件强度计算
         硬度 & 最小屈服强度 & 伸长率 & 夏比冲击功 \\
         \midrule % 栏目线
         285-321(HB) & 
-        $\sigma_{\mathrm{S}} \ge 785\,\text{MPa}$ & 
+        $\sigma_{\mathrm{S}} \ge 825\,\text{MPa}$ & 
         $13\%$ & 
         $Akv \ge 54\,\text{J}$ \\
         \bottomrule % 底线
@@ -462,6 +462,65 @@ $n$ — 安全系数，根据《机械设计手册》机械零部件强度计算
 	\caption{液压刮管器薄弱零件强度有限元分析}
 	\label{fig:FEA_hydraulic_sub_pipe_3_in_1}
 \end{figure}
+
+2）400 kN 拉伸工况有限元校核
+
+上述手算只覆盖了上接头螺纹应力分散槽一个截面。实际承载时连接体、下接头的端面过渡带同样存在应力集中，因此按轴向承力链建立整体有限元模型复核。模型取上接头 YYGG105-23、本体 YYGG105-16、连接体 YYGG105-2、下接头 YYGG105-1 四个零件，材料统一按 4145H 合金结构钢调质处理赋值（$\sigma_{\mathrm{s}} = 825$ MPa、$\sigma_{\mathrm{b}} = 965$ MPa、285$\sim$321 HB）。螺纹啮合面与端面配合按绑定接触等效处理，牙型不逐牙建模，螺纹根部的缺口效应由疲劳强度系数补偿。上接头 NC31 Box 端面施加固定约束（模拟工具悬挂于上部钻具），下接头 NC31 Pin 端面施加轴向拉伸载荷 400 kN。
+
+静力计算结果见表~\ref{tab:hydraulic_fea_tension}。最大等效应力 484.02 MPa 出现在连接体与本体配合的端面环形过渡带（薄壁环件的接触终止线），未达到材料屈服强度 825 MPa，静强度安全系数为 $825/484.02 = 1.70$，满足 $n \ge 1.5$ 的判据。该位置处于接触边界，为排除接触终止线附近的数值奇异，在距峰值 3$\sim$6 mm 处取三个探针节点（41099、38311、41108），等效应力分别为 301.52、206.03、304.51 MPa，与峰值相差 37\%，说明高应力带沿端面过渡区的宽度有限。
+
+\begin{table}[htbp]
+    \centering
+    \caption{液压刮管器 400 kN 拉伸工况有限元结果}
+    \label{tab:hydraulic_fea_tension}
+    \renewcommand{\arraystretch}{1.3}
+    \begin{tabular}{lccc}
+        \toprule
+        项目 & 数值 & 判据 & 结论 \\
+        \midrule
+        最大等效应力 & 484.02 MPa & $< 825$ MPa & 未屈服 \\
+        静强度安全系数 & 1.70 & $\ge 1.5$ & 满足 \\
+        最小疲劳寿命 & $6.75 \times 10^{4}$ 次 & $> 1\,000$ 次 & 满足 \\
+        累积损伤（1 000 次循环） & $1.48 \times 10^{-2}$ & $\le 1.0$ & 满足 \\
+        最小疲劳安全系数 & 1.84 & $\ge 1.5$ & 满足 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+疲劳评定按 $R = 0$ 的脉动循环进行。工具在起下钻过程中承受"空载—提拉—卸载"的往复过程，最低载荷为零，故 $\sigma_{\mathrm{a}} = \sigma_{\mathrm{m}} = \sigma_{\max}/2 = 242.01$ MPa。材料 S-N 曲线按 4145H 的 Marin 修正估算取值（$\sigma_{-1} = 177.2$ MPa，1$\,000$ 次处按屈服截断取 825 MPa，拟合式 $\sigma_{\mathrm{a}} = 3840\,N^{-0.2227}$），按 Goodman 准则折算等效对称应力幅：
+\begin{equation}
+    \sigma_{\mathrm{a,eq}} = \frac{\sigma_{\mathrm{a}}}{1 - \sigma_{\mathrm{m}}/\sigma_{\mathrm{u}}}
+    = \frac{242.01}{1 - 242.01/965} = 323.0\ \text{MPa}
+\end{equation}
+将 323.0 MPa 代入 S-N 曲线解得疲劳寿命 $6.75 \times 10^{4}$ 次。按 200 趟起下钻折算为 1$\,000$ 次设计循环，累积损伤按 Miner 线性法则为 $D = 1\,000/6.75 \times 10^{4} = 1.48 \times 10^{-2}$；疲劳安全系数按 Goodman 图上的可放大倍数求得：
+\begin{equation}
+    n_{\mathrm{f}} = \frac{1}{\sigma_{\mathrm{a}}/\sigma_{-1}(10^{3}) + \sigma_{\mathrm{m}}/\sigma_{\mathrm{u}}}
+    = \frac{1}{242.01/825 + 242.01/965} = 1.84
+\end{equation}
+有限元直接输出的最小寿命 $6.75 \times 10^{4}$ 次、最大损伤 $1.48 \times 10^{-2}$、最小安全系数 1.8378，与上述手算结果一致，说明载荷与边界条件施加正确，结果可用于评定。
+
+\begin{figure}[htbp]
+	\centering
+	\subfloat[等效应力分布]{%
+	\includegraphics[width=0.48\textwidth]{figure/chapter3/hydraulic-yygg105-tension-stress.png}
+	}
+	\hfill
+	\subfloat[疲劳寿命]{%
+	\includegraphics[width=0.48\textwidth]{figure/chapter3/hydraulic-yygg105-tension-life.png}
+	}
+	\vspace{1em}
+	\subfloat[累积损伤]{%
+	\includegraphics[width=0.48\textwidth]{figure/chapter3/hydraulic-yygg105-tension-damage.png}
+	}
+	\hfill
+	\subfloat[安全系数]{%
+	\includegraphics[width=0.48\textwidth]{figure/chapter3/hydraulic-yygg105-tension-sf.png}
+	}
+	\caption{液压刮管器 400 kN 拉伸工况有限元分析结果}
+	\label{fig:FEA_hydraulic_yygg105_tension}
+\end{figure}
+
+由此可得：400 kN 拉伸工况下，工具的静强度安全系数 1.70、疲劳安全系数 1.84、1$\,000$ 次循环累积损伤 $1.48 \times 10^{-2}$，均满足设计要求。控制部位为连接体与本体配合的端面环形过渡带，与手算假定的上接头螺纹应力分散槽不是同一截面，两者共同构成该工具拉伸工况的强度控制点。
 
 \subsubsection{毛刷刮管器计算与校核}
 
@@ -1231,6 +1290,7 @@ $C_4$为弹簧刚度与静水压恢复项：
 	该工具可以与液压刮管器以及强磁打捞器配合使用，也可以在刮完井之后使用。
 	将套管刮削器下到井底离通井位置3-5m处，开泵循环。将套管刮削器在该位置上下活动。保持循环的情况下，平稳的上体钻柱。
 	起钻时要求平稳、低速、严禁剧烈振动与撞击。
+
 
 \subsection{维护与保养}
 

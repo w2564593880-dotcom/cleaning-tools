@@ -1,0 +1,121 @@
+% !TeX root = ../../main.tex
+\settocdepth{none}
+\subsection{设计计算与校核}
+\settocdepth{section}
+
+\subsubsection{脉冲器计算与校核}
+
+脉冲器的设计要求见表\ref{tab:pulsar_design_req}，其中外径、水眼直径与接头扣型按图号 MCQ105-0--4\,1/8 英寸脉冲短节装配图标注取值，许用拉力与许用扭矩按该图技术要求第 3 条“产品的最大抗拉不低于 400\,kN，最大抗扭不低于 8\,kN$\cdot$m”取值。
+
+\begin{table}[htbp]
+    \centering
+    \caption{脉冲器设计要求}
+    \label{tab:pulsar_design_req}
+    \renewcommand{\arraystretch}{1.5} % 增加行高，使表格更美观
+    \begin{tabularx}{1.0\textwidth}{CCCCCC}
+        \toprule % 顶线
+        \begin{tabular}[c]{@{}c@{}}外径\\ (mm)\end{tabular} & 
+        \begin{tabular}[c]{@{}c@{}}水眼直径\\ (mm)\end{tabular} & 
+        接头螺纹扣型 & 
+        \begin{tabular}[c]{@{}c@{}}许用拉力\\ (kN)\end{tabular} & 
+        \begin{tabular}[c]{@{}c@{}}许用扭矩\\ ($\text{kN}\cdot\text{m}$)\end{tabular} & 
+        \begin{tabular}[c]{@{}c@{}}总长\\ (mm)\end{tabular} \\
+        \midrule % 栏目线
+        105 & 25 & NC31 & 400 & 8 & 1250 \\
+        \bottomrule % 底线
+    \end{tabularx}
+    \par\vspace{4pt}{\small 注：表中许用拉力、许用扭矩为图纸技术要求规定的设计指标下限；各模块按危险截面计算得到的承载能力（如旋转喷头见表\ref{tab:rotary_nozzle_params}）一般高于该指标，两者含义不同，不应直接比较。}
+\end{table}
+
+
+该产品为井下清洁工具，工作条件恶劣，结构为中间空的细长杆件，筒壁较薄。按API标准对钻具材料的要求，主体结构材料选用具有较高强度的4145H合金结构钢并调质处理，钢材成分符合ASTM A304-05e2的规定。
+为适应井下的应力状态，热处理后的力学性能应达到表\ref{tab:product_requirements}的要求。
+
+\begin{table}[htbp]
+    \centering
+    \caption{产品要求}
+    \label{tab:product_requirements}
+    \renewcommand{\arraystretch}{1.5} % 增加行高，使表格更美观
+    \begin{tabularx}{1.0\textwidth}{CCCC}
+        \toprule % 顶线
+        硬度 & 最小屈服强度 & 伸长率 & 夏比冲击功 \\
+        \midrule % 栏目线
+        285-321(HB) & $\sigma_{\mathrm{S}} \ge 785\text{MPa}$ & $13\%$ & $Akv \ge 54\text{J}$ \\
+        \bottomrule % 底线
+    \end{tabularx}
+\end{table}
+
+
+1）危险截面（图号 MCQ105-2--心轴\ 螺纹应力分散槽处）抗拉、抗扭计算
+
+（1）许用拉力计算
+
+\begin{equation}
+    F_{\max} = \frac{[\pi \cdot (D^2 - d^2)] \cdot \sigma_{\mathrm{s}}}{4 \cdot n} \times 10^{-3}
+\end{equation}
+式中，$F_{\max}$--工具最大拉力，$\mathrm{kN}$（设计许用值 400\,kN，参见图号 MCQ105-0--4\,1/8 英寸脉冲短节装配图\ 技术要求第 3 条）；
+
+$D$--危险截面外径，$\mathrm{mm}$（取 50\,mm，取自图号 MCQ105-2--芯轴\ 主视图左端 M55$\times$3-6g 外螺纹端部的螺纹应力分散槽截面，该处标注 $\phi 51\,_{-0.030}^{-0.076}$、局部放大图 I标注槽宽 3\,mm，计算取整为 50\,mm，偏于安全）；
+
+$d$---危险截面内径，mm（取 30\,mm，取自图号 MCQ105-2--心轴主视图左端内孔标注 $\phi 30$）；
+
+$\sigma_{\mathrm{s}}$---材料最小屈服强度，取 825\,MPa（图号 MCQ105-2--心轴技术要求第 1 条：材料 4145H，调质后屈服强度 $\ge 827$\,MPa，计算偏安全取 825\,MPa）；
+
+$n$---安全系数，取 $n = 1.5$（按《机械设计手册》机械零部件强度计算中安全系数的取值规定\cite{ref26}）。
+
+代入数据计算如下：
+\begin{equation}
+\begin{aligned}
+    F_{\max} &= \frac{\pi \cdot (D^2 - d^2) \cdot \sigma_{\mathrm{s}}}{4 \cdot n} \times 10^{-3} \\
+             &= \frac{3.14 \times (50^2 - 30^2) \times 825}{4 \times 1.5} \times 10^{-3} \\
+             &= 690.8 \, \text{kN} > 400 \, \text{kN}
+\end{aligned}
+\end{equation}
+满足设计要求。
+
+(2) 许用扭矩计算
+
+\begin{equation}
+    T_{\max} = \frac{\sigma_{\mathrm{s}} \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D \cdot n} \times 10^{-6}
+\end{equation}
+式中，$T_{\max}$---最大扭矩，kN$\cdot$m（设计许用值 8\,kN$\cdot$m，取自图号 MCQ105-0--4\,1/8 英寸脉冲短节装配图技术要求第 3 条）；
+
+$\sigma_{\mathrm{s}}$---材料屈服应力，MPa（取 825\,MPa，取自图号 MCQ105-2--心轴技术要求第 1 条，该条要求调质后屈服强度 $\ge 827$\,MPa）；
+
+$D$---危险截面外径，mm（取 50\,mm，同图号 MCQ105-2--心轴 M55$\times$3-6g 外螺纹端部螺纹应力分散槽处截面，标注 $\phi 51\,_{-0.030}^{-0.076}$，取整为 50\,mm）；
+
+$d$---危险截面内径，mm（取 30\,mm，取自图号 MCQ105-2--心轴主视图左端内孔标注 $\phi 30$）；
+
+$n$---安全系数，取 $n = 1.5$（按《机械设计手册》机械零部件强度计算中安全系数的取值规定\cite{ref26}）。
+
+代入数据计算得：
+\begin{equation}
+\begin{aligned}
+    T_{\max} &= \frac{\sigma_{\mathrm{s}} \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D \cdot n} \times 10^{-6} \\
+             &= \frac{825 \times 3.14 \times (50^4 - 30^4)}{16 \times 50 \times 1.5} \times 10^{-6} \\
+             &= 11.74 \, \text{kN} \cdot \text{m} > 8 \, \text{kN} \cdot \text{m} 
+\end{aligned}
+\end{equation}
+满足设计要求。
+
+2）主要受力件仿真校核
+
+脉冲器的主要受力件是心轴（图号 MCQ105-2--心轴，材料 4145H，技术要求第 1 条规定调质后屈服强度 $\ge 827$\,MPa、抗拉强度 $\ge 965$\,MPa），危险截面在出水口。有限元分析中材料的屈服应力按 930\,MPa 取值，该值为材料调质态屈服强度的实测水平，高于合同技术要求的下限 827\,MPa；需要说明的是，判据取 930\,MPa 而非 827\,MPa 并不偏于保守，因此下文同时按 827\,MPa 这一偏安全的判据复核。在抗拉工况下，心轴的最大 von Mises 等效应力为 633\,MPa，无论按 827\,MPa 还是按 930\,MPa 评定均低于屈服强度；在抗扭工况下，出水口边缘处的最大 von Mises 等效应力为 994\,MPa，略高于屈服应力，但该高应力区仅局限于出水口几何突变处的很小范围内，远离该处的等效应力迅速降至 650\,MPa 以下，属局部应力集中，不会引起心轴的整体塑性变形。因此，心轴的强度满足设计要求。
+
+
+\begin{figure}[htbp]
+	\centering
+	\subfloat[脉冲器心轴]{%
+	\includegraphics[width=0.7\textwidth]{figure/chapter3/inner-pipe-3-in-1.png}
+	}
+	\hfill
+	\subfloat[抗拉强度分析]{%
+	\includegraphics[width=0.4\textwidth]{figure/chapter3/inner-pipe-3-in-1-tensile-stress.png}
+	}
+	\vspace{1em}
+	\subfloat[抗扭强度分析]{%
+	\includegraphics[width=0.45\textwidth]{figure/chapter3/inner-pipe-3-in-1-torsional-stress.png}
+	}
+	\caption{脉冲发生器薄弱零件强度有限元分析}
+	\label{fig:FEA_inner_pipe_3_in_1}
+\end{figure}

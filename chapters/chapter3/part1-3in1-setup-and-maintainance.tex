@@ -1,4 +1,5 @@
-﻿% !TeX root = ../../main.tex
+% !TeX root = ../../main.tex
+
 \subsection{拆装步骤及操作方式}
 \subsubsection{脉冲器拆装步骤及操作方式}
 1）下井前准备
@@ -244,6 +245,57 @@
 	\item 	起钻时要求平稳、低速、严禁剧烈振动与撞击。
 \end{itemize}
 
+\subsection{注意事项}
+
+\begin{itemize}
+	\item 脉冲器与管柱的连接扣必须拧紧，公扣端朝下；下入过程中如遇阻，应慢慢旋转几圈后再下放；
+	单次连续振动不得超过 10\,min，累计振动每满 1\,h 应停振 10\,min 散热。
+	\item 液压刮管器与管柱的连接扣必须拧紧，下井过程中如遇阻应慢慢旋转几圈后再下放，刮削过程中必须
+	始终保持循环畅通；起钻前先停泵泄压并确认刮刀收回。
+	\item 一趟管柱内同时使用多种液压启动工具时，应预先确定投球顺序与憋压值，避免先投球激活的工具
+	影响后续工序。
+\end{itemize}
+
+\subsection{三个模块的疲劳寿命有限元分析}
+三合一工具的脉冲短节、毛刷刮管器与液压刮管器按同一额定载荷 400\,kN 与 400\,kN 级扭矩评定，
+额定值低于其余四款工具，承力截面尺寸也相应偏小。三者的材料档不同：脉冲短节为 4145 的 827/965 档
+（$\sigma_a=3\,752\,N^{-0.2189}$），毛刷刮管器与液压刮管器的承力件为 4145H 的 825/965 档
+（$\sigma_a=3\,840\,N^{-0.2227}$，$1\times10^{6}$ 次处 177.2\,MPa）。
+
+计算方法与第 1 章一致：$R=0$ 脉动循环，Goodman 修正，设计循环数 1\,000 次；
+峰值应力位于接触终止线，不参与评定，评定值取距峰值数毫米、梯度趋平缓处的节点应力。
+液压刮管器按四件整体建模（上接头、本体、连接体、下接头），上接头 NC31 Box 端面固定，
+下接头 NC31 Pin 端面施加 400\,kN 拉力；扭转工况放开轴向旋转自由度，以固定端反力矩核验。
+结果见表~\ref{tab:fatigue_3in1}。
+
+\begin{table}[htbp]
+\centering
+\caption{三合一工具三个模块疲劳寿命计算结果}
+\label{tab:fatigue_3in1}
+\begin{tabular}{lccc}
+\hline
+项目 & 脉冲短节 & 毛刷刮管器 & 液压刮管器 \\
+\hline
+承力零件数 & 3 & 2 & 4 \\
+评定应力 / MPa & 340.1 & 392.3 & 304.5 \\
+静强度安全系数 & 2.43 & 2.10 & 2.71 \\
+等效对称应力幅 / MPa & 206.4 & 246.2 & 180.8 \\
+计算寿命 / 次 & $5.7\times10^{5}$ & $2.3\times10^{5}$ & $9.1\times10^{5}$ \\
+200 次累积损伤 & $3.4\times10^{-4}$ & $8.8\times10^{-4}$ & $2.2\times10^{-4}$ \\
+疲劳安全系数 & 2.62 & 2.27 & 2.92 \\
+抗扭评定应力 / MPa & 464.5 & 384.2 & 376.2 \\
+抗扭疲劳安全系数 & 1.78 & 2.15 & 2.19 \\
+\hline
+\end{tabular}
+\end{table}
+
+三个模块的评定应力在 304~392\,MPa 之间，寿命 $2.3\times10^{5}\sim9.1\times10^{5}$ 次，
+200 趟累积损伤都在 $10^{-3}$ 量级以下，指标比 1\,000\,kN 级工具宽裕。
+液压刮管器的控制部位是连接体与本体配合端面的环形过渡带，与手算假定的上接头螺纹分散槽不是同一截面；
+扭转工况的峰值 799.14\,MPa 出现在同一条接触终止线上，评定值为 376.2\,MPa，
+静强度安全系数 2.19、疲劳安全系数 2.36，峰值口径下安全系数只有 1.03，说明该环带对扭矩较敏感，
+后续可考虑加大配合端面的过渡圆角。
+
 \subsection{维护与保养}
 \begin{itemize}
 	\item 	出井后应清洗干净，并检查各零件。如弹簧失效必须更换。各螺纹涂螺纹脂，各零件涂油，置于阴凉干燥处保存。
@@ -252,51 +304,262 @@
 \item 	对高温井的作业和有酸及硫化氢存在的修井作业，应提前更换相应耐腐蚀耐高温密封件和配件。
 \end{itemize}
 
-\subsection{工作过程}
+\subsection{样机性能测试}
+\label{subsec:3in1_performance_test}
 
-“三合一”工具一趟作业从入井到出井分为六个环节，各环节的动作、判据与参数如下，井下落位见图\ref{fig:3in1_proc_steps}。
+为检验“三合一”脉冲式冲刮刷集成式井筒清洁工具（以下简称“三合一”工具）各功能模块的实际工作性能，在厂内试验台与东营试验基地分别对毛刷刮管器、脉冲器、液压刮管器及旋转喷头开展了单独测试。其中，毛刷刮管器重点考核装配完成后工具的通过性以及毛刷与管壁的接触状态；脉冲器重点考核起振排量、起振压力与振动频率；液压刮管器重点考核投球激活、刮刀张开行程及刮刀回收性能；旋转喷头重点考核不同排量下喷头的旋转起动特性。试验样机的主要参数见表\ref{tab:3in1_test_params}～表\ref{tab:3in1_brush_params}。
 
-（1）入井。管柱自下而上按通井钻头、扶正器、旋转喷头、脉冲器、液压刮管器、毛刷刮管器、上部钻柱的顺序连接。此时未投球，液缸不动作，刮刀在复位弹簧作用下收于刀槽内，工具最大外径小于套管内径，可顺利通过 4.75\inch 密封筒等缩径段。下放速度控制在较低水平，遇阻时缓慢转动管柱数圈后再下放，不得硬压；每下入数根立柱记录一次悬重，作为后续判断刮削阻力的基准。
+\subsubsection{试验样机基本参数}
 
-（2）到底冲砂。管柱下至处理井段底部以上 3$\sim$5 m 处开泵，排量由小到大阶梯提升。旋转喷头的工作排量为 100$\sim$300 L/min，脉冲器为 100$\sim$500 L/min，同趟作业取两者交集。脉冲器的周向出水孔在压力脉动中反复开合，对沉砂床和孔眼口部形成交变水力冲击，冲散沉砂、剥松垢层；旋转喷头依靠切向喷嘴的反作用力矩带动整串工具缓慢自转，启动转速低于 0.6 r/min，使脉冲射流在圆周上均匀扫过，避免只冲出一条沟槽。冲砂阶段以脉冲冲刷为主，此时刮刀尚未张开，清洁主要靠水力和自转完成。
+液压刮管器与脉冲器的基本参数见表\ref{tab:3in1_test_params}，旋转喷头的基本参数见表\ref{tab:3in1_nozzle_params}，MSQ105型毛刷刮管器的技术参数见表\ref{tab:3in1_brush_params}。
 
-（3）投球开刀。冲至设计深度后从井口投入钢球，球落座后管内憋压。当泵压达到开启值，即静液柱压力与所需启动压差之和时，液缸推动刀片张开并贴住套管内壁。泵压先升后降是刮刀张开的直接标志。开刀后先小幅度上提、下放，观察悬重与泵压变化，确认刀片贴壁、工具无遇卡，再转入正式刮削。
+\begin{table}[t]
+    \centering
+    \caption{液压刮管器与脉冲器基本参数}
+    \label{tab:3in1_test_params}
+    {\small % 列数较多，适当缩小字号，避免超出正文版心
+    \setlength{\tabcolsep}{3pt} % 减小列间距
+    \renewcommand{\arraystretch}{1.4} % 增加行高，使表格不拥挤
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}cccccccc@{}}
+        \toprule % 顶线
+        代号 & 名称 & \begin{tabular}[c]{@{}c@{}}适用套管\\ 规格\end{tabular} & 
+        \begin{tabular}[c]{@{}c@{}}组装外径\\ (mm)\end{tabular} & 
+        \begin{tabular}[c]{@{}c@{}}最小通径\\ (mm)\end{tabular} & 
+        \begin{tabular}[c]{@{}c@{}}打开压力\\ (MPa)$^{\ast}$\end{tabular} & 
+        \begin{tabular}[c]{@{}c@{}}张开直径\\ (max, mm)\end{tabular} & 
+        \begin{tabular}[c]{@{}c@{}}连接螺纹\\ (API)\end{tabular} \\
+        \midrule % 栏目线
+        YYGG-105 & 液压刮管器 & 5-1/2\inch & $\phi$114 & $\phi$25 & 65 & $\phi$130 & \begin{tabular}[c]{@{}c@{}}NC31\\ (Pin$\times$Box)\end{tabular} \\
+        MCQ-105 & 脉冲器 & 5-1/2\inch & $\phi$105 & $\phi$10 & 65 & --- & \begin{tabular}[c]{@{}c@{}}NC31\\ (Pin$\times$Box)\end{tabular} \\
+        \bottomrule % 底线
+    \end{tabular*}}
+    \par\vspace{0.3em}
+    {\raggedright\small 注：$^{\ast}$打开压力为绝对压力（即地面泵压加静液柱压力），压力可调，允差为$\pm$5\,MPa；表中“---”表示该项不适用或未给出。\par}
+\end{table}
 
-（4）自下而上刮刷。上提过程中刀片对垢层产生剪切作用，清除水泥环、硬垢、蜡质与毛刺；上方的毛刷同步刷洗，把刮松的残渣从孔眼口部剥离，由循环液携带出井。刮刷时保持循环畅通，指重表无明显显示（下放悬重不降、上提悬重不升）即该段已刮净。每上提 10$\sim$20 m 可停泵循环一次，把本段垢屑带出井口，防止停泵后回落沉积。
+\begin{table}[t]
+    \centering
+    \caption{旋转喷头基本参数}
+    \label{tab:3in1_nozzle_params}
+    \small % 9 列较宽，用小一号字避免超出页边距
+    \setlength{\tabcolsep}{2pt}
+    \renewcommand{\arraystretch}{1.4}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ccccccccc@{}}
+        \toprule % 顶线
+        \begin{tabular}[c]{@{}c@{}}外径\\ (mm)\end{tabular} & 
+        \begin{tabular}[c]{@{}c@{}}总长\\ (mm)\end{tabular} & 
+        \begin{tabular}[c]{@{}c@{}}喷嘴尺寸\\ (mm$\times$n)\end{tabular} & 
+        \begin{tabular}[c]{@{}c@{}}工作排量\\ (L/min)\end{tabular} & 
+        \begin{tabular}[c]{@{}c@{}}转速\\ (r/min)\end{tabular} & 
+        \begin{tabular}[c]{@{}c@{}}工作压强\\ (MPa)\end{tabular} & 
+        扣型 & 
+        \begin{tabular}[c]{@{}c@{}}最大抗拉\\ (kN)\end{tabular} & 
+        \begin{tabular}[c]{@{}c@{}}最大抗扭\\ ($\mathrm{kN\cdot m}$)\end{tabular} \\
+        \midrule % 栏目线
+        105 & 1045 & $3.175\times7$ & $100\sim500$ & $10\sim300$ & $\le70$ & NC31 & 400 & 8 \\
+        \bottomrule % 底线
+    \end{tabular*}
+\end{table}
 
-（5）过密封筒。4.75\inch 密封筒是完井密封面，一旦划伤，封隔器难以坐封。上提至密封筒以下 2$\sim$3 m 处停泵卸压，刀片在复位弹簧作用下收回，确认收刀后缓慢通过。通过时若悬重明显增大，说明刀片未完全收回，应重新卸压并活动管柱，必要时投入复位钢球，不得带刀硬过。这一段工具处于空过状态，不刮削、不带压，目的只是完整通过。
+\begin{table}[t]
+    \centering
+    \caption{MSQ105型毛刷刮管器技术参数}
+    \label{tab:3in1_brush_params}
+    \renewcommand{\arraystretch}{1.4}
+    \begin{tabularx}{0.68\textwidth}{lC}
+        \toprule % 顶线
+        项目 & MSQ105 \\
+        \midrule % 栏目线
+        本体最大外径（mm） & $\phi$110 \\
+        毛刷最大外径（mm） & $\phi$130 \\
+        适用套管（in） & 5-1/2\inch \\
+        使用套管磅级（ppf） & $23\sim29$\# \\
+        许用工作拉力，kN（lb） & 50（11200） \\
+        许用工作扭矩，$\mathrm{kN\cdot m}$（lb$\cdot$ft） & 10（7200） \\
+        水眼（mm） & $\phi$30 \\
+        总长（mm） & 1300 \\
+        接头外径（mm） & $\phi$105 \\
+        接头扣（API）B$\times$P & NC31 \\
+        \bottomrule % 底线
+    \end{tabularx}
+\end{table}
 
-（6）循环起钻。刮刷至设计井段后保持大排量循环洗井，直至返出液无明显砂粒与垢屑。停泵泄压，平稳低速起钻，严禁猛提猛刹。工具出井后检查刀片磨损与崩刃、毛刷断丝、喷嘴冲蚀、脉冲器密封及球座动作，损坏件更换，完好件清洗涂油后入库。
+\subsubsection{毛刷刮管器试验}
+
+毛刷刮管器装配完毕后，在内径$\phi$114\,mm的试验管内反复活动，测试毛刷短节在管内往复运动时的摩擦力大小，以评价毛刷与管壁的贴合程度以及工具通过性，试验状态如图\ref{fig:3in1_brush_test}所示。
 
 \begin{figure}[htbp]
 	\centering
-	\subfloat[过封隔器入井、旋转喷头冲砂]{%
-		\includegraphics[height=7.6cm]{figure/chapter3/wproc-3in1-a.png}%
-		\label{fig:3in1_proc_a}%
-	}
+	\subfloat[毛刷短节进入试验管段]{%
+	\includegraphics[height=8.0cm]{figure/chapter3/part1-3in1/brush-pipe-test-1.png}}
 	\hfill
-	\subfloat[套管内开刀、刮刷同步作业]{%
-		\includegraphics[height=7.6cm]{figure/chapter3/wproc-3in1-b.png}%
-		\label{fig:3in1_proc_b}%
-	}
-	\caption{“三合一”工具井下工作过程（打叉方框为封隔器；钻杆—毛刷刮管器—液压刮管器—脉冲器—旋转喷头）}
-	\label{fig:3in1_proc_steps}
+	\subfloat[毛刷短节在管内往复活动]{%
+	\includegraphics[height=8.0cm]{figure/chapter3/part1-3in1/brush-pipe-test-2.png}}
+	\caption{毛刷刮管器通过性试验}
+	\label{fig:3in1_brush_test}
 \end{figure}
 
+由图\ref{fig:3in1_brush_test}可见，毛刷短节装配后能够顺利进入试验管段，并在管内往复活动过程中与管壁保持接触。所测摩擦力可作为判断毛刷压缩量是否合适、工具在套管内是否易于遇阻的依据。
 
+\subsubsection{脉冲器试验}
 
+脉冲器试验采用打压泵打压。打压3\,min内，泵压波动范围为$0\sim4$\,MPa；当排量达到300\,L/min时，脉冲器开始振动，实测振动频率为$15\sim20$\,Hz，工作状态如图\ref{fig:3in1_pulser_test}所示。
 
+\begin{figure}[htbp]
+	\centering
+	\subfloat[脉冲器试验台架安装]{%
+	\includegraphics[height=8.0cm]{figure/chapter3/part1-3in1/pulser-test-bench-1.png}}
+	\hfill
+	\subfloat[脉冲器出水振动状态]{%
+	\includegraphics[height=8.0cm]{figure/chapter3/part1-3in1/pulser-jetting-test.png}}
+	\caption{脉冲器试验状态}
+	\label{fig:3in1_pulser_test}
+\end{figure}
 
+脉冲器出厂前单独试验的测试数据见表\ref{tab:3in1_pulser_factory}。
 
+\begin{table}[htbp]
+    \centering
+    \caption{脉冲器出厂试验数据}
+    \label{tab:3in1_pulser_factory}
+    \small % 列数较多，适当缩小字号，避免超出正文版心
+    \setlength{\tabcolsep}{3pt}
+    \renewcommand{\arraystretch}{1.4}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ccccccc@{}}
+        \toprule % 顶线
+        型号 & 名称 & \begin{tabular}[c]{@{}c@{}}喷嘴直径\\ ($\times$2, mm)\end{tabular} & 
+        \begin{tabular}[c]{@{}c@{}}压力\\ (MPa)\end{tabular} & 
+        \begin{tabular}[c]{@{}c@{}}流量\\ (L/min)\end{tabular} & 状态 & 备注 \\
+        \midrule % 栏目线
+        \multirow{3}{*}{MCQ105} & \multirow{3}{*}{4\,1/8\,英寸脉冲短节} & 3.175 & 2 & 200 & 未震动 & 脉冲1 \\
+        & & 3.175 & 6 & 420 & 开始震动 & 脉冲2 \\
+        & & 3.175 & 8 & 480 & \begin{tabular}[c]{@{}c@{}}弹簧压并不回弹\\ （泄压后回弹）\end{tabular} & 脉冲3 \\
+        \bottomrule % 底线
+    \end{tabular*}
+\end{table}
 
+由表\ref{tab:3in1_pulser_factory}可见，出厂试验时泵压在$6\sim8$\,MPa范围内脉冲器可保持低频往复运动；当泵压大于8\,MPa时，弹簧被压并而无法回弹。分析认为，其原因可能为喷嘴直径偏小，活塞滑过喷嘴孔后喷嘴泄流泄压不明显，弹簧所受作用力减小幅度不足，因而无法复位。
 
+针对上述问题，脉冲器的优化方案为：更换大口径喷嘴，并加大弹簧预压力，保证泄压过程明显、回弹弹力充足。
 
+此外，本次测试中脉冲器在300\,L/min时即已起振，低于出厂单独试验的起振排量（420\,L/min），两者试验条件（管串组合与背压）不同，其对应关系尚需在整机试验中进一步标定。
 
+\subsubsection{液压刮管器试验}
 
+测试前先在井口投球，钢球直径为$\phi$28\,mm。使用泵车打压，泵压升至15\,MPa时刮刀无动作，停泵泄压；随后将泵压升至17\,MPa，刮刀张开，张开行程约8\,mm。停泵后泵压下降至0\,MPa，刮刀未能自行回收，拆下管线后刮刀才回收，刮刀状态如图\ref{fig:3in1_scraper_test}所示。
 
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=3.4cm]{figure/chapter3/part1-3in1/hydraulic-scraper-blades.png}
+	\caption{液压刮管器刮刀状态}
+	\label{fig:3in1_scraper_test}
+\end{figure}
 
+液压刮管器出厂前静液压试验的测试数据见表\ref{tab:3in1_scraper_factory}。
 
+\begin{table}[htbp]
+    \centering
+    \caption{液压刮管器出厂试验数据}
+    \label{tab:3in1_scraper_factory}
+    \small % 列数较多，适当缩小字号，避免超出正文版心
+    \setlength{\tabcolsep}{3pt}
+    \renewcommand{\arraystretch}{1.4}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ccccccc@{}}
+        \toprule % 顶线
+        型号 & 名称 & \begin{tabular}[c]{@{}c@{}}激活钢球\\ (mm)\end{tabular} & 
+        \begin{tabular}[c]{@{}c@{}}激活压力\\ (MPa)\end{tabular} & 
+        \begin{tabular}[c]{@{}c@{}}剪切螺钉\\ 数量\end{tabular} & 
+        \begin{tabular}[c]{@{}c@{}}张开外径\\ (mm)\end{tabular} & 备注 \\
+        \midrule % 栏目线
+        YYGG105 & 4\,英寸液压刮管器 & $\phi$28 & 40 & 12（钢） & 130 & 刮壁器1 \\
+        \multicolumn{2}{c}{出厂设置} & --- & 20 & 8（铜） & --- & 刮壁器2 \\
+        \bottomrule % 底线
+    \end{tabular*}
+\end{table}
 
+第一次静液压试验采用钢制剪钉，投球后泵压达到40\,MPa时剪钉剪断、刮刀张开；此后改用铜制剪钉，剪切压力为20\,MPa$\pm$2\,MPa。第二个$\phi$32\,mm钢球仅在需要强制回收刮刀时投放，投放后水眼封闭，因此可将上球座改为滑套结构，使投球后水眼保持畅通。
 
+东营试验基地试验中，投球后泵压升至17\,MPa时销钉即已剪断，但刮刀未完全伸出；刮刀完全张开所需泵压≥2\,MPa，此时泵压是否达到要求尚不确定。停泵后刮刀未收回，可能为刮刀滑槽内有异物或机械卡滞所致；卸掉水龙带时工具产生轻微振动，滑槽恢复顺畅后刮刀才顺利回位。
 
+\subsubsection{旋转喷头试验}
 
+试验使用泵车供液。先将排量调至0.15\,m$^3$/min，以较低排量循环，旋转喷头出水但未旋转；随后逐步提高排量，最高升至0.45\,m$^3$/min，旋转喷头仍只出水而不旋转，停泵，测试结束。旋转喷头试验状态如图\ref{fig:3in1_nozzle_test}所示。
+
+\begin{figure}[htbp]
+	\centering
+	\subfloat[试验前喷头与工具串连接]{%
+	\includegraphics[height=8.0cm]{figure/chapter3/part1-3in1/rotary-nozzle-makeup.png}}
+	\hfill
+	\subfloat[试验中喷头射流状态]{%
+	\includegraphics[height=8.0cm]{figure/chapter3/part1-3in1/rotary-nozzle-jetting.png}}
+	\caption{旋转喷头试验状态}
+	\label{fig:3in1_nozzle_test}
+\end{figure}
+
+旋转喷头出厂试验数据见表\ref{tab:3in1_nozzle_factory}。
+
+\begin{table}[htbp]
+    \centering
+    \caption{旋转喷头出厂试验数据}
+    \label{tab:3in1_nozzle_factory}
+    \small % 列数较多，适当缩小字号，避免超出正文版心
+    \setlength{\tabcolsep}{3pt}
+    \renewcommand{\arraystretch}{1.4}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}cccccccc@{}}
+        \toprule % 顶线
+        型号 & 名称 & \begin{tabular}[c]{@{}c@{}}喷嘴直径\\ (mm)\end{tabular} & 
+        \begin{tabular}[c]{@{}c@{}}喷嘴\\ 数量\end{tabular} & 
+        \begin{tabular}[c]{@{}c@{}}工作压力\\ (MPa)\end{tabular} & 
+        \begin{tabular}[c]{@{}c@{}}工作流量\\ (L/min)\end{tabular} & 
+        \begin{tabular}[c]{@{}c@{}}转速\\ (r/min)\end{tabular} & 备注 \\
+        \midrule % 栏目线
+        XZPT105 & 4\,1/8\,英寸旋转喷头 & 3.175 & 7 & $\ge2$ & $\ge350$ & $10\sim300$ & 旋转喷头1 \\
+        \multicolumn{2}{c}{二次试验工具串} & 3.175 & 5（2个未装） & $\ge3$ & $\ge450$ & $10\sim300$ & 旋转喷头3 \\
+        \bottomrule % 底线
+    \end{tabular*}
+\end{table}
+
+旋转喷头单独试验时，排量达到$350\sim400$\,L/min即开始旋转，此时泵压约为2.2\,MPa；接入刮刀与脉冲器后，管内压降发生变化，拆掉2个喷射喷嘴并提高排量、使泵压不低于3\,MPa后，喷头才开始转动。本次东营基地试验中喷头未能转动，可能与上部工具压耗过大有关。试验过程中应保证泵压不低于3\,MPa，或将旋转喷头头部下入套管内，以增大喷射孔的反冲力矩。
+
+\subsubsection{试验结论与改进措施}
+
+综合各模块的试验结果，可得如下结论：
+
+\begin{itemize}
+	\item 毛刷刮管器装配后可通过$\phi$114\,mm试验管段并往复活动，毛刷与管壁保持接触，满足入井刮刷对通过性的要求；
+	\item 脉冲器在300\,L/min、泵压波动$0\sim4$\,MPa条件下可正常起振，振动频率为$15\sim20$\,Hz；但当泵压大于8\,MPa时弹簧压并不回弹，需通过更换大口径喷嘴、加大弹簧预压力予以改进；
+	\item 液压刮管器在15\,MPa时未动作、17\,MPa时刮刀张开，张开行程约8\,mm；停泵后刮刀不能自行回收，需拆卸管线后才能回位，反映剪钉剪切压力与刮刀回位机构仍需优化；
+	\item 旋转喷头单独试验时，在$350\sim400$\,L/min、2.2\,MPa条件下即可旋转；接入刮刀与脉冲器后需在泵压不低于3\,MPa时才转动；东营基地试验中因上部压耗过大未能转动，需在整机联调中重新匹配排量与压耗。
+\end{itemize}
+
+针对试验中暴露的问题，后续将从喷嘴通径、弹簧预压力、剪钉配置与球座结构以及喷头压耗匹配等方面对工具进行改进，并在整机联调中复测验证。
+
+\subsection{“三合一”工具应用效果室内测试评价工艺}
+\label{sec:eval-3in1}
+
+\subsubsection{整套工具运行检查}
+按实际连接顺序装配毛刷刮管器、液压刮管器、脉冲发生器和旋转喷头，改变供液流量，检查是否产生脉冲、喷头是否连续旋转、刮板能否张开和收回。记录压力随时间变化的曲线、喷头转速和刮板动作，确认各部分连接后能否正常工作，并检查整套工具能否通过相应管段。
+
+压力变化和喷头转速用于检查工具运行情况；管壁清洁和筛孔疏通效果按下述试验评价。
+
+\subsubsection{套管和筛管清洁试验}
+使用带附着物的套管或已经堵塞的筛管，在规定流量、移动速度和清洁时间下运行工具，称量清洁前后的附着物，并拍摄管壁和筛孔残留。附着物清除比例为清洁前质量减去残留质量，再除以清洁前质量并乘以100\%；初始质量须大于零，前后称量的干燥或含液条件一致。比较参数时保持初始污染程度一致。
+
+将筛管装入密封套筒，封住端部绕流通道，使液体穿过过滤层。在相同液体、温度、流向及筛管内外压差下，测量洁净、堵塞及清洁后的筛管流量，流量恢复比例按式\eqref{eq:eval-screen}计算：
+\begin{equation}
+	\eta_f=\frac{Q_1-Q_b}{Q_0-Q_b}\times 100\%
+	\label{eq:eval-screen}
+\end{equation}
+式中，$\eta_f$--筛管流量恢复比例，\%；$Q_0$、$Q_b$、$Q_1$--分别为洁净、堵塞和清洁后的筛管流量，L/min，且$Q_0>Q_b$。该比例表示堵塞所损失流量的恢复程度，三次流量与计算结果一并列出。
+
+单独计量穿过筛管过滤层的液体，清洁循环排量另列；检查筛管破损和绕流泄漏。
+
+\subsubsection{耐用性试验}
+在规定流量和运动条件下持续运行，定期停机检查，累计时间、刮刷行程和刮板张开收回次数。在相同位置测量喷嘴孔径增大量、刮板刃口尺寸减小量及刷丝缩短量，记录脉冲消失、喷头停转和刮板收回异常。
+
+用初始污染或堵塞程度相当的新管段，按最初条件复测附着物清除比例或筛管流量恢复比例，与初始值的差以百分点表示。结合零件磨损及清洁效果随累计时间的变化评价耐用性。
+
+\subsubsection{作业效率试验}
+对初始附着物相当的套管组或堵塞流量相当的筛管组，分别清洁不同时间，测量清除比例或流量恢复比例。计时从脉冲、喷头及刮刷按规定方式工作起，至清洁结束；拆装、称量和流量测量时间另列。
+
+达到规定清除比例或流量恢复比例所需时间，取达到要求的试验组中最短时间。套管试验以清除质量除以清洁分钟数，计算每分钟清除量（g/min）。结合效果与时间，比较流量及移动速度对效率的影响。

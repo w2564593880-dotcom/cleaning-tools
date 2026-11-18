@@ -1,31 +1,34 @@
+% 第五章 工具应用效果的多因素分析方法研究
+% 来源：项目成果总结报告_研究内容4至6dadad.docx 第4章
 \chapter{工具应用效果的多因素分析方法研究}
 \label{chap:r46-4}
 
-本项研究整理12口井2040条现场日报记录及三类套磨铣工具的四组360个室内实验工况，构建由现场作业和室内实验两部分组成的工具应用数据集。按工具类型、工件材料及作业参数开展分组分析，研究钻压、转速与钻速、扭矩和磨损量之间的关系，并通过Power BI提供记录和照片查询。
+本项研究整理12口井2040条现场日报记录及四组360个室内套磨铣实验工况，构建由现场作业和室内实验两部分组成的工具应用数据集。在此基础上，增加146 mm套铣工具作用于42CrMo的18组工况分析，按工具、材料和参数范围分别研究钻压、转速与钻速、扭矩及磨损的关系，并通过Power BI查询已收录的作业记录和实验资料。
 
-在钻压$2\sim20$ kN、转速$20\sim100$ r/min的室内实验范围内，钻压是影响钻速变化的主要作业参数，转速的作用随钻压区间增强。不同工具类型与工件材料对应的提速、扭矩和磨损关系存在差异，为分别建立性能预测模型和优选作业参数提供了依据。
+现场分析识别调参、停滞和恢复推进等过程特征；室内实验提供相同工具与材料条件下的参数对照。110 mm四组在$2\sim20$ kN、$20\sim100$ r/min范围内揭示钻压主导及转速分区响应，146 mm组进一步比较$20\sim35$ kN、$60\sim180$ r/min范围内的钻速收益与扭矩、磨损高度变化，为第六章分组建模和多目标选参提供依据。
 
 \section{现场作业与室内实验数据集构建}
 \label{sec:r46-4.1}
 
-数据集由现场作业和室内实验两部分组成。现场数据保留井号、工艺类型、记录中提及的工具、作业趟次、处理对象、参数变化、进尺及出井检查；室内数据按实验工具、工件材料、钻压和转速整理钻速、扭矩及磨损量。工具名称和规格等信息以现场记录及实验记录中的记载为依据，主要内容见表5-1。
+数据集按现场作业记录和室内实验记录组织。现场保留井号、工艺类型、工具、趟次、处理对象、参数变化、进尺及出井检查；室内按工具、工件材料、钻压和转速配对性能指标。110 mm四组以质量差表示磨损，146 mm组以高度减少量表示磨损，两种量纲分别使用。表~\ref{tab:r46-4-1}列出资料组成与分析用途。
 
-\begin{table}[H]
-\centering
-\setstretch{1}
-\fontsize{12}{15}\selectfont
-\setlength{\tabcolsep}{3pt}
-\renewcommand{\arraystretch}{1.5}
-\caption{工具应用数据集的主要内容}\label{tab:r46-4-1}
-\begin{tabular}{>{\centering\arraybackslash}m{0.204792\dimexpr\linewidth-6\tabcolsep-4\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.433422\dimexpr\linewidth-6\tabcolsep-4\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.361787\dimexpr\linewidth-6\tabcolsep-4\arrayrulewidth\relax}}
-\toprule
- 资料类别 & 记录内容 & 已形成的数据 \\ \midrule
-现场作业 & 井号、工艺类型、记录中的工具信息、趟次、参数变化、进尺及出井检查 & 12口井、2040条原始记录；47组连续作业 \\ 
-室内套磨铣实验 & 实验工具、工件材料、钻压、转速及三项性能 & 三类工具、两种材料；四组360个工况、1080项数值 \\ \bottomrule
-\end{tabular}
+\begin{table}[htbp]
+	\centering
+	\caption{工具应用数据集的主要内容}
+	\label{tab:r46-4-1}
+	\renewcommand{\arraystretch}{1.5}
+	\begin{tabularx}{.9\textwidth}{cXX}
+		\toprule
+		资料类别 & 主要内容 & 数据量及用途 \\
+		\midrule
+		现场作业记录 & 井号、工具趟次、参数、进尺、循环和出井检查 & 12口井、2040条记录；47组连续作业 \\
+		110 mm室内实验 & 三类工具与两种材料；钻速、扭矩和质量磨损 & 四组360工况、1080项性能值；分组对照与建模 \\
+		146 mm套铣分析 & 42CrMo；钻速、扭矩和磨损高度 & 18组工况；独立分析，数据性质见第5.5节 \\
+		\bottomrule
+	\end{tabularx}
 \end{table}
 
-现场记录按井号、工具趟次及连续作业过程归组，保留原始文字、所在工作表和相关照片，便于核对参数调整与作业效果。室内记录按三类工具和两种工件材料分为四组，每组90个工况，每个工况对应钻速、扭矩和磨损量三项性能值，共360个工况、1080项数值。
+现场记录按井号、工具趟次和连续作业过程归组，保留原始文字、工作表及照片。110 mm四组各含90个工况，每个工况对应钻速、扭矩和质量磨损三项指标，共360个工况、1080项数值。146 mm组含18个工况，单独用于响应分析与建模；数据性质和实物照片的对应关系在第5.5节说明。
 
 \section{现场日报整理与作业过程分析}
 \label{sec:r46-4.2}
@@ -33,23 +36,23 @@
 \subsection{现场数据整理}
 \label{sec:r46-4.2.1}
 
-现场数据来自12口井的日报，共整理362张日报工作表中的2040条原始作业记录。按同井、同趟工具和同一次连续作业归并，保留调参、推进、循环及检查的先后关系，形成47组连续作业。各类别的数据量见表5-2。
+现场数据来自12口井的日报，共整理362张日报工作表中的2040条原始作业记录。按同井、同趟工具和同一次连续作业归并，保留调参、推进、循环及检查的先后关系，形成47组连续作业。各类别的数据量见表~\ref{tab:r46-4-2}。
 
-\begin{table}[H]
-\centering
-\setstretch{1}
-\fontsize{12}{15}\selectfont
-\setlength{\tabcolsep}{3pt}
-\renewcommand{\arraystretch}{1.5}
-\caption{现场日报的分析数据量}\label{tab:r46-4-2}
-\begin{tabular}{>{\centering\arraybackslash}m{0.200000\dimexpr\linewidth-10\tabcolsep-6\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.200000\dimexpr\linewidth-10\tabcolsep-6\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.200000\dimexpr\linewidth-10\tabcolsep-6\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.200000\dimexpr\linewidth-10\tabcolsep-6\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.200000\dimexpr\linewidth-10\tabcolsep-6\arrayrulewidth\relax}}
-\toprule
- 作业类型 & 涉及井数 & 工具趟次 & 连续作业组 & 参数及过程阶段数 \\ \midrule
-磨铣 & 4 & 5 & 5 & 9 \\ 
-套铣 & 7 & 14 & 19 & 64 \\ 
-切割 & 7 & 19 & 23 & 79 \\ 
-合计 & 12口井 & 按作业类型统计 & 47 & 152 \\ \bottomrule
-\end{tabular}
+\begin{table}[htbp]
+	\centering
+	\caption{现场日报的分析数据量}
+	\label{tab:r46-4-2}
+	\renewcommand{\arraystretch}{1.5}
+	\begin{tabularx}{.9\textwidth}{CCCCC}
+		\toprule
+		作业类型 & 涉及井数 & 工具趟次 & 连续作业组 & 参数及过程阶段数 \\
+		\midrule
+		磨铣 & 4 & 5 & 5 & 9 \\
+		套铣 & 7 & 14 & 19 & 64 \\
+		切割 & 7 & 19 & 23 & 79 \\
+		合计 & 12口井 & 按作业类型统计 & 47 & 152 \\
+		\bottomrule
+	\end{tabularx}
 \end{table}
 
 切割作业以水力切割为主，23组作业中包括18次水力切割、4次电动机械切割和1次镁基切割。按各次作业的参数调整过程划分阶段，可对照分析参数变化前后的作业情况。
@@ -59,23 +62,23 @@
 \subsection{作业参数与效果的现场对照}
 \label{sec:r46-4.2.2}
 
-套铣资料中有7个作业组可计算参数与扭矩的相关系数，其中4组至少包含6个参数阶段。钻压和扭矩按日报所记范围的中点计算Spearman秩相关。为检查少量记录对结果的影响，依次暂不计入其中一条日报记录，用其余记录重新计算相关系数；将各次计算得到的最小值和最大值列为“相关系数复算范围”。典型结果见表5-3。
+套铣资料中有7个作业组可计算参数与扭矩的相关系数，其中4组至少包含6个参数阶段。钻压和扭矩按日报所记范围的中点计算Spearman秩相关。为检查少量记录对结果的影响，依次暂不计入其中一条日报记录，用其余记录重新计算相关系数；将各次计算得到的最小值和最大值列为“相关系数复算范围”。典型结果见表~\ref{tab:r46-4-3}。
 
-\begin{table}[H]
-\centering
-\setstretch{1}
-\fontsize{12}{15}\selectfont
-\setlength{\tabcolsep}{3pt}
-\renewcommand{\arraystretch}{1.5}
-\caption{典型套铣作业中钻压与地面扭矩的相关性}\label{tab:r46-4-3}
-\begin{tabular}{>{\centering\arraybackslash}m{0.250000\dimexpr\linewidth-8\tabcolsep-5\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.250000\dimexpr\linewidth-8\tabcolsep-5\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.250000\dimexpr\linewidth-8\tabcolsep-5\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.250000\dimexpr\linewidth-8\tabcolsep-5\arrayrulewidth\relax}}
-\toprule
- 连续作业组 & 参数阶段数 & 相关系数ρ & 相关系数复算范围 \\ \midrule
-BZ34-9-A26 第1趟第1组 & 9 & −0.834 & $-0.929\sim-0.761$ \\ 
-BZ34-9-A26 第4趟第1组 & 12 & −0.476 & $-0.658\sim-0.306$ \\ 
-CFD6-4-A5 第2趟第2组 & 6 & +0.277 & $-0.224\sim+0.860$ \\ 
-SZ36-1-A21 第1趟第1组 & 6 & +1.000 & $+1.000\sim+1.000$ \\ \bottomrule
-\end{tabular}
+\begin{table}[htbp]
+	\centering
+	\caption{典型套铣作业中钻压与地面扭矩的相关性}
+	\label{tab:r46-4-3}
+	\renewcommand{\arraystretch}{1.5}
+	\begin{tabularx}{.9\textwidth}{lCCC}
+		\toprule
+		连续作业组 & 参数阶段数 & 相关系数$\rho$ & 相关系数复算范围 \\
+		\midrule
+		BZ34-9-A26 第1趟第1组 & 9 & $-$0.834 & $-0.929\sim-0.761$ \\
+		BZ34-9-A26 第4趟第1组 & 12 & $-$0.476 & $-0.658\sim-0.306$ \\
+		CFD6-4-A5 第2趟第2组 & 6 & $+$0.277 & $-0.224\sim+0.860$ \\
+		SZ36-1-A21 第1趟第1组 & 6 & $+$1.000 & $+1.000\sim+1.000$ \\
+		\bottomrule
+	\end{tabularx}
 \end{table}
 
 BZ34-9-A26的两组结果呈负相关，SZ36-1-A21组呈正相关；CFD6-4-A5组在复算中出现相关系数正负转换，说明相关判断容易受到少量记录的影响。同一参数在不同作业组中的变化关系存在差异，需要结合具体井况和作业过程分析。
@@ -84,7 +87,7 @@ BZ34-9-A26的两组结果呈负相关，SZ36-1-A21组呈正相关；CFD6-4-A5组
 
 在A26第3趟套铣中，活动管柱、替入5 m³稠塞并调整参数后，累计进尺由0.10 m增加到0.15 m，反映出联合处理后的作业改善。A26第1趟后期则出现钻压增大、进尺逐渐减慢的情况。这些过程记录显示，现场参数调整往往伴随井下作业条件变化。
 
-切割资料中，11次具有初始阶段起止扭矩记录的作业有10次扭矩中点下降；10次可比较末段与同转速空转扭矩的作业中，有8次报告范围重叠。这些现象可辅助观察切割过程，但切断结果仍需结合提活、割口或打捞记录确认。LD5-2N-A19的C02作业在排量降回10 m³/h后，泵压仍为8.3 MPa，高于同排量早期的$1.82\sim2.84$ MPa；出井试验发现马达不能正常旋转，说明压力升高还可能与设备异常有关。
+切割资料中，11次具有初始阶段起止扭矩记录的作业有10次扭矩中点下降；10次可比较末段与同转速空转扭矩的作业中，有8次报告范围重叠。这些现象可辅助观察切割过程，但切断结果仍需结合提活、割口或打捞记录确认。LD5-2N-A19的CO2作业在排量降回10 m³/h后，泵压仍为8.3 MPa，高于同排量早期的$1.82\sim2.84$ MPa；出井试验发现马达不能正常旋转，说明压力升高还可能与设备异常有关。
 
 \subsection{现场应用效果的评价方法}
 \label{sec:r46-4.2.3}
@@ -95,38 +98,38 @@ BZ34-9-A26的两组结果呈负相关，SZ36-1-A21组呈正相关；CFD6-4-A5组
 
 现场资料用于识别调参、停滞、恢复推进和工具异常等过程特征；室内参数网格用于比较相同工具、材料条件下的钻压与转速响应。两类分析相互补充：现场记录解释工况差异，室内数据提供可对照的性能关系。
 
-\section{室内套磨铣实验及分析方法}
+\section{110 mm套磨铣实验及分析方法}
 \label{sec:r46-4.3}
 
 \subsection{实验装置与工具材料}
 \label{sec:r46-4.3.1}
 
-室内套磨铣实验采用油气井筒清洁工具工作性能实验系统。装置包括工具与工件夹持机构、旋转驱动模块、钻压控制模块和信号采集显示模块，配备超景深显微成像系统、电子天平等测量设备。装置与装夹形式见图5-1。
+室内套磨铣实验采用油气井筒清洁工具工作性能实验系统。装置包括工具与工件夹持机构、旋转驱动模块、钻压控制模块和信号采集显示模块，配备超景深显微成像系统、电子天平等测量设备。装置与装夹形式见图~\ref{fig:r46-4-1}。
 
 \begin{figure}[H]
-\centering
-\includegraphics[width=145.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig4-01-1.jpg}
-\caption{套磨铣实验系统及工具工件装夹}
-\label{fig:r46-4-1}
+	\centering
+	\includegraphics[width=145.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig4-01-1.jpg}
+	\caption{套磨铣实验系统及工具工件装夹}
+	\label{fig:r46-4-1}
 \end{figure}
 
-装置的转速调节范围为$20\sim200$ r/min，轴向加载范围为$0\sim20$ kN。本次实验选取钻压$2\sim20$ kN、转速$20\sim100$ r/min进行分析。工装适配工具外径$100\sim110$ mm、含堆焊磨粒总长$230\sim240$ mm及NC26母扣连接。采用平底式磨铣、刀翼式磨铣和套铣三类工具，与45号钢、铸铁形成表5-4所列的四组实验条件。
+装置的转速调节范围为$20\sim200$ r/min，轴向加载范围为$0\sim20$ kN。本次实验选取钻压$2\sim20$ kN、转速$20\sim100$ r/min进行分析。工装适配工具外径$100\sim110$ mm、含堆焊磨粒总长$230\sim240$ mm及NC26母扣连接。采用平底式磨铣、刀翼式磨铣和套铣三类工具，与45号钢、铸铁形成表~\ref{tab:r46-4-4}所列的四组实验条件。
 
-\begin{table}[H]
-\centering
-\setstretch{1}
-\fontsize{12}{15}\selectfont
-\setlength{\tabcolsep}{3pt}
-\renewcommand{\arraystretch}{1.5}
-\caption{室内套磨铣实验的工具与材料}\label{tab:r46-4-4}
-\begin{tabular}{>{\centering\arraybackslash}m{0.250000\dimexpr\linewidth-8\tabcolsep-5\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.250000\dimexpr\linewidth-8\tabcolsep-5\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.250000\dimexpr\linewidth-8\tabcolsep-5\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.250000\dimexpr\linewidth-8\tabcolsep-5\arrayrulewidth\relax}}
-\toprule
- 实验分组 & 工具 & 工件材料 & 钻压与转速组合数 \\ \midrule
-第1组 & 平底式磨铣工具 & 45号钢 & 90 \\ 
-第2组 & 刀翼式磨铣工具 & 45号钢 & 90 \\ 
-第3组 & 套铣工具 & 45号钢 & 90 \\ 
-第4组 & 套铣工具 & 铸铁 & 90 \\ \bottomrule
-\end{tabular}
+\begin{table}[htbp]
+	\centering
+	\caption{室内套磨铣实验的工具与材料}
+	\label{tab:r46-4-4}
+	\renewcommand{\arraystretch}{1.5}
+	\begin{tabularx}{.9\textwidth}{CCCC}
+		\toprule
+		实验分组 & 工具 & 工件材料 & 钻压与转速组合数 \\
+		\midrule
+		第1组 & 平底式磨铣工具 & 45号钢 & 90 \\
+		第2组 & 刀翼式磨铣工具 & 45号钢 & 90 \\
+		第3组 & 套铣工具 & 45号钢 & 90 \\
+		第4组 & 套铣工具 & 铸铁 & 90 \\
+		\bottomrule
+	\end{tabularx}
 \end{table}
 
 \subsection{实验参数与性能指标}
@@ -143,42 +146,42 @@ BZ34-9-A26的两组结果呈负相关，SZ36-1-A21组呈正相关；CFD6-4-A5组
 
 在相同钻压、转速下，以平底式和刀翼式磨铣工具加工45号钢的实验结果比较工具类型的影响，以同一套铣工具加工45号钢和铸铁的结果比较工件材料的影响。第六章在此基础上综合考虑钻速、扭矩和磨损量，开展多目标作业参数优选。
 
-\section{室内实验的影响因素分析结果}
+\section{110 mm室内实验的影响因素分析结果}
 \label{sec:r46-4.4}
 
 \subsection{钻压与各项性能的关系}
 \label{sec:r46-4.4.1}
 
-四组实验中，钻压与钻速的相关系数为$0.772\sim0.949$，与扭矩为$0.361\sim0.905$，与磨损量为$0.781\sim0.991$，均高于对应转速与性能的整体相关系数。两类磨铣工具中，钻压与磨损量的相关系数分别为0.987和0.991，提高钻压时，钻速增加通常伴随工具磨损增加。图5-2的上三角为相关系数，下三角为散点与线性趋势，对角线为各参数的数据分布。
+四组实验中，钻压与钻速的相关系数为$0.772\sim0.949$，与扭矩为$0.361\sim0.905$，与磨损量为$0.781\sim0.991$，均高于对应转速与性能的整体相关系数。两类磨铣工具中，钻压与磨损量的相关系数分别为0.987和0.991，提高钻压时，钻速增加通常伴随工具磨损增加。图~\ref{fig:r46-4-2}的上三角为相关系数，下三角为散点与线性趋势，对角线为各参数的数据分布。
 
 \begin{figure}[H]
-\centering
-\includegraphics[width=145.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig4-02-1.png}
-\caption{四组工具与材料条件下的五变量相关性矩阵}
-\label{fig:r46-4-2}
+	\centering
+	\includegraphics[width=145.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig4-02-1.png}
+	\caption{四组工具与材料条件下的五变量相关性矩阵}
+	\label{fig:r46-4-2}
 \end{figure}
 
 对钻速变化进行分解，四组中由钻压水平差异解释的变异占比分别为89.5\%、91.8\%、64.7\%和75.4\%，由转速水平差异解释的占比分别为5.1\%、2.9\%、25.3\%和12.3\%。结合相关系数与曲线比较，钻压是本次实验范围内与钻速变化关系较强的因素，转速的作用在套铣组中比两类磨铣组更明显。
 
-在高钻压区间，继续加压的收益因工具和材料而异。按同一钻压下9个转速的结果等权平均，钻压由16增至20 kN时，平底式磨铣平均钻速由9.19增至9.58 mm/min，提高4.3\%，平均磨损量由4.44增至5.21 g，提高17.5\%；套铣45号钢的平均钻速由13.15增至13.45 mm/min，提高2.2\%，平均扭矩和磨损量分别降低2.9\%和1.8\%。同一区间内，刀翼式磨铣和套铣铸铁平均钻速分别提高10.7\%和17.6\%，平均磨损量分别增加20.3\%和16.0\%。选参时需分别比较各组的提速、负载和磨损变化。图5-3以散点展示各转速下的实测值，连线表示同一钻压下的平均钻速，标注数值为$16\sim20$ kN区间的平均钻速增幅。
+在高钻压区间，继续加压的收益因工具和材料而异。按同一钻压下9个转速的结果等权平均，钻压由16增至20 kN时，平底式磨铣平均钻速由9.19增至9.58 mm/min，提高4.3\%，平均磨损量由4.44增至5.21 g，提高17.5\%；套铣45号钢的平均钻速由13.15增至13.45 mm/min，提高2.2\%，平均扭矩和磨损量分别降低2.9\%和1.8\%。同一区间内，刀翼式磨铣和套铣铸铁平均钻速分别提高10.7\%和17.6\%，平均磨损量分别增加20.3\%和16.0\%。选参时需分别比较各组的提速、负载和磨损变化。图~\ref{fig:r46-4-3}以散点展示各转速下的实测值，连线表示同一钻压下的平均钻速，标注数值为$16\sim20$ kN区间的平均钻速增幅。
 
 \begin{figure}[H]
-\centering
-\includegraphics[width=145.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig4-03-1.png}
-\caption{四组实验中钻速随钻压的变化}
-\label{fig:r46-4-3}
+	\centering
+	\includegraphics[width=145.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig4-03-1.png}
+	\caption{四组实验中钻速随钻压的变化}
+	\label{fig:r46-4-3}
 \end{figure}
 
 \subsection{转速与性能的关系随钻压区间变化}
 \label{sec:r46-4.4.2}
 
-整个实验范围内，转速与钻速的相关系数为$0.163\sim0.502$，低于钻压与钻速的相关系数；转速与扭矩、磨损量的相关性也较弱。按钻压分区后，各项关系明显变化，见图5-4。低、中、高钻压区间分别为$2\sim10$ kN、$12\sim16$ kN和$18\sim20$ kN。
+整个实验范围内，转速与钻速的相关系数为$0.163\sim0.502$，低于钻压与钻速的相关系数；转速与扭矩、磨损量的相关性也较弱。按钻压分区后，各项关系明显变化，见图~\ref{fig:r46-4-4}。低、中、高钻压区间分别为$2\sim10$ kN、$12\sim16$ kN和$18\sim20$ kN。
 
 \begin{figure}[H]
-\centering
-\includegraphics[width=145.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig4-04-1.png}
-\caption{不同钻压区间内转速与三项性能的相关性}
-\label{fig:r46-4-4}
+	\centering
+	\includegraphics[width=145.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig4-04-1.png}
+	\caption{不同钻压区间内转速与三项性能的相关性}
+	\label{fig:r46-4-4}
 \end{figure}
 
 低、中、高钻压区间内，转速与钻速的相关系数分别为$-0.005\sim0.379$、$0.705\sim0.951$和$0.953\sim0.997$。固定16 kN，将转速由20提高至100 r/min时，四组钻速分别由7.47、6.76、8.02和5.87 mm/min提高到11.43、10.73、19.28和13.24 mm/min，显示提高转速的收益与钻压条件相互配合。
@@ -188,56 +191,143 @@ BZ34-9-A26的两组结果呈负相关，SZ36-1-A21组呈正相关；CFD6-4-A5组
 \subsection{工具类型与工件材料的影响}
 \label{sec:r46-4.4.3}
 
-\begin{table}[H]
-\centering
-\setstretch{1}
-\fontsize{12}{15}\selectfont
-\setlength{\tabcolsep}{3pt}
-\renewcommand{\arraystretch}{1.5}
-\caption{四组实验的实测性能范围}\label{tab:r46-4-5}
-\begin{tabular}{>{\centering\arraybackslash}m{0.250000\dimexpr\linewidth-8\tabcolsep-5\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.250000\dimexpr\linewidth-8\tabcolsep-5\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.250000\dimexpr\linewidth-8\tabcolsep-5\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.250000\dimexpr\linewidth-8\tabcolsep-5\arrayrulewidth\relax}}
-\toprule
- 工具与材料 & 钻速\newline{}(mm/min) & 扭矩\newline{}(N·m) & 磨损量\newline{}(g) \\ \midrule
-平底式磨铣45号钢 & $1.78\sim11.43$ & $12.21\sim36.64$ & $0.96\sim5.58$ \\ 
-刀翼式磨铣45号钢 & $0.88\sim11.61$ & $7.39\sim39.52$ & $0.78\sim5.62$ \\ 
-套铣45号钢 & $2.51\sim19.28$ & $32.23\sim70.53$ & $1.98\sim8.50$ \\ 
-套铣铸铁 & $1.52\sim16.33$ & $17.03\sim78.88$ & $0.68\sim11.99$ \\ \bottomrule
-\end{tabular}
+\begin{table}[htbp]
+	\centering
+	\caption{四组实验的实测性能范围}
+	\label{tab:r46-4-5}
+	\renewcommand{\arraystretch}{1.5}
+	\begin{tabularx}{.9\textwidth}{CCCC}
+		\toprule
+		工具与材料 & \begin{tabular}[c]{@{}c@{}}钻速\\ (mm/min)\end{tabular} & \begin{tabular}[c]{@{}c@{}}扭矩\\ (N·m)\end{tabular} & \begin{tabular}[c]{@{}c@{}}磨损量\\ (g)\end{tabular} \\
+		\midrule
+		平底式磨铣45号钢 & $1.78\sim11.43$ & $12.21\sim36.64$ & $0.96\sim5.58$ \\
+		刀翼式磨铣45号钢 & $0.88\sim11.61$ & $7.39\sim39.52$ & $0.78\sim5.62$ \\
+		套铣45号钢 & $2.51\sim19.28$ & $32.23\sim70.53$ & $1.98\sim8.50$ \\
+		套铣铸铁 & $1.52\sim16.33$ & $17.03\sim78.88$ & $0.68\sim11.99$ \\
+		\bottomrule
+	\end{tabularx}
 \end{table}
 
-在加工45号钢的90个相同钻压、转速工况中，刀翼式磨铣相对平底式磨铣的平均钻速、扭矩和磨损量分别变化−9.8\%、−4.2\%和−4.1\%。刀翼式磨铣在20 kN、100 r/min时取得11.61 mm/min的单点最高钻速。比较两类工具时，应同时考虑整个实验参数范围内的钻速、扭矩和工具消耗。
+表~\ref{tab:r46-4-5}列出四组实验的实测性能范围。在加工45号钢的90个相同钻压、转速工况中，刀翼式磨铣相对平底式磨铣的平均钻速、扭矩和磨损量分别变化$-$9.8\%、$-$4.2\%和$-$4.1\%。刀翼式磨铣在20 kN、100 r/min时取得11.61 mm/min的单点最高钻速。比较两类工具时，应同时考虑整个实验参数范围内的钻速、扭矩和工具消耗。
 
 同一套铣工具加工铸铁时，相对加工45号钢的平均钻速低35.2\%，平均扭矩低4.8\%，平均磨损量低0.6\%；而在16、18、20 kN的27组相同参数设置下，铸铁组的平均扭矩和磨损量分别高27.1\%和33.0\%。材料变化不仅影响平均性能，还改变高载荷区间的扭矩和磨损水平。两类套铣材料条件因此需要分别分析和建模。
 
 同一工具、材料条件下，提高钻速常伴随扭矩和磨损变化。不同工具类型及工件材料分别分析，作业参数优选据此综合考虑效率要求、工作负载与工具消耗。
 
-\section{应用数据集与可视化查询}
+\section{146 mm套铣工况的响应与影响因素}
 \label{sec:r46-4.5}
+
+146 mm 工况的响应、时间和计算进尺采用 18 组数据，相关性、预测与参数优选均基于该数据；设备、工具及试件照片来自实际实验。该组与110 mm四组分别分析，保留不同材料、参数范围和磨损指标的差异。
+
+\subsection{实验对象与指标定义}
+\label{sec:r46-4.5.1}
+
+水平钻机通过回转驱动带动套铣工具旋转，给进机构沿试件轴向推进。42CrMo试件由夹持装置固定，工具工作端与试件端部接触，形成环形切削区域。图~\ref{fig:r46-4-5}和图~\ref{fig:r46-4-6}给出设备与装夹记录，图~\ref{fig:r46-4-7}比较工具工作端在实验前后的形貌。分析对象与参数范围见表~\ref{tab:r46-4-6}。
+
+\begin{table}[htbp]
+	\centering
+	\caption{146 mm套铣分析对象与参数范围}
+	\label{tab:r46-4-6}
+	\renewcommand{\arraystretch}{1.5}
+	\begin{tabularx}{.9\textwidth}{lX}
+		\toprule
+		项目 & 内容 \\
+		\midrule
+		工具及工件 & 外径146 mm套铣工具；42CrMo材料 \\
+		加载方式 & 水平钻机回转与轴向给进 \\
+		钻压水平 & 20、25、35 kN \\
+		转速水平 & 60、75、90、120、150、180 r/min \\
+		工况数量 & 3个钻压水平$\times$6个转速水平，共18组 \\
+		响应指标 & 钻速（mm/min）、扭矩（N·m）、磨损高度（mm） \\
+		\bottomrule
+	\end{tabularx}
+\end{table}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=139.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig4-05-1.jpg}
+	\caption{水平钻机套铣实验装置}
+	\label{fig:r46-4-5}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=68.600mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig4-06-1.jpg}\hfill
+	\includegraphics[width=68.600mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig4-06-2.jpg}
+	\caption{工具与试件装夹及接触位置（左为实验前，右为实验中）}
+	\label{fig:r46-4-6}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=63.100mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig4-07-1.jpg}\hfill
+	\includegraphics[width=63.100mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig4-07-2.jpg}
+	\caption{工具工作端形貌（左为实验前，右为实验后）}
+	\label{fig:r46-4-7}
+\end{figure}
+
+钻速由对应区间内的轴向进尺除以作业时间计算；扭矩按工况响应记录，磨损高度为相应区间内工具高度的减少量。18组响应的钻速为$0.388\sim1.008$ mm/min，扭矩为$1046.09\sim9837.37$ N·m，磨损高度为$0.179\sim0.462$ mm。磨损高度随作业参数、持续时间及初始工具状态共同变化，评价时保留其对应的工况时间。
+
+\subsection{钻压与转速对性能的影响}
+\label{sec:r46-4.5.2}
+
+不同钻压下的转速响应见图~\ref{fig:r46-4-8}。20 kN下钻速在90 r/min达到0.617 mm/min，之后总体回落；25 kN下75 r/min对应0.754 mm/min，高于其后各转速。35 kN下，转速由75提高到150 r/min，钻速由0.921增至1.008 mm/min，提高9.4\%，同期扭矩由4253.84增至9696.73 N·m，增加128.0\%。转速的选择因钻压而异，高钻压下应同时比较提速收益、扭矩负载和高度消耗。
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=145.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig4-08-1.png}
+	\caption{146 mm套铣在不同钻压下的三项性能随转速变化}
+	\label{fig:r46-4-8}
+\end{figure}
+
+对每个钻压水平下的六个转速等权平均，20、25、35 kN的平均钻速分别为0.520、0.657、0.902 mm/min，平均扭矩分别约为3345、3833、7649 N·m，平均磨损高度分别为0.261、0.339、0.417 mm。钻压由20增至35 kN时，平均钻速提高73.5\%，扭矩增加128.7\%，磨损高度增加60.0\%。因此，增压带来的进尺收益需要与负载和工具消耗共同评价。
+
+\subsection{多因素相关性与分组应用}
+\label{sec:r46-4.5.3}
+
+18组工况的Pearson相关性见图~\ref{fig:r46-4-9}。钻压与钻速、磨损高度的相关系数分别为0.787、0.773，高于转速对应的0.255、0.342；扭矩与钻压、转速的相关系数分别为0.676、0.649。钻速与扭矩、磨损高度的系数分别为0.708、0.753，表明较高钻速通常伴随较大的负载或高度消耗。整体相关性与分钻压响应曲线结合，用于确定后续选参时需要同时考虑的性能。
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=145.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig4-09-1.png}
+	\caption{146 mm套铣钻压、转速与三项响应的Pearson相关性}
+	\label{fig:r46-4-9}
+\end{figure}
+
+五组数据均采用钻压和转速作为组内输入，工具类型、尺寸与工件材料用于划分适用对象。110 mm组的质量磨损与146 mm组的磨损高度保留各自单位；各组分别建立模型和筛选参数，尺寸差异不直接作为已训练的连续预测变量。
+
+\section{应用数据集与可视化查询}
+\label{sec:r46-4.6}
 
 井筒工具应用数据集设置“现场数据”和“室内实验数据”两个页面。现场页面按井号、工艺类型及工具查询作业过程，室内页面按工具、工件材料和实验参数查询性能结果，并关联相应照片。
 
 \subsection{现场数据查询}
-\label{sec:r46-4.5.1}
+\label{sec:r46-4.6.1}
 
 现场页面覆盖12口井，关联136张照片。选择井号、工艺类型、工具名称及趟次后，可查看参数变化、进尺与出井检查。磨铣、套铣记录显示钻压及地面扭矩，切割记录显示排量及泵压，并可回查作业原文。
 
 \begin{figure}[H]
-\centering
-\includegraphics[width=120.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig4-05-1.png}
-\caption{井筒工具应用数据集现场查询界面}
-\label{fig:r46-4-5}
+	\centering
+	\includegraphics[width=120.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig4-10-1.png}
+	\caption{井筒工具应用数据集现场查询界面}
+	\label{fig:r46-4-10}
 \end{figure}
 
 \subsection{室内实验查询与数据维护}
-\label{sec:r46-4.5.2}
+\label{sec:r46-4.6.2}
 
-室内页面收录四组360个工况，可按工具、材料、钻压和转速查询钻速、扭矩及质量损失。参数矩阵显示钻速随钻压、转速的分布，散点图用于对照效率与负载，照片关联到工具、装夹和测量过程。
+Power BI室内页面已收录110 mm四组360个工况，可按工具、材料、钻压和转速查询钻速、扭矩与质量损失。参数矩阵显示钻速分布，散点图对照效率与负载，照片关联到工具、装夹和测量过程。146 mm分析材料独立保存，其模型与分析结果在本报告中列示，数据集页面按实际收录范围展示。
 
 \begin{figure}[H]
-\centering
-\includegraphics[width=120.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig4-06-1.png}
-\caption{井筒工具应用数据集室内实验查询界面}
-\label{fig:r46-4-6}
+	\centering
+	\includegraphics[width=120.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig4-11-1.png}
+	\caption{井筒工具应用数据集室内实验查询界面}
+	\label{fig:r46-4-11}
 \end{figure}
 
-数据集配套现场及室内登记模板、照片关联规则、数据更新程序和使用手册。已形成8章逐步操作教程，覆盖资料整理、逐项填写、照片关联和刷新核对，支持新增记录进入同一查询工程。
+数据集配套现场及室内登记模板、照片关联规则、数据更新程序和8章操作教程，覆盖资料整理、逐项填写、照片关联和刷新核对。新增记录按来源、工具、工况和测量单位登记，再核对查询页面与源记录的一致性。
+
+\section{本章研究成果}
+\label{sec:r46-4.7}
+
+形成了现场过程分析与室内参数对照相结合的多因素研究方法。现场资料识别不同作业组的参数响应及停滞恢复过程，110 mm四组揭示钻压、转速及工具材料差异对性能的影响，146 mm组展示较大尺寸套铣中的效率与负载取舍。分组结果为性能预测、参数优选和应用资料查询建立了统一的数据对应关系。

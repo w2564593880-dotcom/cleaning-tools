@@ -237,9 +237,13 @@
     {\Large \textcolor{red}{2026年10月} \par}
 \end{titlepage}
 
+% === 开篇：项目总体情况（置于目录之前，罗马数字页码） ===
+\clearpage
+\pagenumbering{Roman}
+\input{chapters/overview/overview.tex}
+
 % === 目录部分 ===
 \clearpage
-\pagenumbering{Roman} 
 \tableofcontents
 
 % === 正文部分 ===
@@ -271,8 +275,8 @@
 	\input{chapters/chapter3/part1-3in1-design.tex}
 	\input{chapters/chapter3/part1-3in1-verification.tex}
 	\input{chapters/chapter3/part1-3in1-hydraulic-model.tex}
-	\input{chapters/chapter3/part1-3in1-setup-and-maintainance.tex}
 	\input{chapters/chapter3/part1-3in1-performance-test.tex}
+	\input{chapters/chapter3/part1-3in1-setup-and-maintainance.tex}
 \section{“四合一”通刮刷磁集成式井筒清洁工具设计}\label{siheyi}
 	\input{chapters/chapter3/part2-4in1.tex}
   \input{chapters/chapter3/part2-4in1-simulation.tex}

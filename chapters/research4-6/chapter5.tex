@@ -1,380 +1,693 @@
+% !TeX root = ../../main.tex
 \chapter{井筒清洁工具性能评价与作业参数优选研究}
 \label{chap:r46-5}
 
-本项研究围绕四合一通刮刷磁集成式工具、大容量强磁吸附工具、多功能过滤工具、可变径刮管工具和三合一脉冲式冲刮刷工具，形成室内测试评价工艺。已开展冲砂、铁屑运移、菱形刮板、斜齿形刮板、套磨铣、毛刷刷洗和磁铁吸附七项实验，获得清洁部件功能及套磨铣作业性能的评价结果。
+围绕四合一通刮刷磁工具、大容量强磁吸附工具、多功能过滤工具、可变径刮管工具和三合一脉冲式冲刮刷工具，形成与实际使用方式相对应的室内测试评价工艺。评价内容包括功能与清洁效果、耐用性和作业效率；已有刮板、毛刷、磁吸、冲砂及铁屑运移实验提供部件性能与过程响应依据。
 
-作业参数优选采用第五章的四组套磨铣实验数据，按工具和工件材料分别建立性能预测模型，以钻速为效率指标，同时考虑工作扭矩和磨损量。通过六种算法比较、五折交叉验证、候选工况搜索及Pareto非支配筛选，形成钻压与转速的智能优化方法。
+套磨铣参数优选面向第五章的五组数据，分别建立钻速、扭矩与磨损预测模型，以六种算法比较、交叉验证、Pareto非支配筛选和综合评价完成选参。五类研发清洁工具是测试评价对象，五组套磨铣数据是建模分组，两者分别按自身的对象与指标组织研究结果。
 
-\section{研发清洁工具的实验评价方法}
+\section{井筒清洁工具应用效果室内测试评价工艺}
 \label{sec:r46-5.1}
-\label{guaban}
 
-% 姚老师待修订范围：5.1及5.1.1—5.1.4；提示仅保留于源码注释和PR说明。
+本工艺面向“四合一”通刮刷磁工具、大容量强磁吸附工具、多功能过滤工具、可变径刮管工具和“三合一”脉冲式冲刮刷工具，利用井筒清洁关键工具评价系统及配套仪器开展室内测试。通过功能检查、清洁效果测量、重复使用和作业计时，评价工具的运行情况、附着物清除或杂质回收效果、累计使用后的性能变化及完成规定任务所需时间。
 
-评价工艺包含30项方法：共性检查4项、四合一工具5项、强磁吸附工具6项、过滤工具5项、可变径工具4项、三合一工具6项。各方法明确试验对象、可控工况、测量指标和试前试后检查。表6-1列出方法组成及对应的评价要求；具体实施结果按本章刮板、毛刷、磁吸及套磨铣试验分别报告。
+试验时，将工具安装在与其规格匹配的套管或筛管内，按实际使用方式进行旋转、前后移动、通液及刮板张开与收回等操作。记录推拉力、扭矩、转速、压力、流量及时间，称量清洁前后的附着物、磁吸部件吸附的铁屑和过滤工具收集的杂质，并测量主要零件的磨损。各类工具分别规定试验步骤、测量方法和评价指标，形成用于功能、耐用性及作业效率评价的室内测试方法。
 
-\begin{table}[H]
-\centering
-\setstretch{1}
-\fontsize{12}{15}\selectfont
-\setlength{\tabcolsep}{3pt}
-\renewcommand{\arraystretch}{1.5}
-\caption{五类研发工具的实验评价重点}\label{tab:r46-5-1}
-\begin{tabular}{>{\centering\arraybackslash}m{0.219162\dimexpr\linewidth-6\tabcolsep-4\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.445210\dimexpr\linewidth-6\tabcolsep-4\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.335629\dimexpr\linewidth-6\tabcolsep-4\arrayrulewidth\relax}}
-\toprule
- 方法分组 & 方法组成 & 主要评价内容 \\ \midrule
-共性检查 4项 & 尺寸与接口检查；通径与循环检查；拉扭承载评价；循环磨损与功能复验 & 设计尺寸、泄漏及流通状态、载荷响应、试后尺寸与功能保持 \\ 
-四合一工具 5项 & 通过性；周向刮刷覆盖；刮板除垢；毛刷刷洗；磁吸与模块配合 & 通、刮、刷、磁功能，360°覆盖、阻力、去除量和模块状态 \\ 
-大容量强磁 6项 & 静态拉脱；磁场分布；动态捕集；有效容量；带屑保持；耐温后复测 & 吸附力、捕集量、容量及热前热后性能；对应本型号合同指标 \\ 
-多功能过滤 5项 & 通径；分级截留；存储容量；旋转与压差；启闭及清理复测 & 流通能力、截留率、碎屑储量和清理后功能 \\ 
-可变径刮管 4项 & 小径通过；投球张开；两种套管刮管；复位及循环动作 & 9-5/8″与7″套管适应性、张开/收拢尺寸、动作保持及卡滞 \\ 
-三合一工具 6项 & 脉冲波形；喷头旋转；液压刮管动作；密封筒通过及筛盲管清洁；冲刮刷协同；防卡与热态复验 & 4.75″密封筒通过、5-1/2″筛盲管清洁，脉冲、覆盖、负载和耐温功能 \\ \bottomrule
-\end{tabular}
-\end{table}
-
-\subsection{刮板刮削效果评价}
+\subsection{评价内容与试验安排}
 \label{sec:r46-5.1.1}
 
-采用转盘式台架，以重晶石粉与硫铝酸盐水泥按质量比3\ensuremath{\mathbin{:}}4制成的模拟硬垢为对象。垢样随转盘运动，刮板由弹簧提供压紧作用；限位机构约束五个自由度，保留压紧方向的浮动。试验平均线速度约0.05 m/s，单次刮削行程约0.5 m，用于比较菱形及斜齿形刮板的去除量和排屑状态。
+五类工具的功能和清洁效果试验见表\ref{tab:r46-5-1}，耐用性与作业效率试验见表\ref{tab:r46-5-2}。各类工具的具体步骤、测量方法、指标计算和结果评价见\ref{sec:r46-5.1.4}—\ref{sec:r46-5.1.8}。试验围绕工具的实际用途设置，评价内容、试验项目与指标逐项对应。
+
+\begin{table}[htbp]
+	\centering
+	\caption{五类工具功能与清洁效果试验}
+	\label{tab:r46-5-1}
+	\small
+	\setlength{\tabcolsep}{3pt}
+	\renewcommand{\arraystretch}{1.3}
+	\begin{tabularx}{\textwidth}{CCCC}
+		\toprule
+		评价对象 & 评价内容 & 试验项目 & 评价指标 \\
+		\midrule
+		“四合一”通刮刷磁工具 & 工具通过性；\newline 刮刷清洁效果；\newline 铁屑吸附能力 & 管内通过与刮刷清洁试验；\newline 铁屑吸附试验 & 通过管段所需推拉力；\newline 附着物清除比例；\newline 铁屑吸附比例 \\
+		\midrule
+		大容量强磁吸附工具 & 铁屑吸附能力；\newline 冲洗和上提后的铁屑保留能力；\newline 容屑能力 & 流动液体中的铁屑吸附试验；\newline 铁屑保留与容量试验 & 铁屑吸附比例；\newline 铁屑保留比例；\newline 最大铁屑保留质量 \\
+		\midrule
+		多功能过滤工具 & 过滤通道开闭；\newline 不同粒径杂质收集效果；\newline 杂质收集容量 & 下放与上提时的过滤功能检查；\newline 杂质过滤和收集容量试验 & 通道开闭异常次数；\newline 各粒径组杂质收集比例；\newline 过滤组件进出口压差；\newline 可收集的杂质质量 \\
+		\midrule
+		可变径刮管工具 & 刮板张开与收回；\newline 贴壁刮削效果 & 刮板张开与收回试验；\newline 管壁刮削试验 & 张开、收回时的压差及外径；\newline 附着物清除比例 \\
+		\midrule
+		“三合一”脉冲式冲刮刷工具 & 整套工具运行情况；\newline 套管内壁清洁效果；\newline 筛孔疏通效果 & 整套工具运行检查；\newline 套管和筛管清洁试验 & 脉冲压力变化、喷头转速；\newline 附着物清除比例；\newline 筛管流量恢复比例 \\
+		\bottomrule
+	\end{tabularx}
+\end{table}
+
+耐用性试验在同一套工作部件上累计使用，测量磨损并复测性能。作业效率试验在相同初始条件和任务要求下，比较完成时间及单位时间处理量。
+
+\begin{table}[htbp]
+	\centering
+	\caption{五类工具耐用性与作业效率试验}
+	\label{tab:r46-5-2}
+	\small
+	\setlength{\tabcolsep}{3pt}
+	\renewcommand{\arraystretch}{1.3}
+	\begin{tabularx}{\textwidth}{CCC}
+		\toprule
+		评价对象 & 耐用性检查 & 作业效率比较 \\
+		\midrule
+		“四合一”通刮刷磁工具 & 反复刮刷，累计行程，测刮板、刷丝磨损；\newline 复测附着物清除比例和铁屑吸附比例。 & 同等污染的管段分别清洁不同时间，称量残留；\newline 比较达到清洁要求的时间及每分钟清除量。 \\
+		\midrule
+		大容量强磁吸附工具 & 重复吸附、冲洗上提、清理安装，测保护件磨损；\newline 分别复测吸附比例和保留比例。 & 固定铁屑组成和投入量，测带出质量与运行时间；\newline 比较每分钟带出量及吸附、保留比例。 \\
+		\midrule
+		多功能过滤工具 & 重复下放、上提过滤和清洗，测胶筒磨损，检查滤网及套筒；\newline 复测收集比例和清洗后压差。 & 改变上提速度，测滤液体积、杂质质量及时间；\newline 比较每分钟过滤量和收集量，并核对压差与收集比例。 \\
+		\midrule
+		可变径刮管工具 & 重复张开、刮削、收回，测刮板磨损；\newline 统计正常张开收回的次数比例，复测清除比例。 & 记录张开、刮削和收回时间，称量清除质量；\newline 比较达到清洁要求的总时间及每分钟清除量。 \\
+		\midrule
+		“三合一”脉冲式冲刮刷工具 & 连续运行，测喷嘴、刮板、刷丝磨损，记录功能异常；\newline 复测清除比例或筛管流量恢复比例。 & 同等污染或堵塞的管段分别清洁不同时间；\newline 比较达到清除或流量恢复要求的时间，套管试验另测每分钟清除量。 \\
+		\bottomrule
+	\end{tabularx}
+\end{table}
+
+\subsection{试验装置与测量位置}
+\label{sec:r46-5.1.2}
+
+试验系统包括机械主机、工具和管段的固定装置、供液循环部分及控制系统，整体模型见图\ref{fig:r46-5-1}。机械主机带动工具旋转和前后移动，泵组为工具提供试验用液体。天平、量具和相机分别用于称重、测量尺寸和记录试验前后的状态。
 
 \begin{figure}[H]
-\centering
-\includegraphics[width=123.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig5-01-1.png}
-\caption{刮板除垢评价装置及装夹方式}
-\label{fig:r46-5-1}
+	\centering
+	\includegraphics[width=109.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig5-01-1.png}
+	\caption{井筒清洁关键工具评价系统整体模型}
+	\label{fig:r46-5-1}
 \end{figure}
 
-分别测量弹簧原长、参考预紧状态及刮削后的特征尺寸，结合横梁挠曲和沟槽累积坑深回算弹簧压缩估计值δs。单次刮削厚度δc为同一测点相邻两次累积坑深的增量。照片中的预设参考压缩量与关系图中的回算量分别记录，测量原理见图6-2。
+将试验管段固定在支架上，工具与驱动装置连接，安装关系见图\ref{fig:r46-5-2}。工具轴线与管段轴线对齐，固定部位避开需要清洁和测量的区域。管壁附着物可布置在可拆卸的管段或内壁试片上，便于清洁前后称重和拍照。
 
 \begin{figure}[H]
-\centering
-\includegraphics[width=145.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig5-02-1.png}
-\caption{弹簧压缩量与刮削厚度的测量原理}
-\label{fig:r46-5-2}
+	\centering
+	\includegraphics[width=109.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig5-02-1.png}
+	\caption{机械主机与工具及管段固定装置}
+	\label{fig:r46-5-2}
 \end{figure}
 
-菱形刮板的逐次刮削记录中，δs约为3.9、5.5和7.1 mm时，单次厚度分别约为0.85、0.71和0.64 mm；约7.3 mm时降至0.11 mm，约9.6 mm时为0.08 mm（图6-3）。约7.2 mm附近出现明显转折。该组结果说明，预紧量应与刀齿接触、浮动行程和容屑空间共同匹配。
+刮刷清洁试验的安装和测量位置见图\ref{fig:r46-5-3}。沿传力连接位置测量推拉力和扭矩，同时记录转速、移动距离及时间。先让工具通过没有附着物的管段，记录装置自身的力和扭矩，再开展清洁试验，以便判断附着物和工具接触带来的变化。
 
 \begin{figure}[H]
-\centering
-\includegraphics[width=142.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig5-03-1.png}
-\caption{菱形刮板单次刮削厚度与弹簧压缩估计值}
-\label{fig:r46-5-3}
+	\centering
+	\includegraphics[width=145.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig5-03-1.png}
+	\caption{工具安装与测量位置示意}
+	\label{fig:r46-5-3}
 \end{figure}
 
-斜齿形刮板的五组回算压缩量为7.21、9.68、10.11、10.83和11.26 mm，单次刮削厚度依次为0.235、0.150、0.295、0.050和0.150 mm，最大记录值对应10.11 mm工况（图6-4）。累积坑深由0.235 mm增至0.880 mm，单次增量呈非单调变化，选参需结合逐次沟槽加深和齿面排屑状态。
+泵送试验的供液与测量关系见图\ref{fig:r46-5-4}。液体由水箱经泵和流量计进入试验管段，出口液体全部经过颗粒收集装置后返回水箱。$P_1$、$P_2$分别测量试验管段入口、出口压力，其差值反映这两个测点之间的压力损失。工具上留下的颗粒、出口收集的颗粒和管路内沉积的颗粒分别称重。
 
 \begin{figure}[H]
-\centering
-\includegraphics[width=142.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig5-04-1.jpg}
-\caption{斜齿形刮板单次刮削厚度与弹簧压缩量}
-\label{fig:r46-5-4}
+	\centering
+	\includegraphics[width=145.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig5-04-1.png}
+	\caption{泵送试验的供液与测量示意}
+	\label{fig:r46-5-4}
+\end{figure}
+
+图\ref{fig:r46-5-3}依据设备模型简化绘制；图\ref{fig:r46-5-4}说明泵送试验所需的接管关系，测点、颗粒收集装置及接口按试验配套设置。颗粒可在停泵泄压后预先加入；需要运行中加料时，采用与试验压力相适应的密闭加料装置，记录实际进入管段的颗粒质量。
+
+多功能过滤工具在停泵上提时开展过滤试验，按\ref{sec:r46-5.1.6}设置观察段、过滤组件进出口取压和滤液收集，分别测量实际滤液量及过滤压差。测筛管流量恢复情况时，另用密封套筒使液体穿过筛管过滤层，方法见\ref{sec:r46-5.1.8}。采用压力传感器及采集系统记录脉冲压力随时间的变化，传感器响应速度和采样频率应满足脉冲测量要求，并记录传感器安装位置。
+
+\subsection{试验准备与通用步骤}
+\label{sec:r46-5.1.3}
+
+\noindent（1）准备工具和试验材料
+
+记录工具型号、零件状态、试验管径和清洁区段长度。刮刷试验尽量保持各管段附着物的材料、厚度、初始质量和固化条件一致；铁屑或其他杂质按材料、颗粒大小和质量准备。称重前后采用相同的清洗、干燥或含液控制方法。另留一组只浸泡、不清洁的材料，检查自然脱落和基体变化对称量的影响。
+
+\noindent（2）安装并运行
+
+检查工具固定、管路连接和测量仪器，先用清洁管段或不含颗粒的液体运行，再按各工具的步骤试验。记录实际转速、移动速度、流量、压力和时间，并注明刮板张开、收回、开始过滤、停止运行等时刻。比较某一参数的影响时，其余主要条件保持一致。试验前明确停止条件，如刮板不能收回、喷头持续停转或清洁效果低于约定要求。
+
+\noindent（3）收集并测量
+
+停机后先拍摄管壁残留、工具上的铁屑和零件状态，再收集杂质、称重和测量磨损。比较清洁效果时使用初始条件相当的新管段；检查耐用性时，保留同一工作部件继续累计使用。各组安排独立重复，列出重复次数、平均值和结果范围。异常停机、清洗、修理及零件更换分别记录，修理和更换后的使用记录另列。达到规定失效条件时报告实测寿命，否则只报告已完成的行程、次数或时间及对应性能。
+
+\subsection{“四合一”通刮刷磁工具测试评价工艺}
+\label{sec:r46-5.1.4}
+
+\noindent（1）管内通过与刮刷清洁试验
+
+先使工具以规定速度通过清洁套管，记录所需推拉力的最大值及卡阻或摩擦突然增大的位置。随后换入带附着物的管段，在规定转速、移动速度和供液条件下完成相同距离或相同时间的刮刷，称量清洁前后的附着物。沿管段长度和圆周选定相同位置拍照，检查是否存在连续未清洁区域。
+
+用清洁前的附着物质量减去残留质量，得到清除质量，再除以清洁前的质量，按式\eqref{eq:r46-5-1}计算附着物清除比例。
+
+\begin{equation}
+	\eta_c=\frac{m_0-m_r}{m_0}\times100\%
+	\label{eq:r46-5-1}
+\end{equation}
+
+式中，$\eta_c$为附着物清除比例，\%；$m_0$、$m_r$分别为清洁前和清洁后的附着物质量，单位为g，且$m_0$大于零。同一管段或试片按相同干燥或含液条件称量；无法可靠称重时，以同一位置的附着物面积或厚度变化说明清洁效果。
+
+推拉力用于评价工具通过性，附着物清除比例和残留位置用于评价刮刷清洁效果。比较转速或移动速度的影响时，同时报告清除比例、残留分布和推拉力的变化。
+
+\noindent（2）铁屑吸附试验
+
+向试验管段加入已知材料、粒径组成和质量的铁屑，保持工具运动和液体流动条件一致。工具完成规定行程后，收集磁吸部件上的铁屑并称重。铁屑吸附比例为吸附的铁屑质量除以实际进入试验管段的铁屑总质量，再乘以100\%。分别称量流出的铁屑和管路中的沉积铁屑，核对总量；同一批铁屑重复循环时，投入质量只计一次。刮刷清洁与铁屑吸附结果分别报告。
+
+\noindent（3）耐用性试验
+
+在相同转速、移动速度和接触条件下反复刮刷，记录工具在管内往返运动的总行程，定期更换初始条件相当的附着物管段。在固定位置测量刮板刃口尺寸和刷丝长度，以使用前后尺寸的减小量表示磨损，记录刷丝脱落、弹簧不能回位及磁体松动情况。
+
+每次检查后，按最初选定的条件重新测量附着物清除比例和铁屑吸附比例，列出两项比例与初始值的差，单位为百分点。将磨损量、效果变化与累计刮刷行程对应，评价反复使用后的清洁能力。
+
+\noindent（4）作业效率试验
+
+准备初始附着物相当的多组管段，分别清洁不同时间，再称量各组残留。每分钟清除量为清除的附着物质量除以刮刷时间，单位为g/min，时间按分钟计；达到规定清除比例所需的时间，取实测达到要求的各组试验中的最短时间。
+
+计时从工具进入清洁区并开始刮刷起，到停止刮刷或离开清洁区止，拆装和称量时间另列。比较转速或移动速度时，管段长度和初始附着物质量保持一致，并同时列出清除比例与作业时间。
+
+\subsection{大容量强磁吸附工具测试评价工艺}
+\label{sec:r46-5.1.5}
+
+\noindent（1）流动液体中的铁屑吸附试验
+
+将清洁后的工具安装在试验管段内，在规定流量和移动条件下定量加入铁屑。达到规定时间或行程后停止加屑，结束本阶段运行。采用带屑工具称重并扣除清洁工具质量的方法，测定已吸附的铁屑质量；称重采用相同排液条件。分别收集流出的铁屑及管段内未吸附的铁屑，称重并核对投入总量。按式\eqref{eq:r46-5-2}计算铁屑吸附比例。
+
+\begin{equation}
+	\eta_r=\frac{m_c}{m_{in}}\times100\%
+	\label{eq:r46-5-2}
+\end{equation}
+
+式中，$\eta_r$为铁屑吸附比例，\%；$m_c$为吸附阶段结束时工具吸附的铁屑质量；$m_{in}$为实际进入试验管段的铁屑总质量，质量单位均为g，且$m_{in}$大于零。同一批铁屑重复循环时，投入质量只计一次。按粒径分组计算时，分子和分母均取该组质量。
+
+比较流量或铁屑粒径的影响时，投入质量、运行时间和安装方式保持一致。吸附比例用于评价工具从含铁屑液体中吸附铁屑的能力；保留试验以本阶段已吸附的铁屑为对象，按下述步骤另行评价。
+
+\noindent（2）铁屑保留与容量试验
+
+吸附试验结束后保留工具上的铁屑，不再加入新的铁屑，使用不含铁屑的同种液体，在规定流量、上提速度和行程下进行冲洗与上提。以吸附阶段结束时测得的铁屑质量为初始吸附质量；结束后按相同排液条件称量带屑工具并扣除清洁工具质量，得到仍保留的铁屑质量。收集并称量脱落铁屑，核对其与最终保留质量之和是否与初始吸附质量相符。
+
+铁屑保留比例为冲洗上提后仍保留的铁屑质量除以试验前已吸附的铁屑质量，再乘以100\%，用于评价已吸附铁屑在冲洗和上提过程中抵抗脱落的能力。初始吸附质量须大于零；未吸附到铁屑时，记录吸附失败，不计算保留比例。
+
+容量试验采用同一工具分批加屑，各批次之间不清理已吸附铁屑。每批吸附后完成规定的冲洗和上提，记录累计投入质量、冲洗上提前后的铁屑质量及试验管段压差，并按前述方法计算保留比例。以仍满足预先规定的保留要求和允许压差时，工具最终保留的最大铁屑质量表示容屑能力，注明颗粒组成、运行条件和停止原因。容量试验各批次采用保留质量和保留比例评价，吸附比例另按（1）在清洁工具上测定。试验未达到容量上限时，报告已测保留质量及对应结果。
+
+\noindent（3）耐用性试验
+
+每次完成吸附铁屑、冲洗上提、清理和重新安装，计为一次使用。保持铁屑组成、投入量、吸附时间、冲洗条件及上提速度和行程一致，定期测量磁体保护件同一位置的尺寸，以使用前后的尺寸减小量表示磨损，并检查磁体是否破损或松动。
+
+清理后按初始条件分别复测铁屑吸附比例和保留比例，计算两项比例相对初始值的变化，单位为百分点。结合保护件磨损、磁体状态及两项比例随使用次数的变化，分别评价重复使用后的铁屑吸附能力和已吸附铁屑的保留能力。
+
+\noindent（4）作业效率试验
+
+各组采用相同组成和投入质量的铁屑，在选定流量或移动速度下完成吸附，再按相同冲洗条件和上提行程运行。记录从吸附开始至冲洗上提结束的实际运行时间，冲洗与上提同时进行时只计一次。称量最终随工具带出的铁屑，以其质量除以实际运行分钟数，得到每分钟带出量，单位为g/min。中途称量、清理及重新安装时间另列。
+
+将每分钟带出量与对应条件下的吸附比例、保留比例共同报告，比较在满足规定吸附和保留要求时的作业效率。
+
+\subsection{多功能过滤工具测试评价工艺}
+\label{sec:r46-5.1.6}
+
+\noindent（1）下放与上提时的过滤功能检查
+
+将工具装入充满试验液体的配套管段，先模拟下放并通液，再停泵按规定速度上提。观察扶正套筒是否移动到位，检查下放时过滤通道能否关闭、上提时能否打开，记录通道不能打开、不能关闭或套筒卡住的次数和位置。
+
+检查胶筒与管壁的贴合情况。胶筒是工具外侧与套管内壁接触的弹性密封件；上提过滤时，通过配套观察段检查液体是否从胶筒与管壁之间的间隙通过，并记录胶筒磨损、开裂或局部未贴住管壁的位置。以通道打开并实际开始过滤的时刻作为后续计时起点。
+
+\noindent（2）杂质过滤和收集容量试验
+
+将按粒径分组、分别称重的杂质加入工具将通过的管段。停泵后按规定速度上提，使扶正套筒打开过滤通道，含杂质的液体进入过滤组件，杂质留在工具内部。结束后分别收集并称量工具收集的杂质、随液体流出的杂质及试验管段和接管内残留的杂质，核对总量。
+
+在过滤组件的进液侧和出液侧分别取压，测点采用同一高度，或扣除高度差造成的液柱压差；两侧压力之差用于判断过滤时的压力损失。将过滤出口液体单独引出计量，避免混入未经过滤组件的液体；接管不得妨碍工具移动和套筒开闭。
+
+某一粒径组的杂质收集比例，为工具收集的该组质量除以投入试验管段的该组质量，再乘以100\%。总收集比例按全部杂质的对应质量计算；投入质量须大于零，同一批杂质只计一次。该比例用于评价整套工具的杂质收集效果；比较不同粒径组时，管径、上提行程和初始杂质分布保持一致。
+
+各组采用清洁后的过滤工具，逐组增加杂质投入量，在相同上提速度和行程下测量收集质量、收集比例及过滤组件进出口压差。以仍满足预先规定的收集效果和允许压差时，实际收集的最大质量表示容量，注明颗粒组成和停止原因。未达到容量上限时，报告已收集质量及对应结果。
+
+对于装有破裂盘的工具，按其设计要求另行检查保护通道，记录破裂盘打开时的压差及打开后液体能否通过。保护通道打开后的液体不再全部经过过滤组件，此后的流量和收集量单独记录，不与正常过滤阶段合并评价；该保护动作与胶筒贴合不严分别记录。
+
+\noindent（3）耐用性试验
+
+每次完成下放、上提过滤、排出杂质、清洗和重新安装，计为一次使用。保持杂质组成、投入量及上提条件一致，定期在相同卸载条件下测量胶筒同一位置的外径或厚度，以尺寸减小量表示磨损；检查胶筒开裂、滤网破损或变形，以及扶正套筒卡住、不能复位等情况。
+
+清洗后按最初条件重新测量各组杂质的收集比例，计算其与初始值的差，单位为百分点；再用不含颗粒的相同液体，在相同过滤流量和取压位置下测量压差。结合胶筒磨损、滤网状态、收集效果变化及通道开闭异常，评价重复使用后的性能。破裂盘动作试验使用规定规格的新件，并与日常重复使用次数分开记录。
+
+\noindent（4）作业效率试验
+
+在相同管径、杂质组成、投入量和上提行程下改变上提速度，测量实际通过过滤组件的液体体积、收集的杂质质量和过滤时间。计时从通道打开并开始过滤起，到规定上提行程结束止，排出杂质、清洗和安装时间另列。
+
+每分钟过滤量为实际滤液体积除以过滤分钟数，单位为L/min；每分钟收集量为工具内杂质质量除以同一过滤时间，单位为g/min。将两项结果与杂质收集比例、过滤组件进出口压差共同报告，比较不同上提速度下的作业效率。滤液量由过滤出口单独计量，供液泵排量另列。
+
+\subsection{可变径刮管工具测试评价工艺}
+\label{sec:r46-5.1.7}
+
+\noindent（1）刮板张开与收回试验
+
+先让刮板处于收回状态，使工具通过模拟狭窄位置的管段，再进入工作管段。按工具规定的程序投球、加压，使刮板张开，记录工具两端压力和刮板变化，测量张开后的外径。结束后按规定程序收回刮板，测量收回后的外径，并让工具再次通过狭窄管段，检查能否顺利退出。
+
+以入口压力减去出口压力计算压差，分别列出开始张开、张开到位和收回时的压差及外径，保留未完全张开、卡住和不能完全收回的记录。需要剪断销钉才能启动的试次使用同规格新销钉，与启动后可重复张开、收回的试次分开统计。不同管径的刮削试验采用实际承担该管径清洁任务的部件。
+
+\noindent（2）管壁刮削试验
+
+在带附着物的管段内张开刮板，按规定的移动速度及工具允许的旋转方式运行。对同一管段按相同干燥或含液条件称量，清洁前的附着物质量减去清洁后的残留质量，即为清除质量；再除以清洁前的附着物质量并乘以100\%，得到附着物清除比例，初始质量须大于零。
+
+沿管壁圆周拍照，将刮板张开尺寸与残留位置对应，检查是否存在刮板已经张开、局部仍未贴住管壁的情况。将清除比例和残留位置一起报告，评价刮削效果。
+
+\noindent（3）耐用性试验
+
+按工具允许的程序重复张开刮板、刮削和收回，分别记录使用次数和总刮削行程。每次检查刮板是否张开到规定位置、收回后能否通过狭窄管段。正常完成张开并收回的次数除以全部试次数，再乘以100\%，得到成功比例；未成功的试次计入总数。
+
+定期测量刮板同一位置的尺寸减小量、销轴间隙变化和收回后的外径，并按最初条件重新测量附着物清除比例，列出其与初始值的差，单位为百分点。结合成功比例、磨损和清洁效果随使用次数及行程的变化评价耐用性；需要重新剪断销钉的试次更换新销钉并单独记录。
+
+\noindent（4）作业效率试验
+
+使用长度和初始附着物一致的管段，记录张开、刮削和收回时间，称量清除的附着物。从开始执行刮板张开程序计时，到刮板收回且确认可以通过狭窄管段止。每分钟清除量（g/min）为清除质量除以总运行分钟数。
+
+达到相同清洁要求时，比较总运行时间和每分钟清除量。首次投球启动与启动后的重复使用分组比较，停机重新装配及称量时间另列。
+
+\subsection{“三合一”脉冲式冲刮刷工具测试评价工艺}
+\label{sec:r46-5.1.8}
+
+\noindent（1）整套工具运行检查
+
+按实际连接顺序装配毛刷刮管器、液压刮管器、脉冲发生器和旋转喷头，改变供液流量，检查是否产生脉冲、喷头是否连续旋转、刮板能否张开和收回。记录压力随时间变化的曲线、喷头转速和刮板动作，确认各部分连接后能否正常工作，并检查整套工具能否通过相应管段。
+
+压力变化和喷头转速用于检查工具运行情况；管壁清洁和筛孔疏通效果按下述试验评价。
+
+\noindent（2）套管和筛管清洁试验
+
+使用带附着物的套管或已经堵塞的筛管，在规定流量、移动速度和清洁时间下运行工具，称量清洁前后的附着物，并拍摄管壁和筛孔残留。附着物清除比例为清洁前质量减去残留质量，再除以清洁前质量并乘以100\%；初始质量须大于零，前后称量的干燥或含液条件一致。比较参数时保持初始污染程度一致。
+
+将筛管装入密封套筒，封住端部绕流通道，使液体穿过过滤层。在相同液体、温度、流向及筛管内外压差下，测量洁净、堵塞及清洁后的筛管流量，流量恢复比例按式\eqref{eq:r46-5-3}计算。
+
+\begin{equation}
+	\eta_f=\frac{Q_1-Q_b}{Q_0-Q_b}\times100\%
+	\label{eq:r46-5-3}
+\end{equation}
+
+式中，$\eta_f$为筛管流量恢复比例，\%；$Q_0$、$Q_b$、$Q_1$分别为洁净、堵塞和清洁后的筛管流量，单位为L/min，且$Q_0$大于$Q_b$。该比例表示堵塞所损失流量的恢复程度，三次流量与计算结果一并列出。
+
+单独计量穿过筛管过滤层的液体，清洁循环排量另列；检查筛管破损和绕流泄漏。
+
+\noindent（3）耐用性试验
+
+在规定流量和运动条件下持续运行，定期停机检查，累计时间、刮刷行程和刮板张开收回次数。在相同位置测量喷嘴孔径增大量、刮板刃口尺寸减小量及刷丝缩短量，记录脉冲消失、喷头停转和刮板收回异常。
+
+用初始污染或堵塞程度相当的新管段，按最初条件复测附着物清除比例或筛管流量恢复比例，与初始值的差以百分点表示。结合零件磨损及清洁效果随累计时间的变化评价耐用性。
+
+\noindent（4）作业效率试验
+
+对初始附着物相当的套管组或堵塞流量相当的筛管组，分别清洁不同时间，测量清除比例或流量恢复比例。计时从脉冲、喷头及刮刷按规定方式工作起，至清洁结束；拆装、称量和流量测量时间另列。
+
+达到规定清除比例或流量恢复比例所需时间，取达到要求的试验组中最短时间。套管试验以清除质量除以清洁分钟数，计算每分钟清除量（g/min）。结合效果与时间，比较流量及移动速度对效率的影响。
+
+\subsection{试验结果与记录}
+\label{sec:r46-5.1.9}
+
+各类工具分别报告功能与清洁效果、耐用性和作业效率，列出工具及管段编号、试验条件、原始数据、计算结果和照片。比较时注明条件差异，说明工具完成的任务及使用后的变化。
+
+\section{部件实验结果及其对评价工艺的支撑}
+\label{sec:r46-5.2}
+
+刮板、毛刷和磁吸试验分别反映机械除垢、刷洗形貌与静态吸附性能；冲砂及铁屑运移试验反映流体搬运条件。这些结果用于解释清洁部件的作用，并为整套工具试验设置测量对象和工况提供依据。
+
+\subsection{刮板刮削效果评价}
+\label{sec:r46-5.2.1}
+
+采用转盘式台架，以重晶石粉与硫铝酸盐水泥按质量比3∶4制成的模拟硬垢为对象。垢样随转盘运动，刮板由弹簧提供压紧作用；限位机构约束五个自由度，保留压紧方向的浮动。试验平均线速度约0.05 m/s，单次刮削行程约0.5 m，用于比较菱形及斜齿形刮板的去除量和排屑状态。
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=123.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig5-05-1.png}
+	\caption{刮板除垢评价装置及装夹方式}
+	\label{fig:r46-5-5}
+\end{figure}
+
+分别测量弹簧原长、参考预紧状态及刮削后的特征尺寸，结合横梁挠曲和沟槽累积坑深回算弹簧压缩估计值$\delta_s$。单次刮削厚度$\delta_c$为同一测点相邻两次累积坑深的增量。照片中的预设参考压缩量与关系图中的回算量分别记录，测量原理见图\ref{fig:r46-5-6}。
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=145.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig5-06-1.png}
+	\caption{弹簧压缩量与刮削厚度的测量原理}
+	\label{fig:r46-5-6}
+\end{figure}
+
+菱形刮板的逐次刮削记录中，$\delta_s$约为3.9、5.5和7.1 mm时，单次厚度分别约为0.85、0.71和0.64 mm；约7.3 mm时降至0.11 mm，约9.6 mm时为0.08 mm（图\ref{fig:r46-5-7}）。约7.2 mm附近出现明显转折。该组结果说明，预紧量应与刀齿接触、浮动行程和容屑空间共同匹配。
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=142.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig5-07-1.png}
+	\caption{菱形刮板单次刮削厚度与弹簧压缩估计值}
+	\label{fig:r46-5-7}
+\end{figure}
+
+斜齿形刮板的五组回算压缩量为7.21、9.68、10.11、10.83和11.26 mm，单次刮削厚度依次为0.235、0.150、0.295、0.050和0.150 mm，最大记录值对应10.11 mm工况（图\ref{fig:r46-5-8}）。累积坑深由0.235 mm增至0.880 mm，单次增量呈非单调变化，选参需结合逐次沟槽加深和齿面排屑状态。
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=142.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig5-08-1.jpg}
+	\caption{斜齿形刮板单次刮削厚度与弹簧压缩量}
+	\label{fig:r46-5-8}
 \end{figure}
 
 两种刮板均在模拟硬垢上形成连续沟槽，切屑包含细粉和脆性崩碎块。试后齿面可见附着层及容屑槽充填；斜向刀齿和中部梯形齿的接触、容屑形式不同。刮板选用以单位行程去除量和齿槽状态共同评价，循环排屑用于维持后续刮削能力。
 
 \begin{figure}[H]
-\centering
-\includegraphics[width=142.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig5-05-1.png}
-\caption{刮削后刀齿表面形貌及容屑情况}
-\label{fig:r46-5-5}
+	\centering
+	\includegraphics[width=105.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig5-09-1.png}
+	\caption{刮削后刀齿表面形貌及容屑情况}
+	\label{fig:r46-5-9}
 \end{figure}
 
 \subsection{毛刷刷洗效果评价}
-\label{sec:r46-5.1.2}
+\label{sec:r46-5.2.2}
 
 毛刷试验沿用转盘台架，以同一刷块分别对模拟硬垢和蜡垢刷洗一次，记录预紧状态、测点位置变化及刷体形貌。硬垢组弹簧压缩量为6.13 mm，蜡垢组按记录取14.06 mm；弹簧刚度约22.5 N/mm，对应估算压紧力约138 N和316 N。两组结果分别与各自预紧条件对应。
 
-以顶板顶部测量基面至垢面的距离L₂为位置量，取四个测点的均值，按“刷洗后值减去预紧后值”计算ΔL₂。硬垢组为+0.465 mm，蜡垢组为−0.790 mm（表6-2）。蜡垢的负变化对应测点处垢面升高，结合照片中的推挤、涂抹和刷丝黏附分析其形貌变化。
+以顶板顶部测量基面至垢面的距离$L_2$为位置量，取四个测点的均值，按“刷洗后值减去预紧后值”计算$\Delta L_2$。硬垢组为$+$0.465 mm，蜡垢组为$-$0.790 mm（表\ref{tab:r46-5-3}）。蜡垢的负变化对应测点处垢面升高，结合照片中的推挤、涂抹和刷丝黏附分析其形貌变化。
 
-\begin{table}[H]
-\centering
-\setstretch{1}
-\fontsize{12}{15}\selectfont
-\setlength{\tabcolsep}{3pt}
-\renewcommand{\arraystretch}{1.5}
-\caption{毛刷刷洗工况及测点位置变化}\label{tab:r46-5-2}
-\begin{tabular}{>{\centering\arraybackslash}m{0.184948\dimexpr\linewidth-12\tabcolsep-7\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.143875\dimexpr\linewidth-12\tabcolsep-7\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.150640\dimexpr\linewidth-12\tabcolsep-7\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.178062\dimexpr\linewidth-12\tabcolsep-7\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.178062\dimexpr\linewidth-12\tabcolsep-7\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.164412\dimexpr\linewidth-12\tabcolsep-7\arrayrulewidth\relax}}
-\toprule
- 垢样 & 弹簧压缩量\newline{}(mm) & 估算压紧力\newline{}(N) & 预紧后L₂\newline{}(mm) & 刷洗后L₂\newline{}(mm) & ΔL₂\newline{}(mm) \\ \midrule
-模拟硬垢 & 6.13 & 138 & 89.510 & 89.975 & +0.465 \\ 
-模拟蜡垢 & 14.06 & 316 & 79.920 & 79.130 & −0.790 \\ \bottomrule
-\end{tabular}
+\begin{table}[htbp]
+	\centering
+	\caption{毛刷刷洗工况及测点位置变化}
+	\label{tab:r46-5-3}
+	\renewcommand{\arraystretch}{1.5}
+	\begin{tabularx}{.9\textwidth}{CCCCCC}
+		\toprule
+		垢样 & \begin{tabular}[c]{@{}c@{}}弹簧压缩量\\ (mm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}估算压紧力\\ (N)\end{tabular} & \begin{tabular}[c]{@{}c@{}}预紧后$L_2$\\ (mm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}刷洗后$L_2$\\ (mm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}$\Delta L_2$\\ (mm)\end{tabular} \\
+		\midrule
+		模拟硬垢 & 6.13 & 138 & 89.510 & 89.975 & $+$0.465 \\
+		模拟蜡垢 & 14.06 & 316 & 79.920 & 79.130 & $-$0.790 \\
+		\bottomrule
+	\end{tabularx}
 \end{table}
 
-硬垢刷洗后以表面划擦为主，刷体残留少量粉状垢屑；蜡垢出现涂抹及局部基体露出，刷丝黏附大量蜡质（图6-6）。刮板用于硬垢主体去除，毛刷用于细屑和蜡质附着物的清理，两者配合循环排屑形成机械清洁工艺。刷体固定、保养及维修检查参考T/GRM 112—2025相应条款。
+硬垢刷洗后以表面划擦为主，刷体残留少量粉状垢屑；蜡垢出现涂抹及局部基体露出，刷丝黏附大量蜡质（图\ref{fig:r46-5-10}）。刮板用于硬垢主体去除，毛刷用于细屑和蜡质附着物的清理，两者配合循环排屑形成机械清洁工艺。刷体固定、保养及维修检查参考T/GRM 112—2025相应条款。
 
 \begin{figure}[H]
-\centering
-\includegraphics[width=70.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig5-06-1.jpg}
-\includegraphics[width=70.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig5-06-2.jpg}
-\caption{硬垢与蜡垢刷洗后的垢面及刷体形貌}
-\label{fig:r46-5-6}
+	\centering
+	\includegraphics[width=68.600mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig5-10-1.jpg}\hfill
+	\includegraphics[width=68.600mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig5-10-2.jpg}
+	\caption{硬垢与蜡垢刷洗后的垢面及刷体形貌（左为硬垢，右为蜡垢）}
+	\label{fig:r46-5-10}
 \end{figure}
 
 \subsection{四合一强磁模块吸附力评价}
-\label{sec:r46-5.1.3}
-
-采用由磁铁、45号钢圆柱试件、拉力传感器和千分头组成的轴向拉脱装置，见图6-7。试件直径1.8 cm，端面接触面积约2.545 cm²；在同一贴合位置缓慢牵引，记录脱离瞬间的拉力峰值，重复测定8次。试样为四合一工具的烧结钐钴强磁模块。
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=145.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig5-07-1.png}
-\caption{磁铁吸附力测试装置原理与实物}
-\label{fig:r46-5-7}
-\end{figure}
-
-8次拉脱读数为$19.76\sim21.63$ kgf，平均20.855 kgf（约204.6 N），样本标准差0.70 kgf，变异系数约3.4\%。按接触面积（2.545 cm$^2$）折算的平均吸附力为8.20 kgf/cm$^2$，略高于合同规定的8 kg/cm$^2$，富余约2.4\%；按麦克斯韦应力关系反算，衔铁端面处实际起作用的磁感应强度平均为1.44 T（各次$1.40\sim1.46$ T），高于8 kg/cm$^2$所对应的1.42 T。8次测定中5次不低于8 kg/cm$^2$，第1、3、7次分别为7.76、7.92、7.97 kgf/cm$^2$。该结果反映四合一工具强磁模块在$\phi$1.8 cm圆柱衔铁轴向脱离条件下的静态吸附能力；合同中吸附力≥8 kg/cm$^2$、容量≥50 L的考核对象为大容量强磁吸附工具，其指标需采用对应工具及相应静态、动态捕集和容量试验记录评价。
-
-\begin{table}[H]
-\centering
-\setstretch{1}
-\fontsize{12}{15}\selectfont
-\setlength{\tabcolsep}{3pt}
-\renewcommand{\arraystretch}{1.5}
-\caption{四合一强磁模块8次拉脱测量结果}\label{tab:r46-5-3}
-\begin{tabular}{>{\centering\arraybackslash}m{0.136990\dimexpr\linewidth-6\tabcolsep-4\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.342474\dimexpr\linewidth-6\tabcolsep-4\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.520536\dimexpr\linewidth-6\tabcolsep-4\arrayrulewidth\relax}}
-\toprule
- 测次 & 拉脱读数\newline{}(kgf) & 单位面积吸附力\newline{}(kgf/cm$^2$) \\ \midrule
- 1 & 19.76 & 7.76 \\ 
- 2 & 21.00 & 8.25 \\ 
- 3 & 20.15 & 7.92 \\ 
- 4 & 21.26 & 8.35 \\ 
- 5 & 21.63 & 8.50 \\ 
- 6 & 21.51 & 8.45 \\ 
- 7 & 20.27 & 7.97 \\ 
- 8 & 21.26 & 8.35 \\ 
- 平均 & 20.855 & 8.20 \\ \bottomrule
-\end{tabular}
-\end{table}
-
-吸附力是本次直接测得的指标。按理想磁应力关系$F/A=B^2/(2\mu_0)$换算的等效磁感应强度平均约1.44 T，与高斯计的实际测点读数分别记录。静态拉脱、动态捕集、容量及温度保持分别对应不同试验条件。
-
-\subsection{冲砂与铁屑运移对评价工艺的支撑}
-\label{sec:r46-5.1.4}
-
-水平环空冲砂试验采用130/90 mm管径组合，清水排量$8.5\sim15.4$ m³/h，并与0.3\%胍胶液工况对照。增大来流后砂头运移加快、最大床高下降；清水和胍胶液的剪切滑移层厚度分别为$6.0\sim6.8$ mm与约3.5 mm。砂床高度、前缘移动及返出情况可作为冲砂清洁的过程评价指标，工况同时保留环空尺寸、介质及流量。
-
-全井筒模型以约70 g卷曲铁屑开展连续升流量试验，水平段起动和明显整体位移分别对应7.85和11.70 m³/h；竖直观察段约21.5 m³/h床层基本冲散，约21.8 m³/h未见残留颗粒。不同井段的搬运和消散状态为携屑评价提供依据，并与磁吸、过滤的回收量共同描述清除和收集过程。上述流量对应本物理模型，现场评价结合实际环空及循环能力换算。
-
-\section{智能化作业参数优化方法}
-\label{sec:r46-5.2}
-
-\subsection{数据基础与总体流程}
-\label{sec:r46-5.2.1}
-
-参数优化采用平底式磨铣加工45号钢、刀翼式磨铣加工45号钢、套铣加工45号钢和套铣加工铸铁四组室内实验数据，每组90个钻压与转速组合，共360个工况。各组分别建立预测模型，以钻压和转速为输入，计算钻速、工作扭矩和磨损量。各项结果均对应同一工具与工件材料组合。
-
-总体流程如图6-8所示。通过六种算法建模和五折交叉验证，确定各组性能预测模型；在实验范围内计算候选参数的三项性能，再根据钻速要求、扭矩和磨损限制筛选参数。模型同时用于给定参数的性能预测，以及给定性能目标后的钻压、转速推荐。
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=145.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig5-08-1.png}
-\caption{室内实验数据建模与作业参数优化流程}
-\label{fig:r46-5-8}
-\end{figure}
-
-\subsection{预测模型建立与选择}
-\label{sec:r46-5.2.2}
-
-采用多层感知机（MLP）、支持向量回归（SVR）、K近邻回归（KNN）、决策树（DT）、随机森林（RF）和梯度提升回归树（GBDT）建立性能预测模型。采用五折交叉验证，将各组数据分为五份，轮流用其中一份检验、其余四份训练，以未参与当次训练的数据计算预测误差。根据钻速、扭矩和磨损量的均方根误差（RMSE）比较模型表现，误差越小，预测值与实验值越接近。
-
-四组数据选用的模型及交叉验证误差见表6-4。平底式磨铣采用随机森林，刀翼式磨铣采用多层感知机，套铣45号钢采用支持向量回归，套铣铸铁采用多层感知机。各组按自身实验数据选择模型，分别用于后续参数搜索。
-
-\begin{table}[H]
-\centering
-\setstretch{1}
-\fontsize{12}{15}\selectfont
-\setlength{\tabcolsep}{3pt}
-\renewcommand{\arraystretch}{1.5}
-\caption{四组性能预测模型及交叉验证RMSE}\label{tab:r46-5-4}
-\begin{tabular}{>{\centering\arraybackslash}m{0.286695\dimexpr\linewidth-10\tabcolsep-6\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.095605\dimexpr\linewidth-10\tabcolsep-6\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.211559\dimexpr\linewidth-10\tabcolsep-6\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.204816\dimexpr\linewidth-10\tabcolsep-6\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.201325\dimexpr\linewidth-10\tabcolsep-6\arrayrulewidth\relax}}
-\toprule
- 工具与材料 & 预测模型 & 钻速\newline{}(mm/min) & 扭矩\newline{}(N·m) & 磨损量\newline{}(g) \\ \midrule
-平底式磨铣/45号钢 & RF & 0.494 & 2.387 & 0.190 \\ 
-刀翼式磨铣/45号钢 & MLP & 0.574 & 2.583 & 0.155 \\ 
-套铣/45号钢 & SVR & 0.809 & 4.531 & 0.465 \\ 
-套铣/铸铁 & MLP & 0.789 & 5.928 & 0.708 \\ \bottomrule
-\end{tabular}
-\end{table}
-
-\subsection{三项性能的预测结果}
 \label{sec:r46-5.2.3}
 
-四组模型的钻速RMSE为$0.494\sim0.809$ mm/min，扭矩RMSE为$2.387\sim5.928$ N·m，磨损量RMSE为$0.155\sim0.708$ g。钻速的决定系数R²为$0.935\sim0.964$，磨损量为$0.913\sim0.986$，扭矩为$0.644\sim0.819$。各工具与材料的模型及误差分别列于表6-4，作为相应组别参数搜索的依据。
-
-图6-9至图6-11分别给出钻速、扭矩和磨损量的预测值与实验值对比，虚线表示两者相等。图中四组分别为平底式磨铣/45号钢、刀翼式磨铣/45号钢、套铣/45号钢和套铣/铸铁，与第五章实验分组一致。图中每个散点均为该样本在五折交叉验证中作为验证集（未参与当次训练）时的折外预测值，而非模型对训练集的拟合值，因此散点偏离虚线的程度即反映了模型对未知工况的泛化误差，与表6-4所列RMSE的统计口径一致。
+采用由磁铁、45号钢圆柱试件、拉力传感器和千分头组成的轴向拉脱装置，见图\ref{fig:r46-5-11}。试件直径1.8 cm，端面接触面积约2.545 cm$^2$；在同一贴合位置缓慢牵引，记录脱离瞬间的拉力峰值，重复测定8次。试样为四合一工具的烧结钐钴强磁模块。
 
 \begin{figure}[H]
-\centering
-\includegraphics[width=136.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig5-09-1.png}
-\caption{四组工具钻速预测值与实验值对比}
-\label{fig:r46-5-9}
+	\centering
+	\includegraphics[width=145.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig5-11-1.png}
+	\caption{磁铁吸附力测试装置原理与实物}
+	\label{fig:r46-5-11}
 \end{figure}
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=136.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig5-10-1.png}
-\caption{四组工具扭矩预测值与实验值对比}
-\label{fig:r46-5-10}
-\end{figure}
+按实验报告所列8次测量，拉脱力为193.8～212.1 N，平均204.5 N（约20.86 kgf），样本标准差0.70 kg（约6.9 N），变异系数约3.4\%。按直径1.8 cm的圆形接触面积折算，单位面积吸附力平均约80.4 N/cm$^2$，即8.20 kgf/cm$^2$。该结果对应四合一工具磁吸模块与45号钢试件直接贴合的静态拉脱条件，结果见表\ref{tab:r46-5-4}。
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=136.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig5-11-1.png}
-\caption{四组工具磨损量预测值与实验值对比}
-\label{fig:r46-5-11}
-\end{figure}
+\begin{table}[htbp]
+	\centering
+	\caption{四合一强磁模块8次拉脱测量结果}
+	\label{tab:r46-5-4}
+	\renewcommand{\arraystretch}{1.4}
+	\begin{tabularx}{.9\textwidth}{CCCC}
+		\toprule
+		测次 & \begin{tabular}[c]{@{}c@{}}拉脱力\\ (N)\end{tabular} & \begin{tabular}[c]{@{}c@{}}单位面积力\\ (N/cm$^2$)\end{tabular} & \begin{tabular}[c]{@{}c@{}}折算吸附力\\ (kgf/cm$^2$)\end{tabular} \\
+		\midrule
+		1 & 193.8 & 76.2 & 7.77 \\
+		2 & 205.9 & 80.9 & 8.25 \\
+		3 & 197.6 & 77.7 & 7.92 \\
+		4 & 208.5 & 81.9 & 8.36 \\
+		5 & 212.1 & 83.4 & 8.50 \\
+		6 & 210.9 & 82.9 & 8.45 \\
+		7 & 198.8 & 78.1 & 7.97 \\
+		8 & 208.5 & 81.9 & 8.36 \\
+		\midrule
+		平均 & 204.5 & 80.4 & 8.20 \\
+		\bottomrule
+	\end{tabularx}
+\end{table}
 
-\section{多目标作业参数优选}
+按理想磁应力关系$F/A=B^2/(2\mu_0)$换算的等效磁感应强度约为1.44 T（各次为1.40～1.46 T），用于表达该接触条件下的力学量级。静态拉脱、流动条件下的吸附比例、上提后的保留比例和容量分别按各自试验评价；大容量强磁工具的指标对应具体型号和试验条件。
+
+\subsection{冲砂与铁屑运移对评价工艺的支撑}
+\label{sec:r46-5.2.4}
+
+水平环空冲砂试验采用130/90 mm管径组合，清水排量8.5～15.4 m$^3$/h，并与0.3\%胍胶液工况对照。增大来流后砂头运移加快、最大床高下降；清水和胍胶液的剪切滑移层厚度分别为6.0～6.8 mm与约3.5 mm。砂床高度、前缘移动及返出情况可作为冲砂清洁的过程评价指标，工况同时保留环空尺寸、介质及流量。
+
+全井筒模型以约70 g卷曲铁屑开展连续升流量试验，水平段起动和明显整体位移分别对应7.85和11.70 m$^3$/h；竖直观察段约21.5 m$^3$/h床层基本冲散，约21.8 m$^3$/h未见残留颗粒。不同井段的搬运和消散状态为携屑评价提供依据，并与磁吸、过滤的回收量共同描述清除和收集过程。上述流量对应本物理模型，现场评价结合实际环空及循环能力换算。
+
+\section{五组套磨铣性能预测模型}
 \label{sec:r46-5.3}
 
-\subsection{参数搜索与非支配筛选}
+\subsection{建模对象与计算流程}
 \label{sec:r46-5.3.1}
 
-在实验覆盖的钻压$2\sim20$ kN、转速$20\sim100$ r/min范围内，每组计算6561种钻压与转速组合的预测性能，以提高钻速、降低扭矩和减少磨损量为优化目标，比较加工速度与负载、磨损之间的取舍。
+按平底式磨铣/45号钢、刀翼式磨铣/45号钢、110 mm套铣/45号钢、110 mm套铣/铸铁和146 mm套铣/42CrMo建立五组模型。前四组各90个工况，第五组18个工况；以钻压和转速为输入，以钻速、扭矩及各组对应的磨损指标为输出。同一组的三项响应采用同一类算法，分别拟合并保留物理单位。
 
-采用Pareto非支配筛选比较候选组合。如果另一个组合的钻速不低、扭矩和磨损量均不高，且至少一项更好，则原组合不再保留。筛选后得到的非支配组合反映三项性能之间的取舍：继续提高其中一项性能，通常需要接受另一项性能的变化。四组分别得到4320、1924、967和242个非支配组合，结果见表6-5。
+计算流程包括工况配对、训练与检验划分、训练集内调参、三项误差综合比较、全域性能预测及候选参数筛选。每组模型仅在相应数据覆盖范围内使用，工具和材料的变化通过选择对应模型处理。
 
-\subsection{性能要求与综合评分}
+\subsection{六种算法比较与模型确定}
 \label{sec:r46-5.3.2}
 
-在非支配组合中，依据预测结果的分位数设定最低钻速、最大扭矩和最大磨损量，按“钻速保持在中高水平，优先控制扭矩并兼顾磨损量”的原则进一步筛选。表6-5列出本算例采用的筛选条件。
+比较多层感知机（MLP）、支持向量回归（SVR）、K近邻回归（KNN）、决策树（DT）、随机森林（RF）和梯度提升回归树（GBDT）。采用五折交叉验证，在各训练集内进行三折交叉验证调参；标准化参数只由当次训练数据确定。六种算法使用相同的外层划分，汇总测试折预测后计算$R^2$、RMSE和综合归一化误差。
 
-\begin{table}[H]
-\centering
-\setstretch{1}
-\fontsize{12}{15}\selectfont
-\setlength{\tabcolsep}{3pt}
-\renewcommand{\arraystretch}{1.5}
-\caption{非支配组合数量及算例筛选条件}\label{tab:r46-5-5}
-\begin{tabular}{>{\centering\arraybackslash}m{0.300337\dimexpr\linewidth-10\tabcolsep-6\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.122832\dimexpr\linewidth-10\tabcolsep-6\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.191113\dimexpr\linewidth-10\tabcolsep-6\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.191113\dimexpr\linewidth-10\tabcolsep-6\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.194605\dimexpr\linewidth-10\tabcolsep-6\arrayrulewidth\relax}}
-\toprule
- 工具与材料 & 非支配\newline{}组合数 & 最低钻速\newline{}(mm/min) & 最大扭矩\newline{}(N·m) & 最大磨损量\newline{}(g) \\ \midrule
-平底式磨铣/45号钢 & 4320 & 6.5258 & 29.5389 & 4.1161 \\ 
-刀翼式磨铣/45号钢 & 1924 & 5.9566 & 30.0575 & 4.8497 \\ 
-套铣/45号钢 & 967 & 11.5061 & 52.8552 & 6.8853 \\ 
-套铣/铸铁 & 242 & 12.4356 & 70.0142 & 10.7606 \\ \bottomrule
-\end{tabular}
+为使不同量纲的三项响应具有相同评价权重，将各项RMSE除以相应响应的标准差，得到归一化误差$e_v$、$e_T$和$e_w$，再将三项误差的平方等权平均后开方，记为综合NRMSE（$E$）。$E$越小，表示三项响应的整体预测误差越低，计算式见式\eqref{eq:r46-5-4}，各算法结果见表\ref{tab:r46-5-5}。
+
+\begin{equation}
+	E=\sqrt{\frac{e_v^2+e_T^2+e_w^2}{3}}
+	\label{eq:r46-5-4}
+\end{equation}
+
+\begin{table}[htbp]
+	\centering
+	\caption{六种算法在五组数据上的综合NRMSE}
+	\label{tab:r46-5-5}
+	\small
+	\setlength{\tabcolsep}{3pt}
+	\renewcommand{\arraystretch}{1.4}
+	\begin{tabularx}{\textwidth}{cCCCCC}
+		\toprule
+		算法 & \begin{tabular}[c]{@{}c@{}}平底式\\ /45号钢\end{tabular} & \begin{tabular}[c]{@{}c@{}}刀翼式\\ /45号钢\end{tabular} & \begin{tabular}[c]{@{}c@{}}110 mm套铣\\ /45号钢\end{tabular} & \begin{tabular}[c]{@{}c@{}}110 mm套铣\\ /铸铁\end{tabular} & \begin{tabular}[c]{@{}c@{}}146 mm套铣\\ /42CrMo\end{tabular} \\
+		\midrule
+		MLP & 0.244 & 0.267 & 0.387 & 0.317 & 0.604 \\
+		SVR & 0.274 & 0.264 & 0.405 & 0.311 & 0.693 \\
+		KNN & 0.272 & 0.293 & 0.410 & 0.337 & 0.585 \\
+		DT & 0.313 & 0.336 & 0.466 & 0.421 & 0.859 \\
+		RF & 0.266 & 0.300 & 0.397 & 0.357 & 0.640 \\
+		GBDT & 0.261 & 0.314 & 0.373 & 0.328 & 0.649 \\
+		\bottomrule
+	\end{tabularx}
 \end{table}
 
-对满足条件的组合，将三项性能归一化后进行加权评分，按钻速提高、扭矩降低和磨损减少的方向比较，再按综合得分排序，输出钻压、转速及对应的三项预测性能。
+五组分别选用MLP、SVR、GBDT、SVR和KNN。模型选择依据三项性能的综合误差：例如146 mm组中，GBDT对钻速的$R^2$较高，但其磨损高度预测误差较大；KNN的综合NRMSE为0.585，低于其余五种算法，因此用于该组的后续性能预测和参数搜索。
 
-\section{不同工具和材料的参数优化结果}
+\begin{table}[htbp]
+	\centering
+	\caption{五组所选模型的交叉验证RMSE}
+	\label{tab:r46-5-6}
+	\small
+	\setlength{\tabcolsep}{3pt}
+	\renewcommand{\arraystretch}{1.4}
+	\begin{tabularx}{\textwidth}{lCCCc}
+		\toprule
+		工具与材料 & 模型 & \begin{tabular}[c]{@{}c@{}}钻速\\ mm/min\end{tabular} & \begin{tabular}[c]{@{}c@{}}扭矩\\ N·m\end{tabular} & 磨损及单位 \\
+		\midrule
+		平底式/45号钢 & MLP & 0.434 & 2.276 & 0.107 g \\
+		刀翼式/45号钢 & SVR & 0.530 & 2.696 & 0.117 g \\
+		套铣/45号钢 & GBDT & 0.909 & 4.515 & 0.415 g \\
+		套铣/铸铁 & SVR & 0.909 & 5.562 & 0.733 g \\
+		146 mm套铣/42CrMo & KNN & 0.123 & 1154.107 & 0.056 mm \\
+		\bottomrule
+	\end{tabularx}
+\end{table}
+
+\subsection{三项性能预测与误差分析}
+\label{sec:r46-5.3.3}
+
+\begin{table}[htbp]
+	\centering
+	\caption{五组所选模型的交叉验证$R^2$}
+	\label{tab:r46-5-7}
+	\small
+	\setlength{\tabcolsep}{3pt}
+	\renewcommand{\arraystretch}{1.4}
+	\begin{tabularx}{\textwidth}{lCCCC}
+		\toprule
+		工具与材料 & 钻速$R^2$ & 扭矩$R^2$ & 磨损$R^2$ & 综合NRMSE \\
+		\midrule
+		平底式/45号钢 & 0.976 & 0.850 & 0.994 & 0.244 \\
+		刀翼式/45号钢 & 0.967 & 0.831 & 0.994 & 0.264 \\
+		套铣/45号钢 & 0.961 & 0.681 & 0.940 & 0.373 \\
+		套铣/铸铁 & 0.929 & 0.850 & 0.931 & 0.311 \\
+		146 mm套铣/42CrMo & 0.623 & 0.827 & 0.524 & 0.585 \\
+		\bottomrule
+	\end{tabularx}
+\end{table}
+
+110 mm四组的钻速$R^2$为0.929～0.976，质量磨损$R^2$为0.931～0.994，扭矩$R^2$为0.681～0.850。146 mm组的钻速、扭矩和磨损高度$R^2$分别为0.623、0.827和0.524，其钻速与磨损高度误差相对较大，应结合三项预测结果共同选择候选工况。表\ref{tab:r46-5-6}和表\ref{tab:r46-5-7}均列出固定算法的折外评价结果，与模型在全部输入数据上的回代拟合分别使用。
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=145.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig5-12-1.png}
+	\caption{五组钻速、扭矩及磨损的折外预测与参考值对照}
+	\label{fig:r46-5-12}
+\end{figure}
+
+图\ref{fig:r46-5-12}分别在组内按参考响应的最大值和最小值归一化，以便在同一坐标中观察各组预测偏差；每项性能均显示五组合计378对参考值与折外预测。归一化仅用于图形比较，各组误差与优化结果仍采用原始单位。虚线表示预测值与参考值相等。
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=145.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig5-13-1.png}
+	\caption{146 mm组KNN折外预测与三项工况响应对照}
+	\label{fig:r46-5-13}
+\end{figure}
+
+146 mm组的钻速、扭矩和磨损高度RMSE分别为0.123 mm/min、1154.11 N·m和0.056 mm。图\ref{fig:r46-5-13}保留原始单位，直接反映各响应的误差尺度。候选工况由全数据训练后的模型预测，其应用效果与折外预测精度分别评价。
+
+\section{多目标参数优选及结果}
 \label{sec:r46-5.4}
 
-\subsection{推荐参数及预测性能}
+\subsection{参数域预测与Pareto筛选}
 \label{sec:r46-5.4.1}
 
-四组推荐结果的预测性能范围见表6-6。平底式磨铣在钻速约$7.37\sim7.40$ mm/min时，将预测扭矩控制在约$27.54\sim27.67$ N·m；刀翼式磨铣推荐区域的预测钻速约$5.96\sim6.35$ mm/min，同时对应较低的扭矩和磨损量。套铣两种材料的推荐区域不同，应分别采用相应模型和筛选条件。
+110 mm四组在2～20 kN、20～100 r/min范围内搜索；146 mm组在20～35 kN、60～180 r/min范围内搜索。各维度取81个等间隔水平，每组形成6561个预测组合。以钻速最大、扭矩和磨损最小为三个目标：若另一组合的钻速不低、扭矩和磨损均不高，且至少一项更优，则原组合被支配；保留所有未被支配的组合构成Pareto候选集。
 
-\begin{table}[H]
-\centering
-\setstretch{1}
-\fontsize{12}{15}\selectfont
-\setlength{\tabcolsep}{3pt}
-\renewcommand{\arraystretch}{1.5}
-\caption{推荐组合的预测性能范围}\label{tab:r46-5-6}
-\begin{tabular}{>{\centering\arraybackslash}m{0.286695\dimexpr\linewidth-8\tabcolsep-5\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.238892\dimexpr\linewidth-8\tabcolsep-5\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.238892\dimexpr\linewidth-8\tabcolsep-5\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.235521\dimexpr\linewidth-8\tabcolsep-5\arrayrulewidth\relax}}
-\toprule
- 工具与材料 & 预测钻速\newline{}(mm/min) & 预测扭矩\newline{}(N·m) & 预测磨损量\newline{}(g) \\ \midrule
-平底式磨铣/45号钢 & $7.3707\sim7.3980$ & $27.5443\sim27.6652$ & $4.0791\sim4.1092$ \\ 
-刀翼式磨铣/45号钢 & $5.9593\sim6.3451$ & $24.4922\sim25.3742$ & $2.6586\sim2.9897$ \\ 
-套铣/45号钢 & $11.5075\sim12.6766$ & $51.7816\sim52.0882$ & $6.7320\sim6.8850$ \\ 
-套铣/铸铁 & $12.4419\sim13.7041$ & $64.8384\sim69.9896$ & $9.4340\sim10.6947$ \\ \bottomrule
-\end{tabular}
-\end{table}
-
-\begin{table}[H]
-\centering
-\setstretch{1}
-\fontsize{12}{15}\selectfont
-\setlength{\tabcolsep}{3pt}
-\renewcommand{\arraystretch}{1.5}
-\caption{各组推荐参数及其预测性能示例}\label{tab:r46-5-7}
-\begin{tabular}{>{\centering\arraybackslash}m{0.259393\dimexpr\linewidth-12\tabcolsep-7\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.095617\dimexpr\linewidth-12\tabcolsep-7\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.102360\dimexpr\linewidth-12\tabcolsep-7\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.180877\dimexpr\linewidth-12\tabcolsep-7\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.180877\dimexpr\linewidth-12\tabcolsep-7\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.180877\dimexpr\linewidth-12\tabcolsep-7\arrayrulewidth\relax}}
-\toprule
- 工具与材料 & 钻压\newline{}(kN) & 转速\newline{}(r/min) & 预测钻速\newline{}(mm/min) & 预测扭矩\newline{}(N·m) & 预测磨损量\newline{}(g) \\ \midrule
-平底式磨铣/45号钢 & 16.625 & 22 & 7.3980 & 27.5443 & 4.1092 \\ 
-刀翼式磨铣/45号钢 & 8.750 & 100 & 5.9593 & 24.7121 & 2.6586 \\ 
-套铣/45号钢 & 18.650 & 50 & 11.5075 & 51.7816 & 6.7381 \\ 
-套铣/铸铁 & 15.725 & 100 & 12.5579 & 64.8384 & 9.4433 \\ \bottomrule
-\end{tabular}
-\end{table}
-
-\subsection{三项性能的权衡关系}
+\subsection{性能条件与综合评价}
 \label{sec:r46-5.4.2}
 
-图6-12至图6-15以预测钻速为横坐标、预测扭矩为纵坐标，并用颜色表示预测磨损量。红色点及圈定区域表示经性能约束和综合评分得到的推荐工况。四图依次对应平底式磨铣加工45号钢、刀翼式磨铣加工45号钢、套铣加工45号钢和套铣加工铸铁，与表6-5至表6-7的分组相同。
+在各组全域有效预测中，取钻速60\%分位数作为最低效率条件，取扭矩和磨损80\%分位数作为上限，再从Pareto候选集中筛选同时满足三项条件的组合。表\ref{tab:r46-5-8}列出各组候选数量与筛选阈值。分位数表达本次分析对效率、负载和磨损的取舍；设备承载能力及实际可执行参数按设备与工具条件另行核对。
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=145.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig5-12-1.png}
-\caption{平底式磨铣加工45号钢的性能权衡及推荐区域}
-\label{fig:r46-5-12}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=145.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig5-13-1.png}
-\caption{刀翼式磨铣加工45号钢的性能权衡及推荐区域}
-\label{fig:r46-5-13}
-\end{figure}
-
-套铣45号钢的推荐点位于较低扭矩对应的性能分布下缘，在保持钻速要求的同时控制负载；套铣铸铁的推荐点集中在较高钻速区域，扭矩和磨损量也相应较高。两组结果体现了材料变化后的性能差异及推荐范围。
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=145.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig5-14-1.png}
-\caption{套铣加工45号钢的性能权衡及推荐区域}
-\label{fig:r46-5-14}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=145.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig5-15-1.png}
-\caption{套铣加工铸铁的性能权衡及推荐区域}
-\label{fig:r46-5-15}
-\end{figure}
-
-\section{正向预测与目标参数反向推荐}
-\label{sec:r46-5.5}
-
-\subsection{两种参数计算方式}
-\label{sec:r46-5.5.1}
-
-正向预测由用户选择工具及工件材料，输入钻压和转速，计算钻速、扭矩及磨损量。反向推荐由用户输入目标性能，在实验范围内通过正向模型搜索候选组合，再按目标偏差和综合评分返回钻压、转速。两种计算方式共用相应工具与材料的正向预测模型。
-
-平底式磨铣的交互算例见表6-8。正向计算输入15 kN钻压、50 r/min转速，得到预测钻速8.2166 mm/min、扭矩31.9562 N·m和磨损量3.9489 g。反向计算输入目标钻速8 mm/min、扭矩25 N·m和磨损量3 g，程序返回7.2800 kN和54.6667 r/min的参数组合，作为按该目标搜索得到的推荐设置。
-
-\begin{table}[H]
-\centering
-\setstretch{1}
-\fontsize{12}{15}\selectfont
-\setlength{\tabcolsep}{3pt}
-\renewcommand{\arraystretch}{1.5}
-\caption{平底式磨铣正向预测与反向推荐算例}\label{tab:r46-5-8}
-\begin{tabular}{>{\centering\arraybackslash}m{0.136528\dimexpr\linewidth-6\tabcolsep-4\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.385625\dimexpr\linewidth-6\tabcolsep-4\arrayrulewidth\relax}>{\centering\arraybackslash}m{0.477847\dimexpr\linewidth-6\tabcolsep-4\arrayrulewidth\relax}}
-\toprule
- 计算方式 & 输入内容 & 输出结果 \\ \midrule
-正向预测 & 钻压15 kN\newline{}转速50 r/min & 预测钻速8.2166 mm/min\newline{}预测扭矩31.9562 N·m\newline{}预测磨损量3.9489 g \\ 
-反向推荐 & 目标钻速8 mm/min\newline{}目标扭矩25 N·m\newline{}目标磨损量3 g & 推荐钻压7.2800 kN\newline{}推荐转速54.6667 r/min\newline{}对应预测钻速、扭矩与磨损量由界面同步给出 \\ \bottomrule
-\end{tabular}
-
-\vspace{4pt}
-{\small 注：平底式磨铣在实验范围内可实现的预测钻速约为$7.37\sim7.40$ mm/min（见表\ref{tab:r46-5-6}），三项目标值（8 mm/min、25 N·m、3 g）不能在同一工况下同时达到，反向推荐按目标偏差与综合评分返回最接近的组合；该组合对应的预测钻速、扭矩和磨损量在推荐系统界面中与钻压、转速并列显示，供用户与目标值逐项比对。}
+\begin{table}[htbp]
+	\centering
+	\caption{Pareto候选数量与性能筛选条件}
+	\label{tab:r46-5-8}
+	\small
+	\setlength{\tabcolsep}{2.5pt}
+	\renewcommand{\arraystretch}{1.4}
+	\begin{tabularx}{\textwidth}{lCCCCC}
+		\toprule
+		工具与材料 & 非支配数 & 满足条件数 & \begin{tabular}[c]{@{}c@{}}最低钻速\\ (mm/min)\end{tabular} & \begin{tabular}[c]{@{}c@{}}最大扭矩\\ (N·m)\end{tabular} & 最大磨损 \\
+		\midrule
+		平底式/45号钢 & 3830 & 464 & 8.0017 & 31.20 & 4.5487 g \\
+		刀翼式/45号钢 & 2642 & 84 & 7.2599 & 31.17 & 4.5244 g \\
+		套铣/45号钢 & 3226 & 720 & 10.1970 & 57.93 & 7.1611 g \\
+		套铣/铸铁 & 141 & 24 & 6.7816 & 63.64 & 8.4042 g \\
+		146 mm套铣/42CrMo & 779 & 230 & 0.7324 & 7555.36 & 0.4168 mm \\
+		\bottomrule
+	\end{tabularx}
 \end{table}
 
-\subsection{作业参数智能推荐系统}
-\label{sec:r46-5.5.2}
+对满足条件的组合，以全域有效预测的固定最大值和最小值进行归一化。钻速取正向指标$z_v$，扭矩与磨损取反向指标$z_T$和$z_w$；三项指标均为0～1，值越大表示越有利。综合方案对钻速、扭矩和磨损的权重依次为0.30、0.45、0.25，按式\eqref{eq:r46-5-5}计算综合得分并排序。
 
-套磨铣工具作业参数智能推荐系统集成工具与材料选择、性能预测和参数推荐功能。相关性分析、模型评价和Pareto优化视图分别显示数据关系、预测表现及候选工况的性能分布。图6-16给出套铣加工45号钢的相关性分析界面，其中钻压、转速与三项性能的关系对应第五章同组实验结果。
+\begin{equation}
+	S=0.30z_v+0.45z_T+0.25z_w
+	\label{eq:r46-5-5}
+\end{equation}
+
+连续域得到的优选结果进一步投到0.5 kN、5 r/min的离散分析网格上，重新预测、进行Pareto筛选、核对性能阈值并计算综合得分。离散结果因此对应重新完成筛选的候选组合，单纯将连续最优值取整可能改变其可行性。分位数、归一化范围和权重在两次筛选中保持一致。
+
+\subsection{五组推荐参数与性能权衡}
+\label{sec:r46-5.4.3}
+
+\begin{table}[htbp]
+	\centering
+	\caption{五组离散推荐参数及模型预测性能}
+	\label{tab:r46-5-9}
+	\small
+	\setlength{\tabcolsep}{3pt}
+	\renewcommand{\arraystretch}{1.4}
+	\begin{tabularx}{\textwidth}{lCCCCC}
+		\toprule
+		工具与材料 & \begin{tabular}[c]{@{}c@{}}钻压\\ kN\end{tabular} & \begin{tabular}[c]{@{}c@{}}转速\\ r/min\end{tabular} & \begin{tabular}[c]{@{}c@{}}钻速\\ mm/min\end{tabular} & \begin{tabular}[c]{@{}c@{}}扭矩\\ N·m\end{tabular} & 磨损 \\
+		\midrule
+		平底式/45号钢 & 10 & 95 & 8.091 & 30.10 & 3.316 g \\
+		刀翼式/45号钢 & 11.5 & 95 & 7.385 & 27.41 & 3.376 g \\
+		套铣/45号钢 & 17.5 & 60 & 13.205 & 51.62 & 6.838 g \\
+		套铣/铸铁 & 10 & 100 & 7.006 & 43.19 & 4.823 g \\
+		146 mm套铣/42CrMo & 25 & 75 & 0.754 & 2743.58 & 0.313 mm \\
+		\bottomrule
+	\end{tabularx}
+\end{table}
+
+平底式磨铣45号钢的代表组合为10 kN、95 r/min，预测钻速8.091 mm/min；刀翼式磨铣45号钢为11.5 kN、95 r/min，预测钻速7.385 mm/min。两组通过不同钻压匹配较高转速，并同时满足各自的扭矩与质量磨损条件。相应性能权衡见图\ref{fig:r46-5-14}、图\ref{fig:r46-5-15}。
 
 \begin{figure}[H]
-\centering
-\includegraphics[width=132.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig5-16-1.png}
-\caption{套铣加工45号钢的相关性分析界面}
-\label{fig:r46-5-16}
+	\centering
+	\includegraphics[width=145.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig5-14-1.png}
+	\caption{平底式磨铣45号钢的性能权衡与推荐组合}
+	\label{fig:r46-5-14}
 \end{figure}
 
-使用时先选择工具类型与工件材料，再输入作业参数或目标性能，调用相应预测模型进行计算。平底式磨铣、刀翼式磨铣及套铣两种材料分别使用各自模型，按对应组别的性能分布和筛选条件推荐参数。
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=145.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig5-15-1.png}
+	\caption{刀翼式磨铣45号钢的性能权衡与推荐组合}
+	\label{fig:r46-5-15}
+\end{figure}
+
+110 mm套铣45号钢推荐17.5 kN、60 r/min，预测钻速13.205 mm/min、扭矩51.62 N·m、质量磨损6.838 g；套铣铸铁推荐10 kN、100 r/min，预测钻速7.006 mm/min、扭矩43.19 N·m、质量磨损4.823 g。图\ref{fig:r46-5-16}、图\ref{fig:r46-5-17}表明，两种材料对应不同的性能分布和可行区域，应分别调用相应模型。GBDT的分段预测会使部分相邻参数具有相同输出，表\ref{tab:r46-5-9}给出按统一规则选出的代表组合。
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=145.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig5-16-1.png}
+	\caption{110 mm套铣45号钢的性能权衡与推荐组合}
+	\label{fig:r46-5-16}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=145.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig5-17-1.png}
+	\caption{110 mm套铣铸铁的性能权衡与推荐组合}
+	\label{fig:r46-5-17}
+\end{figure}
+
+\subsection{146 mm套铣优选算例}
+\label{sec:r46-5.4.4}
+
+146 mm组由6561个预测组合得到779个Pareto候选，其中230个满足钻速不低于0.7324 mm/min、扭矩不高于7555.36 N·m、磨损高度不高于0.4168 mm的条件。连续域综合最优为25.0625 kN、75 r/min；在离散网格重新筛选后，推荐25 kN、75 r/min，对应预测钻速0.754 mm/min、扭矩2743.58 N·m、磨损高度0.313 mm。
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=145.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig5-18-1.png}
+	\caption{146 mm套铣的性能权衡与候选工况}
+	\label{fig:r46-5-18}
+\end{figure}
+
+与同为75 r/min的35 kN对照组合相比，推荐组合的预测钻速降低18.1\%，扭矩降低35.5\%，磨损高度降低32.3\%。该方案在所设最低钻速条件下，优先降低负载并兼顾工具消耗，体现了综合目标的取舍。推荐参数与原输入工况重合，其模型回代值用于候选比较，后续应用效果仍通过对应作业记录评价。
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=145.000mm,height=0.76\textheight,keepaspectratio]{figure/research4-6/fig5-19-1.png}
+	\caption{146 mm套铣从全域预测到离散推荐的参数筛选区域}
+	\label{fig:r46-5-19}
+\end{figure}
+
+\section{性能预测与目标参数推荐应用}
+\label{sec:r46-5.5}
+
+\subsection{正向预测与反向筛选}
+\label{sec:r46-5.5.1}
+
+正向预测先选择工具、尺寸与工件材料，再输入钻压和转速，由相应模型返回钻速、扭矩和磨损。目标参数推荐则输入性能要求，在同一模型的预测域中搜索满足条件的组合，再以综合得分排序。两种使用方式共用正向模型，工具选择、参数范围和性能单位保持对应。
+
+\begin{table}[htbp]
+	\centering
+	\caption{146 mm套铣正向预测与目标筛选算例}
+	\label{tab:r46-5-10}
+	\small
+	\setlength{\tabcolsep}{3pt}
+	\renewcommand{\arraystretch}{1.35}
+	\begin{tabularx}{\textwidth}{cCC}
+		\toprule
+		计算方式 & 输入条件 & 输出与评价 \\
+		\midrule
+		正向预测 & 146 mm套铣/42CrMo；25 kN、75 r/min & 钻速0.754 mm/min；扭矩2743.58 N·m；磨损高度0.313 mm \\
+		\midrule
+		目标筛选 & 最低钻速0.7324 mm/min；最高扭矩7555.36 N·m；最大磨损高度0.4168 mm；权重0.30/0.45/0.25 & 在20～35 kN、60～180 r/min内筛选，并在离散网格重新比较，代表组合为25 kN、75 r/min \\
+		\bottomrule
+	\end{tabularx}
+\end{table}
+
+\subsection{工具选择与结果使用}
+\label{sec:r46-5.5.2}
+
+应用时首先核对工具、材料和参数范围，随后按评价目标选择最低效率及负载、磨损条件。输出结果同时列出推荐钻压、转速、三项预测性能和采用的模型，便于对照实验记录或作业记录。分析网格的步长用于形成可比较的候选设置，实际实施时还应匹配设备档位、驱动能力和工具允许载荷。
+
+五组模型和逐工况预测结果已形成可复算资料，支持模型比较、性能查询、候选筛选及算例演示。各模型通过明确的工具材料分组衔接现场参数选择，避免跨材料、跨尺寸直接沿用另一组的推荐组合。
+
+\section{本章研究成果}
+\label{sec:r46-5.6}
+
+形成了五类井筒清洁工具的室内评价工艺，明确功能与清洁效果、耐用性和作业效率的测量方法，并以已有部件实验说明清洁、吸附与携屑机理的响应特征。建立五组套磨铣性能预测与多目标选参方法，通过统一算法比较和可复算筛选流程，输出与工具材料组合对应的钻压、转速及预测性能，为效率、负载和工具消耗的综合评价提供依据。

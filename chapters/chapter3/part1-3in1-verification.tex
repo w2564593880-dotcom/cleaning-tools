@@ -98,21 +98,22 @@ $n$---安全系数，取 $n = 1.5$（按《机械设计手册》机械零部件�
 
 2）主要受力件仿真校核
 
-脉冲器的主要受力件为心轴（图号 MCQ105-2--心轴，材料 4145H，其技术要求第 1 条规定：调质后屈服强度不低于 827\,MPa、抗拉强度不低于 965\,MPa），危险截面位于出水口处。有限元分析结果表明，心轴的最大拉应力为 630\,MPa，低于材料屈服强度；最大切应力为 994\,MPa，仅出现在个别节点处。该高应力并非由真实的应力峰值或应力集中引起，而是数值计算在该处产生的应力奇异所致，实际结构中并不存在相应的应力水平。因此，该数值不应作为控制截面承载能力的依据，心轴静强度仍满足设计要求。
+脉冲器的主要受力件为心轴（图号 MCQ105-2--心轴，材料 4145H，其技术要求第 1 条规定：调质后屈服强度不低于 827\,MPa、抗拉强度不低于 965\,MPa），其结构如图\ref{fig:FEA_inner_pipe_3_in_1_model}所示。出水口和环槽位置是强度薄弱位置，难以通过解析方法进行校核。有限元分析结果表明，在40T的载荷下，心轴的最大拉应力为 790\,MPa，低于材料屈服强度，其安全系数为1.05；在8kN·m的扭矩下，最大等效应力为 660\,MPa，低于材料的屈服强度，安全系数为1.25。因此，该数值不应作为控制截面承载能力的依据，心轴静强度仍满足设计要求。
 
 
 \begin{figure}[htbp]
 	\centering
 	\subfloat[脉冲器心轴]{%
 	\includegraphics[width=0.7\textwidth]{figure/chapter3/inner-pipe-3-in-1.png}
+    \label{fig:FEA_inner_pipe_3_in_1_model}
 	}
 	\hfill
 	\subfloat[抗拉强度分析]{%
-	\includegraphics[width=0.4\textwidth]{figure/chapter3/inner-pipe-3-in-1-tensile-stress.png}
+	\includegraphics[width=0.5\textwidth]{figure/chapter3/inner-pipe-pulser-3-in-1-tensile-stress-40T.jpg}
 	}
 	\vspace{1em}
 	\subfloat[抗扭强度分析]{%
-	\includegraphics[width=0.45\textwidth]{figure/chapter3/inner-pipe-3-in-1-torsional-stress.png}
+	\includegraphics[width=0.45\textwidth]{figure/chapter3/inner-pipe-3-in-1-torsional-stress-40kNm.jpg}
 	}
 	\caption{脉冲发生器薄弱零件强度有限元分析}
 	\label{fig:FEA_inner_pipe_3_in_1}

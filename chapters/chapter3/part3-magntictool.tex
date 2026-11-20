@@ -338,7 +338,7 @@ $[\tau]$--材料许用切应力，MPa（按 $[\tau]=n\sigma_{\mathrm{s}} = 0.66\
 芯轴 2.85\inch -8 Stub ACME 内螺纹根部最大扭矩：
 \begin{equation}
     \begin{aligned}
-        T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6} \\
+          T_{\max} &= \frac{[\tau] \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D} \times 10^{-6} \\
                 &= \frac{613.8 \times 3.14 \times (100^4 - 70.30^4)}{16 \times 100} \times 10^{-6} \\
                 &= 86.29\,\text{kN}\cdot\text{m} > 18\,\text{kN}\cdot\text{m}
     \end{aligned}
@@ -1101,33 +1101,7 @@ $V_2$--磁性物质体积，m$^3$。
 	\item 起钻操作需全程保持平稳低速，严禁猛提、猛刹或剧烈震动，避免强磁部件因冲击受损及已吸附碎屑脱落。
 \end{itemize}
 
-\subsection{疲劳寿命有限元分析}
-材料为 4330V-155KSI，S-N 曲线取 $\sigma_a=4\,512.7\,N^{-0.2287}$（$1\times10^{6}$ 次处 191.5\,MPa）。
-模型与边界条件同本章强度校核，额定轴向拉力 1\,000\,kN，下端固定、上端加载，
-按 $R=0$ 脉动循环、Goodman 修正评定，设计循环数 1\,000 次。结果见表~\ref{tab:fatigue_mag}。
-
-\begin{table}[htbp]
-\centering
-\caption{大容量强磁工具疲劳寿命计算结果}
-\label{tab:fatigue_mag}
-\begin{tabularx}{\textwidth}{lCCC}
-\hline
-项目 & 轴向拉伸 & 抗扭 & 判据 \\
-\hline
-评定应力 / MPa & 604.1 & 597.7 & --- \\
-静强度安全系数 & 1.54 & 1.56 & $\ge 1.5$ \\
-等效对称应力幅 / MPa & 426.9 & --- & --- \\
-计算寿命 / 次 & $3.0\times10^{4}$ & --- & --- \\
-200 次累积损伤 & $6.7\times10^{-3}$ & --- & $\le 1.0$ \\
-疲劳安全系数 & 1.62 & --- & $\ge 1.5$ \\
-\hline
-\end{tabularx}
-\end{table}
-
-评定应力 604.1\,MPa，静强度安全系数 1.54，疲劳安全系数 1.62，寿命 $3.0\times10^{4}$ 次，
-200 趟累积损伤 $6.7\times10^{-3}$，满足判据。控制部位为磁钢护套与中心管的连接螺纹根部，
-装配时应控制上扣扭矩，避免预紧过大在螺纹根部叠加拉应力。
-
+\input{chapters/chapter3/part3-magntictool-fatigue}
 \subsection{强磁工具维护与保养}
 
 大容量强磁吸附工具每次使用后，应放在没有铁屑和杂物区域内的木板或橡胶板上，清除干净吸附在强磁工具表面的金属颗粒和铁屑粉末，然后用清水清洗各零件。工具在井下工作多次后，或在恶劣条件下工作后，应进行维护修理，将其全部拆开、检查、重新装配。

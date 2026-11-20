@@ -3,13 +3,13 @@
 \subsection{设计计算与校核}
 \subsubsection{脉冲器计算与校核}
 
-脉冲器的设计要求见表\ref{tab:pulsar_design_req}，其中外径、水眼直径与接头扣型按图号 MCQ105-0--4\,1/8 英寸脉冲短节装配图标注取值，许用拉力与许用扭矩按该图技术要求第 3 条“产品的最大抗拉不低于 400\,kN，最大抗扭不低于 8\,kN$\cdot$m”取值。
+脉冲发生器的设计要求见表\ref{tab:pulsar_design_req}，其中外径、水眼直径与接头扣型按图号 MCQ105-0--4\,1/8 英寸脉冲短节装配图标注取值，许用拉力与许用扭矩按该图技术要求第 3 条“产品的最大抗拉不低于 400\,kN，最大抗扭不低于 8\,kN$\cdot$m”取值。
 
 \begin{table}[htbp]
     \centering
     \caption{脉冲器设计要求}
     \label{tab:pulsar_design_req}
-    \renewcommand{\arraystretch}{1.5} % 增加行高，使表格更美观
+    \renewcommand{\arraystretch}{1.} % 增加行高，使表格更美观
     \begin{tabularx}{1.0\textwidth}{CCCCCC}
         \toprule % 顶线
         \begin{tabular}[c]{@{}c@{}}外径\\ (mm)\end{tabular} & 
@@ -25,64 +25,62 @@
     \par\vspace{4pt}{\small 注：表中许用拉力、许用扭矩为图纸技术要求规定的设计指标下限；各模块按危险截面计算得到的承载能力（如旋转喷头见表\ref{tab:rotary_nozzle_params}）一般高于该指标，两者含义不同，不应直接比较。}
 \end{table}
 
-
-该产品为井下清洁工具，工作条件恶劣，结构为中间空的细长杆件，筒壁较薄。按API标准对钻具材料的要求，主体结构材料选用具有较高强度的4145H合金结构钢并调质处理，钢材成分符合ASTM A304-05e2的规定。
-为适应井下的应力状态，热处理后的力学性能应达到表\ref{tab:product_requirements}的要求。
+鉴于该产品作为井下清洁工具，其工作环境极端恶劣，整体结构呈中空细长杆状，且筒壁相对较薄。依据 API 标准对钻具材料的规定，主体结构材料选用强度较高的 4145H 合金结构钢，并经过调质处理，以确保其具备优良的抗拉与抗扭性能。同时，钢材化学成分严格遵守 ASTM A304-20 标准，从而在满足井下苛刻工况的同时，保证结构强度与疲劳寿命。
+为适应井下的应力状态，热处理后的力学性能应达到表\ref{tab:product_requirements}的要求。经过受力分析，心轴零件上的螺纹退刀槽结构截面为危险截面，需进行抗拉、抗扭计算。此外，心轴零件上的开有4个$\phi 12$的水眼孔，削弱了心轴的强度，因其结构复杂，还需进行有限元分析校核。
 
 \begin{table}[htbp]
     \centering
     \caption{产品要求}
     \label{tab:product_requirements}
-    \renewcommand{\arraystretch}{1.5} % 增加行高，使表格更美观
-    \begin{tabularx}{1.0\textwidth}{CCCC}
+    \renewcommand{\arraystretch}{1.} % 增加行高，使表格更美观
+    \begin{tabularx}{.9\textwidth}{CCCC}
         \toprule % 顶线
         硬度 & 最小屈服强度 & 伸长率 & 夏比冲击功 \\
         \midrule % 栏目线
-        285-321(HB) & $\sigma_{\mathrm{S}} \ge 785\text{MPa}$ & $13\%$ & $Akv \ge 54\text{J}$ \\
+        285-321(HB) & $\sigma_{\mathrm{S}} \ge 825\text{MPa}$ & $13\%$ & $Akv \ge 54\text{J}$ \\
         \bottomrule % 底线
     \end{tabularx}
 \end{table}
 
-
-1）危险截面（图号 MCQ105-2--心轴\ 螺纹应力分散槽处）抗拉、抗扭计算
+1）危险截面（图号 MCQ105-2--心轴\ 螺纹退刀槽处）抗拉、抗扭计算
 
 （1）许用拉力计算
 
 \begin{equation}
     F_{\max} = \frac{[\pi \cdot (D^2 - d^2)] \cdot \sigma_{\mathrm{s}}}{4 \cdot n} \times 10^{-3}
 \end{equation}
-式中，$F_{\max}$--工具最大拉力，$\mathrm{kN}$（设计许用值 400\,kN，参见图号 MCQ105-0--4\,1/8 英寸脉冲短节装配图\ 技术要求第 3 条）；
+式中，$F_{\max}$--工具最大拉力，$\mathrm{kN}$（设计值为 400\,kN，参见图号 MCQ105-0--4\,1/8 英寸脉冲短节装配图\ 技术要求第 3 条）；
 
-$D$--危险截面外径，$\mathrm{mm}$（取 50\,mm，取自图号 MCQ105-2--芯轴\ 主视图右端 $M50 \times 3\text{-}7H$ 外螺纹端部的螺纹应力分散槽截面）；
+$D$--危险截面外径，$\mathrm{mm}$，取 48\,mm（取自图号 MCQ105-2--心轴\ 主视图左端退刀槽处，该处标注 $\phi 48$）；
 
-$d$---危险截面内径，mm（取全零件最大内孔直径30\,mm作为内径参数 ，取自图号 MCQ105-2--心轴主视图左端内孔标注 $\phi 30$）；
+$d$---危险截面内径，mm，取 25\,mm（取自图号 MCQ105-2--心轴\ 中间水眼直径 $\phi 25$）；
 
-$\sigma_{\mathrm{s}}$---材料最小屈服强度，取 825\,MPa（图号 MCQ105-2--心轴技术要求第 1 条：材料 4145H，调质后屈服强度 $\ge 827$\,MPa，计算偏安全取 825\,MPa）；
+$\sigma_{\mathrm{s}}$---材料最小屈服强度，取 825\,MPa（图号 MCQ105-2--心轴\ 技术要求第 1 条：材料 4145H，调质后屈服强度 $\ge 825$\,MPa）；
 
-$n$---安全系数，取 $n = 1.5$（按《机械设计手册》机械零部件强度计算中安全系数的取值规定\cite{ref26}）。
+$n$---许用安全系数，取 $n = 1.5$（按《机械设计手册》机械零部件强度计算中安全系数的取值规定\cite{ref26}）。
 
 代入数据计算如下：
 \begin{equation}
 \begin{aligned}
     F_{\max} &= \frac{\pi \cdot (D^2 - d^2) \cdot \sigma_{\mathrm{s}}}{4 \cdot n} \times 10^{-3} \\
-             &= \frac{3.14 \times (50^2 - 30^2) \times 825}{4 \times 1.5} \times 10^{-3} \\
-             &= 690.8 \, \text{kN} > 400 \, \text{kN}
+             &= \frac{3.14 \times (48^2 - 25^2) \times 825}{4 \times 1.5} \times 10^{-3} \\
+             &= 725.28 \, \text{kN} > 400 \, \text{kN}
 \end{aligned}
 \end{equation}
-满足设计要求。
+于是，心轴危险截面抗拉强度满足设计要求，且实际安全系数为$2.72$。
 
-(2) 许用扭矩计算
+（2）许用扭矩计算
 
 \begin{equation}
     T_{\max} = \frac{\sigma_{\mathrm{s}} \cdot \pi \cdot (D^4 - d^4)}{16 \cdot D \cdot n} \times 10^{-6}
 \end{equation}
 式中，$T_{\max}$---最大扭矩，kN$\cdot$m（设计许用值 8\,kN$\cdot$m，取自图号 MCQ105-0--4\,1/8 英寸脉冲短节装配图技术要求第 3 条）；
 
-$\sigma_{\mathrm{s}}$---材料屈服应力，MPa（取 825\,MPa，取自图号 MCQ105-2--心轴技术要求第 1 条，该条要求调质后屈服强度 $\ge 827$\,MPa）；
+$\sigma_{\mathrm{s}}$---材料屈服应力，MPa（取 825\,MPa，即表\ref{tab:product_requirements}规定的最小屈服强度；图号 MCQ105-2--心轴技术要求第 1 条要求调质后屈服强度 $\ge 827$\,MPa，取 825\,MPa 偏于安全）；
 
-$D$---危险截面外径，mm（取 50\,mm，取自图号 MCQ105-2--芯轴\ 主视图右端 $M50 \times 3\text{-}7H$ 外螺纹端部的螺纹应力分散槽截面）；
+$D$---危险截面外径，mm（取 50\,mm，同图号 MCQ105-2--心轴 M55$\times$3-6g 外螺纹端部螺纹退刀槽处截面，标注 $\phi 51\,_{-0.030}^{-0.076}$，取整为 50\,mm）；
 
-$d$---危险截面内径，mm（取全零件最大内孔直径30\,mm作为内径参数 ，取自图号 MCQ105-2--心轴主视图左端内孔标注 $\phi 30$）；
+$d$---危险截面内径，mm（取 30\,mm，取自图号 MCQ105-2--心轴\ 主视图左端内孔标注 $\phi 30$）；
 
 $n$---安全系数，取 $n = 1.5$（按《机械设计手册》机械零部件强度计算中安全系数的取值规定\cite{ref26}）。
 
@@ -98,22 +96,25 @@ $n$---安全系数，取 $n = 1.5$（按《机械设计手册》机械零部件�
 
 2）主要受力件仿真校核
 
-脉冲器的主要受力件是心轴（图号 MCQ105-2--心轴，材料 4145H，技术要求第 1 条规定调质后屈服强度 $\ge 827$\,MPa、抗拉强度 $\ge 965$\,MPa），危险截面在出水口。有限元分析中材料的屈服应力按 930\,MPa 取值，该值为材料调质态屈服强度的实测水平，高于合同技术要求的下限 827\,MPa；需要说明的是，判据取 930\,MPa 而非 827\,MPa 并不偏于保守，因此下文同时按 827\,MPa 这一偏安全的判据复核。在抗拉工况下，心轴的最大 von Mises 等效应力为 633\,MPa，无论按 827\,MPa 还是按 930\,MPa 评定均低于屈服强度；在抗扭工况下，出水口边缘处的最大 von Mises 等效应力为 994\,MPa，略高于屈服应力，但该高应力区仅局限于出水口几何突变处的很小范围内，远离该处的等效应力迅速降至 650\,MPa 以下，属局部应力集中，不会引起心轴的整体塑性变形。因此，心轴的强度满足设计要求。
+脉冲器的主要受力件为心轴（图号 MCQ105-2--心轴，材料 4145H，其技术要求第 1 条规定：调质后屈服强度不低于 827\,MPa、抗拉强度不低于 965\,MPa），其结构如图\ref{fig:FEA_inner_pipe_3_in_1_model}所示。出水口和环槽位置是强度薄弱位置，难以通过解析方法进行校核。有限元分析结果表明，在40T的载荷下，心轴的最大拉应力为 790\,MPa，低于材料屈服强度，其安全系数为1.05；在8kN·m的扭矩下，最大等效应力为 660\,MPa，低于材料的屈服强度，安全系数为1.25。因此，该数值不应作为控制截面承载能力的依据，心轴静强度仍满足设计要求。
 
 
 \begin{figure}[htbp]
 	\centering
 	\subfloat[脉冲器心轴]{%
 	\includegraphics[width=0.7\textwidth]{figure/chapter3/inner-pipe-3-in-1.png}
+    \label{fig:FEA_inner_pipe_3_in_1_model}
 	}
 	\hfill
 	\subfloat[抗拉强度分析]{%
-	\includegraphics[width=0.4\textwidth]{figure/chapter3/inner-pipe-3-in-1-tensile-stress.png}
+	\includegraphics[width=0.5\textwidth]{figure/chapter3/inner-pipe-pulser-3-in-1-tensile-stress-40T.jpg}
 	}
 	\vspace{1em}
 	\subfloat[抗扭强度分析]{%
-	\includegraphics[width=0.45\textwidth]{figure/chapter3/inner-pipe-3-in-1-torsional-stress.png}
+	\includegraphics[width=0.45\textwidth]{figure/chapter3/inner-pipe-3-in-1-torsional-stress-40kNm.jpg}
 	}
 	\caption{脉冲发生器薄弱零件强度有限元分析}
 	\label{fig:FEA_inner_pipe_3_in_1}
 \end{figure}
+
+

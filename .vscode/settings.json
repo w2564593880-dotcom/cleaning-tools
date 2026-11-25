@@ -2,15 +2,44 @@
     // 本仓库专用配方：本文档的参考文献是 chapters/bib.tex 里的手工 thebibliography，
     // 没有 .bib 文件、正文也没有 \cite，因此全局配方中的 bibtex 步骤必然报
     // "I found no \citation commands" / "I found no \bibdata command"（exit 2）。
-    // 这里仅覆盖 recipes，去掉 bibtex 步骤；xelatex 工具仍沿用用户全局设置。
-    // 将来若改为 refs.bib + \bibliography + \cite 工作流，删除本文件即可恢复全局配方。
+    // 这里仅覆盖 tools + recipes，去掉 bibtex 步骤。
+    //
+    // 【编译加速】原来配方是 xelatex 连跑 3 遍，而 xelatex 每一遍结束都会完整生成
+    // 一次 PDF（本文档 256 页、插图 145 MB，一次约 3 分钟），等于把最贵的一步重复 3 次，
+    // 一次“构建”要 10 分钟左右。现在前两遍加 -no-pdf 只做排版（每遍约 13 秒），
+    // 最后只调用一次 xdvipdfmx 写 PDF（-z 1 比默认 -z 9 快约 3.5 倍）。
+    // 日常单遍足够；目录/交叉引用没更新时再点一次构建即可。
+    // 定稿要最小体积，用终端跑 ./build-fast.sh --final（-z 9）。
+    "latex-workshop.latex.tools": [
+        {
+            "name": "xelatex-nopdf",
+            "command": "xelatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-no-pdf",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "xdvipdfmx",
+            "command": "xdvipdfmx",
+            "args": [
+                "-q",
+                "-z",
+                "1",
+                "%DOCFILE%.xdv"
+            ]
+        }
+    ],
     "latex-workshop.latex.recipes": [
         {
-            "name": "xelatex ×3 (no bibtex)",
+            "name": "xelatex -no-pdf ×2 + xdvipdfmx（快）",
             "tools": [
-                "xelatex",
-                "xelatex",
-                "xelatex"
+                "xelatex-nopdf",
+                "xelatex-nopdf",
+                "xdvipdfmx"
             ]
         }
     ],

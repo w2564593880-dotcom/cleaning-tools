@@ -26,6 +26,11 @@ texput.fls
 .tmp_dbg/
 build*.txt
 
+# ===== 图片降采样的原图备份（见 README 第 6 节） =====
+# optimize_figures.py 把超过 300 DPI 的插图缩小前，原图备份到这里，约 114 MB。
+# 确认 PDF 清晰度没问题后可以删掉；不要提交进仓库。
+figure/_orig/
+
 # ===== 操作系统垃圾文件 =====
 .DS_Store
 Thumbs.db

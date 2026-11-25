@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.7.6)  23 NOV 2026 09:49
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.7.6)  25 NOV 2026 17:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1422,46 +1422,1220 @@ File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
  [2] (./main.toc
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 6.
-)
-\tf@toc=\write5
-\openout5 = `main.toc'.
-
+(Font)              scaled to size 8.0pt on input line 4.
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
  [3
 
 
 ]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [4]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [5]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [6]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [7]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [8])
+\tf@toc=\write5
+\openout5 = `main.toc'.
+
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [9] (./chapters/survey/chapter-survey.tex
 第一章
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
+(Font)              scaled to size 12.0pt on input line 21.
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
 [1
 
 
 ]
-第二章
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
-[2
+ [2]
+File: figure/survey/bristle-back.png Graphic file (type bmp)
+<figure/survey/bristle-back.png>
+File: figure/survey/xp-scraper.png Graphic file (type bmp)
+<figure/survey/xp-scraper.png>
+
+Underfull \hbox (badness 3503) in paragraph at lines 57--57
+[]\TU/TeXGyreTermesX(0)/m/n/9.03374 (b) |\TU/SimSun(0)/m/n/9.03374 贝 克
+ []
+
+
+Underfull \hbox (badness 3128) in paragraph at lines 57--57
+\TU/TeXGyreTermesX(0)/m/n/9.03374 Clean XP \TU/SimSun(0)/m/n/9.03374 套
+ []
+
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[3]
+File: figure/survey/chimera.png Graphic file (type bmp)
+<figure/survey/chimera.png>
+File: figure/survey/innobristle.png Graphic file (type bmp)
+<figure/survey/innobristle.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [4]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [5]
+File: figure/survey/mtwf.png Graphic file (type bmp)
+<figure/survey/mtwf.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [6]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [7]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [8]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [9]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [10]
+File: figure/survey/tech-route.png Graphic file (type bmp)
+<figure/survey/tech-route.png>
+)
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [11]
+第二章
+(./chapters/chapter1/part1-theory-basis.tex
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [12
 
 ]
+File: figure/kelipengzhuang.png Graphic file (type bmp)
+<figure/kelipengzhuang.png>
+File: figure/hertz-mindlin-contact-model.png Graphic file (type bmp)
+<figure/hertz-mindlin-contact-model.png>
+
+Overfull \hbox (6.02248pt too wide) in paragraph at lines 76--82
+ [][][][] 
+ []
+
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[13]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [14]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [15]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [16]
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
+(Font)              scaled to size 8.0pt on input line 324.
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
+(Font)              scaled to size 6.0pt on input line 324.
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [17]) (./chapters/chapter1/part2-sand-sendiment.tex
+File: figure/sand-sample.jpg Graphic file (type bmp)
+<figure/sand-sample.jpg>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [18]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [19]
+File: figure/annular-3d-model.png Graphic file (type bmp)
+<figure/annular-3d-model.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [20]
+File: figure/chapter1/sand-mass-in-annular-VS-time.png Graphic file (type bmp)
+<figure/chapter1/sand-mass-in-annular-VS-time.png>
+File: figure/chapter1/sand-velocity-cloud-sections.png Graphic file (type bmp)
+<figure/chapter1/sand-velocity-cloud-sections.png>
+File: figure/chapter1/sand-volume-fraction-cloud-sections.png Graphic file (type bmp)
+<figure/chapter1/sand-volume-fraction-cloud-sections.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [21]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [22]
+File: figure/chapter1/sand-mass-in-annular-VS-time-flowrate.png Graphic file (type bmp)
+<figure/chapter1/sand-mass-in-annular-VS-time-flowrate.png>
+File: figure/sand-volume-fraction-vin-dot17.png Graphic file (type bmp)
+<figure/sand-volume-fraction-vin-dot17.png>
+File: figure/sand-volume-fraction-vin-dot27.png Graphic file (type bmp)
+<figure/sand-volume-fraction-vin-dot27.png>
+File: figure/sand-volume-fraction-vin-dot69.png Graphic file (type bmp)
+<figure/sand-volume-fraction-vin-dot69.png>
+File: figure/chapter1/b-point-height-VS-flowrate.png Graphic file (type bmp)
+<figure/chapter1/b-point-height-VS-flowrate.png>
+File: figure/sand-volume-fraction-velocity-at-b-point-flowrate.png Graphic file (type bmp)
+<figure/sand-volume-fraction-velocity-at-b-point-flowrate.png>
+File: figure/chapter1/sand-mass-in-annular-VS-time-viscosity.png Graphic file (type bmp)
+<figure/chapter1/sand-mass-in-annular-VS-time-viscosity.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [23]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [24]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [25]
+File: figure/sand-volume-fraction-mu-1cp.png Graphic file (type bmp)
+<figure/sand-volume-fraction-mu-1cp.png>
+File: figure/sand-volume-fraction-mu-5cp.png Graphic file (type bmp)
+<figure/sand-volume-fraction-mu-5cp.png>
+File: figure/chapter1/b-point-height-VS-viscosity.png Graphic file (type bmp)
+<figure/chapter1/b-point-height-VS-viscosity.png>
+File: figure/sand-volume-fraction-velocity-at-b-point-viscosity.png Graphic file (type bmp)
+<figure/sand-volume-fraction-velocity-at-b-point-viscosity.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [26]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [27]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [28]
+File: figure/tool-and-wellbore-simulation-model.png Graphic file (type bmp)
+<figure/tool-and-wellbore-simulation-model.png>
+File: figure/sand-distribution-annular-vin-dot37.png Graphic file (type bmp)
+<figure/sand-distribution-annular-vin-dot37.png>
+File: figure/sand-distribution-annular-vin-dot59.png Graphic file (type bmp)
+<figure/sand-distribution-annular-vin-dot59.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [29]) (./chapters/chapter1/part3-iron-wire-sendiment.tex
+File: figure/iron-shavings-sample.jpg Graphic file (type bmp)
+<figure/iron-shavings-sample.jpg>
+File: figure/iron-wire-actual.jpg Graphic file (type bmp)
+<figure/iron-wire-actual.jpg>
+File: figure/iron-wire-model.jpg Graphic file (type bmp)
+<figure/iron-wire-model.jpg>
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
+(Font)              scaled to size 10.53937pt on input line 64.
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
+(Font)              scaled to size 7.0pt on input line 64.
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [30]
+File: figure/iron-wire-distribution-1cp-velocity-colored.png Graphic file (type bmp)
+<figure/iron-wire-distribution-1cp-velocity-colored.png>
+File: figure/iron-wire-distribution-1dot7-cp-velocity-colored.png Graphic file (type bmp)
+<figure/iron-wire-distribution-1dot7-cp-velocity-colored.png>
+File: figure/chapter1/iron-wire-mean-velocity-evolution-viscosity.png Graphic file (type bmp)
+<figure/chapter1/iron-wire-mean-velocity-evolution-viscosity.png>
+File: figure/chapter1/iron-wire-velocity-VS-viscosity.png Graphic file (type bmp)
+<figure/chapter1/iron-wire-velocity-VS-viscosity.png>
+File: figure/iron-wire-distribution-1dot7cp-0dot17mpers.png Graphic file (type bmp)
+<figure/iron-wire-distribution-1dot7cp-0dot17mpers.png>
+File: figure/iron-wire-distribution-1dot7cp-0dot27mpers.png Graphic file (type bmp)
+<figure/iron-wire-distribution-1dot7cp-0dot27mpers.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [31]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [32]
+File: figure/iron-wire-particle-track-1dot7cp-0dot17mpers.jpg Graphic file (type bmp)
+<figure/iron-wire-particle-track-1dot7cp-0dot17mpers.jpg>
+File: figure/iron-wire-particle-track-1dot7cp-0dot27mpers.jpg Graphic file (type bmp)
+<figure/iron-wire-particle-track-1dot7cp-0dot27mpers.jpg>
+File: figure/chapter1/iron-wire-mean-velocity-evolution-incoming-velocity.png Graphic file (type bmp)
+<figure/chapter1/iron-wire-mean-velocity-evolution-incoming-velocity.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [33]
+File: figure/iron-wire-distribution-1dot7cp-0dot27mpers-3angles.jpg Graphic file (type bmp)
+<figure/iron-wire-distribution-1dot7cp-0dot27mpers-3angles.jpg>
+File: figure/iron-wire-particle-track-1dot7cp-0dot27mpers-3angles.jpg Graphic file (type bmp)
+<figure/iron-wire-particle-track-1dot7cp-0dot27mpers-3angles.jpg>
+File: figure/chapter1/iron-wire-mean-velocity-evolution-5angles.png Graphic file (type bmp)
+<figure/chapter1/iron-wire-mean-velocity-evolution-5angles.png>
+) (./chapters/chapter1/part4-scale-wax.tex
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [34]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [35]
+File: figure/BaSr-sample.png Graphic file (type bmp)
+<figure/BaSr-sample.png>
+File: figure/BaSr-SEM.png Graphic file (type bmp)
+<figure/BaSr-SEM.png>
+File: figure/BaSr-model.png Graphic file (type bmp)
+<figure/BaSr-model.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [36]
+File: figure/BaSr-distribution-Vin.jpg Graphic file (type bmp)
+<figure/BaSr-distribution-Vin.jpg>
+File: figure/chapter1/BaSr-mean-velocity-evolution-vin-dot37.png Graphic file (type bmp)
+<figure/chapter1/BaSr-mean-velocity-evolution-vin-dot37.png>
+File: figure/chapter1/BaSr-mean-velocity-evolution-vin-dot59.png Graphic file (type bmp)
+<figure/chapter1/BaSr-mean-velocity-evolution-vin-dot59.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [37]
+File: figure/BaSr-distribution-3angles.jpg Graphic file (type bmp)
+<figure/BaSr-distribution-3angles.jpg>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [38]
+File: figure/chapter1/BaSr-mean-velocity-evolution-big-size.png Graphic file (type bmp)
+<figure/chapter1/BaSr-mean-velocity-evolution-big-size.png>
+File: figure/chapter1/BaSr-mean-velocity-evolution-small-size.png Graphic file (type bmp)
+<figure/chapter1/BaSr-mean-velocity-evolution-small-size.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [39]
+File: figure/chapter1/Wax-mean-velocity-Vin-dot37mpersec.png Graphic file (type bmp)
+<figure/chapter1/Wax-mean-velocity-Vin-dot37mpersec.png>
+File: figure/chapter1/Wax-mean-velocity-Vin-dot59mpersec.png Graphic file (type bmp)
+<figure/chapter1/Wax-mean-velocity-Vin-dot59mpersec.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [40]
+File: figure/wax-distribution-3angles.png Graphic file (type bmp)
+<figure/wax-distribution-3angles.png>
+File: figure/chapter1/Wax-mean-velocity-Vin-dot59mpersec-theta-0.png Graphic file (type bmp)
+<figure/chapter1/Wax-mean-velocity-Vin-dot59mpersec-theta-0.png>
+File: figure/chapter1/Wax-mean-velocity-Vin-dot59mpersec-theta-90.png Graphic file (type bmp)
+<figure/chapter1/Wax-mean-velocity-Vin-dot59mpersec-theta-90.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [41]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [42])
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [43]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [44]
 第三章
+(./chapters/chapter2/part1-horizontal-sand.tex
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [45
+
+]
+File: figure/chapter2/horizontal-washing-experiment-setup.png Graphic file (type bmp)
+<figure/chapter2/horizontal-washing-experiment-setup.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [46]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [47]
+File: figure/chapter2/IncomingReVStstar.png Graphic file (type bmp)
+<figure/chapter2/IncomingReVStstar.png>
+File: figure/chapter2/stagenation-with-inflection-point.png Graphic file (type bmp)
+<figure/chapter2/stagenation-with-inflection-point.png>
+File: figure/chapter2/bed-front-profile-VS-Rein.png Graphic file (type bmp)
+<figure/chapter2/bed-front-profile-VS-Rein.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [48]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [49]
+File: figure/chapter2/bed-oscillation.png Graphic file (type bmp)
+<figure/chapter2/bed-oscillation.png>
+File: figure/chapter2/M-shaped-bed-height.png Graphic file (type bmp)
+<figure/chapter2/M-shaped-bed-height.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [50]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [51]
+File: figure/chapter2/eta-gamma.png Graphic file (type bmp)
+<figure/chapter2/eta-gamma.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [52]
+File: figure/chapter2/bed-profile-guar-gel.png Graphic file (type bmp)
+<figure/chapter2/bed-profile-guar-gel.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [53]
+File: figure/chapter2/p-star-VS-t-star.png Graphic file (type bmp)
+<figure/chapter2/p-star-VS-t-star.png>
+File: figure/chapter2/Vs-star-VS-Rein.png Graphic file (type bmp)
+<figure/chapter2/Vs-star-VS-Rein.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [54]
+File: figure/chapter2/H-star-VS-Rein.png Graphic file (type bmp)
+<figure/chapter2/H-star-VS-Rein.png>
+File: figure/chapter2/Rel-VS-Rein.png Graphic file (type bmp)
+<figure/chapter2/Rel-VS-Rein.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [55]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [56]
+File: figure/chapter2/phis-VS-Rein.png Graphic file (type bmp)
+<figure/chapter2/phis-VS-Rein.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [57]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [58]) (./chapters/chapter2/part2-full-well-model.tex
+File: figure/chapter2/iron-washing-test-rig.png Graphic file (type bmp)
+<figure/chapter2/iron-washing-test-rig.png>
+File: figure/chapter2/iron-bed-7dot85mperh.png Graphic file (type bmp)
+<figure/chapter2/iron-bed-7dot85mperh.png>
+File: figure/chapter2/iron-bed-10dot00mperh.png Graphic file (type bmp)
+<figure/chapter2/iron-bed-10dot00mperh.png>
+File: figure/chapter2/iron-bed-11dot70mperh.png Graphic file (type bmp)
+<figure/chapter2/iron-bed-11dot70mperh.png>
+
+Overfull \hbox (4.50652pt too wide) in paragraph at lines 31--41
+ [][][][][][] 
+ []
+
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[59]
+File: figure/chapter2/iron-bed-15dot70mperh.png Graphic file (type bmp)
+<figure/chapter2/iron-bed-15dot70mperh.png>
+File: figure/chapter2/iron-bed-15dot83mperh.png Graphic file (type bmp)
+<figure/chapter2/iron-bed-15dot83mperh.png>
+File: figure/chapter2/iron-bed-17dot44mperh.png Graphic file (type bmp)
+<figure/chapter2/iron-bed-17dot44mperh.png>
+
+Overfull \hbox (4.50652pt too wide) in paragraph at lines 53--63
+ [][][][][][] 
+ []
+
+File: figure/chapter2/video-clip-theta-le-72-degree.png Graphic file (type bmp)
+<figure/chapter2/video-clip-theta-le-72-degree.png>
+File: figure/chapter2/extraction-of-pack-area-theta-le-72-degree.png Graphic file (type bmp)
+<figure/chapter2/extraction-of-pack-area-theta-le-72-degree.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[60]
+File: figure/chapter2/bed-position-VS-flow-rate-inclined-section.png Graphic file (type bmp)
+<figure/chapter2/bed-position-VS-flow-rate-inclined-section.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [61]
+Overfull \hbox (22.62262pt too wide) in paragraph at lines 124--134
+ [][] 
+ []
+
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[62]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [63])
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [64]
+第四章
 LaTeX Font Info:    Calculating math sizes for size <14> on input line 283.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
 (Font)              scaled to size 14.0pt on input line 283.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
 (Font)              scaled to size 9.79996pt on input line 283.
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 283.
-(./chapters/chapter3/part4-filter.tex
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 3.
+(./chapters/chapter3/part1-3in1-design.tex
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
- [3
+ [65
 
 ]
+File: figure/chapter3/tool-allstru-show.png Graphic file (type bmp)
+<figure/chapter3/tool-allstru-show.png>
+File: figure/chapter3/water-pressure-work.png Graphic file (type bmp)
+<figure/chapter3/water-pressure-work.png>
+File: figure/chapter3/water-pressure-work-right.png Graphic file (type bmp)
+<figure/chapter3/water-pressure-work-right.png>
+File: figure/chapter3/pulse-module.png Graphic file (type bmp)
+<figure/chapter3/pulse-module.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [66]
+File: figure/chapter3/energy-storage-in-pulse-module.jpg Graphic file (type bmp)
+<figure/chapter3/energy-storage-in-pulse-module.jpg>
+File: figure/chapter3/restore-in-pulse-module.jpg Graphic file (type bmp)
+<figure/chapter3/restore-in-pulse-module.jpg>
+
+Overfull \hbox (3.55896pt too wide) in paragraph at lines 64--64
+ []|[]| 
+ []
+
+
+Overfull \hbox (3.55896pt too wide) in paragraph at lines 64--64
+ []|[]| 
+ []
+
+
+Overfull \hbox (3.55896pt too wide) in paragraph at lines 64--64
+ []|[]| 
+ []
+
+
+Overfull \hbox (3.55896pt too wide) in paragraph at lines 64--64
+ []|[]| 
+ []
+
+File: figure/chapter3/roll-head.png Graphic file (type bmp)
+<figure/chapter3/roll-head.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[67]
+File: figure/chapter3/water-pluse.png Graphic file (type bmp)
+<figure/chapter3/water-pluse.png>
+
+Overfull \hbox (8.77527pt too wide) in paragraph at lines 126--126
+ []|[]| 
+ []
+
+File: figure/chapter3/scraper-in-3-in-1.png Graphic file (type bmp)
+<figure/chapter3/scraper-in-3-in-1.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[68]) (./chapters/chapter3/part1-3in1-verification.tex
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [69]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [70]
+File: figure/chapter3/inner-pipe-3-in-1.png Graphic file (type bmp)
+<figure/chapter3/inner-pipe-3-in-1.png>
+File: figure/chapter3/inner-pipe-pulser-3-in-1-tensile-stress-40T.jpg Graphic file (type bmp)
+<figure/chapter3/inner-pipe-pulser-3-in-1-tensile-stress-40T.jpg>
+File: figure/chapter3/inner-pipe-3-in-1-torsional-stress-40kNm.jpg Graphic file (type bmp)
+<figure/chapter3/inner-pipe-3-in-1-torsional-stress-40kNm.jpg>
+) (./chapters/chapter3/part1-3in1-hydraulic-model.tex
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [71]
+File: figure/chapter3/working-cycle-pulse-module.jpg Graphic file (type bmp)
+<figure/chapter3/working-cycle-pulse-module.jpg>
+File: figure/chapter3/force-analysis-reciprocating-piston.jpg Graphic file (type bmp)
+<figure/chapter3/force-analysis-reciprocating-piston.jpg>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [72]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [73]
+File: figure/chapter3/FSI-logic.jpg Graphic file (type bmp)
+<figure/chapter3/FSI-logic.jpg>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [74]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [75]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [76]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [77]
+File: figure/chapter3/piston-displacement-VS-time.png Graphic file (type bmp)
+<figure/chapter3/piston-displacement-VS-time.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [78]
+File: figure/chapter3/piston-velocity-VS-time.png Graphic file (type bmp)
+<figure/chapter3/piston-velocity-VS-time.png>
+File: figure/chapter3/piston-displacement-VS-Q.png Graphic file (type bmp)
+<figure/chapter3/piston-displacement-VS-Q.png>
+File: figure/chapter3/piston-velocity-VS-Q.png Graphic file (type bmp)
+<figure/chapter3/piston-velocity-VS-Q.png>
+File: figure/chapter3/3-14.png Graphic file (type bmp)
+<figure/chapter3/3-14.png>
+File: figure/chapter3/3-14-1.png Graphic file (type bmp)
+<figure/chapter3/3-14-1.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [79]
+File: figure/chapter3/piston-displacement-VS-spring-K.png Graphic file (type bmp)
+<figure/chapter3/piston-displacement-VS-spring-K.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [80]
+File: figure/chapter3/piston-velocity-VS-spring-K.png Graphic file (type bmp)
+<figure/chapter3/piston-velocity-VS-spring-K.png>
+File: figure/chapter3/3-17.png Graphic file (type bmp)
+<figure/chapter3/3-17.png>
+File: figure/chapter3/3-17-1.png Graphic file (type bmp)
+<figure/chapter3/3-17-1.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [81]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [82]
+File: figure/chapter3/piston-displacement-VS-h.png Graphic file (type bmp)
+<figure/chapter3/piston-displacement-VS-h.png>
+File: figure/chapter3/piston-velocity-VS-h.png Graphic file (type bmp)
+<figure/chapter3/piston-velocity-VS-h.png>
+File: figure/chapter3/3-20.png Graphic file (type bmp)
+<figure/chapter3/3-20.png>
+File: figure/chapter3/3-20-1.png Graphic file (type bmp)
+<figure/chapter3/3-20-1.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [83]
+File: figure/chapter3/pulser-mesh.jpg Graphic file (type bmp)
+<figure/chapter3/pulser-mesh.jpg>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [84]
+File: figure/chapter3/3-22.png Graphic file (type bmp)
+<figure/chapter3/3-22.png>
+File: figure/chapter3/axial-velocity-near-nozzle-section.jpg Graphic file (type bmp)
+<figure/chapter3/axial-velocity-near-nozzle-section.jpg>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [85]
+File: figure/chapter3/sand-volume-at-nozzle-section.jpg Graphic file (type bmp)
+<figure/chapter3/sand-volume-at-nozzle-section.jpg>
+File: figure/chapter3/sand-volume-at-verticle-section.jpg Graphic file (type bmp)
+<figure/chapter3/sand-volume-at-verticle-section.jpg>
+File: figure/chapter3/nozzle-sub-fluid-domain.png Graphic file (type bmp)
+<figure/chapter3/nozzle-sub-fluid-domain.png>
+File: figure/chapter3/nozzle-sub-fluid-domain-mesh.png Graphic file (type bmp)
+<figure/chapter3/nozzle-sub-fluid-domain-mesh.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [86]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [87]
+File: figure/chapter3/case-wall-pressure-t-dot5s.png Graphic file (type bmp)
+<figure/chapter3/case-wall-pressure-t-dot5s.png>
+File: figure/chapter3/case-wall-shear-t-dot5s.png Graphic file (type bmp)
+<figure/chapter3/case-wall-shear-t-dot5s.png>
+File: figure/chapter3/nozzle-streamline-dot5s.png Graphic file (type bmp)
+<figure/chapter3/nozzle-streamline-dot5s.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [88]
+File: figure/chapter3/monitoring-point-configuration.png Graphic file (type bmp)
+<figure/chapter3/monitoring-point-configuration.png>
+File: figure/chapter3/monitoring-points-pressure-T-dot5s.png Graphic file (type bmp)
+<figure/chapter3/monitoring-points-pressure-T-dot5s.png>
+File: figure/chapter3/monitoring-points-pressure-T-1s.png Graphic file (type bmp)
+<figure/chapter3/monitoring-points-pressure-T-1s.png>
+File: figure/chapter3/monitoring-points-pressure-T-2s.png Graphic file (type bmp)
+<figure/chapter3/monitoring-points-pressure-T-2s.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [89]) (./chapters/chapter3/part1-3in1-performance-test.tex
+Overfull \hbox (9.89029pt too wide) in paragraph at lines 18--31
+ [][] 
+ []
+
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[90]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [91]
+File: figure/chapter3/wproc-3in1-a.png Graphic file (type bmp)
+<figure/chapter3/wproc-3in1-a.png>
+File: figure/chapter3/wproc-3in1-b.png Graphic file (type bmp)
+<figure/chapter3/wproc-3in1-b.png>
+) (./chapters/chapter3/part1-3in1-setup-and-maintainance.tex
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [92]
+File: figure/chapter3/part1-3in1/nozzle-unsetup-step1.png Graphic file (type bmp)
+<figure/chapter3/part1-3in1/nozzle-unsetup-step1.png>
+File: figure/chapter3/part1-3in1/nozzle-unsetup-step2.png Graphic file (type bmp)
+<figure/chapter3/part1-3in1/nozzle-unsetup-step2.png>
+File: figure/chapter3/part1-3in1/nozzle-unsetup-step3.png Graphic file (type bmp)
+<figure/chapter3/part1-3in1/nozzle-unsetup-step3.png>
+File: figure/chapter3/part1-3in1/nozzle-unsetup-step4.png Graphic file (type bmp)
+<figure/chapter3/part1-3in1/nozzle-unsetup-step4.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [93]
+File: figure/chapter3/part1-3in1/nozzle-unsetup-step5.png Graphic file (type bmp)
+<figure/chapter3/part1-3in1/nozzle-unsetup-step5.png>
+File: figure/chapter3/part1-3in1/nozzle-unsetup-step6.png Graphic file (type bmp)
+<figure/chapter3/part1-3in1/nozzle-unsetup-step6.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [94]
+File: figure/chapter3/part1-3in1/nozzle-unsetup-step7.png Graphic file (type bmp)
+<figure/chapter3/part1-3in1/nozzle-unsetup-step7.png>
+File: figure/chapter3/part1-3in1/nozzle-unsetup-step8.png Graphic file (type bmp)
+<figure/chapter3/part1-3in1/nozzle-unsetup-step8.png>
+File: figure/chapter3/part1-3in1/nozzle-unsetup-step9.png Graphic file (type bmp)
+<figure/chapter3/part1-3in1/nozzle-unsetup-step9.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [95]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [96]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [97]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [98]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [99] (./chapters/chapter3/part1-3in1-fatigue.tex
+Overfull \hbox (5.93658pt too wide) in paragraph at lines 19--20
+[]\TU/SimSun(0)/m/n/12.045 表 面 加 工 系 数 $\OML/cmm/m/it/12.045 k[]$\TU/SimSun(0)/m/n/12.045 。|  零 件 图 要 求 机 加 工 面 $\OML/cmm/m/it/12.045 Ra\OT1/cmr/m/n/12.045 1\OML/cmm/m/it/12.045 :\OT1/cmr/m/n/12.045 6$\TU/SimSun(0)/m/n/12.045 ，|  按 手 册 的 机 加 工 曲 线 $\OML/cmm/m/it/12.045 k[] \OT1/cmr/m/n/12.045 = 4\OML/cmm/m/it/12.045 :\OT1/cmr/m/n/12.045 51\OML/cmm/m/it/12.045 ^^[[]$
+ []
+
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[100]
+Package pgfplots info on input line 82: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
+(Font)              scaled to size 7.52812pt on input line 93.
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
+(Font)              scaled to size 6.52437pt on input line 93.
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [101]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [102]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [103]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [104]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [105]
+Overfull \hbox (35.49695pt too wide) in paragraph at lines 231--232
+\OML/cmm/m/it/12.045 ^^[[] \OT1/cmr/m/n/12.045 = \OML/cmm/m/it/12.045 ^^[[] \OT1/cmr/m/n/12.045 = 196\OML/cmm/m/it/12.045 :\OT1/cmr/m/n/12.045 13$\TU/TeXGyreTermesX(0)/m/n/12.045 MPa\TU/SimSun(0)/m/n/12.045 ，| $\OML/cmm/m/it/12.045 ^^[[] \OT1/cmr/m/n/12.045 = 196\OML/cmm/m/it/12.045 :\OT1/cmr/m/n/12.045 13/(1 \OMS/cmsy/m/n/12.045 ^^@ \OT1/cmr/m/n/12.045 196\OML/cmm/m/it/12.045 :\OT1/cmr/m/n/12.045 13/965) = 246\OML/cmm/m/it/12.045 :\OT1/cmr/m/n/12.045 2$\TU/TeXGyreTermesX(0)/m/n/12.045 MPa\TU/SimSun(0)/m/n/12.045 ，| $\OML/cmm/m/it/12.045 N \OT1/cmr/m/n/12.045 = (3 840/246\OML/cmm/m/it/12.045 :\OT1/cmr/m/n/12.045 2)[] =
+ []
+
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[106])
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [107]
+File: figure/chapter3/part1-3in1/brush-pipe-test-1.png Graphic file (type bmp)
+<figure/chapter3/part1-3in1/brush-pipe-test-1.png>
+File: figure/chapter3/part1-3in1/brush-pipe-test-2.png Graphic file (type bmp)
+<figure/chapter3/part1-3in1/brush-pipe-test-2.png>
+File: figure/chapter3/part1-3in1/pulser-test-bench-1.png Graphic file (type bmp)
+<figure/chapter3/part1-3in1/pulser-test-bench-1.png>
+File: figure/chapter3/part1-3in1/pulser-jetting-test.png Graphic file (type bmp)
+<figure/chapter3/part1-3in1/pulser-jetting-test.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [108]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [109]
+File: figure/chapter3/part1-3in1/hydraulic-scraper-blades.png Graphic file (type bmp)
+<figure/chapter3/part1-3in1/hydraulic-scraper-blades.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [110]
+File: figure/chapter3/part1-3in1/rotary-nozzle-makeup.png Graphic file (type bmp)
+<figure/chapter3/part1-3in1/rotary-nozzle-makeup.png>
+File: figure/chapter3/part1-3in1/rotary-nozzle-jetting.png Graphic file (type bmp)
+<figure/chapter3/part1-3in1/rotary-nozzle-jetting.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [111]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [112]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [113]) (./chapters/chapter3/part2-4in1.tex
+File: figure/chapter3/structure-4-in-1.png Graphic file (type bmp)
+<figure/chapter3/structure-4-in-1.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [114]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [115]
+File: figure/chapter3/mechanism-scratcher-4-in-1.png Graphic file (type bmp)
+<figure/chapter3/mechanism-scratcher-4-in-1.png>
+File: figure/chapter3/mechanism-swiper-4-in-1.png Graphic file (type bmp)
+<figure/chapter3/mechanism-swiper-4-in-1.png>
+File: figure/chapter3/mechanism-mag-sub-4-in-1.png Graphic file (type bmp)
+<figure/chapter3/mechanism-mag-sub-4-in-1.png>
+File: figure/chapter3/mechanism-torsional-spring-4-in-1.png Graphic file (type bmp)
+<figure/chapter3/mechanism-torsional-spring-4-in-1.png>
+File: figure/chapter3/dynamic-system-torsional-spring-mechanism-4-in-1.png Graphic file (type bmp)
+<figure/chapter3/dynamic-system-torsional-spring-mechanism-4-in-1.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [116]
+File: figure/chapter3/upper-sub-4-in-1.png Graphic file (type bmp)
+<figure/chapter3/upper-sub-4-in-1.png>
+File: figure/chapter3/lowwer-sub-4-in-1.png Graphic file (type bmp)
+<figure/chapter3/lowwer-sub-4-in-1.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [117]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [118]
+File: figure/chapter3/inner-pipe-for-strength-analysis.png Graphic file (type bmp)
+<figure/chapter3/inner-pipe-for-strength-analysis.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [119]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [120]
+File: figure/chapter3/flat-shear-key.png Graphic file (type bmp)
+<figure/chapter3/flat-shear-key.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [121]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [122]
+File: figure/simulation/xinzhoulashen.png Graphic file (type bmp)
+<figure/simulation/xinzhoulashen.png>
+File: figure/simulation/xinzhouniuju.png Graphic file (type bmp)
+<figure/simulation/xinzhouniuju.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [123]
+File: figure/chapter3/pitch-spring.png Graphic file (type bmp)
+<figure/chapter3/pitch-spring.png>
+File: figure/chapter3/oscillating-spring.png Graphic file (type bmp)
+<figure/chapter3/oscillating-spring.png>
+
+Overfull \hbox (5.69885pt too wide) in paragraph at lines 427--428
+[]$\OML/cmm/m/it/12.045 G$\TU/TeXGyreTermesX(0)/m/n/12.045 –\TU/SimSun(0)/m/n/12.045 弹 簧 材 料 的 切 变 模 量，|  取 $\OML/cmm/m/it/12.045 G \OT1/cmr/m/n/12.045 = 79 []$ |\TU/SimSun(0)/m/n/12.045 （图 纸 \TU/TeXGyreTermesX(0)/m/n/12.045 ZKG7000-01-5–\TU/SimSun(0)/m/n/12.045 弹 簧 材 料 为 \TU/TeXGyreTermesX(0)/m/n/12.045 60Si2MnA\TU/SimSun(0)/m/n/12.045 ，|
+ []
+
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[124]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [125]
+Overfull \hbox (0.35088pt too wide) in paragraph at lines 484--485
+[]$\OML/cmm/m/it/12.045 G$\TU/TeXGyreTermesX(0)/m/n/12.045 –\TU/SimSun(0)/m/n/12.045 弹 簧 材 料 的 切 变 模 量，|  取 $\OML/cmm/m/it/12.045 G \OT1/cmr/m/n/12.045 = 79 []$ |\TU/SimSun(0)/m/n/12.045 （图 纸 \TU/TeXGyreTermesX(0)/m/n/12.045 ZKG7000-04–\TU/SimSun(0)/m/n/12.045 扭 曲 弹 簧 材 料 为 \TU/TeXGyreTermesX(0)/m/n/12.045 55SiCr\TU/SimSun(0)/m/n/12.045 ，|
+ []
+
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[126]
+File: figure/chapter3/dwg-4in1-a.png Graphic file (type bmp)
+<figure/chapter3/dwg-4in1-a.png>
+File: figure/chapter3/dwg-4in1-b.png Graphic file (type bmp)
+<figure/chapter3/dwg-4in1-b.png>
+) (./chapters/chapter3/part2-4in1-simulation.tex
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [127]
+File: figure/chapter3/4in1-sim/scraper-fem-model.png Graphic file (type bmp)
+<figure/chapter3/4in1-sim/scraper-fem-model.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [128]
+File: figure/chapter3/4in1-sim/scraper-boundary-conditions.png Graphic file (type bmp)
+<figure/chapter3/4in1-sim/scraper-boundary-conditions.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [129]
+File: figure/chapter3/4in1-sim/mesh-independence.png Graphic file (type bmp)
+<figure/chapter3/4in1-sim/mesh-independence.png>
+File: figure/chapter3/4in1-sim/scraper-mesh.png Graphic file (type bmp)
+<figure/chapter3/4in1-sim/scraper-mesh.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [130]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [131]
+File: figure/chapter3/4in1-sim/scraping-effect-150n.png Graphic file (type bmp)
+<figure/chapter3/4in1-sim/scraping-effect-150n.png>
+File: figure/chapter3/4in1-sim/scraping-effect-180n.png Graphic file (type bmp)
+<figure/chapter3/4in1-sim/scraping-effect-180n.png>
+File: figure/chapter3/4in1-sim/scraping-effect-250n.png Graphic file (type bmp)
+<figure/chapter3/4in1-sim/scraping-effect-250n.png>
+File: figure/chapter3/4in1-sim/scraping-effect-300n.png Graphic file (type bmp)
+<figure/chapter3/4in1-sim/scraping-effect-300n.png>
+
+Overfull \hbox (3.01125pt too wide) in paragraph at lines 110--123
+ [][] 
+ []
+
+
+Overfull \hbox (3.01125pt too wide) in paragraph at lines 110--123
+ [][] 
+ []
+
+
+Overfull \hbox (3.01125pt too wide) in paragraph at lines 110--123
+ [][] 
+ []
+
+
+Overfull \hbox (3.01125pt too wide) in paragraph at lines 110--123
+ [][] 
+ []
+
+File: figure/chapter3/4in1-sim/cutting-force-150n.png Graphic file (type bmp)
+<figure/chapter3/4in1-sim/cutting-force-150n.png>
+File: figure/chapter3/4in1-sim/cutting-force-180n.png Graphic file (type bmp)
+<figure/chapter3/4in1-sim/cutting-force-180n.png>
+File: figure/chapter3/4in1-sim/cutting-force-250n.png Graphic file (type bmp)
+<figure/chapter3/4in1-sim/cutting-force-250n.png>
+File: figure/chapter3/4in1-sim/cutting-force-300n.png Graphic file (type bmp)
+<figure/chapter3/4in1-sim/cutting-force-300n.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[132]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [133]
+File: figure/chapter3/4in1-sim/brush-structure.png Graphic file (type bmp)
+<figure/chapter3/4in1-sim/brush-structure.png>
+File: figure/chapter3/4in1-sim/brush-wire-model.png Graphic file (type bmp)
+<figure/chapter3/4in1-sim/brush-wire-model.png>
+File: figure/chapter3/4in1-sim/brush-contact-stress-1.png Graphic file (type bmp)
+<figure/chapter3/4in1-sim/brush-contact-stress-1.png>
+File: figure/chapter3/4in1-sim/brush-contact-stress-2.png Graphic file (type bmp)
+<figure/chapter3/4in1-sim/brush-contact-stress-2.png>
+File: figure/chapter3/4in1-sim/brush-contact-stress-3.png Graphic file (type bmp)
+<figure/chapter3/4in1-sim/brush-contact-stress-3.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [134]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [135]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [136]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [137]) (./chapters/chapter3/part2-4in1-scraper-performance.tex
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [138]
+File: figure/chapter3/scraper-test-rig.png Graphic file (type bmp)
+<figure/chapter3/scraper-test-rig.png>
+File: figure/chapter3/scapter-measurement-mechanism.png Graphic file (type bmp)
+<figure/chapter3/scapter-measurement-mechanism.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [139]
+File: figure/chapter3/scale-1.jpg Graphic file (type bmp)
+<figure/chapter3/scale-1.jpg>
+File: figure/chapter3/scale-4.jpg Graphic file (type bmp)
+<figure/chapter3/scale-4.jpg>
+File: figure/chapter3/scale-3.jpg Graphic file (type bmp)
+<figure/chapter3/scale-3.jpg>
+File: figure/chapter3/scale-5.jpg Graphic file (type bmp)
+<figure/chapter3/scale-5.jpg>
+File: figure/chapter3/scraper-1.jpg Graphic file (type bmp)
+<figure/chapter3/scraper-1.jpg>
+File: figure/chapter3/scraper-4.jpg Graphic file (type bmp)
+<figure/chapter3/scraper-4.jpg>
+File: figure/chapter3/scraper-3.jpg Graphic file (type bmp)
+<figure/chapter3/scraper-3.jpg>
+File: figure/chapter3/scraper-5.jpg Graphic file (type bmp)
+<figure/chapter3/scraper-5.jpg>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [140]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [141]
+File: figure/chapter3/scatch-depth-sping-comprassion.png Graphic file (type bmp)
+<figure/chapter3/scatch-depth-sping-comprassion.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [142]
+File: figure/chapter3/xiechiguaban/1.png Graphic file (type bmp)
+<figure/chapter3/xiechiguaban/1.png>
+File: figure/chapter3/xiechiguaban/2.png Graphic file (type bmp)
+<figure/chapter3/xiechiguaban/2.png>
+File: figure/chapter3/xiechiguaban/3.png Graphic file (type bmp)
+<figure/chapter3/xiechiguaban/3.png>
+File: figure/chapter3/xiechiguaban/4.png Graphic file (type bmp)
+<figure/chapter3/xiechiguaban/4.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [143]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [144]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [145]
+File: figure/chapter3/helicle-teetch-scapter-deepth.png Graphic file (type bmp)
+<figure/chapter3/helicle-teetch-scapter-deepth.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [146]
+File: figure/chapter3/maoshuashiyan/brush-wax-scale-before.jpg Graphic file (type bmp)
+<figure/chapter3/maoshuashiyan/brush-wax-scale-before.jpg>
+File: figure/chapter3/maoshuashiyan/brush-wax-scale-after.jpg Graphic file (type bmp)
+<figure/chapter3/maoshuashiyan/brush-wax-scale-after.jpg>
+File: figure/chapter3/maoshuashiyan/brush-hard-scale-before.jpg Graphic file (type bmp)
+<figure/chapter3/maoshuashiyan/brush-hard-scale-before.jpg>
+File: figure/chapter3/maoshuashiyan/brush-hard-scale-after.jpg Graphic file (type bmp)
+<figure/chapter3/maoshuashiyan/brush-hard-scale-after.jpg>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [147]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [148]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [149]
+File: figure/chapter3/wproc-4in1-drill.png Graphic file (type bmp)
+<figure/chapter3/wproc-4in1-drill.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [150] (./chapters/chapter3/part2-4in1-fatigue.tex
+Overfull \hbox (24.4076pt too wide) in paragraph at lines 31--32
+[]\TU/SimSun(0)/m/n/12.045 将 评 定 应 力 代 入 计 算 流 程 即 可 复 核 表 中 数 值。|  拉 伸 工 况：| $\OML/cmm/m/it/12.045 ^^[[] \OT1/cmr/m/n/12.045 = 294\OML/cmm/m/it/12.045 :\OT1/cmr/m/n/12.045 1/(1 \OMS/cmsy/m/n/12.045 ^^@ \OT1/cmr/m/n/12.045 294\OML/cmm/m/it/12.045 :\OT1/cmr/m/n/12.045 1/1 033) =
+ []
+
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[151])
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [152]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [153]) (./chapters/chapter3/part3-magntictool.tex
+Overfull \hbox (3.61288pt too wide) in paragraph at lines 44--44
+[]|[]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--44
+[]|\TU/TeXGyreTermesX(0)/m/n/10.53937 9.5-
+ []
+
+File: figure/chapter3/dwg-mag-a.png Graphic file (type bmp)
+<figure/chapter3/dwg-mag-a.png>
+File: figure/chapter3/dwg-mag-b.png Graphic file (type bmp)
+<figure/chapter3/dwg-mag-b.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[154]
+File: figure/chapter3/structure-dqc-mag-tool.png Graphic file (type bmp)
+<figure/chapter3/structure-dqc-mag-tool.png>
+File: figure/chapter3/structure-upper-magnetic-sub.png Graphic file (type bmp)
+<figure/chapter3/structure-upper-magnetic-sub.png>
+File: figure/chapter3/structure-lowwer-magnetic-sub.png Graphic file (type bmp)
+<figure/chapter3/structure-lowwer-magnetic-sub.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [155]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [156]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [157]
+File: figure/chapter3/magnogard-magnet-tool.png Graphic file (type bmp)
+<figure/chapter3/magnogard-magnet-tool.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [158]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [159]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [160]
+Overfull \hbox (21.97173pt too wide) in paragraph at lines 264--265
+[]$\OML/cmm/m/it/12.045 d$\TU/TeXGyreTermesX(0)/m/n/12.045 –\TU/SimSun(0)/m/n/12.045 危 险 截 面 内 径，|  取 与 内 螺 纹 配 合 的 外 螺 纹 小 径 $\OML/cmm/m/it/12.045 d \OT1/cmr/m/n/12.045 = 70\OML/cmm/m/it/12.045 :\OT1/cmr/m/n/12.045 30 []$ |\TU/SimSun(0)/m/n/12.045 （参 见 图 纸 \TU/TeXGyreTermesX(0)/m/n/12.045 DQC700003A–
+ []
+
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[161]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [162]
+File: figure/chapter3/lowwer-sub-mag-tool.png Graphic file (type bmp)
+<figure/chapter3/lowwer-sub-mag-tool.png>
+File: figure/chapter3/torsion-stress-lowwer-sub-mag-tool.png Graphic file (type bmp)
+<figure/chapter3/torsion-stress-lowwer-sub-mag-tool.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [163]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [164]
+File: figure/chapter3/magnetic-adsorption-capacity.jpg Graphic file (type bmp)
+<figure/chapter3/magnetic-adsorption-capacity.jpg>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [165]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [166]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [167]
+File: figure/chapter3/demagnetization-SmCo5.png Graphic file (type bmp)
+<figure/chapter3/demagnetization-SmCo5.png>
+File: figure/chapter3/demagnatization-N45UH.png Graphic file (type bmp)
+<figure/chapter3/demagnatization-N45UH.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [168]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [169]
+File: figure/chapter3/magnet-configuration-upper-sub.png Graphic file (type bmp)
+<figure/chapter3/magnet-configuration-upper-sub.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [170]
+File: figure/chapter3/radial-magnetization-in-upper-sub.png Graphic file (type bmp)
+<figure/chapter3/radial-magnetization-in-upper-sub.png>
+File: figure/chapter3/circumferencial-magnetization-in-upper-sub.png Graphic file (type bmp)
+<figure/chapter3/circumferencial-magnetization-in-upper-sub.png>
+File: figure/chapter3/boundary-condition-upper-sub.png Graphic file (type bmp)
+<figure/chapter3/boundary-condition-upper-sub.png>
+File: figure/chapter3/mesh-upper-sub.png Graphic file (type bmp)
+<figure/chapter3/mesh-upper-sub.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [171]
+File: figure/chapter3/magnetic-vector-distribution-upper-sub.png Graphic file (type bmp)
+<figure/chapter3/magnetic-vector-distribution-upper-sub.png>
+File: figure/chapter3/contour-magnetic-field-upper-sub.png Graphic file (type bmp)
+<figure/chapter3/contour-magnetic-field-upper-sub.png>
+File: figure/chapter3/magnetic-vector-distribution-upper-sub-circum-magnatization.png Graphic file (type bmp)
+<figure/chapter3/magnetic-vector-distribution-upper-sub-circum-magnatization.png>
+File: figure/chapter3/contour-magnetic-field-upper-sub-circum-magnatization.png Graphic file (type bmp)
+<figure/chapter3/contour-magnetic-field-upper-sub-circum-magnatization.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [172]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [173]
+File: figure/chapter3/magnet-configuration-lowwer-sub.png Graphic file (type bmp)
+<figure/chapter3/magnet-configuration-lowwer-sub.png>
+File: figure/chapter3/lowwer-sub-magnetization-radial.png Graphic file (type bmp)
+<figure/chapter3/lowwer-sub-magnetization-radial.png>
+File: figure/chapter3/lowwer-sub-cross-magnetization.png Graphic file (type bmp)
+<figure/chapter3/lowwer-sub-cross-magnetization.png>
+File: figure/chapter3/lowwer-sub-circumferential-magnetization.png Graphic file (type bmp)
+<figure/chapter3/lowwer-sub-circumferential-magnetization.png>
+File: figure/chapter3/boundary-condition-lowwer-sub.png Graphic file (type bmp)
+<figure/chapter3/boundary-condition-lowwer-sub.png>
+File: figure/chapter3/mesh-upper-sub.png Graphic file (type bmp)
+<figure/chapter3/mesh-upper-sub.png>
+File: figure/chapter3/magnetic-vector-distribution-lowwer-sub-radial.png Graphic file (type bmp)
+<figure/chapter3/magnetic-vector-distribution-lowwer-sub-radial.png>
+File: figure/chapter3/contour-magnetic-field-lowwer-sub-radial.png Graphic file (type bmp)
+<figure/chapter3/contour-magnetic-field-lowwer-sub-radial.png>
+File: figure/chapter3/magnetic-vector-distribution-lowwer-sub-cross.png Graphic file (type bmp)
+<figure/chapter3/magnetic-vector-distribution-lowwer-sub-cross.png>
+File: figure/chapter3/contour-magnetic-field-lowwer-sub-cross.png Graphic file (type bmp)
+<figure/chapter3/contour-magnetic-field-lowwer-sub-cross.png>
+File: figure/chapter3/magnetic-vector-distribution-lowwer-sub-circumferential.png Graphic file (type bmp)
+<figure/chapter3/magnetic-vector-distribution-lowwer-sub-circumferential.png>
+File: figure/chapter3/contour-magnetic-field-lowwer-sub-circumferential.png Graphic file (type bmp)
+<figure/chapter3/contour-magnetic-field-lowwer-sub-circumferential.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [174]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [175]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [176]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [177]
+File: figure/chapter3/mag-field-distribution-4145-steel-frame.png Graphic file (type bmp)
+<figure/chapter3/mag-field-distribution-4145-steel-frame.png>
+File: figure/chapter3/mag-field-distribution-aliminium-frame.png Graphic file (type bmp)
+<figure/chapter3/mag-field-distribution-aliminium-frame.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [178]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [179]
+File: figure/chapter3/wproc-mag-grind.png Graphic file (type bmp)
+<figure/chapter3/wproc-mag-grind.png>
+File: figure/chapter3/wproc-mag-flow.png Graphic file (type bmp)
+<figure/chapter3/wproc-mag-flow.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [180] (./chapters/chapter3/part3-magntictool-fatigue.tex
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [181]
+Overfull \hbox (46.74313pt too wide) in paragraph at lines 35--36
+[]\TU/SimSun(0)/m/n/12.045 抗 扭 工 况 无 需 作 \TU/TeXGyreTermesX(0)/m/n/12.045 Goodman \TU/SimSun(0)/m/n/12.045 折 算：| $\OML/cmm/m/it/12.045 ^^[[] \OT1/cmr/m/n/12.045 = 0$\TU/SimSun(0)/m/n/12.045 ，| $\OML/cmm/m/it/12.045 ^^[[] \OT1/cmr/m/n/12.045 = \OML/cmm/m/it/12.045 ^^[[] \OT1/cmr/m/n/12.045 = 597\OML/cmm/m/it/12.045 :\OT1/cmr/m/n/12.045 7$\TU/TeXGyreTermesX(0)/m/n/12.045 MPa\TU/SimSun(0)/m/n/12.045 ，| $\OML/cmm/m/it/12.045 N \OT1/cmr/m/n/12.045 = (4 512\OML/cmm/m/it/12.045 :\OT1/cmr/m/n/12.045 7/597\OML/cmm/m/it/12.045 :\OT1/cmr/m/n/12.045 7)[] =
+ []
+
+)
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [182]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [183]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [184]) (./chapters/chapter3/part3-magnetictool-magnet-performance.tex
+File: figure/chapter3/magnet-test-rig-labeled.png Graphic file (type bmp)
+<figure/chapter3/magnet-test-rig-labeled.png>
+File: figure/chapter3/magnet-test-rig-photo.png Graphic file (type bmp)
+<figure/chapter3/magnet-test-rig-photo.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [185]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [186]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [187]) (./chapters/chapter3/part4-filter.tex
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [188]
 File: figure/chapter3/guolvqi.png Graphic file (type bmp)
 <figure/chapter3/guolvqi.png>
 
@@ -1478,38 +2652,24 @@ File: figure/chapter3/mudgard-filter-tool.png Graphic file (type bmp)
 <figure/chapter3/mudgard-filter-tool.png>
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
-[4]
+[189]
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
- [5]
+ [190]
 File: figure/chapter3/dwg-filter-a.png Graphic file (type bmp)
 <figure/chapter3/dwg-filter-a.png>
 File: figure/chapter3/dwg-filter-b.png Graphic file (type bmp)
 <figure/chapter3/dwg-filter-b.png>
-
-
-Package natbib Warning: Citation `ref26' on page 6 undefined on input line 142.
-
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
-[6]
-
-Package natbib Warning: Citation `ref26' on page 7 undefined on input line 152.
-
-
-Overfull \hbox (8.80798pt too wide) in paragraph at lines 187--188
-[] \TU/SimSun(0)/m/n/12.045 滤 进 接 头 外 螺 纹 根 部：|  按 图 纸 \TU/TeXGyreTermesX(0)/m/n/12.045 GLGJ70002A \TU/SimSun(0)/m/n/12.045 标 注 的 外 螺 纹 小 径  |（$\OML/cmm/m/it/12.045 ^^^\OT1/cmr/m/n/12.045 89\OML/cmm/m/it/12.045 :\OT1/cmr/m/n/12.045 100 \OMS/cmsy/m/n/12.045 ^^X \OML/cmm/m/it/12.045 ^^^\OT1/cmr/m/n/12.045 89\OML/cmm/m/it/12.045 :\OT1/cmr/m/n/12.045 660$\TU/SimSun(0)/m/n/12.045 ）|
- []
-
+ [191]
+Missing character: There is no Ⅵ (U+2165) in font [TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;!
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
-[7]
-
-Package natbib Warning: Citation `ref26' on page 8 undefined on input line 197.
-
+[192]
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
-[8]
+ [193]
 Overfull \hbox (5.96576pt too wide) in paragraph at lines 278--279
 \TU/SimSun(0)/m/n/12.045 头、| \TU/TeXGyreTermesX(0)/m/n/12.045 GLGJ70013A–\TU/SimSun(0)/m/n/12.045 滤 出 接 头、| \TU/TeXGyreTermesX(0)/m/n/12.045 GLGJ70015A–\TU/SimSun(0)/m/n/12.045 下 接 头 技 术 要 求：|  调 质 后 屈 服 强 度 $\OMS/cmsy/m/n/12.045 ^^U \OT1/cmr/m/n/12.045 930$\TU/TeXGyreTermesX(0)/m/n/12.045 MPa\TU/SimSun(0)/m/n/12.045 ） ；| 
  []
@@ -1524,22 +2684,19 @@ Overfull \hbox (25.87804pt too wide) in paragraph at lines 282--283
 []$\OML/cmm/m/it/12.045 d$\TU/TeXGyreTermesX(0)/m/n/12.045 —\TU/SimSun(0)/m/n/12.045 危 险 截 面 内 径，| \TU/TeXGyreTermesX(0)/m/n/12.045 mm |\TU/SimSun(0)/m/n/12.045 （与 抗 拉 校 核 各 受 力 件 取 值 相 同：|  图 号 \TU/TeXGyreTermesX(0)/m/n/12.045 GLGJ70001A\TU/SimSun(0)/m/n/12.045 、| \TU/TeXGyreTermesX(0)/m/n/12.045 GLGJ70002A\TU/SimSun(0)/m/n/12.045 、|
  []
 
-
-Package natbib Warning: Citation `ref26' on page 9 undefined on input line 284.
-
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
-[9]
+[194]
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
- [10]
+ [195]
 Overfull \hbox (8.4669pt too wide) in paragraph at lines 365--366
 []|\TU/SimSun(0)/m/n/12.045 （\TU/TeXGyreTermesX(0)/m/n/12.045 1\TU/SimSun(0)/m/n/12.045 ）|  滤 进 接 头 受 拉。|  施 加 的 拉 力 小 于 该 接 头 按 理 论 校 核 所 得 的 最 小 许 用 拉 力 \TU/TeXGyreTermesX(0)/m/n/12.045 2184.4kN
  []
 
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
-[11]
+[196]
 Overfull \hbox (14.4894pt too wide) in paragraph at lines 369--370
 []|\TU/SimSun(0)/m/n/12.045 （\TU/TeXGyreTermesX(0)/m/n/12.045 3\TU/SimSun(0)/m/n/12.045 ）|  滤 出 接 头 受 拉。|  施 加 的 拉 力 小 于 该 接 头 按 理 论 校 核 所 得 的 最 小 许 用 拉 力 \TU/TeXGyreTermesX(0)/m/n/12.045 1974.94kN
  []
@@ -1558,55 +2715,332 @@ File: figure/simulation/lvjinniuju.png Graphic file (type bmp)
 <figure/simulation/lvjinniuju.png>
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
-[12]
+[197]
 Overfull \hbox (13.17313pt too wide) in paragraph at lines 431--432
 []$\OML/cmm/m/it/12.045 L$\TU/TeXGyreTermesX(0)/m/n/12.045 —\TU/SimSun(0)/m/n/12.045 过 滤 腔 长 度，| \TU/TeXGyreTermesX(0)/m/n/12.045 mm |\TU/SimSun(0)/m/n/12.045 （取 \TU/TeXGyreTermesX(0)/m/n/12.045 4864.56mm\TU/SimSun(0)/m/n/12.045 ，|  图 号 \TU/TeXGyreTermesX(0)/m/n/12.045 GLGJ70012A–\TU/SimSun(0)/m/n/12.045 加 长 过 滤 套 筒、| \TU/TeXGyreTermesX(0)/m/n/12.045 GLGJ70021A–
  []
 
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
-[13]
+[198]
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
- [14]
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 10.53937pt on input line 492.
-
-Overfull \hbox (21.91211pt too wide) in alignment at lines 495--504
+ [199]
+Overfull \hbox (21.91211pt too wide) in alignment at lines 494--503
 [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
-[15]
+[200]
 File: figure/chapter3/wproc-filter-4in1.png Graphic file (type bmp)
 <figure/chapter3/wproc-filter-4in1.png>
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
- [16] (./chapters/chapter3/part4-filter-fatigue.tex
+ [201] (./chapters/chapter3/part4-filter-fatigue.tex
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [202])
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [203]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [204]) (./chapters/chapter3/part5-variable-tool.tex
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [205]
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+[]|\TU/SimSun(0)/m/n/9.03374 收 回 待 命  |（投 球
+ []
 
-LaTeX Warning: Reference `ss:fatigue-probe' on page 17 undefined on input line 8.
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+[]|\TU/TeXGyreTermesX(0)/m/n/9.03374 136mm |\TU/SimSun(0)/m/n/9.03374 （本 体
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+[]|\TU/SimSun(0)/m/n/9.03374 张 开 刮 削  |（激 活
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+[]|\TU/SimSun(0)/m/n/9.03374 复 位 弹 簧 收 回 至
+ []
+
+File: figure/chapter3/part5/variable-scrapter-structure.png Graphic file (type bmp)
+<figure/chapter3/part5/variable-scrapter-structure.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[206]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [207]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [208]
+Overfull \hbox (9.05511pt too wide) in paragraph at lines 168--169
+[]$\OML/cmm/m/it/12.045 D$\TU/TeXGyreTermesX(0)/m/n/12.045 –\TU/SimSun(0)/m/n/12.045 危 险 截 面 外 径，| \TU/TeXGyreTermesX(0)/m/n/12.045 mm |\TU/SimSun(0)/m/n/12.045 （取 值 与 抗 拉 校 核 相 同：|  刮 刀 心 轴 $\OML/cmm/m/it/12.045 D \OT1/cmr/m/n/12.045 = 62$\TU/TeXGyreTermesX(0)/m/n/12.045 mm\TU/SimSun(0)/m/n/12.045 ，|  图 号 \TU/TeXGyreTermesX(0)/m/n/12.045 BJG700004A
+ []
+
+
+Overfull \hbox (2.15642pt too wide) in paragraph at lines 168--169
+\TU/SimSun(0)/m/n/12.045 左 端 牙 槽 根 外 圆；|  心 轴 连 接 筒 $\OML/cmm/m/it/12.045 D \OT1/cmr/m/n/12.045 = 80$\TU/TeXGyreTermesX(0)/m/n/12.045 mm\TU/SimSun(0)/m/n/12.045 ，|  图 号 \TU/TeXGyreTermesX(0)/m/n/12.045 BJG700014A \TU/SimSun(0)/m/n/12.045 外 圆 标 注 $\OML/cmm/m/it/12.045 ^^^\OT1/cmr/m/n/12.045 80 []/[]$\TU/SimSun(0)/m/n/12.045 ） ；| 
+ []
+
+
+Overfull \hbox (10.24507pt too wide) in paragraph at lines 170--171
+[]$\OML/cmm/m/it/12.045 d$\TU/TeXGyreTermesX(0)/m/n/12.045 –\TU/SimSun(0)/m/n/12.045 危 险 截 面 内 径，| \TU/TeXGyreTermesX(0)/m/n/12.045 mm |\TU/SimSun(0)/m/n/12.045 （取 值 与 抗 拉 校 核 相 同：|  刮 刀 心 轴 $\OML/cmm/m/it/12.045 d \OT1/cmr/m/n/12.045 = 38\OML/cmm/m/it/12.045 :\OT1/cmr/m/n/12.045 1$\TU/TeXGyreTermesX(0)/m/n/12.045 mm\TU/SimSun(0)/m/n/12.045 ，|  图 号 \TU/TeXGyreTermesX(0)/m/n/12.045 BJG700004A
+ []
 
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
-[17])
+[209]
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
- [18]
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [19])
-File: figure/research4-6/cosl-header.png Graphic file (type bmp)
-<figure/research4-6/cosl-header.png>
- [20]
+ [210]
+Overfull \hbox (21.61543pt too wide) in paragraph at lines 211--212
+[]\TU/SimSun(0)/m/n/12.045 刮 壁 器 的 球 座 圆 周 设 计 \TU/TeXGyreTermesX(0)/m/n/12.045 4 \TU/SimSun(0)/m/n/12.045 组 剪 钉 参 与 剪 切  |（图 纸 \TU/TeXGyreTermesX(0)/m/n/12.045 BJG700015A–\TU/SimSun(0)/m/n/12.045 球 座 标 注 $\OT1/cmr/m/n/12.045 4 \OMS/cmsy/m/n/12.045 ^^B \OT1/cmr/m/n/12.045 4\OML/cmm/m/it/12.045 :\OT1/cmr/m/n/12.045 80 []/0$
+ []
 
-Package natbib Warning: There were undefined citations.
+
+Overfull \hbox (0.42993pt too wide) in paragraph at lines 231--233
+\TU/SimSun(0)/m/n/12.045 式 中，| $\OML/cmm/m/it/12.045 P[]$\TU/TeXGyreTermesX(0)/m/n/12.045 –\TU/SimSun(0)/m/n/12.045 激 活 工 具 所 需 的 最 小 泵 压，| \TU/TeXGyreTermesX(0)/m/n/12.045 MPa |\TU/SimSun(0)/m/n/12.045 （按 $\OML/cmm/m/it/12.045 P[] \OT1/cmr/m/n/12.045 = \OML/cmm/m/it/12.045 F[]\OT1/cmr/m/n/12.045 /\OML/cmm/m/it/12.045 A[]$ \TU/SimSun(0)/m/n/12.045 计 算，| $\OML/cmm/m/it/12.045 F[]$ \TU/SimSun(0)/m/n/12.045 取 上 式 所 得 \TU/TeXGyreTermesX(0)/m/n/12.045 19534.4N\TU/SimSun(0)/m/n/12.045 ） ；| 
+ []
 
 File: figure/research4-6/cosl-header.png Graphic file (type bmp)
 <figure/research4-6/cosl-header.png>
-[21
+[211]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [212]
+Overfull \hbox (10.28947pt too wide) in paragraph at lines 285--286
+[]$\OML/cmm/m/it/12.045 d$\TU/TeXGyreTermesX(0)/m/n/12.045 –\TU/SimSun(0)/m/n/12.045 连 杆 销 的 最 小 直 径，| \TU/TeXGyreTermesX(0)/m/n/12.045 mm |\TU/SimSun(0)/m/n/12.045 （取 \TU/TeXGyreTermesX(0)/m/n/12.045 10mm\TU/SimSun(0)/m/n/12.045 ，|  图 号 \TU/TeXGyreTermesX(0)/m/n/12.045 BJG700005A–\TU/SimSun(0)/m/n/12.045 活 动 座 铰 链 销、| \TU/TeXGyreTermesX(0)/m/n/12.045 BJG700007A–
+ []
 
-] (./main.aux)
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[213]
+File: figure/chapter3/part5/inner-pipe.png Graphic file (type bmp)
+<figure/chapter3/part5/inner-pipe.png>
+File: figure/simulation/guadaoxinzhou-lashen.png Graphic file (type bmp)
+<figure/simulation/guadaoxinzhou-lashen.png>
+File: figure/simulation/gaudaoxinzhou-niuju.png Graphic file (type bmp)
+<figure/simulation/gaudaoxinzhou-niuju.png>
+File: figure/chapter3/dwg-ggq-a.png Graphic file (type bmp)
+<figure/chapter3/dwg-ggq-a.png>
+File: figure/chapter3/dwg-ggq-b.png Graphic file (type bmp)
+<figure/chapter3/dwg-ggq-b.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [214]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [215]
+Overfull \hbox (3.57924pt too wide) in paragraph at lines 384--385
+[]\TU/SimSun(0)/m/n/12.045 本 可 变 径 刮 管 器 应 与 \TU/TeXGyreTermesX(0)/m/n/12.045 7[]\TU/SimSun(0)/m/n/12.045 及 以 上 其 它 刮 管 器 配 合 使 用；|  本 工 具 刮 刀 收 回 外 径 \TU/TeXGyreTermesX(0)/m/n/12.045 136mm\TU/SimSun(0)/m/n/12.045 、|
+ []
+
+File: figure/chapter3/3-3.png Graphic file (type bmp)
+<figure/chapter3/3-3.png>
+File: figure/chapter3/part5/ggq95-workseq.png Graphic file (type bmp)
+<figure/chapter3/part5/ggq95-workseq.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[216]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [217]
+File: figure/chapter3/part5/unsetup/ball.png Graphic file (type bmp)
+<figure/chapter3/part5/unsetup/ball.png>
+File: figure/chapter3/part5/unsetup/unsetup-satefy-screw.png Graphic file (type bmp)
+<figure/chapter3/part5/unsetup/unsetup-satefy-screw.png>
+File: figure/chapter3/part5/unsetup/unsetup-two-subs.png Graphic file (type bmp)
+<figure/chapter3/part5/unsetup/unsetup-two-subs.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [218]
+File: figure/chapter3/part5/unsetup/unsetup-fasten-parts.png Graphic file (type bmp)
+<figure/chapter3/part5/unsetup/unsetup-fasten-parts.png>
+File: figure/chapter3/part5/unsetup/rotary-lever-set.png Graphic file (type bmp)
+<figure/chapter3/part5/unsetup/rotary-lever-set.png>
+File: figure/chapter3/part5/unsetup/end-links.png Graphic file (type bmp)
+<figure/chapter3/part5/unsetup/end-links.png>
+File: figure/chapter3/part5/unsetup/unsetup-scraper.png Graphic file (type bmp)
+<figure/chapter3/part5/unsetup/unsetup-scraper.png>
+File: figure/chapter3/part5/unsetup/left-links.png Graphic file (type bmp)
+<figure/chapter3/part5/unsetup/left-links.png>
+File: figure/chapter3/part5/unsetup/unsetup-inner-pipe.png Graphic file (type bmp)
+<figure/chapter3/part5/unsetup/unsetup-inner-pipe.png>
+File: figure/chapter3/part5/unsetup/unsetup-ball-and-seat.png Graphic file (type bmp)
+<figure/chapter3/part5/unsetup/unsetup-ball-and-seat.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [219]
+File: figure/chapter3/part5/unsetup/reseting-assembly.png Graphic file (type bmp)
+<figure/chapter3/part5/unsetup/reseting-assembly.png>
+File: figure/chapter3/part5/unsetup/resetting-assembly-unsetup.png Graphic file (type bmp)
+<figure/chapter3/part5/unsetup/resetting-assembly-unsetup.png>
+File: figure/chapter3/part5/unsetup/middle-body-inner-pipe-ball.png Graphic file (type bmp)
+<figure/chapter3/part5/unsetup/middle-body-inner-pipe-ball.png>
+File: figure/chapter3/part5/unsetup/middle-inner-pipe-unsetup.png Graphic file (type bmp)
+<figure/chapter3/part5/unsetup/middle-inner-pipe-unsetup.png>
+File: figure/chapter3/part5/unsetup/piston-spring-limiter.png Graphic file (type bmp)
+<figure/chapter3/part5/unsetup/piston-spring-limiter.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [220] (./chapters/chapter3/part5-variable-tool-fatigue.tex
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [221]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [222]
+Overfull \hbox (4.42477pt too wide) in paragraph at lines 35--36
+[]\TU/SimSun(0)/m/n/12.045 该 工 况 的 裕 度 取 决 于 退 刀 槽 的 圆 角 质 量 而 非 材 料。|  退 刀 槽 槽 底 $\OML/cmm/m/it/12.045 ^^^\OT1/cmr/m/n/12.045 58\OML/cmm/m/it/12.045 :\OT1/cmr/m/n/12.045 05$ \TU/SimSun(0)/m/n/12.045 较 该 端 \TU/TeXGyreTermesX(0)/m/n/12.045 Tr65$\OMS/cmsy/m/n/12.045 ^^B$\TU/TeXGyreTermesX(0)/m/n/12.045 4
+ []
+
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[223])
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [224]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [225]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [226]
+Overfull \hbox (14.87474pt too wide) in paragraph at lines 665--670
+\TU/TeXGyreTermesX(0)/m/n/12.045 5/8[]\TU/SimSun(0)/m/n/12.045 下 部 近 悬 挂 器 井 段  |— —|  可 变 径 刮 管 器 收 回 外 径 \TU/TeXGyreTermesX(0)/m/n/12.045 136mm |\TU/SimSun(0)/m/n/12.045 （本 体 最 大 外 径 \TU/TeXGyreTermesX(0)/m/n/12.045 139.50mm\TU/SimSun(0)/m/n/12.045 ）|
+ []
+
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[227]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [228]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [229]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [230]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [231]) (./chapters/research4-6/entry.tex
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [232]
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "SimSun/I" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "SimSun/BI" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "SimSun/I" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'SimSun(1)' created for font 'SimSun' with
+(fontspec)             options [Script={CJK},AutoFakeBold={2}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"SimSun/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"SimSun/OT:script=hani;language=dflt;embolden=2;"
+
+ (./chapters/research4-6/chapter6.tex
+第五章
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[233
+
+
+]
+File: figure/research4-6/fig6-01-1.jpg Graphic file (type bmp)
+<figure/research4-6/fig6-01-1.jpg>
+File: figure/research4-6/fig6-02-1.png Graphic file (type bmp)
+<figure/research4-6/fig6-02-1.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [234]
+File: figure/research4-6/fig6-03-1.jpg Graphic file (type bmp)
+<figure/research4-6/fig6-03-1.jpg>
+File: figure/research4-6/fig6-04-1.jpg Graphic file (type bmp)
+<figure/research4-6/fig6-04-1.jpg>
+
+Missing character: There is no ∶ (U+2236) in font Times New Roman/OT:script=latn;language=dflt;!
+Missing character: There is no ∶ (U+2236) in font Times New Roman/OT:script=latn;language=dflt;!
+Missing character: There is no ∶ (U+2236) in font Times New Roman/OT:script=latn;language=dflt;!
+Missing character: There is no ∶ (U+2236) in font Times New Roman/OT:script=latn;language=dflt;!
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+[235]
+File: figure/research4-6/fig6-05-1.png Graphic file (type bmp)
+<figure/research4-6/fig6-05-1.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [236]
+File: figure/research4-6/fig6-06-1.png Graphic file (type bmp)
+<figure/research4-6/fig6-06-1.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [237]
+File: figure/research4-6/fig6-07-1.png Graphic file (type bmp)
+<figure/research4-6/fig6-07-1.png>
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [238]
+File: figure/research4-6/fig6-08-1.png Graphic file (type bmp)
+<figure/research4-6/fig6-08-1.png>
+File: figure/research4-6/fig6-09-1.png Graphic file (type bmp)
+<figure/research4-6/fig6-09-1.png>
+)
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [239]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [240]) (./chapters/bib.tex
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [241
+
+
+
+])
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [242] (./chapters/appendix1.tex
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [243
+
+]
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [244]
+
+LaTeX Warning: Reference `sec:r46-5.1' on page 245 undefined on input line 76.
+
+)
+File: figure/research4-6/cosl-header.png Graphic file (type bmp)
+<figure/research4-6/cosl-header.png>
+ [245] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
@@ -1616,15 +3050,15 @@ L3 programming layer <2020/03/25>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: DC987C394773436BF62625684AA42A36;2827.
+(rerunfilecheck)             Checksum: 55E97E64C30D8E1DCE8CFD3AA7356A93;22168.
  ) 
 Here is how much of TeX's memory you used:
- 47661 strings out of 470139
- 1197532 string characters out of 5477718
- 1649586 words of memory out of 5000000
- 75424 multiletter control sequences out of 15000+600000
- 650612 words of font info for 179 fonts, out of 8000000 for 9000
+ 52110 strings out of 470139
+ 1387184 string characters out of 5477718
+ 1755250 words of memory out of 5000000
+ 79500 multiletter control sequences out of 15000+600000
+ 658162 words of font info for 222 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 93i,18n,117p,1218b,1121s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,22n,117p,1579b,2334s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (28 pages).
+Output written on main.xdv (258 pages, 3966392 bytes).
